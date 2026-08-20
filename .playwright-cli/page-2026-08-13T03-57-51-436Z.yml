@@ -1,0 +1,118 @@
+- generic [active] [ref=f3e1]:
+  - generic [ref=f3e2]:
+    - generic [ref=f3e3]:
+      - generic [ref=f3e4]:
+        - link [ref=f3e6] [cursor=pointer]:
+          - /url: https://phbidlautdemo.prahu-hub.com/
+        - button [ref=f3e10] [cursor=pointer]
+      - text:  
+      - generic [ref=f3e13]:
+        - generic [ref=f3e14]:
+          - generic [ref=f3e15]: SELAMAT DATANG
+          - button "Shipper" [ref=f3e17]
+        - text: 
+        - generic [ref=f3e21]:
+          - generic [ref=f3e22]:
+            - generic [ref=f3e23]: QA TMS Otomasi
+            - generic [ref=f3e24]: qa-tms-reg1@yopmail.com
+          - generic [ref=f3e25]: 
+          - generic [ref=f3e28]: 
+          - link [ref=f3e34] [cursor=pointer]:
+            - /url: https://phbidlautdemo.prahu-hub.com/user/do_logout
+    - generic [ref=f3e41]:
+      - tabpanel [ref=f3e42]:
+        - generic [ref=f3e45]:
+          - generic [ref=f3e46]:
+            - generic [ref=f3e47]: KELENGKAPAN REGISTRASI Shipper
+            - generic [ref=f3e48]:
+              - generic [ref=f3e49]:
+                - generic [ref=f3e50]: Nama *
+                - textbox "Masukkan Nama Anda" [ref=f3e52]: QA TMS Otomasi
+              - generic [ref=f3e53]:
+                - generic [ref=f3e54]: Nama Perusahaan *
+                - textbox "Masukkan Nama Perusahaan" [ref=f3e56]: PT QA TMS Otomasi
+              - generic [ref=f3e57]:
+                - generic [ref=f3e58]: Provinsi *
+                - generic [ref=f3e60]:
+                  - combobox [ref=f3e61]
+                  - combobox [ref=f3e64] [cursor=pointer]:
+                    - textbox "Pilih Provinsi" [ref=f3e65]
+              - generic [ref=f3e66]:
+                - generic [ref=f3e67]: Kota *
+                - generic [ref=f3e69]:
+                  - combobox [ref=f3e70]
+                  - combobox [ref=f3e73] [cursor=pointer]:
+                    - textbox "Pilih Kota" [ref=f3e74]
+              - generic [ref=f3e75]:
+                - generic [ref=f3e76]: Alamat Perusahaan / Alamat Domisili *
+                - textbox "Masukkan Alamat Lengkap" [ref=f3e78]
+              - generic [ref=f3e79]:
+                - generic [ref=f3e80]: No. Telepon / Whatsapp *
+                - textbox "08xxxxxxxxxx" [ref=f3e82]: "089911224455"
+                - generic [ref=f3e83]: Akan menerima notifikasi WA
+              - generic [ref=f3e84]:
+                - generic [ref=f3e85]: Email *
+                - textbox "Email Perusahaan" [disabled] [ref=f3e87]: qa-tms-reg1@yopmail.com
+                - generic [ref=f3e88]: Akan menerima notifikasi email
+              - generic [ref=f3e89]:
+                - generic [ref=f3e90]: NPWP
+                - generic [ref=f3e92]:
+                  - textbox "Masukkan NPWP" [ref=f3e93]
+                  - generic [ref=f3e94] [cursor=pointer]: Upload file
+                - generic [ref=f3e95]: Maksimal 4MB dengan format .pdf, .jpeg atau .jpg
+              - generic [ref=f3e96]:
+                - generic [ref=f3e97]: No. NPWP Perusahaan
+                - textbox "Masukkan No. NPWP" [ref=f3e99]
+              - generic [ref=f3e100]:
+                - generic [ref=f3e101]: SIUP
+                - generic [ref=f3e103]:
+                  - textbox "Masukkan SIUP" [ref=f3e104]
+                  - generic [ref=f3e105] [cursor=pointer]: Upload file
+                - generic [ref=f3e106]: Maksimal 4MB dengan format .pdf, .jpeg atau .jpg
+              - generic [ref=f3e107]:
+                - generic [ref=f3e108]: No. SIUP
+                - textbox "Masukkan No. SIUP" [ref=f3e110]
+              - generic [ref=f3e111]:
+                - generic [ref=f3e112]: Identitas (KTP / SIM) *
+                - generic [ref=f3e114]:
+                  - textbox "Masukkan Identitas" [ref=f3e115]
+                  - button "Upload File" [ref=f3e116] [cursor=pointer]
+                - generic [ref=f3e117]: Maksimal 4MB dengan format .jpg, .jpeg atau .png
+                - paragraph [ref=f3e118]
+              - generic [ref=f3e120]:
+                - generic [ref=f3e121]: Logo Perusahaan *
+                - generic [ref=f3e123]:
+                  - textbox "Masukkan Logo Perusahaan (Bila Ada)" [ref=f3e124]
+                  - button "Upload File" [ref=f3e125] [cursor=pointer]
+                - generic [ref=f3e126]: Maksimal 4MB dengan format .jpg, .jpeg atau .png
+                - paragraph [ref=f3e127]
+          - button "Registrasi" [ref=f3e130] [cursor=pointer]
+          - generic [ref=f3e131]:
+            - link "Tentang Kami" [ref=f3e133] [cursor=pointer]:
+              - /url: https://www.prahu-hub.com/ph-bid
+            - link "Syarat dan Ketentuan" [ref=f3e135] [cursor=pointer]:
+              - /url: https://phbidlautdemo.prahu-hub.com/home/syarat_ketentuan
+      - generic [ref=f3e136]:
+        - generic [ref=f3e138]:
+          - generic [ref=f3e140]:
+            - link [ref=f3e141] [cursor=pointer]:
+              - /url: https://facebook.com/sosmed.phbid
+            - link [ref=f3e142] [cursor=pointer]:
+              - /url: https://twitter.com/PrahuHub
+            - link [ref=f3e143] [cursor=pointer]:
+              - /url: https://instagram.com/phbid_/
+            - link [ref=f3e144] [cursor=pointer]:
+              - /url: https://www.youtube.com/channel/UC41VntroP3zKmXZYnGgtFdw
+            - link [ref=f3e145] [cursor=pointer]:
+              - /url: http://linkedin.com/in/ph-bid-aa5393211/
+          - generic [ref=f3e147]:
+            - generic [ref=f3e148]:
+              - generic [ref=f3e149]: Layanan Email
+              - link "csct@prahu-hub.com" [ref=f3e151] [cursor=pointer]:
+                - /url: mailto:csct@prahu-hub.com
+            - generic [ref=f3e152]:
+              - generic [ref=f3e153]: Layanan Whatsapp
+              - link "081246665023" [ref=f3e155] [cursor=pointer]:
+                - /url: https://wa.me/6281246665023
+        - generic [ref=f3e156]: © BETA 20260228 v1.3.28 - PH Bid Laut | Digital Logistic Platform
+  - text:    

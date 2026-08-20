@@ -1,0 +1,188 @@
+- generic [active] [ref=f10e1]:
+  - generic [ref=f10e2]:
+    - generic [ref=f10e3]:
+      - generic [ref=f10e4]:
+        - link [ref=f10e6] [cursor=pointer]:
+          - /url: https://phbidlautdemo.prahu-hub.com/
+        - button [ref=f10e10] [cursor=pointer]
+      - text:  
+      - generic [ref=f10e13]:
+        - generic [ref=f10e14]:
+          - generic [ref=f10e15]: PT. Cipta Karya Abadi Sejahtera Sentora Mujur Selalu
+          - button "Shipper" [ref=f10e17]
+        - generic [ref=f10e21]:
+          - generic [ref=f10e22]:
+            - generic [ref=f10e23]: Jaya Wijaya Kartika Abadi Sentosa Wijaya Jaya
+            - generic [ref=f10e24]: pengirim.ph2021@gmail.com
+          - img "assets/photo/1000002490.png" [ref=f10e26]
+          - link "" [ref=f10e27] [cursor=pointer]:
+            - /url: https://phbidlautdemo.prahu-hub.com/home/notification
+          - link [ref=f10e34] [cursor=pointer]:
+            - /url: https://phbidlautdemo.prahu-hub.com/user/do_logout
+    - generic [ref=f10e37]:
+      - generic [ref=f10e38]:
+        - text: 
+        - generic [ref=f10e39]:
+          - list [ref=f10e41]:
+            - listitem
+            - listitem [ref=f10e42]:
+              - link "CARI PENAWARAN" [ref=f10e43] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/lelang/carirute
+            - listitem [ref=f10e44]:
+              - generic [ref=f10e45] [cursor=pointer]:
+                - text: DASHBOARD
+                - generic [ref=f10e48]: 
+              - list [ref=f10e49]:
+                - listitem [ref=f10e50]:
+                  - link "Monitoring Pengiriman" [ref=f10e51] [cursor=pointer]:
+                    - /url: https://phbidlautdemo.prahu-hub.com/home/dashboardorder
+                - listitem [ref=f10e52]:
+                  - link "Grafik Pengiriman" [ref=f10e53] [cursor=pointer]:
+                    - /url: https://phbidlautdemo.prahu-hub.com/home/dashboardpengiriman
+                - listitem [ref=f10e54]:
+                  - link "Ringkasan Analitik" [ref=f10e55] [cursor=pointer]:
+                    - /url: https://phbidlautdemo.prahu-hub.com/dashboardanalitik/ringkasan
+            - listitem [ref=f10e56]:
+              - generic [ref=f10e57] [cursor=pointer]:
+                - text: ANALITIK
+                - generic [ref=f10e60]: 
+            - listitem [ref=f10e61]:
+              - link "PENGAJUAN LELANG" [ref=f10e62] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/lelang/listlelang
+            - listitem [ref=f10e65]:
+              - link "PENGAJUAN NEGO" [ref=f10e66] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/lelang/pengajuannego
+            - listitem [ref=f10e69]:
+              - link "DAFTAR ORDER" [ref=f10e70] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/order/OrderList
+            - listitem [ref=f10e73]:
+              - generic [ref=f10e74] [cursor=pointer]:
+                - text: MASTER
+                - generic [ref=f10e77]: 
+            - listitem [ref=f10e78]:
+              - link "CEK JADWAL" [ref=f10e79] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/lelang/carijadwal
+            - listitem [ref=f10e82]:
+              - generic [ref=f10e83] [cursor=pointer]:
+                - text: LAPORAN
+                - generic [ref=f10e86]: 
+            - listitem [ref=f10e87]:
+              - generic [ref=f10e88] [cursor=pointer]:
+                - text: PENGATURAN AKUN
+                - generic [ref=f10e91]: 
+            - listitem [ref=f10e92]:
+              - link "PREFERENCE NOTIF" [ref=f10e93] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/home/preferenceNotifBidowner
+            - listitem [ref=f10e96]:
+              - link "AKUN SAYA" [ref=f10e97] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/home/akunsaya
+          - generic [ref=f10e102]:
+            - paragraph [ref=f10e104]: KONTAK KAMI
+            - generic [ref=f10e105]:
+              - generic [ref=f10e106]: 
+              - text: "081246665023"
+            - generic [ref=f10e107]:
+              - generic [ref=f10e108]: 
+              - text: "081246665023"
+            - generic [ref=f10e109]:
+              - generic [ref=f10e110]: 
+              - text: csct@prahu-hub.com
+            - generic [ref=f10e111]:
+              - link [ref=f10e112] [cursor=pointer]:
+                - /url: https://facebook.com/sosmed.phbid
+              - link [ref=f10e114] [cursor=pointer]:
+                - /url: https://twitter.com/PrahuHub
+              - link [ref=f10e116] [cursor=pointer]:
+                - /url: https://instagram.com/phbid_/
+              - link [ref=f10e118] [cursor=pointer]:
+                - /url: https://www.youtube.com/channel/UC41VntroP3zKmXZYnGgtFdw
+              - link [ref=f10e120] [cursor=pointer]:
+                - /url: http://linkedin.com/in/ph-bid-aa5393211/
+      - generic [ref=f10e122]:
+        - generic [ref=f10e123]:
+          - generic [ref=f10e124]:
+            - generic [ref=f10e125]:
+              - heading "Dashboard FREKUENSI Pengiriman" [level=3] [ref=f10e126]
+              - generic [ref=f10e127] [cursor=pointer]: Tampilkan Penuh
+            - generic [ref=f10e129]:
+              - generic [ref=f10e130]:
+                - generic [ref=f10e132]:
+                  - generic [ref=f10e133]:
+                    - generic [ref=f10e134]:
+                      - generic [ref=f10e135]: Dari Tanggal *
+                      - textbox "DD/MM/YYYY" [ref=f10e136]: 14/07/2026
+                    - generic [ref=f10e137]: s.d
+                    - generic [ref=f10e139]:
+                      - generic [ref=f10e140]: Sampai Tanggal *
+                      - textbox "DD/MM/YYYY" [ref=f10e141]: 14/08/2026
+                  - text: Maksimal range tanggal 12 Bulan
+                - button " Cari" [ref=f10e143] [cursor=pointer]:
+                  - generic [ref=f10e144]: 
+                  - text: Cari
+              - generic [ref=f10e147]:
+                - generic:
+                  - generic:
+                    - img:
+                      - generic:
+                        - generic [ref=f10e148] [cursor=pointer]
+                        - generic [ref=f10e149] [cursor=pointer]
+                        - generic [ref=f10e150] [cursor=pointer]
+                        - generic [ref=f10e151] [cursor=pointer]
+                        - generic [ref=f10e152] [cursor=pointer]
+                        - generic [ref=f10e153] [cursor=pointer]
+                        - generic [ref=f10e154] [cursor=pointer]
+                        - generic [ref=f10e155] [cursor=pointer]
+                        - generic [ref=f10e156] [cursor=pointer]
+                        - generic [ref=f10e157] [cursor=pointer]
+                        - generic [ref=f10e158] [cursor=pointer]
+                        - generic [ref=f10e159] [cursor=pointer]
+                        - generic [ref=f10e160] [cursor=pointer]
+                        - generic [ref=f10e161] [cursor=pointer]
+                        - generic [ref=f10e162] [cursor=pointer]
+                        - generic [ref=f10e163] [cursor=pointer]
+                        - generic [ref=f10e164] [cursor=pointer]
+                        - generic [ref=f10e165] [cursor=pointer]
+                        - generic [ref=f10e166] [cursor=pointer]
+                        - generic [ref=f10e167] [cursor=pointer]
+                        - generic [ref=f10e168] [cursor=pointer]
+                        - generic [ref=f10e169] [cursor=pointer]
+                        - generic [ref=f10e170] [cursor=pointer]
+                        - generic [ref=f10e171] [cursor=pointer]
+                        - generic [ref=f10e172] [cursor=pointer]
+                        - generic [ref=f10e173] [cursor=pointer]
+                        - generic [ref=f10e174] [cursor=pointer]
+                        - generic [ref=f10e175] [cursor=pointer]
+                        - generic [ref=f10e176] [cursor=pointer]
+                        - generic [ref=f10e177] [cursor=pointer]
+                        - generic [ref=f10e178] [cursor=pointer]
+                        - generic [ref=f10e179] [cursor=pointer]
+                        - generic [ref=f10e180] [cursor=pointer]
+                        - generic [ref=f10e181] [cursor=pointer]
+                  - generic:
+                    - generic [ref=f10e217] [cursor=pointer]: Gorontalo Utara
+                    - generic [ref=f10e220] [cursor=pointer]: Medan
+                - generic [ref=f10e182]:
+                  - button "Zoom in" [ref=f10e183] [cursor=pointer]: +
+                  - button "Zoom out" [ref=f10e184]: −
+          - generic [ref=f10e185]:
+            - generic [ref=f10e186]:
+              - heading "Dashboard Grafik Pengiriman" [level=3] [ref=f10e187]
+              - generic [ref=f10e188] [cursor=pointer]: Tampilkan Penuh
+            - generic [ref=f10e189]:
+              - generic [ref=f10e190]:
+                - generic [ref=f10e192]:
+                  - generic [ref=f10e193]:
+                    - generic [ref=f10e194]:
+                      - generic [ref=f10e195]: Dari Tanggal *
+                      - textbox "DD/MM/YYYY" [ref=f10e196]: 14/07/2026
+                    - generic [ref=f10e197]: s.d
+                    - generic [ref=f10e199]:
+                      - generic [ref=f10e200]: Sampai Tanggal *
+                      - textbox "DD/MM/YYYY" [ref=f10e201]: 14/08/2026
+                  - text: Maksimal range tanggal 12 Bulan
+                - button " Cari" [ref=f10e203] [cursor=pointer]:
+                  - generic [ref=f10e204]: 
+                  - text: Cari
+              - generic [ref=f10e205]: Jumlah Pengiriman
+        - paragraph [ref=f10e215]: © BETA 20260228 v1.3.28 - PH Bid Laut | Digital Logistic Platform
+  - text:  

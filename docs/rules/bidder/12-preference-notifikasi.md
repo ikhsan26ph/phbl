@@ -1,0 +1,22 @@
+# Preference Notifikasi
+
+            - Pada menu ini bidder akun utama dapat melakukan setting notifikasi yang ingin diterima
+            - Menu setting preference notifikasi ini hanya dapat digunakan pada akun utama saja. Untuk akun sub user tidak dapat melakukan setting preference notifikasi
+            - Daftar notifikasi email yang dapat dilakukan setting preference notifikasi oleh bidder antara lain : Notifikasi perubahan data diterima, notif perubahan data ditolak, notif pengajuan lelang, notif lelang Dibatalkan, notif pengajuan nego, notif request update harga, notif bidder kalah lelang, dan notif validasi perjanjian bid owner diterima
+            - Notifikasi WhatsApp yang sebelumnya dikirim ke Bidder telah dinonaktifkan. Sebagai penggantinya, seluruh notifikasi Bidder diterima melalui push notifikasi.
+            - Notifikasi whatsapp yang diterima oleh Bidder hanya terdiri dari Lupa Kata Sandi akun saja
+            - Untuk menyesuaikan jenis push notifikasi yang diterima, Bidder dapat mengelola pengaturannya melalui section Notifikasi Sistem. Daftar push notifikasi yang dapat dilakukan setting preference oleh Bidder terdiri dari :
+              - Notif Perubahan Data Diterima
+              - Notif Perubahan Data Ditolak
+              - Notif Pengajuan Lelang
+              - Notif Lelang Dibatalkan
+              - Notif Pengajuan Nego
+              - Notif Request Update Harga
+              - Notif Validasi Perjanjian Bid Owner Diterima
+              - Notif Bid Owner Request Jadwal
+            - Untuk mengaktifkan setting preference notifikasi, dapat dilakukan dengan melakukan checklist pada daftar notif. Sedangkan untuk menonaktifkan setting preference notifikasi, dapat dilakukan dengan melakukan unchecklist pada daftar notif
+            - Secara default untuk preference notif Email dan notif Sistem tampil Aktif
+            - Jika Bidder akun utama mengaktifkan preference notifikasi email / push notif, maka Bidder akun utama akan menerima notifikasi sesuai dengan yang dipilih
+            - Jika Bidder akun utama menonaktifkan preference notifikasi email / push notif, maka Bidder akun utama tidak akan menerima notifikasi sesuai dengan yang dinonaktifkan. Di Sisi kanan notif akan tampil tambahan label “Tidak Aktif”
+            - Notifikasi email akan menampilkan nomor referensi jika ada. Jika nomor referensi tidak diisikan maka pada email akan ditampilkan dengan tanda strip (-).
+            - Pada BIDDER penambahan Nomor Referensi ini tampil pada notifikasi : Notif Perjanjian Pengiriman Berhasil Divalidasi

@@ -1,0 +1,230 @@
+- generic [ref=f27e3]:
+  - banner [ref=f27e4]:
+    - generic [ref=f27e5]:
+      - link [ref=f27e7] [cursor=pointer]:
+        - /url: .
+      - navigation [ref=f27e8]:
+        - generic [ref=f27e10]:
+          - link " Home" [ref=f27e11] [cursor=pointer]:
+            - /url: .
+            - generic [ref=f27e12]: 
+            - text: Home
+          - link " Donate" [ref=f27e13] [cursor=pointer]:
+            - /url: donate
+            - generic [ref=f27e14]: 
+            - text: Donate
+          - link " Domains" [ref=f27e15] [cursor=pointer]:
+            - /url: add-domain
+            - generic [ref=f27e16]: 
+            - text: Domains
+          - link " Random" [ref=f27e17] [cursor=pointer]:
+            - /url: email-generator
+            - generic [ref=f27e18]: 
+            - text: Random
+        - generic [ref=f27e23]:
+          - generic [ref=f27e24]:
+            - img "Temporary Email" [ref=f27e25]
+            - text: English
+          - generic [ref=f27e26]: 
+  - main [ref=f27e31]:
+    - generic [ref=f27e33]:
+      - generic [ref=f27e34]: ikbidowner@yopmail.com
+      - generic [ref=f27e35]:
+        - generic [ref=f27e36]:
+          - text: Alias
+          - button "" [ref=f27e37] [cursor=pointer]
+          - text: ":"
+        - generic [ref=f27e39]:
+          - emphasis [ref=f27e83]: alt.fi-2ofkqe9
+          - text: "@yopmail.com"
+        - button "" [ref=f27e42] [cursor=pointer]
+    - generic [ref=f27e44]:
+      - generic [ref=f27e46]:
+        - generic [ref=f27e47]:
+          - button "" [ref=f27e49] [cursor=pointer]
+          - button "" [disabled] [ref=f27e52]
+          - button "" [ref=f27e56] [cursor=pointer]
+          - generic [ref=f27e58]:
+            - button "" [disabled] [ref=f27e60]
+            - generic [ref=f27e62]: page 1
+            - button "" [disabled] [ref=f27e64]
+          - generic [ref=f27e66]: 4 mails
+          - button "" [ref=f27e69] [cursor=pointer]
+        - iframe [active] [ref=f27e72]:
+          - generic [ref=f28e2]:
+            - generic [ref=f28e3]: today
+            - generic [ref=f28e4]:
+              - checkbox [ref=f28e6]
+              - button "8:16 Prahu-Hub [PH Bid Laut DEV] Kirim Ulang Kode Verifikasi Lupa Kata Sandi" [active] [ref=f28e7] [cursor=pointer]:
+                - generic [ref=f28e8]:
+                  - generic [ref=f28e9]: 8:16
+                  - generic [ref=f28e10]: Prahu-Hub
+                - generic [ref=f28e11]: "[PH Bid Laut DEV] Kirim Ulang Kode Verifikasi Lupa Kata Sandi"
+            - generic [ref=f28e12]:
+              - checkbox [ref=f28e14]
+              - button "8:05 Prahu-Hub [PH Bid Laut DEV] Kode Verifikasi Lupa Kata Sandi" [ref=f28e15] [cursor=pointer]:
+                - generic [ref=f28e16]:
+                  - generic [ref=f28e17]: 8:05
+                  - generic [ref=f28e18]: Prahu-Hub
+                - generic [ref=f28e19]: "[PH Bid Laut DEV] Kode Verifikasi Lupa Kata Sandi"
+            - generic [ref=f28e20]: Tuesday
+            - generic [ref=f28e21]:
+              - checkbox [ref=f28e23]
+              - button "8:53 Prahu-Hub [PH Bid Laut DEV] Kelengkapan Data Unit Order ********-*****" [ref=f28e24] [cursor=pointer]:
+                - generic [ref=f28e25]:
+                  - generic [ref=f28e26]: 8:53
+                  - generic [ref=f28e27]: Prahu-Hub
+                - generic [ref=f28e28]: "[PH Bid Laut DEV] Kelengkapan Data Unit Order ********-*****"
+            - generic [ref=f28e29]:
+              - checkbox [ref=f28e31]
+              - button "8:53 Prahu-Hub [PH Bid Laut DEV] Kelengkapan Data Unit Order ********-*****" [ref=f28e32] [cursor=pointer]:
+                - generic [ref=f28e33]:
+                  - generic [ref=f28e34]: 8:53
+                  - generic [ref=f28e35]: Prahu-Hub
+                - generic [ref=f28e36]: "[PH Bid Laut DEV] Kelengkapan Data Unit Order ********-*****"
+      - iframe [ref=f27e78]:
+        - generic [ref=f30e1]:
+          - banner [ref=f30e2]:
+            - generic [ref=f30e3]:
+              - generic [ref=f30e4]:
+                - button " Deliverability" [ref=f30e5] [cursor=pointer]:
+                  - generic [ref=f30e6]: 
+                  - generic [ref=f30e7]: Deliverability
+                - generic [ref=f30e8]:
+                  - button " Reply" [ref=f30e9] [cursor=pointer]:
+                    - generic [ref=f30e10]: 
+                    - generic [ref=f30e11]: Reply
+                  - button " Forward" [ref=f30e12] [cursor=pointer]:
+                    - generic [ref=f30e13]: 
+                    - generic [ref=f30e14]: Forward
+              - button " Print" [ref=f30e15] [cursor=pointer]:
+                - generic [ref=f30e16]: 
+                - generic [ref=f30e17]: Print
+              - button " Delete" [ref=f30e18] [cursor=pointer]:
+                - generic [ref=f30e19]: 
+                - generic [ref=f30e20]: Delete
+              - button "" [ref=f30e21] [cursor=pointer]
+            - generic [ref=f30e23]:
+              - generic [ref=f30e24]: "[PH Bid Laut DEV] Kirim Ulang Kode Verifikasi Lupa Kata Sandi"
+              - generic [ref=f30e25]:
+                - generic [ref=f30e26]: 
+                - generic [ref=f30e27]: Prahu-Hub <info@prahu-hub.com>
+              - generic [ref=f30e28]:
+                - generic [ref=f30e29]: 
+                - generic [ref=f30e30]: Thursday, August 13, 2026 8:16:45 AM
+              - button " Show pictures" [ref=f30e32] [cursor=pointer]:
+                - generic [ref=f30e33]: 
+                - generic [ref=f30e34]: Show pictures
+          - main [ref=f30e35]:
+            - generic [ref=f30e38]:
+              - table [ref=f30e39]:
+                - rowgroup [ref=f30e40]:
+                  - row [ref=f30e41]:
+                    - 'cell "Kode Verifikasi Lupa Kata Sandi (Kirim Ulang) Yth. Shipper PH Bid, Anda telah melakukan lupa kata sandi di akun PH Bid. Untuk konfirmasi email Anda, silahkan masukkan kode verifikasi berikut pada halaman verifikasi. 619120 Kode ini hanya berlaku selama 5 menit. Jangan beritahukan kode ini kepada siapapun! Verifikasi Email Sayaimg img Demi keamanan data Anda, Jangan beritahu email ini kepada siapapun < img PT. Aplikasi Tepat Guna Layanan Pelanggan 24 Jam : img csct@prahu-hub.com img 081246665023 © BETA 20260228 v1.3.28 - PH Bid Laut | Digital Logistic Platform" [ref=f30e42]':
+                      - table [ref=f30e43]:
+                        - rowgroup [ref=f30e44]:
+                          - row [ref=f30e45]:
+                            - cell [ref=f30e46]
+                            - cell [ref=f30e47]:
+                              - table [ref=f30e48]:
+                                - rowgroup [ref=f30e49]:
+                                  - row [ref=f30e50]:
+                                    - cell [ref=f30e51]
+                            - cell [ref=f30e53]
+                          - row [ref=f30e54]:
+                            - cell [ref=f30e55]
+                            - 'cell "Kode Verifikasi Lupa Kata Sandi (Kirim Ulang) Yth. Shipper PH Bid, Anda telah melakukan lupa kata sandi di akun PH Bid. Untuk konfirmasi email Anda, silahkan masukkan kode verifikasi berikut pada halaman verifikasi. 619120 Kode ini hanya berlaku selama 5 menit. Jangan beritahukan kode ini kepada siapapun! Verifikasi Email Sayaimg img Demi keamanan data Anda, Jangan beritahu email ini kepada siapapun < img PT. Aplikasi Tepat Guna Layanan Pelanggan 24 Jam : img csct@prahu-hub.com img 081246665023 © BETA 20260228 v1.3.28 - PH Bid Laut | Digital Logistic Platform" [ref=f30e56]':
+                              - table [ref=f30e57]
+                              - table [ref=f30e58]:
+                                - rowgroup [ref=f30e59]:
+                                  - row [ref=f30e60]:
+                                    - cell [ref=f30e61]:
+                                      - link:
+                                        - /url: http://xx3o3.mjt.lu/lnk/AXMAAKK7jF0AAAAAAAAAAe8yp7YAAAAATGMAAAAAAAzmfwBqfRr9iKSL0z1XSsud_USf8uttsAAM4Zo/1/B8QYCQLq9a29aJGwPta-og/aHR0cHM6Ly9waGJpZGxhdXRkZW1vLnByYWh1LWh1Yi5jb20vdXNlci9sb2dpbg
+                              - table [ref=f30e64]:
+                                - rowgroup [ref=f30e65]:
+                                  - row [ref=f30e66]:
+                                    - cell "Kode Verifikasi Lupa Kata Sandi (Kirim Ulang) Yth. Shipper PH Bid, Anda telah melakukan lupa kata sandi di akun PH Bid. Untuk konfirmasi email Anda, silahkan masukkan kode verifikasi berikut pada halaman verifikasi. 619120 Kode ini hanya berlaku selama 5 menit. Jangan beritahukan kode ini kepada siapapun! Verifikasi Email Sayaimg img Demi keamanan data Anda, Jangan beritahu email ini kepada siapapun" [ref=f30e67]:
+                                      - generic [ref=f30e69]:
+                                        - heading "Kode Verifikasi Lupa Kata Sandi (Kirim Ulang)" [level=4] [ref=f30e70]
+                                        - heading "Yth. Shipper PH Bid," [level=5] [ref=f30e71]
+                                        - paragraph [ref=f30e72]: Anda telah melakukan lupa kata sandi di akun PH Bid. Untuk konfirmasi email Anda, silahkan masukkan kode verifikasi berikut pada halaman verifikasi.
+                                        - generic [ref=f30e73]: "619120"
+                                        - paragraph [ref=f30e74]: Kode ini hanya berlaku selama 5 menit. Jangan beritahukan kode ini kepada siapapun!
+                                      - table [ref=f30e76]:
+                                        - rowgroup [ref=f30e77]:
+                                          - row [ref=f30e78]:
+                                            - cell [ref=f30e79]:
+                                              - link [ref=f30e80] [cursor=pointer]:
+                                                - /url: user/forgotpassword/?metod=verification&email=ikbidowner@yopmail.com&kode=NjE5MTIw
+                                                - generic [ref=f30e82]:
+                                                  - text: Verifikasi Email Saya
+                                                  - img "img" [ref=f30e83]
+                                      - paragraph [ref=f30e86]:
+                                        - img "img" [ref=f30e88]
+                                        - text: Demi keamanan data Anda, Jangan beritahu email ini kepada siapapun
+                              - table [ref=f30e89]:
+                                - rowgroup [ref=f30e90]:
+                                  - row [ref=f30e91]:
+                                    - cell [ref=f30e92]
+                              - text: <
+                              - table [ref=f30e94]:
+                                - rowgroup [ref=f30e95]:
+                                  - row [ref=f30e96]:
+                                    - cell [ref=f30e97]
+                              - table [ref=f30e99]:
+                                - rowgroup [ref=f30e100]:
+                                  - row [ref=f30e101]:
+                                    - cell [ref=f30e102]:
+                                      - table [ref=f30e103]:
+                                        - rowgroup [ref=f30e104]:
+                                          - row [ref=f30e105]:
+                                            - cell "img" [ref=f30e106]:
+                                              - link [ref=f30e108] [cursor=pointer]:
+                                                - /url: http://xx3o3.mjt.lu/lnk/AXMAAKK7jF0AAAAAAAAAAe8yp7YAAAAATGMAAAAAAAzmfwBqfRr9iKSL0z1XSsud_USf8uttsAAM4Zo/2/l9BbhpG8-Bs21meIuwlXhQ/aHR0cHM6Ly93d3cucHJhaHUtaHViLmNvbQ
+                                                - img "img" [ref=f30e109]
+                                              - generic [ref=f30e111]:
+                                                - link [ref=f30e112] [cursor=pointer]:
+                                                  - /url: http://xx3o3.mjt.lu/lnk/AXMAAKK7jF0AAAAAAAAAAe8yp7YAAAAATGMAAAAAAAzmfwBqfRr9iKSL0z1XSsud_USf8uttsAAM4Zo/3/IOuJzQsFzFGG_govos40eA/aHR0cDovL2ZhY2Vib29rLmNvbS9zb3NtZWQucGhiaWQ
+                                                - link [ref=f30e113] [cursor=pointer]:
+                                                  - /url: http://xx3o3.mjt.lu/lnk/AXMAAKK7jF0AAAAAAAAAAe8yp7YAAAAATGMAAAAAAAzmfwBqfRr9iKSL0z1XSsud_USf8uttsAAM4Zo/4/3wCXNCXkRxkSNoVQdNbEfw/aHR0cDovL3R3aXR0ZXIuY29tL1ByYWh1SHVi
+                                                - link [ref=f30e114] [cursor=pointer]:
+                                                  - /url: http://xx3o3.mjt.lu/lnk/AXMAAKK7jF0AAAAAAAAAAe8yp7YAAAAATGMAAAAAAAzmfwBqfRr9iKSL0z1XSsud_USf8uttsAAM4Zo/5/tRt_z3YDcgiBQYDdKPoj-A/aHR0cDovL2luc3RhZ3JhbS5jb20vcGhiaWRfLw
+                                                - link [ref=f30e115] [cursor=pointer]:
+                                                  - /url: http://xx3o3.mjt.lu/lnk/AXMAAKK7jF0AAAAAAAAAAe8yp7YAAAAATGMAAAAAAAzmfwBqfRr9iKSL0z1XSsud_USf8uttsAAM4Zo/6/hUqW2dNJgTOwiJeLXJcn7w/aHR0cHM6Ly93d3cueW91dHViZS5jb20vY2hhbm5lbC9VQzQxVm50cm9QM3pLbVhaWW5HZ3RGZHc
+                                                - link:
+                                                  - /url: http://xx3o3.mjt.lu/lnk/AXMAAKK7jF0AAAAAAAAAAe8yp7YAAAAATGMAAAAAAAzmfwBqfRr9iKSL0z1XSsud_USf8uttsAAM4Zo/7/5NHVSvzf8496OToxHCpqyA/aHR0cDovL2xpbmtlZGluLmNvbS9pbi9waC1iaWQtYWE1MzkzMjExLw
+                                            - cell [ref=f30e116]
+                                    - cell [ref=f30e117]:
+                                      - table [ref=f30e118]:
+                                        - rowgroup [ref=f30e119]:
+                                          - row [ref=f30e120]:
+                                            - 'cell "PT. Aplikasi Tepat Guna Layanan Pelanggan 24 Jam : img csct@prahu-hub.com img 081246665023" [ref=f30e121]':
+                                              - generic [ref=f30e123]: PT. Aplikasi Tepat Guna
+                                              - generic [ref=f30e126]: "Layanan Pelanggan 24 Jam :"
+                                              - generic [ref=f30e130]:
+                                                - img "img" [ref=f30e131]
+                                                - link "csct@prahu-hub.com" [ref=f30e132] [cursor=pointer]:
+                                                  - /url: mailto:csct@prahu-hub.com
+                                              - generic [ref=f30e134]:
+                                                - img "img" [ref=f30e135]
+                                                - link "081246665023" [ref=f30e136] [cursor=pointer]:
+                                                  - /url: http://xx3o3.mjt.lu/lnk/AXMAAKK7jF0AAAAAAAAAAe8yp7YAAAAATGMAAAAAAAzmfwBqfRr9iKSL0z1XSsud_USf8uttsAAM4Zo/8/KMPsMJOGZjnGfmK29A14EA/aHR0cHM6Ly93YS5tZS8wODEyNDY2NjUwMjM_
+                              - table [ref=f30e137]:
+                                - rowgroup [ref=f30e138]:
+                                  - row [ref=f30e139]:
+                                    - cell [ref=f30e140]:
+                                      - table [ref=f30e142]:
+                                        - rowgroup [ref=f30e143]:
+                                          - row [ref=f30e144]:
+                                            - cell "© BETA 20260228 v1.3.28 - PH Bid Laut | Digital Logistic Platform" [ref=f30e145]
+                            - cell [ref=f30e148]
+              - link:
+                - /url: http://xx3o3.mjt.lu/lnk/AXMAAKK7jF0AAAAAAAAAAe8yp7YAAAAATGMAAAAAAAzmfwBqfRr9iKSL0z1XSsud_USf8uttsAAM4Zo/0/J_yQrArAlpBvZvim-Cpw5A/aHR0cHM6Ly9waGJpZGxhdXRkZW1vLnByYWh1LWh1Yi5jb20vdXNlci9sb2dpbg?b=1
+              - link [ref=f30e149] [cursor=pointer]:
+                - /url: http://xx3o3.mjt.lu/lnk/AXMAAKK7jF0AAAAAAAAAAe8yp7YAAAAATGMAAAAAAAzmfwBqfRr9iKSL0z1XSsud_USf8uttsAAM4Zo/0/J_yQrArAlpBvZvim-Cpw5A/aHR0cHM6Ly9waGJpZGxhdXRkZW1vLnByYWh1LWh1Yi5jb20vdXNlci9sb2dpbg?b=3
+              - link:
+                - /url: http://xx3o3.mjt.lu/lnk/AXMAAKK7jF0AAAAAAAAAAe8yp7YAAAAATGMAAAAAAAzmfwBqfRr9iKSL0z1XSsud_USf8uttsAAM4Zo/0/J_yQrArAlpBvZvim-Cpw5A/aHR0cHM6Ly9waGJpZGxhdXRkZW1vLnByYWh1LWh1Yi5jb20vdXNlci9sb2dpbg?b=1
+              - link [ref=f30e150] [cursor=pointer]:
+                - /url: http://xx3o3.mjt.lu/lnk/AXMAAKK7jF0AAAAAAAAAAe8yp7YAAAAATGMAAAAAAAzmfwBqfRr9iKSL0z1XSsud_USf8uttsAAM4Zo/0/J_yQrArAlpBvZvim-Cpw5A/aHR0cHM6Ly9waGJpZGxhdXRkZW1vLnByYWh1LWh1Yi5jb20vdXNlci9sb2dpbg?b=3
+  - contentinfo [ref=f27e81]

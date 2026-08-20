@@ -1,0 +1,48 @@
+- generic [ref=f18e3]:
+  - banner [ref=f18e4]:
+    - generic [ref=f18e5]:
+      - link [ref=f18e7] [cursor=pointer]:
+        - /url: .
+      - navigation [ref=f18e8]:
+        - generic [ref=f18e10]:
+          - link " Home" [ref=f18e11] [cursor=pointer]:
+            - /url: .
+            - generic [ref=f18e12]: 
+            - text: Home
+          - link " Donate" [ref=f18e13] [cursor=pointer]:
+            - /url: donate
+            - generic [ref=f18e14]: 
+            - text: Donate
+          - link " Domains" [ref=f18e15] [cursor=pointer]:
+            - /url: add-domain
+            - generic [ref=f18e16]: 
+            - text: Domains
+          - link " Random" [ref=f18e17] [cursor=pointer]:
+            - /url: email-generator
+            - generic [ref=f18e18]: 
+            - text: Random
+        - generic [ref=f18e24]:
+          - generic [ref=f18e25]:
+            - img "Temporary Email" [ref=f18e26]
+            - text: English
+          - generic [ref=f18e27]: 
+  - main [ref=f18e32]:
+    - generic [ref=f18e34]:
+      - generic [ref=f18e35]: qa-tms-reg1@yopmail.com
+      - generic [ref=f18e37]:
+        - text: Alias
+        - button "" [ref=f18e38] [cursor=pointer]
+        - text: ":"
+    - generic [ref=f18e42]:
+      - generic [ref=f18e43]:
+        - button "" [ref=f18e45] [cursor=pointer]
+        - button "" [disabled] [ref=f18e48]
+        - button "" [disabled] [ref=f18e52]
+        - generic [ref=f18e54]:
+          - button "" [disabled] [ref=f18e56]
+          - generic [ref=f18e58]: page 1
+          - button "" [disabled] [ref=f18e60]
+        - button "" [ref=f18e65] [cursor=pointer]
+      - iframe [ref=f18e68]:
+        
+  - contentinfo [ref=f18e76]

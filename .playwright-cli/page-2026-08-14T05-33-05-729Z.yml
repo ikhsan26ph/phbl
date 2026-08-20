@@ -1,0 +1,215 @@
+- generic [ref=f5e1]:
+  - generic [ref=f5e2]:
+    - generic [ref=f5e3]:
+      - generic [ref=f5e4]:
+        - link [ref=f5e6] [cursor=pointer]:
+          - /url: https://phbidlautdemo.prahu-hub.com/
+        - button [ref=f5e10] [cursor=pointer]
+      - text:  
+      - generic [ref=f5e13]:
+        - generic [ref=f5e14]:
+          - generic [ref=f5e15]: PT. Cipta Karya Abadi Sejahtera Sentora Mujur Selalu
+          - button "Shipper" [ref=f5e17]
+        - generic [ref=f5e21]:
+          - generic [ref=f5e22]:
+            - generic [ref=f5e23]: Jaya Wijaya Kartika Abadi Sentosa Wijaya Jaya
+            - generic [ref=f5e24]: pengirim.ph2021@gmail.com
+          - img "assets/photo/1000002490.png" [ref=f5e26]
+          - link "" [ref=f5e27] [cursor=pointer]:
+            - /url: https://phbidlautdemo.prahu-hub.com/home/notification
+          - link [ref=f5e34] [cursor=pointer]:
+            - /url: https://phbidlautdemo.prahu-hub.com/user/do_logout
+    - generic [ref=f5e37]:
+      - generic [ref=f5e38]:
+        - text: 
+        - generic [ref=f5e39]:
+          - list [ref=f5e41]:
+            - listitem
+            - listitem [ref=f5e42]:
+              - link "CARI PENAWARAN" [ref=f5e43] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/lelang/carirute
+            - listitem [ref=f5e44]:
+              - generic [ref=f5e45] [cursor=pointer]:
+                - text: DASHBOARD
+                - generic [ref=f5e48]: 
+            - listitem [ref=f5e49]:
+              - generic [ref=f5e50] [cursor=pointer]:
+                - text: ANALITIK
+                - generic [ref=f5e53]: 
+            - listitem [ref=f5e54]:
+              - link "PENGAJUAN LELANG" [ref=f5e55] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/lelang/listlelang
+            - listitem [ref=f5e58]:
+              - link "PENGAJUAN NEGO" [ref=f5e59] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/lelang/pengajuannego
+            - listitem [ref=f5e62]:
+              - link "DAFTAR ORDER" [ref=f5e63] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/order/OrderList
+            - listitem [ref=f5e66]:
+              - generic [ref=f5e67] [cursor=pointer]:
+                - text: MASTER
+                - generic [ref=f5e70]: 
+            - listitem [ref=f5e71]:
+              - link "CEK JADWAL" [ref=f5e72] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/lelang/carijadwal
+            - listitem [ref=f5e75]:
+              - generic [ref=f5e76] [cursor=pointer]:
+                - text: LAPORAN
+                - generic [ref=f5e79]: 
+            - listitem [ref=f5e80]:
+              - generic [ref=f5e81] [cursor=pointer]:
+                - text: PENGATURAN AKUN
+                - generic [ref=f5e84]: 
+            - listitem [ref=f5e85]:
+              - link "PREFERENCE NOTIF" [ref=f5e86] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/home/preferenceNotifBidowner
+            - listitem [ref=f5e89]:
+              - link "AKUN SAYA" [ref=f5e90] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/home/akunsaya
+          - generic [ref=f5e95]:
+            - paragraph [ref=f5e97]: KONTAK KAMI
+            - generic [ref=f5e98]:
+              - generic [ref=f5e99]: 
+              - text: "081246665023"
+            - generic [ref=f5e100]:
+              - generic [ref=f5e101]: 
+              - text: "081246665023"
+            - generic [ref=f5e102]:
+              - generic [ref=f5e103]: 
+              - text: csct@prahu-hub.com
+            - generic [ref=f5e104]:
+              - link [ref=f5e105] [cursor=pointer]:
+                - /url: https://facebook.com/sosmed.phbid
+              - link [ref=f5e107] [cursor=pointer]:
+                - /url: https://twitter.com/PrahuHub
+              - link [ref=f5e109] [cursor=pointer]:
+                - /url: https://instagram.com/phbid_/
+              - link [ref=f5e111] [cursor=pointer]:
+                - /url: https://www.youtube.com/channel/UC41VntroP3zKmXZYnGgtFdw
+              - link [ref=f5e113] [cursor=pointer]:
+                - /url: http://linkedin.com/in/ph-bid-aa5393211/
+      - generic [ref=f5e115]:
+        - generic [ref=f5e116]:
+          - generic [ref=f5e119]:
+            - link "Beranda" [ref=f5e121] [cursor=pointer]:
+              - /url: https://phbidlautdemo.prahu-hub.com/lelang/carirute
+            - text: / Cek Jadwal Pelayaran
+          - generic [ref=f5e122]: CEK JADWAL PELAYARAN
+          - tabpanel [ref=f5e126]:
+            - generic [ref=f5e130]:
+              - generic [ref=f5e132]:
+                - generic [ref=f5e133]: Pelayaran *
+                - generic [ref=f5e136]:
+                  - combobox [disabled] [ref=f5e137]
+                  - combobox [disabled] [ref=f5e140]:
+                    - textbox "Meratus" [disabled] [ref=f5e141]
+                - text: Sementara waktu pelayaran yang tersedia masih MERATUS
+              - generic [ref=f5e143]:
+                - generic [ref=f5e145]:
+                  - generic [ref=f5e146]: Pelabuhan Asal (POL) *
+                  - generic [ref=f5e149]:
+                    - combobox [ref=f5e150]
+                    - combobox [expanded] [ref=f5e153] [cursor=pointer]:
+                      - textbox "Pilih Pelabuhan Asal" [ref=f5e154]
+                      - listbox [expanded] [ref=f5e215]:
+                        - option "Pilih Pelabuhan Asal" [selected] [ref=f5e354]
+                        - option "Ambon (AMQ) - Kota Ambon" [ref=f5e355]
+                        - option "Anggrek (AGR) - Kab. Gorontalo Utara" [ref=f5e356]
+                        - option "Atambua (ABU) - Kab. Belu" [ref=f5e357]
+                        - option "AUTOTEST-FIXTURE-PELABUHAN-01 (ZZAF1) - Kota Surabaya" [ref=f5e358]
+                        - option "Badas (PBB) - Kab. Sumbawa" [ref=f5e359]
+                        - option "Balikpapan (BPN) - Kota Balikpapan" [ref=f5e360]
+                        - option "Banggai (BGG) - Kab. Banggai Laut" [ref=f5e361]
+                        - option "Banjarmasin (BDJ) - Kota Banjarmasin" [ref=f5e362]
+                        - option "Batam (BTM) - Kota Batam" [ref=f5e363]
+                        - option "Belawan (BLW) - Kota Medan" [ref=f5e364]
+                        - option "Bengkulu (BKS) - Kota Bengkulu" [ref=f5e365]
+                        - option "Benoa (BOA) - Kota Denpasar" [ref=f5e366]
+                        - option "Biak (BIK) - Kab. Biak Numfor" [ref=f5e367]
+                        - option "Bima (BMU) - Kota Bima" [ref=f5e368]
+                        - option "Bitung (BIT) - Kota Bitung" [ref=f5e369]
+                        - option "Dobo (DOB) - Kab. Kepulauan Aru" [ref=f5e370]
+                        - option "Dumai (DUM) - Kota Dumai" [ref=f5e371]
+                        - option "Ende (ENE) - Kab. Ende" [ref=f5e372]
+                        - option "Fakfak (FKQ) - Kab. Fakfak" [ref=f5e373]
+                        - option "Gorontalo (GTO) - Kota Gorontalo" [ref=f5e374]
+                        - option "Jayapura (DJJ) - Kota Jayapura" [ref=f5e375]
+                        - option "Kalabahi (KBH) - Kab. Alor" [ref=f5e376]
+                        - option "Kendari (KDI) - Kota Kendari" [ref=f5e377]
+                        - option "Kumai (KUM) - Kab. Kotawaringin Barat" [ref=f5e378]
+                        - option "Kupang (KOE) - Kota Kupang" [ref=f5e379]
+                        - option "Labuan Bajo (LBJ) - Kab. Manggarai Barat" [ref=f5e380]
+                        - option "Lombok (LOM) - Kab. Lombok Barat" [ref=f5e381]
+                        - option "Luwuk (LUW) - Kab. Banggai" [ref=f5e382]
+                        - option "Makassar (MAK) - Kota Makassar" [ref=f5e383]
+                        - option "Mamuju (MJU) - Kab. Mamuju" [ref=f5e384]
+                        - option "Manado (MDC) - Kota Manado" [ref=f5e385]
+                        - option "Manokwari (MKW) - Kab. Manokwari" [ref=f5e386]
+                        - option "Maumere (MOF) - Kab. Sikka" [ref=f5e387]
+                        - option "Medan (MES) - Kota Medan" [ref=f5e388]
+                        - option "Merauke (MKQ) - Kab. Merauke" [ref=f5e389]
+                        - option "Nunukan (NNX) - Kab. Nunukan" [ref=f5e390]
+                        - option "Nusantara Raha (RAQ) - Kab. Muna" [ref=f5e391]
+                        - option "Obi (OBI) - Kab. Halmahera Selatan" [ref=f5e392]
+                        - option "Pangkal Balam (PGX) - Kota Pangkal Pinang" [ref=f5e393]
+                        - option "Panjang (PNJ) - Kota Bandar Lampung" [ref=f5e394]
+                        - option "Pantoloan (PAL) - Kota Palu" [ref=f5e395]
+                        - option "Pekanbaru Perawang (PER) - Kota Pekanbaru" [ref=f5e396]
+                        - option "Pelambang (PLM) - Kota Palembang" [ref=f5e397]
+                        - option "Pontianak (PNK) - Kota Pontianak" [ref=f5e398]
+                        - option "Reo (REO) - Kab. Manggarai" [ref=f5e399]
+                        - option "Samarinda (SRI) - Kota Samarinda" [ref=f5e400]
+                        - option "Sampit (SMQ) - Kab. Kotawaringin Timur" [ref=f5e401]
+                        - option "Sibolga (SLG) - Kota Sibolga" [ref=f5e402]
+                        - option "Sorong (SOQ) - Kota Sorong" [ref=f5e403]
+                        - option "Tangkiang (TGK) - Kab. Banggai" [ref=f5e404]
+                        - option "Tanjung Emas (SRG) - Kota Semarang" [ref=f5e405]
+                        - option "Tanjung Pandan (TJQ) - Kab. Belitung" [ref=f5e406]
+                        - option "Tanjung Perak (SUB) - Kota Surabaya" [ref=f5e407]
+                        - option "Tanjung Pinang (TNJ) - Kota Tanjung Pinang" [ref=f5e408]
+                        - option "Tanjung Priok (JKT) - Kota Jakarta Utara" [ref=f5e409]
+                        - option "Tarakan (TRK) - Kota Tarakan" [ref=f5e410]
+                        - option "Teluk Bayur (PDG) - Kota Padang" [ref=f5e411]
+                        - option "Ternate (TTE) - Kota Ternate" [ref=f5e412]
+                        - option "Testing (TEST) - Kota Surabaya" [ref=f5e413]
+                        - option "Timika (TMK) - Kab. Mimika" [ref=f5e414]
+                        - option "Tobelo (TBO) - Kab. Halmahera Utara" [ref=f5e415]
+                        - option "Tolitoli (TLI) - Kab. Toli-Toli" [ref=f5e416]
+                        - option "Tual (TUA) - Kota Tual" [ref=f5e417]
+                - generic [ref=f5e156]:
+                  - generic [ref=f5e157]: Pelabuhan Tujuan (POD) *
+                  - generic [ref=f5e160]:
+                    - combobox [ref=f5e161]
+                    - combobox "Pilih Pelabuhan Asal" [ref=f5e164] [cursor=pointer]:
+                      - textbox "Makassar (MAK) - Kota Makassar" [ref=f5e353]
+              - generic [ref=f5e167]:
+                - generic [ref=f5e168]: Sortir *
+                - generic [ref=f5e171]:
+                  - combobox [ref=f5e172]
+                  - combobox "Pilih Pelabuhan Asal" [ref=f5e175] [cursor=pointer]:
+                    - textbox "Tanggal Berangkat Terdekat" [ref=f5e176]
+              - generic [ref=f5e178]:
+                - generic [ref=f5e179]: Tanggal Pengiriman *
+                - generic [ref=f5e180]:
+                  - textbox "DD/MM/YYYY" [ref=f5e181]: 14/08/2026
+                  - generic [ref=f5e182]: 
+                - text: Default tanggal hari ini
+              - generic [ref=f5e183]:
+                - generic [ref=f5e184]: "*) Klik logo dibawah untuk melihat jadwal pelayaran lain"
+                - button " Cari Jadwal" [ref=f5e185] [cursor=pointer]:
+                  - generic [ref=f5e186]: 
+                  - text: Cari Jadwal
+            - generic [ref=f5e189]:
+              - link [ref=f5e191] [cursor=pointer]:
+                - /url: https://meratus-one.com/
+              - link [ref=f5e194] [cursor=pointer]:
+                - /url: https://www.iconlinebooking.co.id/
+              - link [ref=f5e197] [cursor=pointer]:
+                - /url: https://www.myspil.com/myspilcom/
+              - link [ref=f5e200] [cursor=pointer]:
+                - /url: https://www.tantonet.com/schedule.php
+              - link [ref=f5e203] [cursor=pointer]:
+                - /url: https://www.kliktemas.com/#/
+        - paragraph [ref=f5e210]: © BETA 20260228 v1.3.28 - PH Bid Laut | Digital Logistic Platform
+  - text:  
+  - searchbox [active] [ref=f5e282]

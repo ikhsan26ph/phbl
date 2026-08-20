@@ -1,0 +1,225 @@
+- generic [active] [ref=f13e1]:
+  - generic [ref=f13e2]:
+    - generic [ref=f13e3]:
+      - generic [ref=f13e4]:
+        - link [ref=f13e6] [cursor=pointer]:
+          - /url: https://phbidlautdemo.prahu-hub.com/
+        - button [ref=f13e10] [cursor=pointer]
+      - text:  
+      - generic [ref=f13e13]:
+        - generic [ref=f13e14]:
+          - generic [ref=f13e15]: PT. Cipta Karya Abadi Sejahtera Sentora Mujur Selalu
+          - button "Shipper" [ref=f13e17]
+        - generic [ref=f13e21]:
+          - generic [ref=f13e22]:
+            - generic [ref=f13e23]: Jaya Wijaya Kartika Abadi Sentosa Wijaya Jaya
+            - generic [ref=f13e24]: pengirim.ph2021@gmail.com
+          - img "assets/photo/1000002490.png" [ref=f13e26]
+          - link "" [ref=f13e27] [cursor=pointer]:
+            - /url: https://phbidlautdemo.prahu-hub.com/home/notification
+          - link [ref=f13e34] [cursor=pointer]:
+            - /url: https://phbidlautdemo.prahu-hub.com/user/do_logout
+    - generic [ref=f13e37]:
+      - generic [ref=f13e38]:
+        - text: 
+        - generic [ref=f13e39]:
+          - list [ref=f13e41]:
+            - listitem
+            - listitem [ref=f13e42]:
+              - link "CARI PENAWARAN" [ref=f13e43] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/lelang/carirute
+            - listitem [ref=f13e44]:
+              - generic [ref=f13e45] [cursor=pointer]:
+                - text: DASHBOARD
+                - generic [ref=f13e48]: 
+              - list [ref=f13e49]:
+                - listitem [ref=f13e50]:
+                  - link "Monitoring Pengiriman" [ref=f13e51] [cursor=pointer]:
+                    - /url: https://phbidlautdemo.prahu-hub.com/home/dashboardorder
+                - listitem [ref=f13e52]:
+                  - link "Grafik Pengiriman" [ref=f13e53] [cursor=pointer]:
+                    - /url: https://phbidlautdemo.prahu-hub.com/home/dashboardpengiriman
+                - listitem [ref=f13e54]:
+                  - link "Ringkasan Analitik" [ref=f13e55] [cursor=pointer]:
+                    - /url: https://phbidlautdemo.prahu-hub.com/dashboardanalitik/ringkasan
+            - listitem [ref=f13e56]:
+              - generic [ref=f13e57] [cursor=pointer]:
+                - text: ANALITIK
+                - generic [ref=f13e60]: 
+            - listitem [ref=f13e61]:
+              - link "PENGAJUAN LELANG" [ref=f13e62] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/lelang/listlelang
+            - listitem [ref=f13e65]:
+              - link "PENGAJUAN NEGO" [ref=f13e66] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/lelang/pengajuannego
+            - listitem [ref=f13e69]:
+              - link "DAFTAR ORDER" [ref=f13e70] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/order/OrderList
+            - listitem [ref=f13e73]:
+              - generic [ref=f13e74] [cursor=pointer]:
+                - text: MASTER
+                - generic [ref=f13e77]: 
+            - listitem [ref=f13e78]:
+              - link "CEK JADWAL" [ref=f13e79] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/lelang/carijadwal
+            - listitem [ref=f13e82]:
+              - generic [ref=f13e83] [cursor=pointer]:
+                - text: LAPORAN
+                - generic [ref=f13e86]: 
+            - listitem [ref=f13e87]:
+              - generic [ref=f13e88] [cursor=pointer]:
+                - text: PENGATURAN AKUN
+                - generic [ref=f13e91]: 
+            - listitem [ref=f13e92]:
+              - link "PREFERENCE NOTIF" [ref=f13e93] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/home/preferenceNotifBidowner
+            - listitem [ref=f13e96]:
+              - link "AKUN SAYA" [ref=f13e97] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/home/akunsaya
+          - generic [ref=f13e102]:
+            - paragraph [ref=f13e104]: KONTAK KAMI
+            - generic [ref=f13e105]:
+              - generic [ref=f13e106]: 
+              - text: "081246665023"
+            - generic [ref=f13e107]:
+              - generic [ref=f13e108]: 
+              - text: "081246665023"
+            - generic [ref=f13e109]:
+              - generic [ref=f13e110]: 
+              - text: csct@prahu-hub.com
+            - generic [ref=f13e111]:
+              - link [ref=f13e112] [cursor=pointer]:
+                - /url: https://facebook.com/sosmed.phbid
+              - link [ref=f13e114] [cursor=pointer]:
+                - /url: https://twitter.com/PrahuHub
+              - link [ref=f13e116] [cursor=pointer]:
+                - /url: https://instagram.com/phbid_/
+              - link [ref=f13e118] [cursor=pointer]:
+                - /url: https://www.youtube.com/channel/UC41VntroP3zKmXZYnGgtFdw
+              - link [ref=f13e120] [cursor=pointer]:
+                - /url: http://linkedin.com/in/ph-bid-aa5393211/
+      - generic [ref=f13e122]:
+        - tabpanel [ref=f13e126]:
+          - generic [ref=f13e129]:
+            - generic [ref=f13e130]:
+              - text: Dashboard Monitoring Pengiriman
+              - button "" [ref=f13e132] [cursor=pointer]
+            - generic [ref=f13e134]:
+              - generic [ref=f13e136]:
+                - generic [ref=f13e138]:
+                  - generic [ref=f13e139]:
+                    - generic [ref=f13e140]:
+                      - generic [ref=f13e141]: Dari Tanggal *
+                      - textbox "DD/MM/YYYY" [ref=f13e143]: 14/07/2026
+                    - generic [ref=f13e144]: s.d
+                    - generic [ref=f13e146]:
+                      - generic [ref=f13e147]: Sampai Tanggal *
+                      - textbox "DD/MM/YYYY" [ref=f13e149]: 14/08/2026
+                  - text: Masukkan tanggal order (Maksimal range tanggal 90 hari)
+                - button " Cari" [ref=f13e151] [cursor=pointer]:
+                  - generic [ref=f13e152]: 
+                  - text: Cari
+                - generic [ref=f13e153]:
+                  - text: Menampilkan
+                  - combobox [ref=f13e154]:
+                    - option "50" [selected]
+                    - option "100"
+                    - option "150"
+                    - option "250"
+                  - text: Data
+              - generic [ref=f13e155]:
+                - table [ref=f13e157]:
+                  - rowgroup [ref=f13e178]:
+                    - row [ref=f13e179]:
+                      - columnheader [ref=f13e180] [cursor=pointer]:
+                        - generic [ref=f13e181]:
+                          - generic [ref=f13e182]: ID Order
+                          - generic [ref=f13e183]: 
+                      - columnheader [ref=f13e185]:
+                        - generic [ref=f13e186]: Consignee
+                      - columnheader [ref=f13e188]:
+                        - generic [ref=f13e189]: Alamat Tujuan
+                      - columnheader [ref=f13e191]:
+                        - generic [ref=f13e192]: Nomer Referensi
+                      - columnheader [ref=f13e194]:
+                        - generic [ref=f13e195]: Jenis Kontainer
+                      - columnheader [ref=f13e197]:
+                        - generic [ref=f13e198]: Jumlah Dipesan
+                      - columnheader [ref=f13e200]:
+                        - generic [ref=f13e201]: Harga Order
+                      - columnheader [ref=f13e203]:
+                        - generic [ref=f13e204]: Total Harga
+                      - columnheader [ref=f13e206]:
+                        - generic [ref=f13e207]: Nama Kapal
+                      - columnheader [ref=f13e209] [cursor=pointer]:
+                        - generic [ref=f13e210]:
+                          - generic [ref=f13e211]: Stuffing
+                          - generic [ref=f13e212]: 
+                      - columnheader [ref=f13e214]:
+                        - generic [ref=f13e215]: Closing Time
+                      - columnheader [ref=f13e217] [cursor=pointer]:
+                        - generic [ref=f13e218]:
+                          - generic [ref=f13e219]: ETD
+                          - generic [ref=f13e220]: 
+                      - columnheader [ref=f13e222] [cursor=pointer]:
+                        - generic [ref=f13e223]:
+                          - generic [ref=f13e224]: ETA
+                          - generic [ref=f13e225]: 
+                      - columnheader [ref=f13e227] [cursor=pointer]:
+                        - generic [ref=f13e228]:
+                          - generic [ref=f13e229]: Kapal Sandar
+                          - generic [ref=f13e230]: 
+                      - columnheader [ref=f13e232]:
+                        - generic [ref=f13e233]: Rencana Dooring
+                      - columnheader [ref=f13e235]:
+                        - generic [ref=f13e236]: Dooring
+                      - columnheader [ref=f13e238]:
+                        - generic [ref=f13e239]: Keterangan Dooring
+                      - columnheader [ref=f13e241] [cursor=pointer]:
+                        - generic [ref=f13e242]:
+                          - generic [ref=f13e243]: Transporter
+                          - generic [ref=f13e244]: 
+                      - columnheader [ref=f13e246] [cursor=pointer]:
+                        - generic [ref=f13e247]:
+                          - generic [ref=f13e248]: Pelabuhan Tujuan (POD)
+                          - generic [ref=f13e249]: 
+                    - row [ref=f13e251]:
+                      - cell [ref=f13e252]
+                - table [ref=f13e254]:
+                  - rowgroup [ref=f13e275]:
+                    - row [ref=f13e276]:
+                      - columnheader "ID Order" [ref=f13e277]
+                      - columnheader "Consignee" [ref=f13e278]
+                      - columnheader "Alamat Tujuan" [ref=f13e279]
+                      - columnheader "Nomer Referensi" [ref=f13e280]
+                      - columnheader "Jenis Kontainer" [ref=f13e281]
+                      - columnheader "Jumlah Dipesan" [ref=f13e282]
+                      - columnheader "Harga Order" [ref=f13e283]
+                      - columnheader "Total Harga" [ref=f13e284]
+                      - columnheader "Nama Kapal" [ref=f13e285]
+                      - columnheader "Stuffing" [ref=f13e286]
+                      - columnheader "Closing Time" [ref=f13e287]
+                      - columnheader "ETD" [ref=f13e288]
+                      - columnheader "ETA" [ref=f13e289]
+                      - columnheader "Kapal Sandar" [ref=f13e290]
+                      - columnheader "Rencana Dooring" [ref=f13e291]
+                      - columnheader "Dooring" [ref=f13e292]
+                      - columnheader "Keterangan Dooring" [ref=f13e293]
+                      - columnheader "Transporter" [ref=f13e294]
+                      - columnheader "Pelabuhan Tujuan (POD)" [ref=f13e295]
+                  - rowgroup [ref=f13e296]:
+                    - row [ref=f13e297]:
+                      - cell "Mohon tunggu sebentar" [ref=f13e298]
+                    - row:
+                      - cell
+                    - row [ref=f13e300]:
+                      - cell [ref=f13e301]
+                      - cell [ref=f13e302]
+                    - row [ref=f13e303]:
+                      - cell [ref=f13e304]
+              - generic:
+                - status [ref=f13e306]
+                - generic [ref=f13e308]:
+                  - list
+        - paragraph [ref=f13e314]: © BETA 20260228 v1.3.28 - PH Bid Laut | Digital Logistic Platform
+  - text:  

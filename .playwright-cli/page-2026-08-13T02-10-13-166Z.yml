@@ -1,0 +1,119 @@
+- generic [ref=e1]:
+  - generic [ref=e6]:
+    - generic [ref=e7]:
+      - link [ref=e9] [cursor=pointer]:
+        - /url: https://phbidlautdemo.prahu-hub.com/user/login
+      - generic [ref=e11]:
+        - generic [ref=e12]: REGISTRASI
+        - generic [ref=e15]:
+          - generic [ref=e16]:
+            - generic [ref=e17]:
+              - radio "Shipper" [ref=e18]
+              - generic [ref=e19]: Shipper
+            - generic [ref=e20]:
+              - radio "Transporter" [ref=e21]
+              - generic [ref=e22]: Transporter
+          - generic [ref=e23]:
+            - generic [ref=e24]:
+              - generic [ref=e25]: Nama *
+              - textbox "Masukkan Nama Lengkap Anda" [ref=e27]
+            - generic [ref=e28]:
+              - generic [ref=e29]: No. Telepon/ WhatsApp *
+              - textbox "08xxxxxxxxxx" [ref=e31]
+            - generic [ref=e32]:
+              - generic [ref=e33]: Nama Perusahaan *
+              - textbox "Masukkan Nama Perusahaan Anda" [ref=e35]
+          - generic [ref=e36]:
+            - generic [ref=e37]:
+              - generic [ref=e38]: Email *
+              - textbox "Masukkan Email Anda" [ref=e40]
+            - generic [ref=e41]:
+              - generic [ref=e42]: Kata Sandi *
+              - generic [ref=e43]:
+                - textbox "Masukkan Kata Sandi Anda" [ref=e44]
+                - button "" [ref=e46]
+              - text: Min. 6 karakter kombinasi huruf dan angka
+            - generic [ref=e48]:
+              - generic [ref=e49]: Ketik Ulang Kata Sandi *
+              - generic [ref=e50]:
+                - textbox "Masukkan Ulang Kata Sandi Anda" [ref=e51]
+                - button "" [ref=e53]
+          - iframe [ref=e61]:
+            - generic [ref=f2e2]:
+              - generic [ref=f2e3]:
+                - checkbox "I'm not a robot" [ref=f2e7]
+                - generic [ref=f2e9]: I'm not a robot
+              - generic [ref=f2e12]: reCAPTCHA
+          - link "Kembali Ke Halaman Log In" [ref=e63] [cursor=pointer]:
+            - /url: https://phbidlautdemo.prahu-hub.com/user/login
+          - button "Registrasi" [ref=e65] [cursor=pointer]
+          - generic [ref=e66]:
+            - generic [ref=e67]:
+              - text: Dengan login, anda menyetujui
+              - link "Syarat Ketentuan" [ref=e68] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/home/syarat_ketentuan
+              - text: dan
+              - link "Kebijakan Privacy" [ref=e69] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/home/privacy_policy
+            - generic [ref=e70]:
+              - text: Menuju
+              - link "Tentang Kami" [ref=e71] [cursor=pointer]:
+                - /url: https://www.prahu-hub.com/ph-bid/
+              - text: untuk mengetahui layanan PH Bid
+    - generic [ref=e72]:
+      - generic [ref=e74]:
+        - generic [ref=e76]:
+          - link [ref=e77] [cursor=pointer]:
+            - /url: https://facebook.com/sosmed.phbid
+          - link [ref=e78] [cursor=pointer]:
+            - /url: https://twitter.com/PrahuHub
+          - link [ref=e79] [cursor=pointer]:
+            - /url: https://instagram.com/phbid_/
+          - link [ref=e80] [cursor=pointer]:
+            - /url: https://www.youtube.com/channel/UC41VntroP3zKmXZYnGgtFdw
+          - link [ref=e81] [cursor=pointer]:
+            - /url: http://linkedin.com/in/ph-bid-aa5393211/
+        - generic [ref=e83]:
+          - generic [ref=e84]:
+            - generic [ref=e85]: Layanan Email
+            - link "csct@prahu-hub.com" [ref=e87] [cursor=pointer]:
+              - /url: mailto:csct@prahu-hub.com
+          - generic [ref=e88]:
+            - generic [ref=e89]: Layanan Whatsapp
+            - link "081246665023" [ref=e91] [cursor=pointer]:
+              - /url: https://wa.me/
+      - generic [ref=e92]: © BETA 20260228 v1.3.28 - PH Bid Laut | Digital Logistic Platform
+  - iframe [active] [ref=e96]:
+    - dialog [ref=f6e3]:
+      - generic [ref=f6e4]:
+        - generic [ref=f6e7]:
+          - text: Select all squares with
+          - strong [ref=f6e8]: motorcycles
+        - table [ref=f6e11]:
+          - rowgroup [ref=f6e12]:
+            - row [ref=f6e13]:
+              - button [ref=f6e14]
+              - button [ref=f6e17]
+              - button [ref=f6e20]
+              - button [ref=f6e23]
+            - row [ref=f6e26]:
+              - button [ref=f6e27]
+              - button [ref=f6e30]
+              - button [ref=f6e33]
+              - button [ref=f6e36]
+            - row [ref=f6e39]:
+              - button [ref=f6e40]
+              - button [ref=f6e43]
+              - button [ref=f6e46]
+              - button [ref=f6e49]
+            - row [ref=f6e52]:
+              - button [ref=f6e53]
+              - button [ref=f6e56]
+              - button [ref=f6e59]
+              - button [ref=f6e62]
+      - generic [ref=f6e68]:
+        - generic [ref=f6e69]:
+          - button "Get a new challenge" [ref=f6e71] [cursor=pointer]
+          - button "Get an audio challenge" [ref=f6e73] [cursor=pointer]
+          - button "Help" [ref=f6e75] [cursor=pointer]
+        - button "Skip" [ref=f6e77] [cursor=pointer]

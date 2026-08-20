@@ -1,0 +1,84 @@
+- generic [ref=e6]:
+  - generic [ref=e7]:
+    - link [ref=e9] [cursor=pointer]:
+      - /url: https://phbidlautdemo.prahu-hub.com/user/login
+    - generic [ref=e11]:
+      - generic [ref=e12]: REGISTRASI
+      - generic [ref=e15]:
+        - generic [ref=e16]:
+          - generic [ref=e17]:
+            - radio "Shipper" [checked] [ref=e18]
+            - generic [ref=e19]: Shipper
+          - generic [ref=e20]:
+            - radio "Transporter" [ref=e21]
+            - generic [ref=e22]: Transporter
+        - generic [ref=e23]:
+          - generic [ref=e24]:
+            - generic [ref=e25]: Nama *
+            - textbox "Masukkan Nama Lengkap Anda" [ref=e27]: QA TMS Otomasi
+          - generic [ref=e28]:
+            - generic [ref=e29]: No. Telepon/ WhatsApp *
+            - textbox "08xxxxxxxxxx" [ref=e31]: "089911223344"
+          - generic [ref=e32]:
+            - generic [ref=e33]: Nama Perusahaan *
+            - textbox "Masukkan Nama Perusahaan Anda" [ref=e35]: PT QA TMS Otomasi
+        - generic [ref=e36]:
+          - generic [ref=e37]:
+            - generic [ref=e38]: Email *
+            - textbox "Masukkan Email Anda" [ref=e40]: qa-tms-reg1@yopmail.com
+          - generic [ref=e41]:
+            - generic [ref=e42]: Kata Sandi *
+            - generic [ref=e43]:
+              - textbox "Masukkan Kata Sandi Anda" [ref=e44]: hanyahuruf
+              - button "" [ref=e46]
+            - text: Min. 6 karakter kombinasi huruf dan angka
+          - generic [ref=e48]:
+            - generic [ref=e49]: Ketik Ulang Kata Sandi *
+            - generic [ref=e50]:
+              - textbox "Masukkan Ulang Kata Sandi Anda" [ref=e51]: hanyahuruf
+              - button "" [ref=e53]
+        - iframe [ref=e61]:
+          - generic [ref=f2e2]:
+            - generic [ref=f2e3]:
+              - checkbox "I'm not a robot" [ref=f2e7]
+              - generic [ref=f2e9]: I'm not a robot
+            - generic [ref=f2e12]: reCAPTCHA
+        - link "Kembali Ke Halaman Log In" [ref=e63] [cursor=pointer]:
+          - /url: https://phbidlautdemo.prahu-hub.com/user/login
+        - button "Registrasi" [active] [ref=e65] [cursor=pointer]
+        - generic [ref=e66]:
+          - generic [ref=e67]:
+            - text: Dengan login, anda menyetujui
+            - link "Syarat Ketentuan" [ref=e68] [cursor=pointer]:
+              - /url: https://phbidlautdemo.prahu-hub.com/home/syarat_ketentuan
+            - text: dan
+            - link "Kebijakan Privacy" [ref=e69] [cursor=pointer]:
+              - /url: https://phbidlautdemo.prahu-hub.com/home/privacy_policy
+          - generic [ref=e70]:
+            - text: Menuju
+            - link "Tentang Kami" [ref=e71] [cursor=pointer]:
+              - /url: https://www.prahu-hub.com/ph-bid/
+            - text: untuk mengetahui layanan PH Bid
+  - generic [ref=e72]:
+    - generic [ref=e74]:
+      - generic [ref=e76]:
+        - link [ref=e77] [cursor=pointer]:
+          - /url: https://facebook.com/sosmed.phbid
+        - link [ref=e78] [cursor=pointer]:
+          - /url: https://twitter.com/PrahuHub
+        - link [ref=e79] [cursor=pointer]:
+          - /url: https://instagram.com/phbid_/
+        - link [ref=e80] [cursor=pointer]:
+          - /url: https://www.youtube.com/channel/UC41VntroP3zKmXZYnGgtFdw
+        - link [ref=e81] [cursor=pointer]:
+          - /url: http://linkedin.com/in/ph-bid-aa5393211/
+      - generic [ref=e83]:
+        - generic [ref=e84]:
+          - generic [ref=e85]: Layanan Email
+          - link "csct@prahu-hub.com" [ref=e87] [cursor=pointer]:
+            - /url: mailto:csct@prahu-hub.com
+        - generic [ref=e88]:
+          - generic [ref=e89]: Layanan Whatsapp
+          - link "081246665023" [ref=e91] [cursor=pointer]:
+            - /url: https://wa.me/
+    - generic [ref=e92]: © BETA 20260228 v1.3.28 - PH Bid Laut | Digital Logistic Platform

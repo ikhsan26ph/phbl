@@ -1,0 +1,37 @@
+[     771ms] ReferenceError: dete is not defined
+    at https://phbidlautdemo.prahu-hub.com/user/login:1465:5
+[    2077ms] TypeError: Failed to execute 'observe' on 'IntersectionObserver': parameter 1 is not of type 'Element'.
+    at https://phbidlautdemo.prahu-hub.com/user/login:1932:14
+[    2110ms] [VERBOSE] [DOM] Input elements should have autocomplete attributes (suggested: "current-password"): (More info: https://goo.gl/9p2vKq) %o @ https://phbidlautdemo.prahu-hub.com/user/login:0
+[    2115ms] [LOG] 0 @ https://phbidlautdemo.prahu-hub.com/user/login:1426
+[    2115ms] [LOG] undefined scr @ https://phbidlautdemo.prahu-hub.com/user/login:1430
+[    5215ms] [LOG] ddd @ https://phbidlautdemo.prahu-hub.com/user/login:1525
+[    5379ms] [LOG] {pesan: sub_user_admin_data, status: 1, user_aktif: 1, hapus: null, user_aktif_sub: aktif} @ https://phbidlautdemo.prahu-hub.com/user/login:1558
+[    5379ms] [LOG] {pesan: sub_user_admin_data, status: 1, user_aktif: 1, hapus: null, user_aktif_sub: aktif} a @ https://phbidlautdemo.prahu-hub.com/user/login:1560
+[    6889ms] Cannot use import statement outside a module
+[    6914ms] ReferenceError: Chart is not defined
+    at https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/js/scripts-init/charts/chartjs.js:8:13
+[    7078ms] Unexpected token '<'
+[    7078ms] Unexpected token '<'
+[    7135ms] Uncaught TypeError: expect element to be DOM Element, but got null
+    at n.init (https://cdnjs.cloudflare.com/ajax/libs/smooth-scrollbar/8.5.2/smooth-scrollbar.js:24:264)
+    at <anonymous> (https://phbidlautdemo.prahu-hub.com/home/akunsaya:5365:14)
+[    7159ms] [LOG] Akun Sayanamanya @ https://phbidlautdemo.prahu-hub.com/home/akunsaya:2033
+[    7169ms] [LOG] WebSocket connection @ https://phbidlautdemo.prahu-hub.com/home/akunsaya:5760
+[    7170ms] [LOG] WebSocket connection attempting... @ https://phbidlautdemo.prahu-hub.com/home/akunsaya:5838
+[    8331ms] [LOG] WebSocket connected @ https://phbidlautdemo.prahu-hub.com/home/akunsaya:5769
+[    8341ms] [LOG] update_dashboard_order_laut @ https://phbidlautdemo.prahu-hub.com/home/akunsaya:5810
+[    8361ms] [LOG] Connected @ https://phbidlautdemo.prahu-hub.com/home/akunsaya:5810
+[    8460ms] [LOG] 200 xhrglobal @ https://phbidlautdemo.prahu-hub.com/home/akunsaya:5691
+[    8532ms] [LOG] 200 xhrglobal @ https://phbidlautdemo.prahu-hub.com/home/akunsaya:5691
+[    9167ms] TypeError: $(...).DataTable is not a function
+    at https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/js/scripts-init/tables.js:7:23
+[   46009ms] [LOG] Connected @ https://phbidlautdemo.prahu-hub.com/home/akunsaya:5810
+[   56650ms] [LOG] Connected @ https://phbidlautdemo.prahu-hub.com/home/akunsaya:5810
+[   58570ms] [LOG] Connected @ https://phbidlautdemo.prahu-hub.com/home/akunsaya:5810
+[   64613ms] [LOG] Connected @ https://phbidlautdemo.prahu-hub.com/home/akunsaya:5810
+[   83184ms] [LOG] Connected @ https://phbidlautdemo.prahu-hub.com/home/akunsaya:5810
+[   87843ms] [LOG] Connected @ https://phbidlautdemo.prahu-hub.com/home/akunsaya:5810
+[   89931ms] [LOG] Connected @ https://phbidlautdemo.prahu-hub.com/home/akunsaya:5810
+[   99559ms] [LOG] Connected @ https://phbidlautdemo.prahu-hub.com/home/akunsaya:5810
+[   99845ms] [LOG] Connected @ https://phbidlautdemo.prahu-hub.com/home/akunsaya:5810

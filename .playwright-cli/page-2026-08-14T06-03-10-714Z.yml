@@ -1,0 +1,188 @@
+- generic [ref=f8e1]:
+  - generic [ref=f8e2]:
+    - generic [ref=f8e3]:
+      - generic [ref=f8e4]:
+        - link [ref=f8e6] [cursor=pointer]:
+          - /url: https://phbidlautdemo.prahu-hub.com/
+        - button [ref=f8e10] [cursor=pointer]
+      - text:  
+      - generic [ref=f8e13]:
+        - generic [ref=f8e14]:
+          - generic [ref=f8e15]: PT. Cipta Karya Abadi Sejahtera Sentora Mujur Selalu
+          - button "Shipper" [ref=f8e17]
+        - generic [ref=f8e21]:
+          - generic [ref=f8e22]:
+            - generic [ref=f8e23]: Jaya Wijaya Kartika Abadi Sentosa Wijaya Jaya
+            - generic [ref=f8e24]: pengirim.ph2021@gmail.com
+          - img "assets/photo/1000002490.png" [ref=f8e26]
+          - link "" [ref=f8e27] [cursor=pointer]:
+            - /url: https://phbidlautdemo.prahu-hub.com/home/notification
+          - link [ref=f8e34] [cursor=pointer]:
+            - /url: https://phbidlautdemo.prahu-hub.com/user/do_logout
+    - generic [ref=f8e37]:
+      - generic [ref=f8e38]:
+        - text: 
+        - generic [ref=f8e39]:
+          - list [ref=f8e41]:
+            - listitem
+            - listitem [ref=f8e42]:
+              - link "CARI PENAWARAN" [ref=f8e43] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/lelang/carirute
+            - listitem [ref=f8e44]:
+              - generic [ref=f8e45] [cursor=pointer]:
+                - text: DASHBOARD
+                - generic [ref=f8e48]: 
+            - listitem [ref=f8e49]:
+              - generic [ref=f8e50] [cursor=pointer]:
+                - text: ANALITIK
+                - generic [ref=f8e53]: 
+            - listitem [ref=f8e54]:
+              - link "PENGAJUAN LELANG" [ref=f8e55] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/lelang/listlelang
+            - listitem [ref=f8e58]:
+              - link "PENGAJUAN NEGO" [ref=f8e59] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/lelang/pengajuannego
+            - listitem [ref=f8e62]:
+              - link "DAFTAR ORDER" [ref=f8e63] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/order/OrderList
+            - listitem [ref=f8e66]:
+              - generic [ref=f8e67] [cursor=pointer]:
+                - text: MASTER
+                - generic [ref=f8e70]: 
+            - listitem [ref=f8e71]:
+              - link "CEK JADWAL" [ref=f8e72] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/lelang/carijadwal
+            - listitem [ref=f8e75]:
+              - generic [ref=f8e76] [cursor=pointer]:
+                - text: LAPORAN
+                - generic [ref=f8e79]: 
+              - list [ref=f8e80]:
+                - listitem [ref=f8e81]:
+                  - link "Daftar History Lelang" [ref=f8e82] [cursor=pointer]:
+                    - /url: https://phbidlautdemo.prahu-hub.com/home/history_lelang
+                - listitem [ref=f8e83]:
+                  - link "Laporan Logistik" [ref=f8e84] [cursor=pointer]:
+                    - /url: https://phbidlautdemo.prahu-hub.com/home/laporanlogistik
+            - listitem [ref=f8e85]:
+              - generic [ref=f8e86] [cursor=pointer]:
+                - text: PENGATURAN AKUN
+                - generic [ref=f8e89]: 
+            - listitem [ref=f8e90]:
+              - link "PREFERENCE NOTIF" [ref=f8e91] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/home/preferenceNotifBidowner
+            - listitem [ref=f8e94]:
+              - link "AKUN SAYA" [ref=f8e95] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/home/akunsaya
+          - generic [ref=f8e100]:
+            - paragraph [ref=f8e102]: KONTAK KAMI
+            - generic [ref=f8e103]:
+              - generic [ref=f8e104]: 
+              - text: "081246665023"
+            - generic [ref=f8e105]:
+              - generic [ref=f8e106]: 
+              - text: "081246665023"
+            - generic [ref=f8e107]:
+              - generic [ref=f8e108]: 
+              - text: csct@prahu-hub.com
+            - generic [ref=f8e109]:
+              - link [ref=f8e110] [cursor=pointer]:
+                - /url: https://facebook.com/sosmed.phbid
+              - link [ref=f8e112] [cursor=pointer]:
+                - /url: https://twitter.com/PrahuHub
+              - link [ref=f8e114] [cursor=pointer]:
+                - /url: https://instagram.com/phbid_/
+              - link [ref=f8e116] [cursor=pointer]:
+                - /url: https://www.youtube.com/channel/UC41VntroP3zKmXZYnGgtFdw
+              - link [ref=f8e118] [cursor=pointer]:
+                - /url: http://linkedin.com/in/ph-bid-aa5393211/
+      - generic [ref=f8e120]:
+        - generic [ref=f8e121]:
+          - generic [ref=f8e124]:
+            - link "Beranda" [ref=f8e126] [cursor=pointer]:
+              - /url: https://phbidlautdemo.prahu-hub.com/lelang/carirute
+            - text: / Daftar History Lelang
+          - generic [ref=f8e127]:
+            - generic [ref=f8e128]: Daftar History Lelang
+            - tabpanel [ref=f8e132]:
+              - generic [ref=f8e135]:
+                - generic [ref=f8e137]:
+                  - generic [ref=f8e138]:
+                    - generic [ref=f8e139]:
+                      - generic [ref=f8e140]: Dari Tanggal *
+                      - textbox "DD/MM/YYYY" [ref=f8e143]: 01/06/2026
+                    - generic [ref=f8e144]: s.d
+                    - generic [ref=f8e146]:
+                      - generic [ref=f8e147]: Sampai Tanggal *
+                      - textbox "DD/MM/YYYY" [active] [ref=f8e150]
+                  - text: Masukkan tanggal lelang (Maksimal range 90 hari)
+                - button " Cari" [ref=f8e152] [cursor=pointer]:
+                  - generic [ref=f8e153]: 
+                  - text: Cari
+        - paragraph [ref=f8e159]: © BETA 20260228 v1.3.28 - PH Bid Laut | Digital Logistic Platform
+  - text:  
+  - table [ref=f8e228]:
+    - rowgroup [ref=f8e229]:
+      - row
+      - row [ref=f8e230]:
+        - columnheader "«" [ref=f8e231] [cursor=pointer]
+        - columnheader "August 2026" [ref=f8e232] [cursor=pointer]
+      - row [ref=f8e233]:
+        - columnheader "Su" [ref=f8e234]
+        - columnheader "Mo" [ref=f8e235]
+        - columnheader "Tu" [ref=f8e236]
+        - columnheader "We" [ref=f8e237]
+        - columnheader "Th" [ref=f8e238]
+        - columnheader "Fr" [ref=f8e239]
+        - columnheader "Sa" [ref=f8e240]
+    - rowgroup [ref=f8e241]:
+      - row [ref=f8e242]:
+        - cell "26" [ref=f8e243]
+        - cell "27" [ref=f8e244]
+        - cell "28" [ref=f8e245]
+        - cell "29" [ref=f8e246]
+        - cell "30" [ref=f8e247]
+        - cell "31" [ref=f8e248]
+        - cell "1" [ref=f8e249]
+      - row [ref=f8e250]:
+        - cell "2" [ref=f8e251]
+        - cell "3" [ref=f8e252]
+        - cell "4" [ref=f8e253]
+        - cell "5" [ref=f8e254]
+        - cell "6" [ref=f8e255]
+        - cell "7" [ref=f8e256]
+        - cell "8" [ref=f8e257]
+      - row [ref=f8e258]:
+        - cell "9" [ref=f8e259]
+        - cell "10" [ref=f8e260]
+        - cell "11" [ref=f8e261]
+        - cell "12" [ref=f8e262]
+        - cell "13" [ref=f8e263]
+        - cell "14" [ref=f8e264]
+        - cell "15" [ref=f8e265]
+      - row [ref=f8e266]:
+        - cell "16" [ref=f8e267]
+        - cell "17" [ref=f8e268]
+        - cell "18" [ref=f8e269]
+        - cell "19" [ref=f8e270]
+        - cell "20" [ref=f8e271]
+        - cell "21" [ref=f8e272]
+        - cell "22" [ref=f8e273]
+      - row [ref=f8e274]:
+        - cell "23" [ref=f8e275]
+        - cell "24" [ref=f8e276]
+        - cell "25" [ref=f8e277]
+        - cell "26" [ref=f8e278]
+        - cell "27" [ref=f8e279]
+        - cell "28" [ref=f8e280]
+        - cell "29" [ref=f8e281]
+      - row [ref=f8e282]:
+        - cell "30" [ref=f8e283]
+        - cell "31" [ref=f8e284]
+        - cell "1" [ref=f8e285]
+        - cell "2" [ref=f8e286]
+        - cell "3" [ref=f8e287]
+        - cell "4" [ref=f8e288]
+        - cell "5" [ref=f8e289]
+    - rowgroup:
+      - row
+      - row

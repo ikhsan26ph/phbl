@@ -1,0 +1,157 @@
+# Daftar Order
+
+- Tanggal buat order diambil dari waktu saat order tersebut dicreate oleh sistem (saat masuk input muatan)
+- Order muncul di list order bidder saat sudah divalidasi oleh admin
+  - Di kolom Action muncul tombol Input Unit & Action Menu Upload Dokumen dan Biaya Tambahan (Jika ada)
+  - Status nya adalah KONFIRMASI UNIT
+- Jika pada order termasuk jadwal kapal connecting maka akan muncul button “kapal connecting nx”
+- Saat bidder input unit bisa isi data unit ataupun gunakan fitur “Lewati Proses Input Data Unit”
+- Jika bidder pilih “Lewati Proses Input Data Unit” maka data unit tetap kosongan dan tidak akan mengirim notify kelengkapan data unit ke bid owner
+- Untuk step input unit data ada beberapa aturan :
+  - Jika input data unit maka data nopol dan nama sopir wajib diisi
+  - Untuk nomor container dan segel tidak bias sama antar data unit. Penulisan nomor kontainer auto kapital
+  - Field input no. telp sopir wajib diisi . Karakter yang dapat dimasukkan adalah angka dan simbol "-" (tanda strip)
+  - Jika bidder berhasil input data unit maka akan mengirim notif kelengkapan data unit ke bid owner dalam bentuk email dan wa
+- Setelah bidder input unit, maka status ordernya ialah PROSES PENUGASAN. Pada status order ini maka pada action menu pilihannya “Lihat Data Unit, Upload Dokumen, Biaya Tambahan (apabila ada)”
+- Pada halaman lihat data unit akan menampilkan data unit yang telah diinputkan, jika saat input unit bidder pilih lewati proses input unit maka pada halaman lihat data unit ditampilkan keterangan “*) Data unit menunggu bidder update pengiriman”
+- Pada halaman lihat data unit ada tombol edit unit. Tombol edit unit aktif apabila order belum dikerjakan tracking, jika unit pada order sudah dikerjakan tracking maka tidak bias dilakukan edit unit
+- Pada halaman edit data unit ketentuannya sama seperti saat input unit
+- Untuk upload dokumen tidak ada batasan file yang diupload jumlahnya maksimal berapa
+- Untuk biaya tambahan, jika bid owner atau admin input biaya tambahan pada order maka pada bidder di action menunya juga muncul pilihan “Biaya Tambahan” jika tidak ada maka tidak ada pilihan tersebut
+- Saat order sudah masuk status PROSES PENUGASAN maka pada list order muncul text link “Info Tracking” dan jika di expand akan menampilkan nomor container tiap unit dan status trackingnya
+- Terdapat data baru yakni dokumen aanwijzing, tampil sesuai dengan nama dokumen.
+- Jika status dokumen aanwijzing tidak aktif maka dokumen aanwijzing tidak muncul.
+- Jika data unit dilewati stepnya maka pada info tracking hanya akan muncul label “No. Kontainer”
+- Jika container belum dilakukan tracking maka pada bagian info tracking akan ditampilkan “Menunggu Proses”
+- Ketika order sudah update tracking ambil kontainer maka status order menjadi “AMBIL KONTAINER”
+- Ketika order sudah update tracking stuffing (semua unit) maka status order menjadi “STUFFING”
+- Ketika order sudah update tracking kapal berlayar maka status order menjadi “KAPAL BERLAYAR”
+- Ketika order sudah update tracking kapal sandar maka status order menjadi “KAPAL SANDAR”
+- Ketika order sudah update tracking rencana dooring maka status order menjadi “RENCANA DOORING”
+- Ketika order sudah update tracking dooring (semua unit) maka status order menjadi “DOORING”
+- Ketika order sudah update tracking surat jalan maka status order menjadi “SJ Diterima Agen”
+- Ketika order sudah update tracking dokumen dikirim maka status order menjadi “DOKUMEN DIKIRIM”
+- Terdapat penyesuaian pada kondisi satu order dengan lebih dari 1 container. Jika status order adalah Rencana Dooring atau Dooring namun ada kontainer lain yang status ordernya Kapal Sandar, maka status order secara globalnya untuk suatu ID order adalah Kapal Sandar.
+- Terdapat filter by Nomor Kontainer yang digunakan untuk mencari data order berdasarkan nomor kontainer. Input field nomor kontainer auto kapital. Pada field ini terdapat pembatasan input, yaitu hanya dapat memasukkan huruf dan angka dengan panjang maksimum 11 karakter. Input tidak diperbolehkan mengandung spasi atau karakter khusus
+- Terdapat filter by Kapal Connecting berupa checkbox yang digunakan untuk mencari data order dengan jenis jadwal kapal connecting.
+- Untuk sub user custom akses Daftar Pesanan maka mendapatkan akses halaman ini
+- Jika order dari satoria melalui system PNP maka ketika admin validasi order aka nada pilihan action menu “Lihat QR Code” dan ketika diakses akan menampilkan kode qr code dan bisa download qr code nya
+- Jika order dari sistem PNP maka akan ada penanda label By PNP dibagian info order. Label ini tampil pada daftar order bid owner, bidder, admin.
+- Jika bid owner melakukan filter halaman daftar order, kemudian masuk ke beberapa halaman : Input Unit, Upload Dokumen, Biaya Tambahan, Proses Invoice & Detail Order. setelah itu klik “Kembali”. posisi daftar order tetap terfilter.
+- Jika bid owner melakukan filter halaman daftar order, kemudian melakukan beberapa aksi : Input Unit. setelah berhasil redirect ke halaman daftar order dengan posisi terfilter.
+- Jika bidder ingin menghilangkan filter data halaman daftar order dengan cara klik reset kemudian filter kembali.
+
+## Detail Order
+
+- Untuk status KONFIRMASI UNIT , yang terbuka adalah bagian PERJANJIAN PENGIRIMAN
+  - Menampilkan dan dapat download dokumen perjanjian pengiriman yang telah disetujui oleh bid owner
+  - Tanggal Validasi Perjanjian Pengiriman yang muncul adalah waktu saat admin validasi order terkait
+- Untuk status PROSES PENUGASAN , yang terbuka adalah bagian STATUS PENGIRIMAN
+  - Menampilkan card data tracking namun blank dan terdapat keterangan “Tidak ada data tersedia”
+- Untuk status AMBIL KONTAINER s.d DOKUMEN DIKIRIM , yang terbuka adalah bagian STATUS PENGIRIMAN
+  - Menampilkan tahapan status trackingnya dan textlink data detail
+  - Jika klik data detail menampilkan rincian data tracking dan foto yang diupload saat tracking
+- Untuk status ORDER SELESAI , yang terbuka adalah bagian PENILAIAN ORDER
+  - Jika bid owner maupun admin belum beri penilaian , keterangan yang muncul adalah Belum ada penilaian
+  - Jika bid owner saja yang sudah beri penilaian maka ditampilkan rating yang diberikan oleh bid owner
+  - Jika baru admin yang sudah rating maka ditampilkan nominal rating yang diberikan oleh admin
+  - Jika bid owner dan admin sudah menginputkan rating maka yang ditampilkan ialah nilai rata-rata rating bid owner dan admin
+- Untuk status DIBATALKAN & ORDER DITOLAK maka tidak ada di list order bidder
+- Di halaman detail order, pada pop up info harga, menampilkan data harga sebelum PPn beserta nilai PPn dan PPh yang ada pada order tersebut.
+- Untuk data lama yang tidak memiliki nilai PPn dan PPh maka akan menampikan strip (-)
+- Jika pada detail order termasuk jadwal kapal connecting maka akan muncul button “kapal connecting nx”
+- Terdapat data baru yakni dokumen aanwijzing, tampil sesuai dengan nanam dokumen.
+- Jika status dokumen aanwijzing tidak aktif maka menampilkan tanda strip “-”.
+- Dokumen aanwijzing ditampilkan berupa popup.
+
+## Proses Invoice
+
+- Pada action menu dengan status ‘KAPAL SANDAR’ akan menampilkan submenu Proses Invoice. Ketika di klik maka akan menampilkan halaman Invoice
+- Pada action menu dengan status ‘KONFIRMASI UNIT s.d. DOKUMEN DIKIRIM’ tidak menampilkan submenu Proses Invoice
+- Pada halaman invoice, bidder memiliki opsi untuk membuat invoice atau mengunggah invoice
+- Terdapat penyesuaian nama button “upload invoice” menjadi upload tagihan. pabila di klik maka akan menampilkan pop up upload dokumen tagihan
+- Terdapat penyesuaian rule untuk buat invoice. Bidder dan admin dapat melakukan proses invoice pada tahap KAPAL SANDAR - ORDER SELESAI
+- Jika bidder klik menu Proses Invoice pada status order PROSES PENUGASAN - KAPAL BERLAYAR, maka akan menampilkan alert 'Tidak Bisa! Proses invoice akan tersedia setelah tahap kapal sandar'
+- Efek penyesuaian ini, apabila order statusnya KAPAL SANDAR kemudian dimundurkan ke status KAPAL BERLAYAR, maka ketika di klik proses invoice tetap menampilkan alert 'Tidak Bisa! Proses invoice akan tersedia setelah tahap kapal sandar'
+- Namun untuk data invoice yang telah di buat atau di upload pada order tersebut masih tetap tersimpan dan kesempatan invoice sama
+- Nama dokumen yang terdapat pada tabel tersebut berasal dari upload tagihan
+- Terdapat history hari dan waktu bidder membuat proses invoice yang tampil pada tabel Update invoice
+- Invoice yang dapat dibuat oleh Bidder meliputi Invoice Jasa Pengiriman dan Invoice Biaya Tambahan
+- Invoice jasa pengiriman harus dibuat lebih dulu sebelum invoice biaya tambahan
+- Kesempatan untuk membuat invoice jasa pengiriman atau biaya tambahan masing-masing 3x
+- Namun pada buat invoice di sisi bidder, hanya bisa dilakukan 1 kali. Jika ingin melakukan buat invoice ulang, dapat diaktifkan pada sisi admin
+- Data informasi Perusahaan diambil dari data bidder yang meliputi Nama Perusahaan, Alamat Perusahaan, Nomor Telepon, dan Alamat Email
+- Data informasi bid owner diambil dari data bid owner yang meliputi Nama Bid Owner dan Alamat Bid Owner
+- Semua data pada informasi Perusahaan dan informasi bid owner otomatis ngedraft dari data bidder dan bid owner. Namun bidder masih dapat melakukan edit data tersebut
+- Data pada kolom ID Order secara otomatis tampil sesuai dengan ID Order yang sedang dibuatkan invoicenya dan kolom tersebut disabled
+- Pada kolom nomor invoice, bidder dapat menginputkan inputan karakter yang diperbolehkan selain huruf dan angka adalah titik, strip, garis miring, kurung buka, kurung tutup, spasi, dan semua karakter otomatis uppercase
+- Default tanggal invoice yang tampil adalah hari ini. Namun untuk range tanggal yang aktif adalah terhitung dari tanggal validasi order oleh admin hingga tidak terbatas kebelakang. Contoh : Tanggal validasi admin => 20/02/2023, maka range tanggal aktif mulai dari 20/02/2023 hingga tidak terbatas kebelakang
+- Range tanggal aktif Jatuh tempo terhitung dari tanggal invoice hingga tidak terbatas ke belakang. Contoh : Tanggal invoice => 21/02/2023, maka range tanggal aktif dimulai dari 21/02/2023 hingga tidak terbatas kebelakang
+- Data pada informasi pembayaran meliputi data nomor Rekening, nama bank, atas nama, dan Catatan untuk bid owner.
+- Data pada informasi pembayaran diambil berdasarkan jenis bid owner. Jika bid owner tersebut termasuk kategori bid owner direct, maka informasi pembayaran yang tampil diambil dari data nomor Rekening bidder yang aktif.
+- Sedangkan jika bid owner tersebut termasuk kategori bid owner satu pintu, maka informasi pembayaran yang tampil diambil dari data nomor virtual account yang terdaftar di relasi satu pintu dengan ketambahan label 1 pintu di sebelah tulisan Nomor Rekening
+- Kolom Catatan untuk bid owner bersifat optional. Jika menambahkan Catatan maka akan tampil pada generate invoicenya
+- Ketika klik buat invoice jasa pengiriman terdapat beberapa rule pengecekan, antara lain :
+    - Jika bid owner tersebut merupakan bid owner direct, maka ketika di klik buat invoice jasa pengiriman akan langsung diarahkan ke halaman form buat invoice
+    - Jika bid owner tersebut merupakan bid owner satu pintu, yang belum ditambahkan relasi biddernya, maka ketika klik buat invoice jasa pengiriman akan menampilkan alert ‘Akun bank Anda belum terdaftar! Silahkan hubungi CS PH Bid’
+    - Jika bid owner tersebut merupakan bid owner satu pintu, yang telah ditambahkan relasi biddernya, maka ketika klik buat invoice jasa pengiriman akan langsung diarahkan ke halaman form buat invoice
+    - Jika bidder telah menggunakan satu kali kesempatan untuk buat invoice, dan setting invoice di sisi admin dalam kondisi off  atau kesempatan invoice sudah habis, maka akan menampilkan alert ‘Tidak bisa buat invoice! Silahkan hubungi Admin untuk mengaktifkan kembali’
+- Ketika klik buat invoice biaya tambahan (tanpa ppn) terdapat beberapa rule pengecekan, antara lain :
+    - Jika invoice jasa pengiriman belum dibuat, dan bidder klik buat invoice biaya tambahan terlebih dahulu, maka akan menampilkan alert ‘Tidak bisa lanjut! Invoice jasa pengiriman harus dibuat terlebih dahulu!’
+    - Jika invoice jasa pengiriman telah dibuat, dan bid owner tersebut termasuk bid owner direct, maka ketika klik buat invoice biaya tambahan, akan langsung diarahkan ke halaman form buat invoice biaya tambahan
+    - Jika invoice jasa pengiriman telah dibuat, dan bid owner tersebut termasuk bid owner satu pintu yang belum ditambahkan relasi biddernya, maka ketika klik buat invoice biaya tambahan akan menampilkan alert ‘Akun bank Anda belum terdaftar! Silahkan hubungi CS PH Bid’
+    - Jika relasi bidder terlah ditambahkan untuk bid owner tersebut, maka ketika klik buat invoice biaya tambahan akan langsung diarahkan ke halaman form buat invoice biaya tambahan
+    - Jika bidder telah menggunakan satu kali kesempatan untuk buat invoice dan setting invoice di sisi admin dalam kondisi off atau kesempatan invoice sudah habis, maka ketika klik buat invoice biaya tambahan akan menampilkan alert ‘Tidak bisa buat invoice! Silahkan hubungi Admin untuk mengaktifkan kembali’
+- Pada halaman form invoice jasa pengiriman, terdapat beberapa rule antara lain :
+    - Komponen harga yang aktif defaultnya yaitu PPn dan PPh. Namun masih dapat melakukan edit Komponen harga yang aktif dengan klik tambah Komponen harga.
+    - Default checbox pada Komponen harga PPn dan PPh adalah checklist dan disabled
+    - Sedangkan default checkbox pada Komponen harga Diskon adalah unchecklist dan enabled. Jika checkbox diskon di checklist, maka Komponen harga diskon akan aktif
+    - PPn bersifat menambahkan beban pembiayaan, sedangkan PPh bersifat mengurangi beban pembiayaan
+    - Pada ID order yang membawa nilai PPn, maka untuk field PPn akan disabled dan tidak dapat diganti
+    - Sedangkan pada ID order lama atau yang belum memiliki nilai PPn maka field PPn akan enabled dan menampilkan rekomendasi nilai PPn dari setting pajak admin
+    - Untuk kolom PPh, nilai PPh juga diambil dari order tersebut, namun fieldnya enable.
+    - Rumus PPn : (%PPn x Rp. Total Harga)
+    - Jika ada diskon, rumus PPn : (Total harga - Diskon) x %PPn
+    - Rumus PPh : (%PPh x Rp. Total Harga)
+    - Jika ada diskon, rumus PPh : (Total harga - Diskon) x %PPh
+    - Rumus Grand Total Jika Tidak Ada Diskon : Total + Jumlah PPn - Jumlah PPh
+    - Rumus Grand Total Jika Ada Diskon : (Total - Diskon) + Jumlah PPn - Jumlah PPh
+    - Pada data informasi harga di invoice jasa pengiriman, nama item dan harga otomatis tampil sesuai dengan jumlah unit di nomor order. Contoh : Jika jumlah unit, yang ada pada nomor order tersebut ada 3, maka juga akan tergenerate sejumlah 3 baris nama item juga
+    - Format penamaan item yang tampil terdiri dari : Jenis Kontainer (Nomor Kontainer) | Rute. Contoh : 20 Dry (CICU8592181) | Tanjung Perak (SUB) - Belawan (BLW)
+    - Ketika di klik tambah biaya Lainnya maka akan menambahkan kolom nama item dan harga baru
+- Pada halaman form invoice biaya tambahan (tanpa PPn), terdapat beberapa rule antara lain :
+    - Komponen harga yang aktif defaultnya yaitu Diskon. Namun masih dapat melakukan edit Komponen harga yang aktif dengan klik tambah Komponen harga.
+    - Default checbox pada Komponen diskon adalah checklist dan disabled
+    - Sedangkan default checkbox pada Komponen harga PPn dan PPh adalah unchecklist dan enabled. Jika checkbox di checklist, maka Komponen harga PPn atau PPh akan aktif
+    - Terdapat penyesuaian label pada label harga pengiriman diganti menjadi Biaya tambahan
+    - Terdapat penyesuaian Label 'Biaya pengiriman dibayarkan ke nomor tersebut' dibawah kolom Virtual Account diubah menjadi 'Pembayaran ditransfer ke nomor tersebut'
+    - PPn bersifat menambahkan beban pembiayaan, sedangkan PPh bersifat mengurangi beban pembiayaan
+    - Pada ID order yang membawa nilai PPn dan PPh, maka untuk field PPn dan PPh tetap enabled dan dapat melakukan edit
+    - Rumus PPn : (%PPn x Rp. Total Harga)
+    - Jika ada diskon, rumus PPn : (Total harga - Diskon) x %PPn
+    - Rumus PPh : (%PPh x Rp. Total Harga)
+    - Jika ada diskon, rumus PPh : (Total harga - Diskon) x %PPh
+    - Rumus Grand Total Jika Tidak Ada Diskon : Total + Jumlah PPn - Jumlah PPh
+    - Rumus Grand Total Jika Ada Diskon : (Total - Diskon) + Jumlah PPn - Jumlah PPh
+    - Pada data informasi harga di invoice biaya tambahan, nama item dan harga defaultnya berupa form kosong (tidak membawa item)
+    - Ketika di klik tambah biaya Lainnya maka akan menambahkan kolom nama item dan harga baru
+- Untuk upload invoice, file yang dapat diupload maksimal 10 file dalam satu kali proses upload dan ukuran maksimal per file adalah 4MB. File yang dapat diterima adalah .pdf .jpg atau .png
+- Invoice jasa pengiriman atau tambahan yang telah dibuat atau file invoice yang di uploadakan tampil pada tabel di halaman Invoice
+- Urutan data yang tampil pada table, meliputi :
+    - invoice pengiriman, dengan update invoice Buat : DD/MM/YYYY
+    - Invoice tambahan , dengan update invoice Buat : DD/MM/YYYY
+    - File invoice yang di upload, dengan update invoice Upload : DD/MM/YYYY
+
+## Input Kelengkapan Unit
+
+- Untuk step input unit data ada beberapa aturan :
+  - Jika input data unit maka data nopol dan nama sopir wajib diisi
+  - Untuk nomor container dan segel tidak bisa sama antar data unit
+  - Field input nomor kontainer memiliki pembatasan karakter, yaitu hanya dapat menerima huruf dan angka dengan panjang maksimum 11 karakter. Input tidak boleh mengandung spasi atau karakter khusus
+  - Jika berhasil input data unit maka akan mengirim notif kelengkapan data unit ke bid owner dalam bentuk email dan wa
+  - Field input no. telp sopir wajib diisi . Karakter yang dapat dimasukkan adalah angka dan simbol "-" (tanda strip)
+- Setelah input unit, maka status ordernya ialah PROSES PENUGASAN
+- Pada halaman lihat data unit akan menampilkan data unit yang telah diinputkan, jika saat input unit bidder pilih lewati proses input unit maka pada halaman lihat data unit ditampilkan keterangan “*) Data unit menunggu bidder update pengiriman”
+- Pada halaman lihat data unit ada tombol edit unit. Tombol edit unit aktif apabila order belum dikerjakan tracking, jika unit pada order sudah dikerjakan tracking maka tidak bisa dilakukan edit unit
+- Jika pada jadwal termasuk kapal connecting maka akan muncul button “kapal connecting nx”
+- Pada halaman edit data unit ketentuannya sama seperti saat input unit

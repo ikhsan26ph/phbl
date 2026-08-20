@@ -1,0 +1,507 @@
+# Pengaturan Akun
+
+## Hak Akses Bid Owner
+
+  - Hak akses milik bid owner hanya bisa dibuat oleh admin
+  - Total perizinan hanya menghitung akses-akses yang berada di sub modul. Untuk checkbox Pilih Semua tidak terhitung
+  - Hak akses yang telah digunakan tidak bisa dihapus
+  - Tanggal diperbarui diambil dari waktu saat hak akses terkait diedit
+  - Hak Akses Telah Digunakan diambil dari jumlah sub user yang menggunakan akses terkait
+  - Akses yang dipilih minimal 1 akses, jika tidak ada akses yang dipilih maka ketika simpan tidak bisa dan muncul alert “Pilih Hak akses minimal 1”
+  - Pada hak akses rulenya ketika ceklist akses maka akses atasnya ikut terceklis juga
+  - Jika unceklist akses maka akses bawahnya ikut ter unceklist juga
+  - Terdapat perubahan pada hak akses Modul Pengajuan Lelang (Pilih Semua) :
+    - Lihat Daftar Pengajuan Lelang (Lv1) : jika ada akses ini maka pada sidebar menu muncul menu Pengajuan Lelang dan bisa lihat list pengajuan lelang
+    - Lihat Detail Pengajuan Lelang (Lv2) : jika ada akses ini maka pada list pengajuan lelang muncul pilihan aksi “Detail Pengajuan Lelang”
+    - Buat Pengajuan Lelang (Lv3) : jika ada akses ini maka pada list pengajuan lelang muncul tombol Buat Pengajuan Lelang dan bisa buat lelang
+    - Batalkan Lelang (Lv3) : jika ada akses ini maka pada list lelang ada pilihan aksi “Batalkan Lelang” dan di detail pengajuan lelang muncul tombol “Batalkan Lelang”
+    - Lihat Harga Penawaran (Lv3) : jika ada akses ini maka pada daftar pengajuan lelang akan ada pilihan aksi “Lihat Harga Penawaran”
+    - Minta Update Harga (Lv4) : jika ada akses ini maka maka pada daftar pengajuan lelang akan ada pilihan aksi “Minta Update Harga” dan bisa request update harga
+    - History Update Harga (Lv3)  : jika ada akses ini maka maka pada daftar pengajuan lelang akan ada pilihan aksi “History Update Harga” dan bisa lihat Riwayat update harga
+  - Modul Cari Penawaran (Pilih Semua) :
+    - Cari Hasil Penawaran (lv1) : jika ada akses ini maka pada sidebar menu muncul menu Cari Penawaran dan bisa diakses
+    - Buat Lelang Pengiriman (lv2) : jika ada akses ini maka pada halaman cari penawaran muncul “Buat Lelang Baru”
+    - Pesan (lv2) : jika ada akses ini maka pada halaman cari penawaran muncul tombol “Pesan”
+    - Export Harga Penawaran (lv2) : jika ada akses ini maka pada halaman cari penawaran muncul tombol “Export Harga Penawaran”
+    - Nego Harga (lv2) : jika ada akses ini maka pada halaman cari penawaran muncul tombol “Nego”
+    - Request Jadwal (LV2) : Jia ada akses ini, maka pada halaman cari penawaran akan tampil tombol ‘Request Jadwal’
+  - Modul Pengajuan Nego (Pilih Semua) :
+    - Lihat Daftar Pengajuan Nego (lv1) : jika ada akses ini maka pada sidebar menu muncul menu Pengajuan Nego
+    - Lihat Detail Pengajuan Nego (lv2) : jika ada akses ini maka bisa akses halaman detail nego diterima & detail nego ditolak. Dan tombol Diterima & Ditolak available
+  - Modul Daftar Order (Pilih Semua) :
+    - Lihat Daftar Order (lv1) : jika ada akses ini maka pada sidebar muncul menu Daftar Order
+    - Lihat Detail Order (lv2) : jika ada akses ini maka pada daftar order muncul textlink detail order
+    - Input Muatan (lv3) : jika ada akses ini maka pada daftar order ada pilihan input muatan
+    - Edit Data Muatan (lv4) : jika ada akses ini maka pada daftar order ada action menu edit muatan
+    - Batal Order (lv3) : jika ada akses ini maka pada daftar order ada action menu Batal Order
+    - Input Perjanjian (lv3) : jika ada akses ini maka pada daftar order ada tombol Input Perjanjian
+    - Lihat Data Unit (lv3): jika ada akses ini maka pada daftar order ada action menu lihat data unit
+    - Download Dokumen (lv3) :  jika ada akses ini maka pada daftar order ada action menu download dokumen
+    - Beri Penilaian Bidder (lv3)  : jika ada akses ini maka pada daftar order ada action menu beri penilaian ke bidder
+    - Lihat Biaya Tambahan (lv3)  : jika ada akses ini maka pada daftar order ada action menu biaya tambahan
+    - Input Biaya Tambahan (lv4)  : jika ada akses ini maka pada halaman biaya tambahan  ada tombol tambah
+    - Edit Biaya Tambahan (lv4)  : jika ada akses ini maka pada halaman biaya tambahan  ada tombol edit
+    - Hapus Biaya Tambahan (lv4)  : jika ada akses ini maka pada halaman biaya tambahan  ada tombol hapus
+    - Lihat Pemesanan (lv3) : jika ada akses ini maka pada detail order dapat lihat tab pemesanan
+    - Lihat Dokumen Packing List (lv4)  : jika ada akses ini maka pada detail order tab pemesanan ada text link lihat dokumen packing list
+    - Download Dokumen Packing List (lv5) : jika ada akses ini maka pada detail order tab pemesanan di bagian popup lihat dokumen packing list muncul tombol download
+    - Lihat Perjanjian (lv3) : jika ada akses ini maka pada detail order dapat akses tab perjanjian pengiriman
+    - Export Perjanjian (lv4) : jika ada akses ini maka pada tab perjanjian pengiriman ada tombol export perjanjian
+    - Download Dokumen Perjanjian (lv4): jika ada akses ini maka pada detail order tab perjanjian bisa download dokumen perjanjian
+    - Lihat Data Tracking (lv3)  : jika ada akses ini maka pada detail order bisa akses tab status pengiriman
+    - Lihat Detail Data Tracking (lv4)  : jika ada akses ini maka pada detail oreder tab status pengiriman ada textlink detail data
+    - Lihat Rating (lv3) : jika ada akses ini maka pada detail order dapat akses tab penilaian order dan dapat lihat rating ke bidder
+  - Modul Cek Jadwal Pelayaran (Pilih Semua) :
+    - Lihat Jadwal Pelayaran (lv1) : jika ada akses ini maka di sidebar menu muncul menu cek jadwal pelayaran
+  - Modul Laporan (Pilih Semua) :
+    - Lihat History Lelang (lv1) : jika ada akses ini maka pada sidebar menu muncul sub menu Laporan History Lelang
+    - Export Excel Daftar History Lelang (lv2) : jika ada akses ini maka pada laporan history lelang ada tombol export
+    - Lihat Laporan Logistik (lv1) : jika ada akses ini maka muncul sub menu laporan logistik
+    - Detail Laporan Logistik (lv2): jika ada akses ini maka pada laporan logistik ada tombol detail
+    - Export Excel Laporan Logistik (lv2) : jika ada akses ini maka pada laporan logistik ada tombol export
+  - Modul Dashboard (Pilih Semua) :
+    - Lihat Dashboard Monitoring (lv1) : jika ada akses ini maka pada sidebar menu muncul sub menu Monitoring pengiriman
+    - Export Excel Monitoring (lv2) : jika ada akses ini maka di dashboard monitoring pengiriman ada pilihan export excel
+    - Lihat Frekuensi Pengiriman (lv1) : jika ada akses ini maka dapat akses halaman dashboard frekuensi pengiriman
+    - Lihat Grafik Pengiriman (lv1) : jika ada akses ini maka dapat akses halaman dashboard grafik pengiriman
+  - Modul Pengaturan Akun (Pilih Semua) :
+    - Lihat Daftar Hak Akses (lv1) : jika ada akses ini maka muncul sub menu Hak Akses dan bisa akses halaman hak akses
+    - Lihat Detail Hak Akses (lv2) : jika ada akses ini maka pada hak akses muncuk tombol detail
+    - Lihat Daftar Sub User (lv1) : jika ada akses ini muncuk sub menu sub user dan bisa akses halaman sub user
+    - Tambah Sub User (lv3) : jika ada akses ini maka pada list sub user ada tombol tambah
+    - Lihat Detail Sub User (lv2) : jika ada akses ini maka pada list sub user ada tombol detail
+    - Edit Sub User (lv3) : jika ada akses ini maka pada list sub user ada tombol edit
+    - Hapus Sub User (lv3) : jika ada akses ini maka pada list sub user ada tombol hapus
+  - Modul Notifikasi (Email) :
+    - Notif Perubahan Data Diterima (lv1) : jika ada akses ini maka terima notif email perubahan data diterima
+    - Notif Perubahan Data Ditolak (lv1) : jika ada akses ini maka terima notif email perubahan data ditolak
+    - Notif Perjanjian Pengiriman Diterima (lv1) : jika ada akses ini maka terima notif email perjanjian pengiriman diterima
+    - Notif Perjanjian Pengiriman Ditolak (lv1) : jika ada akses ini maka terima notif email perjanjian ditolak
+    - Notif Kelengkapan Data Unit (lv1) : jika ada akses ini maka terima notif email kelengkapan data unit
+    - Notif Perubahan Jadwal (lv1) : jika ada akses ini maka terima notif email perubahan jadwal
+    - Notif Ambil Kontainer (lv1) : jika ada akses ini maka terima notif email  ambil kontainer
+    - Notif Stuffing (lv1) : jika ada akses ini maka terima notif email  stuffing
+    - Notif Kapal Berlayar (lv1) : jika ada akses ini maka terima notif email  kapal berlayar
+    - Notif Kapal Sandar (lv1) : jika ada akses ini maka terima notif email  kapal sandar
+    - Notif Rencana Dooring (lv1) : jika ada akses ini maka terima notif email  rencana dooring
+    - Notif Dooring (lv1) : jika ada akses ini maka terima notif email  dooring
+    - Notif Dokumen Dikirim (lv1) : jika ada akses ini maka terima notif email  dokumen dikirim
+  - Modul Notifikasi Sistem (Push Notifikasi) :
+    - Notif Nego Diterima (lv1) : Jika ada akses ini, maka sub user bid owner akan menerima notif tersebut
+    - Notif Nego Ditolak (lv1) : Jika ada akses ini, maka sub user bid owner akan menerima notif tersebut
+    - Notif Nego Dicounter (lv1) : Jika ada akses ini, maka sub user bid owner akan menerima notif tersebut
+    - Notif Perjanjian Pengiriman Diterima (lv1) : Jika ada akses ini, maka sub user bid owner akan menerima notif tersebut
+    - Notif Perjanjian Pengiriman Ditolak (lv1) : Jika ada akses ini, maka sub user bid owner akan menerima notif tersebut
+    - Notif Kelengkapan Data Unit (lv1) : Jika ada akses ini, maka sub user bid owner akan menerima notif tersebut
+    - Notif Perubahan Jadwal (lv1) : Jika ada akses ini, maka sub user bid owner akan menerima notif tersebut
+    - Notif Ambil Kontainer (lv1) : Jika ada akses ini, maka sub user bid owner akan menerima notif tersebut
+    - Notif Stuffing (lv1) : Jika ada akses ini, maka sub user bid owner akan menerima notif tersebut
+    - Notif Kapal Berlayar (lv1) : Jika ada akses ini, maka sub user bid owner akan menerima notif tersebut
+    - Notif Kapal Sandar (lv1) : Jika ada akses ini, maka sub user bid owner akan menerima notif tersebut
+    - Notif Rencana Dooring (lv1) : Jika ada akses ini, maka sub user bid owner akan menerima notif tersebut
+    - Notif Dooring (lv1) : Jika ada akses ini, maka sub user bid owner akan menerima notif tersebut
+    - Notif SJ Diterima Agen (lv1) : Jika ada akses ini, maka sub user bid owner akan menerima notif tersebut
+    - Notif Dokumen Dikirim (lv1) : Jika ada akses ini, maka sub user bid owner akan menerima notif tersebut
+    - Notif Jadwal Tersedia (lv1) : Jika ada akses ini, maka sub user bid owner akan menerima notif tersebut
+
+## Sub User Bid Owner
+
+- Sub user bid owner bisa ditambahkan oleh bid owner itu sendiri maupun dari sisi admin
+- email dan nomor whatsapp dari sub user yang akan ditambahkan atau diedit tidak bisa sama dengan nomor wa yang telah terdaftar pada sistem
+- hak akses yang tampil adalah sesuai dengan hak akses yang telah dibuat untuk bid owner tersebut dan posisi nya akses terbaru berada diatas
+- Sub user yang tidak aktif tidak bisa login di web
+- Apabila akses yang digunakan lebih dari satu maka tampilannya berbentuk koma pada detail hak akses
+- Nomor whatsapp dari sub user optional, namun tidak bisa sama dengan nomor yang sudah terpakai di sub user lain maupun akun bid owner & bidder utama
+- Jika sub user bid owner memiliki akses beberapa notifikasi yang terkirim to bid owner utama maka, sub user bid owner juga mendapatkan notifikasi tersebut secara to juga
+
+## Hak Akses Bidder
+
+  - Hak akses milik bidder hanya bisa dibuat oleh admin
+  - Total perizinan hanya menghitung akses-akses yang berada di sub modul. Untuk checkbox Pilih Semua tidak terhitung
+  - Hak akses yang telah digunakan tidak bisa dihapus
+  - Tanggal diperbarui diambil dari waktu saat hak akses terkait diedit
+  - Hak Akses Telah Digunakan diambil dari jumlah sub user yang menggunakan akses terkait
+  - Akses yang dipilih minimal 1 akses, jika tidak ada akses yang dipilih maka ketika simpan tidak bisa dan muncul alert “Pilih Hak akses minimal 1”
+  - Pada hak akses rulenya ketika ceklist akses maka akses atasnya ikut terceklist juga
+  - Jika unceklist akses maka akses bawahnya ikut terunceklist juga
+  - Terdapat pembaruan pada hak akses Modul Pengajuan Lelang (Pilih Semua) :
+    - Lihat Daftar Pengajuan Lelang (lv1) : jika ada akses ini maka bisa akses halaman daftar pengajuan lelang
+    - Lihat Detail Pengajuan Lelang (lv2) : jika ada akses ini maka di list pengajuan lelang ada pilihan detail pengajuan lelang
+    - Input Harga Penawaran (lv3) : jika ada akses ini maka pada list & detail lelang ada pilihan dan tombol input harga penawaran
+    - Menuju Update Harga (lv3) : jika ada akses maka ini maka di list lelang ada pilihan menuju update harga. Dan juga bisa akses halaman harga&jadwal dan dapat update harga
+  - Terdapat pembaruan pada hak akses Modul Harga Dan Jadwal (Pilih Semua) :
+    - Lihat Daftar Harga (lv1) : jika ada akses ini maka bisa akses list harga & jadwal
+    - Tambah Harga (lv3) : jika ada akses ini maka di list harga ada tombol input harga penawaran
+    - Lihat Detail Harga (lv2) : jika ada akses ini maka di list harga ada tombol detail
+    - Edit Harga (lv3) : jika ada akses ini maka di list harga ada tombol edit
+    - Update Harga (lv3) : jika ada akses ini maka di list harga ada tombol update dan bisa update harga
+    - Hapus Harga (lv3) : jika ada akses ini maka di list harga ada tombol hapus
+    - Lihat Daftar Jadwal (lv3) : jika ada akses ini maka di list harga ada tombol lihat jadwal
+    - Tambah Jadwal (lv4) : jika ada akses ini maka di list jadwal ada tombol input / tambah jadwal
+    - Edit Jadwal (lv4) : jika ada akses ini maka di list jadwal ada tombol edit
+    - Hapus Jadwal (lv4) : jika ada akses ini maka di list jadwal ada tombol hapus
+    - Lihat Request Jadwal (lv 3) : Jika sub user bidder memiliki akses ini maka di halaman Harga dan Jadwal tampil tab request jadwal serta menampilkan list penawaran yang sedang di request
+    - Update Jadwal (lv 5) : Jika sub user bidder memiliki akses ini maka di halaman Harga dan Jadwal, tab request jadwal, muncul tombol Update dan bidder dapat melakukan update di penawaran tersebut
+  - Modul Pengajuan Nego (Pilih Semua) :
+    - Lihat Daftar Pengajuan Nego (lv1) : jika ada akses ini maka bisa akses halaman daftar pengajuan nego
+    - Tolak / Terima Pengajuan Nego (lv3) : jika ada akses ini maka di list nego tombol negosiasi / tolak nego bisa diklik
+    - Lihat Detail Pengajuan Nego (lv2) : jika ada akses ini maka di list nego tombom diterima / ditokak bisa diklik
+  - Modul Profil (Pilih Semua) :
+    - Lihat Profil (lv1) : jika ada akses ini maka bisa akses halaman profil bidder
+    - Edit Profil (lv2) : jika ada akses ini di halaman profil ada tombol edit
+  - Modul Daftar Order (Pilih Semua) :
+    - Lihat Daftar Order (lv1) : jika ada akses ini maka bisa akses halaman daftar order
+    - Lihat Detail Order (lv2) : jika ada akses ini maka di list order ada textlink detail order
+    - Upload Dokumen (lv3): jika ada akses ini maka di list order muncul action menu Upload Dokumen
+    - Input Kelengkapan Unit (lv4) : jika ada akses ini maka di list order ada tombol Input Unit
+    - Lihat Data Unit (lv3) : jika ada akses ini maka di list order ini muncul action menu lihat data unit
+    - Edit Data Unit (lv4) : jika ada akses ini maka di lihat data unit muncul tombol edit
+    - Lihat Biaya Tambahan (lv3) : jika ada akses ini maka di list order muncul action menu biaya tambahan
+    - Lihat Pemesanan (lv3) : jika ada akses ini maka di detail order bisa akses tab pemesanan
+    - Lihat Dokumen Packinglist (lv4) : jika ada akses ini di detail order tab pemesanan muncul textlink lihat dokumen packinglist
+    - Download Dokumen Packinglist (lv5) : jika ada akses ini di detail order tab pemesanan di popup lihat packinglist muncul tombol download
+    - Lihat Perjanjian (lv3) : jika ada akses ini maka detail order bisa akses tab perjanjain pengiriman
+    - Download Dokumen Perjanjian (lv4) : jika ada akses ini maka di detail order tab perjanjian pengiriman bisa download dokumen perjanjain
+    - Lihat Data Tracking (lv3) : jika ada akses ini maka di detail order bisa akses tab status pengiriman
+    - Lihat Detail Data Tracking (lv4) : jika ada akses ini maka di detail order tab status pengiriman muncul textlink detail data
+    - Lihat Rating (lv3) : jika ada akses ini maka di detail order bisa akses tab penilaian order dan lihat rating
+  - Modul Penugasan Tracking (Pilih Semua) :
+    - Lihat Daftar Penugasan Tracking (lv1): jika ada akses ini maka muncul menu sidebar penugasan tracking
+    - Download APK Tracking (lv2): jika ada akses ini maka di list penugasan tracking muncul tombol download apk tracking
+    - Input Penugasan (lv2) : jika ada akses ini maka di list penugasan tracking muncul tombol Tracking, action menu Edit Penugasan, action menu Penugasan Selesai
+    - Edit Penugasan (lv3): jika ada akses ini maka di halaman tracking pengiriman muncul pilihan action menu Edit Petugas
+    - Isi Data Tracking (lv3) : jika ada akses ini maka di halaman tracking pengiriman muncul pilihan action menu Isi Data Tracking
+    - Edit Data Tracking (lv3) : jika ada akses ini maka di halaman tracking pengiriman muncul pilihan action menu Edit Data Tracking
+    - Lihat Data Tracking (lv2) : jika ada akses ini maka di list penugasan tracking ada action menu lihat data tracking
+    - Lihat Detail Data Tracking (lv3) : jika ada akses ini maka di halaman lihat data tracking muncul textlink detail data
+  - Modul Pengaturan Akun (Pilih Semua) :
+    - Lihat Daftar Hak Akses (lv1) : jika ada akses ini maka muncul sub menu Hak Akses dan bisa akses halaman hak akses
+    - Lihat Detail Hak Akses (lv2) : jika ada akses ini maka pada hak akses muncuk tombol detail
+    - Lihat Daftar Sub User (lv1):  jika ada akses ini muncuk sub menu sub user dan bisa akses halaman sub user
+    - Tambah Sub User (lv3) :  jika ada akses ini maka pada list sub user ada tombol tambah
+    - Lihat Detail Sub User (lv2) :  jika ada akses ini maka pada list sub user ada tombol detail
+    - Edit Sub User (lv3) : jika ada akses ini maka pada list sub user ada tombol edit
+    - Hapus Sub User (lv3) : jika ada akses ini maka pada list sub user ada tombol hapus
+  - Modul Notifikasi (Email) :
+    - Notif Perubahan Data Diterima (lv1) :  jika ada akses ini maka terima notif email perubahan data diterima
+    - Notif Perubahan Data Ditolak (lv1) :  jika ada akses ini maka terima notif email perubahan ditolak
+    - Notif Pengajuan Lelang (lv1) :  jika ada akses ini maka terima notif email pengajuan lelang
+    - Notif Lelang Dibatalkan (lv1) :  jika ada akses ini maka terima notif email lelang dibatalkan
+    - Notif Pengajuan Nego (lv1) :  jika ada akses ini maka terima notif email pengajuan nego
+    - Notif Request Update Harga (lv1) : jika ada akses ini maka terima notif email request update harga
+    - Notif Bidder Kalah Lelang (lv1) :  jika ada akses ini maka terima notif email perihal lelang
+    - Notif Validasi Perjanjian Bid Owner Diterima (lv1) :  jika ada akses ini maka terima notif email perjanjian bid owner diterima
+  - Modul Notifikasi Sistem (Push Notifikasi :
+    - Notif Pengajuan Lelang (lv1) : Jika ada akses ini, maka sub user bidder akan menerima notif tersebut
+    - Notif Lelang Dibatalkan (lv1) : Jika ada akses ini, maka sub user bidder akan menerima notif tersebut
+    - Notif Pengajuan Nego (lv1) : Jika ada akses ini, maka sub user bidder akan menerima notif tersebut
+    - Notif Request Update Harga (lv1) : Jika ada akses ini, maka sub user bidder akan menerima notif tersebut
+    - Notif Validasi Perjanjian Bid Owner Diterima (lv1) : Jika ada akses ini, maka sub user bidder akan menerima notif tersebut
+    - Notif Bid Owner Request Jadwal (lv1) : Jika ada akses ini, maka sub user bidder akan menerima notif tersebut
+
+## Sub User Bidder
+
+- Sub user bidder bisa ditambahkan oleh bidder itu sendiri maupun dari sisi admin
+- email dan nomor whatsapp dari sub user yang akan ditambahkan atau diedit tidak bisa sama dengan nomor wa yang telah terdaftar pada sistem
+- hak akses yang tampil adalah sesuai dengan hak akses yang telah dibuat untuk bidder  tersebut dan posisi nya akses terbaru berada diatas
+- Sub user yang tidak aktif tidak bisa login di web
+- Apabila akses yang digunakan lebih dari satu maka tampilannya berbentuk koma pada detail hak akses
+- Nomor whatsapp dari sub user optional, namun tidak bisa sama dengan nomor yang sudah terpakai di sub user lain maupun akun bid owner & bidder utama
+- Jika sub user bidder  memiliki akses beberapa notifikasi yang terkirim to bidderutama maka, sub user bidder juga mendapatkan notifikasi tersebut secara to juga
+
+## Hak Akses Admin
+
+  - Admin dapat membuat hak akses sendiri
+  - Total perizinan hanya menghitung akses-akses yang berada di sub modul. Untuk checkbox Pilih Semua tidak terhitung
+  - Hak akses yang telah digunakan tidak bisa dihapus
+  - Tanggal diperbarui diambil dari waktu saat hak akses terkait diedit
+  - Hak Akses Telah Digunakan diambil dari jumlah sub user yang menggunakan akses terkait
+  - Akses yang dipilih minimal 1 akses, jika tidak ada akses yang dipilih maka ketika simpan tidak bisa dan muncul alert “Pilih Hak akses minimal 1”
+  - Pada hak akses rulenya ketika ceklist akses maka akses atasnya ikut terceklist juga
+  - Jika unceklist akses maka akses bawahnya ikut terunceklist juga
+  - Modul Master (Provinsi) :
+    - Lihat Daftar Provinsi (lv1) : jika ada akses ini maka bisa akses halaman master provinsi
+  - Modul Master (Kota) :
+    - Lihat Daftar Kota (lv1) : jika ada akses ini maka bisa akses halaman master kota
+  - Modul Master (Pelabuhan) :
+    - Lihat Daftar Pelabuhan (lv1) : jika ada akses ini maka bisa akses halaman master pelabuhan
+    - Tambah Pelabuhan (lv2) : jika ada akses ini maka di master pelabuhan muncul tombol Tambah
+    - Edit Pelabuhan (lv2): jika ada akses ini maka di master pelabuhan muncul tombol Edit
+    - Hapus Pelabuhan (lv2) : jika ada akses ini maka di master pelabuhan muncul tombol Hapus
+    - Export Data Pelabuhan (lv2): jika ada akses ini maka di master pelabuhan muncul tombol Export
+  - Modul Master (Bank) :
+    - Lihat Daftar Bank (lv1) : jika ada akses ini maka bisa akses halaman Master Bank
+    - Tambah Bank (lv2): jika ada akses ini maka di halaman master bank ada tombol tambah
+    - Edit Bank (lv2): jika ada akses ini maka di halaman master bank ada tombol edit
+    - Hapus Bank (lv2): jika ada akses ini maka di halaman master bank ada tombol hapus
+  - Modul Master (Include) :
+    - Lihat Daftar Include (lv1) :  jika ada akses ini maka bisa akses halaman Master Include
+    - Tambah Include (lv2): jika ada akses ini maka di halaman master include ada tombol tambah
+    - Edit Include (lv2): jika ada akses ini maka di halaman master include ada tombol edit
+    - Hapus Include (lv2): jika ada akses ini maka di halaman master include ada tombol hapus
+  - Modul Master (Kemasan) :
+    - Lihat Daftar Kemasan (lv1) : jika ada akses ini maka bisa akses halaman Master Kemasan
+    - Tambah Kemasan (lv2): jika ada akses ini maka di halaman master kemasan  ada tombol tambah
+    - Edit Kemasan (lv2): jika ada akses ini maka di halaman master kemasan  ada tombol edit
+    - Hapus Kemasan (lv2): jika ada akses ini maka di halaman master kemasan  ada tombol hapus
+  - Modul Master (Pelayaran) :
+    - Lihat Daftar Pelayaran (lv1) : jika ada akses ini maka bisa akses halaman Master Pelayaran
+    - Tambah Pelayaran (lv2): jika ada akses ini maka di halaman master pelayaran  ada tombol tambah
+    - Edit Pelayaran (lv2): jika ada akses ini maka di halaman master kemasan  ada tombol edit
+    - Hapus Pelayaran (lv2): jika ada akses ini maka di halaman master kemasan  ada tombol hapus
+  - Modul Master (Jenis Kontainer) :
+    - Lihat Daftar Jenis Kontainer (lv1) : jika ada akses ini maka bisa akses halaman Master Jenis Kontainer
+    - Tambah Jenis Kontainer (lv2): jika ada akses ini maka di halaman master jenis kontainer  ada tombol tambah
+    - Edit Jenis Kontainer (lv2): jika ada akses ini maka di halaman master jenis kontainer  ada tombol edit
+    - Hapus Jenis Kontainer (lv2): jika ada akses ini maka di halaman master jenis kontainer  ada tombol hapus
+  - Modul Master (Dokumen Penagihan) :
+    - Lihat Daftar Dokumen Penagihan (lv1) : jika ada akses ini maka bisa akses halaman Master Dokumen Penagihan
+    - Tambah Dokumen Penagihan (lv2): jika ada akses ini maka di halaman master dokumen penagihan  ada tombol tambah
+    - Edit Dokumen Penagihan (lv2): jika ada akses ini maka di halaman master dokumen penagihan  ada tombol edit
+    - Hapus Dokumen Penagihan (lv2): jika ada akses ini maka di halaman master dokumen penagihan  ada tombol hapus
+  - Modul Master (Iklan Berbayar) :
+    - Lihat Daftar Iklan Berbayar (lv1) :  jika ada akses ini maka bisa akses halaman Master iklan berbayar
+    - Tambah Iklan Berbayar (lv2): jika ada akses ini maka di halaman master iklan berbayar  ada tombol tambah
+    - Edit Iklan Berbayar (lv2): jika ada akses ini maka di halaman master iklan berbayar  ada tombol edit
+    - Hapus Iklan Berbayar (lv2): jika ada akses ini maka di halaman master iklan berbayar  ada tombol hapus
+  - Modul Master (Petugas APK) :
+    - Lihat Daftar Petugas APK (lv1) : jika ada akses ini maka bisa akses halaman Master petugas apk
+    - Tambah Petugas APK (lv3) : jika ada akses ini maka di halaman master petugas apk  ada tombol tambah
+    - Detail Petugas APK (lv2) :  jika ada akses ini maka di halaman master petugas apk  ada tombol edit
+    - Edit Petugas APK (lv3) :  jika ada akses ini maka di halaman master petugas apk  ada tombol edit
+    - Hapus Petugas APK (lv3) :  jika ada akses ini maka di halaman master petugas apk  ada tombol hapus
+  - Modul Setting (General) :
+    - Lihat Setting General (lv1) : jika ada akses ini maka bisa akses halaman setting general
+    - Edit Versi Sistem (lv2) : jika ada akses ini maka di setting general bisa edit versi sistem
+    - Edit Versi Kontak (lv2) : jika ada akses ini maka di setting general bisa edit kontak
+    - Edit Versi Sosial Media (lv2) : jika ada akses ini maka di setting general bisa edit sosial media
+  - Modul Setting (S&K Booking) :
+    - Lihat S&K Booking (lv1) : jika ada akses ini maka bisa akses halaman S&K Booking
+    - Setting S&K Booking (lv2) : jika ada akses ini maka muncul tombol Setting di halaman S&K Booking
+  - Modul Setting (Rule Reminder) :
+    - Lihat Rule Reminder (lv1) : jika ada akses ini maka bisa akses halaman setting rule reminder
+    - Setting Rule Reminder (lv2) : jika ada akses ini maka di halaman rule reminder muncul tombol setting
+  - Modul Setting (Setting Notifikasi) :
+    - Lihat Setting Notifikasi (lv1) : jika ada akses ini maka bisa akses halaman setting notifikasi
+    - Setting Notifikasi (lv2) : jika ada akses ini di halaman setting notifikasi muncul tombol setting
+  - Modul Validasi Akun (Pre Register) :
+    - Lihat Daftar Pre Register (lv1) : jika ada akses ini maka bisa akses halaman pre register
+    - Lihat Detail Pre Register (lv2) : jika ada akses ini maka di list pre register muncul tombol detail
+  - Modul Validasi Akun (Validasi Bid Owner) :
+    - Lihat Daftar Validasi Bid Owner (lv1) : jika ada akses ini maka bisa akses halaman validasi bid owner
+    - Lihat Detail Validasi Bid Owner (lv2) : jika ada akses ini maka di list validasi bid owner ada tombol Detail
+    - Edit Validasi Bid Owner (lv3) : jika ada akses ini maka di list validasi bid owner ada tombol edit
+    - Lihat Detail Verifikasi (lv3): jika ada akses ini maka di list validasi bid owner ada tombol verifikasi perubahan
+    - Verifikasi Perubahan Data (lv4) : jika ada akses ini maka di halaman verifikasi perubahan data muncul tombol Verifikasi Perubahan
+  - Modul Validasi Akun (Validasi Bidder) :
+    - Lihat Daftar Validasi Bidder(lv1)  : jika ada akses ini maka bisa akses halaman validasi bidder
+    - Lihat Detail Validasi Bidder (lv2) : jika ada akses ini maka di list validasi bidder ada tombol Detail
+    - Edit Validasi Bidder (lv3) :  jika ada akses ini maka di list validasi bidder ada tombol edit
+    - Lihat Detail Verifikasi (lv3) : jika ada akses ini maka di list validasi bidder ada tombol verifikasi perubahan
+    - Verifikasi Perubahan Data (lv4) : jika ada akses ini maka di halaman verifikasi perubahan data muncul tombol Verifikasi Perubahan
+  - Modul Validasi Akun (Profil Bidder) :
+    - Lihat Daftar Profil Bidder (lv1) : jika ada akses ini maka bisa akses halaman Profil Bidder
+    - Lihat Detail Profil Bidder (lv2) : jika ada akses ini maka di halaman profil bidder mucnul tombol detail
+    - Setting Ulasan (lv3) : jika ada akses ini maka di halaman detail profil bidder muncul tombol setting ulasan
+  - Modul Validasi Akun (Dokumen Aanwijzing) :
+    - Lihat Daftar Dok. Aanwijzing (lv1) : jika ada akses ini maka bisa akses halaman daftar dokumen aanwijzing
+    - Lihat Detail Dok. Aanwijzing (lv2) : jika ada akses ini maka bisa akses halaman detail dokumen aanwijzing
+    - Setting Dok. Aanwijzing (lv2) : jika ada akses ini maka bisa akses halaman setting dokumen aanwijzing
+  - Modul Validasi Akun (Peserta Lelang) :
+    - Lihat Daftar Peserta Lelang (lv1) : jika ada akses ini maka bisa akses halaman peserta lelang
+    - Lihat Detail Peserta Lelang (lv2) : jika ada akses ini maka di halaman peserta lelang muncul tombol detail
+    - Setting Peserta Lelang (lv3) : jika ada akses ini maka di halaman peserta lelang muncul tombol edit
+  - Terdapat pembaruan pada hak akses Modul Pengajuan Lelang (Pilih Semua) :
+    - Lihat Daftar Pengajuan Lelang (lv1) : jika ada akses ini maka bisa akses halaman daftar pengajuan lelang
+    - Lihat Detail Pengajuan Lelang (lv2): jika ada akses ini maka di list pengajuan lelang muncul pilihan aksi detail pengajuan lelang
+    - Batalkan Lelang (lv3) : jika ada akses ini maka di list & detail lelang muncul pilihan dan tombol batalkan lelang
+    - Tambah Peserta Lelang (lv4) : jika ada akses ini maka di list lelang muncul pilihan aksi “tambah peserta lelang” dan bisa tambah bidder
+    - Edit Data Lelang (lv4) : jika ada akses ini maka di list lelang muncul pilihan aksi “edit data lelang” dan bisa edit lelang
+    - History Data Lelang (lv3)  : jika ada akses ini maka di list lelang muncul pilihan aksi “history data lelang” dan bisa lihat Riwayat perubahan data lelang
+    - Lihat Harga Penawaran (lv3) : jika ada akses ini maka di list lelang muncul pilihan aksi “lihat harga penawaran” dan bisa cari harga penawaran
+    - Minta Update Harga (lv4)  : jika ada akses ini maka di list lelang muncul pilihan aksi “minta update harga” dan bisa request update harga
+    - Menuju Update Harga (lv3) :  jika ada akses ini maka di list lelang muncul pilihan aksi “menuju update harga” dan bisa update harga
+    - History Update Harga (lv3)  : jika ada akses ini maka di list lelang muncul pilihan aksi “history update harga” dan bisa lihat Riwayat update harga
+    - Harga Disembunyikan : jika ada akses ini maka di detail lelang, edit data lelang, tambah peserta lelang, batalkan lelang data budget pengiriman dihidden
+  - Modul Validasi Akun (Relasi Satu Pintu) :
+    - Lihat Daftar Relasi Satu Pintu (lv1) : Jika ada akses ini maka bisa akses halaman daftar pengajuan lelang
+    - Setting Relasi Satu Pintu (lv2) : Jika ada akses ini maka muncul tombol setting relasi, dan menampilkan halaman setting relasi
+    - Tambah Relasi (lv3): Jika ada akses ini maka muncul tombol tambah relasi dan dapat menambahkan relasi bidder
+    - Edit Relasi (lv3) : Jika ada akses ini maka muncul edit relasi dan dapat melakukan edit data relasi bidder
+    - Hapus Relasi (lv3) : Jika ada akses ini maka muncul tombol hapus relasi dan dapat melakukan hapus data relasi bidder
+  - Terdapat pembaruan hak akses Modul Harga Dan Jadwal - Menu Bidder (Pilih Semua) :
+    - Lihat Daftar Harga (lv1) : jika ada akses ini maka bisa akses halaman harga & jadwal
+    - Tambah Harga (lv3) : jika ada akses ini maka di list harga ada tombol input harga penawaran
+    - Lihat Detail Harga (lv2) : jika ada akses ini maka di list harga ada tombol detail
+    - Edit Harga (lv3) : jika ada akses ini maka di list harga ada tombol edit
+    - Update Harga (lv3) : jika ada akses ini maka di list harga ada tombol update dan bisa update harga
+    - Hapus Harga (lv3) : jika ada akses ini maka di list harga ada tombol hapus
+    - Lihat Daftar Jadwal (lv3) : jika ada akses ini maka di list harga ada tombol lihat jadwal
+    - Tambah Jadwal (lv4) : jika ada akses ini maka di list jadwal ada tombol input / tambah jadwal
+    - Edit Jadwal (lv4) : jika ada akses ini maka di list jadwal ada tombol edit
+    - Hapus Jadwal (lv4) : jika ada akses ini maka di list jadwal ada tombol hapus
+    - Lihat Request Jadwal (lv 3) : Jika sub user admin memiliki akses ini maka di halaman Harga dan Jadwal tampil tab request jadwal beserta menampilkan list penawaran yang sedang di request
+    - Update Jadwal (lv 5) : Jika sub user admin memiliki akses ini maka di halaman Harga dan Jadwal, tab request jadwal, muncul tombol Update dan bidder dapat melakukan update di penawaran tersebut
+  - Modul Cari Penawaran (Pilih Semua) :
+    - Cari Hasil Penawaran (lv1) : jika ada akses ini maka pada sidebar menu muncul menu Cari Penawaran dan bisa diakses
+    - Export Harga Penawaran (lv2) : jika ada akses ini maka pada halaman cari penawaran muncul tombol “Export Harga Penawaran”
+    - Pesan (lv2) : jika ada akses ini maka pada halaman cari penawaran muncul tombol “Pesan”
+    - Request Jadwal (LV2) : Jika ada akses ini, maka pada halaman cari penawaran akan tampil tombol ‘Request Jadwal’
+  - Modul Pengajuan Nego (Pilih Semua)
+    - Lihat Daftar Pengajuan Nego (lv1) : jika ada akses ini maka pada sidebar menu muncul menu Pengajuan Nego
+    - Lihat Detail Pengajuan Nego (lv2) : jika ada akses ini maka bisa akses halaman detail nego diterima & detail nego ditolak. Dan tombol Diterima & Ditolak available
+  - Modul Daftar Order (Pilih Semua) :
+    - Lihat Daftar Order (lv1) : jika ada akses ini maka pada sidebar muncul menu Daftar Order
+    - Lihat Detail Order (lv2) : jika ada akses ini maka pada daftar order muncul textlink detail order
+    - Input Muatan (lv3) : jika ada akses ini maka pada daftar order ada pilihan input muatan
+    - Edit Data Muatan (lv4) : jika ada akses ini maka pada daftar order ada action menu edit muatan
+    - Tolak Order (lv3):  jika ada akses ini maka pada daftar order ada action menu tolak order
+    - Input Perjanjian (lv3):   jika ada akses ini maka pada daftar order ada tombol Input Perjanjian
+    - Validasi Order (lv3) :  jika ada akses ini maka pada daftar order ada tombol Validasi Order
+    - Alihkan Order (lv3):  jika ada akses ini maka pada daftar order ada action menu alihkan order
+    - Edit Data Order (lv3):  jika ada akses ini maka pada daftar order ada action menu edit data order
+    - Upload Dokumen (lv3):  jika ada akses ini maka di list order muncul action menu Upload Dokumen
+    - Input Kelengkapan Unit (lv4):  jika ada akses ini maka di list order ada action menu Input Unit
+    - Lihat Data Unit (lv3):  jika ada akses ini maka di list order ini muncul action menu lihat data unit
+    - Edit Data Unit (lv4):   jika ada akses ini maka di lihat data unit muncul tombol edit
+    - Beri Penilaian Bidder (lv3):  jika ada akses ini maka pada daftar order ada action menu beri penialaian ke bidder
+    - Lihat Biaya Tambahan (lv3):  jika ada akses ini maka pada daftar order ada action menu biaya tambahan
+    - Input Biaya Tambahan (lv4) : jika ada akses ini maka pada halaman biaya tambahan  ada tombol tambah
+    - Edit Biaya Tambahan (lv4) : jika ada akses ini maka pada halaman biaya tambahan  ada tombol edit
+    - Hapus Biaya Tambahan (lv4) : jika ada akses ini maka pada halaman biaya tambahan  ada tombol hapus
+    - Lihat Pemesanan (lv3):  jika ada akses ini maka pada detail order dapat lihat tab pemesanan
+    - Lihat Dokumen Packinglist (lv4) : jika ada akses ini maka pada detail order tab pemesanan ada tetxlink lihat dokumen packing list
+    - Download Dokumen Packinglist (lv5) : jika ada akses ini maka pada detail order tab pemesanan dibagian popup lihat dokumen packinglist muncul tombol download
+    - Lihat Perjanjian (lv3):  jika ada akses ini maka pada detail order dapat akses tab perjanjian pengiriman
+    - Export Perjanjian (lv4) : jika ada akses ini maka pada tab perjanjian pengiriman ada tombol export perjanjian
+    - Download Dokumen Perjanjian (lv4) : jika ada akses ini maka pada detail order tab perjanjian bisa download dokumen perjanjian
+    - Lihat Status Pengiriman (lv3):  jika ada akses ini maka pada detail order bisa akses tab status pengiriman
+    - Lihat Data Tracking (lv4) : jika ada akses ini maka pada detail oreder tab status pengiriman ada textlink detail data
+    - Lihat Rating (lv3):  jika ada akses ini maka pada detail order dapat akses tab penilaian order dan dapat lihat rating ke bidder
+  - Modul Penugasan Tracking (Pilih Semua) :
+    - Lihat Daftar Penugasan Tracking (lv1) : jika ada akses ini maka muncul menu sidebar penugasan tracking
+    - Download APK Tracking (lv2) : jika ada akses ini maka di list penugasan tracking muncul tombol download apk tracking
+    - Input Penugasan (lv2): jika ada akses ini maka di list penugasan tracking muncul tombol Tracking, action menu Edit Penugasan, action menu Penugasan Selesai
+    - Edit Penugasan (lv3) : jika ada akses ini maka di halaman tracking pengiriman muncul pilihan action menu Edit Petugas
+    - Isi Data Tracking (lv3) : jika ada akses ini maka di halaman tracking pengiriman muncul pilihan action menu Isi Data Tracking
+    - Edit Data Tracking (lv4): jika ada akses ini maka di halaman tracking pengiriman muncul pilihan action menu Edit Data Tracking
+    - Lihat Data Tracking (lv2) : jika ada akses ini maka di list penugasan tracking ada action menu lihat data tracking
+    - Lihat Detail Data Tracking (lv3) : jika ada akses ini maka di halaman lihat data tracking muncul textlink detail data
+  - Modul Cek Jadwal Pelayaran (Pilih Semua) :
+    - Lihat Jadwal Pelayaran (lv1) : jika ada akses ini maka di sidebar menu muncul menu cek jadwal pelayaran
+  - Modul Laporan (Pilih Semua) :
+    - Lihat History Lelang (lv1) :  jika ada akses ini maka pada sidebar menu muncul sub menu Laporan History Lelang
+    - Export Excel Daftar History Lelang (lv2) : jika ada akses ini maka pada laporan history lelang ada tombol export
+    - Lihat Laporan Owner (lv1) : jika ada akses ini maka muncul sub menu laporan owner
+    - Detail Laporan Owner (lv2) :  jika ada akses ini maka pada laporan owner ada tombol detail
+    - Export Excel Laporan Owner (lv2): jika ada akses ini maka pada laporan owner ada tombol export
+    - Lihat Laporan Logistik (lv1) : jika ada akses ini maka muncul sub menu laporan logistik
+    - Detail Laporan Logistik (lv2) : jika ada akses ini maka pada laporan logistik ada tombol detail
+    - Export Excel Laporan Logistik (lv2) : jika ada akses ini maka pada laporan logistik ada tombol export
+  - Modul Dashboard (Pilih Semua) :
+    - Lihat Dashboard Monitoring (lv1) :  jika ada akses ini maka pada sidebar menu muncul sub menu Monitoring pengiriman
+    - Export Excel Monitoring (lv2) : jika ada akses ini maka di dashboard monitoring pengiriman ada pilihan export excel
+    - Lihat Frekuensi Pengiriman (lv1) : jika ada akses ini maka dapat akses halaman dashboard frekuensi pengiriman
+    - Lihat Grafik Pengiriman (lv1) :  jika ada akses ini maka dapat akses halaman dashboard grafik pengiriman
+  - Modul Pengaturan Akun (Hak akses bid owner) :
+    - Lihat Daftar Hak Akses (lv1) : jika ada akses ini maka muncul sub menu Hak Akses dan bisa akses halaman hak akses bid owner
+    - Tambah Hak Akses (lv3) : jika ada akses ini maka pada hak akses muncul tombol tambah
+    - Lihat Detail Hak Akses (lv2) : jika ada akses ini maka pada hak akses muncul tombol detail
+    - Edit Hak Akses (lv3): jika ada akses ini maka pada hak akses muncul tombol edit
+    - Hapus Hak Akses (lv3): jika ada akses ini maka pada hak akses muncul tombol hapus
+  - Modul Pengaturan Akun (Sub user bid owner) :
+    - Lihat Daftar Sub User (lv1): jika ada akses ini muncuk sub menu sub user dan bisa akses halaman sub user bid owner
+    - Tambah Sub User (lv3): jika ada akses ini maka pada list sub user bid owner ada tombol tambah
+    - Lihat Detail Sub User (lv2): jika ada akses ini maka pada list sub user bid owner ada tombol detail
+    - Edit Sub User (lv3): jika ada akses ini maka pada list sub user bid owner ada tombol edit
+    - Hapus Sub User (lv3): jika ada akses ini maka pada list sub user bid owner ada tombol hapus
+  - Modul Pengaturan Akun (Hak akses bidder) :
+    - Lihat Daftar Hak Akses (lv1): jika ada akses ini maka muncul sub menu Hak Akses dan bisa akses halaman hak akses bidder
+    - Tambah Hak Akses (lv3): jika ada akses ini maka pada hak akses muncul tombol tambah
+    - Lihat Detail Hak Akses (lv2): jika ada akses ini maka pada hak akses muncul tombol detail
+    - Edit Hak Akses (lv3): jika ada akses ini maka pada hak akses muncul tombol edit
+    - Hapus Hak Akses (lv3): jika ada akses ini maka pada hak akses muncul tombol hapus
+  - Modul Pengaturan Akun (Sub user bidder) :
+    - Lihat Daftar Sub User (lv1): jika ada akses ini muncul sub menu sub user dan bisa akses halaman sub user bidder
+    - Tambah Sub User (lv3): jika ada akses ini maka pada list sub user bidder ada tombol tambah
+    - Lihat Detail Sub User (lv2): jika ada akses ini maka pada list sub user bidder ada tombol detail
+    - Edit Sub User (lv3): jika ada akses ini maka pada list sub user bidder ada tombol edit
+    - Hapus Sub User (lv3): jika ada akses ini maka pada list sub user bidder ada tombol hapus
+  - Modul Pengaturan Akun (Hak akses admin) :
+    - Lihat Daftar Hak Akses (lv1): jika ada akses ini maka muncul sub menu Hak Akses dan bisa akses halaman hak akses admin
+    - Tambah Hak Akses (lv3): jika ada akses ini maka pada hak akses muncul tombol tambah
+    - Lihat Detail Hak Akses (lv2): jika ada akses ini maka pada hak akses muncul tombol detail
+    - Edit Hak Akses (lv3): jika ada akses ini maka pada hak akses muncul tombol edit
+    - Hapus Hak Akses (lv3): jika ada akses ini maka pada hak akses muncul tombol hapus
+  - Modul Pengaturan Akun (Sub user admin) :
+    - Lihat Daftar Sub User (lv1): jika ada akses ini muncul sub menu sub user dan bisa akses halaman sub user admin
+    - Tambah Sub User (lv3): jika ada akses ini maka pada list sub user admin ada tombol tambah
+    - Lihat Detail Sub User (lv2): jika ada akses ini maka pada list sub user admin ada tombol detail
+    - Edit Sub User (lv3): jika ada akses ini maka pada list sub user admin ada tombol edit
+    - Hapus Sub User (lv3): jika ada akses ini maka pada list sub user admin ada tombol hapus
+  - Modul Notifikasi (Email) :
+    - Notif To Bid Owner : Registrasi Bid Owner (lv1): jika ada akses ini maka terima notif email registrasi bid owner (bcc)
+    - Notif To Bidder : Registrasi Bidder (lv1): jika ada akses ini maka terima notif email registrasi bidder (bcc)
+    - Notif To Admin : Konfirmasi Registrasi Bid Owner (lv1): jika ada akses ini maka terima notif email konfirmasi registrasi bid owner
+    - Notif To Admin : Konfirmasi Registrasi Bidder (lv1): jika ada akses ini maka terima notif email konfirmasi registrasi bidder
+    - Notif To Admin : Perubahan Data Bid Owner (lv1): jika ada akses ini maka terima notif email perubahan data bid owner
+    - Notif To Admin : Perubahan Data Bidder (lv1): jika ada akses ini maka terima notif email perubahan data bidder
+    - Notif To Bidder : Pengajuan Lelang (lv1):  jika ada akses ini maka terima notif email pengajuan lelang (bcc)
+    - Notif To Bidder : Lelang Dibatalkan (lv1): jika ada akses ini maka terima notif email lelang dibatalkan (bcc)
+    - Notif To Bidder : Kalah Lelang (lv1): jika ada akses ini maka terima notif email perihal lelang (bcc)
+    - Notif To Bidder : Pengajuan Nego (lv1): jika ada akses ini maka terima notif email pengajuan nego (bcc)
+    - Notif To Bidder : Request Update Harga (lv1) : jika ada akses ini maka terima notif email request update harga (bcc)
+    - Notif To Admin : Order Baru (lv1):  jika ada akses ini maka terima notif email order baru
+    - Notif To Admin : Bid Owner Submit Perjanjian (lv1):  jika ada akses ini maka terima notif email bid owner submit perjanjian
+    - Notif To Bid Owner : Perjanjian Diterima (lv1): jika ada akses ini maka terima notif email perjanjian pengiriman diterima (bcc)
+    - Notif To Bid Owner : Perjanjian Ditolak (lv1): jika ada akses ini maka terima notif email perjanjian ditolak  (bcc)
+    - Notif To Bidder : Order Baru Telah Divalidasi Admin (lv1): jika ada akses ini maka terima notif email perjanjian bid owner diterima (bcc)
+    - Notif To Bid Owner : Bidder Melengkapi Data Unit (lv1): jika ada akses ini maka terima notif email kelengkapan data unit (bcc)
+    - Notif To Bid Owner : Perubahan Jadwal (lv1): jika ada akses ini maka terima notif email perubahan jadwal (bcc)
+    - Notif Tracking : Ambil Kontainer (lv1): jika ada akses ini maka terima notif email  ambil kontainer (to admin, cc sub user admin)
+    - Notif Tracking : Stuffing (lv1): jika ada akses ini maka terima notif email  stuffing (to admin, cc sub user admin)
+    - Notif Tracking : Kapal Berlayar (lv1): jika ada akses ini maka terima notif email  kapal berlayar (to admin, cc sub user admin)
+    - Notif Tracking : Kapal Sandar (lv1): jika ada akses ini maka terima notif email  kapal sandar (to admin, cc sub user admin)
+    - Notif Tracking : Rencana Dooring (lv1): jika ada akses ini maka terima notif email  rencana dooring (to admin, cc sub user admin)
+    - Notif Tracking : Dooring (lv1): jika ada akses ini maka terima notif email  dooring (to admin, cc sub user admin)
+    - Notif Tracking : SJ Diterima Agen (lv1): jika ada akses ini maka terima notif email  SJ Diterima Agen (to admin, cc sub user admin)
+    - Notif Tracking : Dokumen Dikirim (lv1): jika ada akses ini maka terima notif email  dokumen dikirim (to admin, cc sub user admin)
+    - Notif To Admin : Penilaian Order (lv1): jika ada akses ini maka terima notif email penilaian order
+    - Notif to Admin : Upload Dokumen Tagihan (To) : jika ada akses ini maka terima notif dokumen tagihan pengiriman.
+  - Modul Notifikasi Sistem (Push Notifikasi) :
+    - Notif to Admin : Konfirmasi Perubahan Data (lv1) : Jika ada akses ini, maka sub user admin akan menerima notif tersebut
+    - Notif to Bidder : Pengajuan Lelang (lv1) : Jika ada akses ini, maka sub user admin akan menerima notif tersebut
+    - Notif to Bidder : Lelang Dibatalkan (lv1) : Jika ada akses ini, maka sub user admin akan menerima notif tersebut
+    - Notif to Bidder : Pengajuan Nego (lv1) : Jika ada akses ini, maka sub user admin akan menerima notif tersebut
+    - Notif to Bid Owner : Nego Diterima (lv1) : Jika ada akses ini, maka sub user admin akan menerima notif tersebut
+    - Notif to Bid Owner : Nego Ditolak (lv1) : Jika ada akses ini, maka sub user admin akan menerima notif tersebut
+    - Notif to Bid Owner : Nego Dicounter (lv1) : Jika ada akses ini, maka sub user admin akan menerima notif tersebut
+    - Notif to Bidder : Request Update / Input Harga (lv1) : Jika ada akses ini, maka sub user admin akan menerima notif tersebut
+    - Notif to Bidder : Bid Owner Request Jadwal (lv1) : Jika ada akses ini, maka sub user admin akan menerima notif tersebut
+    - Notif to Bid Owner : Jadwal Telah Tersedia (lv1) : Jika ada akses ini, maka sub user admin akan menerima notif tersebut
+    - Notif to Bid Owner : Perjanjian Pengiriman Divalidasi (lv1) : Jika ada akses ini, maka sub user admin akan menerima notif tersebut
+    - Notif to Bid Owner : Perjanjian Pengiriman Ditolak (lv1) : Jika ada akses ini, maka sub user admin akan menerima notif tersebut
+    - Notif to Bidder : Perjanjian Pengiriman Berhasil Divalidasi (lv1) : Jika ada akses ini, maka sub user admin akan menerima notif tersebut
+    - Notif to Bid Owner : Bidder Melengkapi Data Unit (lv1) : Jika ada akses ini, maka sub user admin akan menerima notif tersebut
+    - Notif to Bid Owner : Perubahan Jadwal (lv1) : Jika ada akses ini, maka sub user admin akan menerima notif tersebut
+    - Notif to Admin : PNP Edit Permintaan Muat (TEP) (lv1) : Jika ada akses ini, maka sub user admin akan menerima notif tersebut
+    - Notif to Admin : Penilaian Order Ke Bidder (lv1) : Jika ada akses ini, maka sub user admin akan menerima notif tersebut
+    - Notif to Admin : Dokumen Tagihan Pengiriman (lv1) : Jika ada akses ini, maka sub user admin akan menerima notif tersebut
+    - Notif to Bid Owner : Ambil Kontainer (lv1) : Jika ada akses ini, maka sub user admin akan menerima notif tersebut
+    - Notif to Bid Owner : Stuffing (lv1) : Jika ada akses ini, maka sub user admin akan menerima notif tersebut
+    - Notif to Bid Owner : Kapal Berlayar (lv1) : Jika ada akses ini, maka sub user admin akan menerima notif tersebut
+    - Notif to Bid Owner : Kapal Sandar (lv1) : Jika ada akses ini, maka sub user admin akan menerima notif tersebut
+    - Notif to Bid Owner : Rencana Dooring (lv1) : Jika ada akses ini, maka sub user admin akan menerima notif tersebut
+    - Notif to Bid Owner : Dooring (lv1) : Jika ada akses ini, maka sub user admin akan menerima notif tersebut
+    - Notif to Bid Owner : SJ Diterima Agen (lv1) : Jika ada akses ini, maka sub user admin akan menerima notif tersebut
+    - Notif to Bid Owner : Dokumen Dikirim (lv1) : Jika ada akses ini, maka sub user admin akan menerima notif tersebut
+
+## Sub User Admin
+
+- Sub user admin bisa ditambahkan oleh admin itu sendiri
+- Email dan nomor whatsapp dari sub user yang akan ditambahkan atau diedit tidak bisa sama dengan nomor wa yang telah terdaftar pada sistem
+- Hak akses yang tampil adalah sesuai dengan hak akses yang telah dibuat untuk admin tersebut dan posisi nya akses terbaru berada diatas
+- Sub user yang tidak aktif tidak bisa login di web
+- Apabila akses yang digunakan lebih dari satu maka tampilannya berbentuk koma pada detail hak akses
+- Nomor whatsapp dari sub user optional, namun tidak bisa sama dengan nomor yang sudah terpakai di sub user lain maupun akun bid owner & bidder utama
+- Jika sub user admin memiliki akses beberapa notifikasi yang terkirim to bid owner utama maka, sub user admin juga mendapatkan notifikasi tersebut secara BCC

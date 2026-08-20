@@ -1,0 +1,48 @@
+- generic [ref=f23e3]:
+  - banner [ref=f23e4]:
+    - generic [ref=f23e5]:
+      - link [ref=f23e7] [cursor=pointer]:
+        - /url: .
+      - navigation [ref=f23e8]:
+        - generic [ref=f23e10]:
+          - link " Home" [ref=f23e11] [cursor=pointer]:
+            - /url: .
+            - generic [ref=f23e12]: 
+            - text: Home
+          - link " Donate" [ref=f23e13] [cursor=pointer]:
+            - /url: donate
+            - generic [ref=f23e14]: 
+            - text: Donate
+          - link " Domains" [ref=f23e15] [cursor=pointer]:
+            - /url: add-domain
+            - generic [ref=f23e16]: 
+            - text: Domains
+          - link " Random" [ref=f23e17] [cursor=pointer]:
+            - /url: email-generator
+            - generic [ref=f23e18]: 
+            - text: Random
+        - generic [ref=f23e23]:
+          - generic [ref=f23e24]:
+            - img "Temporary Email" [ref=f23e25]
+            - text: English
+          - generic [ref=f23e26]: 
+  - main [ref=f23e31]:
+    - generic [ref=f23e33]:
+      - generic [ref=f23e34]: ikbidowner@yopmail.com
+      - generic [ref=f23e36]:
+        - text: Alias
+        - button "" [ref=f23e37] [cursor=pointer]
+        - text: ":"
+    - generic [ref=f23e41]:
+      - generic [ref=f23e42]:
+        - button "" [ref=f23e44] [cursor=pointer]
+        - button "" [disabled] [ref=f23e47]
+        - button "" [disabled] [ref=f23e51]
+        - generic [ref=f23e53]:
+          - button "" [disabled] [ref=f23e55]
+          - generic [ref=f23e57]: page 1
+          - button "" [disabled] [ref=f23e59]
+        - button "" [ref=f23e64] [cursor=pointer]
+      - iframe [ref=f23e67]:
+        
+  - contentinfo [ref=f23e75]

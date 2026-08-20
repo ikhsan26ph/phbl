@@ -1,0 +1,62 @@
+# Pengajuan Lelang
+
+- Beranda pada breadcrumb di halaman daftar lelang disable, karena redirect Beranda untuk sisi bidder adalah menuju halaman daftar pengajuan lelang (halaman default)
+- Pada daftar pengajuan lelang terdapat penambahan fitur Tab-Tab untuk mengelompokkan data lelang sesuai kondisi masing-masing
+- Tab-tab lelang tersebut ialah :
+    - Perlu Input Harga : Lelang yang perlu input harga / lelang yang belum lewat tanggal tutup lelang. Tab ini juga menampilkan daftar lelang yang sedang aktif diajukan permintaan harga oleh Bid Owner, namun dengan status harga ‘Belum Input Penawaran’ pada sisi Bidder.
+    - Perlu Update Harga : Lelang yang perlu update harga. Status harga ‘Telah input penawaran’ dan ‘Telah input harga’ pada sisi bidder.
+    - Lelang Tutup : Lelang yang melewati tanggal tutup lelang ataupun melewati tgl tutup request update / input harga
+    - Telah Akhir Kirim : Lelang yang melewati tgl rencana akhir kirim
+    - Lelang Batal : Lelang yang telah dibatalkan
+    - Semua Lelang :  Semua data lelang tampil
+- Pada tab Perlu Input Harga, pilihan action menunya ialah :
+    - Detail Pengajuan Lelang
+    - Input Harga Penawaran
+- Pada tab Perlu Update Harga, pilihan action menunya ialah :
+    - Detail Pengajuan Lelang
+    - Menuju Request Harga
+- Pada tab Lelang Tutup, pilihan action menunya ialah :
+    - Detail Pengajuan Lelang
+    - Input Harga Penawaran
+- Pada tab Telah Akhir Kirim , pilihan action menunya ialah :
+  - Detail Pengajuan Lelang
+  - Input Harga Penawaran
+- Pada tab Lelang Batal, pilihan action menunya ialah :
+  - Detail Pengajuan Lelang
+  - Input Harga Penawaran
+- Jika dari sisi bidder belum menginputkan harga / penawaran kemudian bid owner melakukan request harga, maka lelang tersebut akan tampil pada tab Perlu Input Harga. Jika periode request harga telah berakhir maka lelang tersebut akan berpindah ke tab Lelang Tutup.
+- Namun jika dari sisi bidder telah menginputkan harga / penawaran, maka lelang yang diajukan request harga tersebut akan tampil pada tab Perlu Update Harga. Jika periode request harga telah berakhir, maka lelang tersebut akan berpindah ke tab Lelang Tutup
+- Semua lelang yang telah dibuat oleh bid owner akan muncul di halaman Pengajuan Lelang
+- Apabila nomor lelang belum diinputkan harga oleh bidder , ada penanda warna merah pada nomor lelang tersebut di list daftar lelang, Jika sudah diinputkan , berwarna hitam
+- Di detail lelang , muncul harga penawaran yang telah ditambahkan oleh bidder pada lelang terkait
+- Jika pada harga penawaran adalah termasuk jadwal kapal connecting maka akan muncul button “kapal connecting nx”
+- Jika bidder belum memasukkan harga penawaran maka :
+  - Di list harga penawaran muncul keterangan “Belum ada harga yang di inputkan”
+- Jika lelang belum melewati tutup lelang maka pada detail pengajuan lelang bidder dapat input harga penawaran, jika melewati tgl tutup lelang maka tombol input harga penawaran akan hilang
+- Pada detail pengajuan lelang 0dder kontak pic muat dan nomor pic muat dihidden
+- Nantinya terdapat penarikan data keaktifan bidder pada spreadsheet. Fungsinya untuk mengetahui sebarapa aktif bidder untuk berpartisipasi pada phbid :
+  - Pada data keaktifan ini diambil dari data bidder aktif input harga pada lelang dan banyaknya order yang mekakai harga penawaran dari bidder tersebut
+  - Data yang dtampilkan ialah semua bidder yang statusnya Aktif & Tidak Aktif, untuk yang statusnya menunggu tidak tampil
+  - Tanggal_Pertama_Ikut_Lelang : Tanggal pertama kali bidder input harga pada lelang. Lelang dibatalkan tidak dihitung
+  - Tanggal_Order_Pertama : Tgl buat order dari orderan pertama.
+  - Tanggal_Akhir_Ikut_Lelang : Tanggal terakhir kali bidder input harga pada lelang. Lelang dibatalkan tidak dihitung
+  - Tanggal_Order_Terakhir : Tgl buat order dari orderan paling baru / paling akhir
+  - Total_Lelang : Total lelang yang diundang
+  - Total_Lelang_Diikuti : Total lelang yang sudah diinputkan harganya
+  - Total_Order : Total order yang berhasil divalidasi admin
+  - Total_Kontainer : Total jumlah kontainer pada tiap order
+  - Jumlah_Customer : Jumlah bid owner yang order pada harga bidder
+  - Total_Harga : Nominal total harga pada tiap order bidder
+  - Pada daftar pengajuan lelang bidder terdapat perubahan, Dimana tombol aksi jika diklik akan menampilkan pilihan :
+- Detail Pengajuan Lelang => diarahkan ke halaman detail pengajuan lelang
+- Input Harga Penawaran => diarahkan ke halaman Tambah Harga
+- Menuju Request Harga => diarahkan ke halaman harga & jadwal tab Perlu Update Harga
+  - Pada detail pengajuan lelang, akan ditampilkan status lelang, macam-macam status lelang :
+- BELUM BUKA : lelang belum memasuki waktu buka lelang
+- LELANG DIBUKA : lelang belum melewati tgl tutup lelang
+- LELANG DITUTUP : lelang sudah melewati tgl tutup lelang
+- LELANG BATAL : lelang sudah dibatalkan
+  - Pada daftar pengajaun lelang, jika lelang pernah diajukan request update harga maka aka nada tanda “#” nya. Contoh jika #1 berarti lelang tersebut pernah diajukan request update harga 1 kali. Jika #2 berarti lelang tersebut pernah diajukan request update harga 2 kali dan seterusnya
+  - Halaman Detail Lelang :Terdapat data baru yakni dokumen aanwijzing, tampil sesuai dengan nanam dokumen.
+  - Halaman Detail Lelang :Jika status dokumen aanwijzing tidak aktif maka menampilkan tanda strip “-”.
+  - Halaman Detail Lelang : Dokumen aanwijzing ditampilkan berupa popup.

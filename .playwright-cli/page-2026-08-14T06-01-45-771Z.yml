@@ -1,0 +1,798 @@
+- generic [ref=f7e1]:
+  - generic [ref=f7e2]:
+    - generic [ref=f7e3]:
+      - generic [ref=f7e4]:
+        - link [ref=f7e6] [cursor=pointer]:
+          - /url: https://phbidlautdemo.prahu-hub.com/
+        - button [ref=f7e10] [cursor=pointer]
+      - text:  
+      - generic [ref=f7e13]:
+        - generic [ref=f7e14]:
+          - generic [ref=f7e15]: PT. Cipta Karya Abadi Sejahtera Sentora Mujur Selalu
+          - button "Shipper" [ref=f7e17]
+        - generic [ref=f7e21]:
+          - generic [ref=f7e22]:
+            - generic [ref=f7e23]: Jaya Wijaya Kartika Abadi Sentosa Wijaya Jaya
+            - generic [ref=f7e24]: pengirim.ph2021@gmail.com
+          - img "assets/photo/1000002490.png" [ref=f7e26]
+          - link "" [ref=f7e27] [cursor=pointer]:
+            - /url: https://phbidlautdemo.prahu-hub.com/home/notification
+          - link [ref=f7e34] [cursor=pointer]:
+            - /url: https://phbidlautdemo.prahu-hub.com/user/do_logout
+    - generic [ref=f7e37]:
+      - generic [ref=f7e38]:
+        - text: 
+        - generic [ref=f7e39]:
+          - list [ref=f7e41]:
+            - listitem
+            - listitem [ref=f7e42]:
+              - link "CARI PENAWARAN" [ref=f7e43] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/lelang/carirute
+            - listitem [ref=f7e44]:
+              - generic [ref=f7e45] [cursor=pointer]:
+                - text: DASHBOARD
+                - generic [ref=f7e48]: 
+            - listitem [ref=f7e49]:
+              - generic [ref=f7e50] [cursor=pointer]:
+                - text: ANALITIK
+                - generic [ref=f7e53]: 
+            - listitem [ref=f7e54]:
+              - link "PENGAJUAN LELANG" [ref=f7e55] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/lelang/listlelang
+            - listitem [ref=f7e58]:
+              - link "PENGAJUAN NEGO" [ref=f7e59] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/lelang/pengajuannego
+            - listitem [ref=f7e62]:
+              - link "DAFTAR ORDER" [ref=f7e63] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/order/OrderList
+            - listitem [ref=f7e66]:
+              - generic [ref=f7e67] [cursor=pointer]:
+                - text: MASTER
+                - generic [ref=f7e70]: 
+            - listitem [ref=f7e71]:
+              - link "CEK JADWAL" [ref=f7e72] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/lelang/carijadwal
+            - listitem [ref=f7e75]:
+              - generic [ref=f7e76] [cursor=pointer]:
+                - text: LAPORAN
+                - generic [ref=f7e79]: 
+            - listitem [ref=f7e80]:
+              - generic [ref=f7e81] [cursor=pointer]:
+                - text: PENGATURAN AKUN
+                - generic [ref=f7e84]: 
+            - listitem [ref=f7e85]:
+              - link "PREFERENCE NOTIF" [ref=f7e86] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/home/preferenceNotifBidowner
+            - listitem [ref=f7e89]:
+              - link "AKUN SAYA" [ref=f7e90] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/home/akunsaya
+          - generic [ref=f7e95]:
+            - paragraph [ref=f7e97]: KONTAK KAMI
+            - generic [ref=f7e98]:
+              - generic [ref=f7e99]: 
+              - text: "081246665023"
+            - generic [ref=f7e100]:
+              - generic [ref=f7e101]: 
+              - text: "081246665023"
+            - generic [ref=f7e102]:
+              - generic [ref=f7e103]: 
+              - text: csct@prahu-hub.com
+            - generic [ref=f7e104]:
+              - link [ref=f7e105] [cursor=pointer]:
+                - /url: https://facebook.com/sosmed.phbid
+              - link [ref=f7e107] [cursor=pointer]:
+                - /url: https://twitter.com/PrahuHub
+              - link [ref=f7e109] [cursor=pointer]:
+                - /url: https://instagram.com/phbid_/
+              - link [ref=f7e111] [cursor=pointer]:
+                - /url: https://www.youtube.com/channel/UC41VntroP3zKmXZYnGgtFdw
+              - link [ref=f7e113] [cursor=pointer]:
+                - /url: http://linkedin.com/in/ph-bid-aa5393211/
+      - generic [ref=f7e115]:
+        - generic [ref=f7e116]:
+          - generic [ref=f7e119]:
+            - link "Beranda" [ref=f7e121] [cursor=pointer]:
+              - /url: https://phbidlautdemo.prahu-hub.com/lelang/carirute
+            - text: / Pengajuan Nego
+          - generic [ref=f7e123]:
+            - generic [ref=f7e124]: PENGAJUAN NEGO
+            - generic [ref=f7e125]:
+              - button " Filter" [active] [ref=f7e126] [cursor=pointer]:
+                - generic [ref=f7e127]: 
+                - text: Filter
+              - generic [ref=f7e128]:
+                - text: Menampilkan
+                - combobox [ref=f7e129]:
+                  - option "20" [selected]
+                  - option "30"
+                  - option "50"
+                  - option "100"
+                - text: Data
+          - generic [ref=f7e177]:
+            - generic [ref=f7e178]:
+              - generic [ref=f7e180]:
+                - generic [ref=f7e181]: Nomor Lelang
+                - textbox "Nomor Lelang" [ref=f7e183]:
+                  - /placeholder: Masukkan Nomor Lelang
+              - generic [ref=f7e185]:
+                - generic [ref=f7e186]: Transporter
+                - textbox "Transporter" [ref=f7e188]:
+                  - /placeholder: Masukkan Nama Transporter
+              - generic [ref=f7e190]:
+                - generic [ref=f7e191]: Jenis Kontainer
+                - generic [ref=f7e192]:
+                  - combobox [ref=f7e193]
+                  - combobox [ref=f7e196] [cursor=pointer]:
+                    - textbox "Pilih Jenis Kontainer" [ref=f7e197]
+            - generic [ref=f7e198]:
+              - generic [ref=f7e200]:
+                - generic [ref=f7e201]: Pelabuhan Asal
+                - generic [ref=f7e202]:
+                  - combobox [ref=f7e203]
+                  - combobox "Pilih Jenis Kontainer" [ref=f7e206] [cursor=pointer]:
+                    - textbox "Pilih Pelabuhan Asal" [ref=f7e207]
+              - generic [ref=f7e209]:
+                - generic [ref=f7e210]: Pelabuhan Tujuan
+                - generic [ref=f7e211]:
+                  - combobox [ref=f7e212]
+                  - combobox "Pilih Jenis Kontainer" [ref=f7e215] [cursor=pointer]:
+                    - textbox "Pilih Pelabuhan Tujuan" [ref=f7e216]
+              - generic [ref=f7e218]:
+                - generic [ref=f7e219]: ETD
+                - textbox "ETD" [ref=f7e221]:
+                  - /placeholder: DD/MM/YYYY
+              - generic [ref=f7e223]:
+                - generic [ref=f7e224]: ETA
+                - textbox "ETA" [ref=f7e226]:
+                  - /placeholder: DD/MM/YYYY
+              - generic [ref=f7e228]:
+                - generic [ref=f7e229]: Harga Awal
+                - textbox "Harga Awal" [ref=f7e231]
+              - generic [ref=f7e233]:
+                - generic [ref=f7e234]: Nego Harga
+                - textbox "Masukkan Nego Harga" [ref=f7e236]
+              - generic [ref=f7e238]:
+                - generic [ref=f7e239]: Harga Baru
+                - textbox "Masukkan Harga Baru" [ref=f7e241]
+              - generic [ref=f7e243]:
+                - generic [ref=f7e244]: Jumlah Nego
+                - textbox "Masukkan Jumlah Nego" [ref=f7e246]
+              - generic [ref=f7e248]:
+                - generic [ref=f7e249]: Status
+                - generic [ref=f7e250]:
+                  - combobox [ref=f7e251]
+                  - combobox "Pilih Jenis Kontainer" [ref=f7e254] [cursor=pointer]:
+                    - textbox "Pilih Status" [ref=f7e255]
+            - generic [ref=f7e258]:
+              - button " Reset" [ref=f7e259] [cursor=pointer]:
+                - generic [ref=f7e260]: 
+                - text: Reset
+              - button " Filter" [ref=f7e261] [cursor=pointer]:
+                - generic [ref=f7e262]: 
+                - text: Filter
+          - table [ref=f7e131]:
+            - rowgroup [ref=f7e132]:
+              - row [ref=f7e133]:
+                - columnheader "Transporter Status Nego" [ref=f7e134]:
+                  - generic [ref=f7e135]: Transporter
+                  - generic [ref=f7e136]: Status Nego
+                - columnheader "Pelayaran Jenis" [ref=f7e137]:
+                  - generic [ref=f7e138]: Pelayaran
+                  - generic [ref=f7e139]: Jenis
+                - columnheader "Pelabuhan Asal ETD" [ref=f7e140]:
+                  - generic [ref=f7e141]: Pelabuhan Asal
+                  - generic [ref=f7e142]: ETD
+                - columnheader "Pelabuhan Tujuan ETA" [ref=f7e143]:
+                  - generic [ref=f7e144]: Pelabuhan Tujuan
+                  - generic [ref=f7e145]: ETA
+                - columnheader "Nego Harga Harga Awal" [ref=f7e146]:
+                  - generic [ref=f7e147]: Nego Harga
+                  - generic [ref=f7e148]: Harga Awal
+                - columnheader "Harga Baru Jumlah Nego" [ref=f7e149]:
+                  - generic [ref=f7e150]: Harga Baru
+                  - generic [ref=f7e151]: Jumlah Nego
+                - columnheader "Aksi" [ref=f7e152]
+              - row [ref=f7e154]
+            - rowgroup [ref=f7e155]:
+              - row [ref=f7e263]:
+                - cell "PT. Muda Jaya Wijaya Karya Sentosa Indah Elok (IK) LELANGIK/247/2026/MLTD NEGOSIASI" [ref=f7e264]:
+                  - generic [ref=f7e265]: PT. Muda Jaya Wijaya Karya Sentosa Indah Elok (IK)
+                  - generic [ref=f7e266]: LELANGIK/247/2026/MLTD
+                  - generic [ref=f7e267]: NEGOSIASI
+                - cell "MERATUS 20 DRY" [ref=f7e270]:
+                  - generic [ref=f7e271]: MERATUS
+                  - generic [ref=f7e272]: 20 DRY
+                - cell "Dobo (DOB) 16/07/2026" [ref=f7e273]:
+                  - generic [ref=f7e274]: Dobo (DOB)
+                  - generic [ref=f7e275]: 16/07/2026
+                - cell "Belawan (BLW) 17/07/2026" [ref=f7e276]:
+                  - generic [ref=f7e277]: Belawan (BLW)
+                  - generic [ref=f7e278]: 17/07/2026
+                - cell "Rp. 1.000.000 Rp. 4.000.000" [ref=f7e279]:
+                  - generic [ref=f7e280]: Rp. 1.000.000
+                  - generic [ref=f7e281]: Rp. 4.000.000
+                - cell "Rp. 3.000.000 Nego Ke 4" [ref=f7e282]:
+                  - generic [ref=f7e283]: Rp. 3.000.000
+                  - generic [ref=f7e284]: Nego Ke 4
+                - cell [ref=f7e285]:
+                  - link "Detail" [ref=f7e286] [cursor=pointer]:
+                    - /url: https://phbidlautdemo.prahu-hub.com/lelang/detailnego/eGdLRGxHaCtiV0ppSTA1em84ZjIyQT09
+              - row [ref=f7e287]:
+                - cell " Info Harga" [ref=f7e288]:
+                  - generic [ref=f7e291] [cursor=pointer]:
+                    - generic [ref=f7e292]: 
+                    - text: Info Harga
+              - row [ref=f7e293]
+              - row [ref=f7e294]:
+                - cell "PT. Muda Jaya Wijaya Karya Sentosa Indah Elok (IK) LELANGIK/247/2026/MLTD DITOLAK" [ref=f7e295]:
+                  - generic [ref=f7e296]: PT. Muda Jaya Wijaya Karya Sentosa Indah Elok (IK)
+                  - generic [ref=f7e297]: LELANGIK/247/2026/MLTD
+                  - generic [ref=f7e298]: DITOLAK
+                - cell "MERATUS 20 DRY" [ref=f7e301]:
+                  - generic [ref=f7e302]: MERATUS
+                  - generic [ref=f7e303]: 20 DRY
+                - cell "Dobo (DOB) 16/07/2026" [ref=f7e304]:
+                  - generic [ref=f7e305]: Dobo (DOB)
+                  - generic [ref=f7e306]: 16/07/2026
+                - cell "Belawan (BLW) 17/07/2026" [ref=f7e307]:
+                  - generic [ref=f7e308]: Belawan (BLW)
+                  - generic [ref=f7e309]: 17/07/2026
+                - cell "Rp. 50.000.000 Rp. 4.000.000" [ref=f7e310]:
+                  - generic [ref=f7e311]: Rp. 50.000.000
+                  - generic [ref=f7e312]: Rp. 4.000.000
+                - cell "- Nego Ke 3" [ref=f7e313]:
+                  - generic [ref=f7e314]: "-"
+                  - generic [ref=f7e315]: Nego Ke 3
+                - cell [ref=f7e316]:
+                  - link "Detail" [ref=f7e317] [cursor=pointer]:
+                    - /url: https://phbidlautdemo.prahu-hub.com/lelang/detailnego/cy8wNHVBQjVEUk5qSFdycWZ4djMzQT09
+              - row [ref=f7e318]:
+                - cell " Info Harga" [ref=f7e319]:
+                  - generic [ref=f7e322] [cursor=pointer]:
+                    - generic [ref=f7e323]: 
+                    - text: Info Harga
+              - row [ref=f7e324]
+              - row [ref=f7e325]:
+                - cell "PT. Muda Jaya Wijaya Karya Sentosa Indah Elok (IK) LELANGIK/247/2026/MLTD DITERIMA" [ref=f7e326]:
+                  - generic [ref=f7e327]: PT. Muda Jaya Wijaya Karya Sentosa Indah Elok (IK)
+                  - generic [ref=f7e328]: LELANGIK/247/2026/MLTD
+                  - generic [ref=f7e329]: DITERIMA
+                - cell "MERATUS 20 DRY" [ref=f7e332]:
+                  - generic [ref=f7e333]: MERATUS
+                  - generic [ref=f7e334]: 20 DRY
+                - cell "Dobo (DOB) 16/07/2026" [ref=f7e335]:
+                  - generic [ref=f7e336]: Dobo (DOB)
+                  - generic [ref=f7e337]: 16/07/2026
+                - cell "Belawan (BLW) 17/07/2026" [ref=f7e338]:
+                  - generic [ref=f7e339]: Belawan (BLW)
+                  - generic [ref=f7e340]: 17/07/2026
+                - cell "Rp. 3.000.000 Rp. 4.000.000" [ref=f7e341]:
+                  - generic [ref=f7e342]: Rp. 3.000.000
+                  - generic [ref=f7e343]: Rp. 4.000.000
+                - cell "Rp. 3.000.000 Nego Ke 2" [ref=f7e344]:
+                  - generic [ref=f7e345]: Rp. 3.000.000
+                  - generic [ref=f7e346]: Nego Ke 2
+                - cell [ref=f7e347]:
+                  - link "Detail" [ref=f7e348] [cursor=pointer]:
+                    - /url: https://phbidlautdemo.prahu-hub.com/lelang/detailnego/RjI1aldsMEx1cmlKenlpeXgrS2ovdz09
+              - row [ref=f7e349]:
+                - cell " Info Harga" [ref=f7e350]:
+                  - generic [ref=f7e353] [cursor=pointer]:
+                    - generic [ref=f7e354]: 
+                    - text: Info Harga
+              - row [ref=f7e355]
+              - row [ref=f7e356]:
+                - cell "PT. Muda Jaya Wijaya Karya Sentosa Indah Elok (IK) LELANGIK/247/2026/MLTD DITERIMA" [ref=f7e357]:
+                  - generic [ref=f7e358]: PT. Muda Jaya Wijaya Karya Sentosa Indah Elok (IK)
+                  - generic [ref=f7e359]: LELANGIK/247/2026/MLTD
+                  - generic [ref=f7e360]: DITERIMA
+                - cell "MERATUS 20 DRY" [ref=f7e363]:
+                  - generic [ref=f7e364]: MERATUS
+                  - generic [ref=f7e365]: 20 DRY
+                - cell "Dobo (DOB) 16/07/2026" [ref=f7e366]:
+                  - generic [ref=f7e367]: Dobo (DOB)
+                  - generic [ref=f7e368]: 16/07/2026
+                - cell "Belawan (BLW) 17/07/2026" [ref=f7e369]:
+                  - generic [ref=f7e370]: Belawan (BLW)
+                  - generic [ref=f7e371]: 17/07/2026
+                - cell "Rp. 4.000.000 Rp. 4.235.000" [ref=f7e372]:
+                  - generic [ref=f7e373]: Rp. 4.000.000
+                  - generic [ref=f7e374]: Rp. 4.235.000
+                - cell "Rp. 4.000.000 Nego Ke 1" [ref=f7e375]:
+                  - generic [ref=f7e376]: Rp. 4.000.000
+                  - generic [ref=f7e377]: Nego Ke 1
+                - cell [ref=f7e378]:
+                  - link "Detail" [ref=f7e379] [cursor=pointer]:
+                    - /url: https://phbidlautdemo.prahu-hub.com/lelang/detailnego/bFRIOExuUUVnZGJiUDdVZzlTN1RtUT09
+              - row [ref=f7e380]:
+                - cell " Info Harga" [ref=f7e381]:
+                  - generic [ref=f7e384] [cursor=pointer]:
+                    - generic [ref=f7e385]: 
+                    - text: Info Harga
+              - row [ref=f7e386]
+              - row [ref=f7e387]:
+                - cell "PT. Muda Jaya Wijaya Karya Sentosa Indah Elok (IK) LELANGIK/02/2026/NRML#2 NEGOSIASI" [ref=f7e388]:
+                  - generic [ref=f7e389]: PT. Muda Jaya Wijaya Karya Sentosa Indah Elok (IK)
+                  - generic [ref=f7e390]: LELANGIK/02/2026/NRML#2
+                  - generic [ref=f7e391]: NEGOSIASI
+                - cell "ASDP 20 DRY" [ref=f7e394]:
+                  - generic [ref=f7e395]: ASDP
+                  - generic [ref=f7e396]: 20 DRY
+                - cell "Dobo (DOB) 02/06/2026" [ref=f7e397]:
+                  - generic [ref=f7e398]: Dobo (DOB)
+                  - generic [ref=f7e399]: 02/06/2026
+                - cell "Bitung (BIT) 03/06/2026" [ref=f7e400]:
+                  - generic [ref=f7e401]: Bitung (BIT)
+                  - generic [ref=f7e402]: 03/06/2026
+                - cell "Rp. 4.000.000 Rp. 4.356.000" [ref=f7e403]:
+                  - generic [ref=f7e404]: Rp. 4.000.000
+                  - generic [ref=f7e405]: Rp. 4.356.000
+                - cell "Rp. 4.250.000 Nego Ke 3" [ref=f7e406]:
+                  - generic [ref=f7e407]: Rp. 4.250.000
+                  - generic [ref=f7e408]: Nego Ke 3
+                - cell [ref=f7e409]:
+                  - link "Detail" [ref=f7e410] [cursor=pointer]:
+                    - /url: https://phbidlautdemo.prahu-hub.com/lelang/detailnego/UmEzWkJuVzFub3NwNDZQM3dRZjhCUT09
+              - row [ref=f7e411]:
+                - cell " Info Harga" [ref=f7e412]:
+                  - generic [ref=f7e415] [cursor=pointer]:
+                    - generic [ref=f7e416]: 
+                    - text: Info Harga
+              - row [ref=f7e417]
+              - row [ref=f7e418]:
+                - cell "PT. Muda Jaya Wijaya Karya Sentosa Indah Elok (IK) LELANGIK/02/2026/NRML#2 DITERIMA" [ref=f7e419]:
+                  - generic [ref=f7e420]: PT. Muda Jaya Wijaya Karya Sentosa Indah Elok (IK)
+                  - generic [ref=f7e421]: LELANGIK/02/2026/NRML#2
+                  - generic [ref=f7e422]: DITERIMA
+                - cell "ASDP 20 DRY" [ref=f7e425]:
+                  - generic [ref=f7e426]: ASDP
+                  - generic [ref=f7e427]: 20 DRY
+                - cell "Dobo (DOB) 02/06/2026" [ref=f7e428]:
+                  - generic [ref=f7e429]: Dobo (DOB)
+                  - generic [ref=f7e430]: 02/06/2026
+                - cell "Bitung (BIT) 03/06/2026" [ref=f7e431]:
+                  - generic [ref=f7e432]: Bitung (BIT)
+                  - generic [ref=f7e433]: 03/06/2026
+                - cell "Rp. 4.250.000 Rp. 4.356.000" [ref=f7e434]:
+                  - generic [ref=f7e435]: Rp. 4.250.000
+                  - generic [ref=f7e436]: Rp. 4.356.000
+                - cell "Rp. 4.250.000 Nego Ke 2" [ref=f7e437]:
+                  - generic [ref=f7e438]: Rp. 4.250.000
+                  - generic [ref=f7e439]: Nego Ke 2
+                - cell [ref=f7e440]:
+                  - link "Detail" [ref=f7e441] [cursor=pointer]:
+                    - /url: https://phbidlautdemo.prahu-hub.com/lelang/detailnego/NmJGckRvam1LVzgzakhBQ2RtN0hrUT09
+              - row [ref=f7e442]:
+                - cell " Info Harga" [ref=f7e443]:
+                  - generic [ref=f7e446] [cursor=pointer]:
+                    - generic [ref=f7e447]: 
+                    - text: Info Harga
+              - row [ref=f7e448]
+              - row [ref=f7e449]:
+                - cell "PT. Muda Jaya Wijaya Karya Sentosa Indah Elok (IK) LELANGIK/02/2026/NRML#2 DITOLAK" [ref=f7e450]:
+                  - generic [ref=f7e451]: PT. Muda Jaya Wijaya Karya Sentosa Indah Elok (IK)
+                  - generic [ref=f7e452]: LELANGIK/02/2026/NRML#2
+                  - generic [ref=f7e453]: DITOLAK
+                - cell "ASDP 20 DRY" [ref=f7e456]:
+                  - generic [ref=f7e457]: ASDP
+                  - generic [ref=f7e458]: 20 DRY
+                - cell "Dobo (DOB) 02/06/2026" [ref=f7e459]:
+                  - generic [ref=f7e460]: Dobo (DOB)
+                  - generic [ref=f7e461]: 02/06/2026
+                - cell "Bitung (BIT) 03/06/2026" [ref=f7e462]:
+                  - generic [ref=f7e463]: Bitung (BIT)
+                  - generic [ref=f7e464]: 03/06/2026
+                - cell "Rp. 3.000.000 Rp. 4.356.000" [ref=f7e465]:
+                  - generic [ref=f7e466]: Rp. 3.000.000
+                  - generic [ref=f7e467]: Rp. 4.356.000
+                - cell "- Nego Ke 1" [ref=f7e468]:
+                  - generic [ref=f7e469]: "-"
+                  - generic [ref=f7e470]: Nego Ke 1
+                - cell [ref=f7e471]:
+                  - link "Detail" [ref=f7e472] [cursor=pointer]:
+                    - /url: https://phbidlautdemo.prahu-hub.com/lelang/detailnego/blFCSDk4KzhneXNiZUZEYlBvVVJudz09
+              - row [ref=f7e473]:
+                - cell " Info Harga" [ref=f7e474]:
+                  - generic [ref=f7e477] [cursor=pointer]:
+                    - generic [ref=f7e478]: 
+                    - text: Info Harga
+              - row [ref=f7e479]
+              - row [ref=f7e480]:
+                - cell "PT. Muda Jaya Wijaya Karya Sentosa Indah Elok (IK) LELANGIK/02/2026/NRML#2 WAITING" [ref=f7e481]:
+                  - generic [ref=f7e482]: PT. Muda Jaya Wijaya Karya Sentosa Indah Elok (IK)
+                  - generic [ref=f7e483]: LELANGIK/02/2026/NRML#2
+                  - generic [ref=f7e484]: WAITING
+                - cell "BJL 20 REEFER" [ref=f7e487]:
+                  - generic [ref=f7e488]: BJL
+                  - generic [ref=f7e489]: 20 REEFER
+                - cell "Dobo (DOB) 18/03/2026" [ref=f7e490]:
+                  - generic [ref=f7e491]: Dobo (DOB)
+                  - generic [ref=f7e492]: 18/03/2026
+                - cell "Bitung (BIT) 19/03/2026" [ref=f7e493]:
+                  - generic [ref=f7e494]: Bitung (BIT)
+                  - generic [ref=f7e495]: 19/03/2026
+                - cell "Rp. 100.000.000.000 Rp. 5.356.000" [ref=f7e496]:
+                  - generic [ref=f7e497]: Rp. 100.000.000.000
+                  - generic [ref=f7e498]: Rp. 5.356.000
+                - cell "- Nego Ke 1" [ref=f7e499]:
+                  - generic [ref=f7e500]: "-"
+                  - generic [ref=f7e501]: Nego Ke 1
+                - cell [ref=f7e502]:
+                  - link "Detail" [ref=f7e503] [cursor=pointer]:
+                    - /url: https://phbidlautdemo.prahu-hub.com/lelang/detailnego/VEJGSXZHRG9JR21scWlBeDY0TDZQdz09
+              - row [ref=f7e504]:
+                - cell " Info Harga" [ref=f7e505]:
+                  - generic [ref=f7e508] [cursor=pointer]:
+                    - generic [ref=f7e509]: 
+                    - text: Info Harga
+              - row [ref=f7e510]
+              - row [ref=f7e511]:
+                - cell "PT. Muda Jaya Wijaya Karya Sentosa Indah Elok (IK) LELANGIK/01/2026/NRML#1 DITERIMA" [ref=f7e512]:
+                  - generic [ref=f7e513]: PT. Muda Jaya Wijaya Karya Sentosa Indah Elok (IK)
+                  - generic [ref=f7e514]: LELANGIK/01/2026/NRML#1
+                  - generic [ref=f7e515]: DITERIMA
+                - cell "ICON Line 20 DRY" [ref=f7e518]:
+                  - generic [ref=f7e519]: ICON Line
+                  - generic [ref=f7e520]: 20 DRY
+                - cell "Dobo (DOB) 02/03/2026" [ref=f7e521]:
+                  - generic [ref=f7e522]: Dobo (DOB)
+                  - generic [ref=f7e523]: 02/03/2026
+                - cell "Bitung (BIT) 31/03/2026" [ref=f7e524]:
+                  - generic [ref=f7e525]: Bitung (BIT)
+                  - generic [ref=f7e526]: 31/03/2026
+                - cell "Rp. 4.500.000 Rp. 5.000.000" [ref=f7e527]:
+                  - generic [ref=f7e528]: Rp. 4.500.000
+                  - generic [ref=f7e529]: Rp. 5.000.000
+                - cell "Rp. 4.500.000 Nego Ke 1" [ref=f7e530]:
+                  - generic [ref=f7e531]: Rp. 4.500.000
+                  - generic [ref=f7e532]: Nego Ke 1
+                - cell [ref=f7e533]:
+                  - link "Detail" [ref=f7e534] [cursor=pointer]:
+                    - /url: https://phbidlautdemo.prahu-hub.com/lelang/detailnego/Wk9JVnN4b25jdE1kKytnaldvMmNQUT09
+              - row [ref=f7e535]:
+                - cell " Info Harga" [ref=f7e536]:
+                  - generic [ref=f7e539] [cursor=pointer]:
+                    - generic [ref=f7e540]: 
+                    - text: Info Harga
+              - row [ref=f7e541]
+              - row [ref=f7e542]:
+                - cell "PT. Muda Jaya Wijaya Karya Sentosa Indah Elok (IK) LELANGIK/12/2025/NRML(#4) DITERIMA" [ref=f7e543]:
+                  - generic [ref=f7e544]: PT. Muda Jaya Wijaya Karya Sentosa Indah Elok (IK)
+                  - generic [ref=f7e545]: LELANGIK/12/2025/NRML(#4)
+                  - generic [ref=f7e546]: DITERIMA
+                - cell "ASDP 20 DRY" [ref=f7e549]:
+                  - generic [ref=f7e550]: ASDP
+                  - generic [ref=f7e551]: 20 DRY
+                - cell "Dobo (DOB) 02/01/2026" [ref=f7e552]:
+                  - generic [ref=f7e553]: Dobo (DOB)
+                  - generic [ref=f7e554]: 02/01/2026
+                - cell "Bitung (BIT) 03/01/2026" [ref=f7e555]:
+                  - generic [ref=f7e556]: Bitung (BIT)
+                  - generic [ref=f7e557]: 03/01/2026
+                - cell "Rp. 4.500.000 Rp. 5.000.000" [ref=f7e558]:
+                  - generic [ref=f7e559]: Rp. 4.500.000
+                  - generic [ref=f7e560]: Rp. 5.000.000
+                - cell "Rp. 4.500.000 Nego Ke 1" [ref=f7e561]:
+                  - generic [ref=f7e562]: Rp. 4.500.000
+                  - generic [ref=f7e563]: Nego Ke 1
+                - cell [ref=f7e564]:
+                  - link "Detail" [ref=f7e565] [cursor=pointer]:
+                    - /url: https://phbidlautdemo.prahu-hub.com/lelang/detailnego/ZkY4SXZreThUV0xxakhyRTVJdUpjQT09
+              - row [ref=f7e566]:
+                - cell " Info Harga" [ref=f7e567]:
+                  - generic [ref=f7e570] [cursor=pointer]:
+                    - generic [ref=f7e571]: 
+                    - text: Info Harga
+              - row [ref=f7e572]
+              - row [ref=f7e573]:
+                - cell "PT. Muda Jaya Wijaya Karya Sentosa Indah Elok (IK) LELANGIK/12/2025/NRML(#4) DITERIMA" [ref=f7e574]:
+                  - generic [ref=f7e575]: PT. Muda Jaya Wijaya Karya Sentosa Indah Elok (IK)
+                  - generic [ref=f7e576]: LELANGIK/12/2025/NRML(#4)
+                  - generic [ref=f7e577]: DITERIMA
+                - cell "PSSD 40 OD" [ref=f7e580]:
+                  - generic [ref=f7e581]: PSSD
+                  - generic [ref=f7e582]: 40 OD
+                - cell "Dobo (DOB) -" [ref=f7e583]:
+                  - generic [ref=f7e584]: Dobo (DOB)
+                  - generic [ref=f7e585]: "-"
+                - cell "Bitung (BIT) -" [ref=f7e586]:
+                  - generic [ref=f7e587]: Bitung (BIT)
+                  - generic [ref=f7e588]: "-"
+                - cell "Rp. 4.500.000 Rp. 5.120.000" [ref=f7e589]:
+                  - generic [ref=f7e590]: Rp. 4.500.000
+                  - generic [ref=f7e591]: Rp. 5.120.000
+                - cell "Rp. 4.500.000 Nego Ke 4" [ref=f7e592]:
+                  - generic [ref=f7e593]: Rp. 4.500.000
+                  - generic [ref=f7e594]: Nego Ke 4
+                - cell [ref=f7e595]:
+                  - link "Detail" [ref=f7e596] [cursor=pointer]:
+                    - /url: https://phbidlautdemo.prahu-hub.com/lelang/detailnego/akFZLzYxTGJVNlZzTnNuc1duakZCUT09
+              - row [ref=f7e597]:
+                - cell " Info Harga" [ref=f7e598]:
+                  - generic [ref=f7e601] [cursor=pointer]:
+                    - generic [ref=f7e602]: 
+                    - text: Info Harga
+              - row [ref=f7e603]
+              - row [ref=f7e604]:
+                - cell "PT. Muda Jaya Wijaya Karya Sentosa Indah Elok (IK) LELANGIK/12/2025/NRML(#4) DITERIMA" [ref=f7e605]:
+                  - generic [ref=f7e606]: PT. Muda Jaya Wijaya Karya Sentosa Indah Elok (IK)
+                  - generic [ref=f7e607]: LELANGIK/12/2025/NRML(#4)
+                  - generic [ref=f7e608]: DITERIMA
+                - cell "PSSD 40 OD" [ref=f7e611]:
+                  - generic [ref=f7e612]: PSSD
+                  - generic [ref=f7e613]: 40 OD
+                - cell "Dobo (DOB) -" [ref=f7e614]:
+                  - generic [ref=f7e615]: Dobo (DOB)
+                  - generic [ref=f7e616]: "-"
+                - cell "Bitung (BIT) -" [ref=f7e617]:
+                  - generic [ref=f7e618]: Bitung (BIT)
+                  - generic [ref=f7e619]: "-"
+                - cell "Rp. 5.120.000 Rp. 5.430.000" [ref=f7e620]:
+                  - generic [ref=f7e621]: Rp. 5.120.000
+                  - generic [ref=f7e622]: Rp. 5.430.000
+                - cell "Rp. 5.120.000 Nego Ke 3" [ref=f7e623]:
+                  - generic [ref=f7e624]: Rp. 5.120.000
+                  - generic [ref=f7e625]: Nego Ke 3
+                - cell [ref=f7e626]:
+                  - link "Detail" [ref=f7e627] [cursor=pointer]:
+                    - /url: https://phbidlautdemo.prahu-hub.com/lelang/detailnego/Qk10YmNiWkYvejdzQk1aOEFNdFFUQT09
+              - row [ref=f7e628]:
+                - cell " Info Harga" [ref=f7e629]:
+                  - generic [ref=f7e632] [cursor=pointer]:
+                    - generic [ref=f7e633]: 
+                    - text: Info Harga
+              - row [ref=f7e634]
+              - row [ref=f7e635]:
+                - cell "PT. Muda Jaya Wijaya Karya Sentosa Indah Elok (IK) LELANGIK/12/2025/NRML(#4) DITERIMA" [ref=f7e636]:
+                  - generic [ref=f7e637]: PT. Muda Jaya Wijaya Karya Sentosa Indah Elok (IK)
+                  - generic [ref=f7e638]: LELANGIK/12/2025/NRML(#4)
+                  - generic [ref=f7e639]: DITERIMA
+                - cell "PSSD 40 OD" [ref=f7e642]:
+                  - generic [ref=f7e643]: PSSD
+                  - generic [ref=f7e644]: 40 OD
+                - cell "Dobo (DOB) -" [ref=f7e645]:
+                  - generic [ref=f7e646]: Dobo (DOB)
+                  - generic [ref=f7e647]: "-"
+                - cell "Bitung (BIT) -" [ref=f7e648]:
+                  - generic [ref=f7e649]: Bitung (BIT)
+                  - generic [ref=f7e650]: "-"
+                - cell "Rp. 5.100.000 Rp. 5.430.000" [ref=f7e651]:
+                  - generic [ref=f7e652]: Rp. 5.100.000
+                  - generic [ref=f7e653]: Rp. 5.430.000
+                - cell "Rp. 5.100.000 Nego Ke 2" [ref=f7e654]:
+                  - generic [ref=f7e655]: Rp. 5.100.000
+                  - generic [ref=f7e656]: Nego Ke 2
+                - cell [ref=f7e657]:
+                  - link "Detail" [ref=f7e658] [cursor=pointer]:
+                    - /url: https://phbidlautdemo.prahu-hub.com/lelang/detailnego/elJPTTFraTRjaWlIV09jOHRuNVdMdz09
+              - row [ref=f7e659]:
+                - cell " Info Harga" [ref=f7e660]:
+                  - generic [ref=f7e663] [cursor=pointer]:
+                    - generic [ref=f7e664]: 
+                    - text: Info Harga
+              - row [ref=f7e665]
+              - row [ref=f7e666]:
+                - cell "PT. Muda Jaya Wijaya Karya Sentosa Indah Elok (IK) LELANGIK/12/2025/NRML(#4) DITERIMA" [ref=f7e667]:
+                  - generic [ref=f7e668]: PT. Muda Jaya Wijaya Karya Sentosa Indah Elok (IK)
+                  - generic [ref=f7e669]: LELANGIK/12/2025/NRML(#4)
+                  - generic [ref=f7e670]: DITERIMA
+                - cell "PSSD 40 OD" [ref=f7e673]:
+                  - generic [ref=f7e674]: PSSD
+                  - generic [ref=f7e675]: 40 OD
+                - cell "Dobo (DOB) -" [ref=f7e676]:
+                  - generic [ref=f7e677]: Dobo (DOB)
+                  - generic [ref=f7e678]: "-"
+                - cell "Bitung (BIT) -" [ref=f7e679]:
+                  - generic [ref=f7e680]: Bitung (BIT)
+                  - generic [ref=f7e681]: "-"
+                - cell "Rp. 5.400.000 Rp. 5.430.000" [ref=f7e682]:
+                  - generic [ref=f7e683]: Rp. 5.400.000
+                  - generic [ref=f7e684]: Rp. 5.430.000
+                - cell "Rp. 5.400.000 Nego Ke 1" [ref=f7e685]:
+                  - generic [ref=f7e686]: Rp. 5.400.000
+                  - generic [ref=f7e687]: Nego Ke 1
+                - cell [ref=f7e688]:
+                  - link "Detail" [ref=f7e689] [cursor=pointer]:
+                    - /url: https://phbidlautdemo.prahu-hub.com/lelang/detailnego/d2UyOVV1YUkzZ20zWEFxckNsOUVvUT09
+              - row [ref=f7e690]:
+                - cell " Info Harga" [ref=f7e691]:
+                  - generic [ref=f7e694] [cursor=pointer]:
+                    - generic [ref=f7e695]: 
+                    - text: Info Harga
+              - row [ref=f7e696]
+              - row [ref=f7e697]:
+                - cell "PT. MUJUR SELALU JAYA SEJAHTERA (IK) LELANGIK/12/2025/NRML(#3) DITERIMA" [ref=f7e698]:
+                  - generic [ref=f7e699]: PT. MUJUR SELALU JAYA SEJAHTERA (IK)
+                  - generic [ref=f7e700]: LELANGIK/12/2025/NRML(#3)
+                  - generic [ref=f7e701]: DITERIMA
+                - cell "SUNTRACO INTIM TRANSPORT 20 DRY" [ref=f7e704]:
+                  - generic [ref=f7e705]: SUNTRACO INTIM TRANSPORT
+                  - generic [ref=f7e706]: 20 DRY
+                - cell "Dobo (DOB) -" [ref=f7e707]:
+                  - generic [ref=f7e708]: Dobo (DOB)
+                  - generic [ref=f7e709]: "-"
+                - cell "Bitung (BIT) -" [ref=f7e710]:
+                  - generic [ref=f7e711]: Bitung (BIT)
+                  - generic [ref=f7e712]: "-"
+                - cell "Rp. 4.000.000 Rp. 4.225.000" [ref=f7e713]:
+                  - generic [ref=f7e714]: Rp. 4.000.000
+                  - generic [ref=f7e715]: Rp. 4.225.000
+                - cell "Rp. 4.100.000 Nego Ke 2" [ref=f7e716]:
+                  - generic [ref=f7e717]: Rp. 4.100.000
+                  - generic [ref=f7e718]: Nego Ke 2
+                - cell [ref=f7e719]:
+                  - link "Detail" [ref=f7e720] [cursor=pointer]:
+                    - /url: https://phbidlautdemo.prahu-hub.com/lelang/detailnego/RFBlMkRsVFBJbkpZZEx5VTA4cjJCQT09
+              - row [ref=f7e721]:
+                - cell " Info Harga" [ref=f7e722]:
+                  - generic [ref=f7e725] [cursor=pointer]:
+                    - generic [ref=f7e726]: 
+                    - text: Info Harga
+              - row [ref=f7e727]
+              - row [ref=f7e728]:
+                - cell "PT. MUJUR SELALU JAYA SEJAHTERA (IK) LELANGIK/12/2025/NRML(#3) DITERIMA" [ref=f7e729]:
+                  - generic [ref=f7e730]: PT. MUJUR SELALU JAYA SEJAHTERA (IK)
+                  - generic [ref=f7e731]: LELANGIK/12/2025/NRML(#3)
+                  - generic [ref=f7e732]: DITERIMA
+                - cell "SUNTRACO INTIM TRANSPORT 20 DRY" [ref=f7e735]:
+                  - generic [ref=f7e736]: SUNTRACO INTIM TRANSPORT
+                  - generic [ref=f7e737]: 20 DRY
+                - cell "Dobo (DOB) -" [ref=f7e738]:
+                  - generic [ref=f7e739]: Dobo (DOB)
+                  - generic [ref=f7e740]: "-"
+                - cell "Bitung (BIT) -" [ref=f7e741]:
+                  - generic [ref=f7e742]: Bitung (BIT)
+                  - generic [ref=f7e743]: "-"
+                - cell "Rp. 4.220.000 Rp. 4.230.000" [ref=f7e744]:
+                  - generic [ref=f7e745]: Rp. 4.220.000
+                  - generic [ref=f7e746]: Rp. 4.230.000
+                - cell "Rp. 4.225.000 Nego Ke 1" [ref=f7e747]:
+                  - generic [ref=f7e748]: Rp. 4.225.000
+                  - generic [ref=f7e749]: Nego Ke 1
+                - cell [ref=f7e750]:
+                  - link "Detail" [ref=f7e751] [cursor=pointer]:
+                    - /url: https://phbidlautdemo.prahu-hub.com/lelang/detailnego/VzVhaERSakJpeG1mc2dFY0NUOXZpQT09
+              - row [ref=f7e752]:
+                - cell " Info Harga" [ref=f7e753]:
+                  - generic [ref=f7e756] [cursor=pointer]:
+                    - generic [ref=f7e757]: 
+                    - text: Info Harga
+              - row [ref=f7e758]
+              - row [ref=f7e759]:
+                - cell "PT. Muda Jaya Wijaya Karya Sentosa Indah Elok (IK) LELANGIK/12/2025/NRML(#2) DITERIMA" [ref=f7e760]:
+                  - generic [ref=f7e761]: PT. Muda Jaya Wijaya Karya Sentosa Indah Elok (IK)
+                  - generic [ref=f7e762]: LELANGIK/12/2025/NRML(#2)
+                  - generic [ref=f7e763]: DITERIMA
+                - cell "BJL 20 DRY" [ref=f7e766]:
+                  - generic [ref=f7e767]: BJL
+                  - generic [ref=f7e768]: 20 DRY
+                - cell "Dobo (DOB) -" [ref=f7e769]:
+                  - generic [ref=f7e770]: Dobo (DOB)
+                  - generic [ref=f7e771]: "-"
+                - cell "Bitung (BIT) -" [ref=f7e772]:
+                  - generic [ref=f7e773]: Bitung (BIT)
+                  - generic [ref=f7e774]: "-"
+                - cell "Rp. 10.000.000 Rp. 12.500.000" [ref=f7e775]:
+                  - generic [ref=f7e776]: Rp. 10.000.000
+                  - generic [ref=f7e777]: Rp. 12.500.000
+                - cell "Rp. 10.000.000 Nego Ke 1" [ref=f7e778]:
+                  - generic [ref=f7e779]: Rp. 10.000.000
+                  - generic [ref=f7e780]: Nego Ke 1
+                - cell [ref=f7e781]:
+                  - link "Detail" [ref=f7e782] [cursor=pointer]:
+                    - /url: https://phbidlautdemo.prahu-hub.com/lelang/detailnego/eW5aN1BEeThHcUR0ZUR0b29kUnZyUT09
+              - row [ref=f7e783]:
+                - cell " Info Harga" [ref=f7e784]:
+                  - generic [ref=f7e787] [cursor=pointer]:
+                    - generic [ref=f7e788]: 
+                    - text: Info Harga
+              - row [ref=f7e789]
+              - row [ref=f7e790]:
+                - cell "PT. Muda Jaya Wijaya Karya Sentosa Indah Elok (IK) Lelang/Otomasi/NRML#1 DITERIMA" [ref=f7e791]:
+                  - generic [ref=f7e792]: PT. Muda Jaya Wijaya Karya Sentosa Indah Elok (IK)
+                  - generic [ref=f7e793]: Lelang/Otomasi/NRML#1
+                  - generic [ref=f7e794]: DITERIMA
+                - cell "ASDP 20 DRY" [ref=f7e797]:
+                  - generic [ref=f7e798]: ASDP
+                  - generic [ref=f7e799]: 20 DRY
+                - cell "Dobo (DOB) 02/01/2026" [ref=f7e800]:
+                  - generic [ref=f7e801]: Dobo (DOB)
+                  - generic [ref=f7e802]: 02/01/2026
+                - cell "Bitung (BIT) 31/01/2026" [ref=f7e803]:
+                  - generic [ref=f7e804]: Bitung (BIT)
+                  - generic [ref=f7e805]: 31/01/2026
+                - cell "Rp. 5.000.000 Rp. 5.435.345" [ref=f7e806]:
+                  - generic [ref=f7e807]: Rp. 5.000.000
+                  - generic [ref=f7e808]: Rp. 5.435.345
+                - cell "Rp. 5.000.000 Nego Ke 1" [ref=f7e809]:
+                  - generic [ref=f7e810]: Rp. 5.000.000
+                  - generic [ref=f7e811]: Nego Ke 1
+                - cell [ref=f7e812]:
+                  - link "Detail" [ref=f7e813] [cursor=pointer]:
+                    - /url: https://phbidlautdemo.prahu-hub.com/lelang/detailnego/Q3krd3l5NzVCVWs1N2liNUIvMzcrdz09
+              - row [ref=f7e814]:
+                - cell " Info Harga" [ref=f7e815]:
+                  - generic [ref=f7e818] [cursor=pointer]:
+                    - generic [ref=f7e819]: 
+                    - text: Info Harga
+              - row [ref=f7e820]
+              - row [ref=f7e821]:
+                - cell "PT. Muda Jaya Wijaya Karya Sentosa Indah Elok (IK) Lelang/Otomasi/NRML#1 WAITING" [ref=f7e822]:
+                  - generic [ref=f7e823]: PT. Muda Jaya Wijaya Karya Sentosa Indah Elok (IK)
+                  - generic [ref=f7e824]: Lelang/Otomasi/NRML#1
+                  - generic [ref=f7e825]: WAITING
+                - cell "SRIL 20 DRY" [ref=f7e828]:
+                  - generic [ref=f7e829]: SRIL
+                  - generic [ref=f7e830]: 20 DRY
+                - cell "Dobo (DOB) -" [ref=f7e831]:
+                  - generic [ref=f7e832]: Dobo (DOB)
+                  - generic [ref=f7e833]: "-"
+                - cell "Bitung (BIT) -" [ref=f7e834]:
+                  - generic [ref=f7e835]: Bitung (BIT)
+                  - generic [ref=f7e836]: "-"
+                - cell "Rp. 4.000.000 Rp. 4.260.000" [ref=f7e837]:
+                  - generic [ref=f7e838]: Rp. 4.000.000
+                  - generic [ref=f7e839]: Rp. 4.260.000
+                - cell "- Nego Ke 1" [ref=f7e840]:
+                  - generic [ref=f7e841]: "-"
+                  - generic [ref=f7e842]: Nego Ke 1
+                - cell [ref=f7e843]:
+                  - link "Detail" [ref=f7e844] [cursor=pointer]:
+                    - /url: https://phbidlautdemo.prahu-hub.com/lelang/detailnego/S2NKUTM2OG0yempyVndBb2VMSVR3dz09
+              - row [ref=f7e845]:
+                - cell " Info Harga" [ref=f7e846]:
+                  - generic [ref=f7e849] [cursor=pointer]:
+                    - generic [ref=f7e850]: 
+                    - text: Info Harga
+              - row [ref=f7e851]
+              - row [ref=f7e852]:
+                - cell "PT. Muda Jaya Wijaya Karya Sentosa Indah Elok (IK) Lelang/Otomasi/MLTD#1 WAITING" [ref=f7e853]:
+                  - generic [ref=f7e854]: PT. Muda Jaya Wijaya Karya Sentosa Indah Elok (IK)
+                  - generic [ref=f7e855]: Lelang/Otomasi/MLTD#1
+                  - generic [ref=f7e856]: WAITING
+                - cell "SUNTRACO INTIM TRANSPORT 20 DRY" [ref=f7e859]:
+                  - generic [ref=f7e860]: SUNTRACO INTIM TRANSPORT
+                  - generic [ref=f7e861]: 20 DRY
+                - cell "Dobo (DOB) -" [ref=f7e862]:
+                  - generic [ref=f7e863]: Dobo (DOB)
+                  - generic [ref=f7e864]: "-"
+                - cell "Bitung (BIT) -" [ref=f7e865]:
+                  - generic [ref=f7e866]: Bitung (BIT)
+                  - generic [ref=f7e867]: "-"
+                - cell "Rp. 4.500.000 Rp. 4.523.560" [ref=f7e868]:
+                  - generic [ref=f7e869]: Rp. 4.500.000
+                  - generic [ref=f7e870]: Rp. 4.523.560
+                - cell "- Nego Ke 1" [ref=f7e871]:
+                  - generic [ref=f7e872]: "-"
+                  - generic [ref=f7e873]: Nego Ke 1
+                - cell [ref=f7e874]:
+                  - link "Detail" [ref=f7e875] [cursor=pointer]:
+                    - /url: https://phbidlautdemo.prahu-hub.com/lelang/detailnego/c0FuUG1ydmdwQTRNNjFQRGJ5RHNWQT09
+              - row [ref=f7e876]:
+                - cell " Info Harga" [ref=f7e877]:
+                  - generic [ref=f7e880] [cursor=pointer]:
+                    - generic [ref=f7e881]: 
+                    - text: Info Harga
+              - row [ref=f7e882]
+              - row
+          - text:                    
+          - generic [ref=f7e883]:
+            - status [ref=f7e164]:
+              - status [ref=f7e884]: Menampilkan 1 sampai 20 dari 94 data
+            - list [ref=f7e885]:
+              - listitem [ref=f7e886]:
+                - generic [ref=f7e887] [cursor=pointer]: "1"
+              - listitem [ref=f7e888]:
+                - generic [ref=f7e889] [cursor=pointer]: "2"
+              - listitem [ref=f7e890]:
+                - generic [ref=f7e891] [cursor=pointer]: "3"
+              - listitem [ref=f7e892]:
+                - generic [ref=f7e893] [cursor=pointer]: "4"
+              - listitem [ref=f7e894]:
+                - generic [ref=f7e895] [cursor=pointer]: "5"
+              - listitem [ref=f7e896]:
+                - generic "Selanjutnya" [ref=f7e897] [cursor=pointer]: Selanjutnya »
+              - listitem [ref=f7e898]:
+                - generic "Akhir" [ref=f7e899] [cursor=pointer]: Akhir »
+        - paragraph [ref=f7e172]: © BETA 20260228 v1.3.28 - PH Bid Laut | Digital Logistic Platform
+  - text:  

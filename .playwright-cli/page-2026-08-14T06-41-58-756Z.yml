@@ -1,0 +1,880 @@
+- generic [ref=f5e1]:
+  - generic [ref=f5e2]:
+    - generic [ref=f5e3]:
+      - generic [ref=f5e4]:
+        - link [ref=f5e6] [cursor=pointer]:
+          - /url: https://phbidlautdemo.prahu-hub.com/
+        - button [ref=f5e10] [cursor=pointer]
+      - text:  
+      - generic [ref=f5e13]:
+        - generic [ref=f5e14]:
+          - generic [ref=f5e15]: PT. Cipta Karya Abadi Sejahtera Sentora Mujur Selalu
+          - button "Shipper" [ref=f5e17]
+        - generic [ref=f5e21]:
+          - generic [ref=f5e22]:
+            - generic [ref=f5e23]: Jaya Wijaya Kartika Abadi Sentosa Wijaya Jaya
+            - generic [ref=f5e24]: pengirim.ph2021@gmail.com
+          - img "assets/photo/1000002490.png" [ref=f5e26]
+          - link "" [ref=f5e27] [cursor=pointer]:
+            - /url: https://phbidlautdemo.prahu-hub.com/home/notification
+          - link [ref=f5e34] [cursor=pointer]:
+            - /url: https://phbidlautdemo.prahu-hub.com/user/do_logout
+    - generic [ref=f5e37]:
+      - generic [ref=f5e38]:
+        - text: 
+        - generic [ref=f5e39]:
+          - list [ref=f5e41]:
+            - listitem
+            - listitem [ref=f5e42]:
+              - link "CARI PENAWARAN" [ref=f5e43] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/lelang/carirute
+            - listitem [ref=f5e44]:
+              - generic [ref=f5e45] [cursor=pointer]:
+                - text: DASHBOARD
+                - generic [ref=f5e48]: 
+            - listitem [ref=f5e49]:
+              - generic [ref=f5e50] [cursor=pointer]:
+                - text: ANALITIK
+                - generic [ref=f5e53]: 
+            - listitem [ref=f5e54]:
+              - link "PENGAJUAN LELANG" [ref=f5e55] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/lelang/listlelang
+            - listitem [ref=f5e58]:
+              - link "PENGAJUAN NEGO" [ref=f5e59] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/lelang/pengajuannego
+            - listitem [ref=f5e62]:
+              - link "DAFTAR ORDER" [ref=f5e63] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/order/OrderList
+            - listitem [ref=f5e66]:
+              - generic [ref=f5e67] [cursor=pointer]:
+                - text: MASTER
+                - generic [ref=f5e70]: 
+            - listitem [ref=f5e71]:
+              - link "CEK JADWAL" [ref=f5e72] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/lelang/carijadwal
+            - listitem [ref=f5e75]:
+              - generic [ref=f5e76] [cursor=pointer]:
+                - text: LAPORAN
+                - generic [ref=f5e79]: 
+            - listitem [ref=f5e80]:
+              - generic [ref=f5e81] [cursor=pointer]:
+                - text: PENGATURAN AKUN
+                - generic [ref=f5e84]: 
+            - listitem [ref=f5e85]:
+              - link "PREFERENCE NOTIF" [ref=f5e86] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/home/preferenceNotifBidowner
+            - listitem [ref=f5e89]:
+              - link "AKUN SAYA" [ref=f5e90] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/home/akunsaya
+          - generic [ref=f5e95]:
+            - paragraph [ref=f5e97]: KONTAK KAMI
+            - generic [ref=f5e98]:
+              - generic [ref=f5e99]: 
+              - text: "081246665023"
+            - generic [ref=f5e100]:
+              - generic [ref=f5e101]: 
+              - text: "081246665023"
+            - generic [ref=f5e102]:
+              - generic [ref=f5e103]: 
+              - text: csct@prahu-hub.com
+            - generic [ref=f5e104]:
+              - link [ref=f5e105] [cursor=pointer]:
+                - /url: https://facebook.com/sosmed.phbid
+              - link [ref=f5e107] [cursor=pointer]:
+                - /url: https://twitter.com/PrahuHub
+              - link [ref=f5e109] [cursor=pointer]:
+                - /url: https://instagram.com/phbid_/
+              - link [ref=f5e111] [cursor=pointer]:
+                - /url: https://www.youtube.com/channel/UC41VntroP3zKmXZYnGgtFdw
+              - link [ref=f5e113] [cursor=pointer]:
+                - /url: http://linkedin.com/in/ph-bid-aa5393211/
+      - generic [ref=f5e115]:
+        - generic [ref=f5e116]:
+          - generic [ref=f5e119]:
+            - link "Beranda" [ref=f5e121] [cursor=pointer]:
+              - /url: https://phbidlautdemo.prahu-hub.com/lelang/carirute
+            - text: /
+            - link "Cari Penawaran Lelang" [ref=f5e123] [cursor=pointer]:
+              - /url: https://phbidlautdemo.prahu-hub.com/lelang/carirute
+            - text: / Buat Lelang Pengiriman
+          - generic [ref=f5e125]:
+            - paragraph [ref=f5e126]: Buat Pengajuan Lelang
+            - button " Kembali" [ref=f5e127] [cursor=pointer]:
+              - generic [ref=f5e128]: 
+              - text: Kembali
+          - tabpanel [ref=f5e131]:
+            - generic [ref=f5e132]:
+              - generic [ref=f5e134]:
+                - generic [ref=f5e135]:
+                  - generic [ref=f5e137]:
+                    - generic [ref=f5e138]: Nomor Lelang *
+                    - textbox "Masukkan Nomor Lelang" [ref=f5e139]: AUTOTEST/08/26-JKT
+                    - generic [ref=f5e140]:
+                      - text: "Contoh format nomor lelang : XYZ/01/24-JKT"
+                      - generic [ref=f5e141]: 
+                  - generic [ref=f5e143]:
+                    - generic [ref=f5e144]: Tanggal Buka Lelang *
+                    - textbox "DD/MM/YYYY hh:mm" [ref=f5e145]: 20/08/2026 09:00
+                  - generic [ref=f5e147]:
+                    - generic [ref=f5e148]: Tanggal Tutup Lelang *
+                    - textbox "DD/MM/YYYY hh:mm" [ref=f5e149]: 21/08/2026 09:00
+                  - generic [ref=f5e151]:
+                    - generic [ref=f5e152]: Tgl Rencana Mulai Kirim *
+                    - textbox "DD/MM/YYYY hh:mm" [ref=f5e153]: 22/08/2026 09:00
+                  - generic [ref=f5e155]:
+                    - generic [ref=f5e156]: Tgl Rencana Akhir Kirim *
+                    - textbox "DD/MM/YYYY hh:mm" [ref=f5e157]: 25/08/2026 09:00
+                - generic [ref=f5e161]:
+                  - checkbox "Gunakan data lelang yang pernah dibuat" [ref=f5e162] [cursor=pointer]
+                  - generic [ref=f5e163]: Gunakan data lelang yang pernah dibuat
+                - text: 
+                - generic [ref=f5e164]: BIAYA TERMASUK
+                - generic [ref=f5e165]:
+                  - generic [ref=f5e166]:
+                    - generic [ref=f5e168]:
+                      - checkbox "Biaya Asal" [ref=f5e169] [cursor=pointer]
+                      - generic [ref=f5e170]: Biaya Asal
+                    - generic [ref=f5e171]: ":"
+                  - generic [ref=f5e173]:
+                    - generic [ref=f5e176]:
+                      - checkbox "Krani" [ref=f5e177] [cursor=pointer]
+                      - generic [ref=f5e178]: Krani
+                    - generic [ref=f5e181]:
+                      - checkbox "Buruh Muat" [ref=f5e182] [cursor=pointer]
+                      - generic [ref=f5e183]: Buruh Muat
+                    - generic [ref=f5e186]:
+                      - checkbox "Kawalan Asal" [ref=f5e187] [cursor=pointer]
+                      - generic [ref=f5e188]: Kawalan Asal
+                    - generic [ref=f5e191]:
+                      - checkbox "Trucking Asal" [ref=f5e192] [cursor=pointer]
+                      - generic [ref=f5e193]: Trucking Asal
+                    - generic [ref=f5e196]:
+                      - checkbox "THC Asal" [ref=f5e197] [cursor=pointer]
+                      - generic [ref=f5e198]: THC Asal
+                    - generic [ref=f5e201]:
+                      - checkbox "LOLO Asal" [ref=f5e202] [cursor=pointer]
+                      - generic [ref=f5e203]: LOLO Asal
+                    - generic [ref=f5e206]:
+                      - checkbox "Stuffing" [ref=f5e207] [cursor=pointer]
+                      - generic [ref=f5e208]: Stuffing
+                    - generic [ref=f5e211]:
+                      - checkbox "Stuffing1" [ref=f5e212] [cursor=pointer]
+                      - generic [ref=f5e213]: Stuffing1
+                    - generic [ref=f5e216]:
+                      - checkbox "AUTOTEST-FIXTURE-INCLUDE-01" [ref=f5e217] [cursor=pointer]
+                      - generic [ref=f5e218]: AUTOTEST-FIXTURE-INCLUDE-01
+                - generic [ref=f5e219]:
+                  - generic [ref=f5e220]:
+                    - generic [ref=f5e222]:
+                      - checkbox "Biaya Laut" [checked] [ref=f5e223] [cursor=pointer]
+                      - generic [ref=f5e224]: Biaya Laut
+                    - generic [ref=f5e225]: ":"
+                  - generic [ref=f5e230]:
+                    - checkbox "Freight Kapal" [checked] [ref=f5e231] [cursor=pointer]
+                    - generic [ref=f5e232]: Freight Kapal
+                - generic [ref=f5e233]:
+                  - generic [ref=f5e234]:
+                    - generic [ref=f5e236]:
+                      - checkbox "Biaya Tujuan" [ref=f5e237] [cursor=pointer]
+                      - generic [ref=f5e238]: Biaya Tujuan
+                    - generic [ref=f5e239]: ":"
+                  - generic [ref=f5e241]:
+                    - generic [ref=f5e244]:
+                      - checkbox "Buruh Bongkar" [ref=f5e245] [cursor=pointer]
+                      - generic [ref=f5e246]: Buruh Bongkar
+                    - generic [ref=f5e249]:
+                      - checkbox "Kawalan Tujuan" [ref=f5e250] [cursor=pointer]
+                      - generic [ref=f5e251]: Kawalan Tujuan
+                    - generic [ref=f5e254]:
+                      - checkbox "Trucking Tujuan" [ref=f5e255] [cursor=pointer]
+                      - generic [ref=f5e256]: Trucking Tujuan
+                    - generic [ref=f5e259]:
+                      - checkbox "THC Tujuan" [ref=f5e260] [cursor=pointer]
+                      - generic [ref=f5e261]: THC Tujuan
+                    - generic [ref=f5e264]:
+                      - checkbox "LOLO Tujuan" [ref=f5e265] [cursor=pointer]
+                      - generic [ref=f5e266]: LOLO Tujuan
+                    - generic [ref=f5e269]:
+                      - checkbox "Lift On" [ref=f5e270] [cursor=pointer]
+                      - generic [ref=f5e271]: Lift On
+                - generic [ref=f5e272]:
+                  - generic [ref=f5e273]:
+                    - generic [ref=f5e275]:
+                      - checkbox "Biaya Lainnya" [ref=f5e276] [cursor=pointer]
+                      - generic [ref=f5e277]: Biaya Lainnya
+                    - generic [ref=f5e278]: ":"
+                  - generic [ref=f5e283]:
+                    - checkbox "Asuransi" [ref=f5e284] [cursor=pointer]
+                    - generic [ref=f5e285]: Asuransi
+                - generic [ref=f5e286]:
+                  - generic [ref=f5e288]:
+                    - generic [ref=f5e289]: "S&K Harga yang ditawarkan telah termasuk :"
+                    - textbox "Masukkan Syarat dan Ketentuan (Bila Ada)" [ref=f5e290]
+                  - generic [ref=f5e292]:
+                    - generic [ref=f5e293]: "S&K Harga yang ditawarkan belum termasuk :"
+                    - textbox "Masukkan Syarat dan Ketentuan (Bila Ada)" [ref=f5e294]
+                - generic [ref=f5e295]: DOKUMEN PENAGIHAN
+                - generic [ref=f5e296]:
+                  - generic [ref=f5e297]:
+                    - generic [ref=f5e299]:
+                      - checkbox "Dok. Penagihan" [ref=f5e300] [cursor=pointer]
+                      - generic [ref=f5e301]: Dok. Penagihan
+                    - generic [ref=f5e302]: ":"
+                  - generic [ref=f5e304]:
+                    - generic [ref=f5e307]:
+                      - checkbox "Invoice" [ref=f5e308] [cursor=pointer]
+                      - generic [ref=f5e309]: Invoice
+                    - generic [ref=f5e312]:
+                      - checkbox "Faktur Pajak" [ref=f5e313] [cursor=pointer]
+                      - generic [ref=f5e314]: Faktur Pajak
+                    - generic [ref=f5e317]:
+                      - checkbox "Surat Jalan" [ref=f5e318] [cursor=pointer]
+                      - generic [ref=f5e319]: Surat Jalan
+                    - generic [ref=f5e322]:
+                      - checkbox "DO" [ref=f5e323] [cursor=pointer]
+                      - generic [ref=f5e324]: DO
+                    - generic [ref=f5e327]:
+                      - checkbox "BL Pelayaran" [ref=f5e328] [cursor=pointer]
+                      - generic [ref=f5e329]: BL Pelayaran
+                    - generic [ref=f5e332]:
+                      - checkbox "Tanda Terima Barang" [ref=f5e333] [cursor=pointer]
+                      - generic [ref=f5e334]: Tanda Terima Barang
+                    - generic [ref=f5e337]:
+                      - checkbox "Dokumen Perjanjian" [ref=f5e338] [cursor=pointer]
+                      - generic [ref=f5e339]: Dokumen Perjanjian
+                    - generic [ref=f5e342]:
+                      - checkbox "Dokumen Lelang" [ref=f5e343] [cursor=pointer]
+                      - generic [ref=f5e344]: Dokumen Lelang
+                    - generic [ref=f5e347]:
+                      - checkbox "Stuffing" [ref=f5e348] [cursor=pointer]
+                      - generic [ref=f5e349]: Stuffing
+                    - generic [ref=f5e352]:
+                      - checkbox "AUTOTEST-FIXTURE-DP-01" [ref=f5e353] [cursor=pointer]
+                      - generic [ref=f5e354]: AUTOTEST-FIXTURE-DP-01
+                - generic [ref=f5e357]:
+                  - generic [ref=f5e358]: "S&K Catatan Tambahan / Dokumen pendukung pembayaran tagihan :"
+                  - textbox "Masukkan Catatan Tambahan" [ref=f5e359]
+                - generic [ref=f5e360]:
+                  - generic [ref=f5e362]:
+                    - generic [ref=f5e363]: Budget Pengiriman
+                    - textbox "Masukkan Budget" [ref=f5e364]
+                  - generic [ref=f5e366]:
+                    - generic [ref=f5e367]: Dokumen Lelang
+                    - generic [ref=f5e368]:
+                      - textbox "Masukkan Dokumen Tambahan (Bila Ada)" [ref=f5e369]
+                      - generic [ref=f5e370] [cursor=pointer]: Upload File
+                    - text: Maksimal 4MB dengan Format .jpg atau .pdf
+              - generic [ref=f5e371]: RUTE PENGIRIMAN
+              - generic [ref=f5e373]:
+                - generic [ref=f5e377]:
+                  - generic [ref=f5e378]:
+                    - radio "Normal" [checked] [ref=f5e379]
+                    - generic [ref=f5e380]: Normal
+                  - generic [ref=f5e381]:
+                    - radio "Multidrop" [ref=f5e382]
+                    - generic [ref=f5e383]: Multidrop
+                - separator [ref=f5e384]
+                - generic [ref=f5e385]:
+                  - generic [ref=f5e386]:
+                    - generic [ref=f5e388]:
+                      - generic [ref=f5e389]: Pelabuhan Asal (POL) *
+                      - generic [ref=f5e390]:
+                        - combobox [ref=f5e391]
+                        - combobox [ref=f5e874] [cursor=pointer]:
+                          - textbox "Tanjung Priok (JKT) - Kota Jakarta Utara" [ref=f5e875]
+                    - generic [ref=f5e397]:
+                      - generic [ref=f5e398]: Pelabuhan Tujuan (POD) *
+                      - generic [ref=f5e399]:
+                        - combobox [ref=f5e400]
+                        - combobox [ref=f5e945] [cursor=pointer]:
+                          - textbox "Tanjung Perak (SUB) - Kota Surabaya" [ref=f5e946]
+                  - generic [ref=f5e405]:
+                    - generic [ref=f5e406]: TEMPAT ASAL
+                    - generic [ref=f5e409]:
+                      - generic [ref=f5e410]: Informasi Alamat Lengkap Asal *
+                      - textbox "Masukkan Alamat Lengkap Asal" [ref=f5e411]: Jl. Test Otomasi No. 1, Jakarta Utara
+                    - generic [ref=f5e413]:
+                      - generic [ref=f5e414]: Kota Asal *
+                      - generic [ref=f5e416]:
+                        - combobox [ref=f5e417]
+                        - combobox [expanded] [ref=f5e420] [cursor=pointer]:
+                          - textbox "Pilih Kota Asal" [ref=f5e421]
+                          - listbox [expanded] [ref=f5e947]:
+                            - option "Pilih Kota Asal" [selected] [ref=f5e948]
+                            - option "Kab. Aceh Barat" [ref=f5e949]
+                            - option "Kab. Aceh Barat Daya" [ref=f5e950]
+                            - option "Kab. Aceh Besar" [ref=f5e951]
+                            - option "Kab. Aceh Jaya" [ref=f5e952]
+                            - option "Kab. Aceh Selatan" [ref=f5e953]
+                            - option "Kab. Aceh Singkil" [ref=f5e954]
+                            - option "Kab. Aceh Tamiang" [ref=f5e955]
+                            - option "Kab. Aceh Tengah" [ref=f5e956]
+                            - option "Kab. Aceh Tenggara" [ref=f5e957]
+                            - option "Kab. Aceh Timur" [ref=f5e958]
+                            - option "Kab. Aceh Utara" [ref=f5e959]
+                            - option "Kab. Agam" [ref=f5e960]
+                            - option "Kab. Alor" [ref=f5e961]
+                            - option "Kab. Asahan" [ref=f5e962]
+                            - option "Kab. Asmat" [ref=f5e963]
+                            - option "Kab. Badung" [ref=f5e964]
+                            - option "Kab. Balangan" [ref=f5e965]
+                            - option "Kab. Bandung" [ref=f5e966]
+                            - option "Kab. Bandung Barat" [ref=f5e967]
+                            - option "Kab. Banggai" [ref=f5e968]
+                            - option "Kab. Banggai Kepulauan" [ref=f5e969]
+                            - option "Kab. Banggai Laut" [ref=f5e970]
+                            - option "Kab. Bangka" [ref=f5e971]
+                            - option "Kab. Bangka Barat" [ref=f5e972]
+                            - option "Kab. Bangka Selatan" [ref=f5e973]
+                            - option "Kab. Bangka Tengah" [ref=f5e974]
+                            - option "Kab. Bangkalan" [ref=f5e975]
+                            - option "Kab. Bangli" [ref=f5e976]
+                            - option "Kab. Banjar" [ref=f5e977]
+                            - option "Kab. Banjarnegara" [ref=f5e978]
+                            - option "Kab. Bantaeng" [ref=f5e979]
+                            - option "Kab. Bantul" [ref=f5e980]
+                            - option "Kab. Banyuasin" [ref=f5e981]
+                            - option "Kab. Banyumas" [ref=f5e982]
+                            - option "Kab. Banyuwangi" [ref=f5e983]
+                            - option "Kab. Barito Kuala" [ref=f5e984]
+                            - option "Kab. Barito Selatan" [ref=f5e985]
+                            - option "Kab. Barito Timur" [ref=f5e986]
+                            - option "Kab. Barito Utara" [ref=f5e987]
+                            - option "Kab. Barru" [ref=f5e988]
+                            - option "Kab. Batang" [ref=f5e989]
+                            - option "Kab. Batang Hari" [ref=f5e990]
+                            - option "Kab. Batu Bara" [ref=f5e991]
+                            - option "Kab. Bekasi" [ref=f5e992]
+                            - option "Kab. Belitung" [ref=f5e993]
+                            - option "Kab. Belitung Timur" [ref=f5e994]
+                            - option "Kab. Belu" [ref=f5e995]
+                            - option "Kab. Bener Meriah" [ref=f5e996]
+                            - option "Kab. Bengkalis" [ref=f5e997]
+                            - option "Kab. Bengkayang" [ref=f5e998]
+                            - option "Kab. Bengkulu Selatan" [ref=f5e999]
+                            - option "Kab. Bengkulu Tengah" [ref=f5e1000]
+                            - option "Kab. Bengkulu Utara" [ref=f5e1001]
+                            - option "Kab. Berau" [ref=f5e1002]
+                            - option "Kab. Biak Numfor" [ref=f5e1003]
+                            - option "Kab. Bima" [ref=f5e1004]
+                            - option "Kab. Bintan" [ref=f5e1005]
+                            - option "Kab. Bireuen" [ref=f5e1006]
+                            - option "Kab. Blitar" [ref=f5e1007]
+                            - option "Kab. Blora" [ref=f5e1008]
+                            - option "Kab. Boalemo" [ref=f5e1009]
+                            - option "Kab. Bogor" [ref=f5e1010]
+                            - option "Kab. Bojonegoro" [ref=f5e1011]
+                            - option "Kab. Bolaang Mongondow" [ref=f5e1012]
+                            - option "Kab. Bolaang Mongondow Selatan" [ref=f5e1013]
+                            - option "Kab. Bolaang Mongondow Timur" [ref=f5e1014]
+                            - option "Kab. Bolaang Mongondow Utara" [ref=f5e1015]
+                            - option "Kab. Bombana" [ref=f5e1016]
+                            - option "Kab. Bondowoso" [ref=f5e1017]
+                            - option "Kab. Bone" [ref=f5e1018]
+                            - option "Kab. Bone Bolango" [ref=f5e1019]
+                            - option "Kab. Boven Digoel" [ref=f5e1020]
+                            - option "Kab. Boyolali" [ref=f5e1021]
+                            - option "Kab. Brebes" [ref=f5e1022]
+                            - option "Kab. Buleleng" [ref=f5e1023]
+                            - option "Kab. Bulukumba" [ref=f5e1024]
+                            - option "Kab. Bulungan" [ref=f5e1025]
+                            - option "Kab. Bungo" [ref=f5e1026]
+                            - option "Kab. Buol" [ref=f5e1027]
+                            - option "Kab. Buru" [ref=f5e1028]
+                            - option "Kab. Buru Selatan" [ref=f5e1029]
+                            - option "Kab. Buton" [ref=f5e1030]
+                            - option "Kab. Buton Selatan" [ref=f5e1031]
+                            - option "Kab. Buton Tengah" [ref=f5e1032]
+                            - option "Kab. Buton Utara" [ref=f5e1033]
+                            - option "Kab. Ciamis" [ref=f5e1034]
+                            - option "Kab. Cianjur" [ref=f5e1035]
+                            - option "Kab. Cilacap" [ref=f5e1036]
+                            - option "Kab. Cirebon" [ref=f5e1037]
+                            - option "Kab. Dairi" [ref=f5e1038]
+                            - option "Kab. Deiyai" [ref=f5e1039]
+                            - option "Kab. Deli Serdang" [ref=f5e1040]
+                            - option "Kab. Demak" [ref=f5e1041]
+                            - option "Kab. Dharmasraya" [ref=f5e1042]
+                            - option "Kab. Dogiyai" [ref=f5e1043]
+                            - option "Kab. Dompu" [ref=f5e1044]
+                            - option "Kab. Donggala" [ref=f5e1045]
+                            - option "Kab. Empat Lawang" [ref=f5e1046]
+                            - option "Kab. Ende" [ref=f5e1047]
+                            - option "Kab. Enrekang" [ref=f5e1048]
+                            - option "Kab. Fakfak" [ref=f5e1049]
+                            - option "Kab. Flores Timur" [ref=f5e1050]
+                            - option "Kab. Garut" [ref=f5e1051]
+                            - option "Kab. Gayo Lues" [ref=f5e1052]
+                            - option "Kab. Gianyar" [ref=f5e1053]
+                            - option "Kab. Gorontalo" [ref=f5e1054]
+                            - option "Kab. Gorontalo Utara" [ref=f5e1055]
+                            - option "Kab. Gowa" [ref=f5e1056]
+                            - option "Kab. Gresik" [ref=f5e1057]
+                            - option "Kab. Grobogan" [ref=f5e1058]
+                            - option "Kab. Gunung Kidul" [ref=f5e1059]
+                            - option "Kab. Gunung Mas" [ref=f5e1060]
+                            - option "Kab. Halmahera Barat" [ref=f5e1061]
+                            - option "Kab. Halmahera Selatan" [ref=f5e1062]
+                            - option "Kab. Halmahera Tengah" [ref=f5e1063]
+                            - option "Kab. Halmahera Timur" [ref=f5e1064]
+                            - option "Kab. Halmahera Utara" [ref=f5e1065]
+                            - option "Kab. Hulu Sungai Selatan" [ref=f5e1066]
+                            - option "Kab. Hulu Sungai Tengah" [ref=f5e1067]
+                            - option "Kab. Hulu Sungai Utara" [ref=f5e1068]
+                            - option "Kab. Humbang Hasundutan" [ref=f5e1069]
+                            - option "Kab. Indragiri Hilir" [ref=f5e1070]
+                            - option "Kab. Indragiri Hulu" [ref=f5e1071]
+                            - option "Kab. Indramayu" [ref=f5e1072]
+                            - option "Kab. Intan Jaya" [ref=f5e1073]
+                            - option "Kab. Jayapura" [ref=f5e1074]
+                            - option "Kab. Jayawijaya" [ref=f5e1075]
+                            - option "Kab. Jember" [ref=f5e1076]
+                            - option "Kab. Jembrana" [ref=f5e1077]
+                            - option "Kab. Jeneponto" [ref=f5e1078]
+                            - option "Kab. Jepara" [ref=f5e1079]
+                            - option "Kab. Jombang" [ref=f5e1080]
+                            - option "Kab. Kaimana" [ref=f5e1081]
+                            - option "Kab. Kampar" [ref=f5e1082]
+                            - option "Kab. Kapuas" [ref=f5e1083]
+                            - option "Kab. Kapuas Hulu" [ref=f5e1084]
+                            - option "Kab. Karanganyar" [ref=f5e1085]
+                            - option "Kab. Karangasem" [ref=f5e1086]
+                            - option "Kab. Karawang" [ref=f5e1087]
+                            - option "Kab. Karimun" [ref=f5e1088]
+                            - option "Kab. Karo" [ref=f5e1089]
+                            - option "Kab. Katingan" [ref=f5e1090]
+                            - option "Kab. Kaur" [ref=f5e1091]
+                            - option "Kab. Kayong Utara" [ref=f5e1092]
+                            - option "Kab. Kebumen" [ref=f5e1093]
+                            - option "Kab. Kediri" [ref=f5e1094]
+                            - option "Kab. Keerom" [ref=f5e1095]
+                            - option "Kab. Kendal" [ref=f5e1096]
+                            - option "Kab. Kepahiang" [ref=f5e1097]
+                            - option "Kab. Kepulauan Anambas" [ref=f5e1098]
+                            - option "Kab. Kepulauan Aru" [ref=f5e1099]
+                            - option "Kab. Kepulauan Mentawai" [ref=f5e1100]
+                            - option "Kab. Kepulauan Meranti" [ref=f5e1101]
+                            - option "Kab. Kepulauan Sangihe" [ref=f5e1102]
+                            - option "Kab. Kepulauan Selayar" [ref=f5e1103]
+                            - option "Kab. Kepulauan Seribu" [ref=f5e1104]
+                            - option "Kab. Kepulauan Sula" [ref=f5e1105]
+                            - option "Kab. Kepulauan Talaud" [ref=f5e1106]
+                            - option "Kab. Kepulauan Yapen" [ref=f5e1107]
+                            - option "Kab. Kerinci" [ref=f5e1108]
+                            - option "Kab. Ketapang" [ref=f5e1109]
+                            - option "Kab. Klaten" [ref=f5e1110]
+                            - option "Kab. Klungkung" [ref=f5e1111]
+                            - option "Kab. Kolaka" [ref=f5e1112]
+                            - option "Kab. Kolaka Timur" [ref=f5e1113]
+                            - option "Kab. Kolaka Utara" [ref=f5e1114]
+                            - option "Kab. Konawe" [ref=f5e1115]
+                            - option "Kab. Konawe Kepulauan" [ref=f5e1116]
+                            - option "Kab. Konawe Selatan" [ref=f5e1117]
+                            - option "Kab. Konawe Utara" [ref=f5e1118]
+                            - option "Kab. Kotabaru" [ref=f5e1119]
+                            - option "Kab. Kotawaringin Barat" [ref=f5e1120]
+                            - option "Kab. Kotawaringin Timur" [ref=f5e1121]
+                            - option "Kab. Kuantan Singingi" [ref=f5e1122]
+                            - option "Kab. Kubu Raya" [ref=f5e1123]
+                            - option "Kab. Kudus" [ref=f5e1124]
+                            - option "Kab. Kulon Progo" [ref=f5e1125]
+                            - option "Kab. Kuningan" [ref=f5e1126]
+                            - option "Kab. Kupang" [ref=f5e1127]
+                            - option "Kab. Kutai Barat" [ref=f5e1128]
+                            - option "Kab. Kutai Kartanegara" [ref=f5e1129]
+                            - option "Kab. Kutai Timur" [ref=f5e1130]
+                            - option "Kab. Labuhanbatu" [ref=f5e1131]
+                            - option "Kab. Labuhanbatu Selatan" [ref=f5e1132]
+                            - option "Kab. Labuhanbatu Utara" [ref=f5e1133]
+                            - option "Kab. Lahat" [ref=f5e1134]
+                            - option "Kab. Lamandau" [ref=f5e1135]
+                            - option "Kab. Lamongan" [ref=f5e1136]
+                            - option "Kab. Lampung Barat" [ref=f5e1137]
+                            - option "Kab. Lampung Selatan" [ref=f5e1138]
+                            - option "Kab. Lampung Tengah" [ref=f5e1139]
+                            - option "Kab. Lampung Timur" [ref=f5e1140]
+                            - option "Kab. Lampung Utara" [ref=f5e1141]
+                            - option "Kab. Landak" [ref=f5e1142]
+                            - option "Kab. Langkat" [ref=f5e1143]
+                            - option "Kab. Lanny Jaya" [ref=f5e1144]
+                            - option "Kab. Lebak" [ref=f5e1145]
+                            - option "Kab. Lebong" [ref=f5e1146]
+                            - option "Kab. Lembata" [ref=f5e1147]
+                            - option "Kab. Lima Puluh Kota" [ref=f5e1148]
+                            - option "Kab. Lingga" [ref=f5e1149]
+                            - option "Kab. Lombok Barat" [ref=f5e1150]
+                            - option "Kab. Lombok Tengah" [ref=f5e1151]
+                            - option "Kab. Lombok Timur" [ref=f5e1152]
+                            - option "Kab. Lombok Utara" [ref=f5e1153]
+                            - option "Kab. Lumajang" [ref=f5e1154]
+                            - option "Kab. Luwu" [ref=f5e1155]
+                            - option "Kab. Luwu Timur" [ref=f5e1156]
+                            - option "Kab. Luwu Utara" [ref=f5e1157]
+                            - option "Kab. Madiun" [ref=f5e1158]
+                            - option "Kab. Magelang" [ref=f5e1159]
+                            - option "Kab. Magetan" [ref=f5e1160]
+                            - option "Kab. Mahakam Ulu" [ref=f5e1161]
+                            - option "Kab. Majalengka" [ref=f5e1162]
+                            - option "Kab. Majene" [ref=f5e1163]
+                            - option "Kab. Malaka" [ref=f5e1164]
+                            - option "Kab. Malang" [ref=f5e1165]
+                            - option "Kab. Malinau" [ref=f5e1166]
+                            - option "Kab. Maluku Barat Daya" [ref=f5e1167]
+                            - option "Kab. Maluku Tengah" [ref=f5e1168]
+                            - option "Kab. Maluku Tenggara" [ref=f5e1169]
+                            - option "Kab. Maluku Tenggara Barat" [ref=f5e1170]
+                            - option "Kab. Mamasa" [ref=f5e1171]
+                            - option "Kab. Mamberamo Raya" [ref=f5e1172]
+                            - option "Kab. Mamberamo Tengah" [ref=f5e1173]
+                            - option "Kab. Mamuju" [ref=f5e1174]
+                            - option "Kab. Mamuju Tengah" [ref=f5e1175]
+                            - option "Kab. Mamuju Utara" [ref=f5e1176]
+                            - option "Kab. Mandailing Natal" [ref=f5e1177]
+                            - option "Kab. Manggarai" [ref=f5e1178]
+                            - option "Kab. Manggarai Barat" [ref=f5e1179]
+                            - option "Kab. Manggarai Timur" [ref=f5e1180]
+                            - option "Kab. Manokwari" [ref=f5e1181]
+                            - option "Kab. Manokwari Selatan" [ref=f5e1182]
+                            - option "Kab. Mappi" [ref=f5e1183]
+                            - option "Kab. Maros" [ref=f5e1184]
+                            - option "Kab. Maybrat" [ref=f5e1185]
+                            - option "Kab. Melawi" [ref=f5e1186]
+                            - option "Kab. Mempawah" [ref=f5e1187]
+                            - option "Kab. Merangin" [ref=f5e1188]
+                            - option "Kab. Merauke" [ref=f5e1189]
+                            - option "Kab. Mesuji" [ref=f5e1190]
+                            - option "Kab. Mimika" [ref=f5e1191]
+                            - option "Kab. Minahasa" [ref=f5e1192]
+                            - option "Kab. Minahasa Selatan" [ref=f5e1193]
+                            - option "Kab. Minahasa Tenggara" [ref=f5e1194]
+                            - option "Kab. Minahasa Utara" [ref=f5e1195]
+                            - option "Kab. Mojokerto" [ref=f5e1196]
+                            - option "Kab. Morowali" [ref=f5e1197]
+                            - option "Kab. Morowali Utara" [ref=f5e1198]
+                            - option "Kab. Muara Enim" [ref=f5e1199]
+                            - option "Kab. Muaro Jambi" [ref=f5e1200]
+                            - option "Kab. Muko Muko" [ref=f5e1201]
+                            - option "Kab. Muna" [ref=f5e1202]
+                            - option "Kab. Muna Barat" [ref=f5e1203]
+                            - option "Kab. Murung Raya" [ref=f5e1204]
+                            - option "Kab. Musi Banyuasin" [ref=f5e1205]
+                            - option "Kab. Musi Rawas" [ref=f5e1206]
+                            - option "Kab. Musi Rawas Utara" [ref=f5e1207]
+                            - option "Kab. Nabire" [ref=f5e1208]
+                            - option "Kab. Nagan Raya" [ref=f5e1209]
+                            - option "Kab. Nagekeo" [ref=f5e1210]
+                            - option "Kab. Natuna" [ref=f5e1211]
+                            - option "Kab. Nduga" [ref=f5e1212]
+                            - option "Kab. Ngada" [ref=f5e1213]
+                            - option "Kab. Nganjuk" [ref=f5e1214]
+                            - option "Kab. Ngawi" [ref=f5e1215]
+                            - option "Kab. Nias" [ref=f5e1216]
+                            - option "Kab. Nias Barat" [ref=f5e1217]
+                            - option "Kab. Nias Selatan" [ref=f5e1218]
+                            - option "Kab. Nias Utara" [ref=f5e1219]
+                            - option "Kab. Nunukan" [ref=f5e1220]
+                            - option "Kab. Ogan Ilir" [ref=f5e1221]
+                            - option "Kab. Ogan Komering Ilir" [ref=f5e1222]
+                            - option "Kab. Ogan Komering Ulu" [ref=f5e1223]
+                            - option "Kab. Ogan Komering Ulu Selatan" [ref=f5e1224]
+                            - option "Kab. Ogan Komering Ulu Timur" [ref=f5e1225]
+                            - option "Kab. Pacitan" [ref=f5e1226]
+                            - option "Kab. Padang Lawas" [ref=f5e1227]
+                            - option "Kab. Padang Lawas Utara" [ref=f5e1228]
+                            - option "Kab. Padang Pariaman" [ref=f5e1229]
+                            - option "Kab. Pakpak Bharat" [ref=f5e1230]
+                            - option "Kab. Pamekasan" [ref=f5e1231]
+                            - option "Kab. Pandeglang" [ref=f5e1232]
+                            - option "Kab. Pangandaran" [ref=f5e1233]
+                            - option "Kab. Pangkajene Kepulauan" [ref=f5e1234]
+                            - option "Kab. Paniai" [ref=f5e1235]
+                            - option "Kab. Parigi Moutong" [ref=f5e1236]
+                            - option "Kab. Pasaman" [ref=f5e1237]
+                            - option "Kab. Pasaman Barat" [ref=f5e1238]
+                            - option "Kab. Paser" [ref=f5e1239]
+                            - option "Kab. Pasuruan" [ref=f5e1240]
+                            - option "Kab. Pati" [ref=f5e1241]
+                            - option "Kab. Pegunungan Arfak" [ref=f5e1242]
+                            - option "Kab. Pegunungan Bintang" [ref=f5e1243]
+                            - option "Kab. Pekalongan" [ref=f5e1244]
+                            - option "Kab. Pelalawan" [ref=f5e1245]
+                            - option "Kab. Pemalang" [ref=f5e1246]
+                            - option "Kab. Penajam Paser Utara" [ref=f5e1247]
+                            - option "Kab. Penukal Abab Lematang Ilir" [ref=f5e1248]
+                            - option "Kab. Pesawaran" [ref=f5e1249]
+                            - option "Kab. Pesisir Barat" [ref=f5e1250]
+                            - option "Kab. Pesisir Selatan" [ref=f5e1251]
+                            - option "Kab. Pidie" [ref=f5e1252]
+                            - option "Kab. Pidie Jaya" [ref=f5e1253]
+                            - option "Kab. Pinrang" [ref=f5e1254]
+                            - option "Kab. Pohuwato" [ref=f5e1255]
+                            - option "Kab. Polewali Mandar" [ref=f5e1256]
+                            - option "Kab. Ponorogo" [ref=f5e1257]
+                            - option "Kab. Poso" [ref=f5e1258]
+                            - option "Kab. Pringsewu" [ref=f5e1259]
+                            - option "Kab. Probolinggo" [ref=f5e1260]
+                            - option "Kab. Pulang Pisau" [ref=f5e1261]
+                            - option "Kab. Pulau Morotai" [ref=f5e1262]
+                            - option "Kab. Pulau Taliabu" [ref=f5e1263]
+                            - option "Kab. Puncak" [ref=f5e1264]
+                            - option "Kab. Puncak Jaya" [ref=f5e1265]
+                            - option "Kab. Purbalingga" [ref=f5e1266]
+                            - option "Kab. Purwakarta" [ref=f5e1267]
+                            - option "Kab. Purworejo" [ref=f5e1268]
+                            - option "Kab. Raja Ampat" [ref=f5e1269]
+                            - option "Kab. Rejang Lebong" [ref=f5e1270]
+                            - option "Kab. Rembang" [ref=f5e1271]
+                            - option "Kab. Rokan Hilir" [ref=f5e1272]
+                            - option "Kab. Rokan Hulu" [ref=f5e1273]
+                            - option "Kab. Rote Ndao" [ref=f5e1274]
+                            - option "Kab. Sabu Raijua" [ref=f5e1275]
+                            - option "Kab. Sambas" [ref=f5e1276]
+                            - option "Kab. Samosir" [ref=f5e1277]
+                            - option "Kab. Sampang" [ref=f5e1278]
+                            - option "Kab. Sanggau" [ref=f5e1279]
+                            - option "Kab. Sarmi" [ref=f5e1280]
+                            - option "Kab. Sarolangun" [ref=f5e1281]
+                            - option "Kab. Sekadau" [ref=f5e1282]
+                            - option "Kab. Seluma" [ref=f5e1283]
+                            - option "Kab. Semarang" [ref=f5e1284]
+                            - option "Kab. Seram Bagian Barat" [ref=f5e1285]
+                            - option "Kab. Seram Bagian Timur" [ref=f5e1286]
+                            - option "Kab. Serang" [ref=f5e1287]
+                            - option "Kab. Serdang Bedagai" [ref=f5e1288]
+                            - option "Kab. Seruyan" [ref=f5e1289]
+                            - option "Kab. Siak" [ref=f5e1290]
+                            - option "Kab. Sidenreng Rappang" [ref=f5e1291]
+                            - option "Kab. Sidoarjo" [ref=f5e1292]
+                            - option "Kab. Sigi" [ref=f5e1293]
+                            - option "Kab. Sijunjung" [ref=f5e1294]
+                            - option "Kab. Sikka" [ref=f5e1295]
+                            - option "Kab. Simalungun" [ref=f5e1296]
+                            - option "Kab. Simeulue" [ref=f5e1297]
+                            - option "Kab. Sinjai" [ref=f5e1298]
+                            - option "Kab. Sintang" [ref=f5e1299]
+                            - option "Kab. Sitaro" [ref=f5e1300]
+                            - option "Kab. Situbondo" [ref=f5e1301]
+                            - option "Kab. Sleman" [ref=f5e1302]
+                            - option "Kab. Solok" [ref=f5e1303]
+                            - option "Kab. Solok Selatan" [ref=f5e1304]
+                            - option "Kab. Soppeng" [ref=f5e1305]
+                            - option "Kab. Sorong" [ref=f5e1306]
+                            - option "Kab. Sorong Selatan" [ref=f5e1307]
+                            - option "Kab. Sragen" [ref=f5e1308]
+                            - option "Kab. Subang" [ref=f5e1309]
+                            - option "Kab. Sukabumi" [ref=f5e1310]
+                            - option "Kab. Sukamara" [ref=f5e1311]
+                            - option "Kab. Sukoharjo" [ref=f5e1312]
+                            - option "Kab. Sumba Barat" [ref=f5e1313]
+                            - option "Kab. Sumba Barat Daya" [ref=f5e1314]
+                            - option "Kab. Sumba Tengah" [ref=f5e1315]
+                            - option "Kab. Sumba Timur" [ref=f5e1316]
+                            - option "Kab. Sumbawa" [ref=f5e1317]
+                            - option "Kab. Sumbawa Barat" [ref=f5e1318]
+                            - option "Kab. Sumedang" [ref=f5e1319]
+                            - option "Kab. Sumenep" [ref=f5e1320]
+                            - option "Kab. Supiori" [ref=f5e1321]
+                            - option "Kab. Tabalong" [ref=f5e1322]
+                            - option "Kab. Tabanan" [ref=f5e1323]
+                            - option "Kab. Takalar" [ref=f5e1324]
+                            - option "Kab. Tambrauw" [ref=f5e1325]
+                            - option "Kab. Tana Tidung" [ref=f5e1326]
+                            - option "Kab. Tana Toraja" [ref=f5e1327]
+                            - option "Kab. Tanah Bumbu" [ref=f5e1328]
+                            - option "Kab. Tanah Datar" [ref=f5e1329]
+                            - option "Kab. Tanah Laut" [ref=f5e1330]
+                            - option "Kab. Tangerang" [ref=f5e1331]
+                            - option "Kab. Tanggamus" [ref=f5e1332]
+                            - option "Kab. Tanjung Jabung Barat" [ref=f5e1333]
+                            - option "Kab. Tanjung Jabung Timur" [ref=f5e1334]
+                            - option "Kab. Tapanuli Selatan" [ref=f5e1335]
+                            - option "Kab. Tapanuli Tengah" [ref=f5e1336]
+                            - option "Kab. Tapanuli Utara" [ref=f5e1337]
+                            - option "Kab. Tapin" [ref=f5e1338]
+                            - option "Kab. Tasikmalaya" [ref=f5e1339]
+                            - option "Kab. Tebo" [ref=f5e1340]
+                            - option "Kab. Tegal" [ref=f5e1341]
+                            - option "Kab. Teluk Bintuni" [ref=f5e1342]
+                            - option "Kab. Teluk Wondama" [ref=f5e1343]
+                            - option "Kab. Temanggung" [ref=f5e1344]
+                            - option "Kab. Timor Tengah Selatan" [ref=f5e1345]
+                            - option "Kab. Timor Tengah Utara" [ref=f5e1346]
+                            - option "Kab. Toba Samosir" [ref=f5e1347]
+                            - option "Kab. Tojo Una-Una" [ref=f5e1348]
+                            - option "Kab. Toli-Toli" [ref=f5e1349]
+                            - option "Kab. Tolikara" [ref=f5e1350]
+                            - option "Kab. Toraja Utara" [ref=f5e1351]
+                            - option "Kab. Trenggalek" [ref=f5e1352]
+                            - option "Kab. Tuban" [ref=f5e1353]
+                            - option "Kab. Tulang Bawang" [ref=f5e1354]
+                            - option "Kab. Tulang Bawang Barat" [ref=f5e1355]
+                            - option "Kab. Tulungagung" [ref=f5e1356]
+                            - option "Kab. Wajo" [ref=f5e1357]
+                            - option "Kab. Wakatobi" [ref=f5e1358]
+                            - option "Kab. Waropen" [ref=f5e1359]
+                            - option "Kab. Way Kanan" [ref=f5e1360]
+                            - option "Kab. Wonogiri" [ref=f5e1361]
+                            - option "Kab. Wonosobo" [ref=f5e1362]
+                            - option "Kab. Yahukimo" [ref=f5e1363]
+                            - option "Kab. Yalimo" [ref=f5e1364]
+                            - option "kota abv" [ref=f5e1365]
+                            - option "Kota Ambon" [ref=f5e1366]
+                            - option "Kota Balikpapan" [ref=f5e1367]
+                            - option "Kota Banda Aceh" [ref=f5e1368]
+                            - option "Kota Bandar Lampung" [ref=f5e1369]
+                            - option "Kota Bandung" [ref=f5e1370]
+                            - option "Kota Banjar" [ref=f5e1371]
+                            - option "Kota Banjarbaru" [ref=f5e1372]
+                            - option "Kota Banjarmasin" [ref=f5e1373]
+                            - option "Kota Batam" [ref=f5e1374]
+                            - option "Kota Batu" [ref=f5e1375]
+                            - option "Kota Bau-Bau" [ref=f5e1376]
+                            - option "Kota Bekasi" [ref=f5e1377]
+                            - option "Kota Bengkulu" [ref=f5e1378]
+                            - option "Kota Bima" [ref=f5e1379]
+                            - option "Kota Binjai" [ref=f5e1380]
+                            - option "Kota Bitung" [ref=f5e1381]
+                            - option "Kota Blitar" [ref=f5e1382]
+                            - option "Kota Bogor" [ref=f5e1383]
+                            - option "Kota Bontang" [ref=f5e1384]
+                            - option "Kota Bukittinggi" [ref=f5e1385]
+                            - option "Kota Cilegon" [ref=f5e1386]
+                            - option "Kota Cimahi" [ref=f5e1387]
+                            - option "Kota Cirebon" [ref=f5e1388]
+                            - option "Kota Denpasar" [ref=f5e1389]
+                            - option "Kota Depok" [ref=f5e1390]
+                            - option "Kota Dumai" [ref=f5e1391]
+                            - option "Kota Gorontalo" [ref=f5e1392]
+                            - option "Kota Gunungsitoli" [ref=f5e1393]
+                            - option "Kota Jakarta Barat" [ref=f5e1394]
+                            - option "Kota Jakarta Pusat" [ref=f5e1395]
+                            - option "Kota Jakarta Selatan" [ref=f5e1396]
+                            - option "Kota Jakarta Timur" [ref=f5e1397]
+                            - option "Kota Jakarta Utara" [ref=f5e1398]
+                            - option "Kota Jambi" [ref=f5e1399]
+                            - option "Kota Jayapura" [ref=f5e1400]
+                            - option "Kota Kediri" [ref=f5e1401]
+                            - option "Kota Kendari" [ref=f5e1402]
+                            - option "Kota Kotamobagu" [ref=f5e1403]
+                            - option "Kota Kupang" [ref=f5e1404]
+                            - option "Kota Lhokseumawe" [ref=f5e1405]
+                            - option "Kota Lubuk Linggau" [ref=f5e1406]
+                            - option "Kota Madiun" [ref=f5e1407]
+                            - option "Kota Magelang" [ref=f5e1408]
+                            - option "Kota Makassar" [ref=f5e1409]
+                            - option "Kota Malang" [ref=f5e1410]
+                            - option "Kota Manado" [ref=f5e1411]
+                            - option "Kota Mataram" [ref=f5e1412]
+                            - option "Kota Medan" [ref=f5e1413]
+                            - option "Kota Metro" [ref=f5e1414]
+                            - option "Kota Mojokerto" [ref=f5e1415]
+                            - option "Kota Padang" [ref=f5e1416]
+                            - option "Kota Padang Panjang" [ref=f5e1417]
+                            - option "Kota Padang Sidempuan" [ref=f5e1418]
+                            - option "Kota Pagar Alam" [ref=f5e1419]
+                            - option "Kota Palangka Raya" [ref=f5e1420]
+                            - option "Kota Palembang" [ref=f5e1421]
+                            - option "Kota Palopo" [ref=f5e1422]
+                            - option "Kota Palu" [ref=f5e1423]
+                            - option "Kota Pangkal Pinang" [ref=f5e1424]
+                            - option "Kota Parepare" [ref=f5e1425]
+                            - option "Kota Pariaman" [ref=f5e1426]
+                            - option "Kota Pasuruan" [ref=f5e1427]
+                            - option "Kota Payakumbuh" [ref=f5e1428]
+                            - option "Kota Pekalongan" [ref=f5e1429]
+                            - option "Kota Pekanbaru" [ref=f5e1430]
+                            - option "Kota Pematang Siantar" [ref=f5e1431]
+                            - option "Kota Pontianak" [ref=f5e1432]
+                            - option "Kota Prabumulih" [ref=f5e1433]
+                            - option "Kota Probolinggo" [ref=f5e1434]
+                            - option "Kota Sabang" [ref=f5e1435]
+                            - option "Kota Salatiga" [ref=f5e1436]
+                            - option "Kota Samarinda" [ref=f5e1437]
+                            - option "Kota Sawah Lunto" [ref=f5e1438]
+                            - option "Kota Semarang" [ref=f5e1439]
+                            - option "Kota Serang" [ref=f5e1440]
+                            - option "Kota Sibolga" [ref=f5e1441]
+                            - option "Kota Singkawang" [ref=f5e1442]
+                            - option "Kota Solok" [ref=f5e1443]
+                            - option "Kota Sorong" [ref=f5e1444]
+                            - option "Kota Subulussalam" [ref=f5e1445]
+                            - option "Kota Sukabumi" [ref=f5e1446]
+                            - option "Kota Sungaipenuh" [ref=f5e1447]
+                            - option "Kota Surabaya" [ref=f5e1448]
+                            - option "Kota Surakarta" [ref=f5e1449]
+                            - option "Kota Tangerang" [ref=f5e1450]
+                            - option "Kota Tangerang Selatan" [ref=f5e1451]
+                            - option "Kota Tanjung Balai" [ref=f5e1452]
+                            - option "Kota Tanjung Pinang" [ref=f5e1453]
+                            - option "Kota Tarakan" [ref=f5e1454]
+                            - option "Kota Tasikmalaya" [ref=f5e1455]
+                            - option "Kota Tebing Tinggi" [ref=f5e1456]
+                            - option "Kota Tegal" [ref=f5e1457]
+                            - option "Kota Ternate" [ref=f5e1458]
+                            - option "Kota Tidore Kepulauan" [ref=f5e1459]
+                            - option "Kota Tomohon" [ref=f5e1460]
+                            - option "Kota Tual" [ref=f5e1461]
+                            - option "Kota Yogyakarta" [ref=f5e1462]
+                    - generic [ref=f5e423]:
+                      - generic [ref=f5e424]: PIC Tempat Asal
+                      - textbox "Masukkan Nama PIC" [ref=f5e425]
+                      - text: PIC yang dapat dihubungi di tempat asal
+                    - generic [ref=f5e427]:
+                      - generic [ref=f5e428]: Telp. PIC Tempat Asal
+                      - textbox "Nomor Telp." [ref=f5e429]
+                      - text: Telp / WA yang dapat dihubungi
+                  - generic [ref=f5e430]:
+                    - generic [ref=f5e431]: TEMPAT TUJUAN
+                    - generic [ref=f5e434]:
+                      - generic [ref=f5e435]: Informasi Alamat Lengkap Tujuan *
+                      - textbox "Masukkan Alamat Lengkap Tujuan" [ref=f5e436]
+                    - generic [ref=f5e438]:
+                      - generic [ref=f5e439]: Kota Tujuan *
+                      - generic [ref=f5e441]:
+                        - combobox [ref=f5e442]
+                        - combobox [ref=f5e445] [cursor=pointer]:
+                          - textbox "Pilih Kota Tujuan" [ref=f5e446]
+                    - generic [ref=f5e448]:
+                      - generic [ref=f5e449]: PIC Tempat Tujuan
+                      - textbox "Masukkan Nama PIC" [ref=f5e450]
+                      - text: PIC yang dapat dihubungi di tempat tujuan
+                    - generic [ref=f5e452]:
+                      - generic [ref=f5e453]: Telp. PIC Tempat Tujuan
+                      - textbox "Nomor Telp." [ref=f5e454]
+                      - text: Telp / WA yang dapat dihubungi
+                - text: 
+              - generic [ref=f5e455]: INFORMASI KONTAINER
+              - generic [ref=f5e458]:
+                - generic [ref=f5e460]:
+                  - generic [ref=f5e461]: Pilih Jenis Kontainer *
+                  - generic [ref=f5e462]:
+                    - listbox [ref=f5e463]:
+                      - option [ref=f5e464]: 20 DRY
+                      - option [ref=f5e465]: 20 ISOTANK
+                      - option [ref=f5e466]: 20 REEFER
+                      - option [ref=f5e467]: 40 REEFER
+                      - option [ref=f5e468]: 40 FR
+                      - option [ref=f5e469]: 40 HC
+                      - option [ref=f5e470]: 40 OT
+                      - option [ref=f5e471]: 40 OD
+                      - option [ref=f5e472]: Vony Wati
+                      - option [ref=f5e473]: AUTOTEST-FIXTURE-KONTAINER-01
+                    - combobox [ref=f5e476]:
+                      - list [ref=f5e477]:
+                        - listitem [ref=f5e478]:
+                          - searchbox "Anda Bisa Memilih Beberapa" [ref=f5e479]
+                - generic [ref=f5e481]:
+                  - generic [ref=f5e482]: Volume Pengiriman
+                  - textbox "Jumlah Berapa Unit / Berapa Kontainer" [ref=f5e483]
+                - generic [ref=f5e485]:
+                  - generic [ref=f5e486]: Deskripsi Barang
+                  - textbox "Masukkan Deskripsi Barang (Bila Ada)" [ref=f5e487]
+              - generic [ref=f5e490]:
+                - link "Batal" [ref=f5e491] [cursor=pointer]:
+                  - /url: https://phbidlautdemo.prahu-hub.com/lelang/listlelang
+                - button "Lanjutkan " [ref=f5e492] [cursor=pointer]:
+                  - text: Lanjutkan
+                  - generic [ref=f5e493]: 
+        - paragraph [ref=f5e499]: © BETA 20260228 v1.3.28 - PH Bid Laut | Digital Logistic Platform
+  - text:  
+  - searchbox [active] [ref=f5e1465]

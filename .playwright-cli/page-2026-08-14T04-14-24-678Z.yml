@@ -1,0 +1,185 @@
+- generic [active] [ref=f12e1]:
+  - generic [ref=f12e2]:
+    - generic [ref=f12e3]:
+      - generic [ref=f12e4]:
+        - link [ref=f12e6] [cursor=pointer]:
+          - /url: https://phbidlautdemo.prahu-hub.com/
+        - button [ref=f12e10] [cursor=pointer]
+      - text:  
+      - generic [ref=f12e13]:
+        - generic [ref=f12e14]:
+          - generic [ref=f12e15]: PT. Cipta Karya Abadi Sejahtera Sentora Mujur Selalu
+          - button "Shipper" [ref=f12e17]
+        - generic [ref=f12e21]:
+          - generic [ref=f12e22]:
+            - generic [ref=f12e23]: Jaya Wijaya Kartika Abadi Sentosa Wijaya Jaya
+            - generic [ref=f12e24]: pengirim.ph2021@gmail.com
+          - img "assets/photo/1000002490.png" [ref=f12e26]
+          - link "" [ref=f12e27] [cursor=pointer]:
+            - /url: https://phbidlautdemo.prahu-hub.com/home/notification
+          - link [ref=f12e34] [cursor=pointer]:
+            - /url: https://phbidlautdemo.prahu-hub.com/user/do_logout
+    - generic [ref=f12e37]:
+      - generic [ref=f12e38]:
+        - text: 
+        - generic [ref=f12e39]:
+          - list [ref=f12e41]:
+            - listitem
+            - listitem [ref=f12e42]:
+              - link "CARI PENAWARAN" [ref=f12e43] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/lelang/carirute
+            - listitem [ref=f12e44]:
+              - generic [ref=f12e45] [cursor=pointer]:
+                - text: DASHBOARD
+                - generic [ref=f12e48]: 
+            - listitem [ref=f12e49]:
+              - generic [ref=f12e50] [cursor=pointer]:
+                - text: ANALITIK
+                - generic [ref=f12e53]: 
+            - listitem [ref=f12e54]:
+              - link "PENGAJUAN LELANG" [ref=f12e55] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/lelang/listlelang
+            - listitem [ref=f12e58]:
+              - link "PENGAJUAN NEGO" [ref=f12e59] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/lelang/pengajuannego
+            - listitem [ref=f12e62]:
+              - link "DAFTAR ORDER" [ref=f12e63] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/order/OrderList
+            - listitem [ref=f12e66]:
+              - generic [ref=f12e67] [cursor=pointer]:
+                - text: MASTER
+                - generic [ref=f12e70]: 
+            - listitem [ref=f12e71]:
+              - link "CEK JADWAL" [ref=f12e72] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/lelang/carijadwal
+            - listitem [ref=f12e75]:
+              - generic [ref=f12e76] [cursor=pointer]:
+                - text: LAPORAN
+                - generic [ref=f12e79]: 
+            - listitem [ref=f12e80]:
+              - generic [ref=f12e81] [cursor=pointer]:
+                - text: PENGATURAN AKUN
+                - generic [ref=f12e84]: 
+            - listitem [ref=f12e85]:
+              - link "PREFERENCE NOTIF" [ref=f12e86] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/home/preferenceNotifBidowner
+            - listitem [ref=f12e89]:
+              - link "AKUN SAYA" [ref=f12e90] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/home/akunsaya
+          - generic [ref=f12e95]:
+            - paragraph [ref=f12e97]: KONTAK KAMI
+            - generic [ref=f12e98]:
+              - generic [ref=f12e99]: 
+              - text: "081246665023"
+            - generic [ref=f12e100]:
+              - generic [ref=f12e101]: 
+              - text: "081246665023"
+            - generic [ref=f12e102]:
+              - generic [ref=f12e103]: 
+              - text: csct@prahu-hub.com
+            - generic [ref=f12e104]:
+              - link [ref=f12e105] [cursor=pointer]:
+                - /url: https://facebook.com/sosmed.phbid
+              - link [ref=f12e107] [cursor=pointer]:
+                - /url: https://twitter.com/PrahuHub
+              - link [ref=f12e109] [cursor=pointer]:
+                - /url: https://instagram.com/phbid_/
+              - link [ref=f12e111] [cursor=pointer]:
+                - /url: https://www.youtube.com/channel/UC41VntroP3zKmXZYnGgtFdw
+              - link [ref=f12e113] [cursor=pointer]:
+                - /url: http://linkedin.com/in/ph-bid-aa5393211/
+      - generic [ref=f12e115]:
+        - generic [ref=f12e116]:
+          - generic [ref=f12e120]:
+            - link "Beranda" [ref=f12e122] [cursor=pointer]:
+              - /url: https://phbidlautdemo.prahu-hub.com/lelang/carirute
+            - text: / Akun Saya
+          - generic [ref=f12e123]: AKUN SAYA
+          - generic [ref=f12e126]:
+            - text:  
+            - table [ref=f12e131]:
+              - rowgroup [ref=f12e132]:
+                - row [ref=f12e133]:
+                  - cell "Nama :" [ref=f12e134]:
+                    - text: Nama
+                    - generic [ref=f12e135]: ":"
+                  - cell "Jaya Wijaya Kartika Abadi Sentosa Wijaya Jaya" [ref=f12e136]
+                  - cell [ref=f12e137]
+                  - cell [ref=f12e138]:
+                    - link " Edit Akun Saya" [ref=f12e139] [cursor=pointer]:
+                      - /url: https://phbidlautdemo.prahu-hub.com/home/editakunsaya
+                      - generic [ref=f12e140]: 
+                      - text: Edit Akun Saya
+                - row [ref=f12e141]:
+                  - cell "Nama Perusahaan :" [ref=f12e142]:
+                    - text: Nama Perusahaan
+                    - generic [ref=f12e143]: ":"
+                  - cell "PT. Cipta Karya Abadi Sejahtera Sentora Mujur Selalu" [ref=f12e144]
+                - row [ref=f12e145]:
+                  - cell "Alamat :" [ref=f12e146]:
+                    - text: Alamat
+                    - generic [ref=f12e147]: ":"
+                  - cell "Jl. Mayjen Sungkono No.89, Gn. Sari, Kec. Dukuhpakis, Surabaya, Jawa Timur 6022569" [ref=f12e148]
+                - row [ref=f12e149]:
+                  - cell "Kota :" [ref=f12e150]:
+                    - text: Kota
+                    - generic [ref=f12e151]: ":"
+                  - cell "Kab. Pesisir Selatan" [ref=f12e152]
+                  - cell "Identitas (KTP / SIM)  Download Gambar" [ref=f12e153]:
+                    - generic [ref=f12e154]:
+                      - generic [ref=f12e155]: Identitas (KTP / SIM)
+                      - link [ref=f12e157] [cursor=pointer]:
+                        - /url: https://phbidlautdemo.prahu-hub.com//assets/ktp/1000002489.png
+                        - button " Download Gambar" [ref=f12e158]:
+                          - generic [ref=f12e159]: 
+                          - text: Download Gambar
+                  - cell "Logo Perusahaan  Download Gambar" [ref=f12e160]:
+                    - generic [ref=f12e161]:
+                      - generic [ref=f12e162]: Logo Perusahaan
+                      - link [ref=f12e164] [cursor=pointer]:
+                        - /url: https://phbidlautdemo.prahu-hub.com//assets/photo/1000002490.png
+                        - button " Download Gambar" [ref=f12e165]:
+                          - generic [ref=f12e166]: 
+                          - text: Download Gambar
+                - row [ref=f12e167]:
+                  - cell "Provinsi :" [ref=f12e168]:
+                    - text: Provinsi
+                    - generic [ref=f12e169]: ":"
+                  - cell "Sumatera Barat" [ref=f12e170]
+                - row [ref=f12e171]:
+                  - cell "Telepon / Whatsapp :" [ref=f12e172]:
+                    - text: Telepon / Whatsapp
+                    - generic [ref=f12e173]: ":"
+                  - cell "083830011881" [ref=f12e174]
+                - row [ref=f12e175]:
+                  - cell "Email :" [ref=f12e176]:
+                    - text: Email
+                    - generic [ref=f12e177]: ":"
+                  - cell "pengirim.ph2021@gmail.com" [ref=f12e178]
+                - row [ref=f12e179]:
+                  - cell "NPWP :" [ref=f12e180]:
+                    - text: NPWP
+                    - generic [ref=f12e181]: ":"
+                  - cell [ref=f12e182]:
+                    - link "npwp-v4.jpg" [ref=f12e183] [cursor=pointer]:
+                      - /url: /assets/npwp/npwp-v4.jpg
+                - row [ref=f12e184]:
+                  - cell "No. NPWP :" [ref=f12e185]:
+                    - text: No. NPWP
+                    - generic [ref=f12e186]: ":"
+                  - cell "NPWP9983-ASA/9989" [ref=f12e187]
+                - row [ref=f12e188]:
+                  - cell "SIUP :" [ref=f12e189]:
+                    - text: SIUP
+                    - generic [ref=f12e190]: ":"
+                  - cell [ref=f12e191]:
+                    - link "SIUP-v4.png" [ref=f12e192] [cursor=pointer]:
+                      - /url: /assets/siup/SIUP-v4.png
+                - row [ref=f12e193]:
+                  - cell "No. SIUP :" [ref=f12e194]:
+                    - text: No. SIUP
+                    - generic [ref=f12e195]: ":"
+                  - cell "SI.UP-3213412/32412.432423" [ref=f12e196]
+          - text: 
+        - paragraph [ref=f12e202]: © BETA 20260228 v1.3.28 - PH Bid Laut | Digital Logistic Platform
+  - text:   

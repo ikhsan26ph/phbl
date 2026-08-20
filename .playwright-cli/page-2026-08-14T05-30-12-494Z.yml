@@ -1,0 +1,120 @@
+- generic [active] [ref=f3e1]:
+  - generic [ref=f3e2]:
+    - generic [ref=f3e3]:
+      - generic [ref=f3e4]:
+        - link [ref=f3e6] [cursor=pointer]:
+          - /url: https://phbidlautdemo.prahu-hub.com/
+        - button [ref=f3e10] [cursor=pointer]
+      - text:  
+      - generic [ref=f3e13]:
+        - generic [ref=f3e14]:
+          - generic [ref=f3e15]: PT. Cipta Karya Abadi Sejahtera Sentora Mujur Selalu
+          - button "Shipper" [ref=f3e17]
+        - generic [ref=f3e21]:
+          - generic [ref=f3e22]:
+            - generic [ref=f3e23]: Jaya Wijaya Kartika Abadi Sentosa Wijaya Jaya
+            - generic [ref=f3e24]: pengirim.ph2021@gmail.com
+          - img "assets/photo/1000002490.png" [ref=f3e26]
+          - link "" [ref=f3e27] [cursor=pointer]:
+            - /url: https://phbidlautdemo.prahu-hub.com/home/notification
+          - link [ref=f3e34] [cursor=pointer]:
+            - /url: https://phbidlautdemo.prahu-hub.com/user/do_logout
+    - generic [ref=f3e37]:
+      - generic [ref=f3e38]:
+        - text: 
+        - generic [ref=f3e39]:
+          - list [ref=f3e41]:
+            - listitem
+            - listitem [ref=f3e42]:
+              - link "CARI PENAWARAN" [ref=f3e43] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/lelang/carirute
+            - listitem [ref=f3e44]:
+              - generic [ref=f3e45] [cursor=pointer]:
+                - text: DASHBOARD
+                - generic [ref=f3e48]: 
+            - listitem [ref=f3e49]:
+              - generic [ref=f3e50] [cursor=pointer]:
+                - text: ANALITIK
+                - generic [ref=f3e53]: 
+            - listitem [ref=f3e54]:
+              - link "PENGAJUAN LELANG" [ref=f3e55] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/lelang/listlelang
+            - listitem [ref=f3e58]:
+              - link "PENGAJUAN NEGO" [ref=f3e59] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/lelang/pengajuannego
+            - listitem [ref=f3e62]:
+              - link "DAFTAR ORDER" [ref=f3e63] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/order/OrderList
+            - listitem [ref=f3e66]:
+              - generic [ref=f3e67] [cursor=pointer]:
+                - text: MASTER
+                - generic [ref=f3e70]: 
+            - listitem [ref=f3e71]:
+              - link "CEK JADWAL" [ref=f3e72] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/lelang/carijadwal
+            - listitem [ref=f3e75]:
+              - generic [ref=f3e76] [cursor=pointer]:
+                - text: LAPORAN
+                - generic [ref=f3e79]: 
+            - listitem [ref=f3e80]:
+              - generic [ref=f3e81] [cursor=pointer]:
+                - text: PENGATURAN AKUN
+                - generic [ref=f3e84]: 
+            - listitem [ref=f3e85]:
+              - link "PREFERENCE NOTIF" [ref=f3e86] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/home/preferenceNotifBidowner
+            - listitem [ref=f3e89]:
+              - link "AKUN SAYA" [ref=f3e90] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/home/akunsaya
+          - generic [ref=f3e95]:
+            - paragraph [ref=f3e97]: KONTAK KAMI
+            - generic [ref=f3e98]:
+              - generic [ref=f3e99]: 
+              - text: "081246665023"
+            - generic [ref=f3e100]:
+              - generic [ref=f3e101]: 
+              - text: "081246665023"
+            - generic [ref=f3e102]:
+              - generic [ref=f3e103]: 
+              - text: csct@prahu-hub.com
+            - generic [ref=f3e104]:
+              - link [ref=f3e105] [cursor=pointer]:
+                - /url: https://facebook.com/sosmed.phbid
+              - link [ref=f3e107] [cursor=pointer]:
+                - /url: https://twitter.com/PrahuHub
+              - link [ref=f3e109] [cursor=pointer]:
+                - /url: https://instagram.com/phbid_/
+              - link [ref=f3e111] [cursor=pointer]:
+                - /url: https://www.youtube.com/channel/UC41VntroP3zKmXZYnGgtFdw
+              - link [ref=f3e113] [cursor=pointer]:
+                - /url: http://linkedin.com/in/ph-bid-aa5393211/
+      - generic [ref=f3e115]:
+        - generic [ref=f3e116]:
+          - generic [ref=f3e117]: Beranda / Cari Penawaran Lelang
+          - generic [ref=f3e120]:
+            - generic [ref=f3e121]:
+              - generic [ref=f3e122]: Cari Penawaran Lelang
+              - generic [ref=f3e124]:
+                - text: 1. Pesan
+                - generic [ref=f3e125]: 
+                - text: 2. Data Muatan
+                - generic [ref=f3e126]: 
+                - text: 3. Perjanjian Pengiriman
+                - generic [ref=f3e127]: 
+                - text: 4. Pengiriman
+            - tabpanel [ref=f3e130]:
+              - generic [ref=f3e132]:
+                - generic [ref=f3e135]:
+                  - generic [ref=f3e136]: Nomor Lelang *
+                  - textbox "Nomor Lelang *" [ref=f3e137]:
+                    - /placeholder: Masukkan Nomor Lelang
+                  - generic [ref=f3e138] [cursor=pointer]: 
+                  - text: Masukkan nomor lelang yang akan di cari atau klik ikon sisi kanan untuk memilih dari daftar nomor yang ada
+                - generic [ref=f3e141]:
+                  - link "+ Buat Lelang Baru" [ref=f3e142] [cursor=pointer]:
+                    - /url: https://phbidlautdemo.prahu-hub.com/lelang/buatlelang?newbook=1
+                    - generic [ref=f3e143]: +
+                    - text: Buat Lelang Baru
+                  - button "Cari Harga Penawaran" [disabled] [ref=f3e144]
+        - paragraph [ref=f3e150]: © BETA 20260228 v1.3.28 - PH Bid Laut | Digital Logistic Platform
+  - text:   

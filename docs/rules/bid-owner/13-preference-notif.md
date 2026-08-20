@@ -1,0 +1,57 @@
+# Preference Notif
+
+  - Pada menu ini bid owner akun utama dapat melakukan setting notifikasi yang ingin diterima
+  - Menu setting preference notifikasi ini hanya dapat digunakan pada akun utama saja. Untuk akun sub user tidak dapat melakukan setting preference notifikasi
+  - Daftar notifikasi email yang dapat dilakukan setting preference notifikasi oleh bid owner antara lain :
+- Notifikasi perubahan data diterima
+- Notif perubahan data ditolak
+- Notif perjanjian pengiriman diterima
+- Notif perjanjian pengiriman ditolak
+- Notif kelengkapan data unit
+- Notif perubahan jadwal
+- Notif Ambil Kontainer
+- Notif Stuffing
+- Notif Kapal Berlayar
+- Notif Kapal Sandar
+- Notif Rencana Dooring
+- Notif Dooring
+- Notif Dokumen Dikirim
+  - Notifikasi WhatsApp yang sebelumnya dikirim ke Bid Owner telah dinonaktifkan. Sebagai penggantinya, seluruh notifikasi bid owner diterima melalui push notifikasi.
+  - Notifikasi whatsapp yang diterima oleh Bid Owner hanya terdiri dari Lupa Kata Sandi akun saja
+  - Untuk menyesuaikan jenis push notifikasi yang diterima, Bid Owner dapat mengelola pengaturannya melalui section Notifikasi Sistem. Daftar push notifikasi yang dapat dilakukan setting preference oleh bid owner terdiri dari :
+- Notif Perubahan Data Diterima
+- Notif Perubahan Data Ditolak
+- Notif Nego Diterima
+- Notif Nego Ditolak
+- Notif Nego Dicounter
+- Notif Perjanjian Pengiriman Diterima
+- Notif Perjanjian Pengiriman Ditolak
+- Notif Kelengkapan Data Unit
+- Notif Perubahan Jadwal
+- Notif Ambil Kontainer
+- Notif Stuffing
+- Notif Kapal Berlayar
+- Notif Kapal Sandar
+- Notif Rencana Dooring
+- Notif Dooring
+- Notif Dokumen Dikirim
+- Notif Jadwal Tersedia
+  - Untuk mengaktifkan setting preference notifikasi, dapat dilakukan dengan melakukan checklist pada daftar notif. Sedangkan untuk menonaktifkan setting preference notifikasi, dapat dilakukan dengan melakukan unchecklist pada daftar notif
+  - Secara default untuk preference notif Email dan notif Sistem tampil Aktif
+  - Jika bid owner akun utama mengaktifkan preference notifikasi email / push notif, maka bid owner akun utama akan menerima notifikasi sesuai dengan yang dipilih
+  - Jika bid owner akun utama menonaktifkan preference notifikasi email / push notif, maka bid owner akun utama tidak akan menerima notifikasi sesuai dengan yang dinonaktifkan. Di Sisi kanan notif akan tampil tambahan label “Tidak Aktif”
+  - Notifikasi email tracking : Ambil kontainer, stuffing, kapal berlayar, kapal sandar, rencana dooring, dooring, dokumen dikirim. dinyalakan kembali untuk akun bid owner utama.
+  - Notifikasi email akan menampilkan nomor referensi jika ada. Jika nomor referensi tidak diisikan maka pada email akan ditampilkan dengan tanda strip (-).
+  - Pada BID OWNER penambahan Nomor Referensi ini tampil pada notifikasi :
+    - Notif Perjanjian Pengiriman Divalidasi
+    - Notif Perjanjian Pengiriman Ditolak
+    - Notif Kelengkapan Data Unit
+    - Notif Perubahan Jadwal
+    - Notif Ambil Kontainer
+    - Notif Stuffing
+    - Notif Kapal Berlayar
+    - Notif Kapal Sandar
+    - Notif Rencana Dooring
+    - Notif Dooring
+    - Notif SJ Diterima Agen
+    - Notif Dokumen Dikirim

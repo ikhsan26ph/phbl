@@ -1,0 +1,162 @@
+- generic [active] [ref=f6e1]:
+  - generic [ref=f6e2]:
+    - generic [ref=f6e3]:
+      - generic [ref=f6e4]:
+        - link [ref=f6e6] [cursor=pointer]:
+          - /url: https://phbidlautdemo.prahu-hub.com/
+        - button [ref=f6e10] [cursor=pointer]
+      - text:  
+      - generic [ref=f6e13]:
+        - generic [ref=f6e14]:
+          - generic [ref=f6e15]: PT. Cipta Karya Abadi Sejahtera Sentora Mujur Selalu
+          - button "Shipper" [ref=f6e17]
+        - generic [ref=f6e21]:
+          - generic [ref=f6e22]:
+            - generic [ref=f6e23]: Jaya Wijaya Kartika Abadi Sentosa Wijaya Jaya
+            - generic [ref=f6e24]: pengirim.ph2021@gmail.com
+          - img "assets/photo/1000002490.png" [ref=f6e26]
+          - link "" [ref=f6e27] [cursor=pointer]:
+            - /url: https://phbidlautdemo.prahu-hub.com/home/notification
+          - link [ref=f6e34] [cursor=pointer]:
+            - /url: https://phbidlautdemo.prahu-hub.com/user/do_logout
+    - generic [ref=f6e37]:
+      - generic [ref=f6e38]:
+        - text: 
+        - generic [ref=f6e39]:
+          - list [ref=f6e41]:
+            - listitem
+            - listitem [ref=f6e42]:
+              - link "CARI PENAWARAN" [ref=f6e43] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/lelang/carirute
+            - listitem [ref=f6e44]:
+              - generic [ref=f6e45] [cursor=pointer]:
+                - text: DASHBOARD
+                - generic [ref=f6e48]: 
+            - listitem [ref=f6e49]:
+              - generic [ref=f6e50] [cursor=pointer]:
+                - text: ANALITIK
+                - generic [ref=f6e53]: 
+            - listitem [ref=f6e54]:
+              - link "PENGAJUAN LELANG" [ref=f6e55] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/lelang/listlelang
+            - listitem [ref=f6e58]:
+              - link "PENGAJUAN NEGO" [ref=f6e59] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/lelang/pengajuannego
+            - listitem [ref=f6e62]:
+              - link "DAFTAR ORDER" [ref=f6e63] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/order/OrderList
+            - listitem [ref=f6e66]:
+              - generic [ref=f6e67] [cursor=pointer]:
+                - text: MASTER
+                - generic [ref=f6e70]: 
+            - listitem [ref=f6e71]:
+              - link "CEK JADWAL" [ref=f6e72] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/lelang/carijadwal
+            - listitem [ref=f6e75]:
+              - generic [ref=f6e76] [cursor=pointer]:
+                - text: LAPORAN
+                - generic [ref=f6e79]: 
+            - listitem [ref=f6e80]:
+              - generic [ref=f6e81] [cursor=pointer]:
+                - text: PENGATURAN AKUN
+                - generic [ref=f6e84]: 
+            - listitem [ref=f6e85]:
+              - link "PREFERENCE NOTIF" [ref=f6e86] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/home/preferenceNotifBidowner
+            - listitem [ref=f6e89]:
+              - link "AKUN SAYA" [ref=f6e90] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/home/akunsaya
+          - generic [ref=f6e95]:
+            - paragraph [ref=f6e97]: KONTAK KAMI
+            - generic [ref=f6e98]:
+              - generic [ref=f6e99]: 
+              - text: "081246665023"
+            - generic [ref=f6e100]:
+              - generic [ref=f6e101]: 
+              - text: "081246665023"
+            - generic [ref=f6e102]:
+              - generic [ref=f6e103]: 
+              - text: csct@prahu-hub.com
+            - generic [ref=f6e104]:
+              - link [ref=f6e105] [cursor=pointer]:
+                - /url: https://facebook.com/sosmed.phbid
+              - link [ref=f6e107] [cursor=pointer]:
+                - /url: https://twitter.com/PrahuHub
+              - link [ref=f6e109] [cursor=pointer]:
+                - /url: https://instagram.com/phbid_/
+              - link [ref=f6e111] [cursor=pointer]:
+                - /url: https://www.youtube.com/channel/UC41VntroP3zKmXZYnGgtFdw
+              - link [ref=f6e113] [cursor=pointer]:
+                - /url: http://linkedin.com/in/ph-bid-aa5393211/
+      - generic [ref=f6e115]:
+        - generic [ref=f6e116]:
+          - generic [ref=f6e119]:
+            - link "Beranda" [ref=f6e121] [cursor=pointer]:
+              - /url: https://phbidlautdemo.prahu-hub.com/lelang/carirute
+            - text: / Cek Jadwal Pelayaran
+          - generic [ref=f6e122]: CEK JADWAL PELAYARAN
+          - tabpanel [ref=f6e126]:
+            - generic [ref=f6e130]:
+              - generic [ref=f6e132]:
+                - generic [ref=f6e133]: Pelayaran *
+                - generic [ref=f6e136]:
+                  - combobox [disabled] [ref=f6e137]
+                  - combobox [disabled] [ref=f6e140]:
+                    - textbox "Meratus" [disabled] [ref=f6e141]
+                - text: Sementara waktu pelayaran yang tersedia masih MERATUS
+              - generic [ref=f6e143]:
+                - generic [ref=f6e145]:
+                  - generic [ref=f6e146]: Pelabuhan Asal (POL) *
+                  - generic [ref=f6e149]:
+                    - combobox [disabled] [ref=f6e150]
+                    - combobox [disabled] [ref=f6e153]:
+                      - textbox "Tanjung Perak (SUB) - Kota Surabaya" [disabled] [ref=f6e154]
+                - generic [ref=f6e156]:
+                  - generic [ref=f6e157]: Pelabuhan Tujuan (POD) *
+                  - generic [ref=f6e160]:
+                    - combobox [disabled] [ref=f6e161]
+                    - combobox "Tanjung Perak (SUB) - Kota Surabaya" [disabled] [ref=f6e164]:
+                      - textbox "Makassar (MAK) - Kota Makassar" [disabled] [ref=f6e165]
+              - generic [ref=f6e167]:
+                - generic [ref=f6e168]: Sortir *
+                - generic [ref=f6e171]:
+                  - combobox [disabled] [ref=f6e172]
+                  - combobox "Tanjung Perak (SUB) - Kota Surabaya" [disabled] [ref=f6e175]:
+                    - textbox "Tanggal Berangkat Terdekat" [disabled] [ref=f6e176]
+              - generic [ref=f6e178]:
+                - generic [ref=f6e179]: Tanggal Pengiriman *
+                - generic [ref=f6e180]:
+                  - textbox "DD/MM/YYYY" [disabled] [ref=f6e181]: 14/08/2026
+                  - generic [ref=f6e182]: 
+                - text: Default tanggal hari ini
+              - generic [ref=f6e183]:
+                - generic [ref=f6e184]: "*) Klik logo dibawah untuk melihat jadwal pelayaran lain"
+                - button " Cari Jadwal" [disabled] [ref=f6e185]:
+                  - generic [ref=f6e186]: 
+                  - text: Cari Jadwal
+            - generic [ref=f6e189]:
+              - link [ref=f6e191] [cursor=pointer]:
+                - /url: https://meratus-one.com/
+              - link [ref=f6e194] [cursor=pointer]:
+                - /url: https://www.iconlinebooking.co.id/
+              - link [ref=f6e197] [cursor=pointer]:
+                - /url: https://www.myspil.com/myspilcom/
+              - link [ref=f6e200] [cursor=pointer]:
+                - /url: https://www.tantonet.com/schedule.php
+              - link [ref=f6e203] [cursor=pointer]:
+                - /url: https://www.kliktemas.com/#/
+            - generic [ref=f6e206]:
+              - generic [ref=f6e207]: PENCARIAN JADWAL
+              - generic [ref=f6e210]:
+                - generic [ref=f6e211]: Tanjung Perak (SUB) - Kota Surabaya
+                - generic [ref=f6e212]: 
+                - generic [ref=f6e214]: Makassar (MAK) - Kota Makassar
+              - generic [ref=f6e215]:
+                - generic [ref=f6e216]:
+                  - text: "Tanggal Pengiriman : 14/08/2026"
+                  - generic [ref=f6e217]: 
+                  - text: "Sortir : Tanggal Berangkat Terdekat"
+                - button "Ganti Pencarian" [ref=f6e219] [cursor=pointer]
+            - generic [ref=f6e220]: HASIL JADWAL
+        - paragraph [ref=f6e227]: © BETA 20260228 v1.3.28 - PH Bid Laut | Digital Logistic Platform
+  - text:  

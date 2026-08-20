@@ -1,0 +1,78 @@
+- generic [ref=f14e6]:
+  - generic [ref=f14e7]:
+    - link [ref=f14e9] [cursor=pointer]:
+      - /url: https://phbidlautdemo.prahu-hub.com/user/login
+    - generic [ref=f14e11]:
+      - generic [ref=f14e12]: REGISTRASI
+      - generic [ref=f14e15]:
+        - generic [ref=f14e16]:
+          - generic [ref=f14e17]:
+            - radio "Shipper" [ref=f14e18]
+            - generic [ref=f14e19]: Shipper
+          - generic [ref=f14e20]:
+            - radio "Transporter" [ref=f14e21]
+            - generic [ref=f14e22]: Transporter
+        - generic [ref=f14e23]:
+          - generic [ref=f14e24]:
+            - generic [ref=f14e25]: Nama *
+            - textbox "Masukkan Nama Lengkap Anda" [ref=f14e27]
+          - generic [ref=f14e28]:
+            - generic [ref=f14e29]: No. Telepon/ WhatsApp *
+            - textbox "08xxxxxxxxxx" [ref=f14e31]
+          - generic [ref=f14e32]:
+            - generic [ref=f14e33]: Nama Perusahaan *
+            - textbox "Masukkan Nama Perusahaan Anda" [ref=f14e35]
+        - generic [ref=f14e36]:
+          - generic [ref=f14e37]:
+            - generic [ref=f14e38]: Email *
+            - textbox "Masukkan Email Anda" [ref=f14e40]
+          - generic [ref=f14e41]:
+            - generic [ref=f14e42]: Kata Sandi *
+            - generic [ref=f14e43]:
+              - textbox "Masukkan Kata Sandi Anda" [ref=f14e44]
+              - button "" [ref=f14e46]
+            - text: Min. 6 karakter kombinasi huruf dan angka
+          - generic [ref=f14e48]:
+            - generic [ref=f14e49]: Ketik Ulang Kata Sandi *
+            - generic [ref=f14e50]:
+              - textbox "Masukkan Ulang Kata Sandi Anda" [ref=f14e51]
+              - button "" [ref=f14e53]
+        - link "Kembali Ke Halaman Log In" [ref=f14e56] [cursor=pointer]:
+          - /url: https://phbidlautdemo.prahu-hub.com/user/login
+        - button "Registrasi" [ref=f14e58] [cursor=pointer]
+        - generic [ref=f14e59]:
+          - generic [ref=f14e60]:
+            - text: Dengan login, anda menyetujui
+            - link "Syarat Ketentuan" [ref=f14e61] [cursor=pointer]:
+              - /url: https://phbidlautdemo.prahu-hub.com/home/syarat_ketentuan
+            - text: dan
+            - link "Kebijakan Privacy" [ref=f14e62] [cursor=pointer]:
+              - /url: https://phbidlautdemo.prahu-hub.com/home/privacy_policy
+          - generic [ref=f14e63]:
+            - text: Menuju
+            - link "Tentang Kami" [ref=f14e64] [cursor=pointer]:
+              - /url: https://www.prahu-hub.com/ph-bid/
+            - text: untuk mengetahui layanan PH Bid
+  - generic [ref=f14e65]:
+    - generic [ref=f14e67]:
+      - generic [ref=f14e69]:
+        - link [ref=f14e70] [cursor=pointer]:
+          - /url: https://facebook.com/sosmed.phbid
+        - link [ref=f14e71] [cursor=pointer]:
+          - /url: https://twitter.com/PrahuHub
+        - link [ref=f14e72] [cursor=pointer]:
+          - /url: https://instagram.com/phbid_/
+        - link [ref=f14e73] [cursor=pointer]:
+          - /url: https://www.youtube.com/channel/UC41VntroP3zKmXZYnGgtFdw
+        - link [ref=f14e74] [cursor=pointer]:
+          - /url: http://linkedin.com/in/ph-bid-aa5393211/
+      - generic [ref=f14e76]:
+        - generic [ref=f14e77]:
+          - generic [ref=f14e78]: Layanan Email
+          - link "csct@prahu-hub.com" [ref=f14e80] [cursor=pointer]:
+            - /url: mailto:csct@prahu-hub.com
+        - generic [ref=f14e81]:
+          - generic [ref=f14e82]: Layanan Whatsapp
+          - link "081246665023" [ref=f14e84] [cursor=pointer]:
+            - /url: https://wa.me/
+    - generic [ref=f14e85]: © BETA 20260228 v1.3.28 - PH Bid Laut | Digital Logistic Platform

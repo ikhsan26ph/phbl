@@ -1,0 +1,120 @@
+# Harga & Jadwal
+
+  - Pada list harga & jadwal jika harga yang dibuat belum ada jadwalnya maka datanya warnanya merah
+  - Pada halaman Harga & Jadwal terdapat penyesuaian tab-tab, Adapun tab-tab pada halaman Harga & Jadwal ialah :
+    - Butuh Jadwal Kapal : Data harga yang belum diinputkan jadwalnya
+    - Perlu Update Harga : Data harga yang perlu diupdate
+    - Sudah Lengkap : Data harga yang sudah diinputkan jadwalnya
+    - Semua Harga & Jadwal : Semua data harga & jadwal
+  - Pada tab Butuh Jadwal Kapal, tombol aksinya :
+    - Detail, edit, hapus harga
+    - Lihat & tambah jadwal
+  - Pada tab Perlu Update Harga, tombol aksinya :
+    - Detail harga
+    - Update harga
+  - Pada tab Sudah Lengkap, tombol aksinya :
+    - Detail, edit, hapus harga
+    - Lihat & tambah jadwal
+  - Pada tab Request Jadwal, tombol aksinya :
+- Update Jadwal
+- Detail Harga
+- Lihat Jadwal
+  - Pada list harga & jadwal apabila harga baru tersebut hasil dari respon update harga maka di bagian kolom harganya aka nada penanda #. Contohnya jika harga tersebut harga baru hasil respon update harga yang pertama maka di kolom harganya ada tanda “(#1)”. jika harga tersebut harga baru hasil respon update harga yang kedua maka di kolom harganya ada tanda “(#2)”.
+  - Pada data harga yang ada tanda # maka di detail harga akan ada info Request Harga, Dimana menampilkan tgl request harga tersebut kapan
+  - Pada harga yang ada di Tab Perlu Update Harga jika klik icon pena maka update harga akan muncul berupa popup.
+  - Apabila harga yang ada di Tab Perlu Update Harga sudah diupdate maka data harga lama akan pindah ke tab Butuh Jadwal Kapal atau Sudah Lengkap tergantung harga lama tersebut sudah ada jadwalnya atau belum
+  - Jika harga yang ada di Tab Perlu Update Harga tidak diupdate namun telah lewat tgl tutup update harga maka harga akan berpindah ke tab Butuh Jadwal Kapal atau Sudah Lengkap tergantung harga tersebut sudah ada jadwalnya atau belum
+  - Untuk harga baru respon dari update harga maka akan diarahkan ke Tab Butuh Jadwal Kapal dan perlu diinputkan Kembali jadwalnya
+  - Harga yang ada pada tab Request Jadwal berisi data harga penawaran yang telah diajukan request jadwal oleh bid owner, baik itu yang masih aktif, tidak aktif, atau yang telah dilakukan respon oleh bidder.
+  - Jika harga tersebut belum dilakukan respon oleh bidder, maka untuk tombol Update akan aktif. Ketika tombol Update dipilih, maka Bidder akan diarahkan ke halaman Update Jadwal.
+  - Pada halaman Update Jadwal bidder dapat menambahkan jadwal terbaru. Untuk rule pada halaman Update Jadwal kurang lebih sama seperti pada halaman Tambah Jadwal
+  - Jika harga tersebut belum dilakukan respon oleh bidder, namun harga tersebut sudah expired, maka tombol Update akan disabled. Ketika tombol Update ini dipilih, maka akan menampilkan alert ‘Tidak bisa update! Harga telah expired’
+  - Jika harga tersebut belum dilakukan respon oleh bidder, namun harga pada lelang tersebut telah melewati tanggal rencana akhir kirim, maka tombol Update juga akan disabled. Ketika tombol Update ini dipilih, maka akan menampilkan alert ‘Tidak bisa update! Lelang telah melewati rencana akhir kirim’. Jika lelang tersebut rencana akhir kirimnya diperpanjang, maka tombol Update akan kembali aktif.
+  - Jika harga tersebut belum dilakukan respon oleh bidder, namun harga tersebut telah diajukan request jadwal baru oleh bid owner dengan ID Harga yang sama, maka tombol Update juga akan disabled. Ketika tombol update ini dipilih, maka akan menampilkan alert ‘Tidak bisa update! Harga sudah ada request jadwal terbaru’
+  - Jika harga tersebut telah dilakukan respon oleh bidder, maka tombol Update akan hilang atau tidak tampil pada daftar.
+  - Jika harga tersebut telah dihapus dari sisi admin, maka untuk tombol Update juga akan disabled. Bidder tidak dapat melakukan update jadwal pada harga yang telah dihapus
+  - Jika bidder ingin menambahkan jadwal lagi ketika sudah melakukan respon update jadwal, maka bidder dapat menambahkan di halaman Tambah Jadwal.
+  - Respon update jadwal yang telah dilakukan oleh Bidder nantinya akan tampil pada halaman Cari Penawaran di sisi bid owner ataupun admin.
+  - Ketika dari halaman pengajuan lelang tab perlu update harga, klik menuju request harga direct ke halaman harga & jadwal tab perlu update harga dengan posisi data terfilter sesuai dengan lelangnya.
+  - Jika sudah melakukan update harga kemudian direct ke halaman harga & jadwal tab perlu update harga posisi nya masih terfilter.
+  - Ketika di halaman harga & jadwal tab request update harga terfilter, maka setelah dilakukan update jadwal direct kembali ke tab request update harga posisi terfilter.
+  - Jika dilakukan lihat & tambah jadwal dengan kondisi filter, klik kembali posisi data masih terfilter.
+  - Jika posisi halaman harga & jadwal terfilter, kemudian dilakukan beberapa aksi setelah berhasil maka posisi datanya masih terfilter
+  - Jika bidder ingin menghilangkan filter data dengan cara klik reset kemudian filter kembali.
+
+## Harga
+
+            - Bidder dapat input harga mulai tanggal buka lelang sampai dengan sebelum waktu tutup lelang
+            - Jika sudah melewati tgl tutup lelang maka bidder tidak bisa input harga penawaran
+            - Di halaman tambah harga, ketika pilih lelang maka data Biaya Termasuk akan ngedraft otomatis sesuai data lelang (jika di lelang ada data biaya termasuknya)
+            - Data biaya termasuk otomatis ngedraft dari data lelang namun bidder masih bisa unceklist atau ceklist data biaya termasuk lainnya
+            - Di halaman tambah harga pilihan lelang masuk ialah lelang-lelang yang aktif (yg belum melewati tutup lelang). Jika lelang dibatalkan maka lelang tidak dimunculkan pada pilihan lelang masuk bidder
+            - Di halaman tambah harga, pilihan pelayaran diambil dari master pelayaran admin
+            - Di halaman tambah harga, pilihan jenis kontainer diambil dari master jenis kontainer admin
+            - Di halaman form tambah harga, rekomendasi nilai PPn dan nilai PPh yang tampil di ambil dari setting pajak di sisi admin dalam bentuk persen
+            - Bidder dapat melakukan edit nilai PPn dan PPh tersebut. Untuk penunjukkan nilai desimal, menggunakan tanda koma
+            - Nilai maksimal yang dapat diinputkan adalah 100%. Jika bidder menginputkan angka lebih dari 100, maka angka tersebut otomatis tereset menjadi 100
+            - Nilai PPn dan PPh yang diinputkan ketika tambah harga akan selalu terbawa
+            - Pada data lama yang belum memiliki nilai PPn dan PPh maka akan menampilkan tanda strip (-)
+            - Nilai PPn dan PPh bersifat required. Ketika nilai pada kolom PPn atau PPh kosong (tidak ada data), maka ketika di klik simpan akan menampilkan alert ‘Masukkan Nilai PPn’ atau ‘Masukkan Nilai PPh’
+            - Kolom nilai PPn dan PPh tampil di semua rute baik normal maupun multidrop
+            - Bidder dapat edit harga jika belum melewati tgl tutup lelang, jika sudah melewati tgl tutup lelang maka bidder tidak bisa edit dan muncul alert “Harga penawaran sudah melewati tanggal tutup lelang”
+            - Bidder dapat hapus harga jika belum melewati tgl tutup lelang, jika sudah melewati tgl tutup lelang maka bidder tidak bisa hapus harga dan muncul alert “Harga penawaran sudah melewati tanggal tutup lelang”
+            - Pada tambah & edit harga untuk biaya laut ini dijadikan auto terceklist dan tidak bisa diunceklist
+            - Pada halaman form edit harga, nilai PPn dan PPh yang tampil diambil dari nilai PPn dan PPh yang telah diinputkan ketika tambah harga
+            - Bidder dapat mengedit nilai PPn dan PPh. Setelah selesai diedit, nilai PPn dan PPh akan otomatis diganti dengan inputan data terbaru
+            - Pada bidder ada halaman Update Harga, jika klik tombol update harga diarahkan ke halaman Update Harga
+            - Pada halaman update harga ditampilkan data lelang dan data harga sebelumnya serta tgl request update harag & tgl tutup update harga
+            - Pada halaman update harga, nilai PPn dan PPh menampilkan data rekomendasi PPn dan PPh yang diambil dari setting pajak di sisi admin
+            - Bidder dapat melakukan edit nilai PPn dan PPh ketika update harga
+            - Pada update harga, jika harga sama seperti sebelumnya maka bisa ceklist checkbox “Harga Seperti Sebelumnya”. Maka pada kolom harga penawaran baru, nilai PPn dan PPh juga akan menyesuaikan dengan data sebelumnya sebelum di edit dan kolom disabled
+            - Jika data harga sebelumnya tidak memiliki nilai PPn dan PPh (data lama), maka ketika di checklist ‘Harga Seperti Sebelumnya’, maka nilai PPn dan PPh secara otomatis ambil dari setting pajak admin dan kolom menjadi disabled
+            - Jika harga dan nilai PPn dan PPh beda maka bisa inputkan nominal yang sesuai
+            - Jika input harga sama seperti sebelumnya namun tidak menggunakan ceklist “Harga Seperti Sebelumnya” akan muncul alert “Harga sama seperti sebelumnya! Silahkan gunakan ceklist harga seperti sebelumnya”
+            - Pada update harga tgl mulai berlaku di disable dan otomatis tersetting tanggal hari ini
+            - Jika berhasil update harga maka akan create harga baru dan perlu diinputkan jadwalnya kembali
+            - Jika lelang proses update harga maka bidder dapat tambah harga baru Kembali dan edit harga Kembali
+
+## Jadwal
+
+- Bidder dapat input jadwal mulai dari buka lelang sampai dengan sebelum melewati tgl rencana akhir kirim
+- Jika melewati tgl rencana akhir kirim maka bidder tidak bisa input jadwal dan muncul alert “Lelang sudah melewati rencana akhir kirim. Tidak bisa tambah jadwal”
+- Jenis Jadwal terdiri dari “Kapal Direct / Transit” dan “Kapal Connecting”
+- Untuk tambah jadwal tampil dropdown jenis jadwal kapal yang bersifat required dan ketika diklik akan menampilkan kapal direct /transit dan kapal connecting. Form tambah jadwal akan muncul setelah pilih jenis jadwal kapal, tanpa reload.
+- Pada form masukkan jadwal kapal (Connecting) terdapat penyesuaian field. Field yang akan tampil yakni:
+  - Kapal
+  - Voyage
+  - Closing Time
+  - ETD Asal
+  - ETA Tujuan
+  - Pelabuhan Connecting
+  - Kapal Connecting
+  - Voyage
+  - ETD Connecting
+- Pada section Data Kapal Connecting, data yang perlu dimasukkan yaitu:
+  - Pelabuhan Connecting
+  - Kapal Connecting
+  - Voyage
+  - ETD Connecting
+- Ketika tambah jadwal kapal direct / transit ada beberapa aturan mengenai tanggal :
+  - Closing time :
+    - Jika tgl mulai berlaku harga telah lewat atau hari ini maka tgl closing time minimal tanggal dan waktu saat ini
+    - Jika tgl mulai berlaku harga masih jauh misal 21/09 maka tgl closing time minimal juga tgl 21/09
+  - ETD : tanggal etd tidak bisa kurang dari tgl closing time, minimal tanggalnya sama seperti tgl closing time
+  - ETA : tanggal eta tidak bisa kurang dari tgl ETD, minimal tanggalnya sama seperti ETD
+- Input jadwal bisa menggunakan fitur Import Jadwal, untuk templatenya bisa download di textlink “Download template disini”
+- Jika pada template excel data jadwal yang diinputkan lebih dari 50 maka ketika import jadwal tidak bisa karena batasan maksimalnya 50 data
+- Bidder dapat edit jadwal direct apabila belum melewati h+2 ETA. Jika sudah melewati h+2 dari tgl ETA maka tidak bisa edit jadwal
+- Jika bidder edit jadwal direct maka tanggal closing time dapat dimundurkan minimal sampai tgl mulai berlaku harganya, kemudian untuk tgl ETD tidak bisa kurang dari closing time dan ETA tidak bisa kurang dari ETD
+- Ketika tambah jadwal kapal connecting terdapat beberapa aturan mengenai tanggal :
+  - Closing time :
+    - Jika tgl mulai berlaku harga telah lewat atau hari ini maka tgl closing time minimal tanggal dan waktu saat ini
+    - Jika tgl mulai berlaku harga masih jauh misal 21/09 maka tgl closing time minimal juga tgl 21/09
+  - ETD : tanggal etd tidak bisa kurang dari tgl closing time, minimal tanggalnya sama seperti tgl closing time
+  - ETA : tanggal eta tidak bisa kurang dari tgl ETD, minimal tanggalnya sama seperti ETD
+  - ETA Kapal : tanggal ETA Kapal tidak bisa kurang dari ETA, minimal sama dengan ETA dan tidak bisa lebih dari ETD, minimal sama dengan ETD
+  - ETD Kapal : tanggal ETD kapal tidak bisa kurang dari ETA Kapal, minimal sama dengan ETA Kapal dan tidak bisa lebih dari ETD, minimal sama dengan ETD
+- Pada jenis jadwal kapal connecting dapat dilakukan tambah kapal connecting
+- Bidder dapat edit jadwal connecting apabila belum melewati h+2 ETA. Jika sudah melewati h+2 dari tgl ETA maka tidak bisa edit jadwal
+- Jika bidder edit jadwal connecting maka tanggal closing time dapat dimundurkan minimal sampai tgl mulai berlaku harganya, kemudian untuk tgl ETD tidak bisa kurang dari closing time dan ETA tidak bisa kurang dari ETD. Untuk  ETA Kapal tidak bisa kurang dari ETA dan ETD kapal tidak bisa kurang dari ETA Kapal
+- Bidder dapat hapus jadwal apabila jadwal tersebut belum ada ordernya. Jika jadwal sudah ada ordernya maka tidak bisa hapus dan muncul alert “Jadwal sudah di order tidak bisa di hapus”
