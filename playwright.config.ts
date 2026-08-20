@@ -31,7 +31,11 @@ export default defineConfig({
   forbidOnly: !!process.env.CI,
   retries: process.env.CI ? 2 : 0,
   workers: process.env.CI ? 1 : undefined,
-  reporter: 'html',
+  // JSON dipakai scripts/generate-report.js untuk membuat report/hasil-testing-<tanggal>.xlsx.
+  reporter: [
+    ['html'],
+    ['json', { outputFile: 'test-results/results.json' }],
+  ],
   use: {
     baseURL: process.env.BASE_URL,
     trace: 'retain-on-failure',

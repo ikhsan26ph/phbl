@@ -51,6 +51,21 @@ ADMIN SILVERSTRIPE tidak ada di dokumen sumber).
   qa-tms-reg1@yopmail.com / ValidSandi123, WA 089911224455 (dipakai test WA-duplikat).
 - Storage state cepat kadaluarsa di server; project setup me-refresh tiap run.
 
+## Laporan Excel
+
+- `npm test` → JSON reporter menulis `test-results/results.json`;
+  `npm run report` → `report/hasil-testing-<tanggal>.xlsx` (exceljs).
+- Workbook: sheet Ringkasan (rekap per peran) + sheet Admin / Shipper /
+  Transporter / Anon. Test `setup` (login) dipetakan ke sheet peran
+  masing-masing dari judulnya (`login <akun>`). `test.fail()` tampil sebagai
+  "LULUS (defect terdokumentasi)".
+
+## Run penuh 2026-08-20 (report/hasil-testing-2026-08-20.xlsx)
+
+- 83 test: 73 lulus, 7 lulus-defect (test.fail), 2 dilewati, **1 GAGAL**:
+  `shipper/pengajuan-lelang.spec.ts:165` — modal `.modal-lg-aanwijzing` tetap
+  hidden 90 dtk setelah klik nama dokumen (perlu investigasi: flaky vs defect).
+
 ## Status (2026-08-13) — semua suite hijau
 
 - `tests/auth.setup.ts` — 6 login terkalibrasi.
