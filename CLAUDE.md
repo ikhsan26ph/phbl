@@ -88,9 +88,29 @@ ADMIN SILVERSTRIPE tidak ada di dokumen sumber).
   kolom "Harga (Rp.)" butuh regex tanpa `\b` penutup, aksi per tab beda pola
   — beberapa via `title`/`data-original-title` [ikon tanpa teks], baris
   "Update" di tab Request Jadwal via teks polos tanpa atribut title).
-  Gabungan kedua spec transporter: 41 test, 33 lulus, 2 skip, 0 gagal.
-- Belum: Pengajuan Nego, Daftar Order, Penugasan Tracking, Akun Saya/Profil/
-  Preference Notif (bidder), + semua alur mutasi harga & jadwal.
+- `tests/transporter/pengajuan-nego.spec.ts` — 7 test, semua lulus (status
+  WAITING/DITERIMA/DITOLAK/NEGOSIASI tersedia di demo; aksi nego = link
+  /lelang/terimaNego/<hash>?status=terima|tolak|nego; strip "-" Harga Baru
+  di baris DITOLAK; detail /lelang/detailnego/<hash> dgn PPN/PPh).
+- `tests/transporter/daftar-order.spec.ts` — 8 test, semua lulus (baris
+  ganda per order [header info + data], filter No. Kontainer tolak
+  spasi/simbol + maks 11 + uppercase via CSS, Info Tracking expand
+  "Menunggu Proses", detail /order/orderdetail/<hash> per status; alert
+  Proses Invoice TIDAK dicakup — link GET biasa, alert tak terpicu saat
+  kalibrasi; rule-nya sendiri kontradiktif baris 70 vs 74).
+- `tests/transporter/penugasan-tracking.spec.ts` — 7 test, semua lulus
+  (Download APK, tombol Tracking [href RELATIF tanpa "/", resolve via
+  <base>], menu per status, halaman lihatdatatracking; PENTING: teks
+  status "Menunggu Proses" juga muncul di sub-baris Info Tracking →
+  filter baris wajib `:text-is`, bukan `:has-text` [substring "Info
+  Tracking" ikut cocok]).
+- Gabungan transporter (5 spec): 49 test + 6 setup = 55 lulus, 2 skip,
+  0 gagal (run serial 7,6 mnt, 2026-08-20).
+- Config diperkeras 2026-08-20: `workers: 1` juga lokal (antar-file
+  paralel satu akun → server demo timeout, terbukti) dan `timeout: 60s`
+  (lonjakan latensi sporadis server demo).
+- Belum: Akun Saya/Profil/Preference Notif (bidder), + semua alur mutasi
+  (harga, jadwal, respon nego, input unit, invoice, penugasan petugas).
 
 ## Status (2026-08-13) — semua suite hijau
 
@@ -118,6 +138,9 @@ ADMIN SILVERSTRIPE tidak ada di dokumen sumber).
    TERTELAN tanpa umpan balik. Test diatasi dengan retry klik (toPass);
    usulan dev: bind handler segera / beri loading state. Bonus: id modal
    `modalEditProvinsi` warisan copy-paste, bukan nama semantik.
+7. Filter Daftar Order (bidder): label "Nomor Kontainer" ber-`for="jumlah"`
+   (field Jumlah Order) sehingga dua label menunjuk #jumlah; input
+   #nomor_kontainer sendiri TANPA label terasosiasi (aksesibilitas).
 
 ## Langkah berikutnya (belum dikerjakan)
 

@@ -30,7 +30,16 @@ export default defineConfig({
   fullyParallel: false,
   forbidOnly: !!process.env.CI,
   retries: process.env.CI ? 2 : 0,
-  workers: process.env.CI ? 1 : undefined,
+  // workers: 1 juga di lokal (2026-08-20): fullyParallel false hanya
+  // menserikan test DI DALAM satu file — antar-file tetap paralel, dan
+  // dengan 5 file transporter server demo mulai timeout di bawah beban
+  // beberapa worker satu akun (terbukti: 2 run gabungan, tiap run 1 test
+  // acak gagal timeout; serial = hijau semua).
+  workers: 1,
+  // Server demo punya lonjakan latensi sporadis (halaman kadang >30 dtk;
+  // teramati berulang 2026-08-20) — 60 dtk memberi ruang tanpa menutupi
+  // regresi nyata.
+  timeout: 60_000,
   // JSON dipakai scripts/generate-report.js untuk membuat report/hasil-testing-<tanggal>.xlsx.
   reporter: [
     ['html'],
