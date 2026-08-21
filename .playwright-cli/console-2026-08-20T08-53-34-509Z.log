@@ -1,0 +1,81 @@
+[    3581ms] ReferenceError: dete is not defined
+    at https://phbidlautdemo.prahu-hub.com/user/login:1465:5
+[    5333ms] TypeError: Failed to execute 'observe' on 'IntersectionObserver': parameter 1 is not of type 'Element'.
+    at https://phbidlautdemo.prahu-hub.com/user/login:1932:14
+[    5353ms] [VERBOSE] [DOM] Input elements should have autocomplete attributes (suggested: "current-password"): (More info: https://goo.gl/9p2vKq) %o @ https://phbidlautdemo.prahu-hub.com/user/login:0
+[    5359ms] [LOG] 0 @ https://phbidlautdemo.prahu-hub.com/user/login:1426
+[    5359ms] [LOG] undefined scr @ https://phbidlautdemo.prahu-hub.com/user/login:1430
+[    9550ms] [LOG] ddd @ https://phbidlautdemo.prahu-hub.com/user/login:1525
+[    9704ms] [LOG] {pesan: OPERATOR, status: 1, user_aktif: 1, ParentID: 0, redirect: } @ https://phbidlautdemo.prahu-hub.com/user/login:1558
+[    9705ms] [LOG] {pesan: OPERATOR, status: 1, user_aktif: 1, ParentID: 0, redirect: } a @ https://phbidlautdemo.prahu-hub.com/user/login:1560
+[   11614ms] Cannot use import statement outside a module
+[   11661ms] ReferenceError: Chart is not defined
+    at https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/js/scripts-init/charts/chartjs.js:8:13
+[   11708ms] Unexpected token '<'
+[   11814ms] Unexpected token '<'
+[   11891ms] Uncaught TypeError: expect element to be DOM Element, but got null
+    at n.init (https://cdnjs.cloudflare.com/ajax/libs/smooth-scrollbar/8.5.2/smooth-scrollbar.js:24:264)
+    at <anonymous> (https://phbidlautdemo.prahu-hub.com/lelang/listlelang?tab=semua-lelang:5630:14)
+[   11934ms] [LOG] Pengajuan Lelangnamanya @ https://phbidlautdemo.prahu-hub.com/lelang/listlelang?tab=semua-lelang:1756
+[   11942ms] [LOG] undefined @ https://phbidlautdemo.prahu-hub.com/lelang/listlelang?tab=semua-lelang:5982
+[   11942ms] [LOG] undefined @ https://phbidlautdemo.prahu-hub.com/lelang/listlelang?tab=semua-lelang:5982
+[   11943ms] [LOG] Masukkan Nama Shipper @ https://phbidlautdemo.prahu-hub.com/lelang/listlelang?tab=semua-lelang:5982
+[   11943ms] [LOG] Masukkan Nomor Lelang @ https://phbidlautdemo.prahu-hub.com/lelang/listlelang?tab=semua-lelang:5982
+[   11943ms] [LOG] DD/MM/YYYY @ https://phbidlautdemo.prahu-hub.com/lelang/listlelang?tab=semua-lelang:5982
+[   11943ms] [LOG] DD/MM/YYYY @ https://phbidlautdemo.prahu-hub.com/lelang/listlelang?tab=semua-lelang:5982
+[   11943ms] [LOG] DD/MM/YYYY @ https://phbidlautdemo.prahu-hub.com/lelang/listlelang?tab=semua-lelang:5982
+[   11943ms] [LOG] DD/MM/YYYY @ https://phbidlautdemo.prahu-hub.com/lelang/listlelang?tab=semua-lelang:5982
+[   11943ms] [LOG] Masukkan Nama Shipper @ https://phbidlautdemo.prahu-hub.com/lelang/listlelang?tab=semua-lelang:5982
+[   11943ms] [LOG] undefined @ https://phbidlautdemo.prahu-hub.com/lelang/listlelang?tab=semua-lelang:5982
+[   11943ms] [LOG] undefined @ https://phbidlautdemo.prahu-hub.com/lelang/listlelang?tab=semua-lelang:5982
+[   11943ms] [LOG] Masukkan Nama Bank @ https://phbidlautdemo.prahu-hub.com/lelang/listlelang?tab=semua-lelang:5982
+[   11943ms] [LOG] undefined @ https://phbidlautdemo.prahu-hub.com/lelang/listlelang?tab=semua-lelang:5982
+[   11944ms] [LOG] WebSocket connection @ https://phbidlautdemo.prahu-hub.com/lelang/listlelang?tab=semua-lelang:6025
+[   11945ms] [LOG] WebSocket connection attempting... @ https://phbidlautdemo.prahu-hub.com/lelang/listlelang?tab=semua-lelang:6103
+[   12310ms] [LOG] WebSocket connected @ https://phbidlautdemo.prahu-hub.com/lelang/listlelang?tab=semua-lelang:6034
+[   12311ms] [LOG] update_dashboard_order_laut @ https://phbidlautdemo.prahu-hub.com/lelang/listlelang?tab=semua-lelang:6075
+[   12340ms] [LOG] Connected @ https://phbidlautdemo.prahu-hub.com/lelang/listlelang?tab=semua-lelang:6075
+[   13409ms] [LOG] [Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object] @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/listLelang.js?m=1787206890:14
+[   13424ms] [LOG] 387 @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/listLelang.js?m=1787206890:818
+[   13424ms] [LOG] 387 countView1 1 pageNow 20 limitView1 @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/listLelang.js?m=1787206890:820
+[   13425ms] [LOG] 20 @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/listLelang.js?m=1787206890:826
+[   13426ms] [LOG] 387 jumlah data @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/listLelang.js?m=1787206890:779
+[   13427ms] [LOG] 20 @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/listLelang.js?m=1787206890:781
+[   13428ms] [LOG] 20 1 pageCount & pageNow @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/listLelang.js?m=1787206890:704
+[   13433ms] [LOG] 200 xhrglobal @ https://phbidlautdemo.prahu-hub.com/lelang/listlelang?tab=semua-lelang:5956
+[   13458ms] ReferenceError: renderTooltipHarga is not defined
+    at https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/listLelang.js?m=1787206890:1049:9
+[   13549ms] [LOG] 200 xhrglobal @ https://phbidlautdemo.prahu-hub.com/lelang/listlelang?tab=semua-lelang:5956
+[   13595ms] [LOG] 200 xhrglobal @ https://phbidlautdemo.prahu-hub.com/lelang/listlelang?tab=semua-lelang:5956
+[   14565ms] Unexpected token '<'
+[   14609ms] Cannot use import statement outside a module
+[   14629ms] ReferenceError: Chart is not defined
+    at https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/js/scripts-init/charts/chartjs.js:8:13
+[   14684ms] Unexpected token '<'
+[   14796ms] Unexpected token '<'
+[   14877ms] Uncaught TypeError: expect element to be DOM Element, but got null
+    at n.init (https://cdnjs.cloudflare.com/ajax/libs/smooth-scrollbar/8.5.2/smooth-scrollbar.js:24:264)
+    at <anonymous> (https://phbidlautdemo.prahu-hub.com/lelang/detaillistLelang/1084:6231:14)
+[   14894ms] [LOG] Pengajuan Lelangnamanya @ https://phbidlautdemo.prahu-hub.com/lelang/detaillistLelang/1084:1756
+[   14898ms] [LOG] undefined @ https://phbidlautdemo.prahu-hub.com/lelang/detaillistLelang/1084:6583
+[   14898ms] [LOG] undefined @ https://phbidlautdemo.prahu-hub.com/lelang/detaillistLelang/1084:6583
+[   14898ms] [LOG] undefined @ https://phbidlautdemo.prahu-hub.com/lelang/detaillistLelang/1084:6583
+[   14898ms] [LOG] undefined @ https://phbidlautdemo.prahu-hub.com/lelang/detaillistLelang/1084:6583
+[   14898ms] [LOG] DD/MM/YYYY @ https://phbidlautdemo.prahu-hub.com/lelang/detaillistLelang/1084:6583
+[   14899ms] [LOG] DD/MM/YYYY @ https://phbidlautdemo.prahu-hub.com/lelang/detaillistLelang/1084:6583
+[   14899ms] [LOG] WebSocket connection @ https://phbidlautdemo.prahu-hub.com/lelang/detaillistLelang/1084:6626
+[   14900ms] [LOG] WebSocket connection attempting... @ https://phbidlautdemo.prahu-hub.com/lelang/detaillistLelang/1084:6704
+[   15028ms] [LOG] [] @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/hasilPenawaran.js?m=1787206890:14
+[   15037ms] [LOG] 200 xhrglobal @ https://phbidlautdemo.prahu-hub.com/lelang/detaillistLelang/1084:6557
+[   15050ms] [LOG] WebSocket connected @ https://phbidlautdemo.prahu-hub.com/lelang/detaillistLelang/1084:6635
+[   15052ms] [LOG] update_dashboard_order_laut @ https://phbidlautdemo.prahu-hub.com/lelang/detaillistLelang/1084:6676
+[   15080ms] [LOG] Connected @ https://phbidlautdemo.prahu-hub.com/lelang/detaillistLelang/1084:6676
+[   15162ms] [LOG] 200 xhrglobal @ https://phbidlautdemo.prahu-hub.com/lelang/detaillistLelang/1084:6557
+[   15241ms] [LOG] 200 xhrglobal @ https://phbidlautdemo.prahu-hub.com/lelang/detaillistLelang/1084:6557
+[   15784ms] [TABLE] {UI version: 8.4.1, Core version: 8.4.0, Build: NC8xMi8yMDIyfDRkZTU3MmExYg==, WebViewer Server: false, Full API: false} @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/PDFView/lib/ui/webviewer-ui.min.js:270
+[   15945ms] [VERBOSE] [DOM] Password forms should have (optionally hidden) username fields for accessibility: (More info: https://goo.gl/9p2vKq) %o @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/PDFView/lib/ui/index.html#d=%2Fassets%2Fdokumenaanwijzing%2F65%2FAanwijzing-PT.-Primax-Geo-Sejahtera.pdf&a=1&disabledElements=downloadButton%2CprintButton%2ClanguageButton&filepicker=0&pdfnet=0&enableRedaction=0&enableMeasurement=0&pageHistory=1&notesInLeftPanel=0&singleServerMode=false&selectAnnotationOnCreation=0&autoFocusNoteOnAnnotationSelection=1&id=1&basePath=%2Flelang%2FdetaillistLelang%2F1084:0
+[   16914ms] TypeError: $(...).DataTable is not a function
+    at https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/js/scripts-init/tables.js:7:23
+[   18227ms] [LOG] Connected @ https://phbidlautdemo.prahu-hub.com/lelang/detaillistLelang/1084:6676
+[   19224ms] [LOG] document loaded @ https://phbidlautdemo.prahu-hub.com/lelang/detaillistLelang/1084:5804
+[   20385ms] [LOG] Connected @ https://phbidlautdemo.prahu-hub.com/lelang/detaillistLelang/1084:6676

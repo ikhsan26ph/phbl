@@ -163,16 +163,16 @@ test.describe('Detail Pengajuan Lelang', () => {
   });
 
   test('dokumen aanwijzing tampil sesuai nama dokumen dan dibuka sebagai popup', async ({ page }) => {
-    // Popup ini memuat library PDF.js Express pihak ketiga (WASM, domain
-    // auth.pdfjs.express) untuk preview dokumen SEBELUM modal ditampilkan —
-    // modal tidak muncul kalau resource itu diblokir (dicoba & terbukti
-    // salah 2026-08-14: blocking route PDFView/pdfjs.express membuat modal
-    // tidak pernah muncul sama sekali, jadi bukan pilihan). Durasinya TIDAK
-    // konsisten — pernah ~10 detik, pernah >60 detik pada regresi yang
-    // sama tanpa perubahan kode — kemungkinan bergantung pada latensi
-    // layanan pihak ketiga tsb, di luar kendali test ini. Timeout 90s
-    // adalah upaya wajar terakhir; jika masih gagal sesekali di regresi,
-    // itu bukan regresi kode, cukup jalankan ulang.
+    // Investigasi 2026-08-20 (trace + replikasi standalone): handler klik
+    // span.modalwizing ($('#modalEditProvinsi').modal('show')) baru di-bind
+    // SETELAH WebViewer PDF.js Express selesai init (latensi pihak ketiga
+    // auth.pdfjs.express, kadang beberapa detik — di trace run gagal, viewer
+    // baru boot 2,4 dtk SETELAH klik). Klik sebelum binding tertelan diam-diam,
+    // sehingga menunggu lama setelah SATU klik tidak pernah menolong (itu
+    // penjelasan "durasi tidak konsisten" pada kalibrasi 2026-08-14). Solusi:
+    // retry klik-lalu-assert via expect().toPass(); klik di-guard agar tidak
+    // mengklik ulang saat modal sudah terbuka (modal menghalangi pointer).
+    // Defect UX-nya (klik dini tanpa umpan balik) dilaporkan ke developer.
     test.setTimeout(120_000);
 
     test.skip((await bukaDetailPertama(page)) === null, 'Tidak ada data lelang di akun demo');
@@ -181,9 +181,13 @@ test.describe('Detail Pengajuan Lelang', () => {
     const namaDokumen = page.locator('span.modalwizing');
     test.skip((await namaDokumen.count()) === 0, 'Lelang pertama tidak punya dokumen aanwijzing aktif');
 
-    await namaDokumen.first().click();
     const dialog = page.locator('.modal-lg-aanwijzing');
-    await expect(dialog).toBeVisible({ timeout: 90_000 });
+    await expect(async () => {
+      if (!(await dialog.isVisible())) {
+        await namaDokumen.first().click({ timeout: 2_000 });
+      }
+      await expect(dialog).toBeVisible({ timeout: 3_000 });
+    }).toPass({ timeout: 90_000 });
     await expect(dialog.getByText('LIHAT DOKUMEN')).toBeVisible();
   });
 });

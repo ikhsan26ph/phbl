@@ -49,7 +49,16 @@ ADMIN SILVERSTRIPE tidak ada di dokumen sumber).
 - reCAPTCHA registrasi sudah DIHILANGKAN dev dari demo (2026-08-13) — alur
   registrasi penuh terotomasi. Akun QA permanen hasil kalibrasi:
   qa-tms-reg1@yopmail.com / ValidSandi123, WA 089911224455 (dipakai test WA-duplikat).
-- Storage state cepat kadaluarsa di server; project setup me-refresh tiap run.
+- Sesi server TERIKAT User-Agent (temuan 2026-08-20): cookie `.auth/<peran>.json`
+  hanya valid bila UA sama persis dengan saat login (`devices['Desktop Chrome']`).
+  `state-load` di playwright-cli / context tanpa UA itu selalu ditolak (redirect
+  login) — dulu salah didiagnosis "storage state cepat kadaluarsa". Kalibrasi
+  CLI: login lewat form saja. Sesi juga TUNGGAL per akun: login baru (mis.
+  project setup saat suite jalan) menendang sesi CLI lama akun yang sama.
+- Match REGEX getByText memakai teks mentah (TANPA normalisasi whitespace) —
+  beda dgn match string. Label detail berpola `<div>Label <span>:</span></div>`
+  → exact:true/anchor `$` gagal; pakai substring atau `\s*` di regex.
+  Heading tampak kapital karena CSS text-transform, DOM-nya Title Case.
 
 ## Laporan Excel
 
@@ -62,9 +71,26 @@ ADMIN SILVERSTRIPE tidak ada di dokumen sumber).
 
 ## Run penuh 2026-08-20 (report/hasil-testing-2026-08-20.xlsx)
 
-- 83 test: 73 lulus, 7 lulus-defect (test.fail), 2 dilewati, **1 GAGAL**:
-  `shipper/pengajuan-lelang.spec.ts:165` — modal `.modal-lg-aanwijzing` tetap
-  hidden 90 dtk setelah klik nama dokumen (perlu investigasi: flaky vs defect).
+- 83 test: 73 lulus, 7 lulus-defect (test.fail), 2 dilewati, 1 gagal
+  (aanwijzing — akar masalah ditemukan & test diperbaiki, lihat defect #6;
+  pasca-perbaikan lulus 3/3 headless).
+
+## Transporter (mulai 2026-08-20)
+
+- `tests/transporter/pengajuan-lelang.spec.ts` — 24 test (23 lulus, 1 skip:
+  tab Perlu Update Harga tanpa data demo, menu "Menuju Request Harga" belum
+  terverifikasi). Read-only; kalibrasi lengkap ada di komentar spec (6 tab,
+  kolom + "Shipper", penanda merah via toHaveCSS, tombol Tambah Harga
+  Penawaran kondisional, PIC Muat hidden, aanwijzing retry-toPass).
+- `tests/transporter/harga-jadwal.spec.ts` — 17 test (16 lulus, 1 skip: tab
+  Perlu Update Harga tanpa data demo). Read-only; kalibrasi di komentar spec
+  (5 tab numerik `?tab=1..5`, tombol tab duplikat desktop/mobile → `.first()`,
+  kolom "Harga (Rp.)" butuh regex tanpa `\b` penutup, aksi per tab beda pola
+  — beberapa via `title`/`data-original-title` [ikon tanpa teks], baris
+  "Update" di tab Request Jadwal via teks polos tanpa atribut title).
+  Gabungan kedua spec transporter: 41 test, 33 lulus, 2 skip, 0 gagal.
+- Belum: Pengajuan Nego, Daftar Order, Penugasan Tracking, Akun Saya/Profil/
+  Preference Notif (bidder), + semua alur mutasi harga & jadwal.
 
 ## Status (2026-08-13) — semua suite hijau
 
@@ -86,6 +112,12 @@ ADMIN SILVERSTRIPE tidak ada di dokumen sumber).
    heading "HI, !" tanpa nama akun.
 5. Ikon popup daftar lelang tanpa accessible name (hanya `#list_lelang`) —
    usulan data-testid/aria-label. Ikon notifikasi top bar juga tanpa nama.
+6. Detail lelang: handler klik dokumen aanwijzing (`span.modalwizing` →
+   `$('#modalEditProvinsi').modal('show')`) baru di-bind setelah init WebViewer
+   PDF.js Express (pihak ketiga, kadang detik-an) — klik user sebelum itu
+   TERTELAN tanpa umpan balik. Test diatasi dengan retry klik (toPass);
+   usulan dev: bind handler segera / beri loading state. Bonus: id modal
+   `modalEditProvinsi` warisan copy-paste, bukan nama semantik.
 
 ## Langkah berikutnya (belum dikerjakan)
 
