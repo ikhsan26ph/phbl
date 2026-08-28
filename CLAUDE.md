@@ -112,6 +112,54 @@ ADMIN SILVERSTRIPE tidak ada di dokumen sumber).
 - Belum: Akun Saya/Profil/Preference Notif (bidder), + semua alur mutasi
   (harga, jadwal, respon nego, input unit, invoice, penugasan petugas).
 
+## Admin (mulai 2026-08-28)
+
+- `tests/admin/daftar-order-edit-harga.spec.ts` — 11 test (9 lulus normal +
+  2 lulus-defect via `test.fail()`; fitur BARU Edit Harga; rule ditambahkan
+  ke docs/rules/administrator/07-daftar-order.md § "Edit Harga (fitur baru
+  2026-08)"). Mutasi DIIZINKAN user (2026-08-28): test e2e mengubah harga
+  order ORDER BARU (dipilih dinamis — order APAPUN yang sedang berstatus
+  ORDER BARU saat run, bukan order tetap) lalu mengembalikannya via
+  try/finally (revert WAJIB jalan meski assertion di antaranya gagal — efek
+  permanen tersisa hanya entry History Perubahan Data, by design).
+- Kalibrasi kunci (detail di komentar spec): trigger `a.btn_edit_harga_order`
+  (atribut `idnya=<OrderID>`); klik → POST /order/cek_edit_harga_order →
+  SUKSES buka `#modalEditHargaOrder` ATAU SweetAlert2 blokir "Tidak bisa
+  mengubah harga! / Invoice pengiriman untuk order ini sudah dibuat".
+  Validasi required = POPOVER Bootstrap transient ±2 dtk (bukan window.alert);
+  sukses simpan = SweetAlert2 "Anda berhasil mengubah harga order !" (flash
+  session, tombol "Mengerti"). Input harga ber-mask ribuan ("3100000" →
+  "3.100.000"; "0" tunggal → kosong). Hak akses: checkbox `#edit_harga_order`
+  di tambah/edit/detail HakAksesAdmin (AWAS: dua checkbox berlabel persis
+  "Edit Harga" — modul Harga vs Daftar Order — wajib pakai id; checkbox ini
+  child dari `lihat_daftar_order`, auto-tercentang saat parent-nya dicentang).
+- Jebakan yang SUDAH terbukti: (1) alasan edit di test mutasi WAJIB unik per
+  run (history menumpuk lintas run, tampil terbaru-dulu — alasan statis bikin
+  locator nangkep entry lama); (2) jangan pakai `locator.or()` popup-vs-swal
+  karena `#modalEditHargaOrder` selalu ada (hidden) di DOM → poll eksplisit;
+  (3) baca nomor-order & harga baris dalam SATU `evaluate()` atomik, bukan
+  dua panggilan Playwright terpisah — tabel Order List demo bersama & terus
+  tumbuh (auto-refresh live, ribuan baris) bisa berubah di antara dua
+  panggilan, bikin data "kepasang" dari baris berbeda; (4) assertion harga
+  pasca-mutasi WAJIB timeout eksplisit ≥20dtk (bukan default ~5dtk) — reload
+  tabel async pasca `goto()` kadang lambat, mutasinya sendiri SUDAH sukses
+  (terverifikasi via History) tapi assert cepatnya keburu timeout; (5) cleanup
+  hapus grup hak akses uji WAJIB pakai `waitFor({state:'visible'})` (polling),
+  BUKAN `isVisible({timeout})` yang TIDAK benar2 menunggu/retry — versi lama
+  salah simpul "sudah tak ada" sebelum tabel selesai render async, cleanup
+  skip diam2 tanpa error (grup sampah nyangkut permanen di server, terbukti
+  2x sebelum diperbaiki); verifikasi hapus WAJIB via reload halaman (server-
+  side sungguhan), bukan cuma cek DOM pasca-klik (bisa optimistik di klien).
+- Test absensi "hanya sisi admin" ditambahkan ke tests/shipper/daftar-order.spec.ts
+  & tests/transporter/daftar-order.spec.ts (lulus). Catatan ke developer
+  (bukan defect fungsional): markup modal + JS Edit Harga ikut ter-render di
+  halaman non-admin (tersembunyi, tanpa trigger); server menolak dengan benar
+  ("Anda tidak memiliki akses ke fitur tersebut").
+- Baseline data demo: order 20260827-06503 (OrderID 1454) harga Rp. 3.000.000.
+- Run 2026-08-28 (report/hasil-testing-2026-08-28.xlsx): 19 test — 6 setup
+  login + 9 Edit Harga normal + 2 defect (test.fail) + 2 absensi shipper/
+  transporter, semua LULUS (hijau atau lulus-defect terdokumentasi).
+
 ## Status (2026-08-13) — semua suite hijau
 
 - `tests/auth.setup.ts` — 6 login terkalibrasi.
@@ -141,12 +189,29 @@ ADMIN SILVERSTRIPE tidak ada di dokumen sumber).
 7. Filter Daftar Order (bidder): label "Nomor Kontainer" ber-`for="jumlah"`
    (field Jumlah Order) sehingga dua label menunjuk #jumlah; input
    #nomor_kontainer sendiri TANPA label terasosiasi (aksesibilitas).
+8. Halaman "Detail Hak Akses Admin" (/adminprahu/detailHakAksesAdmin/<id>)
+   TIDAK merefleksikan status checkbox yang sebenarnya tersimpan — checkbox
+   selalu tampil TIDAK tercentang di halaman Detail meski di halaman Edit
+   (sumber kebenaran, terverifikasi) benar-benar tercentang. Diverifikasi
+   dengan checkbox Edit Harga TAPI tampak general (checkbox lain seperti
+   "Lihat Daftar Order" juga salah tampil), bukan spesifik fitur ini.
+9. Grup hak akses admin baru dengan checkbox "Edit Harga" dicentang & sudah
+   di-assign ke sub user admin (verifikasi pakai akun sungguhan
+   phbiddaratadmean@gmail.com) TIDAK benar2 mengaktifkan fitur — trigger menu
+   tetap absen DAN endpoint /order/cek_edit_harga_order tetap menjawab "Anda
+   tidak memiliki akses ke fitur tersebut", bahkan setelah logout+login ulang
+   (sesi baru, bukan cache lama). Catatan: item action-menu LAIN (Edit Data
+   Order, Batalkan Order, Ganti Jadwal, dst.) tetap tampil untuk sub-admin ini
+   walau checkbox terkait TIDAK dicentang di grup ujinya — mengindikasikan
+   sebagian besar action-menu Daftar Order TIDAK digerbangi hak akses granular
+   sama sekali (beda dari kasus Edit Harga yang justru menolak walau granted).
 
 ## Langkah berikutnya (belum dikerjakan)
 
 - Sisa modul shipper: Pengajuan Lelang (mutasi — TANYA user dulu boleh/tidak
   membuat data lelang di demo), Dashboard, Daftar Order, Cek Jadwal, Laporan, dll.
 - Modul transporter (Harga & Jadwal, Daftar Order, Penugasan Tracking).
-- Modul admin (Validasi Akun, Setting, Master, Pengaturan Akun — banyak mutasi).
+- Modul admin lain (Validasi Akun, Setting, Master, Pengaturan Akun, sisa
+  Daftar Order admin — banyak mutasi; Edit Harga sudah selesai 2026-08-28).
 - `.env.example` masih berisi kredensial asli — kosongkan sebelum git init.
 - Folder `specs/` & `specs/_challenge/` masih kosong (tujuan belum dijelaskan user).

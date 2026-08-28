@@ -69,6 +69,26 @@
 - Pada sesi ini admin dapat memilih tanggal dan jam permintaan muat menggunakan datepicker, serta input yang disimpan sesuai dengan pilihan yang telah ditentukan.
 - Jika pada jadwal termasuk kapal connecting maka akan muncul button “kapal connecting nx”
 
+## Edit Harga (fitur baru 2026-08)
+
+- Action menu "Edit Harga" tampil HANYA pada sisi admin
+- Tampil pada status order ORDER BARU s.d ORDER SELESAI
+- Posisi menu di bawah "Edit Data Order"
+- Ketika diklik menampilkan popup form "Edit Harga"
+- Data yang tampil pada popup: Nomor Order dan Harga Saat Ini
+- Label pada desain "Harga Sebelumnya" diubah menjadi "Harga Saat Ini"
+- Label pada desain "Harga Terbaru" diubah menjadi "Harga Baru"
+- Placeholder input harga baru: "Masukkan Harga Baru"
+- Harga baru bersifat required — jika kosong tampil alert "Masukkan Harga Baru"
+- Alasan edit harga bersifat required — jika kosong tampil alert "Masukkan Alasan Edit Harga"
+- Efek edit harga tercatat pada History Perubahan Data (tanggal perubahan
+  berketerangan "(Edit Harga)", Edit By, Harga Sebelumnya, Harga Terbaru,
+  Alasan Edit Harga)
+- Efek edit harga hanya berlaku pada order tersebut
+- Tidak bisa edit harga setelah invoice diproses atau dibuat
+- Tambahan pada hak akses admin (Pengaturan Akun — tambah, edit, dan detail):
+  checkbox "Edit Harga" pada grup MENU DAFTAR ORDER
+
 ## Batal Order
 
       - Pilihan menu ini akan muncul pada status order ORDER BARU s.d status ORDER SELESAI

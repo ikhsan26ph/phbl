@@ -57,6 +57,15 @@ test('tabel daftar order menampilkan kolom berpasangan sesuai rule', async ({ pa
   await expect(page.getByRole('columnheader', { name: 'Action' })).toBeVisible();
 });
 
+test('menu Edit Harga (fitur admin) tidak tersedia pada peran shipper', async ({ page }) => {
+  // Rule admin 07-daftar-order § Edit Harga: menu HANYA di sisi admin.
+  // Kalibrasi 2026-08-28: trigger admin = a.btn_edit_harga_order; di shipper
+  // trigger absen (markup #modalEditHargaOrder ikut ter-render tersembunyi —
+  // sudah dicatat sebagai usulan ke developer).
+  await orderPage.actionButtons(page).first().waitFor({ timeout: 15_000 }).catch(() => {});
+  await expect(page.locator('a.btn_edit_harga_order')).toHaveCount(0);
+});
+
 test('panel filter memuat semua field pencarian sesuai rule beserta Reset dan Filter', async ({ page }) => {
   await orderPage.filterToggle(page).click();
 

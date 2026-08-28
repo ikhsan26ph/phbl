@@ -125,6 +125,17 @@ test.describe('Daftar Order (Bidder)', () => {
     await expect(page.getByText('Menunggu Proses').first()).toBeVisible({ timeout: 10_000 });
   });
 
+  test('menu Edit Harga (fitur admin) tidak tersedia pada peran transporter', async ({ page }) => {
+    // Rule admin 07-daftar-order § Edit Harga: menu HANYA di sisi admin.
+    // Kalibrasi 2026-08-28: trigger admin = a.btn_edit_harga_order; di
+    // transporter trigger absen dan server menolak endpoint ceknya
+    // ("Anda tidak memiliki akses ke fitur tersebut"). Catatan dev: markup
+    // #modalEditHargaOrder + JS-nya tetap ikut ter-render (tersembunyi).
+    const jumlah = await bukaHalaman(page);
+    test.skip(jumlah === 0, 'Tidak ada data order pada akun demo');
+    await expect(page.locator('a.btn_edit_harga_order')).toHaveCount(0);
+  });
+
   test('filter menyediakan field Nomor Kontainer, checkbox Kapal Connecting, dan tombol Reset', async ({
     page,
   }) => {
