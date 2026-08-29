@@ -1,4 +1,4 @@
-import { expect, test, type Page } from '@playwright/test';
+import { expect, test, type Locator, type Page } from '@playwright/test';
 
 /**
  * Modul: Daftar Order — peran Bidder/Transporter (project "transporter")
@@ -73,7 +73,7 @@ test.describe('Daftar Order (Bidder)', () => {
     await bukaHalaman(page);
     for (const pasangan of [
       /^Lelang\s+Status/,
-      /^Nama Kapal\s+Tgl Permintaan Muat/,
+      /^Nama Kapal\s+Permintaan Muat\s+&\s+Closing Time/,
       /^Pelabuhan Asal\s+ETD/,
       /^Pelabuhan Tujuan\s+ETA/,
       /^Shipper/,
@@ -121,8 +121,28 @@ test.describe('Daftar Order (Bidder)', () => {
     const jumlah = await bukaHalaman(page);
     test.skip(jumlah === 0, 'Tidak ada data order pada akun demo');
 
-    await listPage.infoTracking(page).first().click();
-    await expect(page.getByText('Menunggu Proses').first()).toBeVisible({ timeout: 10_000 });
+    const tautan = listPage.infoTracking(page);
+    const total = await tautan.count();
+    test.skip(total === 0, 'Tidak ada order dengan Info Tracking pada akun demo');
+
+    // Kontainer belum ditracking ("Menunggu Proses") tidak selalu ada di
+    // baris pertama — data order demo bersama & terus berubah (terbukti
+    // gagal 2026-08-29: baris pertama saat itu sudah berstatus "Sj Diterima
+    // Agen"). Klik expand (#info_tracking_collapse<idorder>, Bootstrap
+    // collapse) tiap link Info Tracking sampai ketemu kontainer bertanda itu.
+    let panelKetemu: Locator | null = null;
+    for (let i = 0; i < total && !panelKetemu; i++) {
+      const link = tautan.nth(i);
+      const idorder = await link.evaluate((el) => el.parentElement?.getAttribute('data-idorder') ?? '');
+      await link.click();
+      const panel = page.locator(`#info_tracking_collapse${idorder}`);
+      await expect(panel).toBeVisible({ timeout: 10_000 });
+      if (await panel.getByText('Menunggu Proses').first().isVisible().catch(() => false)) {
+        panelKetemu = panel;
+      }
+    }
+    test.skip(!panelKetemu, 'Tidak ada kontainer berstatus Menunggu Proses pada akun demo saat run ini');
+    await expect(panelKetemu!.getByText('Menunggu Proses').first()).toBeVisible();
   });
 
   test('menu Edit Harga (fitur admin) tidak tersedia pada peran transporter', async ({ page }) => {

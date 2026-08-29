@@ -27,8 +27,11 @@ import { expect, test, type Locator, type Page } from '@playwright/test';
  *   bawah field (container #modalEditHargaOrder), auto-dispose ±2 detik —
  *   assert segera setelah klik Simpan.
  * - Simpan valid → POST /order/save_edit_harga_order → reload + SweetAlert2
- *   "Anda berhasil mengubah harga order !" (flash session, sekali tampil),
- *   tombol "Mengerti"; harga baris di list berubah; entry History Perubahan
+ *   "Anda berhasil mengubah harga order !" (kalibrasi 2026-08-28) ATAU
+ *   "Anda berhasil edit harga order" (teramati 2026-08-29, run yang sama —
+ *   flash session, kemungkinan 2 varian teks bergantian; test cocokkan regex
+ *   /mengubah|edit/ agar tahan keduanya), tombol "Mengerti"; harga baris di
+ *   list berubah; entry History Perubahan
  *   Data: "<tgl> (Edit Harga)", Edit By, "Harga Sebelumnya"/"Harga Terbaru"
  *   (label history memang lama — beda dgn label popup), Alasan Edit Harga.
  * - Hak akses admin (/adminprahu/hakaksesadmin → tambah_hakaksesadmin,
@@ -244,7 +247,7 @@ test.describe('Daftar Order — Edit Harga (Admin)', () => {
     // menangkap entry run lama (terbukti gagal 2026-08-28).
     const alasanUji = `Uji otomasi QA ${Date.now()} - harga akan dikembalikan`;
 
-    async function editHarga(nominal: number, alasan: string): Promise<void> {
+    async function editHarga(nominal: number, alasan: string, onSubmitted?: () => void): Promise<void> {
       const barisOrder = listPage.barisDenganEditHarga(page).filter({ hasText: nomorOrder }).first();
       await listPage.actionMenu(barisOrder).click();
       await listPage.editHarga(barisOrder).click();
@@ -252,8 +255,17 @@ test.describe('Daftar Order — Edit Harga (Admin)', () => {
       await popup.hargaBaru(page).fill(String(nominal));
       await popup.alasan(page).fill(alasan);
       await popup.simpan(page).click();
+      // POST save_edit_harga_order sudah terkirim di titik ini — beri tahu
+      // caller SEBELUM menunggu toast, supaya revert di finally tetap jalan
+      // walau assertion toast di bawah ini gagal (terbukti gagal 2026-08-29:
+      // mutasi sukses tapi toast-nya "Anda berhasil edit harga order", bukan
+      // "...mengubah...", assertion lama timeout & revert ikut ter-skip →
+      // data demo ter-drift +111 sampai diperbaiki manual).
+      onSubmitted?.();
       // Sukses = SweetAlert2 (bukan native alert) setelah proses simpan.
-      await expect(page.getByText('Anda berhasil mengubah harga order')).toBeVisible({ timeout: 20_000 });
+      // Teks toast pernah teramati 2 varian ("mengubah"/"edit") — regex agar
+      // tahan terhadap keduanya.
+      await expect(page.getByText(/Anda berhasil (mengubah|edit) harga order/i)).toBeVisible({ timeout: 20_000 });
       await swal.mengerti(page).click();
       await page.goto(orderListUrl);
     }
@@ -269,8 +281,9 @@ test.describe('Daftar Order — Edit Harga (Admin)', () => {
     let mutasi1Berhasil = false;
     try {
       // --- Mutasi 1: harga uji ---
-      await editHarga(hargaUji, alasanUji);
-      mutasi1Berhasil = true;
+      await editHarga(hargaUji, alasanUji, () => {
+        mutasi1Berhasil = true;
+      });
       const barisSetelah = listPage.barisDenganEditHarga(page).filter({ hasText: nomorOrder }).first();
       await expect(barisSetelah.getByText(`Rp. ${formatRibuan(hargaUji)}`)).toBeVisible({ timeout: 20_000 });
 

@@ -19,8 +19,10 @@ import { expect, test, type Page } from '@playwright/test';
  *   besar/kecil, mis. "abc 12!@#defgh456789" → value "ABC12defgh4" — tampil
  *   "ABC12DEFGH4"); test memverifikasi value tersanitasi + CSS uppercase.
  * - Tiap order dirender 2 baris: baris data (kolom Lelang/Status, Nama
- *   Kapal/Tgl Permintaan Muat, POL/ETD, POD/ETA, Transporter, Harga/Jumlah
- *   Order, Action) + baris info berisi textlink "Info Order", "Info
+ *   Kapal Permintaan Muat & Closing Time [rebrand 2026-08-29 dari "Nama
+ *   Kapal/Tgl Permintaan Muat", sejalan fitur Open Stack/Closing], POL/ETD,
+ *   POD/ETA, Transporter, Harga/Jumlah Order, Action) + baris info berisi
+ *   textlink "Info Order", "Info
  *   Tracking" (hanya order yang sudah konfirmasi unit), link "Detail Order"
  *   (/order/orderdetail/<hash>), dan "Dokumen Aanwijzing".
  * - Tombol aksi per baris punya accessible name "Action Menu" (satu-satunya
@@ -49,7 +51,9 @@ test.beforeEach(async ({ page }) => {
 
 test('tabel daftar order menampilkan kolom berpasangan sesuai rule', async ({ page }) => {
   await expect(page.getByRole('columnheader', { name: 'Lelang Status' })).toBeVisible();
-  await expect(page.getByRole('columnheader', { name: 'Nama Kapal Tgl Permintaan Muat' })).toBeVisible();
+  await expect(
+    page.getByRole('columnheader', { name: 'Nama Kapal Permintaan Muat & Closing Time' }),
+  ).toBeVisible();
   await expect(page.getByRole('columnheader', { name: 'Pelabuhan Asal ETD' })).toBeVisible();
   await expect(page.getByRole('columnheader', { name: 'Pelabuhan Tujuan ETA' })).toBeVisible();
   await expect(page.getByRole('columnheader', { name: 'Transporter' })).toBeVisible();

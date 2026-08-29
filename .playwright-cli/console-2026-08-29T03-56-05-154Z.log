@@ -1,0 +1,130 @@
+[    1194ms] Cannot use import statement outside a module
+[    1213ms] ReferenceError: Chart is not defined
+    at https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/js/scripts-init/charts/chartjs.js:8:13
+[    1290ms] Unexpected token '<'
+[    1393ms] Unexpected token '<'
+[    1441ms] Uncaught TypeError: expect element to be DOM Element, but got null
+    at n.init (https://cdnjs.cloudflare.com/ajax/libs/smooth-scrollbar/8.5.2/smooth-scrollbar.js:24:264)
+    at <anonymous> (https://phbidlautdemo.prahu-hub.com/order/OrderList:7811:14)
+[    1467ms] [LOG] 1 @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/orderList.js?m=1787972929:939
+[    1467ms] [LOG] 20 @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/orderList.js?m=1787972929:940
+[    1471ms] [LOG] Daftar Ordernamanya @ https://phbidlautdemo.prahu-hub.com/order/OrderList:2146
+[    1494ms] [LOG] Masukkan ID Order @ https://phbidlautdemo.prahu-hub.com/order/OrderList:8164
+[    1494ms] [LOG] undefined @ https://phbidlautdemo.prahu-hub.com/order/OrderList:8164
+[    1494ms] [LOG] Masukkan Nomor Lelang @ https://phbidlautdemo.prahu-hub.com/order/OrderList:8164
+[    1495ms] [LOG] Masukkan Nama Transporter @ https://phbidlautdemo.prahu-hub.com/order/OrderList:8164
+[    1495ms] [LOG] DD/MM/YYYY - DD/MM/YYYY @ https://phbidlautdemo.prahu-hub.com/order/OrderList:8164
+[    1495ms] [LOG] Masukkan No. Kontainer @ https://phbidlautdemo.prahu-hub.com/order/OrderList:8164
+[    1495ms] [LOG] DD/MM/YYYY - DD/MM/YYYY @ https://phbidlautdemo.prahu-hub.com/order/OrderList:8164
+[    1495ms] [LOG] DD/MM/YYYY -  DD/MM/YYYY @ https://phbidlautdemo.prahu-hub.com/order/OrderList:8164
+[    1497ms] [LOG] Search... @ https://phbidlautdemo.prahu-hub.com/order/OrderList:8164
+[    1497ms] [LOG] Search... @ https://phbidlautdemo.prahu-hub.com/order/OrderList:8164
+[    1497ms] [LOG] undefined @ https://phbidlautdemo.prahu-hub.com/order/OrderList:8164
+[    1497ms] [LOG] Masukkan Nama Kapal @ https://phbidlautdemo.prahu-hub.com/order/OrderList:8164
+[    1497ms] [LOG] DD/MM/YYYY @ https://phbidlautdemo.prahu-hub.com/order/OrderList:8164
+[    1498ms] [LOG] Masukkan Jumlah @ https://phbidlautdemo.prahu-hub.com/order/OrderList:8164
+[    1498ms] [LOG] Masukkan Nama Penerima Barang @ https://phbidlautdemo.prahu-hub.com/order/OrderList:8164
+[    1498ms] [LOG] Search... @ https://phbidlautdemo.prahu-hub.com/order/OrderList:8164
+[    1498ms] [LOG] Masukkan Nomor Referensi @ https://phbidlautdemo.prahu-hub.com/order/OrderList:8164
+[    1498ms] [LOG] undefined @ https://phbidlautdemo.prahu-hub.com/order/OrderList:8164
+[    1498ms] [LOG] Masukkan Harga Baru @ https://phbidlautdemo.prahu-hub.com/order/OrderList:8164
+[    1499ms] [LOG] undefined @ https://phbidlautdemo.prahu-hub.com/order/OrderList:8164
+[    1499ms] [LOG] WebSocket connection @ https://phbidlautdemo.prahu-hub.com/order/OrderList:8207
+[    1500ms] [LOG] WebSocket connection attempting... @ https://phbidlautdemo.prahu-hub.com/order/OrderList:8285
+[    1616ms] [LOG] WebSocket connected @ https://phbidlautdemo.prahu-hub.com/order/OrderList:8216
+[    1628ms] [LOG] update_dashboard_order_laut @ https://phbidlautdemo.prahu-hub.com/order/OrderList:8257
+[    1691ms] [LOG] Connected @ https://phbidlautdemo.prahu-hub.com/order/OrderList:8257
+[    3496ms] TypeError: $(...).DataTable is not a function
+    at https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/js/scripts-init/tables.js:7:23
+[    3947ms] [LOG] datanya20 @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/orderList.js?m=1787972929:986
+[    3950ms] [LOG] [Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object] @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/orderList.js?m=1787972929:421
+[    3959ms] [LOG] {ID: 1461, status_order: KONFIRMASI_UNIT, JadwalID: 1858, ID_Order: 20260829-06501, dari_api: null} @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/orderList.js?m=1787972929:427
+[    3960ms] [LOG] [Manujo] penerima @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/orderList.js?m=1787972929:648
+[    3962ms] [LOG] {ID: 1460, status_order: KONFIRMASI_UNIT, JadwalID: 1862, ID_Order: 20260828-06506, dari_api: null} @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/orderList.js?m=1787972929:427
+[    3963ms] [LOG] [Manujo] penerima @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/orderList.js?m=1787972929:648
+[    3963ms] [LOG] {ID: 1459, status_order: CANCEL, JadwalID: 1846, ID_Order: 20260828-06505, dari_api: null} @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/orderList.js?m=1787972929:427
+[    3964ms] [LOG] [Manujo] penerima @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/orderList.js?m=1787972929:648
+[    3965ms] [LOG] {ID: 1458, status_order: KONFIRMASI_UNIT, JadwalID: 1846, ID_Order: 20260828-06504, dari_api: null} @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/orderList.js?m=1787972929:427
+[    3965ms] [LOG] [Manujo] penerima @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/orderList.js?m=1787972929:648
+[    3967ms] [LOG] {ID: 1454, status_order: SHIPPER_VALIDATED, JadwalID: 1846, ID_Order: 20260827-06503, dari_api: null} @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/orderList.js?m=1787972929:427
+[    3968ms] [LOG] [Manujo] penerima @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/orderList.js?m=1787972929:648
+[    3968ms] [LOG] {ID: 1453, status_order: DONE, JadwalID: 1846, ID_Order: 20260827-06502, dari_api: null} @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/orderList.js?m=1787972929:427
+[    3970ms] [LOG] [Manujo] penerima @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/orderList.js?m=1787972929:648
+[    3975ms] [LOG] {ID: 1452, status_order: DONE, JadwalID: 1844, ID_Order: 20260827-06501, dari_api: null} @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/orderList.js?m=1787972929:427
+[    3977ms] [LOG] [Ik Bitung] penerima @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/orderList.js?m=1787972929:648
+[    3978ms] [LOG] {ID: 1451, status_order: DONE, JadwalID: 1845, ID_Order: 20260826-06507, dari_api: null} @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/orderList.js?m=1787972929:427
+[    3979ms] [LOG] [Ik Bitung] penerima @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/orderList.js?m=1787972929:648
+[    3980ms] [LOG] {ID: 1450, status_order: PENDING, JadwalID: 1844, ID_Order: 20260826-06506, dari_api: null} @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/orderList.js?m=1787972929:427
+[    3980ms] [LOG] [Ik Bitung] penerima @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/orderList.js?m=1787972929:648
+[    3981ms] [LOG] {ID: 1449, status_order: DONE, JadwalID: 1839, ID_Order: 20260826-06505, dari_api: null} @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/orderList.js?m=1787972929:427
+[    3981ms] [LOG] [Ik Bitung] penerima @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/orderList.js?m=1787972929:648
+[    3982ms] [LOG] {ID: 1448, status_order: DONE, JadwalID: 1851, ID_Order: 20260826-06504, dari_api: null} @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/orderList.js?m=1787972929:427
+[    3982ms] [LOG] [Ik Bitung] penerima @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/orderList.js?m=1787972929:648
+[    3983ms] [LOG] {ID: 1447, status_order: DONE, JadwalID: 1839, ID_Order: 20260826-06503, dari_api: null} @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/orderList.js?m=1787972929:427
+[    3983ms] [LOG] [Ik Bitung] penerima @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/orderList.js?m=1787972929:648
+[    3984ms] [LOG] {ID: 1446, status_order: DONE, JadwalID: 1839, ID_Order: 20260826-06502, dari_api: null} @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/orderList.js?m=1787972929:427
+[    3984ms] [LOG] [Ik Bitung] penerima @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/orderList.js?m=1787972929:648
+[    3985ms] [LOG] {ID: 1445, status_order: DONE, JadwalID: 1839, ID_Order: 20260826-06501, dari_api: null} @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/orderList.js?m=1787972929:427
+[    3985ms] [LOG] [Ik Bitung] penerima @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/orderList.js?m=1787972929:648
+[    3986ms] [LOG] {ID: 1435, status_order: DONE, JadwalID: 1828, ID_Order: 20260820-06504, dari_api: null} @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/orderList.js?m=1787972929:427
+[    3987ms] [LOG] [Ik Bitung] penerima @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/orderList.js?m=1787972929:648
+[    3987ms] [LOG] {ID: 1433, status_order: CANCEL, JadwalID: 1828, ID_Order: 20260820-06502, dari_api: null} @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/orderList.js?m=1787972929:427
+[    3991ms] [LOG] [Ik Bitung] penerima @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/orderList.js?m=1787972929:648
+[    3992ms] [LOG] {ID: 1432, status_order: CANCEL, JadwalID: 1824, ID_Order: 20260820-06501, dari_api: YES} @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/orderList.js?m=1787972929:427
+[    3992ms] [LOG] [Ik Bitung] penerima @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/orderList.js?m=1787972929:648
+[    3992ms] [LOG] {ID: 1429, status_order: DONE, JadwalID: 1815, ID_Order: 20260811-06501, dari_api: YES} @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/orderList.js?m=1787972929:427
+[    3993ms] [LOG] [IKHSAN JAYA, IKHSAN JAYA, IKHSAN JAYA] penerima @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/orderList.js?m=1787972929:648
+[    3993ms] [LOG] {ID: 1428, status_order: DONE, JadwalID: 1814, ID_Order: 20260807-06501, dari_api: YES} @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/orderList.js?m=1787972929:427
+[    3994ms] [LOG] [Ik Bitung] penerima @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/orderList.js?m=1787972929:648
+[    3994ms] [LOG] {ID: 1427, status_order: KONFIRMASI_UNIT, JadwalID: 1809, ID_Order: 20260806-06503, dari_api: YES} @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/orderList.js?m=1787972929:427
+[    3994ms] [LOG]  penerima @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/orderList.js?m=1787972929:648
+[    4013ms] [LOG] [Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object] @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/orderList.js?m=1787972929:40
+[    4015ms] [LOG] {ID: 1461, status_order: KONFIRMASI_UNIT, JadwalID: 1858, ID_Order: 20260829-06501, dari_api: null} @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/orderList.js?m=1787972929:46
+[    4015ms] [LOG] [Manujo] penerima @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/orderList.js?m=1787972929:261
+[    4015ms] [LOG] {ID: 1460, status_order: KONFIRMASI_UNIT, JadwalID: 1862, ID_Order: 20260828-06506, dari_api: null} @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/orderList.js?m=1787972929:46
+[    4015ms] [LOG] [Manujo] penerima @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/orderList.js?m=1787972929:261
+[    4016ms] [LOG] {ID: 1459, status_order: CANCEL, JadwalID: 1846, ID_Order: 20260828-06505, dari_api: null} @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/orderList.js?m=1787972929:46
+[    4016ms] [LOG] [Manujo] penerima @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/orderList.js?m=1787972929:261
+[    4016ms] [LOG] {ID: 1458, status_order: KONFIRMASI_UNIT, JadwalID: 1846, ID_Order: 20260828-06504, dari_api: null} @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/orderList.js?m=1787972929:46
+[    4017ms] [LOG] [Manujo] penerima @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/orderList.js?m=1787972929:261
+[    4017ms] [LOG] {ID: 1454, status_order: SHIPPER_VALIDATED, JadwalID: 1846, ID_Order: 20260827-06503, dari_api: null} @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/orderList.js?m=1787972929:46
+[    4017ms] [LOG] [Manujo] penerima @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/orderList.js?m=1787972929:261
+[    4017ms] [LOG] {ID: 1453, status_order: DONE, JadwalID: 1846, ID_Order: 20260827-06502, dari_api: null} @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/orderList.js?m=1787972929:46
+[    4017ms] [LOG] [Manujo] penerima @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/orderList.js?m=1787972929:261
+[    4018ms] [LOG] {ID: 1452, status_order: DONE, JadwalID: 1844, ID_Order: 20260827-06501, dari_api: null} @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/orderList.js?m=1787972929:46
+[    4018ms] [LOG] [Ik Bitung] penerima @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/orderList.js?m=1787972929:261
+[    4018ms] [LOG] {ID: 1451, status_order: DONE, JadwalID: 1845, ID_Order: 20260826-06507, dari_api: null} @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/orderList.js?m=1787972929:46
+[    4018ms] [LOG] [Ik Bitung] penerima @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/orderList.js?m=1787972929:261
+[    4019ms] [LOG] {ID: 1450, status_order: PENDING, JadwalID: 1844, ID_Order: 20260826-06506, dari_api: null} @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/orderList.js?m=1787972929:46
+[    4019ms] [LOG] [Ik Bitung] penerima @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/orderList.js?m=1787972929:261
+[    4019ms] [LOG] {ID: 1449, status_order: DONE, JadwalID: 1839, ID_Order: 20260826-06505, dari_api: null} @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/orderList.js?m=1787972929:46
+[    4020ms] [LOG] [Ik Bitung] penerima @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/orderList.js?m=1787972929:261
+[    4020ms] [LOG] {ID: 1448, status_order: DONE, JadwalID: 1851, ID_Order: 20260826-06504, dari_api: null} @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/orderList.js?m=1787972929:46
+[    4020ms] [LOG] [Ik Bitung] penerima @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/orderList.js?m=1787972929:261
+[    4020ms] [LOG] {ID: 1447, status_order: DONE, JadwalID: 1839, ID_Order: 20260826-06503, dari_api: null} @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/orderList.js?m=1787972929:46
+[    4022ms] [LOG] [Ik Bitung] penerima @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/orderList.js?m=1787972929:261
+[    4023ms] [LOG] {ID: 1446, status_order: DONE, JadwalID: 1839, ID_Order: 20260826-06502, dari_api: null} @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/orderList.js?m=1787972929:46
+[    4023ms] [LOG] [Ik Bitung] penerima @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/orderList.js?m=1787972929:261
+[    4024ms] [LOG] {ID: 1445, status_order: DONE, JadwalID: 1839, ID_Order: 20260826-06501, dari_api: null} @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/orderList.js?m=1787972929:46
+[    4024ms] [LOG] [Ik Bitung] penerima @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/orderList.js?m=1787972929:261
+[    4024ms] [LOG] {ID: 1435, status_order: DONE, JadwalID: 1828, ID_Order: 20260820-06504, dari_api: null} @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/orderList.js?m=1787972929:46
+[    4024ms] [LOG] [Ik Bitung] penerima @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/orderList.js?m=1787972929:261
+[    4025ms] [LOG] {ID: 1433, status_order: CANCEL, JadwalID: 1828, ID_Order: 20260820-06502, dari_api: null} @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/orderList.js?m=1787972929:46
+[    4025ms] [LOG] [Ik Bitung] penerima @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/orderList.js?m=1787972929:261
+[    4025ms] [LOG] {ID: 1432, status_order: CANCEL, JadwalID: 1824, ID_Order: 20260820-06501, dari_api: YES} @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/orderList.js?m=1787972929:46
+[    4025ms] [LOG] [Ik Bitung] penerima @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/orderList.js?m=1787972929:261
+[    4025ms] [LOG] {ID: 1429, status_order: DONE, JadwalID: 1815, ID_Order: 20260811-06501, dari_api: YES} @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/orderList.js?m=1787972929:46
+[    4026ms] [LOG] [IKHSAN JAYA, IKHSAN JAYA, IKHSAN JAYA] penerima @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/orderList.js?m=1787972929:261
+[    4026ms] [LOG] {ID: 1428, status_order: DONE, JadwalID: 1814, ID_Order: 20260807-06501, dari_api: YES} @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/orderList.js?m=1787972929:46
+[    4026ms] [LOG] [Ik Bitung] penerima @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/orderList.js?m=1787972929:261
+[    4026ms] [LOG] {ID: 1427, status_order: KONFIRMASI_UNIT, JadwalID: 1809, ID_Order: 20260806-06503, dari_api: YES} @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/orderList.js?m=1787972929:46
+[    4027ms] [LOG]  penerima @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/orderList.js?m=1787972929:261
+[    4039ms] [LOG] 604 @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/orderList.js?m=1787972929:916
+[    4039ms] [LOG] 604 countView1 1 pageNow 20 limitView1 @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/orderList.js?m=1787972929:918
+[    4039ms] [LOG] 20 @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/orderList.js?m=1787972929:924
+[    4040ms] [LOG] 604 jumlah data @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/orderList.js?m=1787972929:879
+[    4040ms] [LOG] 31 @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/orderList.js?m=1787972929:881
+[    4040ms] [LOG] 31 1 pageCount & pageNow @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/orderList.js?m=1787972929:810
+[    4042ms] [LOG] 200 xhrglobal @ https://phbidlautdemo.prahu-hub.com/order/OrderList:8138
+[    4096ms] [LOG] 200 xhrglobal @ https://phbidlautdemo.prahu-hub.com/order/OrderList:8138
+[    4098ms] [LOG] 200 xhrglobal @ https://phbidlautdemo.prahu-hub.com/order/OrderList:8138

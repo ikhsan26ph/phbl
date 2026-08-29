@@ -75,6 +75,48 @@ ADMIN SILVERSTRIPE tidak ada di dokumen sumber).
   (aanwijzing — akar masalah ditemukan & test diperbaiki, lihat defect #6;
   pasca-perbaikan lulus 3/3 headless).
 
+## Run penuh 2026-08-29 (report/hasil-testing-2026-08-29.xlsx) — registrasi s.d order, 3 peran
+
+- Run pertama: 147 test, 139 lulus (termasuk lulus-defect test.fail()),
+  4 skip, 4 gagal, 16,5 mnt. Ketiga gagal murni test.fail()-related TIDAK
+  dihitung di sini (itu status "failed" di JSON results.json tapi LULUS
+  sebagai defect terdokumentasi — baca outcome dari ringkasan runner
+  "N failed" di baris akhir, BUKAN filter status per-hasil JSON mentah).
+  4 kegagalan riil, semua sudah diperbaiki & diverifikasi ulang:
+  1. `tests/admin/daftar-order-edit-harga.spec.ts` — mutasi 1 (edit harga uji)
+     SEBENARNYA sukses di server, tapi SweetAlert2 sukses menampilkan teks
+     "Anda berhasil edit harga order" (bukan "...mengubah harga order..."
+     yang dikalibrasi 2026-08-28) → assertion locator gagal → flag
+     `mutasi1Berhasil` (di-set SETELAH assertion toast) tak sempat `true` →
+     blok `finally` revert TIDAK jalan. **Order demo 20260828-08503 (PT.
+     United Family Food) tersisa ter-drift Rp. 19.500.000 → Rp. 19.500.111**
+     sampai ditemukan & diperbaiki manual via UI admin (alasan History:
+     "perbaikan manual drift, test gagal 2026-08-29"). Fix test: (a) toast
+     dicocokkan regex `/Anda berhasil (mengubah|edit) harga order/i` (2
+     varian teks pernah teramati); (b) `mutasi1Berhasil` kini di-set via
+     callback SEGERA setelah klik Simpan (POST sudah terkirim), SEBELUM
+     assertion toast — supaya finally tetap mencoba revert walau assertion
+     toast gagal. **Pelajaran: test mutasi dengan revert-di-finally WAJIB
+     set flag "sudah bermutasi" sedini mungkin (saat aksi terkirim), bukan
+     setelah verifikasi sukses — verifikasi boleh gagal, mutasi tidak
+     menunggu verifikasi.**
+  2 & 3. `tests/shipper/daftar-order.spec.ts` & `tests/transporter/daftar-order.spec.ts`
+     — kolom tabel Daftar Order berganti nama: **"Nama Kapal Tgl Permintaan
+     Muat" → "Nama Kapal Permintaan Muat & Closing Time"** (perubahan UI
+     aplikasi nyata per 2026-08-29, sejalan rilis fitur Open Stack/Closing).
+     Test diupdate mengikuti teks baru.
+  4. `tests/transporter/daftar-order.spec.ts` — test Info Tracking expand
+     asumsi baris/order PERTAMA di list selalu berkontainer "Menunggu
+     Proses"; tidak — kontainer order pertama saat run sudah berstatus
+     lanjut ("Sj Diterima Agen"), data demo bersama & berubah. BUKAN bug
+     locator (mekanisme klik `.tombol_info_tracking` → Bootstrap collapse
+     `#info_tracking_collapse<idorder>` normal, terverifikasi manual). Fix:
+     iterasi semua link Info Tracking sampai ketemu kontainer "Menunggu
+     Proses" (skip test bila tak ada sama sekali), bukan `.first()`.
+  - Re-run penuh pasca-fix (sama malam itu): 147 test, 143 lulus, 4 skip
+    (data-dependent, sama seperti biasa), **0 gagal**, 18,3 mnt. Konfirmasi
+    bersih end-to-end registrasi → lelang → order, ketiga peran.
+
 ## Transporter (mulai 2026-08-20)
 
 - `tests/transporter/pengajuan-lelang.spec.ts` — 24 test (23 lulus, 1 skip:
@@ -159,6 +201,49 @@ ADMIN SILVERSTRIPE tidak ada di dokumen sumber).
 - Run 2026-08-28 (report/hasil-testing-2026-08-28.xlsx): 19 test — 6 setup
   login + 9 Edit Harga normal + 2 defect (test.fail) + 2 absensi shipper/
   transporter, semua LULUS (hijau atau lulus-defect terdokumentasi).
+
+## Data baru "Open Stack" (kalibrasi 2026-08-29, belum ada test)
+
+Field jadwal kapal baru berlabel "Open Stack" (tanggal dd/mm/yyyy), tampil
+berdampingan dgn Closing/Closing Time. Sumber input: form Tambah/Edit Jadwal
+transporter di halaman Lihat Jadwal `/home/masterjadwal1/<hash>` — label
+"Open Stack" TANPA asterisk (opsional), input id `openstack`; varian connecting
+`openstack_awal_connecting`. Data demo baru ada di lelang 1089
+(LELANGFCU/28082026IK, kapal KMLYR001/KMMLY001) + ordernya.
+
+Tampil di (scan outerHTML semua halaman menu 3 peran + halaman aksi):
+- Transporter: (1) Lihat Jadwal — kolom tabel "Open Stack" (sortable) antara
+  Voyage & Closing Time; (2) Detail Pengajuan Lelang /lelang/detaillistLelang/<id>
+  — blok info kapal "Open Stack : <tgl>"; (3) Detail Order /order/orderdetail/<hash>
+  — § 1. PEMESANAN blok PELAYARAN (Voyage, Open Stack, Closing).
+- Shipper: (1) hasil Cari Penawaran (carirute?from=search) — info kapal per
+  penawaran; (2) Detail Order — blok PELAYARAN sama.
+- Admin: Detail Order saja (blok PELAYARAN sama). TIDAK ada di master admin
+  mana pun / detail & edit lelang admin (view admin tak memuat blok jadwal).
+- Semua kemunculan display dobel markup desktop+mobile (kartu `am-flex2`);
+  label di detail order dirender juga utk order lama (nilai kosong).
+
+TIDAK tampil di: Cek Jadwal /lelang/carijadwal (hasil Meratus hanya Closing),
+list lelang semua tab, tab Harga & Jadwal 1–5, detail nego, tracking,
+orderlist. Belum dicek: modal jadwal connecting (ajax/getJadwalConnecting) —
+tak ada trigger `.modal_conecting` di data demo saat kalibrasi.
+
+Lanjutan 2026-08-29 — 4 halaman aksi Daftar Order ADMIN (dicek atas
+permintaan user; order uji 20260829-02602 / OrderID 1462, connecting,
+Open Stack terisi; Edit Status Order dicek di order 20260828-02602 karena
+item menu itu TIDAK tersedia utk status ORDER BARU):
+- Ganti Jadwal /order/ganti_jadwal/<hash>: ADA — blok PELAYARAN order +
+  FORM input jadwal baru berlabel "Open Stack" (input id `open_stack`,
+  form-group id `open_stack1`, tanpa asterisk) termasuk seksi connecting.
+- Edit Data Order /order/edit_inputpesanan/<hash>: ADA — blok PELAYARAN
+  (di sini label pasangannya "Closing Time", bukan "Closing").
+- Edit Status Order /order/editstatusorder/<hash>: ADA — blok PELAYARAN;
+  nilai kosong dirender strip "-".
+- Alihkan Order: ADA — ringkasan order (Open Stack di antara ETD-ETA &
+  Closing Time) + tiap baris tabel harga penawaran pengganti ("Open Stack:
+  <tgl>" di sel kapal). AWAS: URL /order/alihkanorder/<hash> polos
+  me-redirect ke listlelang; wajib query dari klik menu baris
+  (?idorder=<hash>&alihkan=yes&lelang=<hash>).
 
 ## Status (2026-08-13) — semua suite hijau
 
