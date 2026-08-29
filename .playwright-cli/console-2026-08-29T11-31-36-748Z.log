@@ -1,0 +1,18 @@
+[    1021ms] Cannot use import statement outside a module
+[    1079ms] ReferenceError: Chart is not defined
+    at https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/js/scripts-init/charts/chartjs.js:8:13
+[    1315ms] Unexpected token '<'
+[    1316ms] Unexpected token '<'
+[    1476ms] Uncaught TypeError: expect element to be DOM Element, but got null
+    at n.init (https://cdnjs.cloudflare.com/ajax/libs/smooth-scrollbar/8.5.2/smooth-scrollbar.js:24:264)
+    at <anonymous> (https://phbidlautdemo.prahu-hub.com/home/akunsaya:5291:14)
+[    1493ms] [LOG] Akun Sayanamanya @ https://phbidlautdemo.prahu-hub.com/home/akunsaya:1755
+[    1504ms] [LOG] WebSocket connection @ https://phbidlautdemo.prahu-hub.com/home/akunsaya:5687
+[    1504ms] [LOG] WebSocket connection attempting... @ https://phbidlautdemo.prahu-hub.com/home/akunsaya:5765
+[    1636ms] [LOG] WebSocket connected @ https://phbidlautdemo.prahu-hub.com/home/akunsaya:5696
+[    1640ms] [LOG] update_dashboard_order_laut @ https://phbidlautdemo.prahu-hub.com/home/akunsaya:5737
+[    1675ms] [LOG] Connected @ https://phbidlautdemo.prahu-hub.com/home/akunsaya:5737
+[    1762ms] [LOG] 200 xhrglobal @ https://phbidlautdemo.prahu-hub.com/home/akunsaya:5618
+[    1813ms] [LOG] 200 xhrglobal @ https://phbidlautdemo.prahu-hub.com/home/akunsaya:5618
+[    3504ms] TypeError: $(...).DataTable is not a function
+    at https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/js/scripts-init/tables.js:7:23

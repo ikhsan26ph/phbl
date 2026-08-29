@@ -148,11 +148,28 @@ ADMIN SILVERSTRIPE tidak ada di dokumen sumber).
   Tracking" ikut cocok]).
 - Gabungan transporter (5 spec): 49 test + 6 setup = 55 lulus, 2 skip,
   0 gagal (run serial 7,6 mnt, 2026-08-20).
+- 2026-08-29 (Akun Saya/Profil/Preference Notif bidder, read-only):
+  `tests/transporter/akun-saya.spec.ts` (7 test: 4 lulus, 2 skip [akun demo
+  tanpa file NPWP/SIUP], 1 lulus-defect test.fail — defect #10),
+  `tests/transporter/profil.spec.ts` (5 test, lulus; baris ulasan #isitrayek
+  dimuat ASYNC pasca-klik tab → wajib waitFor sebelum count, skip palsu
+  terbukti), `tests/transporter/preference-notif.spec.ts` (6 test, lulus;
+  pola pane sama dgn shipper, istilah UI Shipper/Transporter), dan project
+  BARU `tests/transporter-sub/akun-saya.spec.ts` (6 test, lulus: sub user
+  hanya Nama/Email/Nomor Whatsapp/Bagian Staff tanpa tombol edit, menu tanpa
+  Preference Notif, akses langsung editakunsaya/preference → redirect +
+  alert DOM role=alert ".alert_negatif" "Anda Tidak Memiliki Akses Ke
+  Halaman Tersebut", Profil terbuka). Catatan dev non-defect: form Edit
+  Profil memuat tgl_berdiri "20/00/0719" utk Tahun Berdiri "2000" (konversi
+  tahun→tanggal salah); galeri profil = collapse berid `pengiriman_collapse`
+  / `icon_pengiriman` (warisan copy-paste). Breadcrumb Beranda di halaman
+  ini = LINK ke /lelang/listLelang (beda dgn list lelang yang SPAN).
 - Config diperkeras 2026-08-20: `workers: 1` juga lokal (antar-file
   paralel satu akun → server demo timeout, terbukti) dan `timeout: 60s`
   (lonjakan latensi sporadis server demo).
-- Belum: Akun Saya/Profil/Preference Notif (bidder), + semua alur mutasi
-  (harga, jadwal, respon nego, input unit, invoice, penugasan petugas).
+- Belum: semua alur mutasi (harga, jadwal, respon nego, input unit,
+  invoice, penugasan petugas). Akun Saya/Profil/Preference Notif selesai
+  2026-08-29 (lihat butir di bawah).
 
 ## Admin (mulai 2026-08-28)
 
@@ -202,7 +219,70 @@ ADMIN SILVERSTRIPE tidak ada di dokumen sumber).
   login + 9 Edit Harga normal + 2 defect (test.fail) + 2 absensi shipper/
   transporter, semua LULUS (hijau atau lulus-defect terdokumentasi).
 
-## Data baru "Open Stack" (kalibrasi 2026-08-29, belum ada test)
+## Open Stack — test selesai 2026-08-29 (kalibrasi di bawah tetap berlaku)
+
+- Spec: `tests/transporter/open-stack.spec.ts` (7 test: kolom & nilai Lihat
+  Jadwal, form Tambah Jadwal direct/connecting [buka + pilih jenis saja,
+  TANPA submit], sel kapal Detail Pengajuan Lelang, blok PELAYARAN Detail
+  Order), `tests/shipper/open-stack.spec.ts` (3: hasil Cari Penawaran,
+  Detail Order), `tests/admin/open-stack.spec.ts` (7: Detail Order, Ganti
+  Jadwal [blok + form #open_stack], Edit Data Order [label "Closing Time"],
+  Edit Status Order, Alihkan Order [ringkasan + tabel pengganti]). Rule
+  acuan (hasil kalibrasi, bukan dokumen sumber): `docs/rules/open-stack.md`.
+  Run 2026-08-29: 17 test semua LULUS (+6 setup), ±4 mnt.
+- Data uji: lelang LELANGFCU/28082026IK (id 1089) dipilih dinamis dari list;
+  test skip bila datanya hilang. Order KM. Layar tampil Open Stack
+  29/08/2026; order KM. Malay (20260829-06501, 20260828-06506) tampil "-"
+  walau jadwalnya ber-Open Stack 07/09/2026 → TEMUAN dilaporkan ke dev
+  (by-design snapshot vs bug belum jelas), test mencari order ber-tanggal
+  dengan iterasi, bukan asumsi baris pertama.
+- Jebakan yang terbukti saat menulis spec ini: (1) teks MENTAH sel kapal
+  tabel penawaran tanpa spasi antar-div ("KMLYR001Open Stack: …Closing: …")
+  → regex `toHaveText` wajib `\s*` (bukan `\s+`) di batas div; (2)
+  `getByText(nomorLelang).first()` menangkap duplikat mobile HIDDEN → filter
+  `{ visible: true }`; (3) ringkasan Alihkan Order memakai markup lain
+  (label "Open Stack :" + div nilai, class ter-obfuscate `_1pEVDa`) dan
+  nilai kosong dirender KOSONG bukan "-" (temuan minor); (4) baris info
+  order (link Detail Order) berada di BAWAH baris data (nextElementSibling),
+  href relatif tanpa "/"; (5) klik Edit Jadwal pada jadwal yang sudah
+  dipakai order → native alert "Jadwal sudah di order, tidak dapat di edit".
+
+## Open Stack — eksplorasi MUTASI & modul baru (2026-08-29, izin user "lakukan apapun di demo")
+
+- Rule hasil eksplorasi (satu-satunya acuan, tidak ada dokumen resmi):
+  `docs/rules/open-stack.md` — WAJIB dibaca sebelum menyentuh modul ini.
+- Spec mutasi: `tests/transporter/open-stack-jadwal.spec.ts` (6 test: popover
+  required berurutan [Open Stack dilewati], siklus tambah→Lihat Jadwal→
+  Detail Lelang→edit→hapus jadwal direct, "Open Stack tidak divalidasi"
+  [perilaku teramati; bila dev menambah validasi test ini yang gagal],
+  connecting + modal #modal_transit, template import [kolom tanpa Open Stack]
+  + test.fail defect #11) dan `tests/admin/open-stack-ganti-jadwal.spec.ts`
+  (1 test: ubah Open Stack order via Ganti Jadwal → Detail Order & Riwayat →
+  revert di finally). Run 2026-08-29: 12/12 lulus (±3,5 mnt + 1,3 mnt).
+- Fakta kunci: (1) nilai Open Stack di ORDER = snapshot saat order dibuat;
+  Ganti Jadwal admin mengubah order saja, jadwal master transporter tetap
+  (menjelaskan "-" pada order KM. Malay); (2) Open Stack TANPA validasi
+  tanggal sama sekali (setelah Closing/ETA, lampau) — kandidat rule/defect;
+  (3) daterangepicker: WAJIB `pressSequentially` + Enter, `fill()` di-reset;
+  prefill form Edit Jadwal/Ganti Jadwal diisi JS SETELAH load → tunggu
+  `toHaveValue(lama)` sebelum mengetik (terbukti ketikan tertimpa);
+  (4) tombol Simpan beda per jenis: `#submitonce` (direct/edit),
+  `#submitonce_connecting`, admin Ganti Jadwal `#submitonce1` + SweetAlert2
+  konfirmasi "Ya"; (5) Hapus = SweetAlert2 "Hapus?"; jadwal ter-order
+  (`sudahorder=1`) tak bisa edit (alert native) — hapusnya belum
+  diverifikasi (klik diblokir kebijakan otomasi saat kalibrasi).
+- Fixture tersisa di demo (sengaja): jadwal "AUTOTEST Kapal / AT-OS-1"
+  (id 1870, harga LELANGFCU, Open Stack master 01/01/2020) yang sudah
+  di-order oleh order uji 20260829-06504 (shipper, ORDER BARU, Open Stack
+  order 15/09/2026 via Ganti Jadwal). Jangan hapus manual — dipakai test
+  admin Ganti Jadwal sebagai target prioritas.
+- Pembuatan order dari Cari Penawaran (tombol Pesan → Isi Data Pesanan →
+  swal "Konfirmasi Pesanan" → Lanjutkan → Input Muatan) dieksplorasi manual
+  saja: field Tanggal Permintaan Muat memakai bootstrapMaterialDatePicker
+  (bukan daterangepicker; ketik tidak bekerja, butuh widget/API) — belum
+  ada test-nya.
+
+## Data baru "Open Stack" (kalibrasi awal 2026-08-29)
 
 Field jadwal kapal baru berlabel "Open Stack" (tanggal dd/mm/yyyy), tampil
 berdampingan dgn Closing/Closing Time. Sumber input: form Tambah/Edit Jadwal
@@ -290,13 +370,45 @@ item menu itu TIDAK tersedia utk status ORDER BARU):
    walau checkbox terkait TIDAK dicentang di grup ujinya — mengindikasikan
    sebagian besar action-menu Daftar Order TIDAK digerbangi hak akses granular
    sama sekali (beda dari kasus Edit Harga yang justru menolak walau granted).
+10. (2026-08-29) Transporter akun utama: link "Edit Akun Saya" →
+    /home/editakunsaya menjawab **HTTP 500** "[Emergency] Uncaught
+    SilverStripe\ORM\Connect\DatabaseException: Couldn't run query:
+    SELECT * FROM File where ID=" (ID kosong — diduga akun tanpa file
+    NPWP/SIUP, nilai "-" di Akun Saya). Halaman error membocorkan stack
+    trace + potongan source code (mode debug aktif di demo). Sub user tidak
+    kena (aksesnya ditolak lebih dulu). Didokumentasikan via test.fail() di
+    tests/transporter/akun-saya.spec.ts.
+11. (2026-08-29) Template Import Jadwal (`assets/Format/Template Jadwal PH
+    Bid.xlsx`, tombol "Download template disini" di Tambah Jadwal) berisi
+    11 sheet: selain sheet template, ada KPI/PIVOT/CHART (nama shipper &
+    partner, order per rute), formula QUERY ke laporan internal, "Annwijzing
+    TCI", **"LinkedIn" = data survei berisi nama, jenis kelamin, kota, NOMOR
+    TELEPON responden**, "Penelitian". Aset publik → kebocoran data pribadi/
+    internal. Sekalian: template TANPA kolom Open Stack (gap fitur).
+    Didokumentasikan via test.fail() di tests/transporter/open-stack-jadwal.spec.ts.
 
 ## Langkah berikutnya (belum dikerjakan)
 
 - Sisa modul shipper: Pengajuan Lelang (mutasi — TANYA user dulu boleh/tidak
   membuat data lelang di demo), Dashboard, Daftar Order, Cek Jadwal, Laporan, dll.
-- Modul transporter (Harga & Jadwal, Daftar Order, Penugasan Tracking).
+- Transporter: semua modul read-only SELESAI (termasuk Akun Saya/Profil/
+  Preference Notif 2026-08-29); sisa = alur mutasi (harga, jadwal, respon
+  nego, input unit, invoice, penugasan petugas) — butuh izin user.
 - Modul admin lain (Validasi Akun, Setting, Master, Pengaturan Akun, sisa
   Daftar Order admin — banyak mutasi; Edit Harga sudah selesai 2026-08-28).
 - `.env.example` masih berisi kredensial asli — kosongkan sebelum git init.
 - Folder `specs/` & `specs/_challenge/` masih kosong (tujuan belum dijelaskan user).
+
+## Setup environment (Linux, 2026-08-29 — repo dipindah dari Windows)
+
+- Node **≥20** wajib (Playwright 1.62); sistem punya Node 18 → pakai nvm
+  (`.nvmrc` = 22, `nvm use`). Alias `default` nvm sudah di-set ke 22.19.0
+  dan `prefix` di `~/.npmrc` dihapus (bentrok dgn nvm).
+- `npm install` → `npx playwright install chromium` (deps sistem sudah lengkap).
+- `cp .env.example .env`, set `ADMIN_PATH=/`.
+- `playwright-cli` (kalibrasi) global: `npm i -g @playwright/cli@latest`
+  (terpasang di bin nvm Node 22, bukan `~/.npm-global`).
+- Verifikasi: `npx playwright test --project=setup` → 6 login lulus, `.auth/` terisi.
+- Shell Bash tool Claude Code = non-interaktif (`.bashrc` return di awal, nvm
+  tak dimuat); bila `node -v` masih 18 di sesi ini, prefix
+  `export PATH="$HOME/.nvm/versions/node/v22.19.0/bin:$PATH"` atau restart sesi.

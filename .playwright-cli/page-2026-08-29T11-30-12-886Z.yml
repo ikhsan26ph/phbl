@@ -1,0 +1,109 @@
+- generic [active] [ref=f10e1]:
+  - generic [ref=f10e2]:
+    - generic [ref=f10e3]:
+      - generic [ref=f10e4]:
+        - link [ref=f10e6] [cursor=pointer]:
+          - /url: https://phbidlautdemo.prahu-hub.com/
+        - button [ref=f10e10] [cursor=pointer]
+      - text:  
+      - generic [ref=f10e13]:
+        - generic [ref=f10e14]:
+          - generic [ref=f10e15]: PT. Muda Jaya Wijaya Karya Sentosa Indah Elok (IK)
+          - button "Sub User Bidder" [ref=f10e17]
+        - text: 
+        - generic [ref=f10e21]:
+          - generic [ref=f10e22]:
+            - generic [ref=f10e23]: Lingg - Sub User Bidder
+            - generic [ref=f10e24]: ikbidder@yopmail.com
+          - generic [ref=f10e25]: 
+          - link "" [ref=f10e28] [cursor=pointer]:
+            - /url: https://phbidlautdemo.prahu-hub.com/home/notification
+          - link [ref=f10e35] [cursor=pointer]:
+            - /url: https://phbidlautdemo.prahu-hub.com/user/do_logout
+    - generic [ref=f10e38]:
+      - generic [ref=f10e39]:
+        - text: 
+        - generic [ref=f10e40]:
+          - list [ref=f10e42]:
+            - listitem
+            - listitem [ref=f10e43]:
+              - link "PENGAJUAN LELANG" [ref=f10e44] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/lelang/listlelang
+            - listitem [ref=f10e47]:
+              - link "HARGA & JADWAL" [ref=f10e48] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/home/hargajadwal
+            - listitem [ref=f10e51]:
+              - link "PENGAJUAN NEGO" [ref=f10e52] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/lelang/pengajuannego
+            - listitem [ref=f10e55]:
+              - link "DAFTAR ORDER" [ref=f10e56] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/order/orderlist
+            - listitem [ref=f10e59]:
+              - link "PENUGASAN TRACKING" [ref=f10e60] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/home/penugasantracking
+            - listitem [ref=f10e63]:
+              - link "PROFIL" [ref=f10e64] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/home/myprofile
+            - listitem [ref=f10e67]:
+              - generic [ref=f10e68] [cursor=pointer]:
+                - text: PENGATURAN AKUN
+                - generic [ref=f10e71]: 
+            - listitem [ref=f10e72]:
+              - link "AKUN SAYA" [ref=f10e73] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/home/akunsaya
+          - generic [ref=f10e78]:
+            - paragraph [ref=f10e80]: KONTAK KAMI
+            - generic [ref=f10e81]:
+              - generic [ref=f10e82]: 
+              - text: "081246665023"
+            - generic [ref=f10e83]:
+              - generic [ref=f10e84]: 
+              - text: "081246665023"
+            - generic [ref=f10e85]:
+              - generic [ref=f10e86]: 
+              - text: csct@prahu-hub.com
+            - generic [ref=f10e87]:
+              - link [ref=f10e88] [cursor=pointer]:
+                - /url: https://facebook.com/sosmed.phbid
+              - link [ref=f10e90] [cursor=pointer]:
+                - /url: https://twitter.com/PrahuHub
+              - link [ref=f10e92] [cursor=pointer]:
+                - /url: https://instagram.com/phbid_/
+              - link [ref=f10e94] [cursor=pointer]:
+                - /url: https://www.youtube.com/channel/UC41VntroP3zKmXZYnGgtFdw
+              - link [ref=f10e96] [cursor=pointer]:
+                - /url: http://linkedin.com/in/ph-bid-aa5393211/
+      - generic [ref=f10e98]:
+        - generic [ref=f10e99]:
+          - generic [ref=f10e103]:
+            - link "Beranda" [ref=f10e105] [cursor=pointer]:
+              - /url: https://phbidlautdemo.prahu-hub.com/lelang/listLelang
+            - text: / Akun Saya
+          - alert [ref=f10e106]:
+            - button "Close" [ref=f10e107] [cursor=pointer]: ×
+            - text: Anda Tidak Memiliki Akses Ke Halaman Tersebut
+          - generic [ref=f10e108]: AKUN SAYA
+          - tabpanel [ref=f10e112]:
+            - generic [ref=f10e115]:
+              - generic [ref=f10e116]:
+                - generic [ref=f10e117]:
+                  - text: Nama
+                  - generic [ref=f10e118]: ":"
+                - generic [ref=f10e119]: Lingg - Sub User Bidder
+              - generic [ref=f10e121]:
+                - generic [ref=f10e122]:
+                  - text: Email
+                  - generic [ref=f10e123]: ":"
+                - generic [ref=f10e124]: ikbidder@yopmail.com
+              - generic [ref=f10e126]:
+                - generic [ref=f10e127]:
+                  - text: Nomor Whatsapp
+                  - generic [ref=f10e128]: ":"
+                - generic [ref=f10e129]: "-"
+              - generic [ref=f10e131]:
+                - generic [ref=f10e132]:
+                  - text: Bagian Staff
+                  - generic [ref=f10e133]: ":"
+                - generic [ref=f10e134]: Sub User Bidder
+        - paragraph [ref=f10e141]: © BETA 20260228 v1.3.28 - PH Bid Laut | Digital Logistic Platform
+  - text:   

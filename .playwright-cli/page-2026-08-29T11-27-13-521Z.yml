@@ -1,0 +1,92 @@
+- generic [active] [ref=f8e1]:
+  - generic [ref=f8e2]:
+    - 'heading "[Emergency] Uncaught SilverStripe\\ORM\\Connect\\DatabaseException: Couldn''t run query: SELECT * FROM File where ID= You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '''' at line 1" [level=1] [ref=f8e3]'
+    - heading "GET /home/editakunsaya" [level=3] [ref=f8e4]
+    - paragraph [ref=f8e5]:
+      - text: Line
+      - strong [ref=f8e6]: "64"
+      - text: in
+      - strong [ref=f8e7]: /var/www/phbidlautdemo/vendor/silverstripe/framework/src/ORM/Connect/DBConnector.php
+  - generic [ref=f8e8]:
+    - heading "Source" [level=3] [ref=f8e9]
+    - generic [ref=f8e10]: "55 if (!empty($sql)) { 56 $formatter = new SQLFormatter(); 57 $formattedSQL = $formatter->formatPlain($sql); 58 $msg = \"Couldn't run query:\\n\\n{$formattedSQL}\\n\\n{$msg}\"; 59 } 60 61 if ($errorLevel === E_USER_ERROR) { 62 // Treating errors as exceptions better allows for responding to errors 63 // in code, such as credential checking during installation 64 throw new DatabaseException($msg, 0, null, $sql, $parameters); 65 } else { 66 user_error($msg ?? '', $errorLevel ?? 0); 67 } 68 } 69 70 /**"
+  - generic [ref=f8e11]:
+    - heading "Trace" [level=3] [ref=f8e12]
+    - list [ref=f8e13]:
+      - listitem [ref=f8e14]: SilverStripe\ORM\Connect\DBConnector->databaseError MySQLiConnector.php:194
+      - listitem [ref=f8e15]: SilverStripe\ORM\Connect\MySQLiConnector->query Database.php:159
+      - listitem [ref=f8e16]: "SilverStripe\\ORM\\Connect\\Database->SilverStripe\\ORM\\Connect\\{closure} Database.php:258"
+      - listitem [ref=f8e17]: SilverStripe\ORM\Connect\Database->benchmarkQuery Database.php:160
+      - listitem [ref=f8e18]: SilverStripe\ORM\Connect\Database->query MySQLDatabase.php:399
+      - listitem [ref=f8e19]: SilverStripe\ORM\Connect\MySQLDatabase->query DB.php:353
+      - listitem [ref=f8e20]: SilverStripe\ORM\DB::query PageController.php:3752
+      - listitem [ref=f8e21]: PageController->getfileName
+      - listitem [ref=f8e22]: call_user_func_array ViewableData.php:488
+      - listitem [ref=f8e23]: SilverStripe\View\ViewableData->obj ViewableData_Customised.php:75
+      - listitem [ref=f8e24]: SilverStripe\View\ViewableData_Customised->obj ViewableData.php:550
+      - listitem [ref=f8e25]: SilverStripe\View\ViewableData->XML_val SSViewer_Scope.php:323
+      - listitem [ref=f8e26]: SilverStripe\View\SSViewer_Scope->__call SSViewer_DataPresenter.php:309
+      - listitem [ref=f8e27]: SilverStripe\View\SSViewer_DataPresenter->__call .cachethemes.prahutheme.templates.Layout.EditAkunSaya.ss:958
+      - listitem [ref=f8e28]: include(/tmp/silverstripe-cache-php8.1.34-var-www-phbidlautdemo/www-data/.cachethemes.prahutheme.templates.Layout.EditAkunSaya.ss) SSViewer.php:605
+      - listitem [ref=f8e29]: SilverStripe\View\SSViewer->includeGeneratedTemplate SSViewer.php:677
+      - listitem [ref=f8e30]: SilverStripe\View\SSViewer->process SSViewer.php:671
+      - listitem [ref=f8e31]: "SilverStripe\\View\\SSViewer->SilverStripe\\View\\{closure} SSViewer_DataPresenter.php:330"
+      - listitem [ref=f8e32]: SilverStripe\View\SSViewer_DataPresenter->processTemplateOverride SSViewer_DataPresenter.php:363
+      - listitem [ref=f8e33]: SilverStripe\View\SSViewer_DataPresenter->getValueSource SSViewer_DataPresenter.php:165
+      - listitem [ref=f8e34]: SilverStripe\View\SSViewer_DataPresenter->getInjectedValue SSViewer_DataPresenter.php:296
+      - listitem [ref=f8e35]: SilverStripe\View\SSViewer_DataPresenter->__call .cachethemes.prahutheme.templates.Page.ss:672
+      - listitem [ref=f8e36]: include(/tmp/silverstripe-cache-php8.1.34-var-www-phbidlautdemo/www-data/.cachethemes.prahutheme.templates.Page.ss) SSViewer.php:605
+      - listitem [ref=f8e37]: SilverStripe\View\SSViewer->includeGeneratedTemplate SSViewer.php:677
+      - listitem [ref=f8e38]: SilverStripe\View\SSViewer->process ViewableData.php:404
+      - listitem [ref=f8e39]: SilverStripe\View\ViewableData->renderWith HomePage.php:7416
+      - listitem [ref=f8e40]: HomePageController->editAkunSaya RequestHandler.php:323
+      - listitem [ref=f8e41]: SilverStripe\Control\RequestHandler->handleAction Controller.php:286
+      - listitem [ref=f8e42]: SilverStripe\Control\Controller->handleAction RequestHandler.php:202
+      - listitem [ref=f8e43]: SilverStripe\Control\RequestHandler->handleRequest Controller.php:212
+      - listitem [ref=f8e44]: SilverStripe\Control\Controller->handleRequest ContentController.php:251
+      - listitem [ref=f8e45]: SilverStripe\CMS\Controllers\ContentController->handleRequest Director.php:361
+      - listitem [ref=f8e46]: "SilverStripe\\Control\\Director->SilverStripe\\Control\\{closure} VersionedHTTPMiddleware.php:41"
+      - listitem [ref=f8e47]: SilverStripe\Versioned\VersionedHTTPMiddleware->process HTTPMiddlewareAware.php:62
+      - listitem [ref=f8e48]: "SilverStripe\\Control\\Director->SilverStripe\\Control\\Middleware\\{closure} LoginSessionMiddleware.php:29"
+      - listitem [ref=f8e49]: SilverStripe\SessionManager\Middleware\LoginSessionMiddleware->process HTTPMiddlewareAware.php:62
+      - listitem [ref=f8e50]: "SilverStripe\\Control\\Director->SilverStripe\\Control\\Middleware\\{closure} ConfirmationMiddleware.php:254"
+      - listitem [ref=f8e51]: SilverStripe\Control\Middleware\ConfirmationMiddleware->process HTTPMiddlewareAware.php:62
+      - listitem [ref=f8e52]: "SilverStripe\\Control\\Director->SilverStripe\\Control\\Middleware\\{closure} ConfirmationMiddleware.php:254"
+      - listitem [ref=f8e53]: SilverStripe\Control\Middleware\ConfirmationMiddleware->process HTTPMiddlewareAware.php:62
+      - listitem [ref=f8e54]: "SilverStripe\\Control\\Director->SilverStripe\\Control\\Middleware\\{closure} PasswordExpirationMiddleware.php:84"
+      - listitem [ref=f8e55]: SilverStripe\Security\PasswordExpirationMiddleware->process HTTPMiddlewareAware.php:62
+      - listitem [ref=f8e56]: "SilverStripe\\Control\\Director->SilverStripe\\Control\\Middleware\\{closure} BasicAuthMiddleware.php:68"
+      - listitem [ref=f8e57]: SilverStripe\Security\BasicAuthMiddleware->process HTTPMiddlewareAware.php:62
+      - listitem [ref=f8e58]: "SilverStripe\\Control\\Director->SilverStripe\\Control\\Middleware\\{closure} AuthenticationMiddleware.php:61"
+      - listitem [ref=f8e59]: SilverStripe\Security\AuthenticationMiddleware->process HTTPMiddlewareAware.php:62
+      - listitem [ref=f8e60]: "SilverStripe\\Control\\Director->SilverStripe\\Control\\Middleware\\{closure} ExecMetricMiddleware.php:20"
+      - listitem [ref=f8e61]: SilverStripe\Control\Middleware\ExecMetricMiddleware->process HTTPMiddlewareAware.php:62
+      - listitem [ref=f8e62]: "SilverStripe\\Control\\Director->SilverStripe\\Control\\Middleware\\{closure} CanonicalURLMiddleware.php:190"
+      - listitem [ref=f8e63]: SilverStripe\Control\Middleware\CanonicalURLMiddleware->process HTTPMiddlewareAware.php:62
+      - listitem [ref=f8e64]: "SilverStripe\\Control\\Director->SilverStripe\\Control\\Middleware\\{closure} HTTPCacheControlMiddleware.php:43"
+      - listitem [ref=f8e65]: SilverStripe\Control\Middleware\HTTPCacheControlMiddleware->process HTTPMiddlewareAware.php:62
+      - listitem [ref=f8e66]: "SilverStripe\\Control\\Director->SilverStripe\\Control\\Middleware\\{closure} ChangeDetectionMiddleware.php:28"
+      - listitem [ref=f8e67]: SilverStripe\Control\Middleware\ChangeDetectionMiddleware->process HTTPMiddlewareAware.php:62
+      - listitem [ref=f8e68]: "SilverStripe\\Control\\Director->SilverStripe\\Control\\Middleware\\{closure} FlushMiddleware.php:31"
+      - listitem [ref=f8e69]: SilverStripe\Control\Middleware\FlushMiddleware->process HTTPMiddlewareAware.php:62
+      - listitem [ref=f8e70]: "SilverStripe\\Control\\Director->SilverStripe\\Control\\Middleware\\{closure} RequestProcessor.php:69"
+      - listitem [ref=f8e71]: SilverStripe\Control\RequestProcessor->process HTTPMiddlewareAware.php:62
+      - listitem [ref=f8e72]: "SilverStripe\\Control\\Director->SilverStripe\\Control\\Middleware\\{closure} SessionMiddleware.php:20"
+      - listitem [ref=f8e73]: SilverStripe\Control\Middleware\SessionMiddleware->process HTTPMiddlewareAware.php:62
+      - listitem [ref=f8e74]: "SilverStripe\\Control\\Director->SilverStripe\\Control\\Middleware\\{closure} AllowedHostsMiddleware.php:60"
+      - listitem [ref=f8e75]: SilverStripe\Control\Middleware\AllowedHostsMiddleware->process HTTPMiddlewareAware.php:62
+      - listitem [ref=f8e76]: "SilverStripe\\Control\\Director->SilverStripe\\Control\\Middleware\\{closure} TrustedProxyMiddleware.php:176"
+      - listitem [ref=f8e77]: SilverStripe\Control\Middleware\TrustedProxyMiddleware->process HTTPMiddlewareAware.php:62
+      - listitem [ref=f8e78]: "SilverStripe\\Control\\Director->SilverStripe\\Control\\Middleware\\{closure} HTTPMiddlewareAware.php:65"
+      - listitem [ref=f8e79]: SilverStripe\Control\Director->callMiddleware Director.php:370
+      - listitem [ref=f8e80]: SilverStripe\Control\Director->handleRequest HTTPApplication.php:120
+      - listitem [ref=f8e81]: "SilverStripe\\Control\\HTTPApplication::SilverStripe\\Control\\{closure}"
+      - listitem [ref=f8e82]: call_user_func HTTPApplication.php:143
+      - listitem [ref=f8e83]: "SilverStripe\\Control\\HTTPApplication->SilverStripe\\Control\\{closure} HTTPMiddlewareAware.php:65"
+      - listitem [ref=f8e84]: SilverStripe\Control\HTTPApplication->callMiddleware HTTPApplication.php:144
+      - listitem [ref=f8e85]: SilverStripe\Control\HTTPApplication->execute HTTPApplication.php:119
+      - listitem [ref=f8e86]: SilverStripe\Control\HTTPApplication->handle index.php:25
+  - generic [ref=f8e87]:
+    - heading "Website Error" [level=1] [ref=f8e88]
+    - heading "There has been an error" [level=3] [ref=f8e89]
+    - paragraph [ref=f8e90]: The website server has not been able to respond to your request

@@ -1,0 +1,18 @@
+[    1886ms] Cannot use import statement outside a module
+[    1916ms] ReferenceError: Chart is not defined
+    at https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/js/scripts-init/charts/chartjs.js:8:13
+[    1919ms] Unexpected token '<'
+[    1919ms] Unexpected token '<'
+[    1996ms] Uncaught TypeError: expect element to be DOM Element, but got null
+    at n.init (https://cdnjs.cloudflare.com/ajax/libs/smooth-scrollbar/8.5.2/smooth-scrollbar.js:24:264)
+    at <anonymous> (https://phbidlautdemo.prahu-hub.com/order/historyupdateorder/MHZROHFLSlBlKyswU0p3SlpBRm5Idz09:5157:14)
+[    2024ms] [LOG] Daftar Ordernamanya @ https://phbidlautdemo.prahu-hub.com/order/historyupdateorder/MHZROHFLSlBlKyswU0p3SlpBRm5Idz09:2039
+[    2041ms] [LOG] WebSocket connection @ https://phbidlautdemo.prahu-hub.com/order/historyupdateorder/MHZROHFLSlBlKyswU0p3SlpBRm5Idz09:5553
+[    2041ms] [LOG] WebSocket connection attempting... @ https://phbidlautdemo.prahu-hub.com/order/historyupdateorder/MHZROHFLSlBlKyswU0p3SlpBRm5Idz09:5631
+[    2329ms] [LOG] WebSocket connected @ https://phbidlautdemo.prahu-hub.com/order/historyupdateorder/MHZROHFLSlBlKyswU0p3SlpBRm5Idz09:5562
+[    2338ms] [LOG] update_dashboard_order_laut @ https://phbidlautdemo.prahu-hub.com/order/historyupdateorder/MHZROHFLSlBlKyswU0p3SlpBRm5Idz09:5603
+[    2431ms] [LOG] Connected @ https://phbidlautdemo.prahu-hub.com/order/historyupdateorder/MHZROHFLSlBlKyswU0p3SlpBRm5Idz09:5603
+[    2462ms] [LOG] 200 xhrglobal @ https://phbidlautdemo.prahu-hub.com/order/historyupdateorder/MHZROHFLSlBlKyswU0p3SlpBRm5Idz09:5484
+[    2516ms] [LOG] 200 xhrglobal @ https://phbidlautdemo.prahu-hub.com/order/historyupdateorder/MHZROHFLSlBlKyswU0p3SlpBRm5Idz09:5484
+[    4042ms] TypeError: $(...).DataTable is not a function
+    at https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/js/scripts-init/tables.js:7:23

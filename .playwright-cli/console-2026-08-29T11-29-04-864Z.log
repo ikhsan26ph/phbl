@@ -1,0 +1,28 @@
+[    1184ms] ReferenceError: dete is not defined
+    at https://phbidlautdemo.prahu-hub.com/user/login:1465:5
+[    2415ms] TypeError: Failed to execute 'observe' on 'IntersectionObserver': parameter 1 is not of type 'Element'.
+    at https://phbidlautdemo.prahu-hub.com/user/login:1932:14
+[    2442ms] [VERBOSE] [DOM] Input elements should have autocomplete attributes (suggested: "current-password"): (More info: https://goo.gl/9p2vKq) %o @ https://phbidlautdemo.prahu-hub.com/user/login:0
+[    2451ms] [LOG] 0 @ https://phbidlautdemo.prahu-hub.com/user/login:1426
+[    2452ms] [LOG] undefined scr @ https://phbidlautdemo.prahu-hub.com/user/login:1430
+[    7212ms] [LOG] ddd @ https://phbidlautdemo.prahu-hub.com/user/login:1525
+[    7386ms] [LOG] {pesan: SUB_OPERATOR, status: 1, user_aktif: 1, hapus: 0, user_aktif_sub: null} @ https://phbidlautdemo.prahu-hub.com/user/login:1558
+[    7386ms] [LOG] {pesan: SUB_OPERATOR, status: 1, user_aktif: 1, hapus: 0, user_aktif_sub: null} a @ https://phbidlautdemo.prahu-hub.com/user/login:1560
+[    8559ms] Cannot use import statement outside a module
+[    8602ms] ReferenceError: Chart is not defined
+    at https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/js/scripts-init/charts/chartjs.js:8:13
+[    8804ms] Unexpected token '<'
+[    8804ms] Unexpected token '<'
+[    8907ms] Uncaught TypeError: expect element to be DOM Element, but got null
+    at n.init (https://cdnjs.cloudflare.com/ajax/libs/smooth-scrollbar/8.5.2/smooth-scrollbar.js:24:264)
+    at <anonymous> (https://phbidlautdemo.prahu-hub.com/home/akunsaya:5086:14)
+[    8925ms] [LOG] Akun Sayanamanya @ https://phbidlautdemo.prahu-hub.com/home/akunsaya:1750
+[    8939ms] [LOG] WebSocket connection @ https://phbidlautdemo.prahu-hub.com/home/akunsaya:5482
+[    8940ms] [LOG] WebSocket connection attempting... @ https://phbidlautdemo.prahu-hub.com/home/akunsaya:5560
+[    9067ms] [LOG] WebSocket connected @ https://phbidlautdemo.prahu-hub.com/home/akunsaya:5491
+[    9076ms] [LOG] update_dashboard_order_laut @ https://phbidlautdemo.prahu-hub.com/home/akunsaya:5532
+[    9102ms] [LOG] Connected @ https://phbidlautdemo.prahu-hub.com/home/akunsaya:5532
+[    9215ms] [LOG] 200 xhrglobal @ https://phbidlautdemo.prahu-hub.com/home/akunsaya:5413
+[    9262ms] [LOG] 200 xhrglobal @ https://phbidlautdemo.prahu-hub.com/home/akunsaya:5413
+[   10940ms] TypeError: $(...).DataTable is not a function
+    at https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/js/scripts-init/tables.js:7:23

@@ -1,0 +1,156 @@
+- generic [active] [ref=f4e1]:
+  - generic [ref=f4e2]:
+    - generic [ref=f4e3]:
+      - generic [ref=f4e4]:
+        - link [ref=f4e6] [cursor=pointer]:
+          - /url: https://phbidlautdemo.prahu-hub.com/
+        - button [ref=f4e10] [cursor=pointer]
+      - text:  
+      - generic [ref=f4e13]:
+        - generic [ref=f4e14]:
+          - generic [ref=f4e15]: Admin PH Bid
+          - button "Administrator" [ref=f4e17]
+        - text: 
+        - generic [ref=f4e21]:
+          - generic [ref=f4e22]:
+            - generic [ref=f4e23]: Admin PH Bid
+            - generic [ref=f4e24]: prahu.bid20@gmail.com
+          - generic [ref=f4e25]: 
+          - link "" [ref=f4e28] [cursor=pointer]:
+            - /url: https://phbidlautdemo.prahu-hub.com/home/notification
+          - link [ref=f4e35] [cursor=pointer]:
+            - /url: https://phbidlautdemo.prahu-hub.com/user/do_logout
+    - generic [ref=f4e38]:
+      - generic [ref=f4e39]:
+        - text: 
+        - generic [ref=f4e40]:
+          - list [ref=f4e42]:
+            - listitem
+            - listitem [ref=f4e43]:
+              - link "CARI PENAWARAN" [ref=f4e44] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/lelang/carirute
+            - listitem [ref=f4e45]: MENU ADMIN
+            - listitem [ref=f4e46]:
+              - generic [ref=f4e47] [cursor=pointer]:
+                - text: DASHBOARD
+                - generic [ref=f4e50]: 
+            - listitem [ref=f4e51]:
+              - generic [ref=f4e52] [cursor=pointer]:
+                - text: ANALITIK
+                - generic [ref=f4e55]: 
+            - listitem [ref=f4e56]:
+              - link "PENGAJUAN LELANG" [ref=f4e57] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/lelang/listlelang
+            - listitem [ref=f4e60]:
+              - link "PENGAJUAN NEGO" [ref=f4e61] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/lelang/pengajuannego
+            - listitem [ref=f4e64]:
+              - link [ref=f4e65] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/order/orderlist
+            - listitem [ref=f4e68]:
+              - link "PENUGASAN TRACKING" [ref=f4e69] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/home/penugasantracking
+            - listitem [ref=f4e72]:
+              - link "CEK JADWAL" [ref=f4e73] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/lelang/carijadwal
+            - listitem [ref=f4e76]:
+              - generic [ref=f4e77] [cursor=pointer]:
+                - text: LAPORAN
+                - generic [ref=f4e80]: 
+            - listitem [ref=f4e81]:
+              - generic [ref=f4e82] [cursor=pointer]:
+                - text: VALIDASI AKUN
+                - generic [ref=f4e85]: 
+            - listitem [ref=f4e86]:
+              - generic [ref=f4e87] [cursor=pointer]:
+                - text: SETTING
+                - generic [ref=f4e90]: 
+            - listitem [ref=f4e91]:
+              - generic [ref=f4e92] [cursor=pointer]:
+                - text: MASTER
+                - generic [ref=f4e95]: 
+            - listitem [ref=f4e96]:
+              - generic [ref=f4e97] [cursor=pointer]:
+                - text: PENGATURAN AKUN
+                - generic [ref=f4e100]: 
+            - listitem [ref=f4e101]:
+              - link "AKUN SAYA" [ref=f4e102] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/home/akunsaya
+            - listitem [ref=f4e105]: MENU TRANSPORTER
+            - listitem [ref=f4e106]:
+              - link "HARGA & JADWAL" [ref=f4e107] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/home/hargajadwal
+          - generic [ref=f4e112]:
+            - paragraph [ref=f4e114]: KONTAK KAMI
+            - generic [ref=f4e115]:
+              - generic [ref=f4e116]: 
+              - text: "081246665023"
+            - generic [ref=f4e117]:
+              - generic [ref=f4e118]: 
+              - text: "081246665023"
+            - generic [ref=f4e119]:
+              - generic [ref=f4e120]: 
+              - text: csct@prahu-hub.com
+            - generic [ref=f4e121]:
+              - link [ref=f4e122] [cursor=pointer]:
+                - /url: https://facebook.com/sosmed.phbid
+              - link [ref=f4e124] [cursor=pointer]:
+                - /url: https://twitter.com/PrahuHub
+              - link [ref=f4e126] [cursor=pointer]:
+                - /url: https://instagram.com/phbid_/
+              - link [ref=f4e128] [cursor=pointer]:
+                - /url: https://www.youtube.com/channel/UC41VntroP3zKmXZYnGgtFdw
+              - link [ref=f4e130] [cursor=pointer]:
+                - /url: http://linkedin.com/in/ph-bid-aa5393211/
+      - generic [ref=f4e132]:
+        - generic [ref=f4e133]:
+          - generic [ref=f4e136]:
+            - link "Beranda" [ref=f4e138] [cursor=pointer]:
+              - /url: https://phbidlautdemo.prahu-hub.com/lelang/listLelang
+            - text: / Daftar Order
+          - generic [ref=f4e139]:
+            - generic [ref=f4e141]:
+              - generic [ref=f4e142]: DAFTAR ORDER
+              - generic [ref=f4e143]:
+                - button " Filter" [ref=f4e144] [cursor=pointer]:
+                  - generic [ref=f4e145]: 
+                  - text: Filter
+                - generic [ref=f4e146]:
+                  - text: Menampilkan
+                  - combobox [ref=f4e147]:
+                    - option "20" [selected]
+                    - option "30"
+                    - option "50"
+                    - option "100"
+                  - text: Data
+            - text:  
+          - table [ref=f4e149]:
+            - rowgroup [ref=f4e150]:
+              - row [ref=f4e151]:
+                - columnheader "Lelang Status" [ref=f4e152]:
+                  - generic [ref=f4e153]: Lelang
+                  - generic [ref=f4e154]: Status
+                - columnheader "Nama Kapal Permintaan Muat & Closing Time" [ref=f4e155]:
+                  - generic [ref=f4e156]: Nama Kapal
+                  - generic [ref=f4e157]: Permintaan Muat & Closing Time
+                - columnheader "Pelabuhan Asal ETD" [ref=f4e158]:
+                  - generic [ref=f4e159]: Pelabuhan Asal
+                  - generic [ref=f4e160]: ETD
+                - columnheader "Pelabuhan Tujuan ETA" [ref=f4e161]:
+                  - generic [ref=f4e162]: Pelabuhan Tujuan
+                  - generic [ref=f4e163]: ETA
+                - columnheader "Transporter" [ref=f4e164]
+                - columnheader "Harga Jumlah Order" [ref=f4e166]:
+                  - generic [ref=f4e167]: Harga
+                  - generic [ref=f4e168]: Jumlah Order
+                - columnheader "Action" [ref=f4e169]
+              - row [ref=f4e171]
+            - rowgroup [ref=f4e172]:
+              - row [ref=f4e173]:
+                - cell [ref=f4e174]
+          - generic:
+            - status [ref=f4e181]
+            - generic [ref=f4e183]:
+              - list
+        - paragraph [ref=f4e189]: © BETA 20260228 v1.3.28 - PH Bid Laut | Digital Logistic Platform
+  - text:    

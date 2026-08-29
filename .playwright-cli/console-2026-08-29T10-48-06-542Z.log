@@ -1,0 +1,48 @@
+[    1133ms] ReferenceError: dete is not defined
+    at https://phbidlautdemo.prahu-hub.com/user/login:1465:5
+[    2283ms] TypeError: Failed to execute 'observe' on 'IntersectionObserver': parameter 1 is not of type 'Element'.
+    at https://phbidlautdemo.prahu-hub.com/user/login:1932:14
+[    2311ms] [VERBOSE] [DOM] Input elements should have autocomplete attributes (suggested: "current-password"): (More info: https://goo.gl/9p2vKq) %o @ https://phbidlautdemo.prahu-hub.com/user/login:0
+[    2322ms] [LOG] 0 @ https://phbidlautdemo.prahu-hub.com/user/login:1426
+[    2322ms] [LOG] undefined scr @ https://phbidlautdemo.prahu-hub.com/user/login:1430
+[    7063ms] [LOG] ddd @ https://phbidlautdemo.prahu-hub.com/user/login:1525
+[    7235ms] [LOG] {pesan: SHIPPER, status: 1, user_aktif: 1, ParentID: 0, redirect: } @ https://phbidlautdemo.prahu-hub.com/user/login:1558
+[    7236ms] [LOG] {pesan: SHIPPER, status: 1, user_aktif: 1, ParentID: 0, redirect: } a @ https://phbidlautdemo.prahu-hub.com/user/login:1560
+[    8660ms] Cannot use import statement outside a module
+[    8720ms] ReferenceError: Chart is not defined
+    at https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/js/scripts-init/charts/chartjs.js:8:13
+[    8874ms] Unexpected token '<'
+[    8875ms] Unexpected token '<'
+[    9017ms] Uncaught TypeError: expect element to be DOM Element, but got null
+    at n.init (https://cdnjs.cloudflare.com/ajax/libs/smooth-scrollbar/8.5.2/smooth-scrollbar.js:24:264)
+    at <anonymous> (https://phbidlautdemo.prahu-hub.com/lelang/carirute:6555:14)
+[    9046ms] [LOG] undefinednamanya @ https://phbidlautdemo.prahu-hub.com/lelang/carirute:2149
+[    9085ms] [LOG] undefined @ https://phbidlautdemo.prahu-hub.com/lelang/carirute:6908
+[    9085ms] [LOG] undefined @ https://phbidlautdemo.prahu-hub.com/lelang/carirute:6908
+[    9085ms] [LOG] undefined @ https://phbidlautdemo.prahu-hub.com/lelang/carirute:6908
+[    9085ms] [LOG] Masukkan Nomor Lelang @ https://phbidlautdemo.prahu-hub.com/lelang/carirute:6908
+[    9086ms] [LOG] undefined @ https://phbidlautdemo.prahu-hub.com/lelang/carirute:6908
+[    9087ms] [LOG] WebSocket connection @ https://phbidlautdemo.prahu-hub.com/lelang/carirute:6951
+[    9088ms] [LOG] WebSocket connection attempting... @ https://phbidlautdemo.prahu-hub.com/lelang/carirute:7029
+[    9245ms] [LOG] WebSocket connected @ https://phbidlautdemo.prahu-hub.com/lelang/carirute:6960
+[    9256ms] [LOG] update_dashboard_order_laut @ https://phbidlautdemo.prahu-hub.com/lelang/carirute:7001
+[    9288ms] [LOG] Connected @ https://phbidlautdemo.prahu-hub.com/lelang/carirute:7001
+[    9395ms] [LOG] 200 xhrglobal @ https://phbidlautdemo.prahu-hub.com/lelang/carirute:6882
+[    9740ms] [LOG] 200 xhrglobal @ https://phbidlautdemo.prahu-hub.com/lelang/carirute:6882
+[   10531ms] [TABLE] {UI version: 8.4.1, Core version: 8.4.0, Build: NC8xMi8yMDIyfDRkZTU3MmExYg==, WebViewer Server: false, Full API: false} @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/PDFView/lib/ui/webviewer-ui.min.js:270
+[   10888ms] [VERBOSE] [DOM] Password forms should have (optionally hidden) username fields for accessibility: (More info: https://goo.gl/9p2vKq) %o @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/PDFView/lib/ui/index.html#a=1&disabledElements=downloadButton%2CprintButton%2ClanguageButton&filepicker=0&pdfnet=0&enableRedaction=0&enableMeasurement=0&pageHistory=1&notesInLeftPanel=0&singleServerMode=false&selectAnnotationOnCreation=0&autoFocusNoteOnAnnotationSelection=1&id=1&basePath=%2Flelang%2Fcarirute:0
+[   11284ms] TypeError: $(...).DataTable is not a function
+    at https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/js/scripts-init/tables.js:7:23
+[   33905ms] [LOG] Connected @ https://phbidlautdemo.prahu-hub.com/lelang/carirute:7001
+[   53024ms] [LOG] Connected @ https://phbidlautdemo.prahu-hub.com/lelang/carirute:7001
+[   73718ms] [LOG] Connected @ https://phbidlautdemo.prahu-hub.com/lelang/carirute:7001
+[  108138ms] [LOG] Connected @ https://phbidlautdemo.prahu-hub.com/lelang/carirute:7001
+[  151603ms] [LOG] Connected @ https://phbidlautdemo.prahu-hub.com/lelang/carirute:7001
+[  163647ms] [LOG] Connected @ https://phbidlautdemo.prahu-hub.com/lelang/carirute:7001
+[  224221ms] [LOG] Connected @ https://phbidlautdemo.prahu-hub.com/lelang/carirute:7001
+[  251780ms] [LOG] Connected @ https://phbidlautdemo.prahu-hub.com/lelang/carirute:7001
+[  262247ms] [LOG] Connected @ https://phbidlautdemo.prahu-hub.com/lelang/carirute:7001
+[  270580ms] [LOG] Connected @ https://phbidlautdemo.prahu-hub.com/lelang/carirute:7001
+[  279031ms] [LOG] Connected @ https://phbidlautdemo.prahu-hub.com/lelang/carirute:7001
+[  287491ms] [LOG] Connected @ https://phbidlautdemo.prahu-hub.com/lelang/carirute:7001
+[  296701ms] [LOG] Connected @ https://phbidlautdemo.prahu-hub.com/lelang/carirute:7001

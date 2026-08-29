@@ -1,0 +1,168 @@
+- generic [active] [ref=f12e1]:
+  - generic [ref=f12e2]:
+    - generic [ref=f12e3]:
+      - generic [ref=f12e4]:
+        - link [ref=f12e6] [cursor=pointer]:
+          - /url: https://phbidlautdemo.prahu-hub.com/
+        - button [ref=f12e10] [cursor=pointer]
+      - text:  
+      - generic [ref=f12e13]:
+        - generic [ref=f12e14]:
+          - generic [ref=f12e15]: PT. Muda Jaya Wijaya Karya Sentosa Indah Elok (IK)
+          - button "Transporter" [ref=f12e17]
+        - generic [ref=f12e21]:
+          - generic [ref=f12e22]:
+            - generic [ref=f12e23]: Kusuma Jaya Wijaya Abadi Sentosa Mujur Selalu
+            - generic [ref=f12e24]: partner.ph2021@gmail.com
+          - img "assets/photo/1000643450.jpg" [ref=f12e26]
+          - link "" [ref=f12e27] [cursor=pointer]:
+            - /url: https://phbidlautdemo.prahu-hub.com/home/notification
+          - link [ref=f12e34] [cursor=pointer]:
+            - /url: https://phbidlautdemo.prahu-hub.com/user/do_logout
+    - generic [ref=f12e37]:
+      - generic [ref=f12e38]:
+        - text: 
+        - generic [ref=f12e39]:
+          - list [ref=f12e41]:
+            - listitem
+            - listitem [ref=f12e42]:
+              - link "PENGAJUAN LELANG" [ref=f12e43] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/lelang/listlelang
+            - listitem [ref=f12e46]:
+              - link "HARGA & JADWAL" [ref=f12e47] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/home/hargajadwal
+            - listitem [ref=f12e50]:
+              - link "PENGAJUAN NEGO" [ref=f12e51] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/lelang/pengajuannego
+            - listitem [ref=f12e54]:
+              - link "DAFTAR ORDER" [ref=f12e55] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/order/orderlist
+            - listitem [ref=f12e58]:
+              - link "PENUGASAN TRACKING" [ref=f12e59] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/home/penugasantracking
+            - listitem [ref=f12e62]:
+              - link "PROFIL" [ref=f12e63] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/home/myprofile
+            - listitem [ref=f12e66]:
+              - generic [ref=f12e67] [cursor=pointer]:
+                - text: PENGATURAN AKUN
+                - generic [ref=f12e70]: 
+            - listitem [ref=f12e71]:
+              - link "PREFERENCE NOTIF" [ref=f12e72] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/home/preferencenotifbidder
+            - listitem [ref=f12e75]:
+              - link "AKUN SAYA" [ref=f12e76] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/home/akunsaya
+          - generic [ref=f12e81]:
+            - paragraph [ref=f12e83]: KONTAK KAMI
+            - generic [ref=f12e84]:
+              - generic [ref=f12e85]: 
+              - text: "081246665023"
+            - generic [ref=f12e86]:
+              - generic [ref=f12e87]: 
+              - text: "081246665023"
+            - generic [ref=f12e88]:
+              - generic [ref=f12e89]: 
+              - text: csct@prahu-hub.com
+            - generic [ref=f12e90]:
+              - link [ref=f12e91] [cursor=pointer]:
+                - /url: https://facebook.com/sosmed.phbid
+              - link [ref=f12e93] [cursor=pointer]:
+                - /url: https://twitter.com/PrahuHub
+              - link [ref=f12e95] [cursor=pointer]:
+                - /url: https://instagram.com/phbid_/
+              - link [ref=f12e97] [cursor=pointer]:
+                - /url: https://www.youtube.com/channel/UC41VntroP3zKmXZYnGgtFdw
+              - link [ref=f12e99] [cursor=pointer]:
+                - /url: http://linkedin.com/in/ph-bid-aa5393211/
+      - generic [ref=f12e101]:
+        - generic [ref=f12e102]:
+          - generic [ref=f12e105]:
+            - link "Beranda" [ref=f12e107] [cursor=pointer]:
+              - /url: https://phbidlautdemo.prahu-hub.com/lelang/listLelang
+            - text: /
+            - link "Harga & Jadwal" [ref=f12e109] [cursor=pointer]:
+              - /url: https://phbidlautdemo.prahu-hub.com/home/hargajadwal
+            - text: / Tambah Jadwal
+          - generic [ref=f12e111]:
+            - paragraph [ref=f12e112]: TAMBAH Jadwal
+            - button " Kembali" [ref=f12e113] [cursor=pointer]:
+              - generic [ref=f12e114]: 
+              - text: Kembali
+          - generic [ref=f12e115]:
+            - generic [ref=f12e116]:
+              - generic [ref=f12e117]: DETAIL HARGA
+              - generic [ref=f12e119]:
+                - generic [ref=f12e120]:
+                  - generic [ref=f12e121]:
+                    - text: Nomor Lelang
+                    - generic [ref=f12e122]: ":"
+                  - generic [ref=f12e123]: LELANGFCU/28082026IK
+                - generic [ref=f12e124]:
+                  - generic [ref=f12e125]:
+                    - text: Shipper
+                    - generic [ref=f12e126]: ":"
+                  - generic [ref=f12e127]: PT. Cipta Karya Abadi Sejahtera Sentora Mujur Selalu
+                - generic [ref=f12e128]:
+                  - generic [ref=f12e129]:
+                    - text: Tanggal Buat
+                    - generic [ref=f12e130]: ":"
+                  - generic [ref=f12e131]: 27/08/2026
+                - generic [ref=f12e132]:
+                  - generic [ref=f12e133]:
+                    - text: Rute
+                    - generic [ref=f12e134]: ":"
+                  - generic [ref=f12e135]: Tanjung Perak (SUB) - Tanjung Emas (SRG)
+                - generic [ref=f12e136]:
+                  - generic [ref=f12e137]:
+                    - text: Pelayaran
+                    - generic [ref=f12e138]: ":"
+                  - generic [ref=f12e139]: ASDP
+                - generic [ref=f12e140]:
+                  - generic [ref=f12e141]:
+                    - text: Jenis Kontainer
+                    - generic [ref=f12e142]: ":"
+                  - generic [ref=f12e143]: 20 DRY
+                - generic [ref=f12e144]:
+                  - generic [ref=f12e145]:
+                    - text: Harga
+                    - generic [ref=f12e146]: ":"
+                  - generic [ref=f12e147]: Rp. 4.234.300 (Sebelum PPN)
+                - generic [ref=f12e148]:
+                  - generic [ref=f12e149]:
+                    - text: PPN
+                    - generic [ref=f12e150]: ":"
+                  - generic [ref=f12e151]: 1,1%
+                - generic [ref=f12e152]:
+                  - generic [ref=f12e153]:
+                    - text: PPh
+                    - generic [ref=f12e154]: ":"
+                  - generic [ref=f12e155]: 2%
+                - generic [ref=f12e156]:
+                  - generic [ref=f12e157]:
+                    - text: Mulai Berlaku
+                    - generic [ref=f12e158]: ":"
+                  - generic [ref=f12e159]: 01/08/2026
+                - generic [ref=f12e160]:
+                  - generic [ref=f12e161]:
+                    - text: Biaya Termasuk
+                    - generic [ref=f12e162]: ":"
+                  - generic [ref=f12e163]: Krani, Buruh Muat, Kawalan Asal, Trucking Asal, THC Asal, LOLO Asal, Freight Kapal, Buruh Bongkar, Kawalan Tujuan, Trucking Tujuan, THC Tujuan, LOLO Tujuan, Lift On, Asuransi
+                - generic [ref=f12e164]:
+                  - generic [ref=f12e165]:
+                    - text: Deskripsi Harga
+                    - generic [ref=f12e166]: ":"
+                  - generic [ref=f12e167]: "-"
+            - generic [ref=f12e169]:
+              - generic [ref=f12e170]:
+                - text: Jenis Jadwal Kapal *
+                - generic [ref=f12e171]: ":"
+              - generic [ref=f12e172]:
+                - generic [ref=f12e173]:
+                  - combobox [ref=f12e174]
+                  - combobox [ref=f12e177] [cursor=pointer]:
+                    - textbox "Pilih Jenis Jadwal" [ref=f12e178]
+                - text: Tentukan anda ingin input jenis jadwal kapal direct atau kapal connecting
+          - text:         
+        - paragraph [ref=f12e184]: © BETA 20260228 v1.3.28 - PH Bid Laut | Digital Logistic Platform
+  - text:   

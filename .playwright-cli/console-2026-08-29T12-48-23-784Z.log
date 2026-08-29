@@ -1,0 +1,286 @@
+[    1102ms] ReferenceError: dete is not defined
+    at https://phbidlautdemo.prahu-hub.com/user/login:1465:5
+[    2369ms] TypeError: Failed to execute 'observe' on 'IntersectionObserver': parameter 1 is not of type 'Element'.
+    at https://phbidlautdemo.prahu-hub.com/user/login:1932:14
+[    2409ms] [VERBOSE] [DOM] Input elements should have autocomplete attributes (suggested: "current-password"): (More info: https://goo.gl/9p2vKq) %o @ https://phbidlautdemo.prahu-hub.com/user/login:0
+[    2419ms] [LOG] 0 @ https://phbidlautdemo.prahu-hub.com/user/login:1426
+[    2420ms] [LOG] undefined scr @ https://phbidlautdemo.prahu-hub.com/user/login:1430
+[    7040ms] [LOG] ddd @ https://phbidlautdemo.prahu-hub.com/user/login:1525
+[    7209ms] [LOG] {pesan: OPERATOR, status: 1, user_aktif: 1, ParentID: 0, redirect: } @ https://phbidlautdemo.prahu-hub.com/user/login:1558
+[    7209ms] [LOG] {pesan: OPERATOR, status: 1, user_aktif: 1, ParentID: 0, redirect: } a @ https://phbidlautdemo.prahu-hub.com/user/login:1560
+[    8747ms] Cannot use import statement outside a module
+[    8788ms] ReferenceError: Chart is not defined
+    at https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/js/scripts-init/charts/chartjs.js:8:13
+[    8905ms] Unexpected token '<'
+[    8906ms] Unexpected token '<'
+[    9029ms] Uncaught TypeError: expect element to be DOM Element, but got null
+    at n.init (https://cdnjs.cloudflare.com/ajax/libs/smooth-scrollbar/8.5.2/smooth-scrollbar.js:24:264)
+    at <anonymous> (https://phbidlautdemo.prahu-hub.com/lelang/listlelang?tab=semua-lelang:5630:14)
+[    9115ms] [LOG] Pengajuan Lelangnamanya @ https://phbidlautdemo.prahu-hub.com/lelang/listlelang?tab=semua-lelang:1756
+[    9131ms] [LOG] undefined @ https://phbidlautdemo.prahu-hub.com/lelang/listlelang?tab=semua-lelang:5983
+[    9131ms] [LOG] undefined @ https://phbidlautdemo.prahu-hub.com/lelang/listlelang?tab=semua-lelang:5983
+[    9131ms] [LOG] Masukkan Nama Shipper @ https://phbidlautdemo.prahu-hub.com/lelang/listlelang?tab=semua-lelang:5983
+[    9131ms] [LOG] Masukkan Nomor Lelang @ https://phbidlautdemo.prahu-hub.com/lelang/listlelang?tab=semua-lelang:5983
+[    9131ms] [LOG] DD/MM/YYYY @ https://phbidlautdemo.prahu-hub.com/lelang/listlelang?tab=semua-lelang:5983
+[    9132ms] [LOG] DD/MM/YYYY @ https://phbidlautdemo.prahu-hub.com/lelang/listlelang?tab=semua-lelang:5983
+[    9132ms] [LOG] DD/MM/YYYY @ https://phbidlautdemo.prahu-hub.com/lelang/listlelang?tab=semua-lelang:5983
+[    9132ms] [LOG] DD/MM/YYYY @ https://phbidlautdemo.prahu-hub.com/lelang/listlelang?tab=semua-lelang:5983
+[    9132ms] [LOG] Masukkan Nama Shipper @ https://phbidlautdemo.prahu-hub.com/lelang/listlelang?tab=semua-lelang:5983
+[    9133ms] [LOG] undefined @ https://phbidlautdemo.prahu-hub.com/lelang/listlelang?tab=semua-lelang:5983
+[    9133ms] [LOG] undefined @ https://phbidlautdemo.prahu-hub.com/lelang/listlelang?tab=semua-lelang:5983
+[    9133ms] [LOG] Masukkan Nama Bank @ https://phbidlautdemo.prahu-hub.com/lelang/listlelang?tab=semua-lelang:5983
+[    9133ms] [LOG] undefined @ https://phbidlautdemo.prahu-hub.com/lelang/listlelang?tab=semua-lelang:5983
+[    9135ms] [LOG] WebSocket connection @ https://phbidlautdemo.prahu-hub.com/lelang/listlelang?tab=semua-lelang:6026
+[    9135ms] [LOG] WebSocket connection attempting... @ https://phbidlautdemo.prahu-hub.com/lelang/listlelang?tab=semua-lelang:6104
+[    9294ms] [LOG] WebSocket connected @ https://phbidlautdemo.prahu-hub.com/lelang/listlelang?tab=semua-lelang:6035
+[    9297ms] [LOG] update_dashboard_order_laut @ https://phbidlautdemo.prahu-hub.com/lelang/listlelang?tab=semua-lelang:6076
+[    9329ms] [LOG] Connected @ https://phbidlautdemo.prahu-hub.com/lelang/listlelang?tab=semua-lelang:6076
+[   10657ms] [LOG] [Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object] @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/listLelang.js?m=1787972929:14
+[   10667ms] [LOG] 390 @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/listLelang.js?m=1787972929:818
+[   10668ms] [LOG] 390 countView1 1 pageNow 20 limitView1 @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/listLelang.js?m=1787972929:820
+[   10668ms] [LOG] 20 @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/listLelang.js?m=1787972929:826
+[   10669ms] [LOG] 390 jumlah data @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/listLelang.js?m=1787972929:779
+[   10670ms] [LOG] 20 @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/listLelang.js?m=1787972929:781
+[   10671ms] [LOG] 20 1 pageCount & pageNow @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/listLelang.js?m=1787972929:704
+[   10679ms] [LOG] 200 xhrglobal @ https://phbidlautdemo.prahu-hub.com/lelang/listlelang?tab=semua-lelang:5957
+[   10731ms] ReferenceError: renderTooltipHarga is not defined
+    at https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/listLelang.js?m=1787972929:1049:9
+[   10749ms] [LOG] 200 xhrglobal @ https://phbidlautdemo.prahu-hub.com/lelang/listlelang?tab=semua-lelang:5957
+[   10806ms] [LOG] 200 xhrglobal @ https://phbidlautdemo.prahu-hub.com/lelang/listlelang?tab=semua-lelang:5957
+[   11132ms] TypeError: $(...).DataTable is not a function
+    at https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/js/scripts-init/tables.js:7:23
+[   14561ms] Cannot use import statement outside a module
+[   14608ms] ReferenceError: Chart is not defined
+    at https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/js/scripts-init/charts/chartjs.js:8:13
+[   14736ms] Unexpected token '<'
+[   14738ms] Unexpected token '<'
+[   14871ms] [LOG]  hari ini @ https://phbidlautdemo.prahu-hub.com/home/tambahjadwal/cWpYWHBKb3RXWGFZb0RsUURoVlp4Zz09?f=1:7308
+[   14882ms] Uncaught TypeError: minDate() Could not parse date parameter: 
+    at picker.minDate (https://cdn.rawgit.com/Eonasdan/bootstrap-datetimepicker/e8bddc60e73c1ec2475f827be36e1957af72e2ea/src/js/bootstrap-datetimepicker.js:1667:22)
+    at <anonymous> (https://cdn.rawgit.com/Eonasdan/bootstrap-datetimepicker/e8bddc60e73c1ec2475f827be36e1957af72e2ea/src/js/bootstrap-datetimepicker.js:1437:31)
+    at each (https://code.jquery.com/jquery-3.7.1.min.js:1:3178)
+    at picker.options (https://cdn.rawgit.com/Eonasdan/bootstrap-datetimepicker/e8bddc60e73c1ec2475f827be36e1957af72e2ea/src/js/bootstrap-datetimepicker.js:1435:14)
+    at dateTimePicker (https://cdn.rawgit.com/Eonasdan/bootstrap-datetimepicker/e8bddc60e73c1ec2475f827be36e1957af72e2ea/src/js/bootstrap-datetimepicker.js:2275:15)
+    at <anonymous> (https://cdn.rawgit.com/Eonasdan/bootstrap-datetimepicker/e8bddc60e73c1ec2475f827be36e1957af72e2ea/src/js/bootstrap-datetimepicker.js:2308:45)
+    at each (https://code.jquery.com/jquery-3.7.1.min.js:1:3128)
+    at each (https://code.jquery.com/jquery-3.7.1.min.js:1:1593)
+    at $.fn.datetimepicker (https://cdn.rawgit.com/Eonasdan/bootstrap-datetimepicker/e8bddc60e73c1ec2475f827be36e1957af72e2ea/src/js/bootstrap-datetimepicker.js:2303:20)
+    at <anonymous> (https://phbidlautdemo.prahu-hub.com/home/tambahjadwal/cWpYWHBKb3RXWGFZb0RsUURoVlp4Zz09?f=1:7309:14)
+[   14905ms] Uncaught TypeError: expect element to be DOM Element, but got null
+    at n.init (https://cdnjs.cloudflare.com/ajax/libs/smooth-scrollbar/8.5.2/smooth-scrollbar.js:24:264)
+    at <anonymous> (https://phbidlautdemo.prahu-hub.com/home/tambahjadwal/cWpYWHBKb3RXWGFZb0RsUURoVlp4Zz09?f=1:8157:14)
+[   14948ms] [LOG] Harganamanya @ https://phbidlautdemo.prahu-hub.com/home/tambahjadwal/cWpYWHBKb3RXWGFZb0RsUURoVlp4Zz09?f=1:2023
+[   15020ms] [LOG]  @ https://phbidlautdemo.prahu-hub.com/home/tambahjadwal/cWpYWHBKb3RXWGFZb0RsUURoVlp4Zz09?f=1:5893
+[   15023ms] [LOG] undefined @ https://phbidlautdemo.prahu-hub.com/home/tambahjadwal/cWpYWHBKb3RXWGFZb0RsUURoVlp4Zz09?f=1:8510
+[   15024ms] [LOG] undefined @ https://phbidlautdemo.prahu-hub.com/home/tambahjadwal/cWpYWHBKb3RXWGFZb0RsUURoVlp4Zz09?f=1:8510
+[   15024ms] [LOG] undefined @ https://phbidlautdemo.prahu-hub.com/home/tambahjadwal/cWpYWHBKb3RXWGFZb0RsUURoVlp4Zz09?f=1:8510
+[   15024ms] [LOG] Masukkan Nama Kapal @ https://phbidlautdemo.prahu-hub.com/home/tambahjadwal/cWpYWHBKb3RXWGFZb0RsUURoVlp4Zz09?f=1:8510
+[   15024ms] [LOG] Masukkan Voyage @ https://phbidlautdemo.prahu-hub.com/home/tambahjadwal/cWpYWHBKb3RXWGFZb0RsUURoVlp4Zz09?f=1:8510
+[   15024ms] [LOG] DD/MM/YYYY @ https://phbidlautdemo.prahu-hub.com/home/tambahjadwal/cWpYWHBKb3RXWGFZb0RsUURoVlp4Zz09?f=1:8510
+[   15025ms] [LOG] DD/MM/YYYY hh:mm @ https://phbidlautdemo.prahu-hub.com/home/tambahjadwal/cWpYWHBKb3RXWGFZb0RsUURoVlp4Zz09?f=1:8510
+[   15025ms] [LOG] DD/MM/YYYY @ https://phbidlautdemo.prahu-hub.com/home/tambahjadwal/cWpYWHBKb3RXWGFZb0RsUURoVlp4Zz09?f=1:8510
+[   15026ms] [LOG] DD/MM/YYYY @ https://phbidlautdemo.prahu-hub.com/home/tambahjadwal/cWpYWHBKb3RXWGFZb0RsUURoVlp4Zz09?f=1:8510
+[   15027ms] [LOG] Masukkan Nama Kapal @ https://phbidlautdemo.prahu-hub.com/home/tambahjadwal/cWpYWHBKb3RXWGFZb0RsUURoVlp4Zz09?f=1:8510
+[   15027ms] [LOG] Masukkan Voyage @ https://phbidlautdemo.prahu-hub.com/home/tambahjadwal/cWpYWHBKb3RXWGFZb0RsUURoVlp4Zz09?f=1:8510
+[   15028ms] [LOG] DD/MM/YYYY @ https://phbidlautdemo.prahu-hub.com/home/tambahjadwal/cWpYWHBKb3RXWGFZb0RsUURoVlp4Zz09?f=1:8510
+[   15029ms] [LOG] DD/MM/YYYY hh:mm @ https://phbidlautdemo.prahu-hub.com/home/tambahjadwal/cWpYWHBKb3RXWGFZb0RsUURoVlp4Zz09?f=1:8510
+[   15029ms] [LOG] DD/MM/YYYY @ https://phbidlautdemo.prahu-hub.com/home/tambahjadwal/cWpYWHBKb3RXWGFZb0RsUURoVlp4Zz09?f=1:8510
+[   15030ms] [LOG] DD/MM/YYYY @ https://phbidlautdemo.prahu-hub.com/home/tambahjadwal/cWpYWHBKb3RXWGFZb0RsUURoVlp4Zz09?f=1:8510
+[   15031ms] [LOG] Masukkan Nama Kapal @ https://phbidlautdemo.prahu-hub.com/home/tambahjadwal/cWpYWHBKb3RXWGFZb0RsUURoVlp4Zz09?f=1:8510
+[   15031ms] [LOG] Masukkan Voyage @ https://phbidlautdemo.prahu-hub.com/home/tambahjadwal/cWpYWHBKb3RXWGFZb0RsUURoVlp4Zz09?f=1:8510
+[   15032ms] [LOG] DD/MM/YYYY @ https://phbidlautdemo.prahu-hub.com/home/tambahjadwal/cWpYWHBKb3RXWGFZb0RsUURoVlp4Zz09?f=1:8510
+[   15032ms] [LOG] undefined @ https://phbidlautdemo.prahu-hub.com/home/tambahjadwal/cWpYWHBKb3RXWGFZb0RsUURoVlp4Zz09?f=1:8510
+[   15033ms] [LOG] undefined @ https://phbidlautdemo.prahu-hub.com/home/tambahjadwal/cWpYWHBKb3RXWGFZb0RsUURoVlp4Zz09?f=1:8510
+[   15033ms] [LOG] undefined @ https://phbidlautdemo.prahu-hub.com/home/tambahjadwal/cWpYWHBKb3RXWGFZb0RsUURoVlp4Zz09?f=1:8510
+[   15033ms] [LOG] undefined @ https://phbidlautdemo.prahu-hub.com/home/tambahjadwal/cWpYWHBKb3RXWGFZb0RsUURoVlp4Zz09?f=1:8510
+[   15034ms] [LOG] undefined @ https://phbidlautdemo.prahu-hub.com/home/tambahjadwal/cWpYWHBKb3RXWGFZb0RsUURoVlp4Zz09?f=1:8510
+[   15034ms] [LOG] No file chosen @ https://phbidlautdemo.prahu-hub.com/home/tambahjadwal/cWpYWHBKb3RXWGFZb0RsUURoVlp4Zz09?f=1:8510
+[   15034ms] [LOG] Masukkan Gambar  @ https://phbidlautdemo.prahu-hub.com/home/tambahjadwal/cWpYWHBKb3RXWGFZb0RsUURoVlp4Zz09?f=1:8510
+[   15036ms] [LOG] WebSocket connection @ https://phbidlautdemo.prahu-hub.com/home/tambahjadwal/cWpYWHBKb3RXWGFZb0RsUURoVlp4Zz09?f=1:8553
+[   15037ms] [LOG] WebSocket connection attempting... @ https://phbidlautdemo.prahu-hub.com/home/tambahjadwal/cWpYWHBKb3RXWGFZb0RsUURoVlp4Zz09?f=1:8631
+[   15173ms] [LOG] WebSocket connected @ https://phbidlautdemo.prahu-hub.com/home/tambahjadwal/cWpYWHBKb3RXWGFZb0RsUURoVlp4Zz09?f=1:8562
+[   15178ms] [LOG] update_dashboard_order_laut @ https://phbidlautdemo.prahu-hub.com/home/tambahjadwal/cWpYWHBKb3RXWGFZb0RsUURoVlp4Zz09?f=1:8603
+[   15207ms] [LOG] Connected @ https://phbidlautdemo.prahu-hub.com/home/tambahjadwal/cWpYWHBKb3RXWGFZb0RsUURoVlp4Zz09?f=1:8603
+[   15298ms] [LOG] 200 xhrglobal @ https://phbidlautdemo.prahu-hub.com/home/tambahjadwal/cWpYWHBKb3RXWGFZb0RsUURoVlp4Zz09?f=1:8484
+[   15361ms] [LOG] 200 xhrglobal @ https://phbidlautdemo.prahu-hub.com/home/tambahjadwal/cWpYWHBKb3RXWGFZb0RsUURoVlp4Zz09?f=1:8484
+[   16963ms] TypeError: $(...).DataTable is not a function
+    at https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/js/scripts-init/tables.js:7:23
+[   17593ms] [LOG]  triggeretd @ https://phbidlautdemo.prahu-hub.com/home/tambahjadwal/cWpYWHBKb3RXWGFZb0RsUURoVlp4Zz09?f=1:5764
+[   17596ms] [LOG] Sat Aug 29 2026 07:00:00 GMT+0700 (Western Indonesia Time) triggeretdtemp @ https://phbidlautdemo.prahu-hub.com/home/tambahjadwal/cWpYWHBKb3RXWGFZb0RsUURoVlp4Zz09?f=1:5780
+[   17603ms] [LOG] etd ubah @ https://phbidlautdemo.prahu-hub.com/home/tambahjadwal/cWpYWHBKb3RXWGFZb0RsUURoVlp4Zz09?f=1:5838
+[   17619ms] [LOG] etd ubah @ https://phbidlautdemo.prahu-hub.com/home/tambahjadwal/cWpYWHBKb3RXWGFZb0RsUURoVlp4Zz09?f=1:5838
+[   17630ms] [LOG]  @ https://phbidlautdemo.prahu-hub.com/home/tambahjadwal/cWpYWHBKb3RXWGFZb0RsUURoVlp4Zz09?f=1:5893
+[   19676ms] [LOG]  triggeretd @ https://phbidlautdemo.prahu-hub.com/home/tambahjadwal/cWpYWHBKb3RXWGFZb0RsUURoVlp4Zz09?f=1:5764
+[   19677ms] [LOG] Mon Sep 28 2026 07:00:00 GMT+0700 (Western Indonesia Time) triggeretdtemp @ https://phbidlautdemo.prahu-hub.com/home/tambahjadwal/cWpYWHBKb3RXWGFZb0RsUURoVlp4Zz09?f=1:5780
+[   19680ms] [LOG] etd ubah @ https://phbidlautdemo.prahu-hub.com/home/tambahjadwal/cWpYWHBKb3RXWGFZb0RsUURoVlp4Zz09?f=1:5838
+[   19686ms] [LOG] etd ubah @ https://phbidlautdemo.prahu-hub.com/home/tambahjadwal/cWpYWHBKb3RXWGFZb0RsUURoVlp4Zz09?f=1:5838
+[   19691ms] [LOG]  triggeretd @ https://phbidlautdemo.prahu-hub.com/home/tambahjadwal/cWpYWHBKb3RXWGFZb0RsUURoVlp4Zz09?f=1:5764
+[   19692ms] [LOG] Mon Sep 28 2026 07:00:00 GMT+0700 (Western Indonesia Time) triggeretdtemp @ https://phbidlautdemo.prahu-hub.com/home/tambahjadwal/cWpYWHBKb3RXWGFZb0RsUURoVlp4Zz09?f=1:5780
+[   19695ms] [LOG] etd ubah @ https://phbidlautdemo.prahu-hub.com/home/tambahjadwal/cWpYWHBKb3RXWGFZb0RsUURoVlp4Zz09?f=1:5838
+[   19700ms] [LOG] etd ubah @ https://phbidlautdemo.prahu-hub.com/home/tambahjadwal/cWpYWHBKb3RXWGFZb0RsUURoVlp4Zz09?f=1:5838
+[   20648ms] [LOG] etd ubah @ https://phbidlautdemo.prahu-hub.com/home/tambahjadwal/cWpYWHBKb3RXWGFZb0RsUURoVlp4Zz09?f=1:5838
+[   20653ms] [LOG] etd ubah @ https://phbidlautdemo.prahu-hub.com/home/tambahjadwal/cWpYWHBKb3RXWGFZb0RsUURoVlp4Zz09?f=1:5838
+[   21875ms] [LOG] 5 @ https://phbidlautdemo.prahu-hub.com/home/tambahjadwal/cWpYWHBKb3RXWGFZb0RsUURoVlp4Zz09?f=1:7121
+[   21945ms] [LOG] hitungbaris= 1 @ https://phbidlautdemo.prahu-hub.com/home/tambahjadwal/cWpYWHBKb3RXWGFZb0RsUURoVlp4Zz09?f=1:7189
+[   22093ms] [LOG] 200 xhrglobal @ https://phbidlautdemo.prahu-hub.com/home/tambahjadwal/cWpYWHBKb3RXWGFZb0RsUURoVlp4Zz09?f=1:8484
+[   22984ms] Cannot use import statement outside a module
+[   23044ms] ReferenceError: Chart is not defined
+    at https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/js/scripts-init/charts/chartjs.js:8:13
+[   23198ms] Unexpected token '<'
+[   23199ms] Unexpected token '<'
+[   23325ms] Uncaught TypeError: expect element to be DOM Element, but got null
+    at n.init (https://cdnjs.cloudflare.com/ajax/libs/smooth-scrollbar/8.5.2/smooth-scrollbar.js:24:264)
+    at <anonymous> (https://phbidlautdemo.prahu-hub.com/home/masterjadwal1/cWpYWHBKb3RXWGFZb0RsUURoVlp4Zz09:5758:14)
+[   23352ms] [LOG] Harganamanya @ https://phbidlautdemo.prahu-hub.com/home/masterjadwal1/cWpYWHBKb3RXWGFZb0RsUURoVlp4Zz09:1756
+[   23361ms] [LOG] undefined @ https://phbidlautdemo.prahu-hub.com/home/masterjadwal1/cWpYWHBKb3RXWGFZb0RsUURoVlp4Zz09:6111
+[   23361ms] [LOG] DD/MM/YYYY @ https://phbidlautdemo.prahu-hub.com/home/masterjadwal1/cWpYWHBKb3RXWGFZb0RsUURoVlp4Zz09:6111
+[   23363ms] [LOG] undefined @ https://phbidlautdemo.prahu-hub.com/home/masterjadwal1/cWpYWHBKb3RXWGFZb0RsUURoVlp4Zz09:6111
+[   23363ms] [LOG] Masukkan Nama Kapal @ https://phbidlautdemo.prahu-hub.com/home/masterjadwal1/cWpYWHBKb3RXWGFZb0RsUURoVlp4Zz09:6111
+[   23363ms] [LOG] Masukkan Voyage @ https://phbidlautdemo.prahu-hub.com/home/masterjadwal1/cWpYWHBKb3RXWGFZb0RsUURoVlp4Zz09:6111
+[   23363ms] [LOG] DD/MM/YYYY hh:mm @ https://phbidlautdemo.prahu-hub.com/home/masterjadwal1/cWpYWHBKb3RXWGFZb0RsUURoVlp4Zz09:6111
+[   23363ms] [LOG] undefined @ https://phbidlautdemo.prahu-hub.com/home/masterjadwal1/cWpYWHBKb3RXWGFZb0RsUURoVlp4Zz09:6111
+[   23364ms] [LOG] DD/MM/YYYY @ https://phbidlautdemo.prahu-hub.com/home/masterjadwal1/cWpYWHBKb3RXWGFZb0RsUURoVlp4Zz09:6111
+[   23364ms] [LOG] undefined @ https://phbidlautdemo.prahu-hub.com/home/masterjadwal1/cWpYWHBKb3RXWGFZb0RsUURoVlp4Zz09:6111
+[   23364ms] [LOG] DD/MM/YYYY @ https://phbidlautdemo.prahu-hub.com/home/masterjadwal1/cWpYWHBKb3RXWGFZb0RsUURoVlp4Zz09:6111
+[   23365ms] [LOG] undefined @ https://phbidlautdemo.prahu-hub.com/home/masterjadwal1/cWpYWHBKb3RXWGFZb0RsUURoVlp4Zz09:6111
+[   23365ms] [LOG] undefined @ https://phbidlautdemo.prahu-hub.com/home/masterjadwal1/cWpYWHBKb3RXWGFZb0RsUURoVlp4Zz09:6111
+[   23365ms] [LOG] undefined @ https://phbidlautdemo.prahu-hub.com/home/masterjadwal1/cWpYWHBKb3RXWGFZb0RsUURoVlp4Zz09:6111
+[   23366ms] [LOG] undefined @ https://phbidlautdemo.prahu-hub.com/home/masterjadwal1/cWpYWHBKb3RXWGFZb0RsUURoVlp4Zz09:6111
+[   23366ms] [LOG] undefined @ https://phbidlautdemo.prahu-hub.com/home/masterjadwal1/cWpYWHBKb3RXWGFZb0RsUURoVlp4Zz09:6111
+[   23367ms] [LOG] WebSocket connection @ https://phbidlautdemo.prahu-hub.com/home/masterjadwal1/cWpYWHBKb3RXWGFZb0RsUURoVlp4Zz09:6154
+[   23368ms] [LOG] WebSocket connection attempting... @ https://phbidlautdemo.prahu-hub.com/home/masterjadwal1/cWpYWHBKb3RXWGFZb0RsUURoVlp4Zz09:6232
+[   23478ms] [LOG] [Object, Object, Object, Object] @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/lihatjadwal.js?m=1787972929:14
+[   23482ms] [LOG] 4 @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/lihatjadwal.js?m=1787972929:506
+[   23483ms] [LOG] 4 countView1 1 pageNow 20 limitView1 @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/lihatjadwal.js?m=1787972929:508
+[   23483ms] [LOG] 4 @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/lihatjadwal.js?m=1787972929:514
+[   23484ms] [LOG] 4 jumlah data @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/lihatjadwal.js?m=1787972929:481
+[   23484ms] [LOG] 1 @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/lihatjadwal.js?m=1787972929:483
+[   23486ms] [LOG] 1 1 pageCount & pageNow @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/lihatjadwal.js?m=1787972929:406
+[   23489ms] [LOG] 200 xhrglobal @ https://phbidlautdemo.prahu-hub.com/home/masterjadwal1/cWpYWHBKb3RXWGFZb0RsUURoVlp4Zz09:6085
+[   23512ms] [LOG] WebSocket connected @ https://phbidlautdemo.prahu-hub.com/home/masterjadwal1/cWpYWHBKb3RXWGFZb0RsUURoVlp4Zz09:6163
+[   23517ms] [LOG] update_dashboard_order_laut @ https://phbidlautdemo.prahu-hub.com/home/masterjadwal1/cWpYWHBKb3RXWGFZb0RsUURoVlp4Zz09:6204
+[   23548ms] [LOG] Connected @ https://phbidlautdemo.prahu-hub.com/home/masterjadwal1/cWpYWHBKb3RXWGFZb0RsUURoVlp4Zz09:6204
+[   23629ms] [LOG] 200 xhrglobal @ https://phbidlautdemo.prahu-hub.com/home/masterjadwal1/cWpYWHBKb3RXWGFZb0RsUURoVlp4Zz09:6085
+[   23685ms] [LOG] 200 xhrglobal @ https://phbidlautdemo.prahu-hub.com/home/masterjadwal1/cWpYWHBKb3RXWGFZb0RsUURoVlp4Zz09:6085
+[   25362ms] TypeError: $(...).DataTable is not a function
+    at https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/js/scripts-init/tables.js:7:23
+[   26974ms] Cannot use import statement outside a module
+[   27005ms] ReferenceError: Chart is not defined
+    at https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/js/scripts-init/charts/chartjs.js:8:13
+[   27006ms] Unexpected token '<'
+[   27007ms] Unexpected token '<'
+[   27069ms] Uncaught TypeError: expect element to be DOM Element, but got null
+    at n.init (https://cdnjs.cloudflare.com/ajax/libs/smooth-scrollbar/8.5.2/smooth-scrollbar.js:24:264)
+    at <anonymous> (https://phbidlautdemo.prahu-hub.com/home/editjadwal/1877:6535:14)
+[   27090ms] [LOG] Harganamanya @ https://phbidlautdemo.prahu-hub.com/home/editjadwal/1877:1755
+[   27120ms] [LOG] undefined @ https://phbidlautdemo.prahu-hub.com/home/editjadwal/1877:6888
+[   27120ms] [LOG] Masukkan Nama Kapal @ https://phbidlautdemo.prahu-hub.com/home/editjadwal/1877:6888
+[   27121ms] [LOG] Masukkan Voyage @ https://phbidlautdemo.prahu-hub.com/home/editjadwal/1877:6888
+[   27121ms] [LOG] DD/MM/YYYY @ https://phbidlautdemo.prahu-hub.com/home/editjadwal/1877:6888
+[   27122ms] [LOG] DD/MM/YYYY hh:mm @ https://phbidlautdemo.prahu-hub.com/home/editjadwal/1877:6888
+[   27122ms] [LOG] DD/MM/YYYY @ https://phbidlautdemo.prahu-hub.com/home/editjadwal/1877:6888
+[   27123ms] [LOG] DD/MM/YYYY @ https://phbidlautdemo.prahu-hub.com/home/editjadwal/1877:6888
+[   27124ms] [LOG] undefined @ https://phbidlautdemo.prahu-hub.com/home/editjadwal/1877:6888
+[   27124ms] [LOG] undefined @ https://phbidlautdemo.prahu-hub.com/home/editjadwal/1877:6888
+[   27124ms] [LOG] undefined @ https://phbidlautdemo.prahu-hub.com/home/editjadwal/1877:6888
+[   27124ms] [LOG] undefined @ https://phbidlautdemo.prahu-hub.com/home/editjadwal/1877:6888
+[   27125ms] [LOG] undefined @ https://phbidlautdemo.prahu-hub.com/home/editjadwal/1877:6888
+[   27125ms] [LOG] undefined @ https://phbidlautdemo.prahu-hub.com/home/editjadwal/1877:6888
+[   27125ms] [LOG] undefined @ https://phbidlautdemo.prahu-hub.com/home/editjadwal/1877:6888
+[   27125ms] [LOG] undefined @ https://phbidlautdemo.prahu-hub.com/home/editjadwal/1877:6888
+[   27125ms] [LOG] undefined @ https://phbidlautdemo.prahu-hub.com/home/editjadwal/1877:6888
+[   27125ms] [LOG] undefined @ https://phbidlautdemo.prahu-hub.com/home/editjadwal/1877:6888
+[   27125ms] [LOG] undefined @ https://phbidlautdemo.prahu-hub.com/home/editjadwal/1877:6888
+[   27127ms] [LOG] WebSocket connection @ https://phbidlautdemo.prahu-hub.com/home/editjadwal/1877:6931
+[   27128ms] [LOG] WebSocket connection attempting... @ https://phbidlautdemo.prahu-hub.com/home/editjadwal/1877:7009
+[   27313ms] [LOG] WebSocket connected @ https://phbidlautdemo.prahu-hub.com/home/editjadwal/1877:6940
+[   27316ms] [LOG] update_dashboard_order_laut @ https://phbidlautdemo.prahu-hub.com/home/editjadwal/1877:6981
+[   27354ms] [LOG] Connected @ https://phbidlautdemo.prahu-hub.com/home/editjadwal/1877:6981
+[   27548ms] [LOG] 200 xhrglobal @ https://phbidlautdemo.prahu-hub.com/home/editjadwal/1877:6862
+[   27563ms] [LOG] 200 xhrglobal @ https://phbidlautdemo.prahu-hub.com/home/editjadwal/1877:6862
+[   29143ms] TypeError: $(...).DataTable is not a function
+    at https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/js/scripts-init/tables.js:7:23
+[   64681ms] Cannot use import statement outside a module
+[   64722ms] ReferenceError: Chart is not defined
+    at https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/js/scripts-init/charts/chartjs.js:8:13
+[   64958ms] Unexpected token '<'
+[   64960ms] Unexpected token '<'
+[   65094ms] Uncaught TypeError: expect element to be DOM Element, but got null
+    at n.init (https://cdnjs.cloudflare.com/ajax/libs/smooth-scrollbar/8.5.2/smooth-scrollbar.js:24:264)
+    at <anonymous> (https://phbidlautdemo.prahu-hub.com/home/masterjadwal1/cWpYWHBKb3RXWGFZb0RsUURoVlp4Zz09:5753:14)
+[   65118ms] [LOG] Harganamanya @ https://phbidlautdemo.prahu-hub.com/home/masterjadwal1/cWpYWHBKb3RXWGFZb0RsUURoVlp4Zz09:1756
+[   65132ms] [LOG] undefined @ https://phbidlautdemo.prahu-hub.com/home/masterjadwal1/cWpYWHBKb3RXWGFZb0RsUURoVlp4Zz09:6106
+[   65132ms] [LOG] DD/MM/YYYY @ https://phbidlautdemo.prahu-hub.com/home/masterjadwal1/cWpYWHBKb3RXWGFZb0RsUURoVlp4Zz09:6106
+[   65135ms] [LOG] undefined @ https://phbidlautdemo.prahu-hub.com/home/masterjadwal1/cWpYWHBKb3RXWGFZb0RsUURoVlp4Zz09:6106
+[   65135ms] [LOG] Masukkan Nama Kapal @ https://phbidlautdemo.prahu-hub.com/home/masterjadwal1/cWpYWHBKb3RXWGFZb0RsUURoVlp4Zz09:6106
+[   65135ms] [LOG] Masukkan Voyage @ https://phbidlautdemo.prahu-hub.com/home/masterjadwal1/cWpYWHBKb3RXWGFZb0RsUURoVlp4Zz09:6106
+[   65135ms] [LOG] DD/MM/YYYY hh:mm @ https://phbidlautdemo.prahu-hub.com/home/masterjadwal1/cWpYWHBKb3RXWGFZb0RsUURoVlp4Zz09:6106
+[   65135ms] [LOG] undefined @ https://phbidlautdemo.prahu-hub.com/home/masterjadwal1/cWpYWHBKb3RXWGFZb0RsUURoVlp4Zz09:6106
+[   65136ms] [LOG] DD/MM/YYYY @ https://phbidlautdemo.prahu-hub.com/home/masterjadwal1/cWpYWHBKb3RXWGFZb0RsUURoVlp4Zz09:6106
+[   65136ms] [LOG] undefined @ https://phbidlautdemo.prahu-hub.com/home/masterjadwal1/cWpYWHBKb3RXWGFZb0RsUURoVlp4Zz09:6106
+[   65137ms] [LOG] DD/MM/YYYY @ https://phbidlautdemo.prahu-hub.com/home/masterjadwal1/cWpYWHBKb3RXWGFZb0RsUURoVlp4Zz09:6106
+[   65137ms] [LOG] undefined @ https://phbidlautdemo.prahu-hub.com/home/masterjadwal1/cWpYWHBKb3RXWGFZb0RsUURoVlp4Zz09:6106
+[   65138ms] [LOG] undefined @ https://phbidlautdemo.prahu-hub.com/home/masterjadwal1/cWpYWHBKb3RXWGFZb0RsUURoVlp4Zz09:6106
+[   65138ms] [LOG] undefined @ https://phbidlautdemo.prahu-hub.com/home/masterjadwal1/cWpYWHBKb3RXWGFZb0RsUURoVlp4Zz09:6106
+[   65138ms] [LOG] undefined @ https://phbidlautdemo.prahu-hub.com/home/masterjadwal1/cWpYWHBKb3RXWGFZb0RsUURoVlp4Zz09:6106
+[   65138ms] [LOG] undefined @ https://phbidlautdemo.prahu-hub.com/home/masterjadwal1/cWpYWHBKb3RXWGFZb0RsUURoVlp4Zz09:6106
+[   65140ms] [LOG] WebSocket connection @ https://phbidlautdemo.prahu-hub.com/home/masterjadwal1/cWpYWHBKb3RXWGFZb0RsUURoVlp4Zz09:6149
+[   65140ms] [LOG] WebSocket connection attempting... @ https://phbidlautdemo.prahu-hub.com/home/masterjadwal1/cWpYWHBKb3RXWGFZb0RsUURoVlp4Zz09:6227
+[   65299ms] [LOG] [Object, Object, Object, Object] @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/lihatjadwal.js?m=1787972929:14
+[   65301ms] [LOG] 4 @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/lihatjadwal.js?m=1787972929:506
+[   65301ms] [LOG] 4 countView1 1 pageNow 20 limitView1 @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/lihatjadwal.js?m=1787972929:508
+[   65302ms] [LOG] 4 @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/lihatjadwal.js?m=1787972929:514
+[   65302ms] [LOG] 4 jumlah data @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/lihatjadwal.js?m=1787972929:481
+[   65302ms] [LOG] 1 @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/lihatjadwal.js?m=1787972929:483
+[   65302ms] [LOG] 1 1 pageCount & pageNow @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/lihatjadwal.js?m=1787972929:406
+[   65305ms] [LOG] 200 xhrglobal @ https://phbidlautdemo.prahu-hub.com/home/masterjadwal1/cWpYWHBKb3RXWGFZb0RsUURoVlp4Zz09:6080
+[   65352ms] [LOG] WebSocket connected @ https://phbidlautdemo.prahu-hub.com/home/masterjadwal1/cWpYWHBKb3RXWGFZb0RsUURoVlp4Zz09:6158
+[   65355ms] [LOG] update_dashboard_order_laut @ https://phbidlautdemo.prahu-hub.com/home/masterjadwal1/cWpYWHBKb3RXWGFZb0RsUURoVlp4Zz09:6199
+[   65400ms] [LOG] Connected @ https://phbidlautdemo.prahu-hub.com/home/masterjadwal1/cWpYWHBKb3RXWGFZb0RsUURoVlp4Zz09:6199
+[   65525ms] [LOG] 200 xhrglobal @ https://phbidlautdemo.prahu-hub.com/home/masterjadwal1/cWpYWHBKb3RXWGFZb0RsUURoVlp4Zz09:6080
+[   65593ms] [LOG] 200 xhrglobal @ https://phbidlautdemo.prahu-hub.com/home/masterjadwal1/cWpYWHBKb3RXWGFZb0RsUURoVlp4Zz09:6080
+[   67129ms] TypeError: $(...).DataTable is not a function
+    at https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/js/scripts-init/tables.js:7:23
+[   69018ms] [LOG] sukses @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/lihatjadwal.js?m=1787972929:328
+[   69025ms] [LOG] 200 xhrglobal @ https://phbidlautdemo.prahu-hub.com/home/masterjadwal1/cWpYWHBKb3RXWGFZb0RsUURoVlp4Zz09:6080
+[   70087ms] Cannot use import statement outside a module
+[   70109ms] ReferenceError: Chart is not defined
+    at https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/js/scripts-init/charts/chartjs.js:8:13
+[   70313ms] Unexpected token '<'
+[   70314ms] Unexpected token '<'
+[   70448ms] Uncaught TypeError: expect element to be DOM Element, but got null
+    at n.init (https://cdnjs.cloudflare.com/ajax/libs/smooth-scrollbar/8.5.2/smooth-scrollbar.js:24:264)
+    at <anonymous> (https://phbidlautdemo.prahu-hub.com/home/masterjadwal1/cWpYWHBKb3RXWGFZb0RsUURoVlp4Zz09:5758:14)
+[   70471ms] [LOG] Harganamanya @ https://phbidlautdemo.prahu-hub.com/home/masterjadwal1/cWpYWHBKb3RXWGFZb0RsUURoVlp4Zz09:1756
+[   70483ms] [LOG] undefined @ https://phbidlautdemo.prahu-hub.com/home/masterjadwal1/cWpYWHBKb3RXWGFZb0RsUURoVlp4Zz09:6111
+[   70483ms] [LOG] DD/MM/YYYY @ https://phbidlautdemo.prahu-hub.com/home/masterjadwal1/cWpYWHBKb3RXWGFZb0RsUURoVlp4Zz09:6111
+[   70484ms] [LOG] undefined @ https://phbidlautdemo.prahu-hub.com/home/masterjadwal1/cWpYWHBKb3RXWGFZb0RsUURoVlp4Zz09:6111
+[   70485ms] [LOG] Masukkan Nama Kapal @ https://phbidlautdemo.prahu-hub.com/home/masterjadwal1/cWpYWHBKb3RXWGFZb0RsUURoVlp4Zz09:6111
+[   70485ms] [LOG] Masukkan Voyage @ https://phbidlautdemo.prahu-hub.com/home/masterjadwal1/cWpYWHBKb3RXWGFZb0RsUURoVlp4Zz09:6111
+[   70485ms] [LOG] DD/MM/YYYY hh:mm @ https://phbidlautdemo.prahu-hub.com/home/masterjadwal1/cWpYWHBKb3RXWGFZb0RsUURoVlp4Zz09:6111
+[   70485ms] [LOG] undefined @ https://phbidlautdemo.prahu-hub.com/home/masterjadwal1/cWpYWHBKb3RXWGFZb0RsUURoVlp4Zz09:6111
+[   70485ms] [LOG] DD/MM/YYYY @ https://phbidlautdemo.prahu-hub.com/home/masterjadwal1/cWpYWHBKb3RXWGFZb0RsUURoVlp4Zz09:6111
+[   70486ms] [LOG] undefined @ https://phbidlautdemo.prahu-hub.com/home/masterjadwal1/cWpYWHBKb3RXWGFZb0RsUURoVlp4Zz09:6111
+[   70486ms] [LOG] DD/MM/YYYY @ https://phbidlautdemo.prahu-hub.com/home/masterjadwal1/cWpYWHBKb3RXWGFZb0RsUURoVlp4Zz09:6111
+[   70487ms] [LOG] undefined @ https://phbidlautdemo.prahu-hub.com/home/masterjadwal1/cWpYWHBKb3RXWGFZb0RsUURoVlp4Zz09:6111
+[   70487ms] [LOG] undefined @ https://phbidlautdemo.prahu-hub.com/home/masterjadwal1/cWpYWHBKb3RXWGFZb0RsUURoVlp4Zz09:6111
+[   70487ms] [LOG] undefined @ https://phbidlautdemo.prahu-hub.com/home/masterjadwal1/cWpYWHBKb3RXWGFZb0RsUURoVlp4Zz09:6111
+[   70487ms] [LOG] undefined @ https://phbidlautdemo.prahu-hub.com/home/masterjadwal1/cWpYWHBKb3RXWGFZb0RsUURoVlp4Zz09:6111
+[   70487ms] [LOG] undefined @ https://phbidlautdemo.prahu-hub.com/home/masterjadwal1/cWpYWHBKb3RXWGFZb0RsUURoVlp4Zz09:6111
+[   70488ms] [LOG] WebSocket connection @ https://phbidlautdemo.prahu-hub.com/home/masterjadwal1/cWpYWHBKb3RXWGFZb0RsUURoVlp4Zz09:6154
+[   70489ms] [LOG] WebSocket connection attempting... @ https://phbidlautdemo.prahu-hub.com/home/masterjadwal1/cWpYWHBKb3RXWGFZb0RsUURoVlp4Zz09:6232
+[   70614ms] [LOG] [Object, Object, Object] @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/lihatjadwal.js?m=1787972929:14
+[   70617ms] [LOG] 3 @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/lihatjadwal.js?m=1787972929:506
+[   70617ms] [LOG] 3 countView1 1 pageNow 20 limitView1 @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/lihatjadwal.js?m=1787972929:508
+[   70618ms] [LOG] 3 @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/lihatjadwal.js?m=1787972929:514
+[   70619ms] [LOG] 3 jumlah data @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/lihatjadwal.js?m=1787972929:481
+[   70619ms] [LOG] 1 @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/lihatjadwal.js?m=1787972929:483
+[   70620ms] [LOG] 1 1 pageCount & pageNow @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/lihatjadwal.js?m=1787972929:406
+[   70625ms] [LOG] 200 xhrglobal @ https://phbidlautdemo.prahu-hub.com/home/masterjadwal1/cWpYWHBKb3RXWGFZb0RsUURoVlp4Zz09:6085
+[   70664ms] [LOG] WebSocket connected @ https://phbidlautdemo.prahu-hub.com/home/masterjadwal1/cWpYWHBKb3RXWGFZb0RsUURoVlp4Zz09:6163
+[   70666ms] [LOG] update_dashboard_order_laut @ https://phbidlautdemo.prahu-hub.com/home/masterjadwal1/cWpYWHBKb3RXWGFZb0RsUURoVlp4Zz09:6204
+[   70703ms] [LOG] Connected @ https://phbidlautdemo.prahu-hub.com/home/masterjadwal1/cWpYWHBKb3RXWGFZb0RsUURoVlp4Zz09:6204
+[   70797ms] [LOG] 200 xhrglobal @ https://phbidlautdemo.prahu-hub.com/home/masterjadwal1/cWpYWHBKb3RXWGFZb0RsUURoVlp4Zz09:6085
+[   70914ms] [LOG] 200 xhrglobal @ https://phbidlautdemo.prahu-hub.com/home/masterjadwal1/cWpYWHBKb3RXWGFZb0RsUURoVlp4Zz09:6085
+[   72503ms] TypeError: $(...).DataTable is not a function
+    at https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/js/scripts-init/tables.js:7:23

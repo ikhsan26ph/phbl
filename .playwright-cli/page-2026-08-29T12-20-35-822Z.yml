@@ -1,0 +1,352 @@
+- generic [active] [ref=f9e1]:
+  - generic [ref=f9e2]:
+    - generic [ref=f9e3]:
+      - generic [ref=f9e4]:
+        - link [ref=f9e6] [cursor=pointer]:
+          - /url: https://phbidlautdemo.prahu-hub.com/
+        - button [ref=f9e10] [cursor=pointer]
+      - text:  
+      - generic [ref=f9e13]:
+        - generic [ref=f9e14]:
+          - generic [ref=f9e15]: PT. Muda Jaya Wijaya Karya Sentosa Indah Elok (IK)
+          - button "Transporter" [ref=f9e17]
+        - generic [ref=f9e21]:
+          - generic [ref=f9e22]:
+            - generic [ref=f9e23]: Kusuma Jaya Wijaya Abadi Sentosa Mujur Selalu
+            - generic [ref=f9e24]: partner.ph2021@gmail.com
+          - img "assets/photo/1000643450.jpg" [ref=f9e26]
+          - link "" [ref=f9e27] [cursor=pointer]:
+            - /url: https://phbidlautdemo.prahu-hub.com/home/notification
+          - link [ref=f9e35] [cursor=pointer]:
+            - /url: https://phbidlautdemo.prahu-hub.com/user/do_logout
+    - generic [ref=f9e38]:
+      - generic [ref=f9e39]:
+        - text: 
+        - generic [ref=f9e40]:
+          - list [ref=f9e42]:
+            - listitem
+            - listitem [ref=f9e43]:
+              - link "PENGAJUAN LELANG" [ref=f9e44] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/lelang/listlelang
+            - listitem [ref=f9e47]:
+              - link "HARGA & JADWAL" [ref=f9e48] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/home/hargajadwal
+            - listitem [ref=f9e51]:
+              - link "PENGAJUAN NEGO" [ref=f9e52] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/lelang/pengajuannego
+            - listitem [ref=f9e55]:
+              - link "DAFTAR ORDER" [ref=f9e56] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/order/orderlist
+            - listitem [ref=f9e59]:
+              - link "PENUGASAN TRACKING" [ref=f9e60] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/home/penugasantracking
+            - listitem [ref=f9e63]:
+              - link "PROFIL" [ref=f9e64] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/home/myprofile
+            - listitem [ref=f9e67]:
+              - generic [ref=f9e68] [cursor=pointer]:
+                - text: PENGATURAN AKUN
+                - generic [ref=f9e71]: 
+            - listitem [ref=f9e72]:
+              - link "PREFERENCE NOTIF" [ref=f9e73] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/home/preferencenotifbidder
+            - listitem [ref=f9e76]:
+              - link "AKUN SAYA" [ref=f9e77] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/home/akunsaya
+          - generic [ref=f9e82]:
+            - paragraph [ref=f9e84]: KONTAK KAMI
+            - generic [ref=f9e85]:
+              - generic [ref=f9e86]: 
+              - text: "081246665023"
+            - generic [ref=f9e87]:
+              - generic [ref=f9e88]: 
+              - text: "081246665023"
+            - generic [ref=f9e89]:
+              - generic [ref=f9e90]: 
+              - text: csct@prahu-hub.com
+            - generic [ref=f9e91]:
+              - link [ref=f9e92] [cursor=pointer]:
+                - /url: https://facebook.com/sosmed.phbid
+              - link [ref=f9e94] [cursor=pointer]:
+                - /url: https://twitter.com/PrahuHub
+              - link [ref=f9e96] [cursor=pointer]:
+                - /url: https://instagram.com/phbid_/
+              - link [ref=f9e98] [cursor=pointer]:
+                - /url: https://www.youtube.com/channel/UC41VntroP3zKmXZYnGgtFdw
+              - link [ref=f9e100] [cursor=pointer]:
+                - /url: http://linkedin.com/in/ph-bid-aa5393211/
+      - generic [ref=f9e102]:
+        - generic [ref=f9e103]:
+          - generic [ref=f9e106]:
+            - link "Beranda" [ref=f9e108] [cursor=pointer]:
+              - /url: https://phbidlautdemo.prahu-hub.com/lelang/listLelang
+            - text: /
+            - link "Daftar Pengajuan Lelang" [ref=f9e110] [cursor=pointer]:
+              - /url: https://phbidlautdemo.prahu-hub.com/lelang/listLelang
+            - text: / Detail Pengajuan Lelang
+          - generic [ref=f9e112]:
+            - paragraph [ref=f9e113]: Detail Pengajuan Lelang
+            - button " Kembali" [ref=f9e114] [cursor=pointer]:
+              - generic [ref=f9e115]: 
+              - text: Kembali
+          - tabpanel [ref=f9e118]:
+            - generic [ref=f9e120]:
+              - table [ref=f9e126]:
+                - rowgroup [ref=f9e127]:
+                  - row [ref=f9e128]:
+                    - columnheader "Nomor Lelang" [ref=f9e129]
+                    - columnheader "Buka Lelang" [ref=f9e130]
+                    - columnheader "Tutup Lelang" [ref=f9e131]
+                    - columnheader "Rencana Mulai Kirim" [ref=f9e132]
+                    - columnheader "Rencana Akhir Kirim" [ref=f9e133]
+                - rowgroup [ref=f9e134]:
+                  - row [ref=f9e135]:
+                    - cell "LELANGFCU/28082026IK" [ref=f9e136]
+                    - cell "27/08/2026 09:09" [ref=f9e137]
+                    - cell "27/08/2026 09:10" [ref=f9e138]
+                    - cell "27/08/2026 09:11" [ref=f9e139]
+                    - cell "31/08/2027 09:12" [ref=f9e140]
+              - generic [ref=f9e143]:
+                - generic [ref=f9e144]:
+                  - text: Lelang Dibuat
+                  - generic [ref=f9e145]: ":"
+                - generic [ref=f9e146]: 27/08/2026 09:11
+                - generic [ref=f9e147]:
+                  - text: Shipper
+                  - generic [ref=f9e148]: ":"
+                - generic [ref=f9e149]: PT. Cipta Karya Abadi Sejahtera Sentora Mujur Selalu
+                - generic [ref=f9e150]:
+                  - text: Status Lelang
+                  - generic [ref=f9e151]: ":"
+                - generic [ref=f9e152]: LELANG DITUTUP
+              - generic [ref=f9e155]:
+                - heading "SYARAT & KETENTUAN" [level=6] [ref=f9e156]
+                - generic [ref=f9e157]:
+                  - generic [ref=f9e158]:
+                    - text: Dokumen Aanwijzing
+                    - generic [ref=f9e159]: ":"
+                  - generic [ref=f9e160]: Aanwijzing PT. Primax Geo Sejahtera
+                  - generic [ref=f9e162]:
+                    - text: Biaya Termasuk
+                    - generic [ref=f9e163]: ":"
+                  - generic [ref=f9e164]: Krani, Buruh Muat, Kawalan Asal, Trucking Asal, THC Asal, LOLO Asal, Freight Kapal, Buruh Bongkar, Kawalan Tujuan, Trucking Tujuan, THC Tujuan, LOLO Tujuan, Lift On, Asuransi
+                  - generic [ref=f9e165]:
+                    - text: Harga yang ditawarkan telah termasuk
+                    - generic [ref=f9e166]: ":"
+                  - generic [ref=f9e167]: Biaya Buruh
+                  - generic [ref=f9e168]:
+                    - text: Harga yang ditawarkan belum termasuk
+                    - generic [ref=f9e169]: ":"
+                  - generic [ref=f9e170]: Biaya Forklift
+                  - generic [ref=f9e171]:
+                    - text: Dokumen Penagihan
+                    - generic [ref=f9e172]: ":"
+                  - generic [ref=f9e173]: Invoice, Faktur Pajak, Surat Jalan, DO, BL Pelayaran, Tanda Terima Barang, Dokumen Perjanjian, Dokumen Lelang
+                  - generic [ref=f9e174]:
+                    - text: Catatan Tambahan
+                    - generic [ref=f9e175]: 
+                    - generic [ref=f9e176]: ":"
+                  - generic [ref=f9e177]: Dokumen dikirimkan setelah dilakukan dooring
+                  - generic [ref=f9e178]:
+                    - text: Budget Pengiriman
+                    - generic [ref=f9e179]: ":"
+                  - generic [ref=f9e180]: Rp. 4.500.000
+                  - generic [ref=f9e181]:
+                    - text: Dokumen Lelang
+                    - generic [ref=f9e182]: ":"
+                  - generic [ref=f9e183]: "-"
+            - generic [ref=f9e187]:
+              - heading "RUTE PENGIRIMAN" [level=6] [ref=f9e188]
+              - generic [ref=f9e189]:
+                - generic [ref=f9e190]:
+                  - text: Pelabuhan Asal (POL)
+                  - generic [ref=f9e191]: ":"
+                - generic [ref=f9e192]: Tanjung Perak (SUB) - Kota Surabaya
+                - generic [ref=f9e193]:
+                  - text: Informasi Alamat Lengkap Asal
+                  - generic [ref=f9e194]: ":"
+                - generic [ref=f9e195]: Jalan Indragiri Baru
+                - generic [ref=f9e196]:
+                  - text: Kota / Kab. Alamat Asal
+                  - generic [ref=f9e197]: ":"
+                - generic [ref=f9e198]: Kota Surabaya
+              - generic [ref=f9e199]:
+                - generic [ref=f9e200]:
+                  - text: Pelabuhan Tujuan (POD)
+                  - generic [ref=f9e201]: ":"
+                - generic [ref=f9e202]: Tanjung Emas (SRG) - Kota Semarang
+                - generic [ref=f9e203]:
+                  - text: Informasi Alamat Lengkap Tujuan
+                  - generic [ref=f9e204]: ":"
+                - generic [ref=f9e205]: Jalan Kapuas Hilir 33
+                - generic [ref=f9e206]:
+                  - text: Kota / Kab. Alamat Tujuan
+                  - generic [ref=f9e207]: ":"
+                - generic [ref=f9e208]: Kab. Semarang
+                - generic [ref=f9e209]:
+                  - text: PIC Tempat Tujuan
+                  - generic [ref=f9e210]: ":"
+                - generic [ref=f9e211]: Manujo
+                - generic [ref=f9e212]:
+                  - text: Telp. PIC Tempat Tujuan
+                  - generic [ref=f9e213]: ":"
+                - generic [ref=f9e214]: "083830011881"
+            - generic [ref=f9e218]:
+              - heading "INFORMASI KONTAINER" [level=6] [ref=f9e219]
+              - generic [ref=f9e220]:
+                - generic [ref=f9e221]:
+                  - text: Jenis Kontainer
+                  - generic [ref=f9e222]: ":"
+                - generic [ref=f9e223]: 20 DRY, 20 ISOTANK, 20 REEFER, 40 REEFER, 40 FR, 40 HC
+                - generic [ref=f9e224]:
+                  - text: Volume Pengiriman
+                  - generic [ref=f9e225]: ":"
+                - generic [ref=f9e226]: "2100"
+                - generic [ref=f9e227]:
+                  - text: Deskripsi Barang
+                  - generic [ref=f9e228]: ":"
+                - generic [ref=f9e229]: Sembako
+          - generic [ref=f9e230]: HARGA PENAWARAN
+          - generic [ref=f9e231]:
+            - generic [ref=f9e232]:
+              - generic [ref=f9e233]:
+                - generic [ref=f9e234]:
+                  - button " Filter" [ref=f9e235] [cursor=pointer]:
+                    - generic [ref=f9e236]: 
+                    - text: Filter
+                  - button " Sortir" [ref=f9e237] [cursor=pointer]:
+                    - generic [ref=f9e238]: 
+                    - text: Sortir
+                  - text: 
+                  - generic [ref=f9e240]:
+                    - paragraph [ref=f9e241]: Menampilkan
+                    - combobox [ref=f9e242]:
+                      - option "20" [selected]
+                      - option "30"
+                      - option "50"
+                      - option "100"
+                    - paragraph [ref=f9e243]: Data
+                - text:   
+              - text:    
+              - table [ref=f9e245]:
+                - rowgroup [ref=f9e246]:
+                  - row [ref=f9e247]:
+                    - columnheader "Pelayaran" [ref=f9e248]
+                    - columnheader "Nama Kapal Voyage" [ref=f9e249]:
+                      - generic [ref=f9e250]: Nama Kapal
+                      - generic [ref=f9e251]: Voyage
+                    - columnheader "Pelabuhan Asal ETD" [ref=f9e252]:
+                      - generic [ref=f9e253]: Pelabuhan Asal
+                      - generic [ref=f9e254]: ETD
+                    - columnheader "Pelabuhan Tujuan ETA" [ref=f9e255]:
+                      - generic [ref=f9e256]: Pelabuhan Tujuan
+                      - generic [ref=f9e257]: ETA
+                    - columnheader "Jenis" [ref=f9e258]
+                    - columnheader "Harga Satuan (Sebelum PPN)" [ref=f9e260]:
+                      - generic [ref=f9e261]: Harga Satuan
+                      - generic [ref=f9e262]: (Sebelum PPN)
+                - rowgroup [ref=f9e263]:
+                  - row [ref=f9e264]:
+                    - cell [ref=f9e265]
+                  - row [ref=f9e266]:
+                    - cell [ref=f9e267]
+                    - 'cell "KM. Layar KMLYR001 Open Stack : 29/08/2026 Closing : 30/08/2026 09:12" [ref=f9e270]':
+                      - generic [ref=f9e271]: KM. Layar
+                      - generic [ref=f9e272]: KMLYR001
+                      - generic [ref=f9e273]:
+                        - generic [ref=f9e274]: Open Stack
+                        - text: ": 29/08/2026"
+                      - generic [ref=f9e275]:
+                        - generic [ref=f9e276]: Closing
+                        - text: ": 30/08/2026 09:12"
+                    - cell "Tanjung Perak (SUB) 31/08/2026" [ref=f9e277]:
+                      - generic [ref=f9e278]: Tanjung Perak (SUB)
+                      - generic [ref=f9e279]: 31/08/2026
+                    - cell "Tanjung Emas (SRG) 05/09/2026" [ref=f9e280]:
+                      - generic [ref=f9e281]: Tanjung Emas (SRG)
+                      - generic [ref=f9e282]: 05/09/2026
+                    - cell "20 DRY" [ref=f9e283]
+                    - cell "Rp. 4.234.300 PPN 1,1%PPh 2% Efektif 01/08/2026" [ref=f9e284]:
+                      - generic [ref=f9e285]: Rp. 4.234.300
+                      - generic [ref=f9e286]:
+                        - generic [ref=f9e287]: PPN 1,1%
+                        - generic [ref=f9e288]: PPh 2%
+                      - generic [ref=f9e289]: Efektif 01/08/2026
+                  - row [ref=f9e290]:
+                    - cell " Info Harga" [ref=f9e291]:
+                      - generic [ref=f9e294] [cursor=pointer]:
+                        - generic [ref=f9e295]: 
+                        - text: Info Harga
+                  - row [ref=f9e296]:
+                    - cell [ref=f9e297]
+                  - row [ref=f9e298]:
+                    - cell [ref=f9e299]
+                    - 'cell "AUTOTEST Kapal AT-OS-1 Open Stack : 01/01/2020 Closing : 30/09/2026 10:00" [ref=f9e302]':
+                      - generic [ref=f9e303]: AUTOTEST Kapal
+                      - generic [ref=f9e304]: AT-OS-1
+                      - generic [ref=f9e305]:
+                        - generic [ref=f9e306]: Open Stack
+                        - text: ": 01/01/2020"
+                      - generic [ref=f9e307]:
+                        - generic [ref=f9e308]: Closing
+                        - text: ": 30/09/2026 10:00"
+                    - cell "Tanjung Perak (SUB) 01/10/2026" [ref=f9e309]:
+                      - generic [ref=f9e310]: Tanjung Perak (SUB)
+                      - generic [ref=f9e311]: 01/10/2026
+                    - cell "Tanjung Emas (SRG) 05/10/2026" [ref=f9e312]:
+                      - generic [ref=f9e313]: Tanjung Emas (SRG)
+                      - generic [ref=f9e314]: 05/10/2026
+                    - cell "20 DRY" [ref=f9e315]
+                    - cell "Rp. 4.234.300 PPN 1,1%PPh 2% Efektif 01/08/2026" [ref=f9e316]:
+                      - generic [ref=f9e317]: Rp. 4.234.300
+                      - generic [ref=f9e318]:
+                        - generic [ref=f9e319]: PPN 1,1%
+                        - generic [ref=f9e320]: PPh 2%
+                      - generic [ref=f9e321]: Efektif 01/08/2026
+                  - row [ref=f9e322]:
+                    - cell " Info Harga" [ref=f9e323]:
+                      - generic [ref=f9e326] [cursor=pointer]:
+                        - generic [ref=f9e327]: 
+                        - text: Info Harga
+                  - row [ref=f9e328]:
+                    - cell [ref=f9e329]
+                  - row [ref=f9e330]:
+                    - cell [ref=f9e331]
+                    - 'cell "KM. Malay KMMLY001 Open Stack : 07/09/2026 Closing : 01/12/2026 16:21" [ref=f9e334]':
+                      - generic [ref=f9e335]: KM. Malay
+                      - generic [ref=f9e336]: KMMLY001
+                      - generic [ref=f9e337]:
+                        - generic [ref=f9e338]: Open Stack
+                        - text: ": 07/09/2026"
+                      - generic [ref=f9e339]:
+                        - generic [ref=f9e340]: Closing
+                        - text: ": 01/12/2026 16:21"
+                    - cell "Tanjung Perak (SUB) 02/12/2026" [ref=f9e341]:
+                      - generic [ref=f9e342]: Tanjung Perak (SUB)
+                      - generic [ref=f9e343]: 02/12/2026
+                    - cell "Tanjung Emas (SRG) 03/12/2026" [ref=f9e344]:
+                      - generic [ref=f9e345]: Tanjung Emas (SRG)
+                      - generic [ref=f9e346]: 03/12/2026
+                    - cell "20 DRY" [ref=f9e347]
+                    - cell "Rp. 4.234.300 PPN 1,1%PPh 2% Efektif 01/08/2026" [ref=f9e348]:
+                      - generic [ref=f9e349]: Rp. 4.234.300
+                      - generic [ref=f9e350]:
+                        - generic [ref=f9e351]: PPN 1,1%
+                        - generic [ref=f9e352]: PPh 2%
+                      - generic [ref=f9e353]: Efektif 01/08/2026
+                  - row [ref=f9e354]:
+                    - cell " Info Harga" [ref=f9e355]:
+                      - generic [ref=f9e358] [cursor=pointer]:
+                        - generic [ref=f9e359]: 
+                        - text: Info Harga
+                  - row [ref=f9e360]:
+                    - cell [ref=f9e361]
+              - text:   
+            - generic [ref=f9e362]:
+              - status [ref=f9e364]:
+                - status [ref=f9e365]: Menampilkan 1 sampai 3 dari 3 data
+              - list [ref=f9e368]:
+                - listitem [ref=f9e369]:
+                  - generic [ref=f9e370] [cursor=pointer]: "1"
+        - paragraph [ref=f9e376]: © BETA 20260228 v1.3.28 - PH Bid Laut | Digital Logistic Platform
+  - text:  

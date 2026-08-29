@@ -1,0 +1,45 @@
+[     641ms] CKEditorError: editor-create-initial-data
+Read more: https://ckeditor.com/docs/ckeditor5/latest/support/error-codes.html#error-editor-create-initial-data
+    at new iC (https://cdn.ckeditor.com/ckeditor5/44.0.0/ckeditor5.umd.js:11:824251)
+    at https://cdn.ckeditor.com/ckeditor5/44.0.0/ckeditor5.umd.js:11:824914
+    at new Promise (<anonymous>)
+    at iC.create (https://cdn.ckeditor.com/ckeditor5/44.0.0/ckeditor5.umd.js:11:824889)
+    at https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/css/ckeditor/main.js?m=1772846942:156:15
+[    1278ms] Unexpected token '<'
+[    1285ms] Cannot use import statement outside a module
+[    1327ms] ReferenceError: Chart is not defined
+    at https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/js/scripts-init/charts/chartjs.js:8:13
+[    1328ms] Unexpected token '<'
+[    1434ms] Unexpected token '<'
+[    1512ms] Uncaught TypeError: expect element to be DOM Element, but got null
+    at n.init (https://cdnjs.cloudflare.com/ajax/libs/smooth-scrollbar/8.5.2/smooth-scrollbar.js:24:264)
+    at <anonymous> (https://phbidlautdemo.prahu-hub.com/home/myprofile:5616:14)
+[    1540ms] [LOG] Profil1namanya @ https://phbidlautdemo.prahu-hub.com/home/myprofile:1767
+[    1550ms] [WARNING] jQuery.Deferred exception: Cannot read properties of undefined (reading 'replaceAll') TypeError: Cannot read properties of undefined (reading 'replaceAll')
+    at HTMLDocument.<anonymous> (https://phbidlautdemo.prahu-hub.com/home/myprofile:5103:34)
+    at e (https://code.jquery.com/jquery-3.7.1.min.js:2:27028)
+    at t (https://code.jquery.com/jquery-3.7.1.min.js:2:27330) undefined @ https://code.jquery.com/jquery-3.7.1.min.js:1
+[    1551ms] [LOG] undefined @ https://phbidlautdemo.prahu-hub.com/home/myprofile:5969
+[    1552ms] [LOG] undefined @ https://phbidlautdemo.prahu-hub.com/home/myprofile:5969
+[    1553ms] [LOG] WebSocket connection @ https://phbidlautdemo.prahu-hub.com/home/myprofile:6012
+[    1553ms] [LOG] WebSocket connection attempting... @ https://phbidlautdemo.prahu-hub.com/home/myprofile:6090
+[    1592ms] TypeError: Cannot read properties of undefined (reading 'replaceAll')
+    at HTMLDocument.<anonymous> (https://phbidlautdemo.prahu-hub.com/home/myprofile:5103:34)
+    at e (https://code.jquery.com/jquery-3.7.1.min.js:2:27028)
+    at t (https://code.jquery.com/jquery-3.7.1.min.js:2:27330)
+[    1693ms] [LOG] WebSocket connected @ https://phbidlautdemo.prahu-hub.com/home/myprofile:6021
+[    1696ms] [LOG] update_dashboard_order_laut @ https://phbidlautdemo.prahu-hub.com/home/myprofile:6062
+[    1730ms] [LOG] Connected @ https://phbidlautdemo.prahu-hub.com/home/myprofile:6062
+[    2965ms] [LOG] tes @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/ulasan.js?m=1787972929:42
+[    2968ms] [LOG] 4 @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/ulasan.js?m=1787972929:652
+[    2968ms] [LOG] 4 countView1 1 pageNow 10 limitView1 @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/ulasan.js?m=1787972929:654
+[    2969ms] [LOG] 4 @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/ulasan.js?m=1787972929:660
+[    2969ms] [LOG] 4 jumlah data @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/ulasan.js?m=1787972929:629
+[    2969ms] [LOG] 1 @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/ulasan.js?m=1787972929:631
+[    2970ms] [LOG] 1 1 pageCount & pageNow @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/ulasan.js?m=1787972929:555
+[    2976ms] [LOG] 200 xhrglobal @ https://phbidlautdemo.prahu-hub.com/home/myprofile:5943
+[    2976ms] [LOG] ce.fn.init stepItem @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/ulasan.js?m=1787972929:529
+[    3081ms] [LOG] 200 xhrglobal @ https://phbidlautdemo.prahu-hub.com/home/myprofile:5943
+[    3141ms] [LOG] 200 xhrglobal @ https://phbidlautdemo.prahu-hub.com/home/myprofile:5943
+[    3551ms] TypeError: $(...).DataTable is not a function
+    at https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/js/scripts-init/tables.js:7:23

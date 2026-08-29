@@ -1,0 +1,138 @@
+- generic [active] [ref=f7e1]:
+  - generic [ref=f7e2]:
+    - generic [ref=f7e3]:
+      - generic [ref=f7e4]:
+        - link [ref=f7e6] [cursor=pointer]:
+          - /url: https://phbidlautdemo.prahu-hub.com/
+        - button [ref=f7e10] [cursor=pointer]
+      - text:  
+      - generic [ref=f7e13]:
+        - generic [ref=f7e14]:
+          - generic [ref=f7e15]: PT. Muda Jaya Wijaya Karya Sentosa Indah Elok (IK)
+          - button "Transporter" [ref=f7e17]
+        - generic [ref=f7e21]:
+          - generic [ref=f7e22]:
+            - generic [ref=f7e23]: Kusuma Jaya Wijaya Abadi Sentosa Mujur Selalu
+            - generic [ref=f7e24]: partner.ph2021@gmail.com
+          - img "assets/photo/1000643450.jpg" [ref=f7e26]
+          - link "" [ref=f7e27] [cursor=pointer]:
+            - /url: https://phbidlautdemo.prahu-hub.com/home/notification
+          - link [ref=f7e34] [cursor=pointer]:
+            - /url: https://phbidlautdemo.prahu-hub.com/user/do_logout
+    - generic [ref=f7e37]:
+      - generic [ref=f7e38]:
+        - text: 
+        - generic [ref=f7e39]:
+          - list [ref=f7e41]:
+            - listitem
+            - listitem [ref=f7e42]:
+              - link "PENGAJUAN LELANG" [ref=f7e43] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/lelang/listlelang
+            - listitem [ref=f7e46]:
+              - link "HARGA & JADWAL" [ref=f7e47] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/home/hargajadwal
+            - listitem [ref=f7e50]:
+              - link "PENGAJUAN NEGO" [ref=f7e51] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/lelang/pengajuannego
+            - listitem [ref=f7e54]:
+              - link "DAFTAR ORDER" [ref=f7e55] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/order/orderlist
+            - listitem [ref=f7e58]:
+              - link "PENUGASAN TRACKING" [ref=f7e59] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/home/penugasantracking
+            - listitem [ref=f7e62]:
+              - link "PROFIL" [ref=f7e63] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/home/myprofile
+            - listitem [ref=f7e66]:
+              - generic [ref=f7e67] [cursor=pointer]:
+                - text: PENGATURAN AKUN
+                - generic [ref=f7e70]: 
+            - listitem [ref=f7e71]:
+              - link "PREFERENCE NOTIF" [ref=f7e72] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/home/preferencenotifbidder
+            - listitem [ref=f7e75]:
+              - link "AKUN SAYA" [ref=f7e76] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/home/akunsaya
+          - generic [ref=f7e81]:
+            - paragraph [ref=f7e83]: KONTAK KAMI
+            - generic [ref=f7e84]:
+              - generic [ref=f7e85]: 
+              - text: "081246665023"
+            - generic [ref=f7e86]:
+              - generic [ref=f7e87]: 
+              - text: "081246665023"
+            - generic [ref=f7e88]:
+              - generic [ref=f7e89]: 
+              - text: csct@prahu-hub.com
+            - generic [ref=f7e90]:
+              - link [ref=f7e91] [cursor=pointer]:
+                - /url: https://facebook.com/sosmed.phbid
+              - link [ref=f7e93] [cursor=pointer]:
+                - /url: https://twitter.com/PrahuHub
+              - link [ref=f7e95] [cursor=pointer]:
+                - /url: https://instagram.com/phbid_/
+              - link [ref=f7e97] [cursor=pointer]:
+                - /url: https://www.youtube.com/channel/UC41VntroP3zKmXZYnGgtFdw
+              - link [ref=f7e99] [cursor=pointer]:
+                - /url: http://linkedin.com/in/ph-bid-aa5393211/
+      - generic [ref=f7e101]:
+        - generic [ref=f7e102]:
+          - generic [ref=f7e105]:
+            - link "Beranda" [ref=f7e107] [cursor=pointer]:
+              - /url: https://phbidlautdemo.prahu-hub.com/lelang/listLelang
+            - text: / Preference Notif
+          - paragraph [ref=f7e110]: PREFERENCE NOTIF
+          - generic [ref=f7e112]:
+            - tabpanel [ref=f7e113]:
+              - generic [ref=f7e117]:
+                - generic [ref=f7e118]:
+                  - generic [ref=f7e119]:
+                    - generic [ref=f7e120]: Nama Perusahaan
+                    - generic [ref=f7e121]: ":"
+                  - generic [ref=f7e122]: PT. Muda Jaya Wijaya Karya Sentosa Indah Elok (IK)
+                  - link " Setting" [ref=f7e124] [cursor=pointer]:
+                    - /url: https://phbidlautdemo.prahu-hub.com/home/settingpreferencenotifbidder/66
+                    - generic [ref=f7e125]: 
+                    - text: Setting
+                - generic [ref=f7e126]:
+                  - generic [ref=f7e127]:
+                    - generic [ref=f7e128]: Tanggal Register
+                    - generic [ref=f7e129]: ":"
+                  - generic [ref=f7e130]: 01/09/2023 13:33
+                - generic [ref=f7e132]:
+                  - generic [ref=f7e133]:
+                    - generic [ref=f7e134]: Tanggal Setting Terakhir
+                    - generic [ref=f7e135]: ":"
+                  - generic [ref=f7e136]: 04/03/2026 09:03
+                - generic [ref=f7e138]: "*) Preference notif digunakan hanya untuk akun utama"
+                - text: 
+            - tabpanel [ref=f7e140]:
+              - generic [ref=f7e143]:
+                - generic [ref=f7e146]:
+                  - generic [ref=f7e147]: NOTIFIKASI SISTEM
+                  - generic [ref=f7e148]: "*) Notif terkirim melalui push notifikasi"
+                - generic [ref=f7e149]:
+                  - generic [ref=f7e150]: Notif Perubahan Data Diterima
+                  - generic [ref=f7e152]: Notif Perubahan Data Ditolak
+                  - generic [ref=f7e154]: Notif Pengajuan Lelang
+                  - generic [ref=f7e156]: Notif Lelang Dibatalkan
+                - generic [ref=f7e158]:
+                  - generic [ref=f7e159]: Notif Pengajuan Nego
+                  - generic [ref=f7e161]: Notif Request Update Harga
+                  - generic [ref=f7e163]: Notif Validasi Perjanjian Shipper Diterima
+                  - generic [ref=f7e165]: Notif Shipper Request Jadwal
+            - tabpanel [ref=f7e167]:
+              - generic [ref=f7e170]:
+                - generic [ref=f7e171]: NOTIFIKASI EMAIL
+                - generic [ref=f7e175]:
+                  - generic [ref=f7e176]: Notif Perubahan Data Diterima
+                  - generic [ref=f7e178]: Notif Perubahan Data Ditolak
+                  - generic [ref=f7e180]: Notif Pengajuan Lelang
+                  - generic [ref=f7e182]: Notif Lelang Dibatalkan
+                - generic [ref=f7e184]:
+                  - generic [ref=f7e185]: Notif Pengajuan Nego
+                  - generic [ref=f7e187]: Notif Request Update Harga
+                  - generic [ref=f7e189]: Notif Transporter Kalah Lelang
+                  - generic [ref=f7e191]: Notif Validasi Perjanjian Shipper Diterima
+        - paragraph [ref=f7e198]: © BETA 20260228 v1.3.28 - PH Bid Laut | Digital Logistic Platform
+  - text:  

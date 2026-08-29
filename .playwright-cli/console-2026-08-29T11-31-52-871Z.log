@@ -1,0 +1,18 @@
+[     930ms] Cannot use import statement outside a module
+[     969ms] ReferenceError: Chart is not defined
+    at https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/js/scripts-init/charts/chartjs.js:8:13
+[    1033ms] Unexpected token '<'
+[    1343ms] Unexpected token '<'
+[    1446ms] Uncaught TypeError: expect element to be DOM Element, but got null
+    at n.init (https://cdnjs.cloudflare.com/ajax/libs/smooth-scrollbar/8.5.2/smooth-scrollbar.js:24:264)
+    at <anonymous> (https://phbidlautdemo.prahu-hub.com/home/preferencenotifbidder:5127:14)
+[    1464ms] [LOG] Preference Notifnamanya @ https://phbidlautdemo.prahu-hub.com/home/preferencenotifbidder:1755
+[    1476ms] [LOG] WebSocket connection @ https://phbidlautdemo.prahu-hub.com/home/preferencenotifbidder:5523
+[    1476ms] [LOG] WebSocket connection attempting... @ https://phbidlautdemo.prahu-hub.com/home/preferencenotifbidder:5601
+[    1640ms] [LOG] WebSocket connected @ https://phbidlautdemo.prahu-hub.com/home/preferencenotifbidder:5532
+[    1643ms] [LOG] update_dashboard_order_laut @ https://phbidlautdemo.prahu-hub.com/home/preferencenotifbidder:5573
+[    1677ms] [LOG] Connected @ https://phbidlautdemo.prahu-hub.com/home/preferencenotifbidder:5573
+[    1945ms] [LOG] 200 xhrglobal @ https://phbidlautdemo.prahu-hub.com/home/preferencenotifbidder:5454
+[    2082ms] [LOG] 200 xhrglobal @ https://phbidlautdemo.prahu-hub.com/home/preferencenotifbidder:5454
+[    3474ms] TypeError: $(...).DataTable is not a function
+    at https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/js/scripts-init/tables.js:7:23

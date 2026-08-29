@@ -1,0 +1,300 @@
+- generic [active] [ref=f15e1]:
+  - generic [ref=f15e2]:
+    - generic [ref=f15e3]:
+      - generic [ref=f15e4]:
+        - link [ref=f15e6] [cursor=pointer]:
+          - /url: https://phbidlautdemo.prahu-hub.com/
+        - button [ref=f15e10] [cursor=pointer]
+      - text:  
+      - generic [ref=f15e13]:
+        - generic [ref=f15e14]:
+          - generic [ref=f15e15]: PT. Muda Jaya Wijaya Karya Sentosa Indah Elok (IK)
+          - button "Transporter" [ref=f15e17]
+        - generic [ref=f15e21]:
+          - generic [ref=f15e22]:
+            - generic [ref=f15e23]: Kusuma Jaya Wijaya Abadi Sentosa Mujur Selalu
+            - generic [ref=f15e24]: partner.ph2021@gmail.com
+          - img "assets/photo/1000643450.jpg" [ref=f15e26]
+          - link "" [ref=f15e27] [cursor=pointer]:
+            - /url: https://phbidlautdemo.prahu-hub.com/home/notification
+          - link [ref=f15e34] [cursor=pointer]:
+            - /url: https://phbidlautdemo.prahu-hub.com/user/do_logout
+    - generic [ref=f15e37]:
+      - generic [ref=f15e38]:
+        - text: 
+        - generic [ref=f15e39]:
+          - list [ref=f15e41]:
+            - listitem
+            - listitem [ref=f15e42]:
+              - link "PENGAJUAN LELANG" [ref=f15e43] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/lelang/listlelang
+            - listitem [ref=f15e46]:
+              - link "HARGA & JADWAL" [ref=f15e47] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/home/hargajadwal
+            - listitem [ref=f15e50]:
+              - link "PENGAJUAN NEGO" [ref=f15e51] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/lelang/pengajuannego
+            - listitem [ref=f15e54]:
+              - link "DAFTAR ORDER" [ref=f15e55] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/order/orderlist
+            - listitem [ref=f15e58]:
+              - link "PENUGASAN TRACKING" [ref=f15e59] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/home/penugasantracking
+            - listitem [ref=f15e62]:
+              - link "PROFIL" [ref=f15e63] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/home/myprofile
+            - listitem [ref=f15e66]:
+              - generic [ref=f15e67] [cursor=pointer]:
+                - text: PENGATURAN AKUN
+                - generic [ref=f15e70]: 
+            - listitem [ref=f15e71]:
+              - link "PREFERENCE NOTIF" [ref=f15e72] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/home/preferencenotifbidder
+            - listitem [ref=f15e75]:
+              - link "AKUN SAYA" [ref=f15e76] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/home/akunsaya
+          - generic [ref=f15e81]:
+            - paragraph [ref=f15e83]: KONTAK KAMI
+            - generic [ref=f15e84]:
+              - generic [ref=f15e85]: 
+              - text: "081246665023"
+            - generic [ref=f15e86]:
+              - generic [ref=f15e87]: 
+              - text: "081246665023"
+            - generic [ref=f15e88]:
+              - generic [ref=f15e89]: 
+              - text: csct@prahu-hub.com
+            - generic [ref=f15e90]:
+              - link [ref=f15e91] [cursor=pointer]:
+                - /url: https://facebook.com/sosmed.phbid
+              - link [ref=f15e93] [cursor=pointer]:
+                - /url: https://twitter.com/PrahuHub
+              - link [ref=f15e95] [cursor=pointer]:
+                - /url: https://instagram.com/phbid_/
+              - link [ref=f15e97] [cursor=pointer]:
+                - /url: https://www.youtube.com/channel/UC41VntroP3zKmXZYnGgtFdw
+              - link [ref=f15e99] [cursor=pointer]:
+                - /url: http://linkedin.com/in/ph-bid-aa5393211/
+      - generic [ref=f15e101]:
+        - generic [ref=f15e102]:
+          - generic [ref=f15e105]:
+            - link "Beranda" [ref=f15e107] [cursor=pointer]:
+              - /url: https://phbidlautdemo.prahu-hub.com/lelang/listLelang
+            - text: /
+            - link "Daftar Order" [ref=f15e109] [cursor=pointer]:
+              - /url: https://phbidlautdemo.prahu-hub.com/order/orderlist
+            - text: "/ Detail Order : 20260828-06505"
+          - generic [ref=f15e111]:
+            - text: "ID ORDER : 20260828-06505"
+            - link [ref=f15e112] [cursor=pointer]:
+              - /url: https://phbidlautdemo.prahu-hub.com/order/orderlist
+              - button " Kembali" [ref=f15e113]:
+                - generic [ref=f15e114]: 
+                - text: Kembali
+          - generic [ref=f15e115]:
+            - generic [ref=f15e116]:
+              - generic [ref=f15e117]:
+                - tabpanel [ref=f15e119]:
+                  - generic [ref=f15e123]:
+                    - generic [ref=f15e124]: DETAIL PEMESAN
+                    - generic [ref=f15e125]:
+                      - generic [ref=f15e126]: Jaya Wijaya Kartika Abadi Sentosa Wijaya Jaya
+                      - text: pengirim.ph2021@gmail.com
+                    - generic [ref=f15e127]:
+                      - generic [ref=f15e128]: PT. Cipta Karya Abadi Sejahtera Sentora Mujur Selalu
+                      - generic [ref=f15e129]: Kab. Pesisir Selatan
+                      - generic [ref=f15e130]: Jl. Mayjen Sungkono No.89, Gn. Sari, Kec. Dukuhpakis, Surabaya, Jawa Timur 6022569
+                - tabpanel [ref=f15e132]:
+                  - generic [ref=f15e134]:
+                    - generic [ref=f15e135]: DETAIL ORDER
+                    - generic [ref=f15e136]:
+                      - generic [ref=f15e137]:
+                        - text: Dokumen Aanwijzing
+                        - generic [ref=f15e138]: ":"
+                      - generic [ref=f15e139]: Aanwijzing PT. Primax Geo Sejahtera
+                      - generic [ref=f15e140]:
+                        - text: Nomor Order
+                        - generic [ref=f15e141]: ":"
+                      - generic [ref=f15e142]: 20260828-06505
+                      - generic [ref=f15e143]:
+                        - text: Tanggal Buat Order
+                        - generic [ref=f15e144]: ":"
+                      - generic [ref=f15e145]: 28/08/2026 15:19
+                      - generic [ref=f15e146]:
+                        - text: Nomor Referensi
+                        - generic [ref=f15e147]: ":"
+                      - generic [ref=f15e148]: "-"
+                      - generic [ref=f15e149]:
+                        - text: Alasan Memesan Rute Ini
+                        - generic [ref=f15e150]: ":"
+                      - generic [ref=f15e151]: "-"
+                      - generic [ref=f15e152]:
+                        - text: Permintaan Muat
+                        - generic [ref=f15e153]: ":"
+                      - generic [ref=f15e154]: 30/08/2026 03:19
+                      - generic [ref=f15e155]:
+                        - text: Deskripsi Umum Barang
+                        - generic [ref=f15e156]: ":"
+                      - generic [ref=f15e157]: Sembako
+                      - generic [ref=f15e158]:
+                        - text: Catatan Untuk Transporter
+                        - generic [ref=f15e159]: ":"
+                      - generic [ref=f15e160]: "-"
+                    - alert [ref=f15e161]:
+                      - generic [ref=f15e162]: "Dibatalkan : Shipper telah membatalkan order."
+                - tabpanel [ref=f15e164]:
+                  - generic [ref=f15e168]:
+                    - generic [ref=f15e169]: BATAL ORDER
+                    - generic [ref=f15e171]:
+                      - generic [ref=f15e172]:
+                        - text: Tanggal Batal Order
+                        - generic [ref=f15e173]: ":"
+                      - generic [ref=f15e174]: 28/08/2026 15:33
+                      - generic [ref=f15e175]:
+                        - text: Alasan Batal Order
+                        - generic [ref=f15e176]: ":"
+                      - generic [ref=f15e177]: AAA
+                - text:   
+              - paragraph [ref=f15e179]:
+                - text: 2. PERJANJIAN PENGIRIMAN
+                - generic [ref=f15e180]: 
+              - paragraph [ref=f15e183] [cursor=pointer]:
+                - text: 1. PEMESANAN
+                - generic [ref=f15e184]: 
+              - generic [ref=f15e185]:
+                - tabpanel [ref=f15e188]:
+                  - generic [ref=f15e190]:
+                    - generic [ref=f15e191]: PEMUATAN BARANG
+                    - generic [ref=f15e192]:
+                      - generic [ref=f15e193]:
+                        - text: PIC Pemuatan
+                        - generic [ref=f15e194]: ":"
+                      - generic [ref=f15e195]: Yulianto
+                      - generic [ref=f15e196]:
+                        - text: Telepon / Whatsapp
+                        - generic [ref=f15e197]: ":"
+                      - generic [ref=f15e198]: "083830011881"
+                      - generic [ref=f15e199]:
+                        - text: Kota / Kab.
+                        - generic [ref=f15e200]: ":"
+                      - generic [ref=f15e201]: Kota Surabaya
+                      - generic [ref=f15e202]:
+                        - text: Alamat Pemuatan Barang
+                        - generic [ref=f15e203]: ":"
+                      - generic [ref=f15e204]: Jalan Indragiri Baru
+                - tabpanel [ref=f15e207]:
+                  - generic [ref=f15e209]:
+                    - generic [ref=f15e210]: PENERIMA BARANG
+                    - generic [ref=f15e211]:
+                      - generic [ref=f15e212]:
+                        - text: Nama / Perusahaan
+                        - generic [ref=f15e213]: ":"
+                      - generic [ref=f15e214]: PT. Perkasa Adi Makmur Sentosa
+                      - generic [ref=f15e215]:
+                        - text: PIC Penerimaan
+                        - generic [ref=f15e216]: ":"
+                      - generic [ref=f15e217]: Manujo
+                      - generic [ref=f15e218]:
+                        - text: Telepon / Whatsapp
+                        - generic [ref=f15e219]: ":"
+                      - generic [ref=f15e220]: "083830011881"
+                      - generic [ref=f15e221]:
+                        - text: Kota / Kab.
+                        - generic [ref=f15e222]: ":"
+                      - generic [ref=f15e223]: Kab. Semarang
+                      - generic [ref=f15e224]:
+                        - text: Alamat Penerimaan Barang
+                        - generic [ref=f15e225]: ":"
+                      - generic [ref=f15e226]: Jalan Kapuas Hilir 33
+                - tabpanel [ref=f15e229]:
+                  - generic [ref=f15e231]:
+                    - generic [ref=f15e232]: DATA MUATAN
+                    - generic [ref=f15e233]: 
+                    - link "Lihat Dokumen Packing List" [ref=f15e234] [cursor=pointer]:
+                      - /url: /order/orderdetail/U3M1bzFCejUxTUFqT3R4TUJBdTN5Zz09#
+                    - generic [ref=f15e236]:
+                      - paragraph [ref=f15e237]: UNIT 1
+                      - table [ref=f15e238]:
+                        - rowgroup [ref=f15e239]:
+                          - row [ref=f15e240]:
+                            - columnheader "Jenis Muatan" [ref=f15e241]
+                            - columnheader "Kemasan" [ref=f15e242]
+                            - columnheader "Jumlah" [ref=f15e243]
+                            - columnheader "Berat (Kg)" [ref=f15e244]
+                        - rowgroup [ref=f15e245]:
+                          - row [ref=f15e246]:
+                            - cell "Pertalite" [ref=f15e247]
+                            - cell "ISO TANK" [ref=f15e248]
+                            - cell "2" [ref=f15e249]
+                            - cell "3" [ref=f15e250]
+                      - separator [ref=f15e251]
+                      - paragraph [ref=f15e252]: "Total Berat : 3 Kg"
+            - generic [ref=f15e256]:
+              - tabpanel [ref=f15e258]:
+                - generic [ref=f15e260]:
+                  - generic [ref=f15e261]: PELAYARAN
+                  - generic [ref=f15e262]: KM. Layar
+                  - generic [ref=f15e266]:
+                    - generic [ref=f15e267]:
+                      - generic [ref=f15e268]: Voyage
+                      - generic [ref=f15e269]: ":"
+                      - generic [ref=f15e270]: KMLYR001
+                    - generic [ref=f15e271]:
+                      - generic [ref=f15e272]: Open Stack
+                      - generic [ref=f15e273]: ":"
+                      - generic [ref=f15e274]: 29/08/2026
+                    - generic [ref=f15e275]:
+                      - generic [ref=f15e276]: Closing
+                      - generic [ref=f15e277]: ":"
+                      - generic [ref=f15e278]: 30/08/2026 09:12
+              - tabpanel [ref=f15e280]:
+                - generic [ref=f15e282]:
+                  - generic [ref=f15e283]:
+                    - text: RUTE
+                    - generic [ref=f15e284] [cursor=pointer]:
+                      - text: Detail Rute
+                      - generic [ref=f15e285]: 
+                  - generic [ref=f15e286]:
+                    - generic [ref=f15e287]: Lelang
+                    - generic [ref=f15e288]: ":"
+                    - generic [ref=f15e289]: LELANGFCU/28082026IK
+                  - generic [ref=f15e290]:
+                    - generic [ref=f15e291]:
+                      - generic [ref=f15e292]: SUB
+                      - generic [ref=f15e293]: Tanjung Perak
+                      - generic [ref=f15e294]: 31/08/2026
+                    - generic [ref=f15e295]: 
+                    - generic [ref=f15e297]:
+                      - generic [ref=f15e298]: SRG
+                      - generic [ref=f15e299]: Tanjung Emas
+                      - generic [ref=f15e300]: 05/09/2026
+              - tabpanel [ref=f15e302]:
+                - generic [ref=f15e304]:
+                  - generic [ref=f15e305]:
+                    - text: HARGA PENGIRIMAN
+                    - generic [ref=f15e306] [cursor=pointer]:
+                      - text: Info Harga
+                      - generic [ref=f15e307]: 
+                  - generic [ref=f15e308]: PT. Muda Jaya Wijaya Karya Sentosa Indah Elok (IK)
+                  - generic [ref=f15e309]:
+                    - generic [ref=f15e310]:
+                      - text: Jenis
+                      - generic [ref=f15e311]: ":"
+                    - generic [ref=f15e312]: 20 DRY
+                  - generic [ref=f15e313]:
+                    - generic [ref=f15e314]:
+                      - text: Harga Satuan
+                      - generic [ref=f15e315]: ":"
+                    - generic [ref=f15e316]: Rp. 4.234.300
+                  - generic [ref=f15e317]:
+                    - generic [ref=f15e318]:
+                      - text: Jumlah Dipesan
+                      - generic [ref=f15e319]: ":"
+                    - generic [ref=f15e320]: "1"
+                  - generic [ref=f15e321]:
+                    - generic [ref=f15e322]:
+                      - text: Total Harga Pengiriman
+                      - generic [ref=f15e323]: ":"
+                    - generic [ref=f15e324]: Rp. 4.234.300
+        - paragraph [ref=f15e334]: © BETA 20260228 v1.3.28 - PH Bid Laut | Digital Logistic Platform
+  - text:     

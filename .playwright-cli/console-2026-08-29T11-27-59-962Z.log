@@ -1,0 +1,98 @@
+[    1077ms] CKEditorError: editor-create-initial-data
+Read more: https://ckeditor.com/docs/ckeditor5/latest/support/error-codes.html#error-editor-create-initial-data
+    at new iC (https://cdn.ckeditor.com/ckeditor5/44.0.0/ckeditor5.umd.js:11:824251)
+    at https://cdn.ckeditor.com/ckeditor5/44.0.0/ckeditor5.umd.js:11:824914
+    at new Promise (<anonymous>)
+    at iC.create (https://cdn.ckeditor.com/ckeditor5/44.0.0/ckeditor5.umd.js:11:824889)
+    at https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/css/ckeditor/main.js?m=1772846942:156:15
+[    2405ms] Unexpected token '<'
+[    2473ms] Cannot use import statement outside a module
+[    2548ms] ReferenceError: Chart is not defined
+    at https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/js/scripts-init/charts/chartjs.js:8:13
+[    2610ms] Unexpected token '<'
+[    2837ms] Unexpected token '<'
+[    2943ms] Uncaught TypeError: expect element to be DOM Element, but got null
+    at n.init (https://cdnjs.cloudflare.com/ajax/libs/smooth-scrollbar/8.5.2/smooth-scrollbar.js:24:264)
+    at <anonymous> (https://phbidlautdemo.prahu-hub.com/home/myprofile:5616:14)
+[    2964ms] [LOG] Profil1namanya @ https://phbidlautdemo.prahu-hub.com/home/myprofile:1767
+[    2977ms] [WARNING] jQuery.Deferred exception: Cannot read properties of undefined (reading 'replaceAll') TypeError: Cannot read properties of undefined (reading 'replaceAll')
+    at HTMLDocument.<anonymous> (https://phbidlautdemo.prahu-hub.com/home/myprofile:5103:34)
+    at e (https://code.jquery.com/jquery-3.7.1.min.js:2:27028)
+    at t (https://code.jquery.com/jquery-3.7.1.min.js:2:27330) undefined @ https://code.jquery.com/jquery-3.7.1.min.js:1
+[    2978ms] [LOG] undefined @ https://phbidlautdemo.prahu-hub.com/home/myprofile:5969
+[    2978ms] [LOG] undefined @ https://phbidlautdemo.prahu-hub.com/home/myprofile:5969
+[    2979ms] [LOG] WebSocket connection @ https://phbidlautdemo.prahu-hub.com/home/myprofile:6012
+[    2980ms] [LOG] WebSocket connection attempting... @ https://phbidlautdemo.prahu-hub.com/home/myprofile:6090
+[    3025ms] TypeError: Cannot read properties of undefined (reading 'replaceAll')
+    at HTMLDocument.<anonymous> (https://phbidlautdemo.prahu-hub.com/home/myprofile:5103:34)
+    at e (https://code.jquery.com/jquery-3.7.1.min.js:2:27028)
+    at t (https://code.jquery.com/jquery-3.7.1.min.js:2:27330)
+[    3110ms] [LOG] WebSocket connected @ https://phbidlautdemo.prahu-hub.com/home/myprofile:6021
+[    3113ms] [LOG] update_dashboard_order_laut @ https://phbidlautdemo.prahu-hub.com/home/myprofile:6062
+[    3145ms] [LOG] Connected @ https://phbidlautdemo.prahu-hub.com/home/myprofile:6062
+[    4976ms] TypeError: $(...).DataTable is not a function
+    at https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/js/scripts-init/tables.js:7:23
+[    5834ms] [LOG] tes @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/ulasan.js?m=1787972929:42
+[    5837ms] [LOG] 4 @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/ulasan.js?m=1787972929:652
+[    5838ms] [LOG] 4 countView1 1 pageNow 10 limitView1 @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/ulasan.js?m=1787972929:654
+[    5838ms] [LOG] 4 @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/ulasan.js?m=1787972929:660
+[    5839ms] [LOG] 4 jumlah data @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/ulasan.js?m=1787972929:629
+[    5839ms] [LOG] 1 @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/ulasan.js?m=1787972929:631
+[    5839ms] [LOG] 1 1 pageCount & pageNow @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/ulasan.js?m=1787972929:555
+[    5844ms] [LOG] 200 xhrglobal @ https://phbidlautdemo.prahu-hub.com/home/myprofile:5943
+[    5844ms] [LOG] ce.fn.init stepItem @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/ulasan.js?m=1787972929:529
+[    5982ms] [LOG] 200 xhrglobal @ https://phbidlautdemo.prahu-hub.com/home/myprofile:5943
+[    6033ms] [LOG] 200 xhrglobal @ https://phbidlautdemo.prahu-hub.com/home/myprofile:5943
+[   40145ms] CKEditorError: editor-create-initial-data
+Read more: https://ckeditor.com/docs/ckeditor5/latest/support/error-codes.html#error-editor-create-initial-data
+    at new iC (https://cdn.ckeditor.com/ckeditor5/44.0.0/ckeditor5.umd.js:11:824251)
+    at https://cdn.ckeditor.com/ckeditor5/44.0.0/ckeditor5.umd.js:11:824914
+    at new Promise (<anonymous>)
+    at iC.create (https://cdn.ckeditor.com/ckeditor5/44.0.0/ckeditor5.umd.js:11:824889)
+    at https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/css/ckeditor/main.js?m=1772846942:156:15
+[   40499ms] Cannot use import statement outside a module
+[   40589ms] ReferenceError: Chart is not defined
+    at https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/js/scripts-init/charts/chartjs.js:8:13
+[   40679ms] Unexpected token '<'
+[   40680ms] Unexpected token '<'
+[   41261ms] CKEditorError: license-key-expired
+Read more: https://ckeditor.com/docs/ckeditor5/latest/support/error-codes.html#error-license-key-expired
+    at https://cdn.ckeditor.com/ckeditor5/44.0.0/ckeditor5.umd.js:11:406165
+[   41264ms] CKEditorError: license-key-expired
+Read more: https://ckeditor.com/docs/ckeditor5/latest/support/error-codes.html#error-license-key-expired
+    at https://cdn.ckeditor.com/ckeditor5/44.0.0/ckeditor5.umd.js:11:406165
+[   41297ms] Uncaught TypeError: expect element to be DOM Element, but got null
+    at n.init (https://cdnjs.cloudflare.com/ajax/libs/smooth-scrollbar/8.5.2/smooth-scrollbar.js:24:264)
+    at <anonymous> (https://phbidlautdemo.prahu-hub.com/home/editprofile:5156:14)
+[   41325ms] [LOG] Profil1namanya @ https://phbidlautdemo.prahu-hub.com/home/editprofile:1766
+[   41339ms] [LOG] DD/MM/YYYY @ https://phbidlautdemo.prahu-hub.com/home/editprofile:5509
+[   41341ms] [LOG] 0 @ https://phbidlautdemo.prahu-hub.com/home/editprofile:5509
+[   41342ms] [LOG] undefined @ https://phbidlautdemo.prahu-hub.com/home/editprofile:5509
+[   41342ms] [LOG] undefined @ https://phbidlautdemo.prahu-hub.com/home/editprofile:5509
+[   41342ms] [LOG] undefined @ https://phbidlautdemo.prahu-hub.com/home/editprofile:5509
+[   41342ms] [LOG] undefined @ https://phbidlautdemo.prahu-hub.com/home/editprofile:5509
+[   41342ms] [LOG] undefined @ https://phbidlautdemo.prahu-hub.com/home/editprofile:5509
+[   41343ms] [LOG] undefined @ https://phbidlautdemo.prahu-hub.com/home/editprofile:5509
+[   41343ms] [LOG] undefined @ https://phbidlautdemo.prahu-hub.com/home/editprofile:5509
+[   41343ms] [LOG] undefined @ https://phbidlautdemo.prahu-hub.com/home/editprofile:5509
+[   41343ms] [LOG] undefined @ https://phbidlautdemo.prahu-hub.com/home/editprofile:5509
+[   41343ms] [LOG] undefined @ https://phbidlautdemo.prahu-hub.com/home/editprofile:5509
+[   41344ms] [LOG] undefined @ https://phbidlautdemo.prahu-hub.com/home/editprofile:5509
+[   41344ms] [LOG] undefined @ https://phbidlautdemo.prahu-hub.com/home/editprofile:5509
+[   41346ms] [LOG] WebSocket connection @ https://phbidlautdemo.prahu-hub.com/home/editprofile:5552
+[   41346ms] [LOG] WebSocket connection attempting... @ https://phbidlautdemo.prahu-hub.com/home/editprofile:5630
+[   41473ms] [LOG] WebSocket connected @ https://phbidlautdemo.prahu-hub.com/home/editprofile:5561
+[   41477ms] [LOG] update_dashboard_order_laut @ https://phbidlautdemo.prahu-hub.com/home/editprofile:5602
+[   41504ms] [LOG] Connected @ https://phbidlautdemo.prahu-hub.com/home/editprofile:5602
+[   41592ms] [LOG] 200 xhrglobal @ https://phbidlautdemo.prahu-hub.com/home/editprofile:5483
+[   41641ms] [LOG] 200 xhrglobal @ https://phbidlautdemo.prahu-hub.com/home/editprofile:5483
+[   43339ms] TypeError: $(...).DataTable is not a function
+    at https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/js/scripts-init/tables.js:7:23
+[   74007ms] [LOG] Connected @ https://phbidlautdemo.prahu-hub.com/home/editprofile:5602
+[   81624ms] [LOG] Connected @ https://phbidlautdemo.prahu-hub.com/home/editprofile:5602
+[   89385ms] [LOG] Connected @ https://phbidlautdemo.prahu-hub.com/home/editprofile:5602
+[   93132ms] [LOG] Connected @ https://phbidlautdemo.prahu-hub.com/home/editprofile:5602
+[   96602ms] [LOG] Connected @ https://phbidlautdemo.prahu-hub.com/home/editprofile:5602
+[  100105ms] [LOG] Connected @ https://phbidlautdemo.prahu-hub.com/home/editprofile:5602
+[  125274ms] [LOG] Connected @ https://phbidlautdemo.prahu-hub.com/home/editprofile:5602
+[  132991ms] [LOG] Connected @ https://phbidlautdemo.prahu-hub.com/home/editprofile:5602
