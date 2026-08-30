@@ -1,0 +1,181 @@
+- generic [active] [ref=f4e1]:
+  - generic [ref=f4e2]:
+    - generic [ref=f4e3]:
+      - generic [ref=f4e4]:
+        - link [ref=f4e6] [cursor=pointer]:
+          - /url: https://phbidlautdemo.prahu-hub.com/
+        - button [ref=f4e10] [cursor=pointer]
+      - text:  
+      - generic [ref=f4e13]:
+        - generic [ref=f4e14]:
+          - generic [ref=f4e15]: Admin PH Bid
+          - button "Administrator" [ref=f4e17]
+        - text: 
+        - generic [ref=f4e21]:
+          - generic [ref=f4e22]:
+            - generic [ref=f4e23]: Admin PH Bid
+            - generic [ref=f4e24]: prahu.bid20@gmail.com
+          - generic [ref=f4e25]: 
+          - link "" [ref=f4e28] [cursor=pointer]:
+            - /url: https://phbidlautdemo.prahu-hub.com/home/notification
+          - link [ref=f4e35] [cursor=pointer]:
+            - /url: https://phbidlautdemo.prahu-hub.com/user/do_logout
+    - generic [ref=f4e38]:
+      - generic [ref=f4e39]:
+        - text: 
+        - generic [ref=f4e40]:
+          - list [ref=f4e42]:
+            - listitem
+            - listitem [ref=f4e43]:
+              - link "CARI PENAWARAN" [ref=f4e44] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/lelang/carirute
+            - listitem [ref=f4e45]: MENU ADMIN
+            - listitem [ref=f4e46]:
+              - generic [ref=f4e47] [cursor=pointer]:
+                - text: DASHBOARD
+                - generic [ref=f4e50]: 
+            - listitem [ref=f4e51]:
+              - generic [ref=f4e52] [cursor=pointer]:
+                - text: ANALITIK
+                - generic [ref=f4e55]: 
+            - listitem [ref=f4e56]:
+              - link "PENGAJUAN LELANG" [ref=f4e57] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/lelang/listlelang
+            - listitem [ref=f4e60]:
+              - link "PENGAJUAN NEGO" [ref=f4e61] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/lelang/pengajuannego
+            - listitem [ref=f4e64]:
+              - link [ref=f4e65] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/order/orderlist
+            - listitem [ref=f4e68]:
+              - link "PENUGASAN TRACKING" [ref=f4e69] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/home/penugasantracking
+            - listitem [ref=f4e72]:
+              - link "CEK JADWAL" [ref=f4e73] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/lelang/carijadwal
+            - listitem [ref=f4e76]:
+              - generic [ref=f4e77] [cursor=pointer]:
+                - text: LAPORAN
+                - generic [ref=f4e80]: 
+            - listitem [ref=f4e81]:
+              - generic [ref=f4e82] [cursor=pointer]:
+                - text: VALIDASI AKUN
+                - generic [ref=f4e85]: 
+            - listitem [ref=f4e86]:
+              - generic [ref=f4e87] [cursor=pointer]:
+                - text: SETTING
+                - generic [ref=f4e90]: 
+            - listitem [ref=f4e91]:
+              - generic [ref=f4e92] [cursor=pointer]:
+                - text: MASTER
+                - generic [ref=f4e95]: 
+            - listitem [ref=f4e96]:
+              - generic [ref=f4e97] [cursor=pointer]:
+                - text: PENGATURAN AKUN
+                - generic [ref=f4e100]: 
+              - list [ref=f4e101]:
+                - listitem [ref=f4e102]:
+                  - link "Hak Akses Shipper" [ref=f4e103] [cursor=pointer]:
+                    - /url: https://phbidlautdemo.prahu-hub.com/home/hakaksesbidowner
+                - listitem [ref=f4e104]:
+                  - link "Sub User Shipper" [ref=f4e105] [cursor=pointer]:
+                    - /url: https://phbidlautdemo.prahu-hub.com/home/subuserbidowner
+                - listitem [ref=f4e106]:
+                  - link "Hak Akses Transporter" [ref=f4e107] [cursor=pointer]:
+                    - /url: https://phbidlautdemo.prahu-hub.com/home/hakaksesbidder
+                - listitem [ref=f4e108]:
+                  - link "Sub User Transporter" [ref=f4e109] [cursor=pointer]:
+                    - /url: https://phbidlautdemo.prahu-hub.com/home/subuserbidder
+                - listitem [ref=f4e110]:
+                  - link "Hak Akses Admin" [ref=f4e111] [cursor=pointer]:
+                    - /url: https://phbidlautdemo.prahu-hub.com/adminprahu/hakaksesadmin
+                - listitem [ref=f4e112]:
+                  - link "Sub User Admin" [ref=f4e113] [cursor=pointer]:
+                    - /url: https://phbidlautdemo.prahu-hub.com/adminprahu/subUserAdmin
+            - listitem [ref=f4e114]:
+              - link "AKUN SAYA" [ref=f4e115] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/home/akunsaya
+            - listitem [ref=f4e118]: MENU TRANSPORTER
+            - listitem [ref=f4e119]:
+              - link "HARGA & JADWAL" [ref=f4e120] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/home/hargajadwal
+          - generic [ref=f4e125]:
+            - paragraph [ref=f4e127]: KONTAK KAMI
+            - generic [ref=f4e128]:
+              - generic [ref=f4e129]: 
+              - text: "081246665023"
+            - generic [ref=f4e130]:
+              - generic [ref=f4e131]: 
+              - text: "081246665023"
+            - generic [ref=f4e132]:
+              - generic [ref=f4e133]: 
+              - text: csct@prahu-hub.com
+            - generic [ref=f4e134]:
+              - link [ref=f4e135] [cursor=pointer]:
+                - /url: https://facebook.com/sosmed.phbid
+              - link [ref=f4e137] [cursor=pointer]:
+                - /url: https://twitter.com/PrahuHub
+              - link [ref=f4e139] [cursor=pointer]:
+                - /url: https://instagram.com/phbid_/
+              - link [ref=f4e141] [cursor=pointer]:
+                - /url: https://www.youtube.com/channel/UC41VntroP3zKmXZYnGgtFdw
+              - link [ref=f4e143] [cursor=pointer]:
+                - /url: http://linkedin.com/in/ph-bid-aa5393211/
+      - generic [ref=f4e145]:
+        - generic [ref=f4e146]:
+          - generic [ref=f4e149]:
+            - link "Beranda" [ref=f4e151] [cursor=pointer]:
+              - /url: https://phbidlautdemo.prahu-hub.com/lelang/listLelang
+            - text: / Hak Akses Admin
+          - generic [ref=f4e153]:
+            - generic [ref=f4e154]: HAK AKSES ADMIN
+            - text:  
+            - generic [ref=f4e155]:
+              - button " Filter" [ref=f4e156] [cursor=pointer]:
+                - generic [ref=f4e157]: 
+                - text: Filter
+              - link [ref=f4e158] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/adminprahu/tambah_hakaksesadmin
+                - button " Tambah Hak Akses" [ref=f4e159]:
+                  - generic [ref=f4e160]: 
+                  - text: Tambah Hak Akses
+              - generic [ref=f4e161]:
+                - text: Menampilkan
+                - combobox [ref=f4e162]:
+                  - option "20" [selected]
+                  - option "30"
+                  - option "50"
+                  - option "100"
+                - text: Data
+          - text:  
+          - table [ref=f4e164]:
+            - rowgroup [ref=f4e165]:
+              - row [ref=f4e166]:
+                - columnheader "No " [ref=f4e167] [cursor=pointer]:
+                  - generic [ref=f4e168]:
+                    - generic [ref=f4e169]: "No"
+                    - generic [ref=f4e170]: 
+                - columnheader "Nama Hak Akses " [ref=f4e172] [cursor=pointer]:
+                  - generic [ref=f4e173]:
+                    - generic [ref=f4e174]: Nama Hak Akses
+                    - generic [ref=f4e175]: 
+                - columnheader "Deskripsi Hak Akses " [ref=f4e177] [cursor=pointer]:
+                  - generic [ref=f4e178]:
+                    - generic [ref=f4e179]: Deskripsi Hak Akses
+                    - generic [ref=f4e180]: 
+                - columnheader "Total Perizinan " [ref=f4e182] [cursor=pointer]:
+                  - generic [ref=f4e183]:
+                    - generic [ref=f4e184]: Total Perizinan
+                    - generic [ref=f4e185]: 
+                - columnheader "Aksi" [ref=f4e187]
+              - row [ref=f4e188]:
+                - cell [ref=f4e189]
+            - rowgroup [ref=f4e190]:
+              - row [ref=f4e191]:
+                - cell [ref=f4e192]
+          - generic:
+            - status [ref=f4e199]
+            - generic [ref=f4e201]:
+              - list
+        - paragraph [ref=f4e207]: © BETA 20260228 v1.3.28 - PH Bid Laut | Digital Logistic Platform
+  - text:   

@@ -1,0 +1,476 @@
+- generic [ref=f97e1]:
+  - generic [ref=f97e2]:
+    - generic [ref=f97e3]:
+      - generic [ref=f97e4]:
+        - link [ref=f97e6] [cursor=pointer]:
+          - /url: https://phbidlautdemo.prahu-hub.com/
+        - button [ref=f97e10] [cursor=pointer]
+      - text:  
+      - generic [ref=f97e13]:
+        - generic [ref=f97e14]:
+          - generic [ref=f97e15]: Admin PH Bid
+          - button [ref=f97e219]: Administrator
+        - text: 
+        - generic [ref=f97e21]:
+          - generic [ref=f97e22]:
+            - generic [ref=f97e23]: Admin PH Bid
+            - generic [ref=f97e24]: prahu.bid20@gmail.com
+          - generic [ref=f97e25]: 
+          - link [ref=f97e220] [cursor=pointer]:
+            - /url: https://phbidlautdemo.prahu-hub.com/home/notification
+            - generic [ref=f97e29]: 
+          - link [ref=f97e222] [cursor=pointer]:
+            - /url: https://phbidlautdemo.prahu-hub.com/user/do_logout
+            - text: KELUAR
+    - generic [ref=f97e38]:
+      - generic [ref=f97e39]:
+        - text: 
+        - generic [ref=f97e40]:
+          - list [ref=f97e42]:
+            - listitem [ref=f97e43]:
+              - link [ref=f97e223] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/lelang/carirute
+                - text: CARI PENAWARAN
+            - listitem [ref=f97e45]: MENU ADMIN
+            - listitem [ref=f97e46]:
+              - generic [ref=f97e47] [cursor=pointer]:
+                - text: DASHBOARD
+                - generic [ref=f97e50]: 
+            - listitem [ref=f97e51]:
+              - generic [ref=f97e52] [cursor=pointer]:
+                - text: ANALITIK
+                - generic [ref=f97e55]: 
+            - listitem [ref=f97e56]:
+              - link [ref=f97e224] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/lelang/listlelang
+                - text: PENGAJUAN LELANG
+            - listitem [ref=f97e60]:
+              - link [ref=f97e225] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/lelang/pengajuannego
+                - text: PENGAJUAN NEGO
+            - listitem [ref=f97e64]:
+              - link [ref=f97e226] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/order/orderlist
+                - text: DAFTAR ORDER
+            - listitem [ref=f97e68]:
+              - link [ref=f97e228] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/home/penugasantracking
+                - text: PENUGASAN TRACKING
+            - listitem [ref=f97e72]:
+              - link [ref=f97e229] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/lelang/carijadwal
+                - text: CEK JADWAL
+            - listitem [ref=f97e76]:
+              - generic [ref=f97e77] [cursor=pointer]:
+                - text: LAPORAN
+                - generic [ref=f97e80]: 
+            - listitem [ref=f97e81]:
+              - generic [ref=f97e82] [cursor=pointer]:
+                - text: VALIDASI AKUN
+                - generic [ref=f97e85]: 
+            - listitem [ref=f97e86]:
+              - generic [ref=f97e87] [cursor=pointer]:
+                - text: SETTING
+                - generic [ref=f97e90]: 
+            - listitem [ref=f97e91]:
+              - generic [ref=f97e92] [cursor=pointer]:
+                - text: MASTER
+                - generic [ref=f97e95]: 
+              - list [ref=f97e96]:
+                - listitem [ref=f97e97]:
+                  - link [ref=f97e230] [cursor=pointer]:
+                    - /url: https://phbidlautdemo.prahu-hub.com/adminprahu/masterpropinsi
+                    - text: Provinsi
+                - listitem [ref=f97e99]:
+                  - link [ref=f97e231] [cursor=pointer]:
+                    - /url: https://phbidlautdemo.prahu-hub.com/adminprahu/masterkota
+                    - text: Kota
+                - listitem [ref=f97e101]:
+                  - link [ref=f97e232] [cursor=pointer]:
+                    - /url: https://phbidlautdemo.prahu-hub.com/adminprahu/masterpelabuhan
+                    - text: Pelabuhan
+                - listitem [ref=f97e103]:
+                  - link [ref=f97e233] [cursor=pointer]:
+                    - /url: https://phbidlautdemo.prahu-hub.com/adminprahu/masterbank
+                    - text: Bank
+                - listitem [ref=f97e105]:
+                  - link [ref=f97e234] [cursor=pointer]:
+                    - /url: https://phbidlautdemo.prahu-hub.com/adminprahu/masterInclude
+                    - text: Include
+                - listitem [ref=f97e107]:
+                  - link [ref=f97e235] [cursor=pointer]:
+                    - /url: https://phbidlautdemo.prahu-hub.com/adminprahu/masterkemasan
+                    - text: Kemasan
+                - listitem [ref=f97e109]:
+                  - link [ref=f97e236] [cursor=pointer]:
+                    - /url: https://phbidlautdemo.prahu-hub.com/analitik/masterjenismuatan
+                    - text: Jenis Muatan
+                - listitem [ref=f97e111]:
+                  - link [ref=f97e237] [cursor=pointer]:
+                    - /url: https://phbidlautdemo.prahu-hub.com/analitik/masterhargabarang
+                    - text: Harga Barang
+                - listitem [ref=f97e113]:
+                  - link [ref=f97e238] [cursor=pointer]:
+                    - /url: https://phbidlautdemo.prahu-hub.com/adminprahu/masterfreetime
+                    - text: Free Time
+                - listitem [ref=f97e115]:
+                  - link [ref=f97e239] [cursor=pointer]:
+                    - /url: https://phbidlautdemo.prahu-hub.com/adminprahu/pelayaran
+                    - text: Pelayaran
+                - listitem [ref=f97e117]:
+                  - link [ref=f97e240] [cursor=pointer]:
+                    - /url: https://phbidlautdemo.prahu-hub.com/adminprahu/kontainer
+                    - text: Jenis Kontainer
+                - listitem [ref=f97e119]:
+                  - link [ref=f97e241] [cursor=pointer]:
+                    - /url: https://phbidlautdemo.prahu-hub.com/adminprahu/masterDP
+                    - text: Dokumen Penagihan
+                - listitem [ref=f97e121]:
+                  - link [ref=f97e242] [cursor=pointer]:
+                    - /url: https://phbidlautdemo.prahu-hub.com/adminprahu/masteriklan
+                    - text: Iklan Berbayar
+                - listitem [ref=f97e123]:
+                  - link [ref=f97e243] [cursor=pointer]:
+                    - /url: https://phbidlautdemo.prahu-hub.com/adminprahu/masterpetugasapk
+                    - text: Petugas APK
+            - listitem [ref=f97e125]:
+              - generic [ref=f97e126] [cursor=pointer]:
+                - text: PENGATURAN AKUN
+                - generic [ref=f97e129]: 
+            - listitem [ref=f97e130]:
+              - link [ref=f97e244] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/home/akunsaya
+                - text: AKUN SAYA
+            - listitem [ref=f97e134]: MENU TRANSPORTER
+            - listitem [ref=f97e135]:
+              - link [ref=f97e245] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/home/hargajadwal
+                - text: HARGA & JADWAL
+          - generic [ref=f97e141]:
+            - paragraph [ref=f97e143]: KONTAK KAMI
+            - generic [ref=f97e144]:
+              - generic [ref=f97e145]: 
+              - text: "081246665023"
+            - generic [ref=f97e146]:
+              - generic [ref=f97e147]: 
+              - text: "081246665023"
+            - generic [ref=f97e148]:
+              - generic [ref=f97e149]: 
+              - text: csct@prahu-hub.com
+            - generic [ref=f97e150]:
+              - link [ref=f97e151] [cursor=pointer]:
+                - /url: https://facebook.com/sosmed.phbid
+              - link [ref=f97e153] [cursor=pointer]:
+                - /url: https://twitter.com/PrahuHub
+              - link [ref=f97e155] [cursor=pointer]:
+                - /url: https://instagram.com/phbid_/
+              - link [ref=f97e157] [cursor=pointer]:
+                - /url: https://www.youtube.com/channel/UC41VntroP3zKmXZYnGgtFdw
+              - link [ref=f97e159] [cursor=pointer]:
+                - /url: http://linkedin.com/in/ph-bid-aa5393211/
+      - generic [ref=f97e161]:
+        - generic [ref=f97e162]:
+          - generic [ref=f97e165]:
+            - link [ref=f97e246] [cursor=pointer]:
+              - /url: https://phbidlautdemo.prahu-hub.com/lelang/listLelang
+              - text: Beranda
+            - text: / Master Kemasan
+          - generic [ref=f97e169]:
+            - generic [ref=f97e170]: MASTER KEMASAN
+            - text:  
+            - generic [ref=f97e171]:
+              - button [ref=f97e247] [cursor=pointer]:
+                - generic [ref=f97e173]: 
+                - text: Filter
+              - link [ref=f97e248] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/adminprahu/tambahkemasan
+                - button [ref=f97e249]:
+                  - generic [ref=f97e176]: 
+                  - text: Tambah Kemasan
+              - generic [ref=f97e177]:
+                - text: Menampilkan
+                - combobox [ref=f97e178]
+                - text: Data
+          - text:  
+          - table [ref=f97e180]:
+            - rowgroup [ref=f97e181]:
+              - row [ref=f97e250]:
+                - columnheader [ref=f97e251] [cursor=pointer]:
+                  - generic [ref=f97e184]:
+                    - generic [ref=f97e185]: "No"
+                    - generic [ref=f97e186]: 
+                - columnheader [ref=f97e252] [cursor=pointer]:
+                  - generic [ref=f97e189]:
+                    - generic [ref=f97e190]: Nama Kemasan
+                    - generic [ref=f97e191]: 
+                - columnheader [ref=f97e253] [cursor=pointer]:
+                  - generic [ref=f97e194]:
+                    - generic [ref=f97e195]: Status
+                    - generic [ref=f97e196]: 
+                - columnheader [ref=f97e254]: Aksi
+              - row [ref=f97e199]:
+                - cell [ref=f97e200]
+            - rowgroup [ref=f97e201]:
+              - row [ref=f97e255]:
+                - cell [ref=f97e256]
+              - row [ref=f97e257]:
+                - cell [ref=f97e258]:
+                  - generic [ref=f97e259]: "21."
+                - cell [ref=f97e260]: AUTOTEST-FIXTURE-KEMASAN-01
+                - cell [ref=f97e261]:
+                  - generic [ref=f97e262]: AKTIF
+                - cell [ref=f97e263]:
+                  - generic [ref=f97e264]:
+                    - button [ref=f97e265] [cursor=pointer]:
+                      - generic [ref=f97e266]: 
+                    - button [ref=f97e267] [cursor=pointer]:
+                      - generic [ref=f97e268]: 
+              - row [ref=f97e269]:
+                - cell [ref=f97e270]:
+                  - generic [ref=f97e271]: "20."
+                - cell [ref=f97e272]: Kemasan
+                - cell [ref=f97e273]:
+                  - generic [ref=f97e274]: AKTIF
+                - cell [ref=f97e275]:
+                  - generic [ref=f97e276]:
+                    - button [ref=f97e277] [cursor=pointer]:
+                      - generic [ref=f97e278]: 
+                    - button [ref=f97e279] [cursor=pointer]:
+                      - generic [ref=f97e280]: 
+              - row [ref=f97e281]:
+                - cell [ref=f97e282]:
+                  - generic [ref=f97e283]: "19."
+                - cell [ref=f97e284]: ISO TANK
+                - cell [ref=f97e285]:
+                  - generic [ref=f97e286]: AKTIF
+                - cell [ref=f97e287]:
+                  - generic [ref=f97e288]:
+                    - button [ref=f97e289] [cursor=pointer]:
+                      - generic [ref=f97e290]: 
+                    - button [ref=f97e291] [cursor=pointer]:
+                      - generic [ref=f97e292]: 
+              - row [ref=f97e293]:
+                - cell [ref=f97e294]:
+                  - generic [ref=f97e295]: "18."
+                - cell [ref=f97e296]: BOTOL
+                - cell [ref=f97e297]:
+                  - generic [ref=f97e298]: AKTIF
+                - cell [ref=f97e299]:
+                  - generic [ref=f97e300]:
+                    - button [ref=f97e301] [cursor=pointer]:
+                      - generic [ref=f97e302]: 
+                    - button [ref=f97e303] [cursor=pointer]:
+                      - generic [ref=f97e304]: 
+              - row [ref=f97e305]:
+                - cell [ref=f97e306]:
+                  - generic [ref=f97e307]: "17."
+                - cell [ref=f97e308]: RAK
+                - cell [ref=f97e309]:
+                  - generic [ref=f97e310]: AKTIF
+                - cell [ref=f97e311]:
+                  - generic [ref=f97e312]:
+                    - button [ref=f97e313] [cursor=pointer]:
+                      - generic [ref=f97e314]: 
+                    - button [ref=f97e315] [cursor=pointer]:
+                      - generic [ref=f97e316]: 
+              - row [ref=f97e317]:
+                - cell [ref=f97e318]:
+                  - generic [ref=f97e319]: "16."
+                - cell [ref=f97e320]: KARUNG
+                - cell [ref=f97e321]:
+                  - generic [ref=f97e322]: AKTIF
+                - cell [ref=f97e323]:
+                  - generic [ref=f97e324]:
+                    - button [ref=f97e325] [cursor=pointer]:
+                      - generic [ref=f97e326]: 
+                    - button [ref=f97e327] [cursor=pointer]:
+                      - generic [ref=f97e328]: 
+              - row [ref=f97e329]:
+                - cell [ref=f97e330]:
+                  - generic [ref=f97e331]: "15."
+                - cell [ref=f97e332]: JERIGEN
+                - cell [ref=f97e333]:
+                  - generic [ref=f97e334]: AKTIF
+                - cell [ref=f97e335]:
+                  - generic [ref=f97e336]:
+                    - button [ref=f97e337] [cursor=pointer]:
+                      - generic [ref=f97e338]: 
+                    - button [ref=f97e339] [cursor=pointer]:
+                      - generic [ref=f97e340]: 
+              - row [ref=f97e341]:
+                - cell [ref=f97e342]:
+                  - generic [ref=f97e343]: "14."
+                - cell [ref=f97e344]: GALON
+                - cell [ref=f97e345]:
+                  - generic [ref=f97e346]: AKTIF
+                - cell [ref=f97e347]:
+                  - generic [ref=f97e348]:
+                    - button [ref=f97e349] [cursor=pointer]:
+                      - generic [ref=f97e350]: 
+                    - button [ref=f97e351] [cursor=pointer]:
+                      - generic [ref=f97e352]: 
+              - row [ref=f97e353]:
+                - cell [ref=f97e354]:
+                  - generic [ref=f97e355]: "13."
+                - cell [ref=f97e356]: DUS
+                - cell [ref=f97e357]:
+                  - generic [ref=f97e358]: AKTIF
+                - cell [ref=f97e359]:
+                  - generic [ref=f97e360]:
+                    - button [ref=f97e361] [cursor=pointer]:
+                      - generic [ref=f97e362]: 
+                    - button [ref=f97e363] [cursor=pointer]:
+                      - generic [ref=f97e364]: 
+              - row [ref=f97e365]:
+                - cell [ref=f97e366]:
+                  - generic [ref=f97e367]: "12."
+                - cell [ref=f97e368]: BOX
+                - cell [ref=f97e369]:
+                  - generic [ref=f97e370]: AKTIF
+                - cell [ref=f97e371]:
+                  - generic [ref=f97e372]:
+                    - button [ref=f97e373] [cursor=pointer]:
+                      - generic [ref=f97e374]: 
+                    - button [ref=f97e375] [cursor=pointer]:
+                      - generic [ref=f97e376]: 
+              - row [ref=f97e377]:
+                - cell [ref=f97e378]:
+                  - generic [ref=f97e379]: "11."
+                - cell [ref=f97e380]: BALL
+                - cell [ref=f97e381]:
+                  - generic [ref=f97e382]: AKTIF
+                - cell [ref=f97e383]:
+                  - generic [ref=f97e384]:
+                    - button [ref=f97e385] [cursor=pointer]:
+                      - generic [ref=f97e386]: 
+                    - button [ref=f97e387] [cursor=pointer]:
+                      - generic [ref=f97e388]: 
+              - row [ref=f97e389]:
+                - cell [ref=f97e390]:
+                  - generic [ref=f97e391]: "10."
+                - cell [ref=f97e392]: KARDUS
+                - cell [ref=f97e393]:
+                  - generic [ref=f97e394]: AKTIF
+                - cell [ref=f97e395]:
+                  - generic [ref=f97e396]:
+                    - button [ref=f97e397] [cursor=pointer]:
+                      - generic [ref=f97e398]: 
+                    - button [ref=f97e399] [cursor=pointer]:
+                      - generic [ref=f97e400]: 
+              - row [ref=f97e401]:
+                - cell [ref=f97e402]:
+                  - generic [ref=f97e403]: "9."
+                - cell [ref=f97e404]: UNIT
+                - cell [ref=f97e405]:
+                  - generic [ref=f97e406]: AKTIF
+                - cell [ref=f97e407]:
+                  - generic [ref=f97e408]:
+                    - button [ref=f97e409] [cursor=pointer]:
+                      - generic [ref=f97e410]: 
+                    - button [ref=f97e411] [cursor=pointer]:
+                      - generic [ref=f97e412]: 
+              - row [ref=f97e413]:
+                - cell [ref=f97e414]:
+                  - generic [ref=f97e415]: "8."
+                - cell [ref=f97e416]: ROLL
+                - cell [ref=f97e417]:
+                  - generic [ref=f97e418]: AKTIF
+                - cell [ref=f97e419]:
+                  - generic [ref=f97e420]:
+                    - button [ref=f97e421] [cursor=pointer]:
+                      - generic [ref=f97e422]: 
+                    - button [ref=f97e423] [cursor=pointer]:
+                      - generic [ref=f97e424]: 
+              - row [ref=f97e425]:
+                - cell [ref=f97e426]:
+                  - generic [ref=f97e427]: "7."
+                - cell [ref=f97e428]: PALLET
+                - cell [ref=f97e429]:
+                  - generic [ref=f97e430]: AKTIF
+                - cell [ref=f97e431]:
+                  - generic [ref=f97e432]:
+                    - button [ref=f97e433] [cursor=pointer]:
+                      - generic [ref=f97e434]: 
+                    - button [ref=f97e435] [cursor=pointer]:
+                      - generic [ref=f97e436]: 
+              - row [ref=f97e437]:
+                - cell [ref=f97e438]:
+                  - generic [ref=f97e439]: "6."
+                - cell [ref=f97e440]: DRUM
+                - cell [ref=f97e441]:
+                  - generic [ref=f97e442]: AKTIF
+                - cell [ref=f97e443]:
+                  - generic [ref=f97e444]:
+                    - button [ref=f97e445] [cursor=pointer]:
+                      - generic [ref=f97e446]: 
+                    - button [ref=f97e447] [cursor=pointer]:
+                      - generic [ref=f97e448]: 
+              - row [ref=f97e449]:
+                - cell [ref=f97e450]:
+                  - generic [ref=f97e451]: "5."
+                - cell [ref=f97e452]: CBM
+                - cell [ref=f97e453]:
+                  - generic [ref=f97e454]: AKTIF
+                - cell [ref=f97e455]:
+                  - generic [ref=f97e456]:
+                    - button [ref=f97e457] [cursor=pointer]:
+                      - generic [ref=f97e458]: 
+                    - button [ref=f97e459] [cursor=pointer]:
+                      - generic [ref=f97e460]: 
+              - row [ref=f97e461]:
+                - cell [ref=f97e462]:
+                  - generic [ref=f97e463]: "4."
+                - cell [ref=f97e464]: LEMBAR
+                - cell [ref=f97e465]:
+                  - generic [ref=f97e466]: AKTIF
+                - cell [ref=f97e467]:
+                  - generic [ref=f97e468]:
+                    - button [ref=f97e469] [cursor=pointer]:
+                      - generic [ref=f97e470]: 
+                    - button [ref=f97e471] [cursor=pointer]:
+                      - generic [ref=f97e472]: 
+              - row [ref=f97e473]:
+                - cell [ref=f97e474]:
+                  - generic [ref=f97e475]: "3."
+                - cell [ref=f97e476]: KOLI
+                - cell [ref=f97e477]:
+                  - generic [ref=f97e478]: AKTIF
+                - cell [ref=f97e479]:
+                  - generic [ref=f97e480]:
+                    - button [ref=f97e481] [cursor=pointer]:
+                      - generic [ref=f97e482]: 
+                    - button [ref=f97e483] [cursor=pointer]:
+                      - generic [ref=f97e484]: 
+              - row [ref=f97e485]:
+                - cell [ref=f97e486]:
+                  - generic [ref=f97e487]: "2."
+                - cell [ref=f97e488]: KARTON
+                - cell [ref=f97e489]:
+                  - generic [ref=f97e490]: AKTIF
+                - cell [ref=f97e491]:
+                  - generic [ref=f97e492]:
+                    - button [ref=f97e493] [cursor=pointer]:
+                      - generic [ref=f97e494]: 
+                    - button [ref=f97e495] [cursor=pointer]:
+                      - generic [ref=f97e496]: 
+              - row [ref=f97e497]:
+                - cell [ref=f97e498]
+          - text:                                        
+          - generic [ref=f97e499]:
+            - status [ref=f97e210]:
+              - status [ref=f97e500]: Menampilkan 1 sampai 20 dari 21 data
+            - list [ref=f97e501]:
+              - listitem [ref=f97e502]:
+                - generic [ref=f97e503] [cursor=pointer]: "1"
+              - listitem [ref=f97e504]:
+                - generic [ref=f97e505] [cursor=pointer]: "2"
+              - listitem [ref=f97e506]:
+                - generic [ref=f97e507] [cursor=pointer]: Selanjutnya »
+        - paragraph [ref=f97e218]: © BETA 20260228 v1.3.28 - PH Bid Laut | Digital Logistic Platform
+  - text:   
+  - dialog [ref=f97e509]:
+    - heading "Hapus?" [level=2] [ref=f97e511]
+    - generic: "!"
+    - generic [ref=f97e512]:
+      - button "Hapus" [active] [ref=f97e513] [cursor=pointer]
+      - button "Batal" [ref=f97e514] [cursor=pointer]

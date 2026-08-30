@@ -1,0 +1,59 @@
+- generic [active] [ref=f23e1]:
+  - generic [ref=f23e2]:
+    - generic [ref=f23e3]:
+      - link [ref=f23e5] [cursor=pointer]:
+        - /url: https://phbidlautdemo.prahu-hub.com/
+      - button [ref=f23e9] [cursor=pointer]
+    - text:  
+    - generic [ref=f23e12]:
+      - text: 
+      - generic:
+        - generic:
+          - generic:
+            - generic:
+              - text: 
+              - link:
+                - /url: https://phbidlautdemo.prahu-hub.com/home/notification
+                - text: 
+  - generic [ref=f23e19]:
+    - generic [ref=f23e25]:
+      - generic [ref=f23e26]: "404"
+      - generic [ref=f23e28]:
+        - text: Oops! Halaman Tidak Ditemukan
+        - generic [ref=f23e29]:
+          - text: "Silahkan masukkan halaman web dengan benar. Alamat web :"
+          - link "phbidlaut.prahu-hub.com" [ref=f23e30] [cursor=pointer]:
+            - /url: https://phbidlaut.prahu-hub.com
+          - text: Atau hubungi Customer Service untuk pertanyaan lebih lanjut.
+      - generic [ref=f23e31]:
+        - link " Hubungi Customer Service" [ref=f23e32] [cursor=pointer]:
+          - /url: https://wa.me/6281246665023?
+          - generic [ref=f23e33]: 
+          - text: Hubungi Customer Service
+        - link " Kembali Ke Halaman Utama" [ref=f23e34] [cursor=pointer]:
+          - /url: https://phbidlautdemo.prahu-hub.com/
+          - generic [ref=f23e35]: 
+          - text: Kembali Ke Halaman Utama
+    - generic [ref=f23e37]:
+      - generic [ref=f23e39]:
+        - generic [ref=f23e41]:
+          - link [ref=f23e42] [cursor=pointer]:
+            - /url: https://facebook.com/sosmed.phbid
+          - link [ref=f23e43] [cursor=pointer]:
+            - /url: https://twitter.com/PrahuHub
+          - link [ref=f23e44] [cursor=pointer]:
+            - /url: https://instagram.com/phbid_/
+          - link [ref=f23e45] [cursor=pointer]:
+            - /url: https://www.youtube.com/channel/UC41VntroP3zKmXZYnGgtFdw
+          - link [ref=f23e46] [cursor=pointer]:
+            - /url: http://linkedin.com/in/ph-bid-aa5393211/
+        - generic [ref=f23e48]:
+          - generic [ref=f23e49]:
+            - generic [ref=f23e50]: Layanan Email
+            - link "csct@prahu-hub.com" [ref=f23e52] [cursor=pointer]:
+              - /url: mailto:csct@prahu-hub.com
+          - generic [ref=f23e53]:
+            - generic [ref=f23e54]: Layanan Whatsapp
+            - link "081246665023" [ref=f23e56] [cursor=pointer]:
+              - /url: https://wa.me/6281246665023
+      - generic [ref=f23e57]: © BETA 20260228 v1.3.28 - PH Bid Laut | Digital Logistic Platform

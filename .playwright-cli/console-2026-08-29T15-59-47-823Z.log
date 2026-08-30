@@ -1,0 +1,21 @@
+[    1324ms] Cannot use import statement outside a module
+[    1373ms] ReferenceError: Chart is not defined
+    at https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/js/scripts-init/charts/chartjs.js:8:13
+[    1506ms] Unexpected token '<'
+[    1508ms] Unexpected token '<'
+[    1571ms] Uncaught TypeError: expect element to be DOM Element, but got null
+    at n.init (https://cdnjs.cloudflare.com/ajax/libs/smooth-scrollbar/8.5.2/smooth-scrollbar.js:24:264)
+    at <anonymous> (https://phbidlautdemo.prahu-hub.com/adminprahu/settingpajak:5490:14)
+[    1593ms] [LOG] Settingsnamanya @ https://phbidlautdemo.prahu-hub.com/adminprahu/settingpajak:2039
+[    1603ms] [LOG] undefined @ https://phbidlautdemo.prahu-hub.com/adminprahu/settingpajak:5843
+[    1603ms] [LOG] Masukkan Nama Item @ https://phbidlautdemo.prahu-hub.com/adminprahu/settingpajak:5843
+[    1603ms] [LOG] 0 @ https://phbidlautdemo.prahu-hub.com/adminprahu/settingpajak:5843
+[    1604ms] [LOG] WebSocket connection @ https://phbidlautdemo.prahu-hub.com/adminprahu/settingpajak:5886
+[    1605ms] [LOG] WebSocket connection attempting... @ https://phbidlautdemo.prahu-hub.com/adminprahu/settingpajak:5964
+[    2095ms] [LOG] WebSocket connected @ https://phbidlautdemo.prahu-hub.com/adminprahu/settingpajak:5895
+[    2103ms] [LOG] update_dashboard_order_laut @ https://phbidlautdemo.prahu-hub.com/adminprahu/settingpajak:5936
+[    2219ms] [LOG] 200 xhrglobal @ https://phbidlautdemo.prahu-hub.com/adminprahu/settingpajak:5817
+[    2253ms] [LOG] Connected @ https://phbidlautdemo.prahu-hub.com/adminprahu/settingpajak:5936
+[    2265ms] [LOG] 200 xhrglobal @ https://phbidlautdemo.prahu-hub.com/adminprahu/settingpajak:5817
+[    3604ms] TypeError: $(...).DataTable is not a function
+    at https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/js/scripts-init/tables.js:7:23

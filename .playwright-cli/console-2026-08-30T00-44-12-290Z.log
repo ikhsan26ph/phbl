@@ -1,0 +1,594 @@
+[    1234ms] ReferenceError: dete is not defined
+    at https://phbidlautdemo.prahu-hub.com/user/login:1465:5
+[    2495ms] TypeError: Failed to execute 'observe' on 'IntersectionObserver': parameter 1 is not of type 'Element'.
+    at https://phbidlautdemo.prahu-hub.com/user/login:1932:14
+[    2542ms] [VERBOSE] [DOM] Input elements should have autocomplete attributes (suggested: "current-password"): (More info: https://goo.gl/9p2vKq) %o @ https://phbidlautdemo.prahu-hub.com/user/login:0
+[    2551ms] [LOG] 0 @ https://phbidlautdemo.prahu-hub.com/user/login:1426
+[    2551ms] [LOG] undefined scr @ https://phbidlautdemo.prahu-hub.com/user/login:1430
+[    7228ms] [LOG] ddd @ https://phbidlautdemo.prahu-hub.com/user/login:1525
+[    7394ms] [LOG] {pesan: ADMIN, status: 1, user_aktif: 1, ParentID: 0, redirect: } @ https://phbidlautdemo.prahu-hub.com/user/login:1558
+[    7395ms] [LOG] {pesan: ADMIN, status: 1, user_aktif: 1, ParentID: 0, redirect: } a @ https://phbidlautdemo.prahu-hub.com/user/login:1560
+[    9100ms] Cannot use import statement outside a module
+[    9164ms] ReferenceError: Chart is not defined
+    at https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/js/scripts-init/charts/chartjs.js:8:13
+[    9296ms] Unexpected token '<'
+[    9305ms] Unexpected token '<'
+[    9448ms] Uncaught TypeError: expect element to be DOM Element, but got null
+    at n.init (https://cdnjs.cloudflare.com/ajax/libs/smooth-scrollbar/8.5.2/smooth-scrollbar.js:24:264)
+    at <anonymous> (https://phbidlautdemo.prahu-hub.com/lelang/listlelang?tab=semua-lelang:6190:14)
+[    9543ms] [LOG] Pengajuan Lelangnamanya @ https://phbidlautdemo.prahu-hub.com/lelang/listlelang?tab=semua-lelang:2040
+[    9563ms] [LOG] undefined @ https://phbidlautdemo.prahu-hub.com/lelang/listlelang?tab=semua-lelang:6543
+[    9563ms] [LOG] undefined @ https://phbidlautdemo.prahu-hub.com/lelang/listlelang?tab=semua-lelang:6543
+[    9563ms] [LOG] Masukkan Nomor Lelang @ https://phbidlautdemo.prahu-hub.com/lelang/listlelang?tab=semua-lelang:6543
+[    9563ms] [LOG] DD/MM/YYYY @ https://phbidlautdemo.prahu-hub.com/lelang/listlelang?tab=semua-lelang:6543
+[    9564ms] [LOG] DD/MM/YYYY @ https://phbidlautdemo.prahu-hub.com/lelang/listlelang?tab=semua-lelang:6543
+[    9564ms] [LOG] DD/MM/YYYY @ https://phbidlautdemo.prahu-hub.com/lelang/listlelang?tab=semua-lelang:6543
+[    9564ms] [LOG] DD/MM/YYYY @ https://phbidlautdemo.prahu-hub.com/lelang/listlelang?tab=semua-lelang:6543
+[    9564ms] [LOG] undefined @ https://phbidlautdemo.prahu-hub.com/lelang/listlelang?tab=semua-lelang:6543
+[    9564ms] [LOG] undefined @ https://phbidlautdemo.prahu-hub.com/lelang/listlelang?tab=semua-lelang:6543
+[    9565ms] [LOG] Masukkan Nama Bank @ https://phbidlautdemo.prahu-hub.com/lelang/listlelang?tab=semua-lelang:6543
+[    9565ms] [LOG] undefined @ https://phbidlautdemo.prahu-hub.com/lelang/listlelang?tab=semua-lelang:6543
+[    9566ms] [LOG] WebSocket connection @ https://phbidlautdemo.prahu-hub.com/lelang/listlelang?tab=semua-lelang:6586
+[    9567ms] [LOG] WebSocket connection attempting... @ https://phbidlautdemo.prahu-hub.com/lelang/listlelang?tab=semua-lelang:6664
+[    9707ms] [LOG] WebSocket connected @ https://phbidlautdemo.prahu-hub.com/lelang/listlelang?tab=semua-lelang:6595
+[    9717ms] [LOG] update_dashboard_order_laut @ https://phbidlautdemo.prahu-hub.com/lelang/listlelang?tab=semua-lelang:6636
+[    9740ms] [LOG] Connected @ https://phbidlautdemo.prahu-hub.com/lelang/listlelang?tab=semua-lelang:6636
+[   11564ms] TypeError: $(...).DataTable is not a function
+    at https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/js/scripts-init/tables.js:7:23
+[   12303ms] [LOG] [Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object] @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/listLelang.js?m=1787972929:14
+[   12314ms] [LOG] 1092 @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/listLelang.js?m=1787972929:818
+[   12314ms] [LOG] 1092 countView1 1 pageNow 20 limitView1 @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/listLelang.js?m=1787972929:820
+[   12314ms] [LOG] 20 @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/listLelang.js?m=1787972929:826
+[   12314ms] [LOG] 1092 jumlah data @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/listLelang.js?m=1787972929:779
+[   12315ms] [LOG] 55 @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/listLelang.js?m=1787972929:781
+[   12315ms] [LOG] 55 1 pageCount & pageNow @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/listLelang.js?m=1787972929:704
+[   12320ms] [LOG] 200 xhrglobal @ https://phbidlautdemo.prahu-hub.com/lelang/listlelang?tab=semua-lelang:6517
+[   12373ms] ReferenceError: renderTooltipHarga is not defined
+    at https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/listLelang.js?m=1787972929:1049:9
+[   12419ms] [LOG] 200 xhrglobal @ https://phbidlautdemo.prahu-hub.com/lelang/listlelang?tab=semua-lelang:6517
+[   12483ms] [LOG] 200 xhrglobal @ https://phbidlautdemo.prahu-hub.com/lelang/listlelang?tab=semua-lelang:6517
+[   14889ms] Cannot use import statement outside a module
+[   14934ms] ReferenceError: Chart is not defined
+    at https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/js/scripts-init/charts/chartjs.js:8:13
+[   14984ms] Unexpected token '<'
+[   15110ms] Unexpected token '<'
+[   15198ms] Uncaught TypeError: expect element to be DOM Element, but got null
+    at n.init (https://cdnjs.cloudflare.com/ajax/libs/smooth-scrollbar/8.5.2/smooth-scrollbar.js:24:264)
+    at <anonymous> (https://phbidlautdemo.prahu-hub.com/home/hakaksesbidowner:5570:14)
+[   15229ms] [LOG] Pengaturan Akunnamanya @ https://phbidlautdemo.prahu-hub.com/home/hakaksesbidowner:2040
+[   15241ms] [LOG] Masukkan Nama Hak Akses @ https://phbidlautdemo.prahu-hub.com/home/hakaksesbidowner:5923
+[   15241ms] [LOG] undefined @ https://phbidlautdemo.prahu-hub.com/home/hakaksesbidowner:5923
+[   15241ms] [LOG] undefined @ https://phbidlautdemo.prahu-hub.com/home/hakaksesbidowner:5923
+[   15241ms] [LOG] Masukkan Nama Kemasan @ https://phbidlautdemo.prahu-hub.com/home/hakaksesbidowner:5923
+[   15241ms] [LOG] undefined @ https://phbidlautdemo.prahu-hub.com/home/hakaksesbidowner:5923
+[   15243ms] [LOG] WebSocket connection @ https://phbidlautdemo.prahu-hub.com/home/hakaksesbidowner:5966
+[   15243ms] [LOG] WebSocket connection attempting... @ https://phbidlautdemo.prahu-hub.com/home/hakaksesbidowner:6044
+[   15389ms] [LOG] WebSocket connected @ https://phbidlautdemo.prahu-hub.com/home/hakaksesbidowner:5975
+[   15392ms] [LOG] update_dashboard_order_laut @ https://phbidlautdemo.prahu-hub.com/home/hakaksesbidowner:6016
+[   15422ms] [LOG] Connected @ https://phbidlautdemo.prahu-hub.com/home/hakaksesbidowner:6016
+[   15506ms] [LOG] [Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object] @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/hakaksesbidowner.js?m=1787972929:124
+[   15521ms] [LOG] 23 @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/hakaksesbidowner.js?m=1787972929:775
+[   15522ms] [LOG] 23 countView1 1 pageNow 20 limitView1 @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/hakaksesbidowner.js?m=1787972929:777
+[   15522ms] [LOG] 20 @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/hakaksesbidowner.js?m=1787972929:783
+[   15523ms] [LOG] 23 jumlah data @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/hakaksesbidowner.js?m=1787972929:740
+[   15524ms] [LOG] 2 @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/hakaksesbidowner.js?m=1787972929:742
+[   15525ms] [LOG] 2 1 pageCount & pageNow @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/hakaksesbidowner.js?m=1787972929:666
+[   15528ms] [LOG] 200 xhrglobal @ https://phbidlautdemo.prahu-hub.com/home/hakaksesbidowner:5897
+[   15529ms] [LOG] ce.fn.init stepItem @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/hakaksesbidowner.js?m=1787972929:640
+[   15619ms] [LOG] 200 xhrglobal @ https://phbidlautdemo.prahu-hub.com/home/hakaksesbidowner:5897
+[   15678ms] [LOG] 200 xhrglobal @ https://phbidlautdemo.prahu-hub.com/home/hakaksesbidowner:5897
+[   17241ms] TypeError: $(...).DataTable is not a function
+    at https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/js/scripts-init/tables.js:7:23
+[   18805ms] Cannot use import statement outside a module
+[   18861ms] ReferenceError: Chart is not defined
+    at https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/js/scripts-init/charts/chartjs.js:8:13
+[   18899ms] Unexpected token '<'
+[   19024ms] Unexpected token '<'
+[   19108ms] Uncaught TypeError: expect element to be DOM Element, but got null
+    at n.init (https://cdnjs.cloudflare.com/ajax/libs/smooth-scrollbar/8.5.2/smooth-scrollbar.js:24:264)
+    at <anonymous> (https://phbidlautdemo.prahu-hub.com/home/hakaksesbidder:5501:14)
+[   19151ms] [LOG] Pengaturan Akunnamanya @ https://phbidlautdemo.prahu-hub.com/home/hakaksesbidder:2040
+[   19161ms] [LOG] Masukkan Nama Hak Akses @ https://phbidlautdemo.prahu-hub.com/home/hakaksesbidder:5854
+[   19161ms] [LOG] undefined @ https://phbidlautdemo.prahu-hub.com/home/hakaksesbidder:5854
+[   19161ms] [LOG] undefined @ https://phbidlautdemo.prahu-hub.com/home/hakaksesbidder:5854
+[   19162ms] [LOG] Masukkan Nama Kemasan @ https://phbidlautdemo.prahu-hub.com/home/hakaksesbidder:5854
+[   19162ms] [LOG] undefined @ https://phbidlautdemo.prahu-hub.com/home/hakaksesbidder:5854
+[   19164ms] [LOG] WebSocket connection @ https://phbidlautdemo.prahu-hub.com/home/hakaksesbidder:5897
+[   19164ms] [LOG] WebSocket connection attempting... @ https://phbidlautdemo.prahu-hub.com/home/hakaksesbidder:5975
+[   19292ms] [LOG] WebSocket connected @ https://phbidlautdemo.prahu-hub.com/home/hakaksesbidder:5906
+[   19298ms] [LOG] update_dashboard_order_laut @ https://phbidlautdemo.prahu-hub.com/home/hakaksesbidder:5947
+[   19324ms] [LOG] Connected @ https://phbidlautdemo.prahu-hub.com/home/hakaksesbidder:5947
+[   19411ms] [LOG] [Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object] @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/hakaksesbidder.js?m=1787972929:118
+[   19427ms] [LOG] 33 @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/hakaksesbidder.js?m=1787972929:787
+[   19427ms] [LOG] 33 countView1 1 pageNow 20 limitView1 @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/hakaksesbidder.js?m=1787972929:789
+[   19428ms] [LOG] 20 @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/hakaksesbidder.js?m=1787972929:795
+[   19429ms] [LOG] 33 jumlah data @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/hakaksesbidder.js?m=1787972929:752
+[   19429ms] [LOG] 2 @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/hakaksesbidder.js?m=1787972929:754
+[   19431ms] [LOG] 2 1 pageCount & pageNow @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/hakaksesbidder.js?m=1787972929:678
+[   19433ms] [LOG] 200 xhrglobal @ https://phbidlautdemo.prahu-hub.com/home/hakaksesbidder:5828
+[   19434ms] [LOG] ce.fn.init stepItem @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/hakaksesbidder.js?m=1787972929:652
+[   19553ms] [LOG] 200 xhrglobal @ https://phbidlautdemo.prahu-hub.com/home/hakaksesbidder:5828
+[   19575ms] [LOG] 200 xhrglobal @ https://phbidlautdemo.prahu-hub.com/home/hakaksesbidder:5828
+[   21162ms] TypeError: $(...).DataTable is not a function
+    at https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/js/scripts-init/tables.js:7:23
+[   22682ms] Cannot use import statement outside a module
+[   22713ms] ReferenceError: Chart is not defined
+    at https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/js/scripts-init/charts/chartjs.js:8:13
+[   22878ms] Unexpected token '<'
+[   22879ms] Unexpected token '<'
+[   22954ms] Uncaught TypeError: expect element to be DOM Element, but got null
+    at n.init (https://cdnjs.cloudflare.com/ajax/libs/smooth-scrollbar/8.5.2/smooth-scrollbar.js:24:264)
+    at <anonymous> (https://phbidlautdemo.prahu-hub.com/adminprahu/listBidderKhusus:5730:14)
+[   22987ms] [LOG] Validasi Akunnamanya @ https://phbidlautdemo.prahu-hub.com/adminprahu/listBidderKhusus:2040
+[   22998ms] [LOG] 1xx @ https://phbidlautdemo.prahu-hub.com/adminprahu/listBidderKhusus:6083
+[   22998ms] [LOG] DD/MM/YYYY @ https://phbidlautdemo.prahu-hub.com/adminprahu/listBidderKhusus:6083
+[   23000ms] [LOG] undefined @ https://phbidlautdemo.prahu-hub.com/adminprahu/listBidderKhusus:6083
+[   23000ms] [LOG] Masukkan Alias @ https://phbidlautdemo.prahu-hub.com/adminprahu/listBidderKhusus:6083
+[   23000ms] [LOG] Masukkan Transporter @ https://phbidlautdemo.prahu-hub.com/adminprahu/listBidderKhusus:6083
+[   23000ms] [LOG] undefined @ https://phbidlautdemo.prahu-hub.com/adminprahu/listBidderKhusus:6083
+[   23000ms] [LOG] Masukkan Nama kemasan  @ https://phbidlautdemo.prahu-hub.com/adminprahu/listBidderKhusus:6083
+[   23001ms] [LOG] undefined @ https://phbidlautdemo.prahu-hub.com/adminprahu/listBidderKhusus:6083
+[   23002ms] [LOG] WebSocket connection @ https://phbidlautdemo.prahu-hub.com/adminprahu/listBidderKhusus:6126
+[   23003ms] [LOG] WebSocket connection attempting... @ https://phbidlautdemo.prahu-hub.com/adminprahu/listBidderKhusus:6204
+[   23120ms] [LOG] WebSocket connected @ https://phbidlautdemo.prahu-hub.com/adminprahu/listBidderKhusus:6135
+[   23126ms] [LOG] update_dashboard_order_laut @ https://phbidlautdemo.prahu-hub.com/adminprahu/listBidderKhusus:6176
+[   23155ms] [LOG] Connected @ https://phbidlautdemo.prahu-hub.com/adminprahu/listBidderKhusus:6176
+[   23221ms] [LOG] [Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object] @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/bidderKhusus.js?m=1787972929:159
+[   23228ms] [LOG] [Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object] @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/bidderKhusus.js?m=1787972929:13
+[   23229ms] [LOG] {ID: 41, hitung: 20, tgl_setting: 2026-08-05 08:53:57, alias: WLG, nama: Cahyo Sugianto} @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/bidderKhusus.js?m=1787972929:20
+[   23229ms] [LOG] {ID: 39, hitung: 19, tgl_setting: 2026-02-25 09:45:33, alias: LOD, nama: Uinyuniyika} @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/bidderKhusus.js?m=1787972929:20
+[   23229ms] [LOG] {ID: 38, hitung: 18, tgl_setting: 2025-09-15 09:50:02, alias: ANGGITA, nama: Nur Anggita Wahyuni} @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/bidderKhusus.js?m=1787972929:20
+[   23230ms] [LOG] {ID: 37, hitung: 17, tgl_setting: 2025-09-11 20:39:22, alias: PRS, nama: Demo - Prasetyo Bidder} @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/bidderKhusus.js?m=1787972929:20
+[   23230ms] [LOG] {ID: 25, hitung: 16, tgl_setting: 2025-07-21 11:25:29, alias: OOMPA, nama: bidder} @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/bidderKhusus.js?m=1787972929:20
+[   23230ms] [LOG] {ID: 24, hitung: 15, tgl_setting: 2025-07-21 11:25:29, alias: 6THRT, nama: Indah} @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/bidderKhusus.js?m=1787972929:20
+[   23230ms] [LOG] {ID: 20, hitung: 14, tgl_setting: 2025-01-11 11:16:40, alias: SIDIQ, nama: Sidiq Satria Tama} @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/bidderKhusus.js?m=1787972929:20
+[   23231ms] [LOG] {ID: 19, hitung: 13, tgl_setting: 2025-01-10 16:12:48, alias: SYAV, nama: Syavira} @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/bidderKhusus.js?m=1787972929:20
+[   23231ms] [LOG] {ID: 18, hitung: 12, tgl_setting: 2024-10-28 09:48:44, alias: ZARA, nama: WINDYA ZAHRAH KAMALI} @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/bidderKhusus.js?m=1787972929:20
+[   23231ms] [LOG] {ID: 17, hitung: 11, tgl_setting: 2024-07-30 05:21:50, alias: ALMD, nama: Dhanar Ahmad} @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/bidderKhusus.js?m=1787972929:20
+[   23232ms] [LOG] {ID: 11, hitung: 10, tgl_setting: 2024-07-11 13:47:25, alias: SNJ, nama: Putra Sinegar} @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/bidderKhusus.js?m=1787972929:20
+[   23232ms] [LOG] {ID: 9, hitung: 9, tgl_setting: 2024-07-11 09:07:04, alias: (IK)VUCD, nama: Vina As Cantika Andika} @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/bidderKhusus.js?m=1787972929:20
+[   23232ms] [LOG] {ID: 8, hitung: 8, tgl_setting: 2024-07-11 09:07:03, alias: (IK)MSJS, nama: Yahya Al Lukman Jaya Husein} @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/bidderKhusus.js?m=1787972929:20
+[   23233ms] [LOG] {ID: 7, hitung: 7, tgl_setting: 2024-07-11 09:07:03, alias: (IK)MJW, nama: Kusuma Jaya Wijaya Abadi Sentosa Mujur Selalu} @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/bidderKhusus.js?m=1787972929:20
+[   23233ms] [LOG] {ID: 6, hitung: 6, tgl_setting: 2024-07-11 09:07:03, alias: (IK)MU, nama: Mercury Us Handika} @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/bidderKhusus.js?m=1787972929:20
+[   23233ms] [LOG] {ID: 5, hitung: 5, tgl_setting: 2024-07-11 09:07:03, alias: (IK)JMTT, nama: Derinka} @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/bidderKhusus.js?m=1787972929:20
+[   23234ms] [LOG] {ID: 4, hitung: 4, tgl_setting: 2024-07-10 16:32:34, alias: BDR FT, nama: Rahmawati} @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/bidderKhusus.js?m=1787972929:20
+[   23234ms] [LOG] {ID: 3, hitung: 3, tgl_setting: 2024-07-10 16:32:34, alias: QC, nama: Ilham Ramadhan} @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/bidderKhusus.js?m=1787972929:20
+[   23234ms] [LOG] {ID: 2, hitung: 2, tgl_setting: 2024-07-10 16:32:34, alias: BDN, nama: PT. Bidder Nusantara} @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/bidderKhusus.js?m=1787972929:20
+[   23234ms] [LOG] {ID: 1, hitung: 1, tgl_setting: 2024-07-10 16:32:34, alias: (IK)LST, nama: Frinka Frenklin} @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/bidderKhusus.js?m=1787972929:20
+[   23240ms] [LOG] 20 @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/bidderKhusus.js?m=1787972929:637
+[   23240ms] [LOG] 20 countView1 1 pageNow 20 limitView1 @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/bidderKhusus.js?m=1787972929:639
+[   23241ms] [LOG] 20 @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/bidderKhusus.js?m=1787972929:645
+[   23245ms] [LOG] 20 jumlah data @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/bidderKhusus.js?m=1787972929:607
+[   23245ms] [LOG] 1 @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/bidderKhusus.js?m=1787972929:609
+[   23248ms] [LOG] 200 xhrglobal @ https://phbidlautdemo.prahu-hub.com/adminprahu/listBidderKhusus:6057
+[   23248ms] [LOG] ce.fn.init stepItem @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/bidderKhusus.js?m=1787972929:514
+[   23341ms] [LOG] 200 xhrglobal @ https://phbidlautdemo.prahu-hub.com/adminprahu/listBidderKhusus:6057
+[   23397ms] [LOG] 200 xhrglobal @ https://phbidlautdemo.prahu-hub.com/adminprahu/listBidderKhusus:6057
+[   24998ms] TypeError: $(...).DataTable is not a function
+    at https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/js/scripts-init/tables.js:7:23
+[   26599ms] Cannot use import statement outside a module
+[   26630ms] ReferenceError: Chart is not defined
+    at https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/js/scripts-init/charts/chartjs.js:8:13
+[   26639ms] Unexpected token '<'
+[   26748ms] Unexpected token '<'
+[   26814ms] Uncaught TypeError: expect element to be DOM Element, but got null
+    at n.init (https://cdnjs.cloudflare.com/ajax/libs/smooth-scrollbar/8.5.2/smooth-scrollbar.js:24:264)
+    at <anonymous> (https://phbidlautdemo.prahu-hub.com/adminprahu/masterpetugasapk:7707:14)
+[   26878ms] [LOG] Masternamanya @ https://phbidlautdemo.prahu-hub.com/adminprahu/masterpetugasapk:2040
+[   26901ms] [LOG] undefined @ https://phbidlautdemo.prahu-hub.com/adminprahu/masterpetugasapk:8060
+[   26901ms] [LOG] Masukkan Nama Petugas @ https://phbidlautdemo.prahu-hub.com/adminprahu/masterpetugasapk:8060
+[   26901ms] [LOG] 08xxxxxxxxxx @ https://phbidlautdemo.prahu-hub.com/adminprahu/masterpetugasapk:8060
+[   26902ms] [LOG] undefined @ https://phbidlautdemo.prahu-hub.com/adminprahu/masterpetugasapk:8060
+[   26902ms] [LOG] Masukkan Nama Petugas @ https://phbidlautdemo.prahu-hub.com/adminprahu/masterpetugasapk:8060
+[   26902ms] [LOG] 08xxxxxxxxxx @ https://phbidlautdemo.prahu-hub.com/adminprahu/masterpetugasapk:8060
+[   26902ms] [LOG] undefined @ https://phbidlautdemo.prahu-hub.com/adminprahu/masterpetugasapk:8060
+[   26902ms] [LOG] Masukkan Nama Bank @ https://phbidlautdemo.prahu-hub.com/adminprahu/masterpetugasapk:8060
+[   26902ms] [LOG] undefined @ https://phbidlautdemo.prahu-hub.com/adminprahu/masterpetugasapk:8060
+[   26905ms] [LOG] WebSocket connection @ https://phbidlautdemo.prahu-hub.com/adminprahu/masterpetugasapk:8103
+[   26905ms] [LOG] WebSocket connection attempting... @ https://phbidlautdemo.prahu-hub.com/adminprahu/masterpetugasapk:8181
+[   27020ms] [LOG] WebSocket connected @ https://phbidlautdemo.prahu-hub.com/adminprahu/masterpetugasapk:8112
+[   27023ms] [LOG] update_dashboard_order_laut @ https://phbidlautdemo.prahu-hub.com/adminprahu/masterpetugasapk:8153
+[   27052ms] [LOG] Connected @ https://phbidlautdemo.prahu-hub.com/adminprahu/masterpetugasapk:8153
+[   27188ms] [LOG] 87 @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/masterpetugasapk.js?m=1787972929:505
+[   27189ms] [LOG] 87 countView1 1 pageNow 20 limitView1 @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/masterpetugasapk.js?m=1787972929:507
+[   27189ms] [LOG] 20 @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/masterpetugasapk.js?m=1787972929:513
+[   27191ms] [LOG] 87 jumlah data @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/masterpetugasapk.js?m=1787972929:468
+[   27191ms] [LOG] 5 @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/masterpetugasapk.js?m=1787972929:470
+[   27193ms] [LOG] 5 1 pageCount & pageNow @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/masterpetugasapk.js?m=1787972929:393
+[   27199ms] [LOG] 200 xhrglobal @ https://phbidlautdemo.prahu-hub.com/adminprahu/masterpetugasapk:8034
+[   27266ms] ReferenceError: renderTooltipHarga is not defined
+    at https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/masterpetugasapk.js?m=1787972929:597:9
+[   27282ms] [LOG] 200 xhrglobal @ https://phbidlautdemo.prahu-hub.com/adminprahu/masterpetugasapk:8034
+[   27339ms] [LOG] 200 xhrglobal @ https://phbidlautdemo.prahu-hub.com/adminprahu/masterpetugasapk:8034
+[   28902ms] TypeError: $(...).DataTable is not a function
+    at https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/js/scripts-init/tables.js:7:23
+[   30615ms] Cannot use import statement outside a module
+[   30664ms] ReferenceError: Chart is not defined
+    at https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/js/scripts-init/charts/chartjs.js:8:13
+[   30699ms] Unexpected token '<'
+[   30815ms] Unexpected token '<'
+[   30861ms] TypeError: $(...).datetimepicker is not a function
+    at https://phbidlautdemo.prahu-hub.com/adminprahu/masteriklan:5210:15
+[   30897ms] Uncaught TypeError: expect element to be DOM Element, but got null
+    at n.init (https://cdnjs.cloudflare.com/ajax/libs/smooth-scrollbar/8.5.2/smooth-scrollbar.js:24:264)
+    at <anonymous> (https://phbidlautdemo.prahu-hub.com/adminprahu/masteriklan:5944:14)
+[   30927ms] [LOG] Masternamanya @ https://phbidlautdemo.prahu-hub.com/adminprahu/masteriklan:2040
+[   30939ms] [LOG] DD/MM/YYYY @ https://phbidlautdemo.prahu-hub.com/adminprahu/masteriklan:6297
+[   30940ms] [LOG] DD/MM/YYYY @ https://phbidlautdemo.prahu-hub.com/adminprahu/masteriklan:6297
+[   30941ms] [LOG] undefined @ https://phbidlautdemo.prahu-hub.com/adminprahu/masteriklan:6297
+[   30941ms] [LOG] undefined @ https://phbidlautdemo.prahu-hub.com/adminprahu/masteriklan:6297
+[   30941ms] [LOG] DD/MM/YYYY HH:MM @ https://phbidlautdemo.prahu-hub.com/adminprahu/masteriklan:6297
+[   30942ms] [LOG] DD/MM/YYYY HH:MM @ https://phbidlautdemo.prahu-hub.com/adminprahu/masteriklan:6297
+[   30943ms] [LOG] WebSocket connection @ https://phbidlautdemo.prahu-hub.com/adminprahu/masteriklan:6340
+[   30943ms] [LOG] WebSocket connection attempting... @ https://phbidlautdemo.prahu-hub.com/adminprahu/masteriklan:6418
+[   31056ms] [LOG] WebSocket connected @ https://phbidlautdemo.prahu-hub.com/adminprahu/masteriklan:6349
+[   31059ms] [LOG] update_dashboard_order_laut @ https://phbidlautdemo.prahu-hub.com/adminprahu/masteriklan:6390
+[   31089ms] [LOG] Connected @ https://phbidlautdemo.prahu-hub.com/adminprahu/masteriklan:6390
+[   31092ms] [LOG] [Object, Object, Object, Object, Object, Object, Object, Object, Object, Object] @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/master_iklan.js?m=1787972929:108
+[   31096ms] [LOG] 10 @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/master_iklan.js?m=1787972929:875
+[   31097ms] [LOG] 10 countView1 1 pageNow 20 limitView1 @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/master_iklan.js?m=1787972929:877
+[   31097ms] [LOG] 10 @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/master_iklan.js?m=1787972929:888
+[   31097ms] [LOG] 10 jumlah data @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/master_iklan.js?m=1787972929:841
+[   31098ms] [LOG] 1 @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/master_iklan.js?m=1787972929:843
+[   31098ms] [LOG] 1 1 pageCount & pageNow @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/master_iklan.js?m=1787972929:769
+[   31101ms] [LOG] 200 xhrglobal @ https://phbidlautdemo.prahu-hub.com/adminprahu/masteriklan:6271
+[   31101ms] [LOG] ce.fn.init stepItem @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/master_iklan.js?m=1787972929:738
+[   31223ms] [LOG] 200 xhrglobal @ https://phbidlautdemo.prahu-hub.com/adminprahu/masteriklan:6271
+[   31277ms] [LOG] 200 xhrglobal @ https://phbidlautdemo.prahu-hub.com/adminprahu/masteriklan:6271
+[   32939ms] TypeError: $(...).DataTable is not a function
+    at https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/js/scripts-init/tables.js:7:23
+[   34436ms] Cannot use import statement outside a module
+[   34475ms] ReferenceError: Chart is not defined
+    at https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/js/scripts-init/charts/chartjs.js:8:13
+[   34647ms] Unexpected token '<'
+[   34649ms] Unexpected token '<'
+[   34713ms] Uncaught TypeError: expect element to be DOM Element, but got null
+    at n.init (https://cdnjs.cloudflare.com/ajax/libs/smooth-scrollbar/8.5.2/smooth-scrollbar.js:24:264)
+    at <anonymous> (https://phbidlautdemo.prahu-hub.com/home/subuserbidowner:5514:14)
+[   34746ms] [LOG] Pengaturan Akunnamanya @ https://phbidlautdemo.prahu-hub.com/home/subuserbidowner:2040
+[   34758ms] [LOG] Masukkan Nama Sub User @ https://phbidlautdemo.prahu-hub.com/home/subuserbidowner:5867
+[   34759ms] [LOG] Masukkan Email @ https://phbidlautdemo.prahu-hub.com/home/subuserbidowner:5867
+[   34759ms] [LOG] undefined @ https://phbidlautdemo.prahu-hub.com/home/subuserbidowner:5867
+[   34759ms] [LOG] undefined @ https://phbidlautdemo.prahu-hub.com/home/subuserbidowner:5867
+[   34759ms] [LOG] Masukkan Nama Bank @ https://phbidlautdemo.prahu-hub.com/home/subuserbidowner:5867
+[   34760ms] [LOG] undefined @ https://phbidlautdemo.prahu-hub.com/home/subuserbidowner:5867
+[   34761ms] [LOG] WebSocket connection @ https://phbidlautdemo.prahu-hub.com/home/subuserbidowner:5910
+[   34762ms] [LOG] WebSocket connection attempting... @ https://phbidlautdemo.prahu-hub.com/home/subuserbidowner:5988
+[   34881ms] [LOG] WebSocket connected @ https://phbidlautdemo.prahu-hub.com/home/subuserbidowner:5919
+[   34883ms] [LOG] update_dashboard_order_laut @ https://phbidlautdemo.prahu-hub.com/home/subuserbidowner:5960
+[   34911ms] [LOG] Connected @ https://phbidlautdemo.prahu-hub.com/home/subuserbidowner:5960
+[   34951ms] [LOG] [Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object] @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/subuserbidowner.js?m=1787972929:15
+[   34962ms] [LOG] 13 @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/subuserbidowner.js?m=1787972929:520
+[   34963ms] [LOG] 13 countView1 1 pageNow 20 limitView1 @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/subuserbidowner.js?m=1787972929:522
+[   34963ms] [LOG] 13 @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/subuserbidowner.js?m=1787972929:528
+[   34964ms] [LOG] 13 jumlah data @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/subuserbidowner.js?m=1787972929:483
+[   34965ms] [LOG] 1 @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/subuserbidowner.js?m=1787972929:485
+[   34967ms] [LOG] 1 1 pageCount & pageNow @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/subuserbidowner.js?m=1787972929:408
+[   34971ms] [LOG] 200 xhrglobal @ https://phbidlautdemo.prahu-hub.com/home/subuserbidowner:5841
+[   35070ms] [LOG] 200 xhrglobal @ https://phbidlautdemo.prahu-hub.com/home/subuserbidowner:5841
+[   35115ms] [LOG] 200 xhrglobal @ https://phbidlautdemo.prahu-hub.com/home/subuserbidowner:5841
+[   36759ms] TypeError: $(...).DataTable is not a function
+    at https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/js/scripts-init/tables.js:7:23
+[   38175ms] Cannot use import statement outside a module
+[   38225ms] ReferenceError: Chart is not defined
+    at https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/js/scripts-init/charts/chartjs.js:8:13
+[   38412ms] Unexpected token '<'
+[   38412ms] Unexpected token '<'
+[   38467ms] Uncaught TypeError: expect element to be DOM Element, but got null
+    at n.init (https://cdnjs.cloudflare.com/ajax/libs/smooth-scrollbar/8.5.2/smooth-scrollbar.js:24:264)
+    at <anonymous> (https://phbidlautdemo.prahu-hub.com/home/subuserbidder:5442:14)
+[   38508ms] [LOG] Pengaturan Akunnamanya @ https://phbidlautdemo.prahu-hub.com/home/subuserbidder:2040
+[   38518ms] [LOG] Masukkan Nama Sub User @ https://phbidlautdemo.prahu-hub.com/home/subuserbidder:5795
+[   38518ms] [LOG] Masukkan Email @ https://phbidlautdemo.prahu-hub.com/home/subuserbidder:5795
+[   38518ms] [LOG] undefined @ https://phbidlautdemo.prahu-hub.com/home/subuserbidder:5795
+[   38518ms] [LOG] undefined @ https://phbidlautdemo.prahu-hub.com/home/subuserbidder:5795
+[   38519ms] [LOG] Masukkan Nama Bank @ https://phbidlautdemo.prahu-hub.com/home/subuserbidder:5795
+[   38519ms] [LOG] undefined @ https://phbidlautdemo.prahu-hub.com/home/subuserbidder:5795
+[   38520ms] [LOG] WebSocket connection @ https://phbidlautdemo.prahu-hub.com/home/subuserbidder:5838
+[   38521ms] [LOG] WebSocket connection attempting... @ https://phbidlautdemo.prahu-hub.com/home/subuserbidder:5916
+[   38644ms] [LOG] WebSocket connected @ https://phbidlautdemo.prahu-hub.com/home/subuserbidder:5847
+[   38649ms] [LOG] update_dashboard_order_laut @ https://phbidlautdemo.prahu-hub.com/home/subuserbidder:5888
+[   38675ms] [LOG] Connected @ https://phbidlautdemo.prahu-hub.com/home/subuserbidder:5888
+[   38696ms] [LOG] [Object, Object, Object, Object, Object, Object, Object, Object, Object] @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/subuserbidder.js?m=1787972929:15
+[   38702ms] [LOG] 9 @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/subuserbidder.js?m=1787972929:528
+[   38702ms] [LOG] 9 countView1 1 pageNow 20 limitView1 @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/subuserbidder.js?m=1787972929:530
+[   38703ms] [LOG] 9 @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/subuserbidder.js?m=1787972929:536
+[   38704ms] [LOG] 9 jumlah data @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/subuserbidder.js?m=1787972929:491
+[   38704ms] [LOG] 1 @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/subuserbidder.js?m=1787972929:493
+[   38706ms] [LOG] 1 1 pageCount & pageNow @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/subuserbidder.js?m=1787972929:416
+[   38709ms] [LOG] 200 xhrglobal @ https://phbidlautdemo.prahu-hub.com/home/subuserbidder:5769
+[   38806ms] [LOG] 200 xhrglobal @ https://phbidlautdemo.prahu-hub.com/home/subuserbidder:5769
+[   38862ms] [LOG] 200 xhrglobal @ https://phbidlautdemo.prahu-hub.com/home/subuserbidder:5769
+[   40518ms] TypeError: $(...).DataTable is not a function
+    at https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/js/scripts-init/tables.js:7:23
+[   42512ms] Cannot use import statement outside a module
+[   42552ms] ReferenceError: Chart is not defined
+    at https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/js/scripts-init/charts/chartjs.js:8:13
+[   42552ms] Unexpected token '<'
+[   42557ms] Unexpected token '<'
+[   42623ms] Uncaught TypeError: expect element to be DOM Element, but got null
+    at n.init (https://cdnjs.cloudflare.com/ajax/libs/smooth-scrollbar/8.5.2/smooth-scrollbar.js:24:264)
+    at <anonymous> (https://phbidlautdemo.prahu-hub.com/adminprahu/preregister:5418:14)
+[   42679ms] [LOG] Validasi Akunnamanya @ https://phbidlautdemo.prahu-hub.com/adminprahu/preregister:2040
+[   42692ms] [LOG] undefined @ https://phbidlautdemo.prahu-hub.com/adminprahu/preregister:5771
+[   42692ms] [LOG] 1xxx @ https://phbidlautdemo.prahu-hub.com/adminprahu/preregister:5771
+[   42692ms] [LOG] undefined @ https://phbidlautdemo.prahu-hub.com/adminprahu/preregister:5771
+[   42693ms] [LOG] Masukkan Nama @ https://phbidlautdemo.prahu-hub.com/adminprahu/preregister:5771
+[   42693ms] [LOG] Masukkan Nama Perusahaan @ https://phbidlautdemo.prahu-hub.com/adminprahu/preregister:5771
+[   42693ms] [LOG] Masukkan Email @ https://phbidlautdemo.prahu-hub.com/adminprahu/preregister:5771
+[   42693ms] [LOG] 08xxx @ https://phbidlautdemo.prahu-hub.com/adminprahu/preregister:5771
+[   42693ms] [LOG] DD/MM/YYYY @ https://phbidlautdemo.prahu-hub.com/adminprahu/preregister:5771
+[   42694ms] [LOG] WebSocket connection @ https://phbidlautdemo.prahu-hub.com/adminprahu/preregister:5814
+[   42695ms] [LOG] WebSocket connection attempting... @ https://phbidlautdemo.prahu-hub.com/adminprahu/preregister:5892
+[   42807ms] [LOG] WebSocket connected @ https://phbidlautdemo.prahu-hub.com/adminprahu/preregister:5823
+[   42810ms] [LOG] update_dashboard_order_laut @ https://phbidlautdemo.prahu-hub.com/adminprahu/preregister:5864
+[   42837ms] [LOG] Connected @ https://phbidlautdemo.prahu-hub.com/adminprahu/preregister:5864
+[   42901ms] [LOG] [Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object] @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/preregister.js?m=1787972929:163
+[   42908ms] [LOG] 33 @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/preregister.js?m=1787972929:770
+[   42909ms] [LOG] 33 countView1 1 pageNow 20 limitView1 @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/preregister.js?m=1787972929:772
+[   42909ms] [LOG] 20 @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/preregister.js?m=1787972929:778
+[   42910ms] [LOG] 33 jumlah data @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/preregister.js?m=1787972929:734
+[   42910ms] [LOG] 2 @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/preregister.js?m=1787972929:736
+[   42911ms] [LOG] 2 1 pageCount & pageNow @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/preregister.js?m=1787972929:660
+[   42913ms] [LOG] 200 xhrglobal @ https://phbidlautdemo.prahu-hub.com/adminprahu/preregister:5745
+[   42915ms] [LOG] ce.fn.init stepItem @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/preregister.js?m=1787972929:634
+[   43039ms] [LOG] 200 xhrglobal @ https://phbidlautdemo.prahu-hub.com/adminprahu/preregister:5745
+[   43104ms] [LOG] 200 xhrglobal @ https://phbidlautdemo.prahu-hub.com/adminprahu/preregister:5745
+[   44691ms] TypeError: $(...).DataTable is not a function
+    at https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/js/scripts-init/tables.js:7:23
+[   46276ms] Cannot use import statement outside a module
+[   46299ms] ReferenceError: Chart is not defined
+    at https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/js/scripts-init/charts/chartjs.js:8:13
+[   46479ms] Unexpected token '<'
+[   46481ms] Unexpected token '<'
+[   46536ms] Uncaught TypeError: expect element to be DOM Element, but got null
+    at n.init (https://cdnjs.cloudflare.com/ajax/libs/smooth-scrollbar/8.5.2/smooth-scrollbar.js:24:264)
+    at <anonymous> (https://phbidlautdemo.prahu-hub.com/home/relasi_satu_pintu:5774:14)
+[   46581ms] [LOG] Validasi Akunnamanya @ https://phbidlautdemo.prahu-hub.com/home/relasi_satu_pintu:2040
+[   46640ms] [LOG] undefined @ https://phbidlautdemo.prahu-hub.com/home/relasi_satu_pintu:6127
+[   46641ms] [LOG] 1xx @ https://phbidlautdemo.prahu-hub.com/home/relasi_satu_pintu:6127
+[   46641ms] [LOG] undefined @ https://phbidlautdemo.prahu-hub.com/home/relasi_satu_pintu:6127
+[   46641ms] [LOG] DD/MM/YYYY @ https://phbidlautdemo.prahu-hub.com/home/relasi_satu_pintu:6127
+[   46641ms] [LOG] Masukkan Email @ https://phbidlautdemo.prahu-hub.com/home/relasi_satu_pintu:6127
+[   46641ms] [LOG] undefined @ https://phbidlautdemo.prahu-hub.com/home/relasi_satu_pintu:6127
+[   46642ms] [LOG] 1xx @ https://phbidlautdemo.prahu-hub.com/home/relasi_satu_pintu:6127
+[   46642ms] [LOG] undefined @ https://phbidlautdemo.prahu-hub.com/home/relasi_satu_pintu:6127
+[   46642ms] [LOG] DD/MM/YYYY @ https://phbidlautdemo.prahu-hub.com/home/relasi_satu_pintu:6127
+[   46643ms] [LOG] Masukkan Email @ https://phbidlautdemo.prahu-hub.com/home/relasi_satu_pintu:6127
+[   46643ms] [LOG] undefined @ https://phbidlautdemo.prahu-hub.com/home/relasi_satu_pintu:6127
+[   46643ms] [LOG] Masukkan Nama Bank @ https://phbidlautdemo.prahu-hub.com/home/relasi_satu_pintu:6127
+[   46643ms] [LOG] undefined @ https://phbidlautdemo.prahu-hub.com/home/relasi_satu_pintu:6127
+[   46645ms] [LOG] WebSocket connection @ https://phbidlautdemo.prahu-hub.com/home/relasi_satu_pintu:6170
+[   46646ms] [LOG] WebSocket connection attempting... @ https://phbidlautdemo.prahu-hub.com/home/relasi_satu_pintu:6248
+[   46735ms] [LOG] 30 @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/relasisatupintu.js?m=1787972929:487
+[   46735ms] [LOG] 30 countView1 1 pageNow 20 limitView1 @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/relasisatupintu.js?m=1787972929:489
+[   46735ms] [LOG] 20 @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/relasisatupintu.js?m=1787972929:495
+[   46736ms] [LOG] 30 jumlah data @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/relasisatupintu.js?m=1787972929:450
+[   46736ms] [LOG] 2 @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/relasisatupintu.js?m=1787972929:452
+[   46737ms] [LOG] 2 1 pageCount & pageNow @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/relasisatupintu.js?m=1787972929:375
+[   46739ms] [LOG] 200 xhrglobal @ https://phbidlautdemo.prahu-hub.com/home/relasi_satu_pintu:6101
+[   46762ms] ReferenceError: renderTooltipHarga is not defined
+    at https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/relasisatupintu.js?m=1787972929:579:9
+[   46762ms] [LOG] WebSocket connected @ https://phbidlautdemo.prahu-hub.com/home/relasi_satu_pintu:6179
+[   46767ms] [LOG] update_dashboard_order_laut @ https://phbidlautdemo.prahu-hub.com/home/relasi_satu_pintu:6220
+[   46792ms] [LOG] Connected @ https://phbidlautdemo.prahu-hub.com/home/relasi_satu_pintu:6220
+[   46877ms] [LOG] 200 xhrglobal @ https://phbidlautdemo.prahu-hub.com/home/relasi_satu_pintu:6101
+[   46941ms] [LOG] 200 xhrglobal @ https://phbidlautdemo.prahu-hub.com/home/relasi_satu_pintu:6101
+[   48614ms] TypeError: $(...).DataTable is not a function
+    at https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/js/scripts-init/tables.js:7:23
+[   51983ms] Unexpected token '<'
+[   52018ms] Cannot use import statement outside a module
+[   52051ms] ReferenceError: Chart is not defined
+    at https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/js/scripts-init/charts/chartjs.js:8:13
+[   52053ms] Unexpected token '<'
+[   52118ms] Unexpected token '<'
+[   52181ms] Uncaught TypeError: expect element to be DOM Element, but got null
+    at n.init (https://cdnjs.cloudflare.com/ajax/libs/smooth-scrollbar/8.5.2/smooth-scrollbar.js:24:264)
+    at <anonymous> (https://phbidlautdemo.prahu-hub.com/adminprahu/SettingRelasi/aUNvRG8yUW9PWk1PMSt4WXFhUEFPUT09:5793:14)
+[   52228ms] [LOG] Validasi Akunnamanya @ https://phbidlautdemo.prahu-hub.com/adminprahu/SettingRelasi/aUNvRG8yUW9PWk1PMSt4WXFhUEFPUT09:2040
+[   52252ms] [LOG] undefined @ https://phbidlautdemo.prahu-hub.com/adminprahu/SettingRelasi/aUNvRG8yUW9PWk1PMSt4WXFhUEFPUT09:6146
+[   52252ms] [LOG] undefined @ https://phbidlautdemo.prahu-hub.com/adminprahu/SettingRelasi/aUNvRG8yUW9PWk1PMSt4WXFhUEFPUT09:6146
+[   52252ms] [LOG] 1xx @ https://phbidlautdemo.prahu-hub.com/adminprahu/SettingRelasi/aUNvRG8yUW9PWk1PMSt4WXFhUEFPUT09:6146
+[   52252ms] [LOG] DD/MM/YYYY @ https://phbidlautdemo.prahu-hub.com/adminprahu/SettingRelasi/aUNvRG8yUW9PWk1PMSt4WXFhUEFPUT09:6146
+[   52253ms] [LOG] Masukkan Relasi Transporter @ https://phbidlautdemo.prahu-hub.com/adminprahu/SettingRelasi/aUNvRG8yUW9PWk1PMSt4WXFhUEFPUT09:6146
+[   52253ms] [LOG] Masukkan Atas Nama @ https://phbidlautdemo.prahu-hub.com/adminprahu/SettingRelasi/aUNvRG8yUW9PWk1PMSt4WXFhUEFPUT09:6146
+[   52253ms] [LOG] Masukkan Nomor VA @ https://phbidlautdemo.prahu-hub.com/adminprahu/SettingRelasi/aUNvRG8yUW9PWk1PMSt4WXFhUEFPUT09:6146
+[   52253ms] [LOG] undefined @ https://phbidlautdemo.prahu-hub.com/adminprahu/SettingRelasi/aUNvRG8yUW9PWk1PMSt4WXFhUEFPUT09:6146
+[   52253ms] [LOG] undefined @ https://phbidlautdemo.prahu-hub.com/adminprahu/SettingRelasi/aUNvRG8yUW9PWk1PMSt4WXFhUEFPUT09:6146
+[   52253ms] [LOG] Masukkan Nomor VA @ https://phbidlautdemo.prahu-hub.com/adminprahu/SettingRelasi/aUNvRG8yUW9PWk1PMSt4WXFhUEFPUT09:6146
+[   52254ms] [LOG] Masukkan Atas Nama @ https://phbidlautdemo.prahu-hub.com/adminprahu/SettingRelasi/aUNvRG8yUW9PWk1PMSt4WXFhUEFPUT09:6146
+[   52255ms] [LOG] WebSocket connection @ https://phbidlautdemo.prahu-hub.com/adminprahu/SettingRelasi/aUNvRG8yUW9PWk1PMSt4WXFhUEFPUT09:6189
+[   52256ms] [LOG] WebSocket connection attempting... @ https://phbidlautdemo.prahu-hub.com/adminprahu/SettingRelasi/aUNvRG8yUW9PWk1PMSt4WXFhUEFPUT09:6267
+[   52341ms] [LOG] 200 xhrglobal @ https://phbidlautdemo.prahu-hub.com/adminprahu/SettingRelasi/aUNvRG8yUW9PWk1PMSt4WXFhUEFPUT09:6120
+[   52343ms] ReferenceError: renderTooltipHarga is not defined
+    at https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/SettingRelasi.js?m=1787972929:639:9
+[   52374ms] [LOG] WebSocket connected @ https://phbidlautdemo.prahu-hub.com/adminprahu/SettingRelasi/aUNvRG8yUW9PWk1PMSt4WXFhUEFPUT09:6198
+[   52376ms] [LOG] update_dashboard_order_laut @ https://phbidlautdemo.prahu-hub.com/adminprahu/SettingRelasi/aUNvRG8yUW9PWk1PMSt4WXFhUEFPUT09:6239
+[   52412ms] [LOG] Connected @ https://phbidlautdemo.prahu-hub.com/adminprahu/SettingRelasi/aUNvRG8yUW9PWk1PMSt4WXFhUEFPUT09:6239
+[   52494ms] [LOG] 200 xhrglobal @ https://phbidlautdemo.prahu-hub.com/adminprahu/SettingRelasi/aUNvRG8yUW9PWk1PMSt4WXFhUEFPUT09:6120
+[   52558ms] [LOG] 200 xhrglobal @ https://phbidlautdemo.prahu-hub.com/adminprahu/SettingRelasi/aUNvRG8yUW9PWk1PMSt4WXFhUEFPUT09:6120
+[   54239ms] TypeError: $(...).DataTable is not a function
+    at https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/js/scripts-init/tables.js:7:23
+[   55027ms] Unexpected token '<'
+[   55036ms] Cannot use import statement outside a module
+[   55076ms] ReferenceError: Chart is not defined
+    at https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/js/scripts-init/charts/chartjs.js:8:13
+[   55271ms] Unexpected token '<'
+[   55272ms] Unexpected token '<'
+[   55363ms] Uncaught TypeError: expect element to be DOM Element, but got null
+    at n.init (https://cdnjs.cloudflare.com/ajax/libs/smooth-scrollbar/8.5.2/smooth-scrollbar.js:24:264)
+    at <anonymous> (https://phbidlautdemo.prahu-hub.com/adminprahu/SettingRelasi/TDJTQk8wc01CT2JEUUtNeU90M3NpUT09:5793:14)
+[   55410ms] [LOG] Validasi Akunnamanya @ https://phbidlautdemo.prahu-hub.com/adminprahu/SettingRelasi/TDJTQk8wc01CT2JEUUtNeU90M3NpUT09:2040
+[   55432ms] [LOG] undefined @ https://phbidlautdemo.prahu-hub.com/adminprahu/SettingRelasi/TDJTQk8wc01CT2JEUUtNeU90M3NpUT09:6146
+[   55432ms] [LOG] undefined @ https://phbidlautdemo.prahu-hub.com/adminprahu/SettingRelasi/TDJTQk8wc01CT2JEUUtNeU90M3NpUT09:6146
+[   55432ms] [LOG] 1xx @ https://phbidlautdemo.prahu-hub.com/adminprahu/SettingRelasi/TDJTQk8wc01CT2JEUUtNeU90M3NpUT09:6146
+[   55432ms] [LOG] DD/MM/YYYY @ https://phbidlautdemo.prahu-hub.com/adminprahu/SettingRelasi/TDJTQk8wc01CT2JEUUtNeU90M3NpUT09:6146
+[   55432ms] [LOG] Masukkan Relasi Transporter @ https://phbidlautdemo.prahu-hub.com/adminprahu/SettingRelasi/TDJTQk8wc01CT2JEUUtNeU90M3NpUT09:6146
+[   55433ms] [LOG] Masukkan Atas Nama @ https://phbidlautdemo.prahu-hub.com/adminprahu/SettingRelasi/TDJTQk8wc01CT2JEUUtNeU90M3NpUT09:6146
+[   55433ms] [LOG] Masukkan Nomor VA @ https://phbidlautdemo.prahu-hub.com/adminprahu/SettingRelasi/TDJTQk8wc01CT2JEUUtNeU90M3NpUT09:6146
+[   55433ms] [LOG] undefined @ https://phbidlautdemo.prahu-hub.com/adminprahu/SettingRelasi/TDJTQk8wc01CT2JEUUtNeU90M3NpUT09:6146
+[   55433ms] [LOG] undefined @ https://phbidlautdemo.prahu-hub.com/adminprahu/SettingRelasi/TDJTQk8wc01CT2JEUUtNeU90M3NpUT09:6146
+[   55433ms] [LOG] Masukkan Nomor VA @ https://phbidlautdemo.prahu-hub.com/adminprahu/SettingRelasi/TDJTQk8wc01CT2JEUUtNeU90M3NpUT09:6146
+[   55433ms] [LOG] Masukkan Atas Nama @ https://phbidlautdemo.prahu-hub.com/adminprahu/SettingRelasi/TDJTQk8wc01CT2JEUUtNeU90M3NpUT09:6146
+[   55435ms] [LOG] WebSocket connection @ https://phbidlautdemo.prahu-hub.com/adminprahu/SettingRelasi/TDJTQk8wc01CT2JEUUtNeU90M3NpUT09:6189
+[   55435ms] [LOG] WebSocket connection attempting... @ https://phbidlautdemo.prahu-hub.com/adminprahu/SettingRelasi/TDJTQk8wc01CT2JEUUtNeU90M3NpUT09:6267
+[   55520ms] [LOG] 200 xhrglobal @ https://phbidlautdemo.prahu-hub.com/adminprahu/SettingRelasi/TDJTQk8wc01CT2JEUUtNeU90M3NpUT09:6120
+[   55524ms] ReferenceError: renderTooltipHarga is not defined
+    at https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/SettingRelasi.js?m=1787972929:639:9
+[   55589ms] [LOG] WebSocket connected @ https://phbidlautdemo.prahu-hub.com/adminprahu/SettingRelasi/TDJTQk8wc01CT2JEUUtNeU90M3NpUT09:6198
+[   55592ms] [LOG] update_dashboard_order_laut @ https://phbidlautdemo.prahu-hub.com/adminprahu/SettingRelasi/TDJTQk8wc01CT2JEUUtNeU90M3NpUT09:6239
+[   55620ms] [LOG] Connected @ https://phbidlautdemo.prahu-hub.com/adminprahu/SettingRelasi/TDJTQk8wc01CT2JEUUtNeU90M3NpUT09:6239
+[   55784ms] [LOG] 200 xhrglobal @ https://phbidlautdemo.prahu-hub.com/adminprahu/SettingRelasi/TDJTQk8wc01CT2JEUUtNeU90M3NpUT09:6120
+[   55838ms] [LOG] 200 xhrglobal @ https://phbidlautdemo.prahu-hub.com/adminprahu/SettingRelasi/TDJTQk8wc01CT2JEUUtNeU90M3NpUT09:6120
+[   57422ms] TypeError: $(...).DataTable is not a function
+    at https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/js/scripts-init/tables.js:7:23
+[   58332ms] Unexpected token '<'
+[   58339ms] Cannot use import statement outside a module
+[   58378ms] ReferenceError: Chart is not defined
+    at https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/js/scripts-init/charts/chartjs.js:8:13
+[   58444ms] Unexpected token '<'
+[   58444ms] Unexpected token '<'
+[   58502ms] Uncaught TypeError: expect element to be DOM Element, but got null
+    at n.init (https://cdnjs.cloudflare.com/ajax/libs/smooth-scrollbar/8.5.2/smooth-scrollbar.js:24:264)
+    at <anonymous> (https://phbidlautdemo.prahu-hub.com/adminprahu/SettingRelasi/V2M3K21JZURnamJHUTNSdTd4RzBxQT09:5797:14)
+[   58547ms] [LOG] Validasi Akunnamanya @ https://phbidlautdemo.prahu-hub.com/adminprahu/SettingRelasi/V2M3K21JZURnamJHUTNSdTd4RzBxQT09:2040
+[   58571ms] [LOG] undefined @ https://phbidlautdemo.prahu-hub.com/adminprahu/SettingRelasi/V2M3K21JZURnamJHUTNSdTd4RzBxQT09:6150
+[   58571ms] [LOG] undefined @ https://phbidlautdemo.prahu-hub.com/adminprahu/SettingRelasi/V2M3K21JZURnamJHUTNSdTd4RzBxQT09:6150
+[   58571ms] [LOG] 1xx @ https://phbidlautdemo.prahu-hub.com/adminprahu/SettingRelasi/V2M3K21JZURnamJHUTNSdTd4RzBxQT09:6150
+[   58571ms] [LOG] DD/MM/YYYY @ https://phbidlautdemo.prahu-hub.com/adminprahu/SettingRelasi/V2M3K21JZURnamJHUTNSdTd4RzBxQT09:6150
+[   58572ms] [LOG] Masukkan Relasi Transporter @ https://phbidlautdemo.prahu-hub.com/adminprahu/SettingRelasi/V2M3K21JZURnamJHUTNSdTd4RzBxQT09:6150
+[   58572ms] [LOG] Masukkan Atas Nama @ https://phbidlautdemo.prahu-hub.com/adminprahu/SettingRelasi/V2M3K21JZURnamJHUTNSdTd4RzBxQT09:6150
+[   58572ms] [LOG] Masukkan Nomor VA @ https://phbidlautdemo.prahu-hub.com/adminprahu/SettingRelasi/V2M3K21JZURnamJHUTNSdTd4RzBxQT09:6150
+[   58572ms] [LOG] undefined @ https://phbidlautdemo.prahu-hub.com/adminprahu/SettingRelasi/V2M3K21JZURnamJHUTNSdTd4RzBxQT09:6150
+[   58572ms] [LOG] undefined @ https://phbidlautdemo.prahu-hub.com/adminprahu/SettingRelasi/V2M3K21JZURnamJHUTNSdTd4RzBxQT09:6150
+[   58572ms] [LOG] Masukkan Nomor VA @ https://phbidlautdemo.prahu-hub.com/adminprahu/SettingRelasi/V2M3K21JZURnamJHUTNSdTd4RzBxQT09:6150
+[   58572ms] [LOG] Masukkan Atas Nama @ https://phbidlautdemo.prahu-hub.com/adminprahu/SettingRelasi/V2M3K21JZURnamJHUTNSdTd4RzBxQT09:6150
+[   58574ms] [LOG] WebSocket connection @ https://phbidlautdemo.prahu-hub.com/adminprahu/SettingRelasi/V2M3K21JZURnamJHUTNSdTd4RzBxQT09:6193
+[   58574ms] [LOG] WebSocket connection attempting... @ https://phbidlautdemo.prahu-hub.com/adminprahu/SettingRelasi/V2M3K21JZURnamJHUTNSdTd4RzBxQT09:6271
+[   58657ms] [LOG] 1 @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/SettingRelasi.js?m=1787972929:540
+[   58657ms] [LOG] 1 countView1 1 pageNow 20 limitView1 @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/SettingRelasi.js?m=1787972929:542
+[   58658ms] [LOG] 1 @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/SettingRelasi.js?m=1787972929:548
+[   58658ms] [LOG] 1 jumlah data @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/SettingRelasi.js?m=1787972929:503
+[   58658ms] [LOG] 1 @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/SettingRelasi.js?m=1787972929:505
+[   58659ms] [LOG] 1 1 pageCount & pageNow @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/SettingRelasi.js?m=1787972929:428
+[   58662ms] [LOG] 200 xhrglobal @ https://phbidlautdemo.prahu-hub.com/adminprahu/SettingRelasi/V2M3K21JZURnamJHUTNSdTd4RzBxQT09:6124
+[   58668ms] ReferenceError: renderTooltipHarga is not defined
+    at https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/SettingRelasi.js?m=1787972929:639:9
+[   58686ms] [LOG] WebSocket connected @ https://phbidlautdemo.prahu-hub.com/adminprahu/SettingRelasi/V2M3K21JZURnamJHUTNSdTd4RzBxQT09:6202
+[   58691ms] [LOG] update_dashboard_order_laut @ https://phbidlautdemo.prahu-hub.com/adminprahu/SettingRelasi/V2M3K21JZURnamJHUTNSdTd4RzBxQT09:6243
+[   58719ms] [LOG] Connected @ https://phbidlautdemo.prahu-hub.com/adminprahu/SettingRelasi/V2M3K21JZURnamJHUTNSdTd4RzBxQT09:6243
+[   58806ms] [LOG] 200 xhrglobal @ https://phbidlautdemo.prahu-hub.com/adminprahu/SettingRelasi/V2M3K21JZURnamJHUTNSdTd4RzBxQT09:6124
+[   58871ms] [LOG] 200 xhrglobal @ https://phbidlautdemo.prahu-hub.com/adminprahu/SettingRelasi/V2M3K21JZURnamJHUTNSdTd4RzBxQT09:6124
+[   61350ms] Unexpected token '<'
+[   61377ms] Cannot use import statement outside a module
+[   61406ms] ReferenceError: Chart is not defined
+    at https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/js/scripts-init/charts/chartjs.js:8:13
+[   61408ms] Unexpected token '<'
+[   61463ms] Unexpected token '<'
+[   61537ms] Uncaught TypeError: expect element to be DOM Element, but got null
+    at n.init (https://cdnjs.cloudflare.com/ajax/libs/smooth-scrollbar/8.5.2/smooth-scrollbar.js:24:264)
+    at <anonymous> (https://phbidlautdemo.prahu-hub.com/adminprahu/SettingRelasi/amFVazhtWjVPY3NLYnBTOXFsTlB6dz09:5793:14)
+[   61590ms] [LOG] Validasi Akunnamanya @ https://phbidlautdemo.prahu-hub.com/adminprahu/SettingRelasi/amFVazhtWjVPY3NLYnBTOXFsTlB6dz09:2040
+[   61616ms] [LOG] undefined @ https://phbidlautdemo.prahu-hub.com/adminprahu/SettingRelasi/amFVazhtWjVPY3NLYnBTOXFsTlB6dz09:6146
+[   61617ms] [LOG] undefined @ https://phbidlautdemo.prahu-hub.com/adminprahu/SettingRelasi/amFVazhtWjVPY3NLYnBTOXFsTlB6dz09:6146
+[   61617ms] [LOG] 1xx @ https://phbidlautdemo.prahu-hub.com/adminprahu/SettingRelasi/amFVazhtWjVPY3NLYnBTOXFsTlB6dz09:6146
+[   61617ms] [LOG] DD/MM/YYYY @ https://phbidlautdemo.prahu-hub.com/adminprahu/SettingRelasi/amFVazhtWjVPY3NLYnBTOXFsTlB6dz09:6146
+[   61617ms] [LOG] Masukkan Relasi Transporter @ https://phbidlautdemo.prahu-hub.com/adminprahu/SettingRelasi/amFVazhtWjVPY3NLYnBTOXFsTlB6dz09:6146
+[   61617ms] [LOG] Masukkan Atas Nama @ https://phbidlautdemo.prahu-hub.com/adminprahu/SettingRelasi/amFVazhtWjVPY3NLYnBTOXFsTlB6dz09:6146
+[   61618ms] [LOG] Masukkan Nomor VA @ https://phbidlautdemo.prahu-hub.com/adminprahu/SettingRelasi/amFVazhtWjVPY3NLYnBTOXFsTlB6dz09:6146
+[   61618ms] [LOG] undefined @ https://phbidlautdemo.prahu-hub.com/adminprahu/SettingRelasi/amFVazhtWjVPY3NLYnBTOXFsTlB6dz09:6146
+[   61618ms] [LOG] undefined @ https://phbidlautdemo.prahu-hub.com/adminprahu/SettingRelasi/amFVazhtWjVPY3NLYnBTOXFsTlB6dz09:6146
+[   61618ms] [LOG] Masukkan Nomor VA @ https://phbidlautdemo.prahu-hub.com/adminprahu/SettingRelasi/amFVazhtWjVPY3NLYnBTOXFsTlB6dz09:6146
+[   61618ms] [LOG] Masukkan Atas Nama @ https://phbidlautdemo.prahu-hub.com/adminprahu/SettingRelasi/amFVazhtWjVPY3NLYnBTOXFsTlB6dz09:6146
+[   61620ms] [LOG] WebSocket connection @ https://phbidlautdemo.prahu-hub.com/adminprahu/SettingRelasi/amFVazhtWjVPY3NLYnBTOXFsTlB6dz09:6189
+[   61620ms] [LOG] WebSocket connection attempting... @ https://phbidlautdemo.prahu-hub.com/adminprahu/SettingRelasi/amFVazhtWjVPY3NLYnBTOXFsTlB6dz09:6267
+[   61702ms] [LOG] 2 @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/SettingRelasi.js?m=1787972929:540
+[   61702ms] [LOG] 2 countView1 1 pageNow 20 limitView1 @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/SettingRelasi.js?m=1787972929:542
+[   61702ms] [LOG] 2 @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/SettingRelasi.js?m=1787972929:548
+[   61703ms] [LOG] 2 jumlah data @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/SettingRelasi.js?m=1787972929:503
+[   61703ms] [LOG] 1 @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/SettingRelasi.js?m=1787972929:505
+[   61703ms] [LOG] 1 1 pageCount & pageNow @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/SettingRelasi.js?m=1787972929:428
+[   61705ms] [LOG] 200 xhrglobal @ https://phbidlautdemo.prahu-hub.com/adminprahu/SettingRelasi/amFVazhtWjVPY3NLYnBTOXFsTlB6dz09:6120
+[   61714ms] ReferenceError: renderTooltipHarga is not defined
+    at https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/SettingRelasi.js?m=1787972929:639:9
+[   61734ms] [LOG] WebSocket connected @ https://phbidlautdemo.prahu-hub.com/adminprahu/SettingRelasi/amFVazhtWjVPY3NLYnBTOXFsTlB6dz09:6198
+[   61737ms] [LOG] update_dashboard_order_laut @ https://phbidlautdemo.prahu-hub.com/adminprahu/SettingRelasi/amFVazhtWjVPY3NLYnBTOXFsTlB6dz09:6239
+[   61765ms] [LOG] Connected @ https://phbidlautdemo.prahu-hub.com/adminprahu/SettingRelasi/amFVazhtWjVPY3NLYnBTOXFsTlB6dz09:6239
+[   61856ms] [LOG] 200 xhrglobal @ https://phbidlautdemo.prahu-hub.com/adminprahu/SettingRelasi/amFVazhtWjVPY3NLYnBTOXFsTlB6dz09:6120
+[   61904ms] [LOG] 200 xhrglobal @ https://phbidlautdemo.prahu-hub.com/adminprahu/SettingRelasi/amFVazhtWjVPY3NLYnBTOXFsTlB6dz09:6120
+[   64276ms] Unexpected token '<'
+[   64283ms] Cannot use import statement outside a module
+[   64327ms] ReferenceError: Chart is not defined
+    at https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/js/scripts-init/charts/chartjs.js:8:13
+[   64397ms] Unexpected token '<'
+[   64519ms] Unexpected token '<'
+[   64589ms] Uncaught TypeError: expect element to be DOM Element, but got null
+    at n.init (https://cdnjs.cloudflare.com/ajax/libs/smooth-scrollbar/8.5.2/smooth-scrollbar.js:24:264)
+    at <anonymous> (https://phbidlautdemo.prahu-hub.com/adminprahu/SettingRelasi/cFQ3Mk1GY0NqYnhkTVY4OVAzWGlyUT09:5793:14)
+[   64644ms] [LOG] Validasi Akunnamanya @ https://phbidlautdemo.prahu-hub.com/adminprahu/SettingRelasi/cFQ3Mk1GY0NqYnhkTVY4OVAzWGlyUT09:2040
+[   64672ms] [LOG] undefined @ https://phbidlautdemo.prahu-hub.com/adminprahu/SettingRelasi/cFQ3Mk1GY0NqYnhkTVY4OVAzWGlyUT09:6146
+[   64673ms] [LOG] undefined @ https://phbidlautdemo.prahu-hub.com/adminprahu/SettingRelasi/cFQ3Mk1GY0NqYnhkTVY4OVAzWGlyUT09:6146
+[   64673ms] [LOG] 1xx @ https://phbidlautdemo.prahu-hub.com/adminprahu/SettingRelasi/cFQ3Mk1GY0NqYnhkTVY4OVAzWGlyUT09:6146
+[   64673ms] [LOG] DD/MM/YYYY @ https://phbidlautdemo.prahu-hub.com/adminprahu/SettingRelasi/cFQ3Mk1GY0NqYnhkTVY4OVAzWGlyUT09:6146
+[   64673ms] [LOG] Masukkan Relasi Transporter @ https://phbidlautdemo.prahu-hub.com/adminprahu/SettingRelasi/cFQ3Mk1GY0NqYnhkTVY4OVAzWGlyUT09:6146
+[   64673ms] [LOG] Masukkan Atas Nama @ https://phbidlautdemo.prahu-hub.com/adminprahu/SettingRelasi/cFQ3Mk1GY0NqYnhkTVY4OVAzWGlyUT09:6146
+[   64673ms] [LOG] Masukkan Nomor VA @ https://phbidlautdemo.prahu-hub.com/adminprahu/SettingRelasi/cFQ3Mk1GY0NqYnhkTVY4OVAzWGlyUT09:6146
+[   64674ms] [LOG] undefined @ https://phbidlautdemo.prahu-hub.com/adminprahu/SettingRelasi/cFQ3Mk1GY0NqYnhkTVY4OVAzWGlyUT09:6146
+[   64674ms] [LOG] undefined @ https://phbidlautdemo.prahu-hub.com/adminprahu/SettingRelasi/cFQ3Mk1GY0NqYnhkTVY4OVAzWGlyUT09:6146
+[   64674ms] [LOG] Masukkan Nomor VA @ https://phbidlautdemo.prahu-hub.com/adminprahu/SettingRelasi/cFQ3Mk1GY0NqYnhkTVY4OVAzWGlyUT09:6146
+[   64674ms] [LOG] Masukkan Atas Nama @ https://phbidlautdemo.prahu-hub.com/adminprahu/SettingRelasi/cFQ3Mk1GY0NqYnhkTVY4OVAzWGlyUT09:6146
+[   64676ms] [LOG] WebSocket connection @ https://phbidlautdemo.prahu-hub.com/adminprahu/SettingRelasi/cFQ3Mk1GY0NqYnhkTVY4OVAzWGlyUT09:6189
+[   64676ms] [LOG] WebSocket connection attempting... @ https://phbidlautdemo.prahu-hub.com/adminprahu/SettingRelasi/cFQ3Mk1GY0NqYnhkTVY4OVAzWGlyUT09:6267
+[   64762ms] [LOG] 3 @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/SettingRelasi.js?m=1787972929:540
+[   64762ms] [LOG] 3 countView1 1 pageNow 20 limitView1 @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/SettingRelasi.js?m=1787972929:542
+[   64763ms] [LOG] 3 @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/SettingRelasi.js?m=1787972929:548
+[   64763ms] [LOG] 3 jumlah data @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/SettingRelasi.js?m=1787972929:503
+[   64763ms] [LOG] 1 @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/SettingRelasi.js?m=1787972929:505
+[   64763ms] [LOG] 1 1 pageCount & pageNow @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/SettingRelasi.js?m=1787972929:428
+[   64766ms] [LOG] 200 xhrglobal @ https://phbidlautdemo.prahu-hub.com/adminprahu/SettingRelasi/cFQ3Mk1GY0NqYnhkTVY4OVAzWGlyUT09:6120
+[   64776ms] ReferenceError: renderTooltipHarga is not defined
+    at https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/SettingRelasi.js?m=1787972929:639:9
+[   64781ms] [LOG] WebSocket connected @ https://phbidlautdemo.prahu-hub.com/adminprahu/SettingRelasi/cFQ3Mk1GY0NqYnhkTVY4OVAzWGlyUT09:6198
+[   64784ms] [LOG] update_dashboard_order_laut @ https://phbidlautdemo.prahu-hub.com/adminprahu/SettingRelasi/cFQ3Mk1GY0NqYnhkTVY4OVAzWGlyUT09:6239
+[   64810ms] [LOG] Connected @ https://phbidlautdemo.prahu-hub.com/adminprahu/SettingRelasi/cFQ3Mk1GY0NqYnhkTVY4OVAzWGlyUT09:6239
+[   64898ms] [LOG] 200 xhrglobal @ https://phbidlautdemo.prahu-hub.com/adminprahu/SettingRelasi/cFQ3Mk1GY0NqYnhkTVY4OVAzWGlyUT09:6120
+[   64947ms] [LOG] 200 xhrglobal @ https://phbidlautdemo.prahu-hub.com/adminprahu/SettingRelasi/cFQ3Mk1GY0NqYnhkTVY4OVAzWGlyUT09:6120
+[   67560ms] Unexpected token '<'
+[   67592ms] Cannot use import statement outside a module
+[   67632ms] ReferenceError: Chart is not defined
+    at https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/js/scripts-init/charts/chartjs.js:8:13
+[   67634ms] Unexpected token '<'
+[   67635ms] Unexpected token '<'
+[   67689ms] Uncaught TypeError: expect element to be DOM Element, but got null
+    at n.init (https://cdnjs.cloudflare.com/ajax/libs/smooth-scrollbar/8.5.2/smooth-scrollbar.js:24:264)
+    at <anonymous> (https://phbidlautdemo.prahu-hub.com/adminprahu/SettingRelasi/NHpuVlRwTlU1ZExiWDBQaWJDRnkrQT09:5803:14)
+[   67742ms] [LOG] Validasi Akunnamanya @ https://phbidlautdemo.prahu-hub.com/adminprahu/SettingRelasi/NHpuVlRwTlU1ZExiWDBQaWJDRnkrQT09:2040
+[   67764ms] [LOG] undefined @ https://phbidlautdemo.prahu-hub.com/adminprahu/SettingRelasi/NHpuVlRwTlU1ZExiWDBQaWJDRnkrQT09:6156
+[   67765ms] [LOG] undefined @ https://phbidlautdemo.prahu-hub.com/adminprahu/SettingRelasi/NHpuVlRwTlU1ZExiWDBQaWJDRnkrQT09:6156
+[   67765ms] [LOG] 1xx @ https://phbidlautdemo.prahu-hub.com/adminprahu/SettingRelasi/NHpuVlRwTlU1ZExiWDBQaWJDRnkrQT09:6156
+[   67765ms] [LOG] DD/MM/YYYY @ https://phbidlautdemo.prahu-hub.com/adminprahu/SettingRelasi/NHpuVlRwTlU1ZExiWDBQaWJDRnkrQT09:6156
+[   67765ms] [LOG] Masukkan Relasi Transporter @ https://phbidlautdemo.prahu-hub.com/adminprahu/SettingRelasi/NHpuVlRwTlU1ZExiWDBQaWJDRnkrQT09:6156
+[   67765ms] [LOG] Masukkan Atas Nama @ https://phbidlautdemo.prahu-hub.com/adminprahu/SettingRelasi/NHpuVlRwTlU1ZExiWDBQaWJDRnkrQT09:6156
+[   67766ms] [LOG] Masukkan Nomor VA @ https://phbidlautdemo.prahu-hub.com/adminprahu/SettingRelasi/NHpuVlRwTlU1ZExiWDBQaWJDRnkrQT09:6156
+[   67766ms] [LOG] undefined @ https://phbidlautdemo.prahu-hub.com/adminprahu/SettingRelasi/NHpuVlRwTlU1ZExiWDBQaWJDRnkrQT09:6156
+[   67766ms] [LOG] undefined @ https://phbidlautdemo.prahu-hub.com/adminprahu/SettingRelasi/NHpuVlRwTlU1ZExiWDBQaWJDRnkrQT09:6156
+[   67766ms] [LOG] Masukkan Nomor VA @ https://phbidlautdemo.prahu-hub.com/adminprahu/SettingRelasi/NHpuVlRwTlU1ZExiWDBQaWJDRnkrQT09:6156
+[   67766ms] [LOG] Masukkan Atas Nama @ https://phbidlautdemo.prahu-hub.com/adminprahu/SettingRelasi/NHpuVlRwTlU1ZExiWDBQaWJDRnkrQT09:6156
+[   67768ms] [LOG] WebSocket connection @ https://phbidlautdemo.prahu-hub.com/adminprahu/SettingRelasi/NHpuVlRwTlU1ZExiWDBQaWJDRnkrQT09:6199
+[   67768ms] [LOG] WebSocket connection attempting... @ https://phbidlautdemo.prahu-hub.com/adminprahu/SettingRelasi/NHpuVlRwTlU1ZExiWDBQaWJDRnkrQT09:6277
+[   67857ms] [LOG] 2 @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/SettingRelasi.js?m=1787972929:540
+[   67858ms] [LOG] 2 countView1 1 pageNow 20 limitView1 @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/SettingRelasi.js?m=1787972929:542
+[   67858ms] [LOG] 2 @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/SettingRelasi.js?m=1787972929:548
+[   67858ms] [LOG] 2 jumlah data @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/SettingRelasi.js?m=1787972929:503
+[   67858ms] [LOG] 1 @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/SettingRelasi.js?m=1787972929:505
+[   67858ms] [LOG] 1 1 pageCount & pageNow @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/SettingRelasi.js?m=1787972929:428
+[   67861ms] [LOG] 200 xhrglobal @ https://phbidlautdemo.prahu-hub.com/adminprahu/SettingRelasi/NHpuVlRwTlU1ZExiWDBQaWJDRnkrQT09:6130
+[   67869ms] ReferenceError: renderTooltipHarga is not defined
+    at https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/SettingRelasi.js?m=1787972929:639:9
+[   67889ms] [LOG] WebSocket connected @ https://phbidlautdemo.prahu-hub.com/adminprahu/SettingRelasi/NHpuVlRwTlU1ZExiWDBQaWJDRnkrQT09:6208
+[   67892ms] [LOG] update_dashboard_order_laut @ https://phbidlautdemo.prahu-hub.com/adminprahu/SettingRelasi/NHpuVlRwTlU1ZExiWDBQaWJDRnkrQT09:6249
+[   67921ms] [LOG] Connected @ https://phbidlautdemo.prahu-hub.com/adminprahu/SettingRelasi/NHpuVlRwTlU1ZExiWDBQaWJDRnkrQT09:6249
+[   68014ms] [LOG] 200 xhrglobal @ https://phbidlautdemo.prahu-hub.com/adminprahu/SettingRelasi/NHpuVlRwTlU1ZExiWDBQaWJDRnkrQT09:6130
+[   68061ms] [LOG] 200 xhrglobal @ https://phbidlautdemo.prahu-hub.com/adminprahu/SettingRelasi/NHpuVlRwTlU1ZExiWDBQaWJDRnkrQT09:6130
+[   69753ms] TypeError: $(...).DataTable is not a function
+    at https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/js/scripts-init/tables.js:7:23

@@ -1,0 +1,177 @@
+- generic [ref=f30e1]:
+  - generic [ref=f30e2]:
+    - generic [ref=f30e3]:
+      - generic [ref=f30e4]:
+        - link [ref=f30e6] [cursor=pointer]:
+          - /url: https://phbidlautdemo.prahu-hub.com/
+        - button [ref=f30e10] [cursor=pointer]
+      - text:  
+      - generic [ref=f30e13]:
+        - generic [ref=f30e14]:
+          - generic [ref=f30e15]: Admin PH Bid
+          - button "Administrator" [ref=f30e17]
+        - text: 
+        - generic [ref=f30e21]:
+          - generic [ref=f30e22]:
+            - generic [ref=f30e23]: Admin PH Bid
+            - generic [ref=f30e24]: prahu.bid20@gmail.com
+          - generic [ref=f30e25]: 
+          - link "" [ref=f30e28] [cursor=pointer]:
+            - /url: https://phbidlautdemo.prahu-hub.com/home/notification
+          - link [ref=f30e35] [cursor=pointer]:
+            - /url: https://phbidlautdemo.prahu-hub.com/user/do_logout
+    - generic [ref=f30e38]:
+      - generic [ref=f30e39]:
+        - text: 
+        - generic [ref=f30e40]:
+          - list [ref=f30e42]:
+            - listitem
+            - listitem [ref=f30e43]:
+              - link "CARI PENAWARAN" [ref=f30e44] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/lelang/carirute
+            - listitem [ref=f30e45]: MENU ADMIN
+            - listitem [ref=f30e46]:
+              - generic [ref=f30e47] [cursor=pointer]:
+                - text: DASHBOARD
+                - generic [ref=f30e50]: 
+            - listitem [ref=f30e51]:
+              - generic [ref=f30e52] [cursor=pointer]:
+                - text: ANALITIK
+                - generic [ref=f30e55]: 
+            - listitem [ref=f30e56]:
+              - link "PENGAJUAN LELANG" [ref=f30e57] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/lelang/listlelang
+            - listitem [ref=f30e60]:
+              - link "PENGAJUAN NEGO" [ref=f30e61] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/lelang/pengajuannego
+            - listitem [ref=f30e64]:
+              - link "DAFTAR ORDER" [ref=f30e65] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/order/orderlist
+            - listitem [ref=f30e68]:
+              - link "PENUGASAN TRACKING" [ref=f30e69] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/home/penugasantracking
+            - listitem [ref=f30e72]:
+              - link "CEK JADWAL" [ref=f30e73] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/lelang/carijadwal
+            - listitem [ref=f30e76]:
+              - generic [ref=f30e77] [cursor=pointer]:
+                - text: LAPORAN
+                - generic [ref=f30e80]: 
+            - listitem [ref=f30e81]:
+              - generic [ref=f30e82] [cursor=pointer]:
+                - text: VALIDASI AKUN
+                - generic [ref=f30e85]: 
+            - listitem [ref=f30e86]:
+              - generic [ref=f30e87] [cursor=pointer]:
+                - text: SETTING
+                - generic [ref=f30e90]: 
+              - list [ref=f30e176]:
+                - listitem [ref=f30e177]:
+                  - link "General" [ref=f30e178] [cursor=pointer]:
+                    - /url: https://phbidlautdemo.prahu-hub.com/adminprahu/setting_general
+                - listitem [ref=f30e179]:
+                  - link "S&K Booking" [ref=f30e180] [cursor=pointer]:
+                    - /url: https://phbidlautdemo.prahu-hub.com/adminprahu/syaratdanketentuan
+                - listitem [ref=f30e181]:
+                  - link "Reminder" [ref=f30e182] [cursor=pointer]:
+                    - /url: https://phbidlautdemo.prahu-hub.com/adminprahu/reminder
+                - listitem [ref=f30e183]:
+                  - link "Setting Notifikasi" [ref=f30e184] [cursor=pointer]:
+                    - /url: https://phbidlautdemo.prahu-hub.com/adminprahu/settingNotifonof
+                - listitem [ref=f30e185]:
+                  - link "Setting Pajak" [ref=f30e186] [cursor=pointer]:
+                    - /url: https://phbidlautdemo.prahu-hub.com/adminprahu/settingpajak
+            - listitem [ref=f30e91]:
+              - generic [ref=f30e92] [cursor=pointer]:
+                - text: MASTER
+                - generic [ref=f30e95]: 
+            - listitem [ref=f30e96]:
+              - generic [ref=f30e97] [cursor=pointer]:
+                - text: PENGATURAN AKUN
+                - generic [ref=f30e100]: 
+            - listitem [ref=f30e101]:
+              - link "AKUN SAYA" [ref=f30e102] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/home/akunsaya
+            - listitem [ref=f30e105]: MENU TRANSPORTER
+            - listitem [ref=f30e106]:
+              - link "HARGA & JADWAL" [ref=f30e107] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/home/hargajadwal
+          - generic [ref=f30e112]:
+            - paragraph [ref=f30e114]: KONTAK KAMI
+            - generic [ref=f30e115]:
+              - generic [ref=f30e116]: 
+              - text: "081246665023"
+            - generic [ref=f30e117]:
+              - generic [ref=f30e118]: 
+              - text: "081246665023"
+            - generic [ref=f30e119]:
+              - generic [ref=f30e120]: 
+              - text: csct@prahu-hub.com
+            - generic [ref=f30e121]:
+              - link [ref=f30e122] [cursor=pointer]:
+                - /url: https://facebook.com/sosmed.phbid
+              - link [ref=f30e124] [cursor=pointer]:
+                - /url: https://twitter.com/PrahuHub
+              - link [ref=f30e126] [cursor=pointer]:
+                - /url: https://instagram.com/phbid_/
+              - link [ref=f30e128] [cursor=pointer]:
+                - /url: https://www.youtube.com/channel/UC41VntroP3zKmXZYnGgtFdw
+              - link [ref=f30e130] [cursor=pointer]:
+                - /url: http://linkedin.com/in/ph-bid-aa5393211/
+      - generic [ref=f30e132]:
+        - generic [ref=f30e133]:
+          - generic [ref=f30e136]:
+            - link "Beranda" [ref=f30e138] [cursor=pointer]:
+              - /url: https://phbidlautdemo.prahu-hub.com/lelang/listLelang
+            - text: / Setting Pajak
+          - generic [ref=f30e139]: SETTING PAJAK
+          - text:  
+          - table [ref=f30e143]:
+            - rowgroup [ref=f30e144]:
+              - row [ref=f30e145]:
+                - columnheader "Nama Item" [ref=f30e146]
+                - columnheader "Nilai" [ref=f30e147]
+                - columnheader "Aksi" [ref=f30e148]
+              - row [ref=f30e149]:
+                - cell [ref=f30e150]
+            - rowgroup [ref=f30e151]:
+              - row [ref=f30e152]:
+                - cell [ref=f30e153]
+              - row [ref=f30e154]:
+                - cell "PPN" [ref=f30e155]
+                - cell "1,1%" [ref=f30e156]
+                - cell [ref=f30e157]:
+                  - button " Setting" [ref=f30e158] [cursor=pointer]:
+                    - generic [ref=f30e159]: 
+                    - text: Setting
+              - row [ref=f30e160]:
+                - cell "PPh" [ref=f30e161]
+                - cell "2%" [ref=f30e162]
+                - cell [ref=f30e163]:
+                  - button " Setting" [active] [ref=f30e164] [cursor=pointer]:
+                    - generic [ref=f30e165]: 
+                    - text: Setting
+              - row [ref=f30e166]:
+                - cell [ref=f30e167]
+        - paragraph [ref=f30e173]: © BETA 20260228 v1.3.28 - PH Bid Laut | Digital Logistic Platform
+  - dialog "SETTING PAJAK Nama Item PPh Nilai * 2 % Batal  Simpan" [ref=f30e187]:
+    - document:
+      - generic [ref=f30e188]:
+        - heading "SETTING PAJAK" [level=5] [ref=f30e190]
+        - generic [ref=f30e191]:
+          - generic [ref=f30e193]:
+            - generic [ref=f30e195]:
+              - generic [ref=f30e196]: Nama Item
+              - textbox "Masukkan Nama Item" [disabled] [ref=f30e199]: PPh
+            - generic [ref=f30e201]:
+              - generic [ref=f30e202]: Nilai *
+              - generic [ref=f30e204]:
+                - textbox "0" [ref=f30e205]: "2"
+                - generic [ref=f30e206]: "%"
+          - generic [ref=f30e207]:
+            - link "Batal" [ref=f30e208] [cursor=pointer]:
+              - /url: https://phbidlautdemo.prahu-hub.com/adminprahu/setting_template_chat
+            - button " Simpan" [ref=f30e209] [cursor=pointer]:
+              - generic [ref=f30e210]: 
+              - text: Simpan
+  - text:  

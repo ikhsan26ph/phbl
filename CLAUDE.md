@@ -171,6 +171,117 @@ ADMIN SILVERSTRIPE tidak ada di dokumen sumber).
   invoice, penugasan petugas). Akun Saya/Profil/Preference Notif selesai
   2026-08-29 (lihat butir di bawah).
 
+## Admin — Master, Setting, Validasi Akun, Pengaturan Akun (2026-08-29, izin mutasi user)
+
+- Spec baru (semua project `admin`): `tests/admin/master.spec.ts` (32 test:
+  struktur 14 halaman master, CRUD tambah→edit modal→hapus utk Bank/Kemasan/
+  Jenis Kontainer/Dokumen Penagihan/Include/Pelabuhan, popover required,
+  alert duplikat nama, gating data terpakai), `tests/admin/setting.spec.ts`
+  (20: General/S&K/Reminder/Notifikasi/Pajak + 4 mutasi revert, 2 lulus-
+  defect), `tests/admin/pengaturan-akun.spec.ts` (13: struktur 6 halaman,
+  hak akses admin [alert "Pilih Hak akses minimal 1", parent/child, CRUD],
+  sub user admin tambah/hapus + duplikat), `tests/admin/validasi-akun.spec.ts`
+  (21: struktur 10 daftar + halaman detail/setting read-only, 1 lulus-defect).
+  Run gabungan final 2026-08-30 00:17 (4 spec + 6 setup): **87 test, 84
+  lulus + 3 lulus-defect, 0 gagal, 15,0 mnt** → laporan
+  `report/hasil-testing-2026-08-30-admin.xlsx` (nama file diganti manual —
+  generator menamai per tanggal mulai run dan sempat menimpa laporan
+  2026-08-29 yang lalu dipulihkan dari git; saran: tambahkan jam/suffix pada
+  nama file report).
+- Kalibrasi kunci Master: tambah = HALAMAN /adminprahu/tambah<x> (input
+  name=nama | un [+kota/status], Simpan #tombol_simpan_bank di SEMUA master
+  [Pelayaran #simpan, Petugas #tombol_simpan_petugas]); edit = MODAL
+  (#modal_edit_bank utk Bank/Kontainer, #modalEditProvinsi utk Kemasan/
+  Pelabuhan/Pajak/Notifikasi — id warisan copy-paste; atribut `type` input
+  KOSONG → jangan filter [type=text], cari input by value); hapus =
+  SweetAlert2 "Hapus?"; duplikat nama = native alert "Nama Bank Sudah
+  Digunakan"; redirect pasca-simpan beda kapitalisasi path (/Kontainer,
+  /masterinclude) → regex URL case-insensitive. Fixture demo
+  `AUTOTEST-FIXTURE-<MASTER>-01` (sengaja disiapkan): Include (dipakai lelang
+  & harga), Kemasan (Master Jenis Muatan), DP (lelang), Pelayaran (harga)
+  TERPAKAI → Edit memicu native confirm "Data sudah digunakan pada …, yakin
+  untuk mengedit?" / Kemasan: modal dgn nama READONLY; Hapus → swal "Data
+  sudah digunakan pada …" [OK] (Kemasan: swal Hapus? lalu native alert
+  "Data sudah digunakan pada master jenis muatan" — rule menulis "orderan").
+  Fixture Kontainer & Pelabuhan TIDAK terpakai. JANGAN hapus fixture.
+- Setting: Reminder UI hanya 6 tugas (rule 8; Ambil Kontainer & Dokumen
+  Dikirim tak ada) → test.fail; halaman settingReminder/<hash> WAJIB dibuka
+  via klik (defect #12: goto langsung → PHP Warning HTTP_REFERER tanpa form;
+  revert test sempat gagal & Rule Trigger SJ Diterima Agen drift +3 Hari,
+  sudah dikembalikan manual). Setting Notifikasi: switch checkbox
+  .switch_buat_invoice tersembunyi → klik pembungkusnya. Pajak: modal
+  #modalEditProvinsi #nilai, alert "Anda berhasil setting pajak".
+  Pelajaran (drift Rule Trigger terjadi 2x, 2026-08-29/30): test mutasi+
+  revert WAJIB (a) timeout test besar (test.setTimeout ≥ 5 mnt) — timeout
+  60 dtk memutus finally; (b) tunggu redirect pasca-simpan ≥ 90 dtk — POST
+  demo pernah tersimpan tapi redirect >20 dtk sehingga assertion gagal &
+  revert ikut terpotong; (c) revert diverifikasi via reload + retry sekali.
+  Bila run gabungan gagal di test mutasi, SELALU cek nilai di demo dan
+  kembalikan manual (Rule Reminder SJ Diterima Agen harus "+ 2 Hari",
+  PPN 1,1% / PPh 2%, ketiga Setting Notifikasi ON, Versi Web tanpa
+  "AUTOTEST").
+- Pengaturan Akun: hak akses admin checkbox id=<akses> (308) + Pilih Semua
+  id=modul_<x>_pilih_semua (16); sub user admin tambah /adminprahu/
+  tambahsubuseradmin (#email, #kata_sandi, #konfirm_kata_sandi, #nama,
+  #bagian_staff, #no_wa, #status, multi-select #ukuran), hapus = link
+  do_hapus_sub_user/<id> + native confirm (JANGAN daftarkan page.once bila
+  handler page.on sudah ada → "already handled"). 10 grup sampah "QA TEST …
+  - HAPUS" sisa run Edit Harga lama dibersihkan manual 2026-08-29.
+- Validasi Akun: preference shipper di UI 16 push / 12 email vs rule 17 / 13
+  (test.fail diskrepansi); transporter 8/8 sesuai. Halaman Peserta Lelang
+  lambat (baris async, "Mohon tunggu sebentar" → timeout 60 dtk). Setting
+  preference shipper = …NotifBidowner, transporter = …NotifBidder.
+- 2026-08-30 lanjutan (mutasi sisa poin 1): `tests/admin/master-iklan-petugas.spec.ts`
+  (Iklan Berbayar tambah/duplikat "Ada nama bidder yang sama"/hapus —
+  tambah = halaman /adminprahu/tambahiklan [select BidderID, #tgl_mulai_1,
+  #tgl_akhir_1 kosong saat load], edit = modal #modal; Petugas APK tambah/
+  detail/edit/hapus + WA duplikat "Nomor Whatsapp Sudah Terdaftar" [fixture
+  089900000001]), `tests/admin/pengaturan-akun-user.spec.ts` (hak akses &
+  sub user shipper/transporter: tambah→detail→hapus, min 1 akses, email
+  duplikat; hapus hak akses shipper = button.btn-delete, transporter =
+  button.hapus_hak_akses; select hak akses sub user diisi AJAX setelah
+  #pilihuser dipilih), `tests/admin/validasi-akun-mutasi.spec.ts` (pre
+  register dibuat via form publik konteks baru → detail → hapus swal "Ya";
+  rekening min 1 "Rekening aktif minimal satu!" + verifikasi reload; edit
+  email → konfirmasi "Apakah anda yakin mengubah email user?" lalu batal;
+  transporter khusus tambah→setting→shipper duplikat "Input data ada yang
+  sama"→hapus; relasi satu pintu tambah [VA angka]→duplikat "Data Relasi
+  Sudah Ada"→hapus). DISKREPANSI baru (test.fail): form Tambah Hak Akses
+  Shipper memuat Modul Administrator/Master/Analitik, Transporter memuat
+  Modul Administrator — tidak ada di rule. Diskrepansi teks (test menerima
+  keduanya, dicatat di header spec): alert WA duplikat petugas "No.
+  Whatsapp Sudah Terdaftar" (rule "Nomor …"), shipper duplikat di
+  transporter khusus "Shipper Telah Ditambahkan" (rule "Input data ada yang
+  sama"), rekening min 1 = SweetAlert2 "Rekening aktif minimal satu!"
+  [Mengerti] (rule "alert"). Jebakan run pertama (semua sudah diperbaiki):
+  edit petugas memicu swal konfirmasi "Apakah anda yakin mengganti data
+  petugas APK ?" [Ya]; hapus transporter khusus memicu navigasi server →
+  `goto` saat itu ERR_ABORTED (tunggu waitForURL/load dulu); form tambah
+  transporter khusus merender DUA `select[name=nama]` (filter visible);
+  listBidderKhusus dgn valuelimit=100 >6 menit (pakai 20 default); alert
+  sukses tambah hak akses shipper TIDAK dirender (bukti = baris di list);
+  3 baris cocok "partner.ph2021" di Validasi Transporter (pakai .first()).
+  PELAJARAN PENTING (grup hak akses shipper AUTOTEST 2x tertinggal di demo,
+  2026-08-30): SweetAlert2 konfirmasi muncul beberapa ratus ms setelah klik
+  → `swal.isVisible()` seketika bisa false sehingga tombol Hapus/Ya tak
+  pernah diklik dan data tak terhapus TANPA error. Helper hapus WAJIB
+  `swal.waitFor({ state: 'visible', timeout: 8s }).catch()` dulu, lalu
+  konfirmasi, lalu `waitForLoadState('load')` (konfirmasi memicu navigasi
+  server → `goto` langsung = ERR_ABORTED), lalu verifikasi via poll reload.
+  Bash tool maksimal 10 menit — run gabungan >8 mnt WAJIB run_in_background
+  (run foreground pernah terbunuh di test terakhir → data relasi tertinggal).
+  Run gabungan final 2026-08-30 ±07:40 (3 spec + 6 setup): **25 test, 22
+  lulus + 2 lulus-defect, 0 gagal, 1 skip** (relasi satu pintu — skip palsu
+  karena opsi transporter dimuat async; sudah diperbaiki dgn poll count opsi
+  dan lulus standalone 7/7) → `report/hasil-testing-2026-08-30-admin-mutasi.xlsx`.
+  Verifikasi CLI pasca-run: 0 sisa data AUTOTEST di hak akses/sub user/
+  petugas/iklan/transporter khusus/relasi/pre register.
+- Belum di admin: terima/tolak akun (mengubah akun demo permanen), rekening
+  maks 3, verifikasi perubahan data, upload aanwijzing, hidden ulasan,
+  gating petugas yang sudah ditugaskan, modul admin lain (Cari Penawaran,
+  Pengajuan Lelang, Nego, Riwayat Nego, Penugasan Tracking, Cek Jadwal,
+  Laporan, Akun Saya, Dashboard), admin-sub.
+
 ## Admin (mulai 2026-08-28)
 
 - `tests/admin/daftar-order-edit-harga.spec.ts` — 11 test (9 lulus normal +
@@ -386,6 +497,16 @@ item menu itu TIDAK tersedia utk status ORDER BARU):
     TELEPON responden**, "Penelitian". Aset publik → kebocoran data pribadi/
     internal. Sekalian: template TANPA kolom Open Stack (gap fitur).
     Didokumentasikan via test.fail() di tests/transporter/open-stack-jadwal.spec.ts.
+12. (2026-08-29) Halaman Setting Rule Reminder `/adminprahu/settingReminder/
+    <hash>` bergantung pada header Referer: dibuka langsung (tanpa referer)
+    menampilkan "[Warning] Undefined array key HTTP_REFERER" + stack trace &
+    form tidak dirender (mode debug aktif). Tombol Setting di Setting Pajak
+    juga membawa atribut href ke path settingReminder (sisa copy-paste).
+    Didokumentasikan via test.fail() di tests/admin/setting.spec.ts.
+13. (2026-08-29) Diskrepansi rule vs UI (bukan crash): Reminder 6 tugas vs
+    rule 8; preference notif shipper 16 push/12 email vs rule 17/13; alert
+    hapus kemasan terpakai "…pada master jenis muatan" vs rule "…pada
+    orderan". Semua test.fail() terdokumentasi.
 
 ## Langkah berikutnya (belum dikerjakan)
 

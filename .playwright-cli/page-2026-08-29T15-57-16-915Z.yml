@@ -1,0 +1,64 @@
+- generic [active] [ref=f19e1]:
+  - generic [ref=f19e2]:
+    - heading "[Warning] Undefined array key \"HTTP_REFERER\"" [level=1] [ref=f19e3]
+    - heading "GET /adminprahu/settingReminder/T0pLRlk0ZldYWWtNdE54WEZYQnB1QT09" [level=3] [ref=f19e4]
+    - paragraph [ref=f19e5]:
+      - text: Line
+      - strong [ref=f19e6]: "1475"
+      - text: in
+      - strong [ref=f19e7]: /var/www/phbidlautdemo/app/src/Controller/AdminPrahuPage.php
+  - generic [ref=f19e8]:
+    - heading "Source" [level=3] [ref=f19e9]
+    - generic [ref=f19e10]: "1466 foreach ($data_breadcumb as $val) { 1467 $breadcumb->push($val); 1468 } 1469 $arr_data = [ 1470 \"Title\" => \"Setting Rule Reminder \", 1471 \"uri2\" => \"reminder\", 1472 \"breadcumb\" => $breadcumb, 1473 \"data\" => $data, 1474 \"judul\" => \"Setting Rule Reminder\", 1475 \"kembali\" => $_SERVER[\"HTTP_REFERER\"], 1476 ]; 1477 $record = $this->recordLogUserActivity($startTimeStamp, __FUNCTION__); 1478 return $this->customise($arr_data) 1479 ->renderWith(array( 1480 'settingReminder', 'Page', 1481 ));"
+  - generic [ref=f19e11]:
+    - heading "Trace" [level=3] [ref=f19e12]
+    - list [ref=f19e13]:
+      - listitem [ref=f19e14]: Monolog\ErrorHandler->handleError(2, Undefined array key "HTTP_REFERER", /var/www/phbidlautdemo/app/src/Controller/AdminPrahuPage.php, 1475) AdminPrahuPage.php:1475
+      - listitem [ref=f19e15]: AdminPrahuPage_Controller->settingReminder(SilverStripe\Control\HTTPRequest) RequestHandler.php:323
+      - listitem [ref=f19e16]: SilverStripe\Control\RequestHandler->handleAction(SilverStripe\Control\HTTPRequest, settingReminder) Controller.php:286
+      - listitem [ref=f19e17]: SilverStripe\Control\Controller->handleAction(SilverStripe\Control\HTTPRequest, settingReminder) RequestHandler.php:202
+      - listitem [ref=f19e18]: SilverStripe\Control\RequestHandler->handleRequest(SilverStripe\Control\HTTPRequest) Controller.php:212
+      - listitem [ref=f19e19]: SilverStripe\Control\Controller->handleRequest(SilverStripe\Control\HTTPRequest) ContentController.php:251
+      - listitem [ref=f19e20]: SilverStripe\CMS\Controllers\ContentController->handleRequest(SilverStripe\Control\HTTPRequest) ModelAsController.php:101
+      - listitem [ref=f19e21]: SilverStripe\CMS\Controllers\ModelAsController->handleRequest(SilverStripe\Control\HTTPRequest) Director.php:361
+      - listitem [ref=f19e22]: "SilverStripe\\Control\\Director->SilverStripe\\Control\\{closure}(SilverStripe\\Control\\HTTPRequest) VersionedHTTPMiddleware.php:41"
+      - listitem [ref=f19e23]: SilverStripe\Versioned\VersionedHTTPMiddleware->process(SilverStripe\Control\HTTPRequest, Closure) HTTPMiddlewareAware.php:62
+      - listitem [ref=f19e24]: "SilverStripe\\Control\\Director->SilverStripe\\Control\\Middleware\\{closure}(SilverStripe\\Control\\HTTPRequest) LoginSessionMiddleware.php:29"
+      - listitem [ref=f19e25]: SilverStripe\SessionManager\Middleware\LoginSessionMiddleware->process(SilverStripe\Control\HTTPRequest, Closure) HTTPMiddlewareAware.php:62
+      - listitem [ref=f19e26]: "SilverStripe\\Control\\Director->SilverStripe\\Control\\Middleware\\{closure}(SilverStripe\\Control\\HTTPRequest) ConfirmationMiddleware.php:254"
+      - listitem [ref=f19e27]: SilverStripe\Control\Middleware\ConfirmationMiddleware->process(SilverStripe\Control\HTTPRequest, Closure) HTTPMiddlewareAware.php:62
+      - listitem [ref=f19e28]: "SilverStripe\\Control\\Director->SilverStripe\\Control\\Middleware\\{closure}(SilverStripe\\Control\\HTTPRequest) ConfirmationMiddleware.php:254"
+      - listitem [ref=f19e29]: SilverStripe\Control\Middleware\ConfirmationMiddleware->process(SilverStripe\Control\HTTPRequest, Closure) HTTPMiddlewareAware.php:62
+      - listitem [ref=f19e30]: "SilverStripe\\Control\\Director->SilverStripe\\Control\\Middleware\\{closure}(SilverStripe\\Control\\HTTPRequest) PasswordExpirationMiddleware.php:84"
+      - listitem [ref=f19e31]: SilverStripe\Security\PasswordExpirationMiddleware->process(SilverStripe\Control\HTTPRequest, Closure) HTTPMiddlewareAware.php:62
+      - listitem [ref=f19e32]: "SilverStripe\\Control\\Director->SilverStripe\\Control\\Middleware\\{closure}(SilverStripe\\Control\\HTTPRequest) BasicAuthMiddleware.php:68"
+      - listitem [ref=f19e33]: SilverStripe\Security\BasicAuthMiddleware->process(SilverStripe\Control\HTTPRequest, Closure) HTTPMiddlewareAware.php:62
+      - listitem [ref=f19e34]: "SilverStripe\\Control\\Director->SilverStripe\\Control\\Middleware\\{closure}(SilverStripe\\Control\\HTTPRequest) AuthenticationMiddleware.php:61"
+      - listitem [ref=f19e35]: SilverStripe\Security\AuthenticationMiddleware->process(SilverStripe\Control\HTTPRequest, Closure) HTTPMiddlewareAware.php:62
+      - listitem [ref=f19e36]: "SilverStripe\\Control\\Director->SilverStripe\\Control\\Middleware\\{closure}(SilverStripe\\Control\\HTTPRequest) ExecMetricMiddleware.php:20"
+      - listitem [ref=f19e37]: SilverStripe\Control\Middleware\ExecMetricMiddleware->process(SilverStripe\Control\HTTPRequest, Closure) HTTPMiddlewareAware.php:62
+      - listitem [ref=f19e38]: "SilverStripe\\Control\\Director->SilverStripe\\Control\\Middleware\\{closure}(SilverStripe\\Control\\HTTPRequest) CanonicalURLMiddleware.php:190"
+      - listitem [ref=f19e39]: SilverStripe\Control\Middleware\CanonicalURLMiddleware->process(SilverStripe\Control\HTTPRequest, Closure) HTTPMiddlewareAware.php:62
+      - listitem [ref=f19e40]: "SilverStripe\\Control\\Director->SilverStripe\\Control\\Middleware\\{closure}(SilverStripe\\Control\\HTTPRequest) HTTPCacheControlMiddleware.php:43"
+      - listitem [ref=f19e41]: SilverStripe\Control\Middleware\HTTPCacheControlMiddleware->process(SilverStripe\Control\HTTPRequest, Closure) HTTPMiddlewareAware.php:62
+      - listitem [ref=f19e42]: "SilverStripe\\Control\\Director->SilverStripe\\Control\\Middleware\\{closure}(SilverStripe\\Control\\HTTPRequest) ChangeDetectionMiddleware.php:28"
+      - listitem [ref=f19e43]: SilverStripe\Control\Middleware\ChangeDetectionMiddleware->process(SilverStripe\Control\HTTPRequest, Closure) HTTPMiddlewareAware.php:62
+      - listitem [ref=f19e44]: "SilverStripe\\Control\\Director->SilverStripe\\Control\\Middleware\\{closure}(SilverStripe\\Control\\HTTPRequest) FlushMiddleware.php:31"
+      - listitem [ref=f19e45]: SilverStripe\Control\Middleware\FlushMiddleware->process(SilverStripe\Control\HTTPRequest, Closure) HTTPMiddlewareAware.php:62
+      - listitem [ref=f19e46]: "SilverStripe\\Control\\Director->SilverStripe\\Control\\Middleware\\{closure}(SilverStripe\\Control\\HTTPRequest) RequestProcessor.php:69"
+      - listitem [ref=f19e47]: SilverStripe\Control\RequestProcessor->process(SilverStripe\Control\HTTPRequest, Closure) HTTPMiddlewareAware.php:62
+      - listitem [ref=f19e48]: "SilverStripe\\Control\\Director->SilverStripe\\Control\\Middleware\\{closure}(SilverStripe\\Control\\HTTPRequest) SessionMiddleware.php:20"
+      - listitem [ref=f19e49]: SilverStripe\Control\Middleware\SessionMiddleware->process(SilverStripe\Control\HTTPRequest, Closure) HTTPMiddlewareAware.php:62
+      - listitem [ref=f19e50]: "SilverStripe\\Control\\Director->SilverStripe\\Control\\Middleware\\{closure}(SilverStripe\\Control\\HTTPRequest) AllowedHostsMiddleware.php:60"
+      - listitem [ref=f19e51]: SilverStripe\Control\Middleware\AllowedHostsMiddleware->process(SilverStripe\Control\HTTPRequest, Closure) HTTPMiddlewareAware.php:62
+      - listitem [ref=f19e52]: "SilverStripe\\Control\\Director->SilverStripe\\Control\\Middleware\\{closure}(SilverStripe\\Control\\HTTPRequest) TrustedProxyMiddleware.php:176"
+      - listitem [ref=f19e53]: SilverStripe\Control\Middleware\TrustedProxyMiddleware->process(SilverStripe\Control\HTTPRequest, Closure) HTTPMiddlewareAware.php:62
+      - listitem [ref=f19e54]: "SilverStripe\\Control\\Director->SilverStripe\\Control\\Middleware\\{closure}(SilverStripe\\Control\\HTTPRequest) HTTPMiddlewareAware.php:65"
+      - listitem [ref=f19e55]: SilverStripe\Control\Director->callMiddleware(SilverStripe\Control\HTTPRequest, Closure) Director.php:370
+      - listitem [ref=f19e56]: SilverStripe\Control\Director->handleRequest(SilverStripe\Control\HTTPRequest) HTTPApplication.php:120
+      - listitem [ref=f19e57]: "SilverStripe\\Control\\HTTPApplication::SilverStripe\\Control\\{closure}(SilverStripe\\Control\\HTTPRequest)"
+      - listitem [ref=f19e58]: call_user_func(Closure, SilverStripe\Control\HTTPRequest) HTTPApplication.php:143
+      - listitem [ref=f19e59]: "SilverStripe\\Control\\HTTPApplication->SilverStripe\\Control\\{closure}(SilverStripe\\Control\\HTTPRequest) HTTPMiddlewareAware.php:65"
+      - listitem [ref=f19e60]: SilverStripe\Control\HTTPApplication->callMiddleware(SilverStripe\Control\HTTPRequest, Closure) HTTPApplication.php:144
+      - listitem [ref=f19e61]: SilverStripe\Control\HTTPApplication->execute(SilverStripe\Control\HTTPRequest, Closure, ) HTTPApplication.php:119
+      - listitem [ref=f19e62]: SilverStripe\Control\HTTPApplication->handle(SilverStripe\Control\HTTPRequest) index.php:25

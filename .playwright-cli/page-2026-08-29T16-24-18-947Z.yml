@@ -1,0 +1,510 @@
+- generic [active] [ref=f23e1]:
+  - generic [ref=f23e2]:
+    - generic [ref=f23e3]:
+      - generic [ref=f23e4]:
+        - link [ref=f23e6] [cursor=pointer]:
+          - /url: https://phbidlautdemo.prahu-hub.com/
+        - button [ref=f23e10] [cursor=pointer]
+      - text:  
+      - generic [ref=f23e13]:
+        - generic [ref=f23e14]:
+          - generic [ref=f23e15]: Admin PH Bid
+          - button "Administrator" [ref=f23e17]
+        - text: 
+        - generic [ref=f23e21]:
+          - generic [ref=f23e22]:
+            - generic [ref=f23e23]: Admin PH Bid
+            - generic [ref=f23e24]: prahu.bid20@gmail.com
+          - generic [ref=f23e25]: 
+          - link "" [ref=f23e28] [cursor=pointer]:
+            - /url: https://phbidlautdemo.prahu-hub.com/home/notification
+          - link [ref=f23e35] [cursor=pointer]:
+            - /url: https://phbidlautdemo.prahu-hub.com/user/do_logout
+    - generic [ref=f23e38]:
+      - generic [ref=f23e39]:
+        - text: 
+        - generic [ref=f23e40]:
+          - list [ref=f23e42]:
+            - listitem
+            - listitem [ref=f23e43]:
+              - link "CARI PENAWARAN" [ref=f23e44] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/lelang/carirute
+            - listitem [ref=f23e45]: MENU ADMIN
+            - listitem [ref=f23e46]:
+              - generic [ref=f23e47] [cursor=pointer]:
+                - text: DASHBOARD
+                - generic [ref=f23e50]: 
+            - listitem [ref=f23e51]:
+              - generic [ref=f23e52] [cursor=pointer]:
+                - text: ANALITIK
+                - generic [ref=f23e55]: 
+            - listitem [ref=f23e56]:
+              - link "PENGAJUAN LELANG" [ref=f23e57] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/lelang/listlelang
+            - listitem [ref=f23e60]:
+              - link "PENGAJUAN NEGO" [ref=f23e61] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/lelang/pengajuannego
+            - listitem [ref=f23e64]:
+              - link [ref=f23e65] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/order/orderlist
+            - listitem [ref=f23e68]:
+              - link "PENUGASAN TRACKING" [ref=f23e69] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/home/penugasantracking
+            - listitem [ref=f23e72]:
+              - link "CEK JADWAL" [ref=f23e73] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/lelang/carijadwal
+            - listitem [ref=f23e76]:
+              - generic [ref=f23e77] [cursor=pointer]:
+                - text: LAPORAN
+                - generic [ref=f23e80]: 
+            - listitem [ref=f23e81]:
+              - generic [ref=f23e82] [cursor=pointer]:
+                - text: VALIDASI AKUN
+                - generic [ref=f23e85]: 
+            - listitem [ref=f23e86]:
+              - generic [ref=f23e87] [cursor=pointer]:
+                - text: SETTING
+                - generic [ref=f23e90]: 
+            - listitem [ref=f23e91]:
+              - generic [ref=f23e92] [cursor=pointer]:
+                - text: MASTER
+                - generic [ref=f23e95]: 
+            - listitem [ref=f23e96]:
+              - generic [ref=f23e97] [cursor=pointer]:
+                - text: PENGATURAN AKUN
+                - generic [ref=f23e100]: 
+              - list [ref=f23e101]:
+                - listitem [ref=f23e102]:
+                  - link "Hak Akses Shipper" [ref=f23e103] [cursor=pointer]:
+                    - /url: https://phbidlautdemo.prahu-hub.com/home/hakaksesbidowner
+                - listitem [ref=f23e104]:
+                  - link "Sub User Shipper" [ref=f23e105] [cursor=pointer]:
+                    - /url: https://phbidlautdemo.prahu-hub.com/home/subuserbidowner
+                - listitem [ref=f23e106]:
+                  - link "Hak Akses Transporter" [ref=f23e107] [cursor=pointer]:
+                    - /url: https://phbidlautdemo.prahu-hub.com/home/hakaksesbidder
+                - listitem [ref=f23e108]:
+                  - link "Sub User Transporter" [ref=f23e109] [cursor=pointer]:
+                    - /url: https://phbidlautdemo.prahu-hub.com/home/subuserbidder
+                - listitem [ref=f23e110]:
+                  - link "Hak Akses Admin" [ref=f23e111] [cursor=pointer]:
+                    - /url: https://phbidlautdemo.prahu-hub.com/adminprahu/hakaksesadmin
+                - listitem [ref=f23e112]:
+                  - link "Sub User Admin" [ref=f23e113] [cursor=pointer]:
+                    - /url: https://phbidlautdemo.prahu-hub.com/adminprahu/subUserAdmin
+            - listitem [ref=f23e114]:
+              - link "AKUN SAYA" [ref=f23e115] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/home/akunsaya
+            - listitem [ref=f23e118]: MENU TRANSPORTER
+            - listitem [ref=f23e119]:
+              - link "HARGA & JADWAL" [ref=f23e120] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/home/hargajadwal
+          - generic [ref=f23e125]:
+            - paragraph [ref=f23e127]: KONTAK KAMI
+            - generic [ref=f23e128]:
+              - generic [ref=f23e129]: 
+              - text: "081246665023"
+            - generic [ref=f23e130]:
+              - generic [ref=f23e131]: 
+              - text: "081246665023"
+            - generic [ref=f23e132]:
+              - generic [ref=f23e133]: 
+              - text: csct@prahu-hub.com
+            - generic [ref=f23e134]:
+              - link [ref=f23e135] [cursor=pointer]:
+                - /url: https://facebook.com/sosmed.phbid
+              - link [ref=f23e137] [cursor=pointer]:
+                - /url: https://twitter.com/PrahuHub
+              - link [ref=f23e139] [cursor=pointer]:
+                - /url: https://instagram.com/phbid_/
+              - link [ref=f23e141] [cursor=pointer]:
+                - /url: https://www.youtube.com/channel/UC41VntroP3zKmXZYnGgtFdw
+              - link [ref=f23e143] [cursor=pointer]:
+                - /url: http://linkedin.com/in/ph-bid-aa5393211/
+      - generic [ref=f23e145]:
+        - generic [ref=f23e146]:
+          - generic [ref=f23e149]:
+            - link "Beranda" [ref=f23e151] [cursor=pointer]:
+              - /url: https://phbidlautdemo.prahu-hub.com/lelang/listLelang
+            - text: /
+            - link "Hak Akses Shipper" [ref=f23e153] [cursor=pointer]:
+              - /url: https://phbidlautdemo.prahu-hub.com/home/hakaksesbidowner
+            - text: / Tambah Hak Akses Shipper
+          - generic [ref=f23e155]:
+            - text: Tambah Hak Akses Shipper
+            - link " Kembali" [ref=f23e156] [cursor=pointer]:
+              - /url: https://phbidlautdemo.prahu-hub.com/home/hakaksesbidowner
+              - generic [ref=f23e157]: 
+              - text: Kembali
+          - generic [ref=f23e158]:
+            - tabpanel [ref=f23e161]:
+              - generic [ref=f23e163]:
+                - generic [ref=f23e164]:
+                  - generic [ref=f23e165]:
+                    - generic [ref=f23e166]: Shipper *
+                    - generic [ref=f23e167]:
+                      - combobox [ref=f23e168]
+                      - combobox [ref=f23e171] [cursor=pointer]:
+                        - textbox "Pilih Shipper" [ref=f23e172]
+                  - generic [ref=f23e173]:
+                    - generic [ref=f23e174]: Nama Hak Akses *
+                    - textbox "Nama Hak Akses *" [ref=f23e175]:
+                      - /placeholder: Masukkan Nama Hak Akses
+                - generic [ref=f23e177]:
+                  - generic [ref=f23e178]: Deskripsi Hak Akses
+                  - textbox "Deskripsi Hak Akses" [ref=f23e179]:
+                    - /placeholder: Masukkan Deskripsi Hak Akses
+                - separator [ref=f23e180]
+                - generic [ref=f23e181]: PERIJINAN HAK AKSES
+                - generic [ref=f23e182]: Hak akses setidaknya memiliki 1 ijin
+                - separator [ref=f23e183]
+                - generic [ref=f23e186]:
+                  - checkbox "Modul Administrator (Pilih Semua)" [ref=f23e187] [cursor=pointer]
+                  - generic [ref=f23e188]: Modul Administrator (Pilih Semua)
+                - separator [ref=f23e189]
+                - generic [ref=f23e191]:
+                  - generic [ref=f23e192]: ADMIN
+                  - generic [ref=f23e193]:
+                    - checkbox "Semua Akses" [ref=f23e194] [cursor=pointer]
+                    - generic [ref=f23e195]: Semua Akses
+                - separator [ref=f23e196]
+                - generic [ref=f23e199]:
+                  - checkbox "Modul Pengajuan Lelang (Pilih Semua)" [ref=f23e200] [cursor=pointer]
+                  - generic [ref=f23e201]: Modul Pengajuan Lelang (Pilih Semua)
+                - separator [ref=f23e202]
+                - generic [ref=f23e203]:
+                  - generic [ref=f23e204]: PENGAJUAN LELANG
+                  - generic [ref=f23e206]:
+                    - checkbox "Lihat Daftar Pengajuan Lelang" [ref=f23e207] [cursor=pointer]
+                    - generic [ref=f23e208]: Lihat Daftar Pengajuan Lelang
+                  - generic [ref=f23e210]:
+                    - checkbox "Buat Pengajuan Lelang" [ref=f23e211] [cursor=pointer]
+                    - generic [ref=f23e212]: Buat Pengajuan Lelang
+                - generic [ref=f23e213]:
+                  - generic [ref=f23e214]: MENU PENGAJUAN LELANG
+                  - generic [ref=f23e216]:
+                    - checkbox "Lihat Detail Pengajuan Lelang" [ref=f23e217] [cursor=pointer]
+                    - generic [ref=f23e218]: Lihat Detail Pengajuan Lelang
+                  - generic [ref=f23e220]:
+                    - checkbox "Batalkan Lelang" [ref=f23e221] [cursor=pointer]
+                    - generic [ref=f23e222]: Batalkan Lelang
+                  - generic [ref=f23e224]:
+                    - checkbox "Lihat Harga Penawaran" [ref=f23e225] [cursor=pointer]
+                    - generic [ref=f23e226]: Lihat Harga Penawaran
+                  - generic [ref=f23e228]:
+                    - checkbox "History Request Harga" [ref=f23e229] [cursor=pointer]
+                    - generic [ref=f23e230]: History Request Harga
+                  - generic [ref=f23e232]:
+                    - checkbox "Harga Disembunyikan" [disabled] [ref=f23e233] [cursor=pointer]
+                    - generic [ref=f23e234]: Harga Disembunyikan
+                - separator [ref=f23e235]
+                - generic [ref=f23e238]:
+                  - checkbox "Modul Cari Penawaran (Pilih Semua)" [ref=f23e239] [cursor=pointer]
+                  - generic [ref=f23e240]: Modul Cari Penawaran (Pilih Semua)
+                - separator [ref=f23e241]
+                - generic [ref=f23e242]:
+                  - generic [ref=f23e243]: CARI PENAWARAN
+                  - generic [ref=f23e245]:
+                    - checkbox "Cari Hasil Penawaran" [ref=f23e246] [cursor=pointer]
+                    - generic [ref=f23e247]: Cari Hasil Penawaran
+                  - generic [ref=f23e249]:
+                    - checkbox "Export Harga Penawaran" [ref=f23e250] [cursor=pointer]
+                    - generic [ref=f23e251]: Export Harga Penawaran
+                  - generic [ref=f23e253]:
+                    - checkbox "Buat Lelang Pengiriman" [ref=f23e254] [cursor=pointer]
+                    - generic [ref=f23e255]: Buat Lelang Pengiriman
+                  - generic [ref=f23e257]:
+                    - checkbox "Pesan" [ref=f23e258] [cursor=pointer]
+                    - generic [ref=f23e259]: Pesan
+                  - generic [ref=f23e261]:
+                    - checkbox "Nego Harga" [ref=f23e262] [cursor=pointer]
+                    - generic [ref=f23e263]: Nego Harga
+                  - generic [ref=f23e265]:
+                    - checkbox "Request Jadwal" [ref=f23e266] [cursor=pointer]
+                    - generic [ref=f23e267]: Request Jadwal
+                  - generic [ref=f23e269]:
+                    - checkbox "Request Harga" [ref=f23e270] [cursor=pointer]
+                    - generic [ref=f23e271]: Request Harga
+                  - generic [ref=f23e273]:
+                    - checkbox "Close Request Harga" [ref=f23e274] [cursor=pointer]
+                    - generic [ref=f23e275]: Close Request Harga
+                - separator [ref=f23e276]
+                - generic [ref=f23e279]:
+                  - checkbox "Modul Pengajuan Nego (Pilih Semua)" [ref=f23e280] [cursor=pointer]
+                  - generic [ref=f23e281]: Modul Pengajuan Nego (Pilih Semua)
+                - separator [ref=f23e282]
+                - generic [ref=f23e283]:
+                  - generic [ref=f23e284]: PENGAJUAN NEGO
+                  - generic [ref=f23e286]:
+                    - checkbox "Lihat Daftar Pengajuan Nego" [ref=f23e287] [cursor=pointer]
+                    - generic [ref=f23e288]: Lihat Daftar Pengajuan Nego
+                  - generic [ref=f23e290]:
+                    - checkbox "Lihat Detail Nego" [ref=f23e291] [cursor=pointer]
+                    - generic [ref=f23e292]: Lihat Detail Nego
+                  - generic [ref=f23e294]:
+                    - checkbox "Lihat Riwayat Nego" [ref=f23e295] [cursor=pointer]
+                    - generic [ref=f23e296]: Lihat Riwayat Nego
+                - separator [ref=f23e297]
+                - generic [ref=f23e300]:
+                  - checkbox "Modul Daftar Order (Pilih Semua)" [ref=f23e301] [cursor=pointer]
+                  - generic [ref=f23e302]: Modul Daftar Order (Pilih Semua)
+                - separator [ref=f23e303]
+                - generic [ref=f23e304]:
+                  - generic [ref=f23e305]: daftar order
+                  - generic [ref=f23e307]:
+                    - checkbox "Lihat Daftar Order" [ref=f23e308] [cursor=pointer]
+                    - generic [ref=f23e309]: Lihat Daftar Order
+                  - generic [ref=f23e311]:
+                    - checkbox "Lihat Detail Order" [ref=f23e312] [cursor=pointer]
+                    - generic [ref=f23e313]: Lihat Detail Order
+                  - generic [ref=f23e315]:
+                    - checkbox "Harga Disembunyikan" [disabled] [ref=f23e316] [cursor=pointer]
+                    - generic [ref=f23e317]: Harga Disembunyikan
+                  - generic [ref=f23e318]: menu daftar order
+                  - generic [ref=f23e320]:
+                    - checkbox "Input Muatan" [ref=f23e321] [cursor=pointer]
+                    - generic [ref=f23e322]: Input Muatan
+                  - generic [ref=f23e324]:
+                    - checkbox "Edit Data Muatan" [ref=f23e325] [cursor=pointer]
+                    - generic [ref=f23e326]: Edit Data Muatan
+                  - generic [ref=f23e328]:
+                    - checkbox "Input Nomor Referensi" [ref=f23e329] [cursor=pointer]
+                    - generic [ref=f23e330]: Input Nomor Referensi
+                  - generic [ref=f23e332]:
+                    - checkbox "Edit Nomor Referensi" [ref=f23e333] [cursor=pointer]
+                    - generic [ref=f23e334]: Edit Nomor Referensi
+                  - generic [ref=f23e336]:
+                    - checkbox "Batal Order" [ref=f23e337] [cursor=pointer]
+                    - generic [ref=f23e338]: Batal Order
+                  - generic [ref=f23e340]:
+                    - checkbox "Input Perjanjian" [ref=f23e341] [cursor=pointer]
+                    - generic [ref=f23e342]: Input Perjanjian
+                  - generic [ref=f23e344]:
+                    - checkbox "Lihat data unit" [ref=f23e345] [cursor=pointer]
+                    - generic [ref=f23e346]: Lihat data unit
+                  - generic [ref=f23e348]:
+                    - checkbox "Download Dokumen" [ref=f23e349] [cursor=pointer]
+                    - generic [ref=f23e350]: Download Dokumen
+                  - generic [ref=f23e352]:
+                    - checkbox "Beri Penilaian Transporter" [ref=f23e353] [cursor=pointer]
+                    - generic [ref=f23e354]: Beri Penilaian Transporter
+                  - generic [ref=f23e356]:
+                    - checkbox "Download Invoice" [ref=f23e357] [cursor=pointer]
+                    - generic [ref=f23e358]: Download Invoice
+                  - generic [ref=f23e360]:
+                    - checkbox "Lihat biaya tambahan" [ref=f23e361] [cursor=pointer]
+                    - generic [ref=f23e362]: Lihat biaya tambahan
+                  - generic [ref=f23e364]:
+                    - checkbox "input biaya tambahan" [ref=f23e365] [cursor=pointer]
+                    - generic [ref=f23e366]: input biaya tambahan
+                  - generic [ref=f23e368]:
+                    - checkbox "edit biaya tambahan" [ref=f23e369] [cursor=pointer]
+                    - generic [ref=f23e370]: edit biaya tambahan
+                  - generic [ref=f23e372]:
+                    - checkbox "hapus biaya tambahan" [ref=f23e373] [cursor=pointer]
+                    - generic [ref=f23e374]: hapus biaya tambahan
+                  - generic [ref=f23e375]: "DETAIL ORDER : PEMESANAN"
+                  - generic [ref=f23e377]:
+                    - checkbox "Lihat Pemesanan" [ref=f23e378] [cursor=pointer]
+                    - generic [ref=f23e379]: Lihat Pemesanan
+                  - generic [ref=f23e381]:
+                    - checkbox "Lihat Dokumen Packinglist" [ref=f23e382] [cursor=pointer]
+                    - generic [ref=f23e383]: Lihat Dokumen Packinglist
+                  - generic [ref=f23e385]:
+                    - checkbox "Download Dokumen Packinglist" [ref=f23e386] [cursor=pointer]
+                    - generic [ref=f23e387]: Download Dokumen Packinglist
+                  - generic [ref=f23e388]: "DETAIL ORDER : PERJANJIAN PENGIRIMAN"
+                  - generic [ref=f23e390]:
+                    - checkbox "Lihat Perjanjian" [ref=f23e391] [cursor=pointer]
+                    - generic [ref=f23e392]: Lihat Perjanjian
+                  - generic [ref=f23e394]:
+                    - checkbox "Export Perjanjian" [ref=f23e395] [cursor=pointer]
+                    - generic [ref=f23e396]: Export Perjanjian
+                  - generic [ref=f23e398]:
+                    - checkbox "Download Dokumen Perjanjian" [ref=f23e399] [cursor=pointer]
+                    - generic [ref=f23e400]: Download Dokumen Perjanjian
+                  - generic [ref=f23e401]: "DETAIL ORDER : STATUS PENGIRIMAN"
+                  - generic [ref=f23e403]:
+                    - checkbox "Lihat Data Tracking" [ref=f23e404] [cursor=pointer]
+                    - generic [ref=f23e405]: Lihat Data Tracking
+                  - generic [ref=f23e407]:
+                    - checkbox "Lihat Detail Data Tracking" [ref=f23e408] [cursor=pointer]
+                    - generic [ref=f23e409]: Lihat Detail Data Tracking
+                  - generic [ref=f23e410]: "DETAIL ORDER : PENILAIAN ORDER"
+                  - generic [ref=f23e412]:
+                    - checkbox "Lihat Rating" [ref=f23e413] [cursor=pointer]
+                    - generic [ref=f23e414]: Lihat Rating
+                - separator [ref=f23e415]
+                - generic [ref=f23e418]:
+                  - checkbox "Modul Cek Jadwal Pelayaran (Pilih Semua)" [ref=f23e419] [cursor=pointer]
+                  - generic [ref=f23e420]: Modul Cek Jadwal Pelayaran (Pilih Semua)
+                - separator [ref=f23e421]
+                - generic [ref=f23e422]:
+                  - generic [ref=f23e423]: CEK JADWAL PELAYARAN
+                  - generic [ref=f23e425]:
+                    - checkbox "Lihat Jadwal Pelayaran" [ref=f23e426] [cursor=pointer]
+                    - generic [ref=f23e427]: Lihat Jadwal Pelayaran
+                - separator [ref=f23e428]
+                - generic [ref=f23e431]:
+                  - checkbox "Modul Laporan (Pilih Semua)" [ref=f23e432] [cursor=pointer]
+                  - generic [ref=f23e433]: Modul Laporan (Pilih Semua)
+                - separator [ref=f23e434]
+                - generic [ref=f23e435]:
+                  - generic [ref=f23e436]: DAFTAR HISTORY LELANG
+                  - generic [ref=f23e438]:
+                    - checkbox "Lihat History Lelang" [ref=f23e439] [cursor=pointer]
+                    - generic [ref=f23e440]: Lihat History Lelang
+                  - generic [ref=f23e442]:
+                    - checkbox "Export Excel Daftar History Lelang" [ref=f23e443] [cursor=pointer]
+                    - generic [ref=f23e444]: Export Excel Daftar History Lelang
+                  - generic [ref=f23e445]: LAPORAN LOGISTIK
+                  - generic [ref=f23e447]:
+                    - checkbox "Lihat Laporan Logistik" [ref=f23e448] [cursor=pointer]
+                    - generic [ref=f23e449]: Lihat Laporan Logistik
+                  - generic [ref=f23e451]:
+                    - checkbox "Detail Laporan Logistik" [ref=f23e452] [cursor=pointer]
+                    - generic [ref=f23e453]: Detail Laporan Logistik
+                  - generic [ref=f23e455]:
+                    - checkbox "Export Excel Laporan Logistik" [ref=f23e456] [cursor=pointer]
+                    - generic [ref=f23e457]: Export Excel Laporan Logistik
+                  - generic [ref=f23e459]:
+                    - checkbox "Harga Disembunyikan" [disabled] [ref=f23e460] [cursor=pointer]
+                    - generic [ref=f23e461]: Harga Disembunyikan
+                - separator [ref=f23e462]
+                - generic [ref=f23e465]:
+                  - checkbox "Modul Dashboard (Pilih Semua)" [ref=f23e466] [cursor=pointer]
+                  - generic [ref=f23e467]: Modul Dashboard (Pilih Semua)
+                - separator [ref=f23e468]
+                - generic [ref=f23e469]:
+                  - generic [ref=f23e470]: Monitoring pengiriman
+                  - generic [ref=f23e472]:
+                    - checkbox "Lihat Dashboard monitoring" [ref=f23e473] [cursor=pointer]
+                    - generic [ref=f23e474]: Lihat Dashboard monitoring
+                  - generic [ref=f23e476]:
+                    - checkbox "export excel monitoring" [ref=f23e477] [cursor=pointer]
+                    - generic [ref=f23e478]: export excel monitoring
+                  - generic [ref=f23e479]: frekuensi pengiriman
+                  - generic [ref=f23e481]:
+                    - checkbox "Lihat frekuensi pengiriman" [ref=f23e482] [cursor=pointer]
+                    - generic [ref=f23e483]: Lihat frekuensi pengiriman
+                  - generic [ref=f23e484]: Grafik pengiriman
+                  - generic [ref=f23e486]:
+                    - checkbox "Lihat grafik pengiriman" [ref=f23e487] [cursor=pointer]
+                    - generic [ref=f23e488]: Lihat grafik pengiriman
+                - separator [ref=f23e489]
+                - generic [ref=f23e492]:
+                  - checkbox "Modul Pengaturan Akun (Pilih Semua)" [ref=f23e493] [cursor=pointer]
+                  - generic [ref=f23e494]: Modul Pengaturan Akun (Pilih Semua)
+                - separator [ref=f23e495]
+                - generic [ref=f23e496]:
+                  - generic [ref=f23e497]: HAK AKSES SHIPPER
+                  - generic [ref=f23e499]:
+                    - checkbox "Lihat Daftar Hak Akses" [ref=f23e500] [cursor=pointer]
+                    - generic [ref=f23e501]: Lihat Daftar Hak Akses
+                  - generic [ref=f23e503]:
+                    - checkbox "Lihat Detail Hak Akses" [ref=f23e504] [cursor=pointer]
+                    - generic [ref=f23e505]: Lihat Detail Hak Akses
+                  - generic [ref=f23e506]: SUB USER SHIPPER
+                  - generic [ref=f23e508]:
+                    - checkbox "Lihat Daftar Sub User" [ref=f23e509] [cursor=pointer]
+                    - generic [ref=f23e510]: Lihat Daftar Sub User
+                  - generic [ref=f23e512]:
+                    - checkbox "Tambah Sub User" [ref=f23e513] [cursor=pointer]
+                    - generic [ref=f23e514]: Tambah Sub User
+                  - generic [ref=f23e516]:
+                    - checkbox "Lihat Detail Sub User" [ref=f23e517] [cursor=pointer]
+                    - generic [ref=f23e518]: Lihat Detail Sub User
+                  - generic [ref=f23e520]:
+                    - checkbox "Edit Sub User" [ref=f23e521] [cursor=pointer]
+                    - generic [ref=f23e522]: Edit Sub User
+                  - generic [ref=f23e524]:
+                    - checkbox "Hapus Sub User" [ref=f23e525] [cursor=pointer]
+                    - generic [ref=f23e526]: Hapus Sub User
+                - separator [ref=f23e527]
+                - generic [ref=f23e530]:
+                  - checkbox "Modul Preference Sub User (Pilih Semua)" [ref=f23e531] [cursor=pointer]
+                  - generic [ref=f23e532]: Modul Preference Sub User (Pilih Semua)
+                - separator [ref=f23e533]
+                - generic [ref=f23e534]:
+                  - generic [ref=f23e535]: PREFERENCE SUB USER
+                  - generic [ref=f23e538]:
+                    - checkbox "Daftar Preference Notif" [ref=f23e539] [cursor=pointer]
+                    - generic [ref=f23e540]: Daftar Preference Notif
+                - separator [ref=f23e541]
+                - generic [ref=f23e544]:
+                  - checkbox "Modul Notifikasi (Pilih Semua)" [ref=f23e545] [cursor=pointer]
+                  - generic [ref=f23e546]: Modul Notifikasi (Pilih Semua)
+                - separator [ref=f23e547]
+                - generic [ref=f23e548]:
+                  - generic [ref=f23e549]: NOTIFIKASI SISTEM
+                  - generic [ref=f23e550]:
+                    - generic [ref=f23e552]:
+                      - checkbox "Notif Nego Diterima" [ref=f23e553] [cursor=pointer]
+                      - generic [ref=f23e554]: Notif Nego Diterima
+                    - generic [ref=f23e556]:
+                      - checkbox "Notif Nego Ditolak" [ref=f23e557] [cursor=pointer]
+                      - generic [ref=f23e558]: Notif Nego Ditolak
+                    - generic [ref=f23e560]:
+                      - checkbox "Notif Nego Dicounter" [ref=f23e561] [cursor=pointer]
+                      - generic [ref=f23e562]: Notif Nego Dicounter
+                    - generic [ref=f23e564]:
+                      - checkbox "Notif Perjanjian Pengiriman Diterima" [ref=f23e565] [cursor=pointer]
+                      - generic [ref=f23e566]: Notif Perjanjian Pengiriman Diterima
+                    - generic [ref=f23e568]:
+                      - checkbox "Notif Perjanjian Pengiriman Ditolak" [ref=f23e569] [cursor=pointer]
+                      - generic [ref=f23e570]: Notif Perjanjian Pengiriman Ditolak
+                    - generic [ref=f23e572]:
+                      - checkbox "Notif Kelengkapan Data Unit" [ref=f23e573] [cursor=pointer]
+                      - generic [ref=f23e574]: Notif Kelengkapan Data Unit
+                    - generic [ref=f23e576]:
+                      - checkbox "Notif Perubahan Jadwal" [ref=f23e577] [cursor=pointer]
+                      - generic [ref=f23e578]: Notif Perubahan Jadwal
+                  - generic [ref=f23e579]:
+                    - generic [ref=f23e581]:
+                      - checkbox "Notif Stuffing" [ref=f23e582] [cursor=pointer]
+                      - generic [ref=f23e583]: Notif Stuffing
+                    - generic [ref=f23e585]:
+                      - checkbox "Notif Kapal Berlayar" [ref=f23e586] [cursor=pointer]
+                      - generic [ref=f23e587]: Notif Kapal Berlayar
+                    - generic [ref=f23e589]:
+                      - checkbox "Notif Kapal Sandar" [ref=f23e590] [cursor=pointer]
+                      - generic [ref=f23e591]: Notif Kapal Sandar
+                    - generic [ref=f23e593]:
+                      - checkbox "Notif Rencana Dooring" [ref=f23e594] [cursor=pointer]
+                      - generic [ref=f23e595]: Notif Rencana Dooring
+                    - generic [ref=f23e597]:
+                      - checkbox "Notif Dooring" [ref=f23e598] [cursor=pointer]
+                      - generic [ref=f23e599]: Notif Dooring
+                    - generic [ref=f23e601]:
+                      - checkbox "Notif SJ Diterima Agen" [ref=f23e602] [cursor=pointer]
+                      - generic [ref=f23e603]: Notif SJ Diterima Agen
+                    - generic [ref=f23e605]:
+                      - checkbox "Notif Jadwal Tersedia" [ref=f23e606] [cursor=pointer]
+                      - generic [ref=f23e607]: Notif Jadwal Tersedia
+                - generic [ref=f23e608]:
+                  - generic [ref=f23e609]: NOTIFIKASI EMAIL
+                  - generic [ref=f23e610]:
+                    - generic [ref=f23e612]:
+                      - checkbox "Notif Perjanjian Pengiriman Diterima (To)" [ref=f23e613] [cursor=pointer]
+                      - generic [ref=f23e614]: Notif Perjanjian Pengiriman Diterima (To)
+                    - generic [ref=f23e616]:
+                      - checkbox "Notif Perjanjian Pengiriman Ditolak (To)" [ref=f23e617] [cursor=pointer]
+                      - generic [ref=f23e618]: Notif Perjanjian Pengiriman Ditolak (To)
+                    - generic [ref=f23e620]:
+                      - checkbox "Notif Kelengkapan Data Unit (To)" [ref=f23e621] [cursor=pointer]
+                      - generic [ref=f23e622]: Notif Kelengkapan Data Unit (To)
+                  - generic [ref=f23e623]:
+                    - generic [ref=f23e625]:
+                      - checkbox "Notif Perubahan Jadwal (To)" [ref=f23e626] [cursor=pointer]
+                      - generic [ref=f23e627]: Notif Perubahan Jadwal (To)
+                    - generic [ref=f23e629]:
+                      - checkbox "Harga Disembunyikan" [disabled] [ref=f23e630] [cursor=pointer]
+                      - generic [ref=f23e631]: Harga Disembunyikan
+            - generic [ref=f23e633]:
+              - link "Batal" [ref=f23e634] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/home/hakaksesbidowner
+              - button " Simpan" [ref=f23e635] [cursor=pointer]:
+                - generic [ref=f23e636]: 
+                - text: Simpan
+        - paragraph [ref=f23e642]: © BETA 20260228 v1.3.28 - PH Bid Laut | Digital Logistic Platform
+  - text:  

@@ -1,0 +1,34 @@
+[    3961ms] Cannot use import statement outside a module
+[    3984ms] ReferenceError: Chart is not defined
+    at https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/js/scripts-init/charts/chartjs.js:8:13
+[    4549ms] Unexpected token '<'
+[    4883ms] Unexpected token '<'
+[    5032ms] Uncaught TypeError: expect element to be DOM Element, but got null
+    at n.init (https://cdnjs.cloudflare.com/ajax/libs/smooth-scrollbar/8.5.2/smooth-scrollbar.js:24:264)
+    at <anonymous> (https://phbidlautdemo.prahu-hub.com/adminprahu/subUserAdmin:5490:14)
+[    5056ms] [LOG] Pengaturan Akunnamanya @ https://phbidlautdemo.prahu-hub.com/adminprahu/subUserAdmin:2040
+[    5071ms] [LOG] undefined @ https://phbidlautdemo.prahu-hub.com/adminprahu/subUserAdmin:5843
+[    5072ms] [LOG] Masukkan Nama Sub User @ https://phbidlautdemo.prahu-hub.com/adminprahu/subUserAdmin:5843
+[    5072ms] [LOG] Masukkan Email @ https://phbidlautdemo.prahu-hub.com/adminprahu/subUserAdmin:5843
+[    5072ms] [LOG] Masukkan Bagian Staff @ https://phbidlautdemo.prahu-hub.com/adminprahu/subUserAdmin:5843
+[    5072ms] [LOG] undefined @ https://phbidlautdemo.prahu-hub.com/adminprahu/subUserAdmin:5843
+[    5079ms] [LOG] WebSocket connection @ https://phbidlautdemo.prahu-hub.com/adminprahu/subUserAdmin:5886
+[    5079ms] [LOG] WebSocket connection attempting... @ https://phbidlautdemo.prahu-hub.com/adminprahu/subUserAdmin:5964
+[    5250ms] [LOG] WebSocket connected @ https://phbidlautdemo.prahu-hub.com/adminprahu/subUserAdmin:5895
+[    5253ms] [LOG] update_dashboard_order_laut @ https://phbidlautdemo.prahu-hub.com/adminprahu/subUserAdmin:5936
+[    5307ms] [LOG] Connected @ https://phbidlautdemo.prahu-hub.com/adminprahu/subUserAdmin:5936
+[    5698ms] [LOG] {datatbl: Array(12), data: Object, jumlah: 12, limit: 10, get: Object} @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/subuseradmin.js?m=1787972929:386
+[    5702ms] [LOG] [Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object] @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/subuseradmin.js?m=1787972929:147
+[    5710ms] [LOG] [Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object] @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/subuseradmin.js?m=1787972929:43
+[    5718ms] [LOG] 12 @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/subuseradmin.js?m=1787972929:358
+[    5719ms] [LOG] 12 countView1 1 pageNow 20 limitView1 @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/subuseradmin.js?m=1787972929:360
+[    5719ms] [LOG] 12 @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/subuseradmin.js?m=1787972929:366
+[    5720ms] [LOG] 12 jumlah data @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/subuseradmin.js?m=1787972929:335
+[    5720ms] [LOG] 1 @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/subuseradmin.js?m=1787972929:337
+[    5722ms] [LOG] 1 1 pageCount & pageNow @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/subuseradmin.js?m=1787972929:261
+[    5724ms] [LOG] 200 xhrglobal @ https://phbidlautdemo.prahu-hub.com/adminprahu/subUserAdmin:5817
+[    5725ms] [LOG] ce.fn.init stepItem @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/subuseradmin.js?m=1787972929:235
+[    5831ms] [LOG] 200 xhrglobal @ https://phbidlautdemo.prahu-hub.com/adminprahu/subUserAdmin:5817
+[    6072ms] [LOG] 200 xhrglobal @ https://phbidlautdemo.prahu-hub.com/adminprahu/subUserAdmin:5817
+[    7073ms] TypeError: $(...).DataTable is not a function
+    at https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/js/scripts-init/tables.js:7:23

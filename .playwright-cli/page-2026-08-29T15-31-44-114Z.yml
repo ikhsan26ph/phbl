@@ -1,0 +1,201 @@
+- generic [active] [ref=f92e1]:
+  - generic [ref=f92e2]:
+    - generic [ref=f92e3]:
+      - generic [ref=f92e4]:
+        - link [ref=f92e6] [cursor=pointer]:
+          - /url: https://phbidlautdemo.prahu-hub.com/
+        - button [ref=f92e10] [cursor=pointer]
+      - text:  
+      - generic [ref=f92e13]:
+        - generic [ref=f92e14]:
+          - generic [ref=f92e15]: Admin PH Bid
+          - button "Administrator" [ref=f92e17]
+        - text: 
+        - generic [ref=f92e21]:
+          - generic [ref=f92e22]:
+            - generic [ref=f92e23]: Admin PH Bid
+            - generic [ref=f92e24]: prahu.bid20@gmail.com
+          - generic [ref=f92e25]: 
+          - link "" [ref=f92e28] [cursor=pointer]:
+            - /url: https://phbidlautdemo.prahu-hub.com/home/notification
+          - link [ref=f92e35] [cursor=pointer]:
+            - /url: https://phbidlautdemo.prahu-hub.com/user/do_logout
+    - generic [ref=f92e38]:
+      - generic [ref=f92e39]:
+        - text: 
+        - generic [ref=f92e40]:
+          - list [ref=f92e42]:
+            - listitem
+            - listitem [ref=f92e43]:
+              - link "CARI PENAWARAN" [ref=f92e44] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/lelang/carirute
+            - listitem [ref=f92e45]: MENU ADMIN
+            - listitem [ref=f92e46]:
+              - generic [ref=f92e47] [cursor=pointer]:
+                - text: DASHBOARD
+                - generic [ref=f92e50]: 
+            - listitem [ref=f92e51]:
+              - generic [ref=f92e52] [cursor=pointer]:
+                - text: ANALITIK
+                - generic [ref=f92e55]: 
+            - listitem [ref=f92e56]:
+              - link "PENGAJUAN LELANG" [ref=f92e57] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/lelang/listlelang
+            - listitem [ref=f92e60]:
+              - link "PENGAJUAN NEGO" [ref=f92e61] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/lelang/pengajuannego
+            - listitem [ref=f92e64]:
+              - link [ref=f92e65] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/order/orderlist
+            - listitem [ref=f92e68]:
+              - link "PENUGASAN TRACKING" [ref=f92e69] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/home/penugasantracking
+            - listitem [ref=f92e72]:
+              - link "CEK JADWAL" [ref=f92e73] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/lelang/carijadwal
+            - listitem [ref=f92e76]:
+              - generic [ref=f92e77] [cursor=pointer]:
+                - text: LAPORAN
+                - generic [ref=f92e80]: 
+            - listitem [ref=f92e81]:
+              - generic [ref=f92e82] [cursor=pointer]:
+                - text: VALIDASI AKUN
+                - generic [ref=f92e85]: 
+            - listitem [ref=f92e86]:
+              - generic [ref=f92e87] [cursor=pointer]:
+                - text: SETTING
+                - generic [ref=f92e90]: 
+            - listitem [ref=f92e91]:
+              - generic [ref=f92e92] [cursor=pointer]:
+                - text: MASTER
+                - generic [ref=f92e95]: 
+              - list [ref=f92e96]:
+                - listitem [ref=f92e97]:
+                  - link "Provinsi" [ref=f92e98] [cursor=pointer]:
+                    - /url: https://phbidlautdemo.prahu-hub.com/adminprahu/masterpropinsi
+                - listitem [ref=f92e99]:
+                  - link "Kota" [ref=f92e100] [cursor=pointer]:
+                    - /url: https://phbidlautdemo.prahu-hub.com/adminprahu/masterkota
+                - listitem [ref=f92e101]:
+                  - link "Pelabuhan" [ref=f92e102] [cursor=pointer]:
+                    - /url: https://phbidlautdemo.prahu-hub.com/adminprahu/masterpelabuhan
+                - listitem [ref=f92e103]:
+                  - link "Bank" [ref=f92e104] [cursor=pointer]:
+                    - /url: https://phbidlautdemo.prahu-hub.com/adminprahu/masterbank
+                - listitem [ref=f92e105]:
+                  - link "Include" [ref=f92e106] [cursor=pointer]:
+                    - /url: https://phbidlautdemo.prahu-hub.com/adminprahu/masterInclude
+                - listitem [ref=f92e107]:
+                  - link "Kemasan" [ref=f92e108] [cursor=pointer]:
+                    - /url: https://phbidlautdemo.prahu-hub.com/adminprahu/masterkemasan
+                - listitem [ref=f92e109]:
+                  - link "Jenis Muatan" [ref=f92e110] [cursor=pointer]:
+                    - /url: https://phbidlautdemo.prahu-hub.com/analitik/masterjenismuatan
+                - listitem [ref=f92e111]:
+                  - link "Harga Barang" [ref=f92e112] [cursor=pointer]:
+                    - /url: https://phbidlautdemo.prahu-hub.com/analitik/masterhargabarang
+                - listitem [ref=f92e113]:
+                  - link "Free Time" [ref=f92e114] [cursor=pointer]:
+                    - /url: https://phbidlautdemo.prahu-hub.com/adminprahu/masterfreetime
+                - listitem [ref=f92e115]:
+                  - link "Pelayaran" [ref=f92e116] [cursor=pointer]:
+                    - /url: https://phbidlautdemo.prahu-hub.com/adminprahu/pelayaran
+                - listitem [ref=f92e117]:
+                  - link "Jenis Kontainer" [ref=f92e118] [cursor=pointer]:
+                    - /url: https://phbidlautdemo.prahu-hub.com/adminprahu/kontainer
+                - listitem [ref=f92e119]:
+                  - link "Dokumen Penagihan" [ref=f92e120] [cursor=pointer]:
+                    - /url: https://phbidlautdemo.prahu-hub.com/adminprahu/masterDP
+                - listitem [ref=f92e121]:
+                  - link "Iklan Berbayar" [ref=f92e122] [cursor=pointer]:
+                    - /url: https://phbidlautdemo.prahu-hub.com/adminprahu/masteriklan
+                - listitem [ref=f92e123]:
+                  - link "Petugas APK" [ref=f92e124] [cursor=pointer]:
+                    - /url: https://phbidlautdemo.prahu-hub.com/adminprahu/masterpetugasapk
+            - listitem [ref=f92e125]:
+              - generic [ref=f92e126] [cursor=pointer]:
+                - text: PENGATURAN AKUN
+                - generic [ref=f92e129]: 
+            - listitem [ref=f92e130]:
+              - link "AKUN SAYA" [ref=f92e131] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/home/akunsaya
+            - listitem [ref=f92e134]: MENU TRANSPORTER
+            - listitem [ref=f92e135]:
+              - link "HARGA & JADWAL" [ref=f92e136] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/home/hargajadwal
+          - generic [ref=f92e141]:
+            - paragraph [ref=f92e143]: KONTAK KAMI
+            - generic [ref=f92e144]:
+              - generic [ref=f92e145]: 
+              - text: "081246665023"
+            - generic [ref=f92e146]:
+              - generic [ref=f92e147]: 
+              - text: "081246665023"
+            - generic [ref=f92e148]:
+              - generic [ref=f92e149]: 
+              - text: csct@prahu-hub.com
+            - generic [ref=f92e150]:
+              - link [ref=f92e151] [cursor=pointer]:
+                - /url: https://facebook.com/sosmed.phbid
+              - link [ref=f92e153] [cursor=pointer]:
+                - /url: https://twitter.com/PrahuHub
+              - link [ref=f92e155] [cursor=pointer]:
+                - /url: https://instagram.com/phbid_/
+              - link [ref=f92e157] [cursor=pointer]:
+                - /url: https://www.youtube.com/channel/UC41VntroP3zKmXZYnGgtFdw
+              - link [ref=f92e159] [cursor=pointer]:
+                - /url: http://linkedin.com/in/ph-bid-aa5393211/
+      - generic [ref=f92e161]:
+        - generic [ref=f92e162]:
+          - generic [ref=f92e165]:
+            - link "Beranda" [ref=f92e167] [cursor=pointer]:
+              - /url: https://phbidlautdemo.prahu-hub.com/lelang/listLelang
+            - text: / Master Kemasan
+          - generic [ref=f92e169]:
+            - generic [ref=f92e170]: MASTER KEMASAN
+            - text:  
+            - generic [ref=f92e171]:
+              - button " Filter" [ref=f92e172] [cursor=pointer]:
+                - generic [ref=f92e173]: 
+                - text: Filter
+              - link [ref=f92e174] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/adminprahu/tambahkemasan
+                - button " Tambah Kemasan" [ref=f92e175]:
+                  - generic [ref=f92e176]: 
+                  - text: Tambah Kemasan
+              - generic [ref=f92e177]:
+                - text: Menampilkan
+                - combobox [ref=f92e178]:
+                  - option "20" [selected]
+                  - option "30"
+                  - option "50"
+                  - option "100"
+                - text: Data
+          - text:  
+          - table [ref=f92e180]:
+            - rowgroup [ref=f92e181]:
+              - row [ref=f92e182]:
+                - columnheader "No " [ref=f92e183] [cursor=pointer]:
+                  - generic [ref=f92e184]:
+                    - generic [ref=f92e185]: "No"
+                    - generic [ref=f92e186]: 
+                - columnheader "Nama Kemasan " [ref=f92e188] [cursor=pointer]:
+                  - generic [ref=f92e189]:
+                    - generic [ref=f92e190]: Nama Kemasan
+                    - generic [ref=f92e191]: 
+                - columnheader "Status " [ref=f92e193] [cursor=pointer]:
+                  - generic [ref=f92e194]:
+                    - generic [ref=f92e195]: Status
+                    - generic [ref=f92e196]: 
+                - columnheader "Aksi" [ref=f92e198]
+              - row [ref=f92e199]:
+                - cell [ref=f92e200]
+            - rowgroup [ref=f92e201]:
+              - row [ref=f92e202]:
+                - cell [ref=f92e203]
+          - generic:
+            - status [ref=f92e210]
+            - generic [ref=f92e212]:
+              - list
+        - paragraph [ref=f92e218]: © BETA 20260228 v1.3.28 - PH Bid Laut | Digital Logistic Platform
+  - text:   

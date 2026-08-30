@@ -1,0 +1,153 @@
+- generic [active] [ref=f33e1]:
+  - generic [ref=f33e2]:
+    - generic [ref=f33e3]:
+      - generic [ref=f33e4]:
+        - link [ref=f33e6] [cursor=pointer]:
+          - /url: https://phbidlautdemo.prahu-hub.com/
+        - button [ref=f33e10] [cursor=pointer]
+      - text:  
+      - generic [ref=f33e13]:
+        - generic [ref=f33e14]:
+          - generic [ref=f33e15]: Admin PH Bid
+          - button "Administrator" [ref=f33e17]
+        - text: 
+        - generic [ref=f33e21]:
+          - generic [ref=f33e22]:
+            - generic [ref=f33e23]: Admin PH Bid
+            - generic [ref=f33e24]: prahu.bid20@gmail.com
+          - generic [ref=f33e25]: 
+          - link "" [ref=f33e28] [cursor=pointer]:
+            - /url: https://phbidlautdemo.prahu-hub.com/home/notification
+          - link [ref=f33e35] [cursor=pointer]:
+            - /url: https://phbidlautdemo.prahu-hub.com/user/do_logout
+    - generic [ref=f33e38]:
+      - generic [ref=f33e39]:
+        - text: 
+        - generic [ref=f33e40]:
+          - list [ref=f33e42]:
+            - listitem
+            - listitem [ref=f33e43]:
+              - link "CARI PENAWARAN" [ref=f33e44] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/lelang/carirute
+            - listitem [ref=f33e45]: MENU ADMIN
+            - listitem [ref=f33e46]:
+              - generic [ref=f33e47] [cursor=pointer]:
+                - text: DASHBOARD
+                - generic [ref=f33e50]: 
+            - listitem [ref=f33e51]:
+              - generic [ref=f33e52] [cursor=pointer]:
+                - text: ANALITIK
+                - generic [ref=f33e55]: 
+            - listitem [ref=f33e56]:
+              - link "PENGAJUAN LELANG" [ref=f33e57] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/lelang/listlelang
+            - listitem [ref=f33e60]:
+              - link "PENGAJUAN NEGO" [ref=f33e61] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/lelang/pengajuannego
+            - listitem [ref=f33e64]:
+              - link [ref=f33e65] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/order/orderlist
+            - listitem [ref=f33e68]:
+              - link "PENUGASAN TRACKING" [ref=f33e69] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/home/penugasantracking
+            - listitem [ref=f33e72]:
+              - link "CEK JADWAL" [ref=f33e73] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/lelang/carijadwal
+            - listitem [ref=f33e76]:
+              - generic [ref=f33e77] [cursor=pointer]:
+                - text: LAPORAN
+                - generic [ref=f33e80]: 
+            - listitem [ref=f33e81]:
+              - generic [ref=f33e82] [cursor=pointer]:
+                - text: VALIDASI AKUN
+                - generic [ref=f33e85]: 
+            - listitem [ref=f33e86]:
+              - generic [ref=f33e87] [cursor=pointer]:
+                - text: SETTING
+                - generic [ref=f33e90]: 
+            - listitem [ref=f33e91]:
+              - generic [ref=f33e92] [cursor=pointer]:
+                - text: MASTER
+                - generic [ref=f33e95]: 
+            - listitem [ref=f33e96]:
+              - generic [ref=f33e97] [cursor=pointer]:
+                - text: PENGATURAN AKUN
+                - generic [ref=f33e100]: 
+            - listitem [ref=f33e101]:
+              - link "AKUN SAYA" [ref=f33e102] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/home/akunsaya
+            - listitem [ref=f33e105]: MENU TRANSPORTER
+            - listitem [ref=f33e106]:
+              - link "HARGA & JADWAL" [ref=f33e107] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/home/hargajadwal
+          - generic [ref=f33e112]:
+            - paragraph [ref=f33e114]: KONTAK KAMI
+            - generic [ref=f33e115]:
+              - generic [ref=f33e116]: 
+              - text: "081246665023"
+            - generic [ref=f33e117]:
+              - generic [ref=f33e118]: 
+              - text: "081246665023"
+            - generic [ref=f33e119]:
+              - generic [ref=f33e120]: 
+              - text: csct@prahu-hub.com
+            - generic [ref=f33e121]:
+              - link [ref=f33e122] [cursor=pointer]:
+                - /url: https://facebook.com/sosmed.phbid
+              - link [ref=f33e124] [cursor=pointer]:
+                - /url: https://twitter.com/PrahuHub
+              - link [ref=f33e126] [cursor=pointer]:
+                - /url: https://instagram.com/phbid_/
+              - link [ref=f33e128] [cursor=pointer]:
+                - /url: https://www.youtube.com/channel/UC41VntroP3zKmXZYnGgtFdw
+              - link [ref=f33e130] [cursor=pointer]:
+                - /url: http://linkedin.com/in/ph-bid-aa5393211/
+      - generic [ref=f33e132]:
+        - generic [ref=f33e133]:
+          - generic [ref=f33e136]:
+            - link "Beranda" [ref=f33e138] [cursor=pointer]:
+              - /url: https://phbidlautdemo.prahu-hub.com/lelang/listLelang
+            - text: /
+            - link "Rule Reminder" [ref=f33e140] [cursor=pointer]:
+              - /url: https://phbidlautdemo.prahu-hub.com/adminprahu/reminder
+            - text: / Setting Rule Reminder
+          - generic [ref=f33e142]:
+            - paragraph [ref=f33e143]: Setting Rule Reminder
+            - button " Kembali" [ref=f33e144] [cursor=pointer]:
+              - generic [ref=f33e145]: 
+              - text: Kembali
+          - generic [ref=f33e147]:
+            - generic [ref=f33e148]:
+              - generic [ref=f33e149]: STUFFING
+              - generic [ref=f33e151]:
+                - generic [ref=f33e152]:
+                  - generic [ref=f33e153]: Berulang Setiap
+                  - textbox [disabled] [ref=f33e154]: 1 Hari
+                  - text: Reminder dikirim setiap 1 hari ke petugas
+                - generic [ref=f33e155]:
+                  - generic [ref=f33e156]:
+                    - text: Trigger by
+                    - generic [ref=f33e157]: 
+                  - textbox [disabled] [ref=f33e158]: Tanggal Permintaan Muat Shipper
+                - generic [ref=f33e160]:
+                  - generic [ref=f33e161]:
+                    - generic [ref=f33e162]: Rule Trigger (by day) *
+                    - spinbutton "0" [ref=f33e163]
+                    - generic [ref=f33e164]: +
+                    - generic [ref=f33e165]: Hari
+                    - text: Setting Reminder berfungsi setelah X hari
+                  - generic [ref=f33e166]:
+                    - generic [ref=f33e167]: Status Reminder Update APK *
+                    - combobox [ref=f33e168]
+                    - combobox [ref=f33e171] [cursor=pointer]:
+                      - textbox "Aktif" [ref=f33e172]
+                    - text: Push Notif Reminder Update APK
+            - generic [ref=f33e174]:
+              - link [ref=f33e175] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/adminprahu/reminder
+                - button "Batal" [ref=f33e176]
+              - button " Simpan" [ref=f33e177] [cursor=pointer]:
+                - generic [ref=f33e178]: 
+                - text: Simpan
+        - paragraph [ref=f33e184]: © BETA 20260228 v1.3.28 - PH Bid Laut | Digital Logistic Platform
+  - text:  

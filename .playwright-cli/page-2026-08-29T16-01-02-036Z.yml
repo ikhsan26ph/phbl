@@ -1,0 +1,297 @@
+- generic [active] [ref=f29e1]:
+  - generic [ref=f29e2]:
+    - generic [ref=f29e3]:
+      - generic [ref=f29e4]:
+        - link [ref=f29e6] [cursor=pointer]:
+          - /url: https://phbidlautdemo.prahu-hub.com/
+        - button [ref=f29e10] [cursor=pointer]
+      - text:  
+      - generic [ref=f29e13]:
+        - generic [ref=f29e14]:
+          - generic [ref=f29e15]: Admin PH Bid
+          - button "Administrator" [ref=f29e17]
+        - text: 
+        - generic [ref=f29e21]:
+          - generic [ref=f29e22]:
+            - generic [ref=f29e23]: Admin PH Bid
+            - generic [ref=f29e24]: prahu.bid20@gmail.com
+          - generic [ref=f29e25]: 
+          - link "" [ref=f29e28] [cursor=pointer]:
+            - /url: https://phbidlautdemo.prahu-hub.com/home/notification
+          - link [ref=f29e35] [cursor=pointer]:
+            - /url: https://phbidlautdemo.prahu-hub.com/user/do_logout
+    - generic [ref=f29e38]:
+      - generic [ref=f29e39]:
+        - text: 
+        - generic [ref=f29e40]:
+          - list [ref=f29e42]:
+            - listitem
+            - listitem [ref=f29e43]:
+              - link "CARI PENAWARAN" [ref=f29e44] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/lelang/carirute
+            - listitem [ref=f29e45]: MENU ADMIN
+            - listitem [ref=f29e46]:
+              - generic [ref=f29e47] [cursor=pointer]:
+                - text: DASHBOARD
+                - generic [ref=f29e50]: 
+            - listitem [ref=f29e51]:
+              - generic [ref=f29e52] [cursor=pointer]:
+                - text: ANALITIK
+                - generic [ref=f29e55]: 
+            - listitem [ref=f29e56]:
+              - link "PENGAJUAN LELANG" [ref=f29e57] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/lelang/listlelang
+            - listitem [ref=f29e60]:
+              - link "PENGAJUAN NEGO" [ref=f29e61] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/lelang/pengajuannego
+            - listitem [ref=f29e64]:
+              - link [ref=f29e65] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/order/orderlist
+            - listitem [ref=f29e68]:
+              - link "PENUGASAN TRACKING" [ref=f29e69] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/home/penugasantracking
+            - listitem [ref=f29e72]:
+              - link "CEK JADWAL" [ref=f29e73] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/lelang/carijadwal
+            - listitem [ref=f29e76]:
+              - generic [ref=f29e77] [cursor=pointer]:
+                - text: LAPORAN
+                - generic [ref=f29e80]: 
+            - listitem [ref=f29e81]:
+              - generic [ref=f29e82] [cursor=pointer]:
+                - text: VALIDASI AKUN
+                - generic [ref=f29e85]: 
+            - listitem [ref=f29e86]:
+              - generic [ref=f29e87] [cursor=pointer]:
+                - text: SETTING
+                - generic [ref=f29e90]: 
+            - listitem [ref=f29e91]:
+              - generic [ref=f29e92] [cursor=pointer]:
+                - text: MASTER
+                - generic [ref=f29e95]: 
+            - listitem [ref=f29e96]:
+              - generic [ref=f29e97] [cursor=pointer]:
+                - text: PENGATURAN AKUN
+                - generic [ref=f29e100]: 
+            - listitem [ref=f29e101]:
+              - link "AKUN SAYA" [ref=f29e102] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/home/akunsaya
+            - listitem [ref=f29e105]: MENU TRANSPORTER
+            - listitem [ref=f29e106]:
+              - link "HARGA & JADWAL" [ref=f29e107] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/home/hargajadwal
+          - generic [ref=f29e112]:
+            - paragraph [ref=f29e114]: KONTAK KAMI
+            - generic [ref=f29e115]:
+              - generic [ref=f29e116]: 
+              - text: "081246665023"
+            - generic [ref=f29e117]:
+              - generic [ref=f29e118]: 
+              - text: "081246665023"
+            - generic [ref=f29e119]:
+              - generic [ref=f29e120]: 
+              - text: csct@prahu-hub.com
+            - generic [ref=f29e121]:
+              - link [ref=f29e122] [cursor=pointer]:
+                - /url: https://facebook.com/sosmed.phbid
+              - link [ref=f29e124] [cursor=pointer]:
+                - /url: https://twitter.com/PrahuHub
+              - link [ref=f29e126] [cursor=pointer]:
+                - /url: https://instagram.com/phbid_/
+              - link [ref=f29e128] [cursor=pointer]:
+                - /url: https://www.youtube.com/channel/UC41VntroP3zKmXZYnGgtFdw
+              - link [ref=f29e130] [cursor=pointer]:
+                - /url: http://linkedin.com/in/ph-bid-aa5393211/
+      - generic [ref=f29e132]:
+        - generic [ref=f29e133]:
+          - generic [ref=f29e136]:
+            - link "Beranda" [ref=f29e138] [cursor=pointer]:
+              - /url: https://phbidlautdemo.prahu-hub.com/lelang/listLelang
+            - text: /
+            - link "Setting General" [ref=f29e140] [cursor=pointer]:
+              - /url: https://phbidlautdemo.prahu-hub.com/adminprahu/setting_general
+            - text: / Setting Preference
+          - generic [ref=f29e142]:
+            - paragraph [ref=f29e143]: SETTING PREFERENCE
+            - button " Kembali" [ref=f29e144] [cursor=pointer]:
+              - generic [ref=f29e145]: 
+              - text: Kembali
+          - generic [ref=f29e148]:
+            - tabpanel [ref=f29e149]:
+              - generic [ref=f29e152]:
+                - generic [ref=f29e153]: "*) Preference notif digunakan hanya untuk akun utama *) Notif Email to Admin maka ditambahkan sebagai penerima utama. Sedangkan untuk email to Shipper atau Transporter maka ditambahkan sebagai Bcc"
+                - generic [ref=f29e157]: NOTIFIKASI SISTEM
+                - generic [ref=f29e159]:
+                  - generic [ref=f29e160]:
+                    - 'checkbox "Notif to Admin : Konfirmasi Perubahan Data" [checked] [ref=f29e161] [cursor=pointer]'
+                    - generic [ref=f29e162]: "Notif to Admin : Konfirmasi Perubahan Data"
+                  - generic [ref=f29e163]:
+                    - 'checkbox "Notif to Transporter : Pengajuan Lelang" [checked] [ref=f29e164] [cursor=pointer]'
+                    - generic [ref=f29e165]: "Notif to Transporter : Pengajuan Lelang"
+                  - generic [ref=f29e166]:
+                    - 'checkbox "Notif to Transporter : Lelang Dibatalkan" [checked] [ref=f29e167] [cursor=pointer]'
+                    - generic [ref=f29e168]: "Notif to Transporter : Lelang Dibatalkan"
+                  - generic [ref=f29e169]:
+                    - 'checkbox "Notif to Transporter : Pengajuan Nego" [checked] [ref=f29e170] [cursor=pointer]'
+                    - generic [ref=f29e171]: "Notif to Transporter : Pengajuan Nego"
+                  - generic [ref=f29e172]:
+                    - 'checkbox "Notif to Shipper : Nego Diterima" [checked] [ref=f29e173] [cursor=pointer]'
+                    - generic [ref=f29e174]: "Notif to Shipper : Nego Diterima"
+                  - generic [ref=f29e175]:
+                    - 'checkbox "Notif to Shipper : Nego Ditolak" [checked] [ref=f29e176] [cursor=pointer]'
+                    - generic [ref=f29e177]: "Notif to Shipper : Nego Ditolak"
+                  - generic [ref=f29e178]:
+                    - 'checkbox "Notif to Shipper : Nego Dicounter" [checked] [ref=f29e179] [cursor=pointer]'
+                    - generic [ref=f29e180]: "Notif to Shipper : Nego Dicounter"
+                  - generic [ref=f29e181]:
+                    - 'checkbox "Notif to Transporter : Request Update / Input Harga" [checked] [ref=f29e182] [cursor=pointer]'
+                    - generic [ref=f29e183]: "Notif to Transporter : Request Update / Input Harga"
+                  - generic [ref=f29e184]:
+                    - 'checkbox "Notif to Transporter : Shipper Request Jadwal" [checked] [ref=f29e185] [cursor=pointer]'
+                    - generic [ref=f29e186]: "Notif to Transporter : Shipper Request Jadwal"
+                  - generic [ref=f29e187]:
+                    - 'checkbox "Notif to Shipper : Jadwal Telah Tersedia" [checked] [ref=f29e188] [cursor=pointer]'
+                    - generic [ref=f29e189]: "Notif to Shipper : Jadwal Telah Tersedia"
+                  - generic [ref=f29e190]:
+                    - 'checkbox "Notif to Shipper : Perjanjian Pengiriman Divalidasi" [checked] [ref=f29e191] [cursor=pointer]'
+                    - generic [ref=f29e192]: "Notif to Shipper : Perjanjian Pengiriman Divalidasi"
+                  - generic [ref=f29e193]:
+                    - 'checkbox "Notif to Shipper : Perjanjian Pengiriman Ditolak" [checked] [ref=f29e194] [cursor=pointer]'
+                    - generic [ref=f29e195]: "Notif to Shipper : Perjanjian Pengiriman Ditolak"
+                  - generic [ref=f29e196]:
+                    - 'checkbox "Notif to Transporter : Perjanjian Pengiriman Berhasil Divalidasi" [checked] [ref=f29e197] [cursor=pointer]'
+                    - generic [ref=f29e198]: "Notif to Transporter : Perjanjian Pengiriman Berhasil Divalidasi"
+                  - generic [ref=f29e199]:
+                    - 'checkbox "Notif to Shipper : Transporter Melengkapi Data Unit" [checked] [ref=f29e200] [cursor=pointer]'
+                    - generic [ref=f29e201]: "Notif to Shipper : Transporter Melengkapi Data Unit"
+                - generic [ref=f29e202]:
+                  - generic [ref=f29e203]:
+                    - 'checkbox "Notif to Shipper : Perubahan Jadwal" [checked] [ref=f29e204] [cursor=pointer]'
+                    - generic [ref=f29e205]: "Notif to Shipper : Perubahan Jadwal"
+                  - generic [ref=f29e206]:
+                    - 'checkbox "Notif to Admin : PNP Edit Permintaan Muat (TEP)" [checked] [ref=f29e207] [cursor=pointer]'
+                    - generic [ref=f29e208]: "Notif to Admin : PNP Edit Permintaan Muat (TEP)"
+                  - generic [ref=f29e209]:
+                    - 'checkbox "Notif to Admin : Penilaian Order Ke Transporter" [checked] [ref=f29e210] [cursor=pointer]'
+                    - generic [ref=f29e211]: "Notif to Admin : Penilaian Order Ke Transporter"
+                  - generic [ref=f29e212]:
+                    - 'checkbox "Notif to Admin : Reminder Biaya Layanan" [checked] [ref=f29e213] [cursor=pointer]'
+                    - generic [ref=f29e214]: "Notif to Admin : Reminder Biaya Layanan"
+                  - generic [ref=f29e215]:
+                    - 'checkbox "Notif to Admin : Dokumen Tagihan Pengiriman" [ref=f29e216] [cursor=pointer]'
+                    - generic [ref=f29e217]: "Notif to Admin : Dokumen Tagihan Pengiriman"
+                  - generic [ref=f29e218]:
+                    - 'checkbox "Notif to Shipper : Stuffing" [checked] [ref=f29e219] [cursor=pointer]'
+                    - generic [ref=f29e220]: "Notif to Shipper : Stuffing"
+                  - generic [ref=f29e221]:
+                    - 'checkbox "Notif to Shipper : Kapal Berlayar" [checked] [ref=f29e222] [cursor=pointer]'
+                    - generic [ref=f29e223]: "Notif to Shipper : Kapal Berlayar"
+                  - generic [ref=f29e224]:
+                    - 'checkbox "Notif to Shipper : Kapal Sandar" [checked] [ref=f29e225] [cursor=pointer]'
+                    - generic [ref=f29e226]: "Notif to Shipper : Kapal Sandar"
+                  - generic [ref=f29e227]:
+                    - 'checkbox "Notif to Shipper : Rencana Dooring" [checked] [ref=f29e228] [cursor=pointer]'
+                    - generic [ref=f29e229]: "Notif to Shipper : Rencana Dooring"
+                  - generic [ref=f29e230]:
+                    - 'checkbox "Notif to Shipper : Dooring" [checked] [ref=f29e231] [cursor=pointer]'
+                    - generic [ref=f29e232]: "Notif to Shipper : Dooring"
+                  - generic [ref=f29e233]:
+                    - 'checkbox "Notif to Shipper : SJ Diterima Agen" [checked] [ref=f29e234] [cursor=pointer]'
+                    - generic [ref=f29e235]: "Notif to Shipper : SJ Diterima Agen"
+                  - generic [ref=f29e236]:
+                    - 'checkbox "Notif to Admin : Validasi Order Baru" [checked] [ref=f29e237] [cursor=pointer]'
+                    - generic [ref=f29e238]: "Notif to Admin : Validasi Order Baru"
+            - tabpanel [ref=f29e239]:
+              - generic [ref=f29e242]:
+                - generic [ref=f29e243]: NOTIFIKASI EMAIL
+                - generic [ref=f29e245]:
+                  - generic [ref=f29e246]:
+                    - 'checkbox "Notif to Shipper : Registrasi Shipper (Bcc)" [checked] [ref=f29e247] [cursor=pointer]'
+                    - generic [ref=f29e248]: "Notif to Shipper : Registrasi Shipper (Bcc)"
+                  - generic [ref=f29e249]:
+                    - 'checkbox "Notif to Transporter : Registrasi Transporter (Bcc)" [checked] [ref=f29e250] [cursor=pointer]'
+                    - generic [ref=f29e251]: "Notif to Transporter : Registrasi Transporter (Bcc)"
+                  - generic [ref=f29e252]:
+                    - 'checkbox "Notif to Admin : Konfirmasi Registrasi Shipper" [checked] [ref=f29e253] [cursor=pointer]'
+                    - generic [ref=f29e254]: "Notif to Admin : Konfirmasi Registrasi Shipper"
+                  - generic [ref=f29e255]:
+                    - 'checkbox "Notif to Admin : Konfirmasi Registrasi Transporter" [checked] [ref=f29e256] [cursor=pointer]'
+                    - generic [ref=f29e257]: "Notif to Admin : Konfirmasi Registrasi Transporter"
+                  - generic [ref=f29e258]:
+                    - 'checkbox "Notif to Admin : Perubahan Data Shipper" [checked] [ref=f29e259] [cursor=pointer]'
+                    - generic [ref=f29e260]: "Notif to Admin : Perubahan Data Shipper"
+                  - generic [ref=f29e261]:
+                    - 'checkbox "Notif to Admin : Perubahan Data Transporter" [checked] [ref=f29e262] [cursor=pointer]'
+                    - generic [ref=f29e263]: "Notif to Admin : Perubahan Data Transporter"
+                  - generic [ref=f29e264]:
+                    - 'checkbox "Notif to Transporter : Pengajuan Lelang (Bcc)" [checked] [ref=f29e265] [cursor=pointer]'
+                    - generic [ref=f29e266]: "Notif to Transporter : Pengajuan Lelang (Bcc)"
+                  - generic [ref=f29e267]:
+                    - 'checkbox "Notif to Transporter : Lelang Dibatalkan (Bcc)" [checked] [ref=f29e268] [cursor=pointer]'
+                    - generic [ref=f29e269]: "Notif to Transporter : Lelang Dibatalkan (Bcc)"
+                  - generic [ref=f29e270]:
+                    - 'checkbox "Notif to Transporter : Kalah Lelang (Bcc)" [checked] [ref=f29e271] [cursor=pointer]'
+                    - generic [ref=f29e272]: "Notif to Transporter : Kalah Lelang (Bcc)"
+                  - generic [ref=f29e273]:
+                    - 'checkbox "Notif to Transporter : Pengajuan Nego (Bcc)" [checked] [ref=f29e274] [cursor=pointer]'
+                    - generic [ref=f29e275]: "Notif to Transporter : Pengajuan Nego (Bcc)"
+                  - generic [ref=f29e276]:
+                    - 'checkbox "Notif to Transporter : Request Update Harga (Bcc)" [checked] [ref=f29e277] [cursor=pointer]'
+                    - generic [ref=f29e278]: "Notif to Transporter : Request Update Harga (Bcc)"
+                  - generic [ref=f29e279]:
+                    - 'checkbox "Notif to Admin : Order Baru" [checked] [ref=f29e280] [cursor=pointer]'
+                    - generic [ref=f29e281]: "Notif to Admin : Order Baru"
+                  - generic [ref=f29e282]:
+                    - 'checkbox "Notif to Admin : Shipper Submit Perjanjian" [checked] [ref=f29e283] [cursor=pointer]'
+                    - generic [ref=f29e284]: "Notif to Admin : Shipper Submit Perjanjian"
+                  - generic [ref=f29e285]:
+                    - 'checkbox "Notif to Shipper : Perjanjian Diterima (Bcc)" [checked] [ref=f29e286] [cursor=pointer]'
+                    - generic [ref=f29e287]: "Notif to Shipper : Perjanjian Diterima (Bcc)"
+                  - generic [ref=f29e288]:
+                    - 'checkbox "Notif to Shipper : Perjanjian Ditolak (Bcc)" [checked] [ref=f29e289] [cursor=pointer]'
+                    - generic [ref=f29e290]: "Notif to Shipper : Perjanjian Ditolak (Bcc)"
+                - generic [ref=f29e291]:
+                  - generic [ref=f29e292]:
+                    - 'checkbox "Notif to Transporter : Order Baru Telah Divalidasi Admin (Bcc)" [checked] [ref=f29e293] [cursor=pointer]'
+                    - generic [ref=f29e294]: "Notif to Transporter : Order Baru Telah Divalidasi Admin (Bcc)"
+                  - generic [ref=f29e295]:
+                    - 'checkbox "Notif to Shipper : Transporter Melengkapi Data Unit (Bcc)" [checked] [ref=f29e296] [cursor=pointer]'
+                    - generic [ref=f29e297]: "Notif to Shipper : Transporter Melengkapi Data Unit (Bcc)"
+                  - generic [ref=f29e298]:
+                    - 'checkbox "Notif to Shipper : Perubahan Jadwal (Bcc)" [checked] [ref=f29e299] [cursor=pointer]'
+                    - generic [ref=f29e300]: "Notif to Shipper : Perubahan Jadwal (Bcc)"
+                  - generic [ref=f29e301]:
+                    - 'checkbox "Notif Tracking : Stuffing (To)" [checked] [ref=f29e302] [cursor=pointer]'
+                    - generic [ref=f29e303]: "Notif Tracking : Stuffing (To)"
+                  - generic [ref=f29e304]:
+                    - 'checkbox "Notif Tracking : Kapal Berlayar (To)" [checked] [ref=f29e305] [cursor=pointer]'
+                    - generic [ref=f29e306]: "Notif Tracking : Kapal Berlayar (To)"
+                  - generic [ref=f29e307]:
+                    - 'checkbox "Notif Tracking : Kapal Sandar (To)" [checked] [ref=f29e308] [cursor=pointer]'
+                    - generic [ref=f29e309]: "Notif Tracking : Kapal Sandar (To)"
+                  - generic [ref=f29e310]:
+                    - 'checkbox "Notif Tracking : Rencana Dooring (To)" [checked] [ref=f29e311] [cursor=pointer]'
+                    - generic [ref=f29e312]: "Notif Tracking : Rencana Dooring (To)"
+                  - generic [ref=f29e313]:
+                    - 'checkbox "Notif Tracking : Dooring (To)" [checked] [ref=f29e314] [cursor=pointer]'
+                    - generic [ref=f29e315]: "Notif Tracking : Dooring (To)"
+                  - generic [ref=f29e316]:
+                    - 'checkbox "Notif Tracking : SJ Diterima Agen (To)" [checked] [ref=f29e317] [cursor=pointer]'
+                    - generic [ref=f29e318]: "Notif Tracking : SJ Diterima Agen (To)"
+                  - generic [ref=f29e319]:
+                    - 'checkbox "Notif to Admin : Penilaian Order" [checked] [ref=f29e320] [cursor=pointer]'
+                    - generic [ref=f29e321]: "Notif to Admin : Penilaian Order"
+                  - generic [ref=f29e322]:
+                    - 'checkbox "Notif to Admin : Reminder Biaya Layanan" [checked] [ref=f29e323] [cursor=pointer]'
+                    - generic [ref=f29e324]: "Notif to Admin : Reminder Biaya Layanan"
+                  - generic [ref=f29e325]:
+                    - 'checkbox "Notif to Admin : Upload Dokumen Tagihan" [ref=f29e326] [cursor=pointer]'
+                    - generic [ref=f29e327]: "Notif to Admin : Upload Dokumen Tagihan"
+            - generic [ref=f29e329]:
+              - link "Batal" [ref=f29e330] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/lelang/listlelang
+              - button " Simpan" [ref=f29e331] [cursor=pointer]:
+                - generic [ref=f29e332]: 
+                - text: Simpan
+        - paragraph [ref=f29e338]: © BETA 20260228 v1.3.28 - PH Bid Laut | Digital Logistic Platform
+  - text:  

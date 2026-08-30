@@ -1,0 +1,32 @@
+[     800ms] Cannot use import statement outside a module
+[     837ms] ReferenceError: Chart is not defined
+    at https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/js/scripts-init/charts/chartjs.js:8:13
+[    1027ms] Unexpected token '<'
+[    1028ms] Unexpected token '<'
+[    1102ms] Uncaught TypeError: expect element to be DOM Element, but got null
+    at n.init (https://cdnjs.cloudflare.com/ajax/libs/smooth-scrollbar/8.5.2/smooth-scrollbar.js:24:264)
+    at <anonymous> (https://phbidlautdemo.prahu-hub.com/adminprahu/masterDP:5360:14)
+[    1142ms] [LOG] Masternamanya @ https://phbidlautdemo.prahu-hub.com/adminprahu/masterDP:2040
+[    1153ms] [LOG] undefined @ https://phbidlautdemo.prahu-hub.com/adminprahu/masterDP:5713
+[    1154ms] [LOG] Masukkan Nama Dokumen Penagihan @ https://phbidlautdemo.prahu-hub.com/adminprahu/masterDP:5713
+[    1154ms] [LOG] undefined @ https://phbidlautdemo.prahu-hub.com/adminprahu/masterDP:5713
+[    1154ms] [LOG] Masukkan Nama Dokumen Penagihan @ https://phbidlautdemo.prahu-hub.com/adminprahu/masterDP:5713
+[    1154ms] [LOG] undefined @ https://phbidlautdemo.prahu-hub.com/adminprahu/masterDP:5713
+[    1155ms] [LOG] WebSocket connection @ https://phbidlautdemo.prahu-hub.com/adminprahu/masterDP:5756
+[    1155ms] [LOG] WebSocket connection attempting... @ https://phbidlautdemo.prahu-hub.com/adminprahu/masterDP:5834
+[    1328ms] [LOG] [Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object] @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/masterDP.js?m=1787972929:111
+[    1334ms] [LOG] 12 @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/masterDP.js?m=1787972929:749
+[    1334ms] [LOG] 12 countView1 1 pageNow 20 limitView1 @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/masterDP.js?m=1787972929:751
+[    1334ms] [LOG] 12 @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/masterDP.js?m=1787972929:757
+[    1334ms] [LOG] 12 jumlah data @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/masterDP.js?m=1787972929:726
+[    1335ms] [LOG] 1 @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/masterDP.js?m=1787972929:728
+[    1335ms] [LOG] 1 1 pageCount & pageNow @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/masterDP.js?m=1787972929:652
+[    1336ms] [LOG] 200 xhrglobal @ https://phbidlautdemo.prahu-hub.com/adminprahu/masterDP:5687
+[    1337ms] [LOG] ce.fn.init stepItem @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/masterDP.js?m=1787972929:626
+[    1343ms] [LOG] WebSocket connected @ https://phbidlautdemo.prahu-hub.com/adminprahu/masterDP:5765
+[    1381ms] [LOG] update_dashboard_order_laut @ https://phbidlautdemo.prahu-hub.com/adminprahu/masterDP:5806
+[    1385ms] [LOG] Connected @ https://phbidlautdemo.prahu-hub.com/adminprahu/masterDP:5806
+[    1464ms] [LOG] 200 xhrglobal @ https://phbidlautdemo.prahu-hub.com/adminprahu/masterDP:5687
+[    1516ms] [LOG] 200 xhrglobal @ https://phbidlautdemo.prahu-hub.com/adminprahu/masterDP:5687
+[    3153ms] TypeError: $(...).DataTable is not a function
+    at https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/js/scripts-init/tables.js:7:23

@@ -1,0 +1,141 @@
+- generic [active] [ref=f22e1]:
+  - generic [ref=f22e2]:
+    - generic [ref=f22e3]:
+      - generic [ref=f22e4]:
+        - link [ref=f22e6] [cursor=pointer]:
+          - /url: https://phbidlautdemo.prahu-hub.com/
+        - button [ref=f22e10] [cursor=pointer]
+      - text:  
+      - generic [ref=f22e13]:
+        - generic [ref=f22e14]:
+          - generic [ref=f22e15]: Admin PH Bid
+          - button "Administrator" [ref=f22e17]
+        - text: 
+        - generic [ref=f22e21]:
+          - generic [ref=f22e22]:
+            - generic [ref=f22e23]: Admin PH Bid
+            - generic [ref=f22e24]: prahu.bid20@gmail.com
+          - generic [ref=f22e25]: 
+          - link "" [ref=f22e28] [cursor=pointer]:
+            - /url: https://phbidlautdemo.prahu-hub.com/home/notification
+          - link [ref=f22e35] [cursor=pointer]:
+            - /url: https://phbidlautdemo.prahu-hub.com/user/do_logout
+    - generic [ref=f22e38]:
+      - generic [ref=f22e39]:
+        - text: 
+        - generic [ref=f22e40]:
+          - list [ref=f22e42]:
+            - listitem
+            - listitem [ref=f22e43]:
+              - link "CARI PENAWARAN" [ref=f22e44] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/lelang/carirute
+            - listitem [ref=f22e45]: MENU ADMIN
+            - listitem [ref=f22e46]:
+              - generic [ref=f22e47] [cursor=pointer]:
+                - text: DASHBOARD
+                - generic [ref=f22e50]: 
+            - listitem [ref=f22e51]:
+              - generic [ref=f22e52] [cursor=pointer]:
+                - text: ANALITIK
+                - generic [ref=f22e55]: 
+            - listitem [ref=f22e56]:
+              - link "PENGAJUAN LELANG" [ref=f22e57] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/lelang/listlelang
+            - listitem [ref=f22e60]:
+              - link "PENGAJUAN NEGO" [ref=f22e61] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/lelang/pengajuannego
+            - listitem [ref=f22e64]:
+              - link [ref=f22e65] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/order/orderlist
+            - listitem [ref=f22e68]:
+              - link "PENUGASAN TRACKING" [ref=f22e69] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/home/penugasantracking
+            - listitem [ref=f22e72]:
+              - link "CEK JADWAL" [ref=f22e73] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/lelang/carijadwal
+            - listitem [ref=f22e76]:
+              - generic [ref=f22e77] [cursor=pointer]:
+                - text: LAPORAN
+                - generic [ref=f22e80]: 
+            - listitem [ref=f22e81]:
+              - generic [ref=f22e82] [cursor=pointer]:
+                - text: VALIDASI AKUN
+                - generic [ref=f22e85]: 
+            - listitem [ref=f22e86]:
+              - generic [ref=f22e87] [cursor=pointer]:
+                - text: SETTING
+                - generic [ref=f22e90]: 
+            - listitem [ref=f22e91]:
+              - generic [ref=f22e92] [cursor=pointer]:
+                - text: MASTER
+                - generic [ref=f22e95]: 
+            - listitem [ref=f22e96]:
+              - generic [ref=f22e97] [cursor=pointer]:
+                - text: PENGATURAN AKUN
+                - generic [ref=f22e100]: 
+            - listitem [ref=f22e101]:
+              - link "AKUN SAYA" [ref=f22e102] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/home/akunsaya
+            - listitem [ref=f22e105]: MENU TRANSPORTER
+            - listitem [ref=f22e106]:
+              - link "HARGA & JADWAL" [ref=f22e107] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/home/hargajadwal
+          - generic [ref=f22e112]:
+            - paragraph [ref=f22e114]: KONTAK KAMI
+            - generic [ref=f22e115]:
+              - generic [ref=f22e116]: 
+              - text: "081246665023"
+            - generic [ref=f22e117]:
+              - generic [ref=f22e118]: 
+              - text: "081246665023"
+            - generic [ref=f22e119]:
+              - generic [ref=f22e120]: 
+              - text: csct@prahu-hub.com
+            - generic [ref=f22e121]:
+              - link [ref=f22e122] [cursor=pointer]:
+                - /url: https://facebook.com/sosmed.phbid
+              - link [ref=f22e124] [cursor=pointer]:
+                - /url: https://twitter.com/PrahuHub
+              - link [ref=f22e126] [cursor=pointer]:
+                - /url: https://instagram.com/phbid_/
+              - link [ref=f22e128] [cursor=pointer]:
+                - /url: https://www.youtube.com/channel/UC41VntroP3zKmXZYnGgtFdw
+              - link [ref=f22e130] [cursor=pointer]:
+                - /url: http://linkedin.com/in/ph-bid-aa5393211/
+      - generic [ref=f22e132]:
+        - generic [ref=f22e133]:
+          - generic [ref=f22e136]:
+            - link "Beranda" [ref=f22e138] [cursor=pointer]:
+              - /url: https://phbidlautdemo.prahu-hub.com/lelang/listLelang
+            - text: / Setting Pajak
+          - generic [ref=f22e139]: SETTING PAJAK
+          - text:  
+          - table [ref=f22e143]:
+            - rowgroup [ref=f22e144]:
+              - row [ref=f22e145]:
+                - columnheader "Nama Item" [ref=f22e146]
+                - columnheader "Nilai" [ref=f22e147]
+                - columnheader "Aksi" [ref=f22e148]
+              - row [ref=f22e149]:
+                - cell [ref=f22e150]
+            - rowgroup [ref=f22e151]:
+              - row [ref=f22e152]:
+                - cell [ref=f22e153]
+              - row [ref=f22e154]:
+                - cell "PPN" [ref=f22e155]
+                - cell "1,1%" [ref=f22e156]
+                - cell [ref=f22e157]:
+                  - button " Setting" [ref=f22e158] [cursor=pointer]:
+                    - generic [ref=f22e159]: 
+                    - text: Setting
+              - row [ref=f22e160]:
+                - cell "PPh" [ref=f22e161]
+                - cell "2%" [ref=f22e162]
+                - cell [ref=f22e163]:
+                  - button " Setting" [ref=f22e164] [cursor=pointer]:
+                    - generic [ref=f22e165]: 
+                    - text: Setting
+              - row [ref=f22e166]:
+                - cell [ref=f22e167]
+        - paragraph [ref=f22e173]: © BETA 20260228 v1.3.28 - PH Bid Laut | Digital Logistic Platform
+  - text:   

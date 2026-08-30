@@ -1,0 +1,170 @@
+- generic [ref=f25e1]:
+  - generic [ref=f25e2]:
+    - generic [ref=f25e3]:
+      - generic [ref=f25e4]:
+        - link [ref=f25e6] [cursor=pointer]:
+          - /url: https://phbidlautdemo.prahu-hub.com/
+        - button [ref=f25e10] [cursor=pointer]
+      - text:  
+      - generic [ref=f25e13]:
+        - generic [ref=f25e14]:
+          - generic [ref=f25e15]: Admin PH Bid
+          - button "Administrator" [ref=f25e17]
+        - text: 
+        - generic [ref=f25e21]:
+          - generic [ref=f25e22]:
+            - generic [ref=f25e23]: Admin PH Bid
+            - generic [ref=f25e24]: prahu.bid20@gmail.com
+          - generic [ref=f25e25]: 
+          - link "" [ref=f25e28] [cursor=pointer]:
+            - /url: https://phbidlautdemo.prahu-hub.com/home/notification
+          - link [ref=f25e35] [cursor=pointer]:
+            - /url: https://phbidlautdemo.prahu-hub.com/user/do_logout
+    - generic [ref=f25e38]:
+      - generic [ref=f25e39]:
+        - text: 
+        - generic [ref=f25e40]:
+          - list [ref=f25e42]:
+            - listitem
+            - listitem [ref=f25e43]:
+              - link "CARI PENAWARAN" [ref=f25e44] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/lelang/carirute
+            - listitem [ref=f25e45]: MENU ADMIN
+            - listitem [ref=f25e46]:
+              - generic [ref=f25e47] [cursor=pointer]:
+                - text: DASHBOARD
+                - generic [ref=f25e50]: 
+            - listitem [ref=f25e51]:
+              - generic [ref=f25e52] [cursor=pointer]:
+                - text: ANALITIK
+                - generic [ref=f25e55]: 
+            - listitem [ref=f25e56]:
+              - link "PENGAJUAN LELANG" [ref=f25e57] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/lelang/listlelang
+            - listitem [ref=f25e60]:
+              - link "PENGAJUAN NEGO" [ref=f25e61] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/lelang/pengajuannego
+            - listitem [ref=f25e64]:
+              - link "DAFTAR ORDER" [ref=f25e65] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/order/orderlist
+            - listitem [ref=f25e68]:
+              - link "PENUGASAN TRACKING" [ref=f25e69] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/home/penugasantracking
+            - listitem [ref=f25e72]:
+              - link "CEK JADWAL" [ref=f25e73] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/lelang/carijadwal
+            - listitem [ref=f25e76]:
+              - generic [ref=f25e77] [cursor=pointer]:
+                - text: LAPORAN
+                - generic [ref=f25e80]: 
+            - listitem [ref=f25e81]:
+              - generic [ref=f25e82] [cursor=pointer]:
+                - text: VALIDASI AKUN
+                - generic [ref=f25e85]: 
+            - listitem [ref=f25e86]:
+              - generic [ref=f25e87] [cursor=pointer]:
+                - text: SETTING
+                - generic [ref=f25e90]: 
+              - list [ref=f25e162]:
+                - listitem [ref=f25e163]:
+                  - link "General" [ref=f25e164] [cursor=pointer]:
+                    - /url: https://phbidlautdemo.prahu-hub.com/adminprahu/setting_general
+                - listitem [ref=f25e165]:
+                  - link "S&K Booking" [ref=f25e166] [cursor=pointer]:
+                    - /url: https://phbidlautdemo.prahu-hub.com/adminprahu/syaratdanketentuan
+                - listitem [ref=f25e167]:
+                  - link "Reminder" [ref=f25e168] [cursor=pointer]:
+                    - /url: https://phbidlautdemo.prahu-hub.com/adminprahu/reminder
+                - listitem [ref=f25e169]:
+                  - link "Setting Notifikasi" [ref=f25e170] [cursor=pointer]:
+                    - /url: https://phbidlautdemo.prahu-hub.com/adminprahu/settingNotifonof
+                - listitem [ref=f25e171]:
+                  - link "Setting Pajak" [ref=f25e172] [cursor=pointer]:
+                    - /url: https://phbidlautdemo.prahu-hub.com/adminprahu/settingpajak
+            - listitem [ref=f25e91]:
+              - generic [ref=f25e92] [cursor=pointer]:
+                - text: MASTER
+                - generic [ref=f25e95]: 
+            - listitem [ref=f25e96]:
+              - generic [ref=f25e97] [cursor=pointer]:
+                - text: PENGATURAN AKUN
+                - generic [ref=f25e100]: 
+            - listitem [ref=f25e101]:
+              - link "AKUN SAYA" [ref=f25e102] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/home/akunsaya
+            - listitem [ref=f25e105]: MENU TRANSPORTER
+            - listitem [ref=f25e106]:
+              - link "HARGA & JADWAL" [ref=f25e107] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/home/hargajadwal
+          - generic [ref=f25e112]:
+            - paragraph [ref=f25e114]: KONTAK KAMI
+            - generic [ref=f25e115]:
+              - generic [ref=f25e116]: 
+              - text: "081246665023"
+            - generic [ref=f25e117]:
+              - generic [ref=f25e118]: 
+              - text: "081246665023"
+            - generic [ref=f25e119]:
+              - generic [ref=f25e120]: 
+              - text: csct@prahu-hub.com
+            - generic [ref=f25e121]:
+              - link [ref=f25e122] [cursor=pointer]:
+                - /url: https://facebook.com/sosmed.phbid
+              - link [ref=f25e124] [cursor=pointer]:
+                - /url: https://twitter.com/PrahuHub
+              - link [ref=f25e126] [cursor=pointer]:
+                - /url: https://instagram.com/phbid_/
+              - link [ref=f25e128] [cursor=pointer]:
+                - /url: https://www.youtube.com/channel/UC41VntroP3zKmXZYnGgtFdw
+              - link [ref=f25e130] [cursor=pointer]:
+                - /url: http://linkedin.com/in/ph-bid-aa5393211/
+      - generic [ref=f25e132]:
+        - generic [ref=f25e133]:
+          - generic [ref=f25e136]:
+            - link "Beranda" [ref=f25e138] [cursor=pointer]:
+              - /url: https://phbidlautdemo.prahu-hub.com/lelang/listLelang
+            - text: / Setting Notifikasi
+          - generic [ref=f25e139]: SETTING NOTIFIKASI
+          - generic [ref=f25e144]:
+            - generic [ref=f25e145]:
+              - text: 
+              - generic [ref=f25e146]: Setting notifikasi email dan whatsapp untuk menghemat kuota saat simulasi sistem
+              - button " Setting" [active] [ref=f25e148] [cursor=pointer]:
+                - generic [ref=f25e149]: 
+                - text: Setting
+            - generic [ref=f25e150]:
+              - generic [ref=f25e151]: Push Notifikasi ON *) Notif to Shipper, Transporter, Petugas (Apk Tracking) dan Admin
+              - generic [ref=f25e152]: Notifikasi Email ON *) Notif email to Shipper, Sales, Transporter, dan Admin
+              - generic [ref=f25e153]: Notifikasi Whatsapp ON *) Notif whatsapp to Shipper, Sales, Penerima Barang, Transporter, Petugas, dan Admin
+        - paragraph [ref=f25e159]: © BETA 20260228 v1.3.28 - PH Bid Laut | Digital Logistic Platform
+  - dialog "SETTING NOTIFIKASI Push Notifikasi Status Notifikasi *) Notif to Shipper, Transporter, Petugas (Apk Tracking) dan Admin ON Notifikasi Email Status Notifikasi *) Notif email to Shipper, Sales, Transporter, dan Admin ON Notifikasi WhatsApp Status Notifikasi *) Notif whatsapp to Shipper, Sales, Penerima Barang, Transporter, Petugas, dan Admin ON Batal  Simpan" [ref=f25e173]:
+    - document:
+      - generic [ref=f25e174]:
+        - heading "SETTING NOTIFIKASI" [level=5] [ref=f25e176]
+        - generic [ref=f25e177]:
+          - generic [ref=f25e178]:
+            - generic [ref=f25e179]:
+              - text: Push Notifikasi
+              - generic [ref=f25e180]: Status Notifikasi
+            - generic [ref=f25e181]:
+              - generic [ref=f25e182]: "*) Notif to Shipper, Transporter, Petugas (Apk Tracking) dan Admin"
+              - generic [ref=f25e183]: "ON"
+            - generic [ref=f25e186]:
+              - text: Notifikasi Email
+              - generic [ref=f25e187]: Status Notifikasi
+            - generic [ref=f25e188]:
+              - generic [ref=f25e189]: "*) Notif email to Shipper, Sales, Transporter, dan Admin"
+              - generic [ref=f25e190]: "ON"
+            - generic [ref=f25e193]:
+              - text: Notifikasi WhatsApp
+              - generic [ref=f25e194]: Status Notifikasi
+            - generic [ref=f25e195]:
+              - generic [ref=f25e196]: "*) Notif whatsapp to Shipper, Sales, Penerima Barang, Transporter, Petugas, dan Admin"
+              - generic [ref=f25e198]: "ON"
+          - generic [ref=f25e201]:
+            - link "Batal" [ref=f25e202] [cursor=pointer]:
+              - /url: https://phbidlautdemo.prahu-hub.com/adminprahu/setting_template_chat
+            - button " Simpan" [ref=f25e203] [cursor=pointer]:
+              - generic [ref=f25e204]: 
+              - text: Simpan
+  - text:  

@@ -1,0 +1,570 @@
+- generic [ref=f39e1]:
+  - generic [ref=f39e2]:
+    - generic [ref=f39e3]:
+      - generic [ref=f39e4]:
+        - link [ref=f39e6] [cursor=pointer]:
+          - /url: https://phbidlautdemo.prahu-hub.com/
+        - button [ref=f39e10] [cursor=pointer]
+      - text:  
+      - generic [ref=f39e13]:
+        - generic [ref=f39e14]:
+          - generic [ref=f39e15]: Admin PH Bid
+          - button [ref=f39e208]: Administrator
+        - text: 
+        - generic [ref=f39e21]:
+          - generic [ref=f39e22]:
+            - generic [ref=f39e23]: Admin PH Bid
+            - generic [ref=f39e24]: prahu.bid20@gmail.com
+          - generic [ref=f39e25]: 
+          - link [ref=f39e209] [cursor=pointer]:
+            - /url: https://phbidlautdemo.prahu-hub.com/home/notification
+            - generic [ref=f39e29]: 
+          - link [ref=f39e211] [cursor=pointer]:
+            - /url: https://phbidlautdemo.prahu-hub.com/user/do_logout
+            - text: KELUAR
+    - generic [ref=f39e38]:
+      - generic [ref=f39e39]:
+        - text: 
+        - generic [ref=f39e40]:
+          - list [ref=f39e42]:
+            - listitem [ref=f39e43]:
+              - link [ref=f39e212] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/lelang/carirute
+                - text: CARI PENAWARAN
+            - listitem [ref=f39e45]: MENU ADMIN
+            - listitem [ref=f39e46]:
+              - generic [ref=f39e47] [cursor=pointer]:
+                - text: DASHBOARD
+                - generic [ref=f39e50]: 
+            - listitem [ref=f39e51]:
+              - generic [ref=f39e52] [cursor=pointer]:
+                - text: ANALITIK
+                - generic [ref=f39e55]: 
+            - listitem [ref=f39e56]:
+              - link [ref=f39e213] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/lelang/listlelang
+                - text: PENGAJUAN LELANG
+            - listitem [ref=f39e60]:
+              - link [ref=f39e214] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/lelang/pengajuannego
+                - text: PENGAJUAN NEGO
+            - listitem [ref=f39e64]:
+              - link [ref=f39e215] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/order/orderlist
+                - text: DAFTAR ORDER
+            - listitem [ref=f39e68]:
+              - link [ref=f39e217] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/home/penugasantracking
+                - text: PENUGASAN TRACKING
+            - listitem [ref=f39e72]:
+              - link [ref=f39e218] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/lelang/carijadwal
+                - text: CEK JADWAL
+            - listitem [ref=f39e76]:
+              - generic [ref=f39e77] [cursor=pointer]:
+                - text: LAPORAN
+                - generic [ref=f39e80]: 
+            - listitem [ref=f39e81]:
+              - generic [ref=f39e82] [cursor=pointer]:
+                - text: VALIDASI AKUN
+                - generic [ref=f39e85]: 
+            - listitem [ref=f39e86]:
+              - generic [ref=f39e87] [cursor=pointer]:
+                - text: SETTING
+                - generic [ref=f39e90]: 
+            - listitem [ref=f39e91]:
+              - generic [ref=f39e92] [cursor=pointer]:
+                - text: MASTER
+                - generic [ref=f39e95]: 
+            - listitem [ref=f39e96]:
+              - generic [ref=f39e97] [cursor=pointer]:
+                - text: PENGATURAN AKUN
+                - generic [ref=f39e100]: 
+              - list [ref=f39e101]:
+                - listitem [ref=f39e102]:
+                  - link [ref=f39e219] [cursor=pointer]:
+                    - /url: https://phbidlautdemo.prahu-hub.com/home/hakaksesbidowner
+                    - text: Hak Akses Shipper
+                - listitem [ref=f39e104]:
+                  - link [ref=f39e220] [cursor=pointer]:
+                    - /url: https://phbidlautdemo.prahu-hub.com/home/subuserbidowner
+                    - text: Sub User Shipper
+                - listitem [ref=f39e106]:
+                  - link [ref=f39e221] [cursor=pointer]:
+                    - /url: https://phbidlautdemo.prahu-hub.com/home/hakaksesbidder
+                    - text: Hak Akses Transporter
+                - listitem [ref=f39e108]:
+                  - link [ref=f39e222] [cursor=pointer]:
+                    - /url: https://phbidlautdemo.prahu-hub.com/home/subuserbidder
+                    - text: Sub User Transporter
+                - listitem [ref=f39e110]:
+                  - link [ref=f39e223] [cursor=pointer]:
+                    - /url: https://phbidlautdemo.prahu-hub.com/adminprahu/hakaksesadmin
+                    - text: Hak Akses Admin
+                - listitem [ref=f39e112]:
+                  - link [ref=f39e224] [cursor=pointer]:
+                    - /url: https://phbidlautdemo.prahu-hub.com/adminprahu/subUserAdmin
+                    - text: Sub User Admin
+            - listitem [ref=f39e114]:
+              - link [ref=f39e225] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/home/akunsaya
+                - text: AKUN SAYA
+            - listitem [ref=f39e118]: MENU TRANSPORTER
+            - listitem [ref=f39e119]:
+              - link [ref=f39e226] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/home/hargajadwal
+                - text: HARGA & JADWAL
+          - generic [ref=f39e125]:
+            - paragraph [ref=f39e127]: KONTAK KAMI
+            - generic [ref=f39e128]:
+              - generic [ref=f39e129]: 
+              - text: "081246665023"
+            - generic [ref=f39e130]:
+              - generic [ref=f39e131]: 
+              - text: "081246665023"
+            - generic [ref=f39e132]:
+              - generic [ref=f39e133]: 
+              - text: csct@prahu-hub.com
+            - generic [ref=f39e134]:
+              - link [ref=f39e135] [cursor=pointer]:
+                - /url: https://facebook.com/sosmed.phbid
+              - link [ref=f39e137] [cursor=pointer]:
+                - /url: https://twitter.com/PrahuHub
+              - link [ref=f39e139] [cursor=pointer]:
+                - /url: https://instagram.com/phbid_/
+              - link [ref=f39e141] [cursor=pointer]:
+                - /url: https://www.youtube.com/channel/UC41VntroP3zKmXZYnGgtFdw
+              - link [ref=f39e143] [cursor=pointer]:
+                - /url: http://linkedin.com/in/ph-bid-aa5393211/
+      - generic [ref=f39e145]:
+        - generic [ref=f39e146]:
+          - generic [ref=f39e149]:
+            - link [ref=f39e227] [cursor=pointer]:
+              - /url: https://phbidlautdemo.prahu-hub.com/lelang/listLelang
+              - text: Beranda
+            - text: / Hak Akses Admin
+          - generic [ref=f39e153]:
+            - generic [ref=f39e154]: HAK AKSES ADMIN
+            - text:  
+            - generic [ref=f39e155]:
+              - button [ref=f39e228] [cursor=pointer]:
+                - generic [ref=f39e157]: 
+                - text: Filter
+              - link [ref=f39e229] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/adminprahu/tambah_hakaksesadmin
+                - button [ref=f39e230]:
+                  - generic [ref=f39e160]: 
+                  - text: Tambah Hak Akses
+              - generic [ref=f39e161]:
+                - text: Menampilkan
+                - combobox [ref=f39e162]
+                - text: Data
+          - text:  
+          - table [ref=f39e164]:
+            - rowgroup [ref=f39e165]:
+              - row [ref=f39e231]:
+                - columnheader [ref=f39e232] [cursor=pointer]:
+                  - generic [ref=f39e168]:
+                    - generic [ref=f39e169]: "No"
+                    - generic [ref=f39e170]: 
+                - columnheader [ref=f39e233] [cursor=pointer]:
+                  - generic [ref=f39e173]:
+                    - generic [ref=f39e174]: Nama Hak Akses
+                    - generic [ref=f39e175]: 
+                - columnheader [ref=f39e234] [cursor=pointer]:
+                  - generic [ref=f39e178]:
+                    - generic [ref=f39e179]: Deskripsi Hak Akses
+                    - generic [ref=f39e180]: 
+                - columnheader [ref=f39e235] [cursor=pointer]:
+                  - generic [ref=f39e183]:
+                    - generic [ref=f39e184]: Total Perizinan
+                    - generic [ref=f39e185]: 
+                - columnheader [ref=f39e236]: Aksi
+              - row [ref=f39e188]:
+                - cell [ref=f39e189]
+            - rowgroup [ref=f39e190]:
+              - row [ref=f39e237]:
+                - cell [ref=f39e238]
+              - row [ref=f39e239]:
+                - cell [ref=f39e240]:
+                  - generic [ref=f39e241]: "51."
+                - cell [ref=f39e242]: aaa
+                - cell [ref=f39e243]: "-"
+                - cell [ref=f39e244]: 3 Perizinan
+                - cell [ref=f39e245]:
+                  - generic [ref=f39e246]:
+                    - link [ref=f39e247] [cursor=pointer]:
+                      - /url: /adminprahu/detailHakAksesAdmin/209
+                      - button [ref=f39e248]:
+                        - generic [ref=f39e249]: 
+                    - link [ref=f39e250] [cursor=pointer]:
+                      - /url: /adminprahu/editHakAksesAdmin/209
+                      - button [ref=f39e251]:
+                        - generic [ref=f39e252]: 
+                    - button [ref=f39e253] [cursor=pointer]:
+                      - generic [ref=f39e254]: 
+              - row [ref=f39e255]:
+                - cell [ref=f39e256]:
+                  - generic [ref=f39e257]: "50."
+                - cell [ref=f39e258]: QA TEST SUBADMIN EDIT HARGA 1787901813081 - HAPUS
+                - cell [ref=f39e259]: Sementara — verifikasi penerapan izin Edit Harga ke sub admin
+                - cell [ref=f39e260]: 3 Perizinan
+                - cell [ref=f39e261]:
+                  - generic [ref=f39e262]:
+                    - link [ref=f39e263] [cursor=pointer]:
+                      - /url: /adminprahu/detailHakAksesAdmin/208
+                      - button [ref=f39e264]:
+                        - generic [ref=f39e265]: 
+                    - link [ref=f39e266] [cursor=pointer]:
+                      - /url: /adminprahu/editHakAksesAdmin/208
+                      - button [ref=f39e267]:
+                        - generic [ref=f39e268]: 
+                    - button [ref=f39e269] [cursor=pointer]:
+                      - generic [ref=f39e270]: 
+              - row [ref=f39e271]:
+                - cell [ref=f39e272]:
+                  - generic [ref=f39e273]: "49."
+                - cell [ref=f39e274]: QA TEST DETAIL CHECKBOX 1787901807275 - HAPUS
+                - cell [ref=f39e275]: Sementara — verifikasi tampilan checkbox halaman Detail
+                - cell [ref=f39e276]: 3 Perizinan
+                - cell [ref=f39e277]:
+                  - generic [ref=f39e278]:
+                    - link [ref=f39e279] [cursor=pointer]:
+                      - /url: /adminprahu/detailHakAksesAdmin/207
+                      - button [ref=f39e280]:
+                        - generic [ref=f39e281]: 
+                    - link [ref=f39e282] [cursor=pointer]:
+                      - /url: /adminprahu/editHakAksesAdmin/207
+                      - button [ref=f39e283]:
+                        - generic [ref=f39e284]: 
+                    - button [ref=f39e285] [cursor=pointer]:
+                      - generic [ref=f39e286]: 
+              - row [ref=f39e287]:
+                - cell [ref=f39e288]:
+                  - generic [ref=f39e289]: "48."
+                - cell [ref=f39e290]: QA TEST SUBADMIN EDIT HARGA 1787901409849 - HAPUS
+                - cell [ref=f39e291]: Sementara — verifikasi penerapan izin Edit Harga ke sub admin
+                - cell [ref=f39e292]: 3 Perizinan
+                - cell [ref=f39e293]:
+                  - generic [ref=f39e294]:
+                    - link [ref=f39e295] [cursor=pointer]:
+                      - /url: /adminprahu/detailHakAksesAdmin/206
+                      - button [ref=f39e296]:
+                        - generic [ref=f39e297]: 
+                    - link [ref=f39e298] [cursor=pointer]:
+                      - /url: /adminprahu/editHakAksesAdmin/206
+                      - button [ref=f39e299]:
+                        - generic [ref=f39e300]: 
+                    - button [ref=f39e301] [cursor=pointer]:
+                      - generic [ref=f39e302]: 
+              - row [ref=f39e303]:
+                - cell [ref=f39e304]:
+                  - generic [ref=f39e305]: "47."
+                - cell [ref=f39e306]: QA TEST DETAIL CHECKBOX 1787901385734 - HAPUS
+                - cell [ref=f39e307]: Sementara — verifikasi tampilan checkbox halaman Detail
+                - cell [ref=f39e308]: 3 Perizinan
+                - cell [ref=f39e309]:
+                  - generic [ref=f39e310]:
+                    - link [ref=f39e311] [cursor=pointer]:
+                      - /url: /adminprahu/detailHakAksesAdmin/205
+                      - button [ref=f39e312]:
+                        - generic [ref=f39e313]: 
+                    - link [ref=f39e314] [cursor=pointer]:
+                      - /url: /adminprahu/editHakAksesAdmin/205
+                      - button [ref=f39e315]:
+                        - generic [ref=f39e316]: 
+                    - button [ref=f39e317] [cursor=pointer]:
+                      - generic [ref=f39e318]: 
+              - row [ref=f39e319]:
+                - cell [ref=f39e320]:
+                  - generic [ref=f39e321]: "46."
+                - cell [ref=f39e322]: QA TEST SUBADMIN EDIT HARGA 1787900949982 - HAPUS
+                - cell [ref=f39e323]: Sementara — verifikasi penerapan izin Edit Harga ke sub admin
+                - cell [ref=f39e324]: 3 Perizinan
+                - cell [ref=f39e325]:
+                  - generic [ref=f39e326]:
+                    - link [ref=f39e327] [cursor=pointer]:
+                      - /url: /adminprahu/detailHakAksesAdmin/204
+                      - button [ref=f39e328]:
+                        - generic [ref=f39e329]: 
+                    - link [ref=f39e330] [cursor=pointer]:
+                      - /url: /adminprahu/editHakAksesAdmin/204
+                      - button [ref=f39e331]:
+                        - generic [ref=f39e332]: 
+                    - button [ref=f39e333] [cursor=pointer]:
+                      - generic [ref=f39e334]: 
+              - row [ref=f39e335]:
+                - cell [ref=f39e336]:
+                  - generic [ref=f39e337]: "45."
+                - cell [ref=f39e338]: QA TEST DETAIL CHECKBOX 1787900944017 - HAPUS
+                - cell [ref=f39e339]: Sementara — verifikasi tampilan checkbox halaman Detail
+                - cell [ref=f39e340]: 3 Perizinan
+                - cell [ref=f39e341]:
+                  - generic [ref=f39e342]:
+                    - link [ref=f39e343] [cursor=pointer]:
+                      - /url: /adminprahu/detailHakAksesAdmin/203
+                      - button [ref=f39e344]:
+                        - generic [ref=f39e345]: 
+                    - link [ref=f39e346] [cursor=pointer]:
+                      - /url: /adminprahu/editHakAksesAdmin/203
+                      - button [ref=f39e347]:
+                        - generic [ref=f39e348]: 
+                    - button [ref=f39e349] [cursor=pointer]:
+                      - generic [ref=f39e350]: 
+              - row [ref=f39e351]:
+                - cell [ref=f39e352]:
+                  - generic [ref=f39e353]: "44."
+                - cell [ref=f39e354]: Simpan
+                - cell [ref=f39e355]: "-"
+                - cell [ref=f39e356]: 5 Perizinan
+                - cell [ref=f39e357]:
+                  - generic [ref=f39e358]:
+                    - link [ref=f39e359] [cursor=pointer]:
+                      - /url: /adminprahu/detailHakAksesAdmin/196
+                      - button [ref=f39e360]:
+                        - generic [ref=f39e361]: 
+                    - link [ref=f39e362] [cursor=pointer]:
+                      - /url: /adminprahu/editHakAksesAdmin/196
+                      - button [ref=f39e363]:
+                        - generic [ref=f39e364]: 
+                    - button [ref=f39e365] [cursor=pointer]:
+                      - generic [ref=f39e366]: 
+              - row [ref=f39e367]:
+                - cell [ref=f39e368]:
+                  - generic [ref=f39e369]: "43."
+                - cell [ref=f39e370]: asdf
+                - cell [ref=f39e371]: asdf
+                - cell [ref=f39e372]: 285 Perizinan
+                - cell [ref=f39e373]:
+                  - generic [ref=f39e374]:
+                    - link [ref=f39e375] [cursor=pointer]:
+                      - /url: /adminprahu/detailHakAksesAdmin/192
+                      - button [ref=f39e376]:
+                        - generic [ref=f39e377]: 
+                    - link [ref=f39e378] [cursor=pointer]:
+                      - /url: /adminprahu/editHakAksesAdmin/192
+                      - button [ref=f39e379]:
+                        - generic [ref=f39e380]: 
+                    - button [ref=f39e381] [cursor=pointer]:
+                      - generic [ref=f39e382]: 
+              - row [ref=f39e383]:
+                - cell [ref=f39e384]:
+                  - generic [ref=f39e385]: "42."
+                - cell [ref=f39e386]: IK 003
+                - cell [ref=f39e387]: "-"
+                - cell [ref=f39e388]: 286 Perizinan
+                - cell [ref=f39e389]:
+                  - generic [ref=f39e390]:
+                    - link [ref=f39e391] [cursor=pointer]:
+                      - /url: /adminprahu/detailHakAksesAdmin/187
+                      - button [ref=f39e392]:
+                        - generic [ref=f39e393]: 
+                    - link [ref=f39e394] [cursor=pointer]:
+                      - /url: /adminprahu/editHakAksesAdmin/187
+                      - button [ref=f39e395]:
+                        - generic [ref=f39e396]: 
+                    - button [ref=f39e397] [cursor=pointer]:
+                      - generic [ref=f39e398]: 
+              - row [ref=f39e399]:
+                - cell [ref=f39e400]:
+                  - generic [ref=f39e401]: "41."
+                - cell [ref=f39e402]: IK 02
+                - cell [ref=f39e403]: "-"
+                - cell [ref=f39e404]: 285 Perizinan
+                - cell [ref=f39e405]:
+                  - generic [ref=f39e406]:
+                    - link [ref=f39e407] [cursor=pointer]:
+                      - /url: /adminprahu/detailHakAksesAdmin/185
+                      - button [ref=f39e408]:
+                        - generic [ref=f39e409]: 
+                    - link [ref=f39e410] [cursor=pointer]:
+                      - /url: /adminprahu/editHakAksesAdmin/185
+                      - button [ref=f39e411]:
+                        - generic [ref=f39e412]: 
+                    - button [ref=f39e413] [cursor=pointer]:
+                      - generic [ref=f39e414]: 
+              - row [ref=f39e415]:
+                - cell [ref=f39e416]:
+                  - generic [ref=f39e417]: "40."
+                - cell [ref=f39e418]: test
+                - cell [ref=f39e419]: okee
+                - cell [ref=f39e420]: 254 Perizinan
+                - cell [ref=f39e421]:
+                  - generic [ref=f39e422]:
+                    - link [ref=f39e423] [cursor=pointer]:
+                      - /url: /adminprahu/detailHakAksesAdmin/175
+                      - button [ref=f39e424]:
+                        - generic [ref=f39e425]: 
+                    - link [ref=f39e426] [cursor=pointer]:
+                      - /url: /adminprahu/editHakAksesAdmin/175
+                      - button [ref=f39e427]:
+                        - generic [ref=f39e428]: 
+                    - button [ref=f39e429] [cursor=pointer]:
+                      - generic [ref=f39e430]: 
+              - row [ref=f39e431]:
+                - cell [ref=f39e432]:
+                  - generic [ref=f39e433]: "39."
+                - cell [ref=f39e434]: Akses CTO
+                - cell [ref=f39e435]: "-"
+                - cell [ref=f39e436]: 199 Perizinan
+                - cell [ref=f39e437]:
+                  - generic [ref=f39e438]:
+                    - link [ref=f39e439] [cursor=pointer]:
+                      - /url: /adminprahu/detailHakAksesAdmin/173
+                      - button [ref=f39e440]:
+                        - generic [ref=f39e441]: 
+                    - link [ref=f39e442] [cursor=pointer]:
+                      - /url: /adminprahu/editHakAksesAdmin/173
+                      - button [ref=f39e443]:
+                        - generic [ref=f39e444]: 
+                    - button [ref=f39e445] [cursor=pointer]:
+                      - generic [ref=f39e446]: 
+              - row [ref=f39e447]:
+                - cell [ref=f39e448]:
+                  - generic [ref=f39e449]: "38."
+                - cell [ref=f39e450]: aewdfaweda
+                - cell [ref=f39e451]: aefaewfdae
+                - cell [ref=f39e452]: 250 Perizinan
+                - cell [ref=f39e453]:
+                  - generic [ref=f39e454]:
+                    - link [ref=f39e455] [cursor=pointer]:
+                      - /url: /adminprahu/detailHakAksesAdmin/170
+                      - button [ref=f39e456]:
+                        - generic [ref=f39e457]: 
+                    - link [ref=f39e458] [cursor=pointer]:
+                      - /url: /adminprahu/editHakAksesAdmin/170
+                      - button [ref=f39e459]:
+                        - generic [ref=f39e460]: 
+                    - button [ref=f39e461] [cursor=pointer]:
+                      - generic [ref=f39e462]: 
+              - row [ref=f39e463]:
+                - cell [ref=f39e464]:
+                  - generic [ref=f39e465]: "37."
+                - cell [ref=f39e466]: Hak Akses QC
+                - cell [ref=f39e467]: Hak Akses QC
+                - cell [ref=f39e468]: 250 Perizinan
+                - cell [ref=f39e469]:
+                  - generic [ref=f39e470]:
+                    - link [ref=f39e471] [cursor=pointer]:
+                      - /url: /adminprahu/detailHakAksesAdmin/166
+                      - button [ref=f39e472]:
+                        - generic [ref=f39e473]: 
+                    - link [ref=f39e474] [cursor=pointer]:
+                      - /url: /adminprahu/editHakAksesAdmin/166
+                      - button [ref=f39e475]:
+                        - generic [ref=f39e476]: 
+                    - button [ref=f39e477] [cursor=pointer]:
+                      - generic [ref=f39e478]: 
+              - row [ref=f39e479]:
+                - cell [ref=f39e480]:
+                  - generic [ref=f39e481]: "36."
+                - cell [ref=f39e482]: ASDF
+                - cell [ref=f39e483]: "-"
+                - cell [ref=f39e484]: 250 Perizinan
+                - cell [ref=f39e485]:
+                  - generic [ref=f39e486]:
+                    - link [ref=f39e487] [cursor=pointer]:
+                      - /url: /adminprahu/detailHakAksesAdmin/163
+                      - button [ref=f39e488]:
+                        - generic [ref=f39e489]: 
+                    - link [ref=f39e490] [cursor=pointer]:
+                      - /url: /adminprahu/editHakAksesAdmin/163
+                      - button [ref=f39e491]:
+                        - generic [ref=f39e492]: 
+                    - button [ref=f39e493] [cursor=pointer]:
+                      - generic [ref=f39e494]: 
+              - row [ref=f39e495]:
+                - cell [ref=f39e496]:
+                  - generic [ref=f39e497]: "35."
+                - cell [ref=f39e498]: asdf
+                - cell [ref=f39e499]: asdf
+                - cell [ref=f39e500]: 250 Perizinan
+                - cell [ref=f39e501]:
+                  - generic [ref=f39e502]:
+                    - link [ref=f39e503] [cursor=pointer]:
+                      - /url: /adminprahu/detailHakAksesAdmin/162
+                      - button [ref=f39e504]:
+                        - generic [ref=f39e505]: 
+                    - link [ref=f39e506] [cursor=pointer]:
+                      - /url: /adminprahu/editHakAksesAdmin/162
+                      - button [ref=f39e507]:
+                        - generic [ref=f39e508]: 
+                    - button [ref=f39e509] [cursor=pointer]:
+                      - generic [ref=f39e510]: 
+              - row [ref=f39e511]:
+                - cell [ref=f39e512]:
+                  - generic [ref=f39e513]: "34."
+                - cell [ref=f39e514]: SEMUA HAK AKSES SID
+                - cell [ref=f39e515]: "-"
+                - cell [ref=f39e516]: 248 Perizinan
+                - cell [ref=f39e517]:
+                  - generic [ref=f39e518]:
+                    - link [ref=f39e519] [cursor=pointer]:
+                      - /url: /adminprahu/detailHakAksesAdmin/156
+                      - button [ref=f39e520]:
+                        - generic [ref=f39e521]: 
+                    - link [ref=f39e522] [cursor=pointer]:
+                      - /url: /adminprahu/editHakAksesAdmin/156
+                      - button [ref=f39e523]:
+                        - generic [ref=f39e524]: 
+                    - button [ref=f39e525] [cursor=pointer]:
+                      - generic [ref=f39e526]: 
+              - row [ref=f39e527]:
+                - cell [ref=f39e528]:
+                  - generic [ref=f39e529]: "33."
+                - cell [ref=f39e530]: 2 Hak Akses
+                - cell [ref=f39e531]: "-"
+                - cell [ref=f39e532]: 2 Perizinan
+                - cell [ref=f39e533]:
+                  - generic [ref=f39e534]:
+                    - link [ref=f39e535] [cursor=pointer]:
+                      - /url: /adminprahu/detailHakAksesAdmin/151
+                      - button [ref=f39e536]:
+                        - generic [ref=f39e537]: 
+                    - link [ref=f39e538] [cursor=pointer]:
+                      - /url: /adminprahu/editHakAksesAdmin/151
+                      - button [ref=f39e539]:
+                        - generic [ref=f39e540]: 
+                    - button [ref=f39e541] [cursor=pointer]:
+                      - generic [ref=f39e542]: 
+              - row [ref=f39e543]:
+                - cell [ref=f39e544]:
+                  - generic [ref=f39e545]: "32."
+                - cell [ref=f39e546]: Semua Push Notifikasi
+                - cell [ref=f39e547]: Semua Push Notifikasi
+                - cell [ref=f39e548]: 49 Perizinan
+                - cell [ref=f39e549]:
+                  - generic [ref=f39e550]:
+                    - link [ref=f39e551] [cursor=pointer]:
+                      - /url: /adminprahu/detailHakAksesAdmin/150
+                      - button [ref=f39e552]:
+                        - generic [ref=f39e553]: 
+                    - link [ref=f39e554] [cursor=pointer]:
+                      - /url: /adminprahu/editHakAksesAdmin/150
+                      - button [ref=f39e555]:
+                        - generic [ref=f39e556]: 
+                    - button [ref=f39e557] [cursor=pointer]:
+                      - generic [ref=f39e558]: 
+              - row [ref=f39e559]:
+                - cell [ref=f39e560]
+          - text:                                                            
+          - generic [ref=f39e561]:
+            - status [ref=f39e199]:
+              - status [ref=f39e562]: Menampilkan 1 sampai 20 dari 51 data
+            - list [ref=f39e563]:
+              - listitem [ref=f39e564]:
+                - generic [ref=f39e565] [cursor=pointer]: "1"
+              - listitem [ref=f39e566]:
+                - generic [ref=f39e567] [cursor=pointer]: "2"
+              - listitem [ref=f39e568]:
+                - generic [ref=f39e569] [cursor=pointer]: "3"
+              - listitem [ref=f39e570]:
+                - generic [ref=f39e571] [cursor=pointer]: Selanjutnya »
+        - paragraph [ref=f39e207]: © BETA 20260228 v1.3.28 - PH Bid Laut | Digital Logistic Platform
+  - text:   
+  - dialog [ref=f39e573]:
+    - heading "Hapus?" [level=2] [ref=f39e575]
+    - generic: "!"
+    - generic [ref=f39e576]:
+      - button "Hapus" [active] [ref=f39e577] [cursor=pointer]
+      - button "Batal" [ref=f39e578] [cursor=pointer]

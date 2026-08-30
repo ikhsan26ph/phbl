@@ -1,0 +1,58 @@
+- generic [ref=e8]:
+  - generic [ref=e10]:
+    - link [ref=e12] [cursor=pointer]:
+      - /url: https://phbidlautdemo.prahu-hub.com/user/login
+    - generic [ref=e14]:
+      - generic [ref=e15]: LOGIN
+      - generic [ref=e18]:
+        - generic [ref=e19]:
+          - generic [ref=e20]: Email / No. Whatsapp *
+          - textbox "Masukkan Email / No. Whatsapp" [ref=e23]
+          - generic [ref=e24]: Kata Sandi *
+          - generic [ref=e26]:
+            - textbox "Masukkan Kata Sandi Anda" [ref=e27]
+            - button "" [ref=e29]
+          - generic [ref=e32]:
+            - generic [ref=e33]:
+              - text: Belum mendaftar ?
+              - link "Registrasi" [ref=e34] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/user/register
+            - link "Lupa Kata Sandi" [ref=e36] [cursor=pointer]:
+              - /url: https://phbidlautdemo.prahu-hub.com/user/forgotpassword
+        - button "Masuk" [ref=e38] [cursor=pointer]
+        - generic [ref=e39]:
+          - generic [ref=e40]:
+            - text: Dengan login, anda menyetujui
+            - link "Syarat Ketentuan" [ref=e41] [cursor=pointer]:
+              - /url: https://phbidlautdemo.prahu-hub.com/home/syarat_ketentuan
+            - text: dan
+            - link "Kebijakan Privacy" [ref=e42] [cursor=pointer]:
+              - /url: https://phbidlautdemo.prahu-hub.com/home/privacy_policy
+          - generic [ref=e43]:
+            - text: Menuju
+            - link "Tentang Kami" [ref=e44] [cursor=pointer]:
+              - /url: https://www.prahu-hub.com/ph-bid/
+            - text: untuk mengetahui layanan PH Bid
+  - generic [ref=e46]:
+    - generic [ref=e48]:
+      - generic [ref=e50]:
+        - link [ref=e51] [cursor=pointer]:
+          - /url: https://facebook.com/sosmed.phbid
+        - link [ref=e52] [cursor=pointer]:
+          - /url: https://twitter.com/PrahuHub
+        - link [ref=e53] [cursor=pointer]:
+          - /url: https://instagram.com/phbid_/
+        - link [ref=e54] [cursor=pointer]:
+          - /url: https://www.youtube.com/channel/UC41VntroP3zKmXZYnGgtFdw
+        - link [ref=e55] [cursor=pointer]:
+          - /url: http://linkedin.com/in/ph-bid-aa5393211/
+      - generic [ref=e57]:
+        - generic [ref=e58]:
+          - generic [ref=e59]: Layanan Email
+          - link "csct@prahu-hub.com" [ref=e61] [cursor=pointer]:
+            - /url: mailto:csct@prahu-hub.com
+        - generic [ref=e62]:
+          - generic [ref=e63]: Layanan Whatsapp
+          - link "081246665023" [ref=e65] [cursor=pointer]:
+            - /url: https://wa.me/
+    - generic [ref=e66]: © BETA 20260228 v1.3.28 - PH Bid Laut | Digital Logistic Platform

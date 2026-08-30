@@ -1,0 +1,196 @@
+- generic [active] [ref=f7e1]:
+  - generic [ref=f7e2]:
+    - generic [ref=f7e3]:
+      - generic [ref=f7e4]:
+        - link [ref=f7e6] [cursor=pointer]:
+          - /url: https://phbidlautdemo.prahu-hub.com/
+        - button [ref=f7e10] [cursor=pointer]
+      - text:  
+      - generic [ref=f7e13]:
+        - generic [ref=f7e14]:
+          - generic [ref=f7e15]: Admin PH Bid
+          - button "Administrator" [ref=f7e17]
+        - text: 
+        - generic [ref=f7e21]:
+          - generic [ref=f7e22]:
+            - generic [ref=f7e23]: Admin PH Bid
+            - generic [ref=f7e24]: prahu.bid20@gmail.com
+          - generic [ref=f7e25]: 
+          - link "" [ref=f7e28] [cursor=pointer]:
+            - /url: https://phbidlautdemo.prahu-hub.com/home/notification
+          - link [ref=f7e35] [cursor=pointer]:
+            - /url: https://phbidlautdemo.prahu-hub.com/user/do_logout
+    - generic [ref=f7e38]:
+      - generic [ref=f7e39]:
+        - text: 
+        - generic [ref=f7e40]:
+          - list [ref=f7e42]:
+            - listitem
+            - listitem [ref=f7e43]:
+              - link "CARI PENAWARAN" [ref=f7e44] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/lelang/carirute
+            - listitem [ref=f7e45]: MENU ADMIN
+            - listitem [ref=f7e46]:
+              - generic [ref=f7e47] [cursor=pointer]:
+                - text: DASHBOARD
+                - generic [ref=f7e50]: 
+            - listitem [ref=f7e51]:
+              - generic [ref=f7e52] [cursor=pointer]:
+                - text: ANALITIK
+                - generic [ref=f7e55]: 
+            - listitem [ref=f7e56]:
+              - link "PENGAJUAN LELANG" [ref=f7e57] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/lelang/listlelang
+            - listitem [ref=f7e60]:
+              - link "PENGAJUAN NEGO" [ref=f7e61] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/lelang/pengajuannego
+            - listitem [ref=f7e64]:
+              - link [ref=f7e65] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/order/orderlist
+            - listitem [ref=f7e68]:
+              - link "PENUGASAN TRACKING" [ref=f7e69] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/home/penugasantracking
+            - listitem [ref=f7e72]:
+              - link "CEK JADWAL" [ref=f7e73] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/lelang/carijadwal
+            - listitem [ref=f7e76]:
+              - generic [ref=f7e77] [cursor=pointer]:
+                - text: LAPORAN
+                - generic [ref=f7e80]: 
+            - listitem [ref=f7e81]:
+              - generic [ref=f7e82] [cursor=pointer]:
+                - text: VALIDASI AKUN
+                - generic [ref=f7e85]: 
+            - listitem [ref=f7e86]:
+              - generic [ref=f7e87] [cursor=pointer]:
+                - text: SETTING
+                - generic [ref=f7e90]: 
+            - listitem [ref=f7e91]:
+              - generic [ref=f7e92] [cursor=pointer]:
+                - text: MASTER
+                - generic [ref=f7e95]: 
+            - listitem [ref=f7e96]:
+              - generic [ref=f7e97] [cursor=pointer]:
+                - text: PENGATURAN AKUN
+                - generic [ref=f7e100]: 
+            - listitem [ref=f7e101]:
+              - link "AKUN SAYA" [ref=f7e102] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/home/akunsaya
+            - listitem [ref=f7e105]: MENU TRANSPORTER
+            - listitem [ref=f7e106]:
+              - link "HARGA & JADWAL" [ref=f7e107] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/home/hargajadwal
+          - generic [ref=f7e112]:
+            - paragraph [ref=f7e114]: KONTAK KAMI
+            - generic [ref=f7e115]:
+              - generic [ref=f7e116]: 
+              - text: "081246665023"
+            - generic [ref=f7e117]:
+              - generic [ref=f7e118]: 
+              - text: "081246665023"
+            - generic [ref=f7e119]:
+              - generic [ref=f7e120]: 
+              - text: csct@prahu-hub.com
+            - generic [ref=f7e121]:
+              - link [ref=f7e122] [cursor=pointer]:
+                - /url: https://facebook.com/sosmed.phbid
+              - link [ref=f7e124] [cursor=pointer]:
+                - /url: https://twitter.com/PrahuHub
+              - link [ref=f7e126] [cursor=pointer]:
+                - /url: https://instagram.com/phbid_/
+              - link [ref=f7e128] [cursor=pointer]:
+                - /url: https://www.youtube.com/channel/UC41VntroP3zKmXZYnGgtFdw
+              - link [ref=f7e130] [cursor=pointer]:
+                - /url: http://linkedin.com/in/ph-bid-aa5393211/
+      - generic [ref=f7e132]:
+        - generic [ref=f7e133]:
+          - generic [ref=f7e136]:
+            - link "Beranda" [ref=f7e138] [cursor=pointer]:
+              - /url: https://phbidlautdemo.prahu-hub.com/lelang/listLelang
+            - text: / Rule Reminder
+          - generic [ref=f7e139]: RULE REMINDER
+          - table [ref=f7e143]:
+            - rowgroup [ref=f7e144]:
+              - row [ref=f7e145]:
+                - columnheader "Tugas Tracking" [ref=f7e146]
+                - columnheader "Berulang Setiap" [ref=f7e147]
+                - columnheader "Trigger by" [ref=f7e148]
+                - columnheader "Rule Trigger" [ref=f7e149]
+                - columnheader "Status Reminder" [ref=f7e150]
+                - columnheader "Aksi" [ref=f7e151]
+              - row [ref=f7e152]:
+                - cell [ref=f7e153]
+            - rowgroup [ref=f7e154]:
+              - row [ref=f7e155]:
+                - cell [ref=f7e156]
+              - row [ref=f7e157]:
+                - cell "Stuffing" [ref=f7e158]
+                - cell "1 Hari" [ref=f7e160]
+                - cell "Tanggal Permintaan Muat Shipper" [ref=f7e161]
+                - cell "+ 0 Hari" [ref=f7e162]
+                - cell "AKTIF" [ref=f7e163]
+                - cell [ref=f7e165]:
+                  - link " Setting" [ref=f7e166] [cursor=pointer]:
+                    - /url: https://phbidlautdemo.prahu-hub.com/adminprahu/settingReminder/WVdieFN2bXUvdTM3UlJ2RUkvSndwQT09
+                    - generic [ref=f7e167]: 
+                    - text: Setting
+              - row [ref=f7e168]:
+                - cell "Kapal Berlayar" [ref=f7e169]
+                - cell "1 Hari" [ref=f7e171]
+                - cell "Jadwal Kapal Transporter (ETD)" [ref=f7e172]
+                - cell "+ 0 Hari" [ref=f7e173]
+                - cell "AKTIF" [ref=f7e174]
+                - cell [ref=f7e176]:
+                  - link " Setting" [ref=f7e177] [cursor=pointer]:
+                    - /url: https://phbidlautdemo.prahu-hub.com/adminprahu/settingReminder/SHA3OVk0eTdLMXhZWWFrU2JHcnh6UT09
+                    - generic [ref=f7e178]: 
+                    - text: Setting
+              - row [ref=f7e179]:
+                - cell "Kapal Sandar" [ref=f7e180]
+                - cell "1 Hari" [ref=f7e182]
+                - cell "Jadwal Kapal Transporter (ETA)" [ref=f7e183]
+                - cell "+ 0 Hari" [ref=f7e184]
+                - cell "AKTIF" [ref=f7e185]
+                - cell [ref=f7e187]:
+                  - link " Setting" [ref=f7e188] [cursor=pointer]:
+                    - /url: https://phbidlautdemo.prahu-hub.com/adminprahu/settingReminder/SzU3SGExa051cVpZLzdKRmRJR2todz09
+                    - generic [ref=f7e189]: 
+                    - text: Setting
+              - row [ref=f7e190]:
+                - cell "Rencana Dooring" [ref=f7e191]
+                - cell "1 Hari" [ref=f7e193]
+                - cell "Jadwal Kapal Transporter (ETA)" [ref=f7e194]
+                - cell "+ 1 Hari" [ref=f7e195]
+                - cell "AKTIF" [ref=f7e196]
+                - cell [ref=f7e198]:
+                  - link " Setting" [ref=f7e199] [cursor=pointer]:
+                    - /url: https://phbidlautdemo.prahu-hub.com/adminprahu/settingReminder/ajRkUVl5VXYwMGRiMUlxM2ViSVpNdz09
+                    - generic [ref=f7e200]: 
+                    - text: Setting
+              - row [ref=f7e201]:
+                - cell "Dooring" [ref=f7e202]
+                - cell "1 Hari" [ref=f7e204]
+                - cell "Jadwal Kapal Transporter (ETA)" [ref=f7e205]
+                - cell "+ 0 Hari" [ref=f7e206]
+                - cell "AKTIF" [ref=f7e207]
+                - cell [ref=f7e209]:
+                  - link " Setting" [ref=f7e210] [cursor=pointer]:
+                    - /url: https://phbidlautdemo.prahu-hub.com/adminprahu/settingReminder/T0VIVnZxY0hsYXo5VFhuL0R5UW56UT09
+                    - generic [ref=f7e211]: 
+                    - text: Setting
+              - row [ref=f7e212]:
+                - cell "SJ Diterima Agen" [ref=f7e213]
+                - cell "1 Hari" [ref=f7e215]
+                - cell "Jadwal Kapal Transporter (ETA)" [ref=f7e216]
+                - cell "+ 2 Hari" [ref=f7e217]
+                - cell "AKTIF" [ref=f7e218]
+                - cell [ref=f7e220]:
+                  - link " Setting" [ref=f7e221] [cursor=pointer]:
+                    - /url: https://phbidlautdemo.prahu-hub.com/adminprahu/settingReminder/UUtRU0NqV1IzekpKbStpS0RvMDlYZz09
+                    - generic [ref=f7e222]: 
+                    - text: Setting
+              - row [ref=f7e223]:
+                - cell [ref=f7e224]
+          - text:      
+        - paragraph [ref=f7e230]: © BETA 20260228 v1.3.28 - PH Bid Laut | Digital Logistic Platform
+  - text:  

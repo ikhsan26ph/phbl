@@ -1,0 +1,124 @@
+- generic [active] [ref=f21e1]:
+  - generic [ref=f21e2]:
+    - generic [ref=f21e3]:
+      - generic [ref=f21e4]:
+        - link [ref=f21e6] [cursor=pointer]:
+          - /url: https://phbidlautdemo.prahu-hub.com/
+        - button [ref=f21e10] [cursor=pointer]
+      - text:  
+      - generic [ref=f21e13]:
+        - generic [ref=f21e14]:
+          - generic [ref=f21e15]: Admin PH Bid
+          - button "Administrator" [ref=f21e17]
+        - text: 
+        - generic [ref=f21e21]:
+          - generic [ref=f21e22]:
+            - generic [ref=f21e23]: Admin PH Bid
+            - generic [ref=f21e24]: prahu.bid20@gmail.com
+          - generic [ref=f21e25]: 
+          - link "" [ref=f21e28] [cursor=pointer]:
+            - /url: https://phbidlautdemo.prahu-hub.com/home/notification
+          - link [ref=f21e35] [cursor=pointer]:
+            - /url: https://phbidlautdemo.prahu-hub.com/user/do_logout
+    - generic [ref=f21e38]:
+      - generic [ref=f21e39]:
+        - text: 
+        - generic [ref=f21e40]:
+          - list [ref=f21e42]:
+            - listitem
+            - listitem [ref=f21e43]:
+              - link "CARI PENAWARAN" [ref=f21e44] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/lelang/carirute
+            - listitem [ref=f21e45]: MENU ADMIN
+            - listitem [ref=f21e46]:
+              - generic [ref=f21e47] [cursor=pointer]:
+                - text: DASHBOARD
+                - generic [ref=f21e50]: 
+            - listitem [ref=f21e51]:
+              - generic [ref=f21e52] [cursor=pointer]:
+                - text: ANALITIK
+                - generic [ref=f21e55]: 
+            - listitem [ref=f21e56]:
+              - link "PENGAJUAN LELANG" [ref=f21e57] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/lelang/listlelang
+            - listitem [ref=f21e60]:
+              - link "PENGAJUAN NEGO" [ref=f21e61] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/lelang/pengajuannego
+            - listitem [ref=f21e64]:
+              - link [ref=f21e65] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/order/orderlist
+            - listitem [ref=f21e68]:
+              - link "PENUGASAN TRACKING" [ref=f21e69] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/home/penugasantracking
+            - listitem [ref=f21e72]:
+              - link "CEK JADWAL" [ref=f21e73] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/lelang/carijadwal
+            - listitem [ref=f21e76]:
+              - generic [ref=f21e77] [cursor=pointer]:
+                - text: LAPORAN
+                - generic [ref=f21e80]: 
+            - listitem [ref=f21e81]:
+              - generic [ref=f21e82] [cursor=pointer]:
+                - text: VALIDASI AKUN
+                - generic [ref=f21e85]: 
+            - listitem [ref=f21e86]:
+              - generic [ref=f21e87] [cursor=pointer]:
+                - text: SETTING
+                - generic [ref=f21e90]: 
+            - listitem [ref=f21e91]:
+              - generic [ref=f21e92] [cursor=pointer]:
+                - text: MASTER
+                - generic [ref=f21e95]: 
+            - listitem [ref=f21e96]:
+              - generic [ref=f21e97] [cursor=pointer]:
+                - text: PENGATURAN AKUN
+                - generic [ref=f21e100]: 
+            - listitem [ref=f21e101]:
+              - link "AKUN SAYA" [ref=f21e102] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/home/akunsaya
+            - listitem [ref=f21e105]: MENU TRANSPORTER
+            - listitem [ref=f21e106]:
+              - link "HARGA & JADWAL" [ref=f21e107] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/home/hargajadwal
+          - generic [ref=f21e112]:
+            - paragraph [ref=f21e114]: KONTAK KAMI
+            - generic [ref=f21e115]:
+              - generic [ref=f21e116]: 
+              - text: "081246665023"
+            - generic [ref=f21e117]:
+              - generic [ref=f21e118]: 
+              - text: "081246665023"
+            - generic [ref=f21e119]:
+              - generic [ref=f21e120]: 
+              - text: csct@prahu-hub.com
+            - generic [ref=f21e121]:
+              - link [ref=f21e122] [cursor=pointer]:
+                - /url: https://facebook.com/sosmed.phbid
+              - link [ref=f21e124] [cursor=pointer]:
+                - /url: https://twitter.com/PrahuHub
+              - link [ref=f21e126] [cursor=pointer]:
+                - /url: https://instagram.com/phbid_/
+              - link [ref=f21e128] [cursor=pointer]:
+                - /url: https://www.youtube.com/channel/UC41VntroP3zKmXZYnGgtFdw
+              - link [ref=f21e130] [cursor=pointer]:
+                - /url: http://linkedin.com/in/ph-bid-aa5393211/
+      - generic [ref=f21e132]:
+        - generic [ref=f21e133]:
+          - generic [ref=f21e136]:
+            - link "Beranda" [ref=f21e138] [cursor=pointer]:
+              - /url: https://phbidlautdemo.prahu-hub.com/lelang/listLelang
+            - text: / Setting Notifikasi
+          - generic [ref=f21e139]: SETTING NOTIFIKASI
+          - generic [ref=f21e144]:
+            - generic [ref=f21e145]:
+              - text: 
+              - generic [ref=f21e146]: Setting notifikasi email dan whatsapp untuk menghemat kuota saat simulasi sistem
+              - button " Setting" [ref=f21e148] [cursor=pointer]:
+                - generic [ref=f21e149]: 
+                - text: Setting
+            - generic [ref=f21e150]:
+              - generic [ref=f21e151]: Push Notifikasi ON *) Notif to Shipper, Transporter, Petugas (Apk Tracking) dan Admin
+              - generic [ref=f21e152]: Notifikasi Email ON *) Notif email to Shipper, Sales, Transporter, dan Admin
+              - generic [ref=f21e153]: Notifikasi Whatsapp ON *) Notif whatsapp to Shipper, Sales, Penerima Barang, Transporter, Petugas, dan Admin
+        - paragraph [ref=f21e159]: © BETA 20260228 v1.3.28 - PH Bid Laut | Digital Logistic Platform
+  - text: OFF OFF OFF   
