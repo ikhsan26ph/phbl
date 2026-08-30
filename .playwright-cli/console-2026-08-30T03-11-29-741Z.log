@@ -1,0 +1,29 @@
+[    1764ms] Unexpected token '<'
+[    1815ms] Cannot use import statement outside a module
+[    1840ms] ReferenceError: Chart is not defined
+    at https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/js/scripts-init/charts/chartjs.js:8:13
+[    1891ms] Unexpected token '<'
+[    1892ms] Unexpected token '<'
+[    1983ms] Uncaught TypeError: expect element to be DOM Element, but got null
+    at <anonymous> (https://cdnjs.cloudflare.com/ajax/libs/smooth-scrollbar/8.5.2/smooth-scrollbar.js:24:264)
+    at <anonymous> (https://phbidlautdemo.prahu-hub.com/lelang/detaillistLelang/1087:7857:14)
+[    2188ms] [TABLE] {UI version: 8.4.1, Core version: 8.4.0, Build: NC8xMi8yMDIyfDRkZTU3MmExYg==, WebViewer Server: false, Full API: false} @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/PDFView/lib/ui/webviewer-ui.min.js:270
+[    2315ms] [LOG] Pengajuan Lelangnamanya @ https://phbidlautdemo.prahu-hub.com/lelang/detaillistLelang/1087:2040
+[    2328ms] [LOG] undefined @ https://phbidlautdemo.prahu-hub.com/lelang/detaillistLelang/1087:8210
+[    2328ms] [LOG] undefined @ https://phbidlautdemo.prahu-hub.com/lelang/detaillistLelang/1087:8210
+[    2330ms] [LOG] WebSocket connection @ https://phbidlautdemo.prahu-hub.com/lelang/detaillistLelang/1087:8253
+[    2330ms] [LOG] WebSocket connection attempting... @ https://phbidlautdemo.prahu-hub.com/lelang/detaillistLelang/1087:8331
+[    2587ms] [VERBOSE] [DOM] Password forms should have (optionally hidden) username fields for accessibility: (More info: https://goo.gl/9p2vKq) %o @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/PDFView/lib/ui/index.html#a=1&disabledElements=downloadButton%2CprintButton%2ClanguageButton&filepicker=0&pdfnet=0&enableRedaction=0&enableMeasurement=0&pageHistory=1&notesInLeftPanel=0&singleServerMode=false&selectAnnotationOnCreation=0&autoFocusNoteOnAnnotationSelection=1&id=1&basePath=%2Flelang%2FdetaillistLelang%2F1087:0
+[    2595ms] TypeError: Cannot read properties of undefined (reading 'top')
+    at Object.success (https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/hasilPenawaran.js?m=1787972929:967:62)
+    at c (https://code.jquery.com/jquery-3.7.1.min.js:2:25304)
+    at Object.fireWith [as resolveWith] (https://code.jquery.com/jquery-3.7.1.min.js:2:26053)
+    at l (https://code.jquery.com/jquery-3.7.1.min.js:2:77782)
+    at XMLHttpRequest.<anonymous> (https://code.jquery.com/jquery-3.7.1.min.js:2:80265)
+[    2852ms] [LOG] WebSocket connected @ https://phbidlautdemo.prahu-hub.com/lelang/detaillistLelang/1087:8262
+[    2889ms] [LOG] update_dashboard_order_laut @ https://phbidlautdemo.prahu-hub.com/lelang/detaillistLelang/1087:8303
+[    2890ms] [LOG] Connected @ https://phbidlautdemo.prahu-hub.com/lelang/detaillistLelang/1087:8303
+[    3072ms] [LOG] 200 xhrglobal @ https://phbidlautdemo.prahu-hub.com/lelang/detaillistLelang/1087:8184
+[    3076ms] [LOG] 200 xhrglobal @ https://phbidlautdemo.prahu-hub.com/lelang/detaillistLelang/1087:8184
+[    4328ms] TypeError: $(...).DataTable is not a function
+    at https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/js/scripts-init/tables.js:7:23

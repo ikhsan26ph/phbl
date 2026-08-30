@@ -1,0 +1,396 @@
+- generic [active] [ref=f146e1]:
+  - generic [ref=f146e2]:
+    - generic [ref=f146e3]:
+      - generic [ref=f146e4]:
+        - link [ref=f146e6] [cursor=pointer]:
+          - /url: https://phbidlautdemo.prahu-hub.com/
+        - button [ref=f146e10] [cursor=pointer]
+      - text:  
+      - generic [ref=f146e13]:
+        - generic [ref=f146e14]:
+          - generic [ref=f146e15]: Admin PH Bid
+          - button "Administrator" [ref=f146e726]
+        - text: 
+        - generic [ref=f146e21]:
+          - generic [ref=f146e22]:
+            - generic [ref=f146e23]: Admin PH Bid
+            - generic [ref=f146e24]: prahu.bid20@gmail.com
+          - generic [ref=f146e25]: 
+          - link "" [ref=f146e727] [cursor=pointer]:
+            - /url: https://phbidlautdemo.prahu-hub.com/home/notification
+          - link [ref=f146e728] [cursor=pointer]:
+            - /url: https://phbidlautdemo.prahu-hub.com/user/do_logout
+    - generic [ref=f146e38]:
+      - generic [ref=f146e39]:
+        - text: 
+        - generic [ref=f146e40]:
+          - list [ref=f146e42]:
+            - listitem
+            - listitem [ref=f146e43]:
+              - link "CARI PENAWARAN" [ref=f146e729] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/lelang/carirute
+            - listitem [ref=f146e45]: MENU ADMIN
+            - listitem [ref=f146e46]:
+              - generic [ref=f146e47] [cursor=pointer]:
+                - text: DASHBOARD
+                - generic [ref=f146e50]: 
+            - listitem [ref=f146e51]:
+              - generic [ref=f146e52] [cursor=pointer]:
+                - text: ANALITIK
+                - generic [ref=f146e55]: 
+            - listitem [ref=f146e56]:
+              - link "PENGAJUAN LELANG" [ref=f146e730] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/lelang/listlelang
+            - listitem [ref=f146e60]:
+              - link "PENGAJUAN NEGO" [ref=f146e731] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/lelang/pengajuannego
+            - listitem [ref=f146e64]:
+              - link "DAFTAR ORDER" [ref=f146e732] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/order/orderlist
+            - listitem [ref=f146e68]:
+              - link "PENUGASAN TRACKING" [ref=f146e733] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/home/penugasantracking
+            - listitem [ref=f146e72]:
+              - link "CEK JADWAL" [ref=f146e734] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/lelang/carijadwal
+            - listitem [ref=f146e76]:
+              - generic [ref=f146e77] [cursor=pointer]:
+                - text: LAPORAN
+                - generic [ref=f146e80]: 
+            - listitem [ref=f146e81]:
+              - generic [ref=f146e82] [cursor=pointer]:
+                - text: VALIDASI AKUN
+                - generic [ref=f146e85]: 
+            - listitem [ref=f146e86]:
+              - generic [ref=f146e87] [cursor=pointer]:
+                - text: SETTING
+                - generic [ref=f146e90]: 
+            - listitem [ref=f146e91]:
+              - generic [ref=f146e92] [cursor=pointer]:
+                - text: MASTER
+                - generic [ref=f146e95]: 
+            - listitem [ref=f146e96]:
+              - generic [ref=f146e97] [cursor=pointer]:
+                - text: PENGATURAN AKUN
+                - generic [ref=f146e100]: 
+            - listitem [ref=f146e101]:
+              - link "AKUN SAYA" [ref=f146e735] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/home/akunsaya
+            - listitem [ref=f146e105]: MENU TRANSPORTER
+            - listitem [ref=f146e106]:
+              - link "HARGA & JADWAL" [ref=f146e736] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/home/hargajadwal
+          - generic [ref=f146e112]:
+            - paragraph [ref=f146e114]: KONTAK KAMI
+            - generic [ref=f146e115]:
+              - generic [ref=f146e116]: 
+              - text: "081246665023"
+            - generic [ref=f146e117]:
+              - generic [ref=f146e118]: 
+              - text: "081246665023"
+            - generic [ref=f146e119]:
+              - generic [ref=f146e120]: 
+              - text: csct@prahu-hub.com
+            - generic [ref=f146e121]:
+              - link [ref=f146e122] [cursor=pointer]:
+                - /url: https://facebook.com/sosmed.phbid
+              - link [ref=f146e124] [cursor=pointer]:
+                - /url: https://twitter.com/PrahuHub
+              - link [ref=f146e126] [cursor=pointer]:
+                - /url: https://instagram.com/phbid_/
+              - link [ref=f146e128] [cursor=pointer]:
+                - /url: https://www.youtube.com/channel/UC41VntroP3zKmXZYnGgtFdw
+              - link [ref=f146e130] [cursor=pointer]:
+                - /url: http://linkedin.com/in/ph-bid-aa5393211/
+      - generic [ref=f146e132]:
+        - generic [ref=f146e133]:
+          - generic [ref=f146e134]: Beranda / Daftar Pengajuan Lelang
+          - generic [ref=f146e140]:
+            - generic [ref=f146e141]: Daftar Pengajuan Lelang
+            - generic [ref=f146e142]: "*) Hijau = lelang tidak ada order, # adalah request harga"
+            - button " Filter" [ref=f146e737] [cursor=pointer]:
+              - generic [ref=f146e145]: 
+              - text: Filter
+          - text: 
+          - generic [ref=f146e149]:
+            - link "Semua Lelang" [ref=f146e738] [cursor=pointer]:
+              - /url: https://phbidlautdemo.prahu-hub.com/lelang/listlelang?tab=semua-lelang
+            - link "Perlu Input Harga" [ref=f146e739] [cursor=pointer]:
+              - /url: https://phbidlautdemo.prahu-hub.com/lelang/listlelang?tab=perlu-input-harga
+            - link "Perlu Update Harga" [ref=f146e740] [cursor=pointer]:
+              - /url: https://phbidlautdemo.prahu-hub.com/lelang/listlelang?tab=perlu-update-harga
+            - link "Lelang Tutup" [ref=f146e741] [cursor=pointer]:
+              - /url: https://phbidlautdemo.prahu-hub.com/lelang/listlelang?tab=lelang-tutup
+            - link "Telah Akhir Kirim" [ref=f146e742] [cursor=pointer]:
+              - /url: https://phbidlautdemo.prahu-hub.com/lelang/listlelang?tab=telah-akhir-kirim
+            - link "Lelang Batal" [ref=f146e743] [cursor=pointer]:
+              - /url: https://phbidlautdemo.prahu-hub.com/lelang/listlelang?tab=lelang-batal
+          - generic [ref=f146e157]:
+            - text: Menampilkan
+            - combobox [ref=f146e158]:
+              - option "20" [selected]
+              - option "30"
+              - option "50"
+              - option "100"
+            - text: Data
+          - text:  
+          - table [ref=f146e160]:
+            - rowgroup [ref=f146e161]:
+              - row [ref=f146e744]:
+                - columnheader "No " [ref=f146e745] [cursor=pointer]:
+                  - generic [ref=f146e164]:
+                    - generic [ref=f146e165]: "No"
+                    - generic [ref=f146e166]: 
+                - columnheader "Shipper " [ref=f146e746] [cursor=pointer]:
+                  - generic [ref=f146e169]:
+                    - generic [ref=f146e170]: Shipper
+                    - generic [ref=f146e171]: 
+                - columnheader "Nomor Lelang " [ref=f146e747] [cursor=pointer]:
+                  - generic [ref=f146e174]:
+                    - generic [ref=f146e175]: Nomor Lelang
+                    - generic [ref=f146e176]: 
+                - columnheader "Buka Lelang " [ref=f146e748] [cursor=pointer]:
+                  - generic [ref=f146e179]:
+                    - generic [ref=f146e180]: Buka Lelang
+                    - generic [ref=f146e181]: 
+                - columnheader "Tutup Lelang " [ref=f146e749] [cursor=pointer]:
+                  - generic [ref=f146e184]:
+                    - generic [ref=f146e185]: Tutup Lelang
+                    - generic [ref=f146e186]: 
+                - columnheader "Rencana Mulai Kirim " [ref=f146e750] [cursor=pointer]:
+                  - generic [ref=f146e189]:
+                    - generic [ref=f146e190]: Rencana Mulai Kirim
+                    - generic [ref=f146e191]: 
+                - columnheader "Rencana Akhir Kirim " [ref=f146e751] [cursor=pointer]:
+                  - generic [ref=f146e194]:
+                    - generic [ref=f146e195]: Rencana Akhir Kirim
+                    - generic [ref=f146e196]: 
+                - columnheader "Aksi" [ref=f146e752]
+              - row [ref=f146e199]:
+                - cell [ref=f146e200]
+            - rowgroup [ref=f146e201]:
+              - row [ref=f146e221]:
+                - cell [ref=f146e222]
+              - row [ref=f146e753]:
+                - cell "122." [ref=f146e754]
+                - cell "PT. Haier Sales Indonesia" [ref=f146e755]
+                - cell "MELS/08/26-AMB" [ref=f146e756]
+                - cell "05/08/2026 09:05" [ref=f146e757]
+                - cell "08/08/2026 09:06" [ref=f146e758]
+                - cell "09/08/2026 09:07" [ref=f146e759]
+                - cell "01/10/2026 09:08" [ref=f146e760]
+                - cell [ref=f146e761]:
+                  - button "" [ref=f146e762] [cursor=pointer]
+              - row [ref=f146e763]:
+                - cell "121." [ref=f146e764]
+                - cell "PT. Cipta Karya Abadi Sejahtera Sentora Mujur Selalu" [ref=f146e765]
+                - cell "QA/06/26-OPEN1" [ref=f146e766]
+                - cell "15/06/2026 21:50" [ref=f146e767]
+                - cell "25/06/2026 23:59" [ref=f146e768]
+                - cell "26/06/2026 08:00" [ref=f146e769]
+                - cell "30/06/2026 17:00" [ref=f146e770]
+                - cell [ref=f146e771]:
+                  - button "" [ref=f146e772] [cursor=pointer]
+              - row [ref=f146e773]:
+                - cell "120." [ref=f146e774]
+                - cell "PT. Cipta Karya Abadi Sejahtera Sentora Mujur Selalu" [ref=f146e775]
+                - cell "LELANGTES (#1)" [ref=f146e776]
+                - cell "20/04/2026 11:32" [ref=f146e777]
+                - cell "20/04/2026 11:33" [ref=f146e778]
+                - cell "20/04/2026 11:34" [ref=f146e779]
+                - cell "01/04/2027 11:35" [ref=f146e780]
+                - cell [ref=f146e781]:
+                  - button "" [ref=f146e782] [cursor=pointer]
+              - row [ref=f146e783]:
+                - cell "119." [ref=f146e784]
+                - cell "PT. United Family Food" [ref=f146e785]
+                - cell "Satoria/Updatejadwal" [ref=f146e786]
+                - cell "14/04/2026 14:50" [ref=f146e787]
+                - cell "14/04/2026 15:00" [ref=f146e788]
+                - cell "15/04/2026 15:01" [ref=f146e789]
+                - cell "30/04/2026 15:02" [ref=f146e790]
+                - cell [ref=f146e791]:
+                  - button "" [ref=f146e792] [cursor=pointer]
+              - row [ref=f146e793]:
+                - cell "118." [ref=f146e794]
+                - cell "PT. Cipta Karya Abadi Sejahtera Sentora Mujur Selalu" [ref=f146e795]
+                - cell "LelangDibatalkan" [ref=f146e796]
+                - cell "02/04/2026 13:25" [ref=f146e797]
+                - cell "02/04/2026 13:26" [ref=f146e798]
+                - cell "02/04/2026 13:27" [ref=f146e799]
+                - cell "01/04/2027 13:28" [ref=f146e800]
+                - cell [ref=f146e801]:
+                  - button "" [ref=f146e802] [cursor=pointer]
+              - row [ref=f146e803]:
+                - cell "117." [ref=f146e804]
+                - cell "PT. Cipta Karya Abadi Sejahtera Sentora Mujur Selalu" [ref=f146e805]
+                - cell "LELANG/03/NRML#1" [ref=f146e806]
+                - cell "03/03/2026 13:57" [ref=f146e807]
+                - cell "03/03/2026 13:58" [ref=f146e808]
+                - cell "03/03/2026 13:59" [ref=f146e809]
+                - cell "03/03/2026 14:00" [ref=f146e810]
+                - cell [ref=f146e811]:
+                  - button "" [ref=f146e812] [cursor=pointer]
+              - row [ref=f146e813]:
+                - cell "116." [ref=f146e814]
+                - cell "PT. Haier Sales Indonesia" [ref=f146e815]
+                - cell "HIR-16/02/26-MKS" [ref=f146e816]
+                - cell "16/02/2026 14:16" [ref=f146e817]
+                - cell "21/02/2026 14:17" [ref=f146e818]
+                - cell "22/02/2026 14:18" [ref=f146e819]
+                - cell "07/03/2026 14:19" [ref=f146e820]
+                - cell [ref=f146e821]:
+                  - button "" [ref=f146e822] [cursor=pointer]
+              - row [ref=f146e823]:
+                - cell "115." [ref=f146e824]
+                - cell "PT. Haier Sales Indonesia" [ref=f146e825]
+                - cell "HIR/10/10-TEST" [ref=f146e826]
+                - cell "11/01/2026 20:00" [ref=f146e827]
+                - cell "12/01/2026 20:01" [ref=f146e828]
+                - cell "14/01/2026 20:02" [ref=f146e829]
+                - cell "17/01/2026 20:03" [ref=f146e830]
+                - cell [ref=f146e831]:
+                  - button "" [ref=f146e832] [cursor=pointer]
+              - row [ref=f146e833]:
+                - cell "114." [ref=f146e834]
+                - cell "PT. Haier Sales Indonesia" [ref=f146e835]
+                - cell "MEL/27/12-BPN" [ref=f146e836]
+                - cell "27/12/2025 04:34" [ref=f146e837]
+                - cell "29/12/2025 04:35" [ref=f146e838]
+                - cell "30/12/2025 04:36" [ref=f146e839]
+                - cell "07/02/2026 04:37" [ref=f146e840]
+                - cell [ref=f146e841]:
+                  - button "" [ref=f146e842] [cursor=pointer]
+              - row [ref=f146e843]:
+                - cell "113." [ref=f146e844]
+                - cell "PT Satoria Aneka Industri" [ref=f146e845]
+                - cell "XYZ/01/24-MJK" [ref=f146e846]
+                - cell "13/09/2025 10:34" [ref=f146e847]
+                - cell "13/09/2025 10:38" [ref=f146e848]
+                - cell "24/09/2025 10:39" [ref=f146e849]
+                - cell "26/09/2025 10:40" [ref=f146e850]
+                - cell [ref=f146e851]:
+                  - button "" [ref=f146e852] [cursor=pointer]
+              - row [ref=f146e853]:
+                - cell "112." [ref=f146e854]
+                - cell "PT Satoria Aneka Industri" [ref=f146e855]
+                - cell "XYZ/01/24-TLH" [ref=f146e856]
+                - cell "13/09/2025 10:22" [ref=f146e857]
+                - cell "13/09/2025 10:25" [ref=f146e858]
+                - cell "20/09/2025 10:26" [ref=f146e859]
+                - cell "26/09/2025 10:27" [ref=f146e860]
+                - cell [ref=f146e861]:
+                  - button "" [ref=f146e862] [cursor=pointer]
+              - row [ref=f146e863]:
+                - cell "111." [ref=f146e864]
+                - cell "PT. Cipta Karya Abadi Sejahtera Sentora Mujur Selalu" [ref=f146e865]
+                - cell "LELANGDIBATALKAN001" [ref=f146e866]
+                - cell "12/09/2025 15:45" [ref=f146e867]
+                - cell "12/09/2025 15:46" [ref=f146e868]
+                - cell "12/09/2025 15:47" [ref=f146e869]
+                - cell "01/09/2027 15:48" [ref=f146e870]
+                - cell [ref=f146e871]:
+                  - button "" [ref=f146e872] [cursor=pointer]
+              - row [ref=f146e873]:
+                - cell "110." [ref=f146e874]
+                - cell "PT Ikan Laut Jaya" [ref=f146e875]
+                - cell "QRS002/08/25-JKT" [ref=f146e876]
+                - cell "22/08/2025 15:08" [ref=f146e877]
+                - cell "22/08/2025 15:16" [ref=f146e878]
+                - cell "23/08/2025 15:17" [ref=f146e879]
+                - cell "24/08/2025 15:18" [ref=f146e880]
+                - cell [ref=f146e881]:
+                  - button "" [ref=f146e882] [cursor=pointer]
+              - row [ref=f146e883]:
+                - cell "109." [ref=f146e884]
+                - cell "PT Ikan Laut Jaya" [ref=f146e885]
+                - cell "QRS/08/25-JKT" [ref=f146e886]
+                - cell "22/08/2025 08:08" [ref=f146e887]
+                - cell "22/08/2025 08:16" [ref=f146e888]
+                - cell "23/08/2025 08:17" [ref=f146e889]
+                - cell "23/08/2025 08:18" [ref=f146e890]
+                - cell [ref=f146e891]:
+                  - button "" [ref=f146e892] [cursor=pointer]
+              - row [ref=f146e893]:
+                - cell "108." [ref=f146e894]
+                - cell "PT. United Family Food" [ref=f146e895]
+                - cell "CRS/SAMARINDA/07/2025" [ref=f146e896]
+                - cell "04/07/2025 08:40" [ref=f146e897]
+                - cell "04/07/2025 09:00" [ref=f146e898]
+                - cell "04/07/2025 09:01" [ref=f146e899]
+                - cell "31/07/2025 23:59" [ref=f146e900]
+                - cell [ref=f146e901]:
+                  - button "" [ref=f146e902] [cursor=pointer]
+              - row [ref=f146e903]:
+                - cell "107." [ref=f146e904]
+                - cell "PT. Manuva Distribusi Indonesia" [ref=f146e905]
+                - cell "LELANG/2025" [ref=f146e906]
+                - cell "26/05/2025 15:46" [ref=f146e907]
+                - cell "27/05/2025 15:47" [ref=f146e908]
+                - cell "27/05/2025 15:48" [ref=f146e909]
+                - cell "28/05/2039 15:49" [ref=f146e910]
+                - cell [ref=f146e911]:
+                  - button "" [ref=f146e912] [cursor=pointer]
+              - row [ref=f146e913]:
+                - cell "106." [ref=f146e914]
+                - cell "PT. Cipta Karya Abadi Sejahtera Sentora Mujur Selalu" [ref=f146e915]
+                - cell "LELANG#5(IK)+22-05-2025/MD" [ref=f146e916]
+                - cell "22/05/2025 14:51" [ref=f146e917]
+                - cell "22/05/2025 14:52" [ref=f146e918]
+                - cell "22/05/2025 14:53" [ref=f146e919]
+                - cell "01/05/2026 14:54" [ref=f146e920]
+                - cell [ref=f146e921]:
+                  - button "" [ref=f146e922] [cursor=pointer]
+              - row [ref=f146e923]:
+                - cell "105." [ref=f146e924]
+                - cell "PT. Cipta Karya Abadi Sejahtera Sentora Mujur Selalu" [ref=f146e925]
+                - cell "LELANG#6(IK)+22-05-2025/NRML" [ref=f146e926]
+                - cell "22/05/2025 14:49" [ref=f146e927]
+                - cell "22/05/2025 14:50" [ref=f146e928]
+                - cell "22/05/2025 14:51" [ref=f146e929]
+                - cell "01/05/2026 14:52" [ref=f146e930]
+                - cell [ref=f146e931]:
+                  - button "" [ref=f146e932] [cursor=pointer]
+              - row [ref=f146e933]:
+                - cell "104." [ref=f146e934]
+                - cell "PT. Cipta Karya Abadi Sejahtera Sentora Mujur Selalu" [ref=f146e935]
+                - cell "LELANG#2(IK)+28-04-2025/NRML (#1)" [ref=f146e936]
+                - cell "28/04/2025 10:46" [ref=f146e937]
+                - cell "28/04/2025 10:47" [ref=f146e938]
+                - cell "28/04/2025 10:48" [ref=f146e939]
+                - cell "01/04/2026 10:49" [ref=f146e940]
+                - cell [ref=f146e941]:
+                  - button "" [ref=f146e942] [cursor=pointer]
+              - row [ref=f146e943]:
+                - cell "103." [ref=f146e944]
+                - cell "PT. Cipta Karya Abadi Sejahtera Sentora Mujur Selalu" [ref=f146e945]
+                - cell "LELANG#1(IK)+28-04-2025/NRML (#1)" [ref=f146e946]
+                - cell "28/04/2025 09:59" [ref=f146e947]
+                - cell "28/04/2025 10:00" [ref=f146e948]
+                - cell "28/04/2025 10:01" [ref=f146e949]
+                - cell "01/04/2026 10:02" [ref=f146e950]
+                - cell [ref=f146e951]:
+                  - button "" [ref=f146e952] [cursor=pointer]
+              - row [ref=f146e469]:
+                - cell [ref=f146e470]
+          - text:                    
+          - generic [ref=f146e471]:
+            - status [ref=f146e210]:
+              - status [ref=f146e472]: Menampilkan 1 sampai 20 dari 122 data
+            - list [ref=f146e473]:
+              - listitem [ref=f146e474]:
+                - generic [ref=f146e475] [cursor=pointer]: "1"
+              - listitem [ref=f146e476]:
+                - generic [ref=f146e477] [cursor=pointer]: "2"
+              - listitem [ref=f146e478]:
+                - generic [ref=f146e479] [cursor=pointer]: "3"
+              - listitem [ref=f146e480]:
+                - generic [ref=f146e481] [cursor=pointer]: "4"
+              - listitem [ref=f146e482]:
+                - generic [ref=f146e483] [cursor=pointer]: "5"
+              - listitem [ref=f146e484]:
+                - generic "Selanjutnya" [ref=f146e953] [cursor=pointer]: Selanjutnya »
+              - listitem [ref=f146e486]:
+                - generic "Akhir" [ref=f146e954] [cursor=pointer]: Akhir »
+        - paragraph [ref=f146e218]: © BETA 20260228 v1.3.28 - PH Bid Laut | Digital Logistic Platform
+  - text:   

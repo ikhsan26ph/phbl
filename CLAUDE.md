@@ -278,9 +278,105 @@ ADMIN SILVERSTRIPE tidak ada di dokumen sumber).
   petugas/iklan/transporter khusus/relasi/pre register.
 - Belum di admin: terima/tolak akun (mengubah akun demo permanen), rekening
   maks 3, verifikasi perubahan data, upload aanwijzing, hidden ulasan,
-  gating petugas yang sudah ditugaskan, modul admin lain (Cari Penawaran,
+  gating petugas yang sudah ditugaskan, admin-sub. (Modul Cari Penawaran,
   Pengajuan Lelang, Nego, Riwayat Nego, Penugasan Tracking, Cek Jadwal,
-  Laporan, Akun Saya, Dashboard), admin-sub.
+  Laporan, Akun Saya, Dashboard, Harga & Jadwal SELESAI read-only
+  2026-08-30 — lihat bagian di bawah.)
+
+## Admin — 9 modul read-only sisa (2026-08-30)
+
+Menutup semua rule administrator yang belum punya spec: 03-cari-penawaran,
+04-pengajuan-lelang, 05-pengajuan-nego, 06-riwayat-nego, 08-penugasan-tracking,
+09-cek-jadwal, 10-laporan, 15-akun-saya, 16-harga-jadwal, 17-dashboard.
+Scope READ-ONLY: halaman aksi hanya DIBUKA (GET), tidak ada form disubmit;
+satu-satunya interaksi menulis adalah centang/uncheck checkbox di sisi klien
+(Tambah Peserta Lelang) yang langsung dikembalikan.
+
+- Spec baru (semua project `admin`): `tests/admin/pengajuan-lelang.spec.ts`
+  (24), `cari-penawaran.spec.ts` (17), `dashboard.spec.ts` (14),
+  `laporan.spec.ts` (10), `harga-jadwal.spec.ts` (11),
+  `penugasan-tracking.spec.ts` (9), `pengajuan-nego.spec.ts` (7),
+  `cek-jadwal.spec.ts` (6), `akun-saya.spec.ts` (3).
+- Run final 2026-08-30 12:40 (9 spec + 6 setup): **107 test — 94 lulus
+  (termasuk 3 lulus-defect test.fail yang benar-benar berjalan), 0 gagal,
+  13 skip data-dependent** (salah satu skip adalah test.fail keempat,
+  butuh order berstatus MENUNGGU PROSES), 18,9 mnt →
+  `report/hasil-testing-2026-08-30-admin-readonly.xlsx` (nama file diganti
+  manual; generator masih menamai per tanggal saja).
+- Kalibrasi kunci (detail lengkap di header tiap spec):
+  - **Pengajuan Lelang**: 6 tab sama dgn bidder, kolom + "Shipper", nomor
+    lelang HIJAU rgb(58,196,125) = lelang tanpa order. Menu aksi 5 item
+    dasar + kondisional `a.history_data_lelang` / `a.history_update_harga`
+    ("History Request Harga"; rule menulis "History Update Harga").
+    Edit/Tambah Peserta/Batalkan dicek via ajax (`lelang/cek_tgl_rencanaakhir
+    [_edit_lelang]`, `cekactionbatallelang`) lalu SweetAlert2 [Mengerti]
+    bila diblokir — teks ber-`<br>` sehingga assertion pakai `\s*`:
+    "Tidak bisa batal/edit/tambah peserta! Lelang sudah dibatalkan",
+    "…sudah melewati tgl. rencana akhir kirim", "…sudah ada order".
+    goto langsung halaman edit/tambah peserta lelang batal → redirect +
+    alert DOM `.alert_negatif` "Anda Tidak Memiliki Akses Ke Halaman
+    Tersebut". DISKREPANSI (test.fail): UI TIDAK punya item menu "Minta
+    Update Harga" — request harga dilakukan dari tombol di Cari Penawaran.
+  - **Cari Penawaran**: popup `#lelanglist` versi admin punya filter
+    `#cari_bid_owner` + `#cari_nomor_lelang` (terbaru→lama) + `#cari_lelang_btn`.
+    Pesan kondisi: "Nomor Lelang Tidak Ditemukan" (alert DOM), "belum
+    melewati batas tutup lelang", "belum ada peserta lelang yang mengajukan
+    penawaran", "sedang proses update harga oleh bidder" (rule: info PROSES
+    UPDATE HARGA) — semua di `div.mb_5`, plus email/WA CS dari setting general.
+    Sortir 6 kunci (default `mulai_berlaku`) + 2 arah; `#page_size` default 20.
+    Tombol N/A → NATIVE alert (3 varian alasan). Export href TANPA slash:
+    `/lelang/exportpenawaran?from=search…`. Request Harga → `/lelang/
+    request_update_harga/<id>` (form `#tanggal_tutup_update_harga`,
+    `#pilih_semua_bidder`, `#tombol_submit`).
+  - **Nego/Riwayat Nego**: admin TANPA aksi nego (diassert: tak ada tombol
+    terima/tolak/nego). Riwayat via textlink "Lihat Riwayat" — kolom
+    "Konfirmasi Transporter" (rule: "Konfirmasi Bidder").
+  - **Penugasan Tracking**: kolom admin punya Shipper DAN Transporter.
+    Halaman Tracking Pengiriman: `#ptg<tahap>` + `#wa<tahap>` +
+    `#tgs<tahap>`, `.lewati` HANYA di SJ Diterima Agen (kapal berlayar &
+    sandar wajib), `#submitSelesaiPenugasan`. Lihat Data Tracking tanpa
+    tracking = "Belum update tracking" (rule "Tidak ada data tersedia" →
+    test.fail).
+  - **Cek Jadwal**: identik shipper + halaman TERSEMBUNYI `/adminprahu/
+    setting_pelabuhan` (tidak ada di menu; modal `#modalEditProvinsi`
+    "Setting UNCODE", hanya `#un_meratus_edit` yang enable).
+  - **Laporan**: admin punya TIGA submenu (+ Laporan Owner) dan setiap
+    pencarian WAJIB memilih `#BidOwnerID`. Detail owner `/home/
+    detaillaporanowner/?OrderID=&LelangID=<id>&…`, detail logistik
+    `/home/detaillaporanlogistik/<hash>` (Kembali = LINK, bukan button).
+  - **Harga & Jadwal**: kolom admin diawali "Transporter"; tombol "Input
+    Harga Penawaran" → `/home/tambahharga` dengan `#BidderID` (khas admin);
+    `#ppn` >100 otomatis tereset jadi 100 (sesuai rule).
+  - **Akun Saya**: data akun BUKAN tabel, melainkan pasangan div
+    `<div>Label <span>:</span></div><div>Nilai</div>` → nilai diambil via
+    xpath `following-sibling::div[1]`. Nomor Whatsapp & Bagian Staff "-".
+  - **Dashboard**: `/home/dashboardorder` AUTO-mencari saat load
+    (`$('#lanjutcari').trigger('click')`) sehingga URL langsung ber-query;
+    kolom admin lebih banyak dari rule; sortir class `clicknya`; ID Order
+    link target=_blank ke `/order/orderdetail/<hash>`. DEFECT sama dgn
+    shipper: hint frekuensi & grafik "Maksimal range tanggal 12 Bulan"
+    (rule 90 hari) → 2 test.fail.
+- **Jebakan locator yang terbukti di run ini** (semua sudah diperbaiki;
+  pola berulang, pakai sebagai checklist saat menulis spec baru):
+  1. Teks halaman yang SAMA dengan nama menu sidebar → strict violation
+     ("AKUN SAYA", "PROFIL TRANSPORTER", "Dokumen Aanwijzing", "Riwayat
+     Nego", "Daftar Request Jadwal"). Scope ke `.heading_1`/`.heading_2`
+     atau `.filter({ visible: true })`.
+  2. Link aksi dirender DUA varian dengan href sama, salah satunya
+     `target="_blank"` (Lihat Riwayat, Request Jadwal, Profil Transporter,
+     Export) → `.first()` + tangani popup `context().waitForEvent('page')`.
+  3. Label & sel tabel ber-newline/indentasi MENTAH → setiap regex
+     berjangkar WAJIB `\s*` di kedua ujung (berlaku juga untuk `toHaveText`).
+  4. `\b` penutup tidak pernah cocok setelah "." atau ")" ("Nama Kota /
+     Kab.", "Harga (Rp.)").
+  5. Item dropdown yang belum dibuka TIDAK punya role → ambil href via CSS
+     (`a[href*="…"]`), bukan `getByRole('link')`.
+  6. Locator ber-`:not(:checked)` berhenti cocok setelah dicentang sehingga
+     `uncheck()` menggantung → simpan indeks dari daftar stabil.
+  7. Judul seksi bisa HURUF KECIL di DOM dan tampak kapital lewat CSS
+     (`kapal berlayar`) → cocokkan case-insensitive.
+  8. Panel filter punya label ganda desktop/mobile; varian PERTAMA justru
+     hidden → jangan `.first()` tanpa `.filter({ visible: true })`.
 
 ## Admin (mulai 2026-08-28)
 
@@ -507,18 +603,54 @@ item menu itu TIDAK tersedia utk status ORDER BARU):
     rule 8; preference notif shipper 16 push/12 email vs rule 17/13; alert
     hapus kemasan terpakai "…pada master jenis muatan" vs rule "…pada
     orderan". Semua test.fail() terdokumentasi.
+14. (2026-08-30) Diskrepansi rule vs UI sisi ADMIN (bukan crash), semua
+    test.fail() terdokumentasi:
+    a. Dashboard Frekuensi & Grafik Pengiriman: hint "Maksimal range tanggal
+       12 Bulan", rule menuntut 90 hari (sama persis dgn temuan sisi
+       shipper) — `tests/admin/dashboard.spec.ts`.
+    b. Action menu Daftar Pengajuan Lelang TIDAK punya item "Minta Update
+       Harga"/"Menuju Update Harga" yang diminta rule untuk tab Lelang
+       Tutup/Telah Akhir Kirim/Perlu Update Harga; request harga hanya bisa
+       lewat tombol di halaman Cari Penawaran —
+       `tests/admin/pengajuan-lelang.spec.ts`.
+    c. Lihat Data Tracking untuk order yang ditugaskan tapi belum dikerjakan
+       menampilkan "Belum update tracking", rule menulis "Tidak ada data
+       tersedia" — `tests/admin/penugasan-tracking.spec.ts`.
+    Catatan non-defect ke developer (dari run yang sama): tombol "Request
+    Harga" pada lelang yang SUDAH lewat rencana akhir kirim TIDAK konsisten
+    dinonaktifkan (sebagian lelang di tab Telah Akhir Kirim tetap enable);
+    rule menuntut alert penolakan. Test menelusuri beberapa lelang dan skip
+    bila tak menemukan yang dinonaktifkan.
 
-## Langkah berikutnya (belum dikerjakan)
+## Langkah berikutnya (belum dikerjakan) — diperbarui 2026-08-30
 
-- Sisa modul shipper: Pengajuan Lelang (mutasi — TANYA user dulu boleh/tidak
-  membuat data lelang di demo), Dashboard, Daftar Order, Cek Jadwal, Laporan, dll.
-- Transporter: semua modul read-only SELESAI (termasuk Akun Saya/Profil/
-  Preference Notif 2026-08-29); sisa = alur mutasi (harga, jadwal, respon
-  nego, input unit, invoice, penugasan petugas) — butuh izin user.
-- Modul admin lain (Validasi Akun, Setting, Master, Pengaturan Akun, sisa
-  Daftar Order admin — banyak mutasi; Edit Harga sudah selesai 2026-08-28).
-- `.env.example` masih berisi kredensial asli — kosongkan sebelum git init.
-- Folder `specs/` & `specs/_challenge/` masih kosong (tujuan belum dijelaskan user).
+Urutan rekomendasi (dari paling aman/tanpa mutasi ke yang butuh izin):
+
+1. **Project sub user yang masih kosong**: `tests/admin-sub/` dan
+   `tests/shipper-sub/` BELUM ADA padahal project-nya sudah didefinisikan di
+   playwright.config.ts (hanya `transporter-sub` yang punya spec). Pola siap
+   pakai ada di `tests/transporter-sub/akun-saya.spec.ts` (akses ditolak →
+   redirect + `.alert_negatif`).
+2. **Sisa Daftar Order admin** (mutasi): Edit Data Order, Edit Status Order,
+   Batalkan Order, Alihkan Order (baru dibuka GET di spec open-stack),
+   Invoice. Edit Harga & Ganti Jadwal sudah selesai.
+3. **Sisa mutasi Validasi Akun/Master admin**: terima/tolak akun (mengubah
+   akun demo permanen — TANYA user), rekening maks 3, verifikasi perubahan
+   data, upload aanwijzing, hidden ulasan, gating petugas ditugaskan.
+4. **Alur mutasi Transporter** (semua modulnya kini read-only): tambah/edit
+   harga penawaran, respon nego, input unit, invoice, penugasan petugas.
+5. **Alur mutasi Shipper**: ajukan nego, pembuatan order dari Cari Penawaran
+   (tersangkut `bootstrapMaterialDatePicker` pada Tanggal Permintaan Muat —
+   lihat catatan Open Stack), validasi/terima order, simpan Preference Notif
+   (test sekarang hanya toggle sisi klien).
+6. **Push Notif** (rule admin/bidder/bid-owner `*-push-notif.md`) belum
+   disentuh sama sekali — perlu keputusan apakah layak diotomasi.
+7. Housekeeping: `.env.example` masih berisi kredensial asli (kosongkan
+   sebelum git init); generator report menamai file per TANGGAL saja
+   sehingga run kedua di hari sama menimpa laporan sebelumnya (sudah 2x
+   di-rename manual: `-admin`, `-admin-mutasi`, `-admin-readonly`) — saran:
+   tambahkan jam/suffix otomatis; folder `specs/` & `specs/_challenge/`
+   masih kosong (tujuan belum dijelaskan user).
 
 ## Setup environment (Linux, 2026-08-29 — repo dipindah dari Windows)
 

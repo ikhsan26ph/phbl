@@ -1,0 +1,296 @@
+- generic [active] [ref=f165e1]:
+  - generic [ref=f165e2]:
+    - generic [ref=f165e3]:
+      - generic [ref=f165e4]:
+        - link [ref=f165e6] [cursor=pointer]:
+          - /url: https://phbidlautdemo.prahu-hub.com/
+        - button [ref=f165e10] [cursor=pointer]
+      - text:  
+      - generic [ref=f165e13]:
+        - generic [ref=f165e14]:
+          - generic [ref=f165e15]: Admin PH Bid
+          - button "Administrator" [ref=f165e17]
+        - text: 
+        - generic [ref=f165e21]:
+          - generic [ref=f165e22]:
+            - generic [ref=f165e23]: Admin PH Bid
+            - generic [ref=f165e24]: prahu.bid20@gmail.com
+          - generic [ref=f165e25]: 
+          - link "" [ref=f165e28] [cursor=pointer]:
+            - /url: https://phbidlautdemo.prahu-hub.com/home/notification
+          - link [ref=f165e35] [cursor=pointer]:
+            - /url: https://phbidlautdemo.prahu-hub.com/user/do_logout
+    - generic [ref=f165e38]:
+      - generic [ref=f165e39]:
+        - text: 
+        - generic [ref=f165e40]:
+          - list [ref=f165e42]:
+            - listitem
+            - listitem [ref=f165e43]:
+              - link "CARI PENAWARAN" [ref=f165e44] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/lelang/carirute
+            - listitem [ref=f165e45]: MENU ADMIN
+            - listitem [ref=f165e46]:
+              - generic [ref=f165e47] [cursor=pointer]:
+                - text: DASHBOARD
+                - generic [ref=f165e50]: 
+            - listitem [ref=f165e51]:
+              - generic [ref=f165e52] [cursor=pointer]:
+                - text: ANALITIK
+                - generic [ref=f165e55]: 
+            - listitem [ref=f165e56]:
+              - link "PENGAJUAN LELANG" [ref=f165e57] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/lelang/listlelang
+            - listitem [ref=f165e60]:
+              - link "PENGAJUAN NEGO" [ref=f165e61] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/lelang/pengajuannego
+            - listitem [ref=f165e64]:
+              - link [ref=f165e65] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/order/orderlist
+            - listitem [ref=f165e68]:
+              - link "PENUGASAN TRACKING" [ref=f165e69] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/home/penugasantracking
+            - listitem [ref=f165e72]:
+              - link "CEK JADWAL" [ref=f165e73] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/lelang/carijadwal
+            - listitem [ref=f165e76]:
+              - generic [ref=f165e77] [cursor=pointer]:
+                - text: LAPORAN
+                - generic [ref=f165e80]: 
+            - listitem [ref=f165e81]:
+              - generic [ref=f165e82] [cursor=pointer]:
+                - text: VALIDASI AKUN
+                - generic [ref=f165e85]: 
+            - listitem [ref=f165e86]:
+              - generic [ref=f165e87] [cursor=pointer]:
+                - text: SETTING
+                - generic [ref=f165e90]: 
+            - listitem [ref=f165e91]:
+              - generic [ref=f165e92] [cursor=pointer]:
+                - text: MASTER
+                - generic [ref=f165e95]: 
+            - listitem [ref=f165e96]:
+              - generic [ref=f165e97] [cursor=pointer]:
+                - text: PENGATURAN AKUN
+                - generic [ref=f165e100]: 
+            - listitem [ref=f165e101]:
+              - link "AKUN SAYA" [ref=f165e102] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/home/akunsaya
+            - listitem [ref=f165e105]: MENU TRANSPORTER
+            - listitem [ref=f165e106]:
+              - link "HARGA & JADWAL" [ref=f165e107] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/home/hargajadwal
+          - generic [ref=f165e112]:
+            - paragraph [ref=f165e114]: KONTAK KAMI
+            - generic [ref=f165e115]:
+              - generic [ref=f165e116]: 
+              - text: "081246665023"
+            - generic [ref=f165e117]:
+              - generic [ref=f165e118]: 
+              - text: "081246665023"
+            - generic [ref=f165e119]:
+              - generic [ref=f165e120]: 
+              - text: csct@prahu-hub.com
+            - generic [ref=f165e121]:
+              - link [ref=f165e122] [cursor=pointer]:
+                - /url: https://facebook.com/sosmed.phbid
+              - link [ref=f165e124] [cursor=pointer]:
+                - /url: https://twitter.com/PrahuHub
+              - link [ref=f165e126] [cursor=pointer]:
+                - /url: https://instagram.com/phbid_/
+              - link [ref=f165e128] [cursor=pointer]:
+                - /url: https://www.youtube.com/channel/UC41VntroP3zKmXZYnGgtFdw
+              - link [ref=f165e130] [cursor=pointer]:
+                - /url: http://linkedin.com/in/ph-bid-aa5393211/
+      - generic [ref=f165e132]:
+        - generic [ref=f165e133]:
+          - generic [ref=f165e136]:
+            - link "Beranda" [ref=f165e138] [cursor=pointer]:
+              - /url: https://phbidlautdemo.prahu-hub.com/lelang/listLelang
+            - text: /
+            - link "Penugasan Tracking" [ref=f165e140] [cursor=pointer]:
+              - /url: https://phbidlautdemo.prahu-hub.com/home/penugasantracking
+            - text: / Tracking Pengiriman
+          - generic [ref=f165e142]:
+            - paragraph [ref=f165e143]: TRACKING PENGIRIMAN
+            - button " Kembali" [ref=f165e144] [cursor=pointer]:
+              - generic [ref=f165e145]: 
+              - text: Kembali
+          - generic [ref=f165e146]:
+            - tabpanel [ref=f165e148]:
+              - generic [ref=f165e150]:
+                - generic [ref=f165e151]: Detail Order
+                - generic [ref=f165e152]:
+                  - generic [ref=f165e153]:
+                    - text: Nomor Order
+                    - generic [ref=f165e154]: ":"
+                  - generic [ref=f165e155]: 20260807-06501
+                - generic [ref=f165e156]:
+                  - generic [ref=f165e157]:
+                    - text: Nomor Lelang
+                    - generic [ref=f165e158]: ":"
+                  - generic [ref=f165e159]: LELANGIK/02/2026/NRML#2
+                - generic [ref=f165e160]:
+                  - generic [ref=f165e161]:
+                    - text: Shipper
+                    - generic [ref=f165e162]: ":"
+                  - generic [ref=f165e163]: PT. Cipta Karya Abadi Sejahtera Sentora Mujur Selalu
+                - generic [ref=f165e164]:
+                  - generic [ref=f165e165]:
+                    - text: Rute
+                    - generic [ref=f165e166]: ":"
+                  - generic [ref=f165e167]: Dobo (DOB) - Bitung (BIT)
+                - generic [ref=f165e169]:
+                  - generic [ref=f165e170]:
+                    - text: Transporter
+                    - generic [ref=f165e171]: ":"
+                  - generic [ref=f165e172]: PT. Muda Jaya Wijaya Karya Sentosa Indah Elok (IK)
+                - generic [ref=f165e173]:
+                  - generic [ref=f165e174]:
+                    - text: Pelayaran
+                    - generic [ref=f165e175]: ":"
+                  - generic [ref=f165e176]: BJL
+                - generic [ref=f165e177]:
+                  - generic [ref=f165e178]:
+                    - text: Kapal / Voy.
+                    - generic [ref=f165e179]: ":"
+                  - generic [ref=f165e180]: KM. Love / KMLV001
+                - generic [ref=f165e181]:
+                  - generic [ref=f165e182]:
+                    - text: ETD - ETA
+                    - generic [ref=f165e183]: ":"
+                  - generic [ref=f165e184]: 31/08/2026 - 03/09/2026
+                - generic [ref=f165e185]:
+                  - generic [ref=f165e186]:
+                    - text: Closing Time
+                    - generic [ref=f165e187]: ":"
+                  - generic [ref=f165e188]: 01/08/2026 10:35
+                - generic [ref=f165e189]:
+                  - generic [ref=f165e190]:
+                    - text: Jenis Kontainer
+                    - generic [ref=f165e191]: ":"
+                  - generic [ref=f165e192]: 20 DRY
+                - generic [ref=f165e194]:
+                  - generic [ref=f165e195]:
+                    - text: Permintaan Muat
+                    - generic [ref=f165e196]: ":"
+                  - generic [ref=f165e197]: 20/08/2026 11:02
+                - generic [ref=f165e198]:
+                  - generic [ref=f165e199]:
+                    - text: Jumlah Dipesan
+                    - generic [ref=f165e200]: ":"
+                  - generic [ref=f165e201]: 1 Unit
+                - generic [ref=f165e202]:
+                  - generic [ref=f165e203]:
+                    - text: Deskripsi Umum Barang
+                    - generic [ref=f165e204]: ":"
+                  - generic [ref=f165e205]: Landasan
+                - generic [ref=f165e206]:
+                  - generic [ref=f165e207]:
+                    - text: Catatan Untuk Transporter
+                    - generic [ref=f165e208]: ":"
+                  - generic [ref=f165e209]: Landasan
+            - tabpanel [ref=f165e211]:
+              - generic [ref=f165e213]:
+                - generic [ref=f165e215]:
+                  - generic [ref=f165e216]:
+                    - generic [ref=f165e217]: stuffing
+                    - generic [ref=f165e219]:
+                      - generic [ref=f165e220]:
+                        - generic [ref=f165e221]: Nama Petugas *
+                        - generic [ref=f165e222]:
+                          - combobox [disabled] [ref=f165e223]
+                          - combobox [disabled] [ref=f165e226]:
+                            - textbox "Muhammad Djulfikar - 083830011881" [disabled] [ref=f165e227]:
+                              - generic [ref=f165e228]: Muhammad Djulfikar
+                      - generic [ref=f165e229]:
+                        - generic [ref=f165e230]: Nomor Whatsapp *
+                        - textbox "08xxxxxx" [disabled] [ref=f165e231]: "083830011881"
+                      - button "Action Menu" [ref=f165e234] [cursor=pointer]
+                  - separator [ref=f165e235]
+                - generic [ref=f165e237]:
+                  - generic [ref=f165e238]:
+                    - generic [ref=f165e239]: kapal berlayar
+                    - generic [ref=f165e241]:
+                      - generic [ref=f165e242]:
+                        - generic [ref=f165e243]: Nama Petugas *
+                        - generic [ref=f165e244]:
+                          - combobox [ref=f165e245]
+                          - combobox [ref=f165e248] [cursor=pointer]:
+                            - textbox "Pilih Petugas" [ref=f165e249]
+                      - generic [ref=f165e250]:
+                        - generic [ref=f165e251]: Nomor Whatsapp *
+                        - textbox "08xxxxxx" [ref=f165e252]
+                      - button "Tugaskan" [ref=f165e255] [cursor=pointer]
+                  - separator [ref=f165e256]
+                - generic [ref=f165e258]:
+                  - generic [ref=f165e259]:
+                    - generic [ref=f165e260]: kapal sandar
+                    - generic [ref=f165e262]:
+                      - generic [ref=f165e263]:
+                        - generic [ref=f165e264]: Nama Petugas *
+                        - generic [ref=f165e265]:
+                          - combobox [ref=f165e266]
+                          - combobox [ref=f165e269] [cursor=pointer]:
+                            - textbox "Pilih Petugas" [ref=f165e270]
+                      - generic [ref=f165e271]:
+                        - generic [ref=f165e272]: Nomor Whatsapp *
+                        - textbox "08xxxxxx" [ref=f165e273]
+                      - button "Tugaskan" [ref=f165e276] [cursor=pointer]
+                  - separator [ref=f165e277]
+                - generic [ref=f165e279]:
+                  - generic [ref=f165e280]:
+                    - generic [ref=f165e281]: rencana dooring
+                    - generic [ref=f165e283]:
+                      - generic [ref=f165e284]:
+                        - generic [ref=f165e285]: Nama Petugas *
+                        - generic [ref=f165e286]:
+                          - combobox [ref=f165e287]
+                          - combobox [ref=f165e290] [cursor=pointer]:
+                            - textbox "Pilih Petugas" [ref=f165e291]
+                      - generic [ref=f165e292]:
+                        - generic [ref=f165e293]: Nomor Whatsapp *
+                        - textbox "08xxxxxx" [ref=f165e294]
+                      - button "Tugaskan" [ref=f165e297] [cursor=pointer]
+                  - separator [ref=f165e298]
+                - generic [ref=f165e300]:
+                  - generic [ref=f165e301]:
+                    - generic [ref=f165e302]: dooring
+                    - generic [ref=f165e304]:
+                      - generic [ref=f165e305]:
+                        - generic [ref=f165e306]: Nama Petugas *
+                        - generic [ref=f165e307]:
+                          - combobox [ref=f165e308]
+                          - combobox [ref=f165e311] [cursor=pointer]:
+                            - textbox "Pilih Petugas" [ref=f165e312]
+                      - generic [ref=f165e313]:
+                        - generic [ref=f165e314]: Nomor Whatsapp *
+                        - textbox "08xxxxxx" [ref=f165e315]
+                      - button "Tugaskan" [ref=f165e318] [cursor=pointer]
+                  - separator [ref=f165e319]
+                - generic [ref=f165e321]:
+                  - generic [ref=f165e322]:
+                    - generic [ref=f165e323]:
+                      - text: SJ DITERIMA AGEN
+                      - button " Lewati" [ref=f165e324] [cursor=pointer]:
+                        - generic [ref=f165e325]: 
+                        - text: Lewati
+                    - generic [ref=f165e327]:
+                      - generic [ref=f165e328]:
+                        - generic [ref=f165e329]: Nama Petugas *
+                        - generic [ref=f165e330]:
+                          - combobox [ref=f165e331]
+                          - combobox [ref=f165e334] [cursor=pointer]:
+                            - textbox "Pilih Petugas" [ref=f165e335]
+                      - generic [ref=f165e336]:
+                        - generic [ref=f165e337]: Nomor Whatsapp *
+                        - textbox "08xxxxxx" [ref=f165e338]
+                      - button "Tugaskan" [ref=f165e341] [cursor=pointer]
+                  - separator [ref=f165e342]
+                - generic [ref=f165e345]:
+                  - generic [ref=f165e346]:
+                    - generic [ref=f165e347]: 
+                    - text: Tracking yang telah ditugaskan akan dikunci, untuk penentuan trigger step akhir.
+                  - button "Selesai" [ref=f165e349] [cursor=pointer]
+        - paragraph [ref=f165e355]: © BETA 20260228 v1.3.28 - PH Bid Laut | Digital Logistic Platform
+  - text:    

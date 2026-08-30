@@ -1,0 +1,432 @@
+- generic [ref=f164e1]:
+  - generic [ref=f164e2]:
+    - generic [ref=f164e3]:
+      - generic [ref=f164e4]:
+        - link [ref=f164e6] [cursor=pointer]:
+          - /url: https://phbidlautdemo.prahu-hub.com/
+        - button [ref=f164e10] [cursor=pointer]
+      - text:  
+      - generic [ref=f164e13]:
+        - generic [ref=f164e14]:
+          - generic [ref=f164e15]: Admin PH Bid
+          - button "Administrator" [ref=f164e17]
+        - text: 
+        - generic [ref=f164e21]:
+          - generic [ref=f164e22]:
+            - generic [ref=f164e23]: Admin PH Bid
+            - generic [ref=f164e24]: prahu.bid20@gmail.com
+          - generic [ref=f164e25]: 
+          - link "" [ref=f164e28] [cursor=pointer]:
+            - /url: https://phbidlautdemo.prahu-hub.com/home/notification
+          - link [ref=f164e35] [cursor=pointer]:
+            - /url: https://phbidlautdemo.prahu-hub.com/user/do_logout
+    - generic [ref=f164e38]:
+      - generic [ref=f164e39]:
+        - text: 
+        - generic [ref=f164e40]:
+          - list [ref=f164e42]:
+            - listitem
+            - listitem [ref=f164e43]:
+              - link "CARI PENAWARAN" [ref=f164e44] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/lelang/carirute
+            - listitem [ref=f164e45]: MENU ADMIN
+            - listitem [ref=f164e46]:
+              - generic [ref=f164e47] [cursor=pointer]:
+                - text: DASHBOARD
+                - generic [ref=f164e50]: 
+            - listitem [ref=f164e51]:
+              - generic [ref=f164e52] [cursor=pointer]:
+                - text: ANALITIK
+                - generic [ref=f164e55]: 
+            - listitem [ref=f164e56]:
+              - link "PENGAJUAN LELANG" [ref=f164e57] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/lelang/listlelang
+            - listitem [ref=f164e60]:
+              - link "PENGAJUAN NEGO" [ref=f164e61] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/lelang/pengajuannego
+            - listitem [ref=f164e64]:
+              - link "DAFTAR ORDER" [ref=f164e65] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/order/orderlist
+            - listitem [ref=f164e68]:
+              - link "PENUGASAN TRACKING" [ref=f164e69] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/home/penugasantracking
+            - listitem [ref=f164e72]:
+              - link "CEK JADWAL" [ref=f164e73] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/lelang/carijadwal
+            - listitem [ref=f164e76]:
+              - generic [ref=f164e77] [cursor=pointer]:
+                - text: LAPORAN
+                - generic [ref=f164e80]: 
+            - listitem [ref=f164e81]:
+              - generic [ref=f164e82] [cursor=pointer]:
+                - text: VALIDASI AKUN
+                - generic [ref=f164e85]: 
+            - listitem [ref=f164e86]:
+              - generic [ref=f164e87] [cursor=pointer]:
+                - text: SETTING
+                - generic [ref=f164e90]: 
+            - listitem [ref=f164e91]:
+              - generic [ref=f164e92] [cursor=pointer]:
+                - text: MASTER
+                - generic [ref=f164e95]: 
+            - listitem [ref=f164e96]:
+              - generic [ref=f164e97] [cursor=pointer]:
+                - text: PENGATURAN AKUN
+                - generic [ref=f164e100]: 
+            - listitem [ref=f164e101]:
+              - link "AKUN SAYA" [ref=f164e102] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/home/akunsaya
+            - listitem [ref=f164e105]: MENU TRANSPORTER
+            - listitem [ref=f164e106]:
+              - link "HARGA & JADWAL" [ref=f164e107] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/home/hargajadwal
+          - generic [ref=f164e112]:
+            - paragraph [ref=f164e114]: KONTAK KAMI
+            - generic [ref=f164e115]:
+              - generic [ref=f164e116]: 
+              - text: "081246665023"
+            - generic [ref=f164e117]:
+              - generic [ref=f164e118]: 
+              - text: "081246665023"
+            - generic [ref=f164e119]:
+              - generic [ref=f164e120]: 
+              - text: csct@prahu-hub.com
+            - generic [ref=f164e121]:
+              - link [ref=f164e122] [cursor=pointer]:
+                - /url: https://facebook.com/sosmed.phbid
+              - link [ref=f164e124] [cursor=pointer]:
+                - /url: https://twitter.com/PrahuHub
+              - link [ref=f164e126] [cursor=pointer]:
+                - /url: https://instagram.com/phbid_/
+              - link [ref=f164e128] [cursor=pointer]:
+                - /url: https://www.youtube.com/channel/UC41VntroP3zKmXZYnGgtFdw
+              - link [ref=f164e130] [cursor=pointer]:
+                - /url: http://linkedin.com/in/ph-bid-aa5393211/
+      - generic [ref=f164e132]:
+        - generic [ref=f164e133]:
+          - generic [ref=f164e136]:
+            - link "Beranda" [ref=f164e138] [cursor=pointer]:
+              - /url: https://phbidlautdemo.prahu-hub.com/lelang/listLelang
+            - text: / Setting Pelabuhan
+          - generic [ref=f164e140]:
+            - generic [ref=f164e141]: SETTING PELABUHAN
+            - text:  
+            - generic [ref=f164e142]:
+              - button " Filter" [ref=f164e143] [cursor=pointer]:
+                - generic [ref=f164e144]: 
+                - text: Filter
+              - link [ref=f164e145] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/adminprahu/edit_datapelabuhan
+                - button " Edit Data Pelabuhan" [ref=f164e146]:
+                  - generic [ref=f164e147]: 
+                  - text: Edit Data Pelabuhan
+              - link "Export Data Pelabuhan" [ref=f164e149] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/adminprahu/setting_exportpelabuhan
+              - generic [ref=f164e151]:
+                - text: Menampilkan
+                - combobox [ref=f164e152]:
+                  - option "20" [selected]
+                  - option "30"
+                  - option "50"
+                  - option "100"
+                - text: Data
+          - text:  
+          - table [ref=f164e153]:
+            - rowgroup [ref=f164e154]:
+              - row [ref=f164e155]:
+                - columnheader "No " [ref=f164e156] [cursor=pointer]:
+                  - generic [ref=f164e157]:
+                    - generic [ref=f164e158]: "No"
+                    - generic [ref=f164e159]: 
+                - columnheader "Nama Pelabuhan " [ref=f164e161] [cursor=pointer]:
+                  - generic [ref=f164e162]:
+                    - generic [ref=f164e163]: Nama Pelabuhan
+                    - generic [ref=f164e164]: 
+                - columnheader "Nama Kota / Kab. " [ref=f164e166] [cursor=pointer]:
+                  - generic [ref=f164e167]:
+                    - generic [ref=f164e168]: Nama Kota / Kab.
+                    - generic [ref=f164e169]: 
+                - columnheader "UN Code " [ref=f164e171] [cursor=pointer]:
+                  - generic [ref=f164e172]:
+                    - generic [ref=f164e173]: UN Code
+                    - generic [ref=f164e174]: 
+                - columnheader "UN Meratus " [ref=f164e176] [cursor=pointer]:
+                  - generic [ref=f164e177]:
+                    - generic [ref=f164e178]: UN Meratus
+                    - generic [ref=f164e179]: 
+                - columnheader "Status " [ref=f164e181] [cursor=pointer]:
+                  - generic [ref=f164e182]:
+                    - generic [ref=f164e183]: Status
+                    - generic [ref=f164e184]: 
+                - columnheader "Aksi" [ref=f164e186]
+              - row [ref=f164e187]:
+                - cell [ref=f164e188]
+            - rowgroup [ref=f164e189]:
+              - row [ref=f164e209]:
+                - cell [ref=f164e210]
+              - row [ref=f164e211]:
+                - cell "64" [ref=f164e212]
+                - cell "AUTOTEST-FIXTURE-PELABUHAN-01" [ref=f164e214]
+                - cell "Kota Surabaya" [ref=f164e215]
+                - cell "ZZAF1" [ref=f164e216]
+                - cell "-" [ref=f164e217]
+                - cell "AKTIF" [ref=f164e218]
+                - cell [ref=f164e220]:
+                  - button " Setting" [ref=f164e222] [cursor=pointer]:
+                    - generic [ref=f164e223]: 
+                    - text: Setting
+              - row [ref=f164e224]:
+                - cell "63" [ref=f164e225]
+                - cell "Testing" [ref=f164e227]
+                - cell "Kota Surabaya" [ref=f164e228]
+                - cell "TEST" [ref=f164e229]
+                - cell "-" [ref=f164e230]
+                - cell "AKTIF" [ref=f164e231]
+                - cell [ref=f164e233]:
+                  - button " Setting" [ref=f164e235] [cursor=pointer]:
+                    - generic [ref=f164e236]: 
+                    - text: Setting
+              - row [ref=f164e237]:
+                - cell "62" [ref=f164e238]
+                - cell "Waingapu" [ref=f164e240]
+                - cell "Kab. Sumba Timur" [ref=f164e241]
+                - cell "WGP" [ref=f164e242]
+                - cell "WGPP" [ref=f164e243]
+                - cell "TIDAK AKTIF" [ref=f164e244]
+                - cell [ref=f164e246]:
+                  - button " Setting" [active] [ref=f164e248] [cursor=pointer]:
+                    - generic [ref=f164e249]: 
+                    - text: Setting
+              - row [ref=f164e250]:
+                - cell "61" [ref=f164e251]
+                - cell "Tual" [ref=f164e253]
+                - cell "Kota Tual" [ref=f164e254]
+                - cell "TUA" [ref=f164e255]
+                - cell "-" [ref=f164e256]
+                - cell "AKTIF" [ref=f164e257]
+                - cell [ref=f164e259]:
+                  - button " Setting" [ref=f164e261] [cursor=pointer]:
+                    - generic [ref=f164e262]: 
+                    - text: Setting
+              - row [ref=f164e263]:
+                - cell "60" [ref=f164e264]
+                - cell "Ternate" [ref=f164e266]
+                - cell "Kota Ternate" [ref=f164e267]
+                - cell "TTE" [ref=f164e268]
+                - cell "-" [ref=f164e269]
+                - cell "AKTIF" [ref=f164e270]
+                - cell [ref=f164e272]:
+                  - button " Setting" [ref=f164e274] [cursor=pointer]:
+                    - generic [ref=f164e275]: 
+                    - text: Setting
+              - row [ref=f164e276]:
+                - cell "59" [ref=f164e277]
+                - cell "Tarakan" [ref=f164e279]
+                - cell "Kota Tarakan" [ref=f164e280]
+                - cell "TRK" [ref=f164e281]
+                - cell "-" [ref=f164e282]
+                - cell "AKTIF" [ref=f164e283]
+                - cell [ref=f164e285]:
+                  - button " Setting" [ref=f164e287] [cursor=pointer]:
+                    - generic [ref=f164e288]: 
+                    - text: Setting
+              - row [ref=f164e289]:
+                - cell "58" [ref=f164e290]
+                - cell "Tanjung Pinang" [ref=f164e292]
+                - cell "Kota Tanjung Pinang" [ref=f164e293]
+                - cell "TNJ" [ref=f164e294]
+                - cell "-" [ref=f164e295]
+                - cell "AKTIF" [ref=f164e296]
+                - cell [ref=f164e298]:
+                  - button " Setting" [ref=f164e300] [cursor=pointer]:
+                    - generic [ref=f164e301]: 
+                    - text: Setting
+              - row [ref=f164e302]:
+                - cell "57" [ref=f164e303]
+                - cell "Timika" [ref=f164e305]
+                - cell "Kab. Mimika" [ref=f164e306]
+                - cell "TMK" [ref=f164e307]
+                - cell "-" [ref=f164e308]
+                - cell "AKTIF" [ref=f164e309]
+                - cell [ref=f164e311]:
+                  - button " Setting" [ref=f164e313] [cursor=pointer]:
+                    - generic [ref=f164e314]: 
+                    - text: Setting
+              - row [ref=f164e315]:
+                - cell "56" [ref=f164e316]
+                - cell "Tolitoli" [ref=f164e318]
+                - cell "Kab. Toli-Toli" [ref=f164e319]
+                - cell "TLI" [ref=f164e320]
+                - cell "-" [ref=f164e321]
+                - cell "AKTIF" [ref=f164e322]
+                - cell [ref=f164e324]:
+                  - button " Setting" [ref=f164e326] [cursor=pointer]:
+                    - generic [ref=f164e327]: 
+                    - text: Setting
+              - row [ref=f164e328]:
+                - cell "55" [ref=f164e329]
+                - cell "Tanjung Pandan" [ref=f164e331]
+                - cell "Kab. Belitung" [ref=f164e332]
+                - cell "TJQ" [ref=f164e333]
+                - cell "-" [ref=f164e334]
+                - cell "AKTIF" [ref=f164e335]
+                - cell [ref=f164e337]:
+                  - button " Setting" [ref=f164e339] [cursor=pointer]:
+                    - generic [ref=f164e340]: 
+                    - text: Setting
+              - row [ref=f164e341]:
+                - cell "54" [ref=f164e342]
+                - cell "Tangkiang" [ref=f164e344]
+                - cell "Kab. Banggai" [ref=f164e345]
+                - cell "TGK" [ref=f164e346]
+                - cell "-" [ref=f164e347]
+                - cell "AKTIF" [ref=f164e348]
+                - cell [ref=f164e350]:
+                  - button " Setting" [ref=f164e352] [cursor=pointer]:
+                    - generic [ref=f164e353]: 
+                    - text: Setting
+              - row [ref=f164e354]:
+                - cell "53" [ref=f164e355]
+                - cell "Tobelo" [ref=f164e357]
+                - cell "Kab. Halmahera Utara" [ref=f164e358]
+                - cell "TBO" [ref=f164e359]
+                - cell "-" [ref=f164e360]
+                - cell "AKTIF" [ref=f164e361]
+                - cell [ref=f164e363]:
+                  - button " Setting" [ref=f164e365] [cursor=pointer]:
+                    - generic [ref=f164e366]: 
+                    - text: Setting
+              - row [ref=f164e367]:
+                - cell "52" [ref=f164e368]
+                - cell "Tanjung Perak" [ref=f164e370]
+                - cell "Kota Surabaya" [ref=f164e371]
+                - cell "SUB" [ref=f164e372]
+                - cell "IDSUB" [ref=f164e373]
+                - cell "AKTIF" [ref=f164e374]
+                - cell [ref=f164e376]:
+                  - button " Setting" [ref=f164e378] [cursor=pointer]:
+                    - generic [ref=f164e379]: 
+                    - text: Setting
+              - row [ref=f164e380]:
+                - cell "51" [ref=f164e381]
+                - cell "Samarinda" [ref=f164e383]
+                - cell "Kota Samarinda" [ref=f164e384]
+                - cell "SRI" [ref=f164e385]
+                - cell "IDSRI" [ref=f164e386]
+                - cell "AKTIF" [ref=f164e387]
+                - cell [ref=f164e389]:
+                  - button " Setting" [ref=f164e391] [cursor=pointer]:
+                    - generic [ref=f164e392]: 
+                    - text: Setting
+              - row [ref=f164e393]:
+                - cell "50" [ref=f164e394]
+                - cell "Tanjung Emas" [ref=f164e396]
+                - cell "Kota Semarang" [ref=f164e397]
+                - cell "SRG" [ref=f164e398]
+                - cell "-" [ref=f164e399]
+                - cell "AKTIF" [ref=f164e400]
+                - cell [ref=f164e402]:
+                  - button " Setting" [ref=f164e404] [cursor=pointer]:
+                    - generic [ref=f164e405]: 
+                    - text: Setting
+              - row [ref=f164e406]:
+                - cell "49" [ref=f164e407]
+                - cell "Sorong" [ref=f164e409]
+                - cell "Kota Sorong" [ref=f164e410]
+                - cell "SOQ" [ref=f164e411]
+                - cell "-" [ref=f164e412]
+                - cell "AKTIF" [ref=f164e413]
+                - cell [ref=f164e415]:
+                  - button " Setting" [ref=f164e417] [cursor=pointer]:
+                    - generic [ref=f164e418]: 
+                    - text: Setting
+              - row [ref=f164e419]:
+                - cell "48" [ref=f164e420]
+                - cell "Sampit" [ref=f164e422]
+                - cell "Kab. Kotawaringin Timur" [ref=f164e423]
+                - cell "SMQ" [ref=f164e424]
+                - cell "-" [ref=f164e425]
+                - cell "AKTIF" [ref=f164e426]
+                - cell [ref=f164e428]:
+                  - button " Setting" [ref=f164e430] [cursor=pointer]:
+                    - generic [ref=f164e431]: 
+                    - text: Setting
+              - row [ref=f164e432]:
+                - cell "47" [ref=f164e433]
+                - cell "Sibolga" [ref=f164e435]
+                - cell "Kota Sibolga" [ref=f164e436]
+                - cell "SLG" [ref=f164e437]
+                - cell "-" [ref=f164e438]
+                - cell "AKTIF" [ref=f164e439]
+                - cell [ref=f164e441]:
+                  - button " Setting" [ref=f164e443] [cursor=pointer]:
+                    - generic [ref=f164e444]: 
+                    - text: Setting
+              - row [ref=f164e445]:
+                - cell "46" [ref=f164e446]
+                - cell "Reo" [ref=f164e448]
+                - cell "Kab. Manggarai" [ref=f164e449]
+                - cell "REO" [ref=f164e450]
+                - cell "-" [ref=f164e451]
+                - cell "AKTIF" [ref=f164e452]
+                - cell [ref=f164e454]:
+                  - button " Setting" [ref=f164e456] [cursor=pointer]:
+                    - generic [ref=f164e457]: 
+                    - text: Setting
+              - row [ref=f164e458]:
+                - cell "45" [ref=f164e459]
+                - cell "Nusantara Raha" [ref=f164e461]
+                - cell "Kab. Muna" [ref=f164e462]
+                - cell "RAQ" [ref=f164e463]
+                - cell "-" [ref=f164e464]
+                - cell "AKTIF" [ref=f164e465]
+                - cell [ref=f164e467]:
+                  - button " Setting" [ref=f164e469] [cursor=pointer]:
+                    - generic [ref=f164e470]: 
+                    - text: Setting
+              - row [ref=f164e471]:
+                - cell [ref=f164e472]
+          - generic [ref=f164e473]:
+            - status [ref=f164e198]:
+              - status [ref=f164e474]: Menampilkan 1 sampai 20 dari 64 data
+            - list [ref=f164e475]:
+              - listitem [ref=f164e476]:
+                - generic [ref=f164e477] [cursor=pointer]: "1"
+              - listitem [ref=f164e478]:
+                - generic [ref=f164e479] [cursor=pointer]: "2"
+              - listitem [ref=f164e480]:
+                - generic [ref=f164e481] [cursor=pointer]: "3"
+              - listitem [ref=f164e482]:
+                - generic [ref=f164e483] [cursor=pointer]: "4"
+              - listitem [ref=f164e484]:
+                - generic "Selanjutnya" [ref=f164e485] [cursor=pointer]: Selanjutnya »
+              - listitem [ref=f164e486]:
+                - generic "Akhir" [ref=f164e487] [cursor=pointer]: Akhir »
+        - paragraph [ref=f164e206]: © BETA 20260228 v1.3.28 - PH Bid Laut | Digital Logistic Platform
+  - dialog "Setting UNCODE Nama Pelabuhan * Waingapu Kota / Kab. * UN Code * WGP UNCODE Meratus * WGPP Batal  Simpan" [ref=f164e488]:
+    - document:
+      - generic [ref=f164e489]:
+        - heading "Setting UNCODE" [level=5] [ref=f164e491]
+        - generic [ref=f164e492]:
+          - generic [ref=f164e493]:
+            - generic [ref=f164e494]:
+              - generic [ref=f164e495]: Nama Pelabuhan *
+              - textbox "Masukkan Nama Pelabuhan" [disabled] [ref=f164e497]: Waingapu
+            - generic [ref=f164e498]:
+              - generic [ref=f164e499]: Kota / Kab. *
+              - generic [ref=f164e501]:
+                - combobox [disabled] [ref=f164e502]
+                - combobox [disabled] [ref=f164e505]:
+                  - textbox "Kab. Sumba Timur" [disabled] [ref=f164e506]
+            - generic [ref=f164e507]:
+              - generic [ref=f164e508]: UN Code *
+              - textbox "Masukkan UN Code" [disabled] [ref=f164e510]: WGP
+            - generic [ref=f164e511]:
+              - generic [ref=f164e512]: UNCODE Meratus *
+              - textbox "Masukkan UNCODE Meratus" [ref=f164e514]: WGPP
+          - generic [ref=f164e515]:
+            - button "Batal" [ref=f164e516] [cursor=pointer]
+            - button " Simpan" [ref=f164e517] [cursor=pointer]:
+              - generic [ref=f164e518]: 
+              - text: Simpan
+  - text:  

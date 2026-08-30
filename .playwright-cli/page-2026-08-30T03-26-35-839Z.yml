@@ -1,0 +1,211 @@
+- generic [active] [ref=f99e1]:
+  - generic [ref=f99e2]:
+    - generic [ref=f99e3]:
+      - generic [ref=f99e4]:
+        - link [ref=f99e6] [cursor=pointer]:
+          - /url: https://phbidlautdemo.prahu-hub.com/
+        - button [ref=f99e10] [cursor=pointer]
+      - text:  
+      - generic [ref=f99e13]:
+        - generic [ref=f99e14]:
+          - generic [ref=f99e15]: Admin PH Bid
+          - button "Administrator" [ref=f99e17]
+        - text: 
+        - generic [ref=f99e21]:
+          - generic [ref=f99e22]:
+            - generic [ref=f99e23]: Admin PH Bid
+            - generic [ref=f99e24]: prahu.bid20@gmail.com
+          - generic [ref=f99e25]: 
+          - link "" [ref=f99e28] [cursor=pointer]:
+            - /url: https://phbidlautdemo.prahu-hub.com/home/notification
+          - link [ref=f99e35] [cursor=pointer]:
+            - /url: https://phbidlautdemo.prahu-hub.com/user/do_logout
+    - generic [ref=f99e38]:
+      - generic [ref=f99e39]:
+        - text: 
+        - generic [ref=f99e40]:
+          - list [ref=f99e42]:
+            - listitem
+            - listitem [ref=f99e43]:
+              - link "CARI PENAWARAN" [ref=f99e44] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/lelang/carirute
+            - listitem [ref=f99e45]: MENU ADMIN
+            - listitem [ref=f99e46]:
+              - generic [ref=f99e47] [cursor=pointer]:
+                - text: DASHBOARD
+                - generic [ref=f99e50]: 
+              - list [ref=f99e51]:
+                - listitem [ref=f99e52]:
+                  - link "Monitoring Pengiriman" [ref=f99e53] [cursor=pointer]:
+                    - /url: https://phbidlautdemo.prahu-hub.com/home/dashboardorder
+                - listitem [ref=f99e54]:
+                  - link "Grafik Pengiriman" [ref=f99e55] [cursor=pointer]:
+                    - /url: https://phbidlautdemo.prahu-hub.com/home/dashboardpengiriman
+                - listitem [ref=f99e56]:
+                  - link "Ringkasan Analitik" [ref=f99e57] [cursor=pointer]:
+                    - /url: https://phbidlautdemo.prahu-hub.com/dashboardanalitik/ringkasan
+            - listitem [ref=f99e58]:
+              - generic [ref=f99e59] [cursor=pointer]:
+                - text: ANALITIK
+                - generic [ref=f99e62]: 
+            - listitem [ref=f99e63]:
+              - link "PENGAJUAN LELANG" [ref=f99e64] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/lelang/listlelang
+            - listitem [ref=f99e67]:
+              - link "PENGAJUAN NEGO" [ref=f99e68] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/lelang/pengajuannego
+            - listitem [ref=f99e71]:
+              - link [ref=f99e72] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/order/orderlist
+            - listitem [ref=f99e75]:
+              - link "PENUGASAN TRACKING" [ref=f99e76] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/home/penugasantracking
+            - listitem [ref=f99e79]:
+              - link "CEK JADWAL" [ref=f99e80] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/lelang/carijadwal
+            - listitem [ref=f99e83]:
+              - generic [ref=f99e84] [cursor=pointer]:
+                - text: LAPORAN
+                - generic [ref=f99e87]: 
+            - listitem [ref=f99e88]:
+              - generic [ref=f99e89] [cursor=pointer]:
+                - text: VALIDASI AKUN
+                - generic [ref=f99e92]: 
+            - listitem [ref=f99e93]:
+              - generic [ref=f99e94] [cursor=pointer]:
+                - text: SETTING
+                - generic [ref=f99e97]: 
+            - listitem [ref=f99e98]:
+              - generic [ref=f99e99] [cursor=pointer]:
+                - text: MASTER
+                - generic [ref=f99e102]: 
+            - listitem [ref=f99e103]:
+              - generic [ref=f99e104] [cursor=pointer]:
+                - text: PENGATURAN AKUN
+                - generic [ref=f99e107]: 
+            - listitem [ref=f99e108]:
+              - link "AKUN SAYA" [ref=f99e109] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/home/akunsaya
+            - listitem [ref=f99e112]: MENU TRANSPORTER
+            - listitem [ref=f99e113]:
+              - link "HARGA & JADWAL" [ref=f99e114] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/home/hargajadwal
+          - generic [ref=f99e119]:
+            - paragraph [ref=f99e121]: KONTAK KAMI
+            - generic [ref=f99e122]:
+              - generic [ref=f99e123]: 
+              - text: "081246665023"
+            - generic [ref=f99e124]:
+              - generic [ref=f99e125]: 
+              - text: "081246665023"
+            - generic [ref=f99e126]:
+              - generic [ref=f99e127]: 
+              - text: csct@prahu-hub.com
+            - generic [ref=f99e128]:
+              - link [ref=f99e129] [cursor=pointer]:
+                - /url: https://facebook.com/sosmed.phbid
+              - link [ref=f99e131] [cursor=pointer]:
+                - /url: https://twitter.com/PrahuHub
+              - link [ref=f99e133] [cursor=pointer]:
+                - /url: https://instagram.com/phbid_/
+              - link [ref=f99e135] [cursor=pointer]:
+                - /url: https://www.youtube.com/channel/UC41VntroP3zKmXZYnGgtFdw
+              - link [ref=f99e137] [cursor=pointer]:
+                - /url: http://linkedin.com/in/ph-bid-aa5393211/
+      - generic [ref=f99e139]:
+        - generic [ref=f99e140]:
+          - generic [ref=f99e141]:
+            - generic [ref=f99e142]:
+              - heading "Dashboard FREKUENSI Pengiriman" [level=3] [ref=f99e143]
+              - generic [ref=f99e144] [cursor=pointer]: Tampilkan Penuh
+            - generic [ref=f99e146]:
+              - generic [ref=f99e147]:
+                - generic [ref=f99e149]:
+                  - generic [ref=f99e150]:
+                    - generic [ref=f99e151]:
+                      - generic [ref=f99e152]: Dari Tanggal *
+                      - textbox "DD/MM/YYYY" [ref=f99e153]: 30/07/2026
+                    - generic [ref=f99e154]: s.d
+                    - generic [ref=f99e156]:
+                      - generic [ref=f99e157]: Sampai Tanggal *
+                      - textbox "DD/MM/YYYY" [ref=f99e158]: 30/08/2026
+                  - text: Maksimal range tanggal 12 Bulan
+                - generic [ref=f99e160]:
+                  - generic [ref=f99e161]: Shipper *
+                  - generic [ref=f99e163]:
+                    - combobox [ref=f99e164]
+                    - combobox [ref=f99e167] [cursor=pointer]:
+                      - textbox "Tiara Afli Training" [ref=f99e168]
+                - button " Cari" [ref=f99e170] [cursor=pointer]:
+                  - generic [ref=f99e171]: 
+                  - text: Cari
+              - generic [ref=f99e174]:
+                - generic:
+                  - generic:
+                    - img:
+                      - generic:
+                        - generic [ref=f99e175] [cursor=pointer]
+                        - generic [ref=f99e176] [cursor=pointer]
+                        - generic [ref=f99e177] [cursor=pointer]
+                        - generic [ref=f99e178] [cursor=pointer]
+                        - generic [ref=f99e179] [cursor=pointer]
+                        - generic [ref=f99e180] [cursor=pointer]
+                        - generic [ref=f99e181] [cursor=pointer]
+                        - generic [ref=f99e182] [cursor=pointer]
+                        - generic [ref=f99e183] [cursor=pointer]
+                        - generic [ref=f99e184] [cursor=pointer]
+                        - generic [ref=f99e185] [cursor=pointer]
+                        - generic [ref=f99e186] [cursor=pointer]
+                        - generic [ref=f99e187] [cursor=pointer]
+                        - generic [ref=f99e188] [cursor=pointer]
+                        - generic [ref=f99e189] [cursor=pointer]
+                        - generic [ref=f99e190] [cursor=pointer]
+                        - generic [ref=f99e191] [cursor=pointer]
+                        - generic [ref=f99e192] [cursor=pointer]
+                        - generic [ref=f99e193] [cursor=pointer]
+                        - generic [ref=f99e194] [cursor=pointer]
+                        - generic [ref=f99e195] [cursor=pointer]
+                        - generic [ref=f99e196] [cursor=pointer]
+                        - generic [ref=f99e197] [cursor=pointer]
+                        - generic [ref=f99e198] [cursor=pointer]
+                        - generic [ref=f99e199] [cursor=pointer]
+                        - generic [ref=f99e200] [cursor=pointer]
+                        - generic [ref=f99e201] [cursor=pointer]
+                        - generic [ref=f99e202] [cursor=pointer]
+                        - generic [ref=f99e203] [cursor=pointer]
+                        - generic [ref=f99e204] [cursor=pointer]
+                        - generic [ref=f99e205] [cursor=pointer]
+                        - generic [ref=f99e206] [cursor=pointer]
+                        - generic [ref=f99e207] [cursor=pointer]
+                        - generic [ref=f99e208] [cursor=pointer]
+                - generic [ref=f99e209]:
+                  - button "Zoom in" [ref=f99e210] [cursor=pointer]: +
+                  - button "Zoom out" [ref=f99e211]: −
+          - generic [ref=f99e212]:
+            - generic [ref=f99e213]:
+              - heading "Dashboard Grafik Pengiriman" [level=3] [ref=f99e214]
+              - generic [ref=f99e215] [cursor=pointer]: Tampilkan Penuh
+            - generic [ref=f99e216]:
+              - generic [ref=f99e217]:
+                - generic [ref=f99e219]:
+                  - generic [ref=f99e220]:
+                    - generic [ref=f99e221]:
+                      - generic [ref=f99e222]: Dari Tanggal *
+                      - textbox "DD/MM/YYYY" [ref=f99e223]: 30/07/2026
+                    - generic [ref=f99e224]: s.d
+                    - generic [ref=f99e226]:
+                      - generic [ref=f99e227]: Sampai Tanggal *
+                      - textbox "DD/MM/YYYY" [ref=f99e228]: 30/08/2026
+                  - text: Maksimal range tanggal 12 Bulan
+                - generic [ref=f99e230]:
+                  - generic [ref=f99e231]: Shipper *
+                  - generic [ref=f99e233]:
+                    - combobox [ref=f99e234]
+                    - combobox [ref=f99e237] [cursor=pointer]:
+                      - textbox "Tiara Afli Training" [ref=f99e238]
+                - button " Cari" [ref=f99e240] [cursor=pointer]:
+                  - generic [ref=f99e241]: 
+                  - text: Cari
+              - generic [ref=f99e242]: Jumlah Pengiriman
+        - paragraph [ref=f99e252]: © BETA 20260228 v1.3.28 - PH Bid Laut | Digital Logistic Platform
+  - text:  

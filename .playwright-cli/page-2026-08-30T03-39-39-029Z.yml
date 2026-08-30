@@ -1,0 +1,179 @@
+- generic [active] [ref=f147e1]:
+  - generic [ref=f147e2]:
+    - generic [ref=f147e3]:
+      - generic [ref=f147e4]:
+        - link [ref=f147e6] [cursor=pointer]:
+          - /url: https://phbidlautdemo.prahu-hub.com/
+        - button [ref=f147e10] [cursor=pointer]
+      - text:  
+      - generic [ref=f147e13]:
+        - generic [ref=f147e14]:
+          - generic [ref=f147e15]: Admin PH Bid
+          - button "Administrator" [ref=f147e17]
+        - text: 
+        - generic [ref=f147e21]:
+          - generic [ref=f147e22]:
+            - generic [ref=f147e23]: Admin PH Bid
+            - generic [ref=f147e24]: prahu.bid20@gmail.com
+          - generic [ref=f147e25]: 
+          - link "" [ref=f147e28] [cursor=pointer]:
+            - /url: https://phbidlautdemo.prahu-hub.com/home/notification
+          - link [ref=f147e35] [cursor=pointer]:
+            - /url: https://phbidlautdemo.prahu-hub.com/user/do_logout
+    - generic [ref=f147e38]:
+      - generic [ref=f147e39]:
+        - text: 
+        - generic [ref=f147e40]:
+          - list [ref=f147e42]:
+            - listitem
+            - listitem [ref=f147e43]:
+              - link "CARI PENAWARAN" [ref=f147e44] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/lelang/carirute
+            - listitem [ref=f147e45]: MENU ADMIN
+            - listitem [ref=f147e46]:
+              - generic [ref=f147e47] [cursor=pointer]:
+                - text: DASHBOARD
+                - generic [ref=f147e50]: 
+            - listitem [ref=f147e51]:
+              - generic [ref=f147e52] [cursor=pointer]:
+                - text: ANALITIK
+                - generic [ref=f147e55]: 
+            - listitem [ref=f147e56]:
+              - link "PENGAJUAN LELANG" [ref=f147e57] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/lelang/listlelang
+            - listitem [ref=f147e60]:
+              - link "PENGAJUAN NEGO" [ref=f147e61] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/lelang/pengajuannego
+            - listitem [ref=f147e64]:
+              - link [ref=f147e65] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/order/orderlist
+            - listitem [ref=f147e68]:
+              - link "PENUGASAN TRACKING" [ref=f147e69] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/home/penugasantracking
+            - listitem [ref=f147e72]:
+              - link "CEK JADWAL" [ref=f147e73] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/lelang/carijadwal
+            - listitem [ref=f147e76]:
+              - generic [ref=f147e77] [cursor=pointer]:
+                - text: LAPORAN
+                - generic [ref=f147e80]: 
+            - listitem [ref=f147e81]:
+              - generic [ref=f147e82] [cursor=pointer]:
+                - text: VALIDASI AKUN
+                - generic [ref=f147e85]: 
+            - listitem [ref=f147e86]:
+              - generic [ref=f147e87] [cursor=pointer]:
+                - text: SETTING
+                - generic [ref=f147e90]: 
+            - listitem [ref=f147e91]:
+              - generic [ref=f147e92] [cursor=pointer]:
+                - text: MASTER
+                - generic [ref=f147e95]: 
+            - listitem [ref=f147e96]:
+              - generic [ref=f147e97] [cursor=pointer]:
+                - text: PENGATURAN AKUN
+                - generic [ref=f147e100]: 
+            - listitem [ref=f147e101]:
+              - link "AKUN SAYA" [ref=f147e102] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/home/akunsaya
+            - listitem [ref=f147e105]: MENU TRANSPORTER
+            - listitem [ref=f147e106]:
+              - link "HARGA & JADWAL" [ref=f147e107] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/home/hargajadwal
+          - generic [ref=f147e112]:
+            - paragraph [ref=f147e114]: KONTAK KAMI
+            - generic [ref=f147e115]:
+              - generic [ref=f147e116]: 
+              - text: "081246665023"
+            - generic [ref=f147e117]:
+              - generic [ref=f147e118]: 
+              - text: "081246665023"
+            - generic [ref=f147e119]:
+              - generic [ref=f147e120]: 
+              - text: csct@prahu-hub.com
+            - generic [ref=f147e121]:
+              - link [ref=f147e122] [cursor=pointer]:
+                - /url: https://facebook.com/sosmed.phbid
+              - link [ref=f147e124] [cursor=pointer]:
+                - /url: https://twitter.com/PrahuHub
+              - link [ref=f147e126] [cursor=pointer]:
+                - /url: https://instagram.com/phbid_/
+              - link [ref=f147e128] [cursor=pointer]:
+                - /url: https://www.youtube.com/channel/UC41VntroP3zKmXZYnGgtFdw
+              - link [ref=f147e130] [cursor=pointer]:
+                - /url: http://linkedin.com/in/ph-bid-aa5393211/
+      - generic [ref=f147e132]:
+        - generic [ref=f147e133]:
+          - generic [ref=f147e134]: Beranda / Daftar Pengajuan Lelang
+          - generic [ref=f147e140]:
+            - generic [ref=f147e141]: Daftar Pengajuan Lelang
+            - generic [ref=f147e142]: "*) Hijau = lelang tidak ada order, # adalah request harga"
+            - button " Filter" [ref=f147e144] [cursor=pointer]:
+              - generic [ref=f147e145]: 
+              - text: Filter
+          - text: 
+          - generic [ref=f147e149]:
+            - link "Semua Lelang" [ref=f147e150] [cursor=pointer]:
+              - /url: https://phbidlautdemo.prahu-hub.com/lelang/listlelang?tab=semua-lelang
+            - link "Perlu Input Harga" [ref=f147e151] [cursor=pointer]:
+              - /url: https://phbidlautdemo.prahu-hub.com/lelang/listlelang?tab=perlu-input-harga
+            - link "Perlu Update Harga" [ref=f147e152] [cursor=pointer]:
+              - /url: https://phbidlautdemo.prahu-hub.com/lelang/listlelang?tab=perlu-update-harga
+            - link "Lelang Tutup" [ref=f147e153] [cursor=pointer]:
+              - /url: https://phbidlautdemo.prahu-hub.com/lelang/listlelang?tab=lelang-tutup
+            - link "Telah Akhir Kirim" [ref=f147e154] [cursor=pointer]:
+              - /url: https://phbidlautdemo.prahu-hub.com/lelang/listlelang?tab=telah-akhir-kirim
+            - link "Lelang Batal" [ref=f147e155] [cursor=pointer]:
+              - /url: https://phbidlautdemo.prahu-hub.com/lelang/listlelang?tab=lelang-batal
+          - generic [ref=f147e157]:
+            - text: Menampilkan
+            - combobox [ref=f147e158]:
+              - option "20" [selected]
+              - option "30"
+              - option "50"
+              - option "100"
+            - text: Data
+          - text:  
+          - table [ref=f147e160]:
+            - rowgroup [ref=f147e161]:
+              - row [ref=f147e162]:
+                - columnheader "No " [ref=f147e163] [cursor=pointer]:
+                  - generic [ref=f147e164]:
+                    - generic [ref=f147e165]: "No"
+                    - generic [ref=f147e166]: 
+                - columnheader "Shipper " [ref=f147e168] [cursor=pointer]:
+                  - generic [ref=f147e169]:
+                    - generic [ref=f147e170]: Shipper
+                    - generic [ref=f147e171]: 
+                - columnheader "Nomor Lelang " [ref=f147e173] [cursor=pointer]:
+                  - generic [ref=f147e174]:
+                    - generic [ref=f147e175]: Nomor Lelang
+                    - generic [ref=f147e176]: 
+                - columnheader "Buka Lelang " [ref=f147e178] [cursor=pointer]:
+                  - generic [ref=f147e179]:
+                    - generic [ref=f147e180]: Buka Lelang
+                    - generic [ref=f147e181]: 
+                - columnheader "Tutup Lelang " [ref=f147e183] [cursor=pointer]:
+                  - generic [ref=f147e184]:
+                    - generic [ref=f147e185]: Tutup Lelang
+                    - generic [ref=f147e186]: 
+                - columnheader "Rencana Mulai Kirim " [ref=f147e188] [cursor=pointer]:
+                  - generic [ref=f147e189]:
+                    - generic [ref=f147e190]: Rencana Mulai Kirim
+                    - generic [ref=f147e191]: 
+                - columnheader "Rencana Akhir Kirim " [ref=f147e193] [cursor=pointer]:
+                  - generic [ref=f147e194]:
+                    - generic [ref=f147e195]: Rencana Akhir Kirim
+                    - generic [ref=f147e196]: 
+                - columnheader "Aksi" [ref=f147e198]
+              - row [ref=f147e199]:
+                - cell [ref=f147e200]
+            - rowgroup [ref=f147e201]:
+              - row [ref=f147e202]:
+                - cell [ref=f147e203]
+          - generic:
+            - status [ref=f147e210]
+            - generic [ref=f147e212]:
+              - list
+        - paragraph [ref=f147e218]: © BETA 20260228 v1.3.28 - PH Bid Laut | Digital Logistic Platform
+  - text:   

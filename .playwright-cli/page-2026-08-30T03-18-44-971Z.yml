@@ -1,0 +1,375 @@
+- generic [active] [ref=f57e1]:
+  - generic [ref=f57e2]:
+    - generic [ref=f57e3]:
+      - generic [ref=f57e4]:
+        - link [ref=f57e6] [cursor=pointer]:
+          - /url: https://phbidlautdemo.prahu-hub.com/
+        - button [ref=f57e10] [cursor=pointer]
+      - text:  
+      - generic [ref=f57e13]:
+        - generic [ref=f57e14]:
+          - generic [ref=f57e15]: Admin PH Bid
+          - button "Administrator" [ref=f57e17]
+        - text: 
+        - generic [ref=f57e21]:
+          - generic [ref=f57e22]:
+            - generic [ref=f57e23]: Admin PH Bid
+            - generic [ref=f57e24]: prahu.bid20@gmail.com
+          - generic [ref=f57e25]: 
+          - link "" [ref=f57e28] [cursor=pointer]:
+            - /url: https://phbidlautdemo.prahu-hub.com/home/notification
+          - link [ref=f57e36] [cursor=pointer]:
+            - /url: https://phbidlautdemo.prahu-hub.com/user/do_logout
+    - generic [ref=f57e39]:
+      - generic [ref=f57e40]:
+        - text: 
+        - generic [ref=f57e41]:
+          - list [ref=f57e43]:
+            - listitem
+            - listitem [ref=f57e44]:
+              - link "CARI PENAWARAN" [ref=f57e45] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/lelang/carirute
+            - listitem [ref=f57e46]: MENU ADMIN
+            - listitem [ref=f57e47]:
+              - generic [ref=f57e48] [cursor=pointer]:
+                - text: DASHBOARD
+                - generic [ref=f57e51]: 
+            - listitem [ref=f57e52]:
+              - generic [ref=f57e53] [cursor=pointer]:
+                - text: ANALITIK
+                - generic [ref=f57e56]: 
+            - listitem [ref=f57e57]:
+              - link "PENGAJUAN LELANG" [ref=f57e58] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/lelang/listlelang
+            - listitem [ref=f57e61]:
+              - link "PENGAJUAN NEGO" [ref=f57e62] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/lelang/pengajuannego
+            - listitem [ref=f57e65]:
+              - link "DAFTAR ORDER" [ref=f57e66] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/order/orderlist
+            - listitem [ref=f57e70]:
+              - link "PENUGASAN TRACKING" [ref=f57e71] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/home/penugasantracking
+            - listitem [ref=f57e74]:
+              - link "CEK JADWAL" [ref=f57e75] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/lelang/carijadwal
+            - listitem [ref=f57e78]:
+              - generic [ref=f57e79] [cursor=pointer]:
+                - text: LAPORAN
+                - generic [ref=f57e82]: 
+            - listitem [ref=f57e83]:
+              - generic [ref=f57e84] [cursor=pointer]:
+                - text: VALIDASI AKUN
+                - generic [ref=f57e87]: 
+            - listitem [ref=f57e88]:
+              - generic [ref=f57e89] [cursor=pointer]:
+                - text: SETTING
+                - generic [ref=f57e92]: 
+            - listitem [ref=f57e93]:
+              - generic [ref=f57e94] [cursor=pointer]:
+                - text: MASTER
+                - generic [ref=f57e97]: 
+            - listitem [ref=f57e98]:
+              - generic [ref=f57e99] [cursor=pointer]:
+                - text: PENGATURAN AKUN
+                - generic [ref=f57e102]: 
+            - listitem [ref=f57e103]:
+              - link "AKUN SAYA" [ref=f57e104] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/home/akunsaya
+            - listitem [ref=f57e107]: MENU TRANSPORTER
+            - listitem [ref=f57e108]:
+              - link "HARGA & JADWAL" [ref=f57e109] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/home/hargajadwal
+          - generic [ref=f57e114]:
+            - paragraph [ref=f57e116]: KONTAK KAMI
+            - generic [ref=f57e117]:
+              - generic [ref=f57e118]: 
+              - text: "081246665023"
+            - generic [ref=f57e119]:
+              - generic [ref=f57e120]: 
+              - text: "081246665023"
+            - generic [ref=f57e121]:
+              - generic [ref=f57e122]: 
+              - text: csct@prahu-hub.com
+            - generic [ref=f57e123]:
+              - link [ref=f57e124] [cursor=pointer]:
+                - /url: https://facebook.com/sosmed.phbid
+              - link [ref=f57e126] [cursor=pointer]:
+                - /url: https://twitter.com/PrahuHub
+              - link [ref=f57e128] [cursor=pointer]:
+                - /url: https://instagram.com/phbid_/
+              - link [ref=f57e130] [cursor=pointer]:
+                - /url: https://www.youtube.com/channel/UC41VntroP3zKmXZYnGgtFdw
+              - link [ref=f57e132] [cursor=pointer]:
+                - /url: http://linkedin.com/in/ph-bid-aa5393211/
+      - generic [ref=f57e134]:
+        - generic [ref=f57e135]:
+          - generic [ref=f57e138]:
+            - link "Beranda" [ref=f57e140] [cursor=pointer]:
+              - /url: ""
+            - text: / Cari Penawaran Lelang
+          - generic [ref=f57e141]:
+            - generic [ref=f57e142]:
+              - generic [ref=f57e143]: Cari Penawaran Lelang
+              - generic [ref=f57e145]:
+                - text: 1. Pesan
+                - generic [ref=f57e146]: 
+                - text: 2. Data Muatan
+                - generic [ref=f57e147]: 
+                - text: 3. Perjanjian Pengiriman
+                - generic [ref=f57e148]: 
+                - text: 4. Pengiriman
+            - tabpanel [ref=f57e151]:
+              - generic [ref=f57e153]:
+                - generic [ref=f57e156]:
+                  - generic [ref=f57e157]: Nomor Lelang *
+                  - textbox "Nomor Lelang *" [ref=f57e158]:
+                    - /placeholder: Masukkan Nomor Lelang
+                  - generic [ref=f57e159] [cursor=pointer]: 
+                  - text: Masukkan nomor lelang yang akan di cari atau klik ikon sisi kanan untuk memilih dari daftar nomor yang ada
+                - button "Cari Harga Penawaran" [disabled] [ref=f57e163]
+        - paragraph [ref=f57e169]: © BETA 20260228 v1.3.28 - PH Bid Laut | Digital Logistic Platform
+  - dialog [ref=f57e170]:
+    - document:
+      - generic [ref=f57e171]:
+        - generic [ref=f57e172]:
+          - heading "DAFTAR LELANG YANG ADA" [level=4] [ref=f57e173]
+          - button [ref=f57e174] [cursor=pointer]
+        - generic [ref=f57e176]:
+          - generic [ref=f57e180]:
+            - generic [ref=f57e181]:
+              - generic [ref=f57e182]: Shipper
+              - combobox [ref=f57e183]
+              - combobox [ref=f57e186] [cursor=pointer]:
+                - textbox "Pilih Shipper" [ref=f57e187]
+            - generic [ref=f57e188]:
+              - generic [ref=f57e189]: Nomor Lelang
+              - combobox [ref=f57e190]
+              - combobox [ref=f57e193] [cursor=pointer]:
+                - textbox "Pilih Nomor Lelang" [ref=f57e194]
+            - button " Cari" [ref=f57e196] [cursor=pointer]:
+              - generic [ref=f57e197]: 
+              - text: Cari
+            - generic [ref=f57e200]:
+              - paragraph [ref=f57e201]: Menampilkan
+              - combobox [ref=f57e202]:
+                - option "20" [selected]
+                - option "30"
+                - option "50"
+                - option "100"
+              - paragraph [ref=f57e203]: Data
+          - generic [ref=f57e205]:
+            - table [ref=f57e207]:
+              - rowgroup [ref=f57e208]:
+                - row [ref=f57e209]:
+                  - columnheader "No" [ref=f57e210]
+                  - columnheader "Shipper" [ref=f57e211]
+                  - columnheader "Nomor Lelang" [ref=f57e212]
+                  - columnheader "Rute" [ref=f57e213]
+                  - columnheader "Buka Lelang" [ref=f57e214]
+                  - columnheader "Tutup Lelang" [ref=f57e215]
+                  - columnheader "Aksi" [ref=f57e216]
+              - rowgroup [ref=f57e217]:
+                - row [ref=f57e218]:
+                  - cell [ref=f57e219]
+                - row [ref=f57e220]:
+                  - cell "1." [ref=f57e221]
+                  - cell "PT. Cipta Karya Abadi Sejahtera Sentora Mujur Selalu" [ref=f57e222]
+                  - cell "AUTOTEST/1787976607809" [ref=f57e223]
+                  - cell "Tanjung Priok (JKT) - Tanjung Perak (SUB)" [ref=f57e224]
+                  - cell "29/08/2026 11:10" [ref=f57e225]
+                  - cell "29/08/2026 11:11" [ref=f57e226]
+                  - cell [ref=f57e227]:
+                    - button "Pilih" [ref=f57e228] [cursor=pointer]
+                - row [ref=f57e229]:
+                  - cell "2." [ref=f57e230]
+                  - cell "PT. Cipta Karya Abadi Sejahtera Sentora Mujur Selalu" [ref=f57e231]
+                  - cell "AUTOTEST/1787974086489" [ref=f57e232]
+                  - cell "Tanjung Priok (JKT) - Tanjung Perak (SUB)" [ref=f57e233]
+                  - cell "29/08/2026 10:28" [ref=f57e234]
+                  - cell "29/08/2026 10:29" [ref=f57e235]
+                  - cell [ref=f57e236]:
+                    - button "Pilih" [ref=f57e237] [cursor=pointer]
+                - row [ref=f57e238]:
+                  - cell "3." [ref=f57e239]
+                  - cell "PT. Katalisator Asa Indonesia - Manuva" [ref=f57e240]
+                  - cell "FALCON/NORMAL/CONNECTING/PONOROGO" [ref=f57e241]
+                  - cell "Tanjung Perak (SUB) - Balikpapan (BPN)" [ref=f57e242]
+                  - cell "29/08/2026 10:10" [ref=f57e243]
+                  - cell "29/08/2026 10:11" [ref=f57e244]
+                  - cell [ref=f57e245]:
+                    - button "Pilih" [ref=f57e246] [cursor=pointer]
+                - row [ref=f57e247]:
+                  - cell "4." [ref=f57e248]
+                  - cell "PT. Cipta Karya Abadi Sejahtera Sentora Mujur Selalu" [ref=f57e249]
+                  - cell "LELANGFCU/28082026IK" [ref=f57e250]
+                  - cell "Tanjung Perak (SUB) - Tanjung Emas (SRG)" [ref=f57e251]
+                  - cell "27/08/2026 09:09" [ref=f57e252]
+                  - cell "27/08/2026 09:10" [ref=f57e253]
+                  - cell [ref=f57e254]:
+                    - button "Pilih" [ref=f57e255] [cursor=pointer]
+                - row [ref=f57e256]:
+                  - cell "5." [ref=f57e257]
+                  - cell "PT Ikan Laut Jaya" [ref=f57e258]
+                  - cell "AGS-NRM-002/24-08/2026-JKT" [ref=f57e259]
+                  - cell "Tanjung Perak (SUB) - Tanjung Priok (JKT)" [ref=f57e260]
+                  - cell "24/08/2026 09:34" [ref=f57e261]
+                  - cell "25/08/2026 09:35" [ref=f57e262]
+                  - cell [ref=f57e263]:
+                    - button "Pilih" [ref=f57e264] [cursor=pointer]
+                - row [ref=f57e265]:
+                  - cell "6." [ref=f57e266]
+                  - cell "PT Ikan Laut Jaya" [ref=f57e267]
+                  - cell "AGS-NRM-001/24-08/2026-JKT" [ref=f57e268]
+                  - cell "Tanjung Perak (SUB) - Tanjung Priok (JKT)" [ref=f57e269]
+                  - cell "24/08/2026 09:13" [ref=f57e270]
+                  - cell "25/08/2026 09:34" [ref=f57e271]
+                  - cell [ref=f57e272]:
+                    - button "Pilih" [ref=f57e273] [cursor=pointer]
+                - row [ref=f57e274]:
+                  - cell "7." [ref=f57e275]
+                  - cell "PT. United Family Food" [ref=f57e276]
+                  - cell "COBA/20/BELAWAN" [ref=f57e277]
+                  - cell "Tanjung Perak (SUB) - Belawan (BLW)" [ref=f57e278]
+                  - cell "22/08/2026 08:53" [ref=f57e279]
+                  - cell "22/08/2026 10:00" [ref=f57e280]
+                  - cell [ref=f57e281]:
+                    - button "Pilih" [ref=f57e282] [cursor=pointer]
+                - row [ref=f57e283]:
+                  - cell "8." [ref=f57e284]
+                  - cell "PT. United Family Food" [ref=f57e285]
+                  - cell "COBA/20/TERNATE" [ref=f57e286]
+                  - cell "Tanjung Perak (SUB) - Ternate (TTE)" [ref=f57e287]
+                  - cell "22/08/2026 08:48" [ref=f57e288]
+                  - cell "22/08/2026 10:32" [ref=f57e289]
+                  - cell [ref=f57e290]:
+                    - button "Pilih" [ref=f57e291] [cursor=pointer]
+                - row [ref=f57e292]:
+                  - cell "9." [ref=f57e293]
+                  - cell "PT. Cipta Karya Abadi Sejahtera Sentora Mujur Selalu" [ref=f57e294]
+                  - cell "AUTOTEST/1787210351645" [ref=f57e295]
+                  - cell "Tanjung Priok (JKT) - Tanjung Perak (SUB)" [ref=f57e296]
+                  - cell "20/08/2026 14:19" [ref=f57e297]
+                  - cell "21/08/2026 09:00" [ref=f57e298]
+                  - cell [ref=f57e299]:
+                    - button "Pilih" [ref=f57e300] [cursor=pointer]
+                - row [ref=f57e301]:
+                  - cell "10." [ref=f57e302]
+                  - cell "PT. Cipta Karya Abadi Sejahtera Sentora Mujur Selalu" [ref=f57e303]
+                  - cell "AUTOTEST/1787208128236" [ref=f57e304]
+                  - cell "Tanjung Priok (JKT) - Tanjung Perak (SUB)" [ref=f57e305]
+                  - cell "20/08/2026 13:42" [ref=f57e306]
+                  - cell "21/08/2026 09:00" [ref=f57e307]
+                  - cell [ref=f57e308]:
+                    - button "Pilih" [ref=f57e309] [cursor=pointer]
+                - row [ref=f57e310]:
+                  - cell "11." [ref=f57e311]
+                  - cell "PT. United Family Food" [ref=f57e312]
+                  - cell "COBA/20/MAKASSAR" [ref=f57e313]
+                  - cell "Tanjung Perak (SUB) - Makassar (MAK)" [ref=f57e314]
+                  - cell "20/08/2026 09:30" [ref=f57e315]
+                  - cell "20/08/2026 09:31" [ref=f57e316]
+                  - cell [ref=f57e317]:
+                    - button "Pilih" [ref=f57e318] [cursor=pointer]
+                - row [ref=f57e319]:
+                  - cell "12." [ref=f57e320]
+                  - cell "PT. United Family Food" [ref=f57e321]
+                  - cell "IKAN/666" [ref=f57e322]
+                  - cell "Tanjung Perak (SUB) - Jayapura (DJJ)" [ref=f57e323]
+                  - cell "19/08/2026 14:33" [ref=f57e324]
+                  - cell "19/08/2026 15:25" [ref=f57e325]
+                  - cell [ref=f57e326]:
+                    - button "Pilih" [ref=f57e327] [cursor=pointer]
+                - row [ref=f57e328]:
+                  - cell "13." [ref=f57e329]
+                  - cell "PT. United Family Food" [ref=f57e330]
+                  - cell "TRIAL/01/2026" [ref=f57e331]
+                  - cell "Tanjung Perak (SUB) - Makassar (MAK)" [ref=f57e332]
+                  - cell "18/08/2026 09:20" [ref=f57e333]
+                  - cell "18/08/2026 10:25" [ref=f57e334]
+                  - cell [ref=f57e335]:
+                    - button "Pilih" [ref=f57e336] [cursor=pointer]
+                - row [ref=f57e337]:
+                  - cell "14." [ref=f57e338]
+                  - cell "PT. Cipta Karya Abadi Sejahtera Sentora Mujur Selalu" [ref=f57e339]
+                  - cell "AUTOTEST/1786692580852" [ref=f57e340]
+                  - cell "Tanjung Priok (JKT) - Tanjung Perak (SUB)" [ref=f57e341]
+                  - cell "20/08/2026 09:00" [ref=f57e342]
+                  - cell "21/08/2026 09:00" [ref=f57e343]
+                  - cell [ref=f57e344]:
+                    - button "Pilih" [ref=f57e345] [cursor=pointer]
+                - row [ref=f57e346]:
+                  - cell "15." [ref=f57e347]
+                  - cell "PT. Cipta Karya Abadi Sejahtera Sentora Mujur Selalu" [ref=f57e348]
+                  - cell "AUTOTEST/1786692386097" [ref=f57e349]
+                  - cell "Tanjung Priok (JKT) - Tanjung Perak (SUB)" [ref=f57e350]
+                  - cell "20/08/2026 09:00" [ref=f57e351]
+                  - cell "21/08/2026 09:00" [ref=f57e352]
+                  - cell [ref=f57e353]:
+                    - button "Pilih" [ref=f57e354] [cursor=pointer]
+                - row [ref=f57e355]:
+                  - cell "16." [ref=f57e356]
+                  - cell "PT. Cipta Karya Abadi Sejahtera Sentora Mujur Selalu" [ref=f57e357]
+                  - cell "AUTOTEST/1786691265496" [ref=f57e358]
+                  - cell "Tanjung Priok (JKT) - Tanjung Perak (SUB)" [ref=f57e359]
+                  - cell "20/08/2026 09:00" [ref=f57e360]
+                  - cell "21/08/2026 09:00" [ref=f57e361]
+                  - cell [ref=f57e362]:
+                    - button "Pilih" [ref=f57e363] [cursor=pointer]
+                - row [ref=f57e364]:
+                  - cell "17." [ref=f57e365]
+                  - cell "PT. Cipta Karya Abadi Sejahtera Sentora Mujur Selalu" [ref=f57e366]
+                  - cell "AUTOTEST/1786690693880" [ref=f57e367]
+                  - cell "Tanjung Priok (JKT) - Tanjung Perak (SUB)" [ref=f57e368]
+                  - cell "20/08/2026 09:00" [ref=f57e369]
+                  - cell "21/08/2026 09:00" [ref=f57e370]
+                  - cell [ref=f57e371]:
+                    - button "Pilih" [ref=f57e372] [cursor=pointer]
+                - row [ref=f57e373]:
+                  - cell "18." [ref=f57e374]
+                  - cell "PT. Cipta Karya Abadi Sejahtera Sentora Mujur Selalu" [ref=f57e375]
+                  - cell "AUTOTEST/1786690601096" [ref=f57e376]
+                  - cell "Tanjung Priok (JKT) - Tanjung Perak (SUB)" [ref=f57e377]
+                  - cell "20/08/2026 09:00" [ref=f57e378]
+                  - cell "21/08/2026 09:00" [ref=f57e379]
+                  - cell [ref=f57e380]:
+                    - button "Pilih" [ref=f57e381] [cursor=pointer]
+                - row [ref=f57e382]:
+                  - cell "19." [ref=f57e383]
+                  - cell "PT. Cipta Karya Abadi Sejahtera Sentora Mujur Selalu" [ref=f57e384]
+                  - cell "AUTOTEST/1786690391538" [ref=f57e385]
+                  - cell "Tanjung Priok (JKT) - Tanjung Perak (SUB)" [ref=f57e386]
+                  - cell "20/08/2026 09:00" [ref=f57e387]
+                  - cell "21/08/2026 09:00" [ref=f57e388]
+                  - cell [ref=f57e389]:
+                    - button "Pilih" [ref=f57e390] [cursor=pointer]
+                - row [ref=f57e391]:
+                  - cell "20." [ref=f57e392]
+                  - cell "PT. Cipta Karya Abadi Sejahtera Sentora Mujur Selalu" [ref=f57e393]
+                  - cell "AUTOTEST/08/26-JKT" [ref=f57e394]
+                  - cell "Tanjung Priok (JKT) - Tanjung Perak (SUB)" [ref=f57e395]
+                  - cell "20/08/2026 09:00" [ref=f57e396]
+                  - cell "21/08/2026 09:00" [ref=f57e397]
+                  - cell [ref=f57e398]:
+                    - button "Pilih" [ref=f57e399] [cursor=pointer]
+                - row [ref=f57e400]:
+                  - cell [ref=f57e401]
+            - generic [ref=f57e402]:
+              - status [ref=f57e404]:
+                - status [ref=f57e405]: Menampilkan 1 sampai 20 dari 970 data
+              - list [ref=f57e408]:
+                - listitem [ref=f57e409]:
+                  - generic [ref=f57e410] [cursor=pointer]: "1"
+                - listitem [ref=f57e411]:
+                  - generic [ref=f57e412] [cursor=pointer]: "2"
+                - listitem [ref=f57e413]:
+                  - generic [ref=f57e414] [cursor=pointer]: "3"
+                - listitem [ref=f57e415]:
+                  - generic [ref=f57e416] [cursor=pointer]: "4"
+                - listitem [ref=f57e417]:
+                  - generic [ref=f57e418] [cursor=pointer]: "5"
+                - listitem [ref=f57e419]:
+                  - generic [ref=f57e420] [cursor=pointer]: »
+                - listitem [ref=f57e421]:
+                  - generic "Akhir" [ref=f57e422] [cursor=pointer]: Akhir »
+  - text:  

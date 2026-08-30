@@ -1,0 +1,442 @@
+- generic [ref=f154e2]:
+  - generic [ref=f154e3]:
+    - generic [ref=f154e4]:
+      - link [ref=f154e6] [cursor=pointer]:
+        - /url: https://phbidlautdemo.prahu-hub.com/
+      - button [ref=f154e10] [cursor=pointer]
+    - text:  
+    - generic [ref=f154e13]:
+      - generic [ref=f154e14]:
+        - generic [ref=f154e15]: Admin PH Bid
+        - button "Administrator" [ref=f154e17]
+      - text: 
+      - generic [ref=f154e21]:
+        - generic [ref=f154e22]:
+          - generic [ref=f154e23]: Admin PH Bid
+          - generic [ref=f154e24]: prahu.bid20@gmail.com
+        - generic [ref=f154e25]: 
+        - link "" [ref=f154e28] [cursor=pointer]:
+          - /url: https://phbidlautdemo.prahu-hub.com/home/notification
+        - link [ref=f154e35] [cursor=pointer]:
+          - /url: https://phbidlautdemo.prahu-hub.com/user/do_logout
+  - generic [ref=f154e38]:
+    - generic [ref=f154e39]:
+      - text: 
+      - generic [ref=f154e40]:
+        - list [ref=f154e42]:
+          - listitem
+          - listitem [ref=f154e43]:
+            - link "CARI PENAWARAN" [ref=f154e44] [cursor=pointer]:
+              - /url: https://phbidlautdemo.prahu-hub.com/lelang/carirute
+          - listitem [ref=f154e45]: MENU ADMIN
+          - listitem [ref=f154e46]:
+            - generic [ref=f154e47] [cursor=pointer]:
+              - text: DASHBOARD
+              - generic [ref=f154e50]: 
+          - listitem [ref=f154e51]:
+            - generic [ref=f154e52] [cursor=pointer]:
+              - text: ANALITIK
+              - generic [ref=f154e55]: 
+          - listitem [ref=f154e56]:
+            - link "PENGAJUAN LELANG" [ref=f154e57] [cursor=pointer]:
+              - /url: https://phbidlautdemo.prahu-hub.com/lelang/listlelang
+          - listitem [ref=f154e60]:
+            - link "PENGAJUAN NEGO" [ref=f154e61] [cursor=pointer]:
+              - /url: https://phbidlautdemo.prahu-hub.com/lelang/pengajuannego
+          - listitem [ref=f154e64]:
+            - link [ref=f154e65] [cursor=pointer]:
+              - /url: https://phbidlautdemo.prahu-hub.com/order/orderlist
+          - listitem [ref=f154e68]:
+            - link "PENUGASAN TRACKING" [ref=f154e69] [cursor=pointer]:
+              - /url: https://phbidlautdemo.prahu-hub.com/home/penugasantracking
+          - listitem [ref=f154e72]:
+            - link "CEK JADWAL" [ref=f154e73] [cursor=pointer]:
+              - /url: https://phbidlautdemo.prahu-hub.com/lelang/carijadwal
+          - listitem [ref=f154e76]:
+            - generic [ref=f154e77] [cursor=pointer]:
+              - text: LAPORAN
+              - generic [ref=f154e80]: 
+          - listitem [ref=f154e81]:
+            - generic [ref=f154e82] [cursor=pointer]:
+              - text: VALIDASI AKUN
+              - generic [ref=f154e85]: 
+          - listitem [ref=f154e86]:
+            - generic [ref=f154e87] [cursor=pointer]:
+              - text: SETTING
+              - generic [ref=f154e90]: 
+          - listitem [ref=f154e91]:
+            - generic [ref=f154e92] [cursor=pointer]:
+              - text: MASTER
+              - generic [ref=f154e95]: 
+          - listitem [ref=f154e96]:
+            - generic [ref=f154e97] [cursor=pointer]:
+              - text: PENGATURAN AKUN
+              - generic [ref=f154e100]: 
+          - listitem [ref=f154e101]:
+            - link "AKUN SAYA" [ref=f154e102] [cursor=pointer]:
+              - /url: https://phbidlautdemo.prahu-hub.com/home/akunsaya
+          - listitem [ref=f154e105]: MENU TRANSPORTER
+          - listitem [ref=f154e106]:
+            - link "HARGA & JADWAL" [ref=f154e107] [cursor=pointer]:
+              - /url: https://phbidlautdemo.prahu-hub.com/home/hargajadwal
+        - generic [ref=f154e112]:
+          - paragraph [ref=f154e114]: KONTAK KAMI
+          - generic [ref=f154e115]:
+            - generic [ref=f154e116]: 
+            - text: "081246665023"
+          - generic [ref=f154e117]:
+            - generic [ref=f154e118]: 
+            - text: "081246665023"
+          - generic [ref=f154e119]:
+            - generic [ref=f154e120]: 
+            - text: csct@prahu-hub.com
+          - generic [ref=f154e121]:
+            - link [ref=f154e122] [cursor=pointer]:
+              - /url: https://facebook.com/sosmed.phbid
+            - link [ref=f154e124] [cursor=pointer]:
+              - /url: https://twitter.com/PrahuHub
+            - link [ref=f154e126] [cursor=pointer]:
+              - /url: https://instagram.com/phbid_/
+            - link [ref=f154e128] [cursor=pointer]:
+              - /url: https://www.youtube.com/channel/UC41VntroP3zKmXZYnGgtFdw
+            - link [ref=f154e130] [cursor=pointer]:
+              - /url: http://linkedin.com/in/ph-bid-aa5393211/
+    - generic [ref=f154e132]:
+      - generic [ref=f154e133]:
+        - generic [ref=f154e136]:
+          - link "Beranda" [ref=f154e138] [cursor=pointer]:
+            - /url: https://phbidlautdemo.prahu-hub.com/lelang/listLelang
+          - text: /
+          - link "Daftar Pengajuan Lelang" [ref=f154e140] [cursor=pointer]:
+            - /url: https://phbidlautdemo.prahu-hub.com/lelang/listlelang
+          - text: / Tambah Peserta Lelang
+        - generic [ref=f154e142]:
+          - paragraph [ref=f154e143]: Tambah Peserta Lelang
+          - button " Kembali" [ref=f154e144] [cursor=pointer]:
+            - generic [ref=f154e145]: 
+            - text: Kembali
+        - tabpanel [ref=f154e148]:
+          - generic [ref=f154e150]:
+            - table [ref=f154e153]:
+              - rowgroup [ref=f154e154]:
+                - row [ref=f154e155]:
+                  - columnheader "Nomor Lelang" [ref=f154e156]
+                  - columnheader "Buka Lelang" [ref=f154e157]
+                  - columnheader "Tutup Lelang" [ref=f154e158]
+                  - columnheader "Rencana Mulai Kirim" [ref=f154e159]
+                  - columnheader "Rencana Akhir Kirim" [ref=f154e160]
+              - rowgroup [ref=f154e161]:
+                - row [ref=f154e162]:
+                  - cell "LELANGFCU/28082026IK" [ref=f154e163]
+                  - cell "27/08/2026 09:09" [ref=f154e164]
+                  - cell "27/08/2026 09:10" [ref=f154e165]
+                  - cell "27/08/2026 09:11" [ref=f154e166]
+                  - cell "31/08/2027 09:12" [ref=f154e167]
+            - generic [ref=f154e169]:
+              - generic [ref=f154e170]:
+                - generic [ref=f154e171]:
+                  - text: Lelang Dibuat
+                  - generic [ref=f154e172]: ":"
+                - generic [ref=f154e173]: 27/08/2026 09:11
+              - generic [ref=f154e174]:
+                - generic [ref=f154e175]:
+                  - text: Shipper
+                  - generic [ref=f154e176]: ":"
+                - generic [ref=f154e177]: PT. Cipta Karya Abadi Sejahtera Sentora Mujur Selalu
+              - generic [ref=f154e178]:
+                - generic [ref=f154e179]:
+                  - text: Status Lelang
+                  - generic [ref=f154e180]: ":"
+                - generic [ref=f154e181]: LELANG DITUTUP
+            - generic [ref=f154e184]:
+              - heading "SYARAT & KETENTUAN" [level=6] [ref=f154e185]
+              - generic [ref=f154e186]:
+                - generic [ref=f154e187]:
+                  - text: Dokumen Aanwijzing
+                  - generic [ref=f154e188]: ":"
+                - generic [ref=f154e189]: Aanwijzing PT. Primax Geo Sejahtera
+                - generic [ref=f154e191]:
+                  - text: Biaya Termasuk
+                  - generic [ref=f154e192]: ":"
+                - generic [ref=f154e193]: Krani, Buruh Muat, Kawalan Asal, Trucking Asal, THC Asal, LOLO Asal, Freight Kapal, Buruh Bongkar, Kawalan Tujuan, Trucking Tujuan, THC Tujuan, LOLO Tujuan, Lift On, Asuransi
+                - generic [ref=f154e194]:
+                  - text: Harga yang ditawarkan telah termasuk
+                  - generic [ref=f154e195]: ":"
+                - generic [ref=f154e196]: Biaya Buruh
+                - generic [ref=f154e197]:
+                  - text: Harga yang ditawarkan belum termasuk
+                  - generic [ref=f154e198]: ":"
+                - generic [ref=f154e199]: Biaya Forklift
+                - generic [ref=f154e200]:
+                  - text: Dokumen Penagihan
+                  - generic [ref=f154e201]: ":"
+                - generic [ref=f154e202]: Invoice, Faktur Pajak, Surat Jalan, DO, BL Pelayaran, Tanda Terima Barang, Dokumen Perjanjian, Dokumen Lelang
+                - generic [ref=f154e203]:
+                  - text: Catatan Tambahan
+                  - generic "Dokumen pendukung pembayaran tagihan" [ref=f154e204]: 
+                  - generic [ref=f154e205]: ":"
+                - generic [ref=f154e206]: Dokumen dikirimkan setelah dilakukan dooring
+                - generic [ref=f154e207]:
+                  - text: Budget Pengiriman
+                  - generic [ref=f154e208]: ":"
+                - generic [ref=f154e209]: Rp. 4.500.000
+                - generic [ref=f154e210]:
+                  - text: Dokumen Lelang
+                  - generic [ref=f154e211]: ":"
+                - generic [ref=f154e212]: "-"
+          - generic [ref=f154e216]:
+            - heading "RUTE PENGIRIMAN" [level=6] [ref=f154e217]
+            - generic [ref=f154e218]:
+              - generic [ref=f154e219]:
+                - text: Pelabuhan Asal (POL)
+                - generic [ref=f154e220]: ":"
+              - generic [ref=f154e221]: Tanjung Perak (SUB) - Kota Surabaya
+              - generic [ref=f154e222]:
+                - text: Informasi Alamat Lengkap Asal
+                - generic [ref=f154e223]: ":"
+              - generic [ref=f154e224]: Jalan Indragiri Baru
+              - generic [ref=f154e225]:
+                - text: Kota / Kab. Alamat Asal
+                - generic [ref=f154e226]: ":"
+              - generic [ref=f154e227]: Kota Surabaya
+              - generic [ref=f154e228]:
+                - text: PIC Tempat Asal
+                - generic [ref=f154e229]: ":"
+              - generic [ref=f154e230]: Yulianto
+              - generic [ref=f154e231]:
+                - text: Telp. PIC Tempat Asal
+                - generic [ref=f154e232]: ":"
+              - generic [ref=f154e233]: "083830011881"
+            - generic [ref=f154e234]:
+              - generic [ref=f154e235]:
+                - text: Pelabuhan Tujuan (POD)
+                - generic [ref=f154e236]: ":"
+              - generic [ref=f154e237]: Tanjung Emas (SRG) - Kota Semarang
+              - generic [ref=f154e238]:
+                - text: Informasi Alamat Lengkap Tujuan
+                - generic [ref=f154e239]: ":"
+              - generic [ref=f154e240]: Jalan Kapuas Hilir 33
+              - generic [ref=f154e241]:
+                - text: Kota / Kab. Alamat Tujuan
+                - generic [ref=f154e242]: ":"
+              - generic [ref=f154e243]: Kab. Semarang
+              - generic [ref=f154e244]:
+                - text: PIC Tempat Tujuan
+                - generic [ref=f154e245]: ":"
+              - generic [ref=f154e246]: Manujo
+              - generic [ref=f154e247]:
+                - text: Telp. PIC Tempat Tujuan
+                - generic [ref=f154e248]: ":"
+              - generic [ref=f154e249]: "083830011881"
+          - generic [ref=f154e253]:
+            - heading "INFORMASI KONTAINER" [level=6] [ref=f154e254]
+            - generic [ref=f154e255]:
+              - generic [ref=f154e256]:
+                - text: Jenis Kontainer
+                - generic [ref=f154e257]: ":"
+              - generic [ref=f154e258]: 20 DRY, 20 ISOTANK, 20 REEFER, 40 REEFER, 40 FR, 40 HC
+              - generic [ref=f154e259]:
+                - text: Volume Pengiriman
+                - generic [ref=f154e260]: ":"
+              - generic [ref=f154e261]: "2100"
+              - generic [ref=f154e262]:
+                - text: Deskripsi Barang
+                - generic [ref=f154e263]: ":"
+              - generic [ref=f154e264]: Sembako
+          - generic [ref=f154e265]: PESERTA LELANG
+          - generic [ref=f154e267]:
+            - generic [ref=f154e268]:
+              - generic [ref=f154e270]:
+                - heading "PILIH TRANSPORTER" [level=6] [ref=f154e271]
+                - generic [ref=f154e272]:
+                  - textbox "Masukkan Nama Peserta Lelang" [ref=f154e274]
+                  - button "" [ref=f154e276] [cursor=pointer]
+              - paragraph [ref=f154e279]: "Peserta lelang yang dipilih : 0"
+            - table [ref=f154e282]:
+              - rowgroup [ref=f154e283]:
+                - row [ref=f154e284]:
+                  - columnheader "Transporter" [ref=f154e285]
+                  - columnheader "Lokasi" [ref=f154e286]
+                  - columnheader "Rating" [ref=f154e287]
+                  - columnheader "Pilih Semua" [ref=f154e288]:
+                    - text: Pilih Semua
+                    - checkbox [ref=f154e289] [cursor=pointer]
+              - rowgroup [ref=f154e290]:
+                - row [ref=f154e291]:
+                  - cell "(IK)LST" [ref=f154e292]
+                  - cell "Kab. Gorontalo Utara" [ref=f154e293]
+                  - cell " 5.0 | Menang 11x" [ref=f154e294]:
+                    - generic [ref=f154e295]: 
+                    - text: 5.0 | Menang 11x
+                  - cell [ref=f154e296]:
+                    - checkbox [checked] [disabled] [ref=f154e297] [cursor=pointer]
+                - row [ref=f154e298]:
+                  - cell "(IK)MJW" [ref=f154e299]
+                  - cell "Kab. Way Kanan" [ref=f154e300]
+                  - cell " 4.8 | Menang 257x" [ref=f154e301]:
+                    - generic [ref=f154e302]: 
+                    - text: 4.8 | Menang 257x
+                  - cell [ref=f154e303]:
+                    - checkbox [checked] [disabled] [ref=f154e304] [cursor=pointer]
+                - row [ref=f154e305]:
+                  - cell "(IK)MSJS" [ref=f154e306]
+                  - cell "Kota Jakarta Barat" [ref=f154e307]
+                  - cell " 4.0 | Menang 57x" [ref=f154e308]:
+                    - generic [ref=f154e309]: 
+                    - text: 4.0 | Menang 57x
+                  - cell [ref=f154e310]:
+                    - checkbox [checked] [disabled] [ref=f154e311] [cursor=pointer]
+                - row [ref=f154e312]:
+                  - cell "LYR" [ref=f154e313]
+                  - cell "Kota Surabaya" [ref=f154e314]
+                  - cell " 4.0 | Menang 9x" [ref=f154e315]:
+                    - generic [ref=f154e316]: 
+                    - text: 4.0 | Menang 9x
+                  - cell [ref=f154e317]:
+                    - checkbox [ref=f154e318] [cursor=pointer]
+                - row [ref=f154e319]:
+                  - cell "EGY" [ref=f154e320]
+                  - cell "Kota Jakarta Pusat" [ref=f154e321]
+                  - cell " 4.0 | Menang 1x" [ref=f154e322]:
+                    - generic [ref=f154e323]: 
+                    - text: 4.0 | Menang 1x
+                  - cell [ref=f154e324]:
+                    - checkbox [ref=f154e325] [cursor=pointer]
+                - row [ref=f154e326]:
+                  - cell "KMTM" [ref=f154e327]
+                  - cell "Kota Surabaya" [ref=f154e328]
+                  - cell " 3.0 | Menang 13x" [ref=f154e329]:
+                    - generic [ref=f154e330]: 
+                    - text: 3.0 | Menang 13x
+                  - cell [ref=f154e331]:
+                    - checkbox [ref=f154e332] [cursor=pointer]
+                - row [ref=f154e333]:
+                  - cell "JBT" [ref=f154e334]
+                  - cell "Kota Surabaya" [ref=f154e335]
+                  - cell " 3.0 | Menang 6x" [ref=f154e336]:
+                    - generic [ref=f154e337]: 
+                    - text: 3.0 | Menang 6x
+                  - cell [ref=f154e338]:
+                    - checkbox [ref=f154e339] [cursor=pointer]
+                - row [ref=f154e340]:
+                  - cell "DB" [ref=f154e341]
+                  - cell "Kota Surabaya" [ref=f154e342]
+                  - cell " 3.0 | Menang 4x" [ref=f154e343]:
+                    - generic [ref=f154e344]: 
+                    - text: 3.0 | Menang 4x
+                  - cell [ref=f154e345]:
+                    - checkbox [ref=f154e346] [cursor=pointer]
+                - row [ref=f154e347]:
+                  - cell "(IK)JMTT" [ref=f154e348]
+                  - cell "Kab. Tanah Bumbu" [ref=f154e349]
+                  - cell " 3.0 | Menang 3x" [ref=f154e350]:
+                    - generic [ref=f154e351]: 
+                    - text: 3.0 | Menang 3x
+                  - cell [ref=f154e352]:
+                    - checkbox [checked] [disabled] [ref=f154e353] [cursor=pointer]
+                - row [ref=f154e354]:
+                  - cell "(IK)MU" [ref=f154e355]
+                  - cell "Kota Jakarta Barat" [ref=f154e356]
+                  - cell " 3.0 | Menang 2x" [ref=f154e357]:
+                    - generic [ref=f154e358]: 
+                    - text: 3.0 | Menang 2x
+                  - cell [ref=f154e359]:
+                    - checkbox [checked] [disabled] [ref=f154e360] [cursor=pointer]
+                - row [ref=f154e361]:
+                  - cell "(IK)VUCD" [ref=f154e362]
+                  - cell "Kab. Sorong Selatan" [ref=f154e363]
+                  - cell " 3.0 | Menang 1x" [ref=f154e364]:
+                    - generic [ref=f154e365]: 
+                    - text: 3.0 | Menang 1x
+                  - cell [ref=f154e366]:
+                    - checkbox [checked] [disabled] [ref=f154e367] [cursor=pointer]
+                - row [ref=f154e368]:
+                  - cell "SD" [ref=f154e369]
+                  - cell "Kab. Bangka Barat" [ref=f154e370]
+                  - cell " 3.0 | Menang 1x" [ref=f154e371]:
+                    - generic [ref=f154e372]: 
+                    - text: 3.0 | Menang 1x
+                  - cell [ref=f154e373]:
+                    - checkbox [ref=f154e374] [cursor=pointer]
+                - row [ref=f154e375]:
+                  - cell "LDY001" [ref=f154e376]
+                  - cell "Kab. Banyuwangi" [ref=f154e377]
+                  - cell " 3.0" [ref=f154e378]:
+                    - generic [ref=f154e379]: 
+                    - text: "3.0"
+                  - cell [ref=f154e380]:
+                    - checkbox [ref=f154e381] [cursor=pointer]
+                - row [ref=f154e382]:
+                  - cell "SP" [ref=f154e383]
+                  - cell "Kab. Serang" [ref=f154e384]
+                  - cell " 3.0" [ref=f154e385]:
+                    - generic [ref=f154e386]: 
+                    - text: "3.0"
+                  - cell [ref=f154e387]:
+                    - checkbox [ref=f154e388] [cursor=pointer]
+                - row [ref=f154e389]:
+                  - cell "SLN" [ref=f154e390]
+                  - cell "Kab. Belitung" [ref=f154e391]
+                  - cell " 3.0" [ref=f154e392]:
+                    - generic [ref=f154e393]: 
+                    - text: "3.0"
+                  - cell [ref=f154e394]:
+                    - checkbox [ref=f154e395] [cursor=pointer]
+                - row [ref=f154e396]:
+                  - cell "SDB" [ref=f154e397]
+                  - cell "Kab. Bangka Tengah" [ref=f154e398]
+                  - cell " 3.0" [ref=f154e399]:
+                    - generic [ref=f154e400]: 
+                    - text: "3.0"
+                  - cell [ref=f154e401]:
+                    - checkbox [ref=f154e402] [cursor=pointer]
+                - row [ref=f154e403]:
+                  - cell "NJM" [ref=f154e404]
+                  - cell "Kota Medan" [ref=f154e405]
+                  - cell " 3.0" [ref=f154e406]:
+                    - generic [ref=f154e407]: 
+                    - text: "3.0"
+                  - cell [ref=f154e408]:
+                    - checkbox [ref=f154e409] [cursor=pointer]
+                - row [ref=f154e410]:
+                  - cell "BTR" [ref=f154e411]
+                  - cell "Kota Denpasar" [ref=f154e412]
+                  - cell " 3.0" [ref=f154e413]:
+                    - generic [ref=f154e414]: 
+                    - text: "3.0"
+                  - cell [ref=f154e415]:
+                    - checkbox [ref=f154e416] [cursor=pointer]
+                - row [ref=f154e417]:
+                  - cell "NAML(IK)" [ref=f154e418]
+                  - cell "Kab. Malinau" [ref=f154e419]
+                  - cell " 3.0" [ref=f154e420]:
+                    - generic [ref=f154e421]: 
+                    - text: "3.0"
+                  - cell [ref=f154e422]:
+                    - checkbox [checked] [disabled] [ref=f154e423] [cursor=pointer]
+                - row [ref=f154e424]:
+                  - cell "JLR" [ref=f154e425]
+                  - cell "Kota Surabaya" [ref=f154e426]
+                  - cell " 3.0" [ref=f154e427]:
+                    - generic [ref=f154e428]: 
+                    - text: "3.0"
+                  - cell [ref=f154e429]:
+                    - checkbox [ref=f154e430] [cursor=pointer]
+                - row [ref=f154e431]:
+                  - cell "LJM" [ref=f154e432]
+                  - cell "Kab. Bangka Selatan" [ref=f154e433]
+                  - cell " 3.0" [ref=f154e434]:
+                    - generic [ref=f154e435]: 
+                    - text: "3.0"
+                  - cell [ref=f154e436]:
+                    - checkbox [ref=f154e437] [cursor=pointer]
+                - row [ref=f154e438]:
+                  - cell [ref=f154e439]
+            - text:                     
+            - heading "REKOMENDASI TRANSPORTER UNTUK PENGIRIMAN ANDA" [level=6] [ref=f154e442]
+          - generic [ref=f154e447]:
+            - button "Batal" [ref=f154e448] [cursor=pointer]
+            - button " Simpan" [disabled] [ref=f154e449]:
+              - generic [ref=f154e450]: 
+              - text: Simpan
+      - paragraph [ref=f154e456]: © BETA 20260228 v1.3.28 - PH Bid Laut | Digital Logistic Platform

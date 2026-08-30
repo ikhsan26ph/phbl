@@ -1,0 +1,21 @@
+[    1251ms] Cannot use import statement outside a module
+[    1289ms] ReferenceError: Chart is not defined
+    at https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/js/scripts-init/charts/chartjs.js:8:13
+[    1471ms] Unexpected token '<'
+[    1476ms] Unexpected token '<'
+[    1551ms] Uncaught TypeError: expect element to be DOM Element, but got null
+    at <anonymous> (https://cdnjs.cloudflare.com/ajax/libs/smooth-scrollbar/8.5.2/smooth-scrollbar.js:24:264)
+    at <anonymous> (https://phbidlautdemo.prahu-hub.com/home/history_lelang:5505:14)
+[    1575ms] [LOG] Laporannamanya @ https://phbidlautdemo.prahu-hub.com/home/history_lelang:2039
+[    1595ms] [LOG] DD/MM/YYYY @ https://phbidlautdemo.prahu-hub.com/home/history_lelang:5858
+[    1595ms] [LOG] DD/MM/YYYY @ https://phbidlautdemo.prahu-hub.com/home/history_lelang:5858
+[    1595ms] [LOG] undefined @ https://phbidlautdemo.prahu-hub.com/home/history_lelang:5858
+[    1597ms] [LOG] WebSocket connection @ https://phbidlautdemo.prahu-hub.com/home/history_lelang:5901
+[    1597ms] [LOG] WebSocket connection attempting... @ https://phbidlautdemo.prahu-hub.com/home/history_lelang:5979
+[    1974ms] [LOG] WebSocket connected @ https://phbidlautdemo.prahu-hub.com/home/history_lelang:5910
+[    1980ms] [LOG] update_dashboard_order_laut @ https://phbidlautdemo.prahu-hub.com/home/history_lelang:5951
+[    2075ms] [LOG] Connected @ https://phbidlautdemo.prahu-hub.com/home/history_lelang:5951
+[    2128ms] [LOG] 200 xhrglobal @ https://phbidlautdemo.prahu-hub.com/home/history_lelang:5832
+[    2193ms] [LOG] 200 xhrglobal @ https://phbidlautdemo.prahu-hub.com/home/history_lelang:5832
+[    3592ms] TypeError: $(...).DataTable is not a function
+    at https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/js/scripts-init/tables.js:7:23

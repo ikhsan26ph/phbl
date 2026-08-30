@@ -1,0 +1,264 @@
+- generic [active] [ref=f98e1]:
+  - generic [ref=f98e2]:
+    - generic [ref=f98e3]:
+      - generic [ref=f98e4]:
+        - link [ref=f98e6] [cursor=pointer]:
+          - /url: https://phbidlautdemo.prahu-hub.com/
+        - button [ref=f98e10] [cursor=pointer]
+      - text:  
+      - generic [ref=f98e13]:
+        - generic [ref=f98e14]:
+          - generic [ref=f98e15]: Admin PH Bid
+          - button "Administrator" [ref=f98e17]
+        - text: 
+        - generic [ref=f98e21]:
+          - generic [ref=f98e22]:
+            - generic [ref=f98e23]: Admin PH Bid
+            - generic [ref=f98e24]: prahu.bid20@gmail.com
+          - generic [ref=f98e25]: 
+          - link "" [ref=f98e28] [cursor=pointer]:
+            - /url: https://phbidlautdemo.prahu-hub.com/home/notification
+          - link [ref=f98e35] [cursor=pointer]:
+            - /url: https://phbidlautdemo.prahu-hub.com/user/do_logout
+    - generic [ref=f98e38]:
+      - generic [ref=f98e39]:
+        - text: 
+        - generic [ref=f98e40]:
+          - list [ref=f98e42]:
+            - listitem
+            - listitem [ref=f98e43]:
+              - link "CARI PENAWARAN" [ref=f98e44] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/lelang/carirute
+            - listitem [ref=f98e45]: MENU ADMIN
+            - listitem [ref=f98e46]:
+              - generic [ref=f98e47] [cursor=pointer]:
+                - text: DASHBOARD
+                - generic [ref=f98e50]: 
+            - listitem [ref=f98e51]:
+              - generic [ref=f98e52] [cursor=pointer]:
+                - text: ANALITIK
+                - generic [ref=f98e55]: 
+            - listitem [ref=f98e56]:
+              - link "PENGAJUAN LELANG" [ref=f98e57] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/lelang/listlelang
+            - listitem [ref=f98e60]:
+              - link "PENGAJUAN NEGO" [ref=f98e61] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/lelang/pengajuannego
+            - listitem [ref=f98e64]:
+              - link [ref=f98e65] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/order/orderlist
+            - listitem [ref=f98e68]:
+              - link "PENUGASAN TRACKING" [ref=f98e69] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/home/penugasantracking
+            - listitem [ref=f98e72]:
+              - link "CEK JADWAL" [ref=f98e73] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/lelang/carijadwal
+            - listitem [ref=f98e76]:
+              - generic [ref=f98e77] [cursor=pointer]:
+                - text: LAPORAN
+                - generic [ref=f98e80]: 
+            - listitem [ref=f98e81]:
+              - generic [ref=f98e82] [cursor=pointer]:
+                - text: VALIDASI AKUN
+                - generic [ref=f98e85]: 
+            - listitem [ref=f98e86]:
+              - generic [ref=f98e87] [cursor=pointer]:
+                - text: SETTING
+                - generic [ref=f98e90]: 
+            - listitem [ref=f98e91]:
+              - generic [ref=f98e92] [cursor=pointer]:
+                - text: MASTER
+                - generic [ref=f98e95]: 
+            - listitem [ref=f98e96]:
+              - generic [ref=f98e97] [cursor=pointer]:
+                - text: PENGATURAN AKUN
+                - generic [ref=f98e100]: 
+            - listitem [ref=f98e101]:
+              - link "AKUN SAYA" [ref=f98e102] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/home/akunsaya
+            - listitem [ref=f98e105]: MENU TRANSPORTER
+            - listitem [ref=f98e106]:
+              - link "HARGA & JADWAL" [ref=f98e107] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/home/hargajadwal
+          - generic [ref=f98e112]:
+            - paragraph [ref=f98e114]: KONTAK KAMI
+            - generic [ref=f98e115]:
+              - generic [ref=f98e116]: 
+              - text: "081246665023"
+            - generic [ref=f98e117]:
+              - generic [ref=f98e118]: 
+              - text: "081246665023"
+            - generic [ref=f98e119]:
+              - generic [ref=f98e120]: 
+              - text: csct@prahu-hub.com
+            - generic [ref=f98e121]:
+              - link [ref=f98e122] [cursor=pointer]:
+                - /url: https://facebook.com/sosmed.phbid
+              - link [ref=f98e124] [cursor=pointer]:
+                - /url: https://twitter.com/PrahuHub
+              - link [ref=f98e126] [cursor=pointer]:
+                - /url: https://instagram.com/phbid_/
+              - link [ref=f98e128] [cursor=pointer]:
+                - /url: https://www.youtube.com/channel/UC41VntroP3zKmXZYnGgtFdw
+              - link [ref=f98e130] [cursor=pointer]:
+                - /url: http://linkedin.com/in/ph-bid-aa5393211/
+      - generic [ref=f98e132]:
+        - generic [ref=f98e133]:
+          - generic [ref=f98e136]:
+            - link "Beranda" [ref=f98e138] [cursor=pointer]:
+              - /url: https://phbidlautdemo.prahu-hub.com/lelang/listLelang
+            - text: /
+            - link "Harga & Jadwal" [ref=f98e140] [cursor=pointer]:
+              - /url: https://phbidlautdemo.prahu-hub.com/home/hargajadwal
+            - text: / Tambah Harga
+          - generic [ref=f98e142]:
+            - paragraph [ref=f98e143]: TAMBAH HARGA
+            - button " Kembali" [ref=f98e144] [cursor=pointer]:
+              - generic [ref=f98e145]: 
+              - text: Kembali
+          - generic [ref=f98e146]:
+            - generic [ref=f98e147]:
+              - generic [ref=f98e148]:
+                - generic [ref=f98e150]:
+                  - generic [ref=f98e151]: Pilih Transporter *
+                  - generic [ref=f98e154]:
+                    - combobox [ref=f98e155]
+                    - combobox [ref=f98e158] [cursor=pointer]:
+                      - textbox "Pilih Transporter" [ref=f98e159]
+                - generic [ref=f98e161]:
+                  - generic [ref=f98e162]: Pilih Lelang Masuk *
+                  - generic [ref=f98e165]:
+                    - combobox [disabled] [ref=f98e166]
+                    - combobox [disabled] [ref=f98e169]:
+                      - textbox "Nomor Lelang | Rute | Nama Shipper" [disabled] [ref=f98e170]
+              - generic [ref=f98e171]:
+                - generic [ref=f98e172]: Masukkan Harga Penawaran
+                - generic [ref=f98e173]: "**) Pastikan Harga Sebelum PPN"
+              - generic [ref=f98e175]:
+                - generic: 
+                - generic [ref=f98e177]:
+                  - generic [ref=f98e178]:
+                    - generic [ref=f98e180]:
+                      - generic [ref=f98e181]: Pelayaran *
+                      - generic [ref=f98e184]:
+                        - combobox [ref=f98e185]
+                        - combobox [ref=f98e188] [cursor=pointer]:
+                          - textbox "Pilih Pelayaran" [ref=f98e189]
+                    - generic [ref=f98e191]:
+                      - generic [ref=f98e192]: Jenis Kontainer *
+                      - generic [ref=f98e195]:
+                        - combobox [ref=f98e196]
+                        - combobox [ref=f98e199] [cursor=pointer]:
+                          - textbox "Pilih Jenis Kontainer" [ref=f98e200]
+                  - generic [ref=f98e203]:
+                    - generic [ref=f98e204]: Harga Penawaran (Rp.) *
+                    - generic [ref=f98e205]:
+                      - textbox "Masukkan Harga Penawaran" [ref=f98e207]
+                      - generic [ref=f98e208]: Input Harga Sebelum PPN
+                  - generic [ref=f98e209]:
+                    - generic [ref=f98e211]:
+                      - generic [ref=f98e212]: Nilai PPN *
+                      - generic [ref=f98e214]:
+                        - textbox "0" [ref=f98e215]: 1,1
+                        - generic [ref=f98e216]: "%"
+                    - generic [ref=f98e218]:
+                      - generic [ref=f98e219]: Nilai PPh *
+                      - generic [ref=f98e221]:
+                        - textbox "0" [ref=f98e222]: "2"
+                        - generic [ref=f98e223]: "%"
+                  - generic [ref=f98e225]:
+                    - generic [ref=f98e226]: Mulai Berlaku *
+                    - textbox "DD/MM/YYYY" [ref=f98e229]
+                - generic [ref=f98e230]: BIAYA TERMASUK
+                - generic [ref=f98e231]:
+                  - generic [ref=f98e232]:
+                    - generic [ref=f98e233]:
+                      - generic [ref=f98e235]:
+                        - checkbox "Biaya Asal" [ref=f98e236] [cursor=pointer]
+                        - generic [ref=f98e237]: Biaya Asal
+                      - generic [ref=f98e238]: ":"
+                    - generic [ref=f98e240]:
+                      - generic [ref=f98e243]:
+                        - checkbox "Krani" [ref=f98e244] [cursor=pointer]
+                        - generic [ref=f98e245]: Krani
+                      - generic [ref=f98e248]:
+                        - checkbox "Buruh Muat" [ref=f98e249] [cursor=pointer]
+                        - generic [ref=f98e250]: Buruh Muat
+                      - generic [ref=f98e253]:
+                        - checkbox "Kawalan Asal" [ref=f98e254] [cursor=pointer]
+                        - generic [ref=f98e255]: Kawalan Asal
+                      - generic [ref=f98e258]:
+                        - checkbox "Trucking Asal" [ref=f98e259] [cursor=pointer]
+                        - generic [ref=f98e260]: Trucking Asal
+                      - generic [ref=f98e263]:
+                        - checkbox "THC Asal" [ref=f98e264] [cursor=pointer]
+                        - generic [ref=f98e265]: THC Asal
+                      - generic [ref=f98e268]:
+                        - checkbox "LOLO Asal" [ref=f98e269] [cursor=pointer]
+                        - generic [ref=f98e270]: LOLO Asal
+                      - generic [ref=f98e273]:
+                        - checkbox "Stuffing" [ref=f98e274] [cursor=pointer]
+                        - generic [ref=f98e275]: Stuffing
+                      - generic [ref=f98e278]:
+                        - checkbox "Stuffing1" [ref=f98e279] [cursor=pointer]
+                        - generic [ref=f98e280]: Stuffing1
+                      - generic [ref=f98e283]:
+                        - checkbox "AUTOTEST-FIXTURE-INCLUDE-01" [ref=f98e284] [cursor=pointer]
+                        - generic [ref=f98e285]: AUTOTEST-FIXTURE-INCLUDE-01
+                  - generic [ref=f98e286]:
+                    - generic [ref=f98e287]:
+                      - generic [ref=f98e289]:
+                        - checkbox "Biaya Laut" [checked] [ref=f98e290] [cursor=pointer]
+                        - generic [ref=f98e291]: Biaya Laut
+                      - generic [ref=f98e292]: ":"
+                    - generic [ref=f98e297]:
+                      - checkbox "Freight Kapal" [checked] [ref=f98e298] [cursor=pointer]
+                      - generic [ref=f98e299]: Freight Kapal
+                  - generic [ref=f98e300]:
+                    - generic [ref=f98e301]:
+                      - generic [ref=f98e303]:
+                        - checkbox "Biaya Tujuan" [ref=f98e304] [cursor=pointer]
+                        - generic [ref=f98e305]: Biaya Tujuan
+                      - generic [ref=f98e306]: ":"
+                    - generic [ref=f98e308]:
+                      - generic [ref=f98e311]:
+                        - checkbox "Buruh Bongkar" [ref=f98e312] [cursor=pointer]
+                        - generic [ref=f98e313]: Buruh Bongkar
+                      - generic [ref=f98e316]:
+                        - checkbox "Kawalan Tujuan" [ref=f98e317] [cursor=pointer]
+                        - generic [ref=f98e318]: Kawalan Tujuan
+                      - generic [ref=f98e321]:
+                        - checkbox "Trucking Tujuan" [ref=f98e322] [cursor=pointer]
+                        - generic [ref=f98e323]: Trucking Tujuan
+                      - generic [ref=f98e326]:
+                        - checkbox "THC Tujuan" [ref=f98e327] [cursor=pointer]
+                        - generic [ref=f98e328]: THC Tujuan
+                      - generic [ref=f98e331]:
+                        - checkbox "LOLO Tujuan" [ref=f98e332] [cursor=pointer]
+                        - generic [ref=f98e333]: LOLO Tujuan
+                      - generic [ref=f98e336]:
+                        - checkbox "Lift On" [ref=f98e337] [cursor=pointer]
+                        - generic [ref=f98e338]: Lift On
+                  - generic [ref=f98e339]:
+                    - generic [ref=f98e340]:
+                      - generic [ref=f98e342]:
+                        - checkbox "Biaya Lainnya" [ref=f98e343] [cursor=pointer]
+                        - generic [ref=f98e344]: Biaya Lainnya
+                      - generic [ref=f98e345]: ":"
+                    - generic [ref=f98e350]:
+                      - checkbox "Asuransi" [ref=f98e351] [cursor=pointer]
+                      - generic [ref=f98e352]: Asuransi
+                - generic [ref=f98e355]:
+                  - generic [ref=f98e356]: Deskripsi Harga Rute
+                  - textbox "Masukkan Deskripsi (Bila Ada)" [ref=f98e358]
+                - separator [ref=f98e361]
+            - generic [ref=f98e364] [cursor=pointer]:
+              - generic [ref=f98e365]: 
+              - generic [ref=f98e366]: Tambah Baris Input
+          - generic [ref=f98e367]:
+            - button "Batal" [ref=f98e368] [cursor=pointer]
+            - button " Simpan" [ref=f98e369] [cursor=pointer]:
+              - generic [ref=f98e370]: 
+              - text: Simpan
+        - paragraph [ref=f98e376]: © BETA 20260228 v1.3.28 - PH Bid Laut | Digital Logistic Platform
+  - text:  

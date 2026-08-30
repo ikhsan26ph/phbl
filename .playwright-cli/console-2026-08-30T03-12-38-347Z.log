@@ -1,0 +1,62 @@
+[    1633ms] Cannot use import statement outside a module
+[    1661ms] ReferenceError: Chart is not defined
+    at https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/js/scripts-init/charts/chartjs.js:8:13
+[    1851ms] Unexpected token '<'
+[    1853ms] Unexpected token '<'
+[    1923ms] Uncaught TypeError: expect element to be DOM Element, but got null
+    at <anonymous> (https://cdnjs.cloudflare.com/ajax/libs/smooth-scrollbar/8.5.2/smooth-scrollbar.js:24:264)
+    at <anonymous> (https://phbidlautdemo.prahu-hub.com/home/penugasantracking:7356:14)
+[    1964ms] [LOG] 1 @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/penugasantracking.js?m=1787972929:572
+[    1964ms] [LOG] 20 @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/penugasantracking.js?m=1787972929:573
+[    1976ms] [LOG] Penugasan Trackingnamanya @ https://phbidlautdemo.prahu-hub.com/home/penugasantracking:2040
+[    2004ms] [LOG] Masukkan ID Order @ https://phbidlautdemo.prahu-hub.com/home/penugasantracking:7709
+[    2005ms] [LOG] undefined @ https://phbidlautdemo.prahu-hub.com/home/penugasantracking:7709
+[    2005ms] [LOG] DD/MM/YYYY - DD/MM/YYYY @ https://phbidlautdemo.prahu-hub.com/home/penugasantracking:7709
+[    2005ms] [LOG] Search... @ https://phbidlautdemo.prahu-hub.com/home/penugasantracking:7709
+[    2005ms] [LOG] Search... @ https://phbidlautdemo.prahu-hub.com/home/penugasantracking:7709
+[    2005ms] [LOG] DD/MM/YYYY - DD/MM/YYYY @ https://phbidlautdemo.prahu-hub.com/home/penugasantracking:7709
+[    2005ms] [LOG] DD/MM/YYYY - DD/MM/YYYY @ https://phbidlautdemo.prahu-hub.com/home/penugasantracking:7709
+[    2006ms] [LOG] Search... @ https://phbidlautdemo.prahu-hub.com/home/penugasantracking:7709
+[    2006ms] [LOG] undefined @ https://phbidlautdemo.prahu-hub.com/home/penugasantracking:7709
+[    2006ms] [LOG] Masukkan Nama Kapal @ https://phbidlautdemo.prahu-hub.com/home/penugasantracking:7709
+[    2006ms] [LOG] Masukkan Nomor Kontainer @ https://phbidlautdemo.prahu-hub.com/home/penugasantracking:7709
+[    2006ms] [LOG] Masukkan Jumlah @ https://phbidlautdemo.prahu-hub.com/home/penugasantracking:7709
+[    2008ms] [LOG] WebSocket connection @ https://phbidlautdemo.prahu-hub.com/home/penugasantracking:7752
+[    2008ms] [LOG] WebSocket connection attempting... @ https://phbidlautdemo.prahu-hub.com/home/penugasantracking:7830
+[    2232ms] [LOG] WebSocket connected @ https://phbidlautdemo.prahu-hub.com/home/penugasantracking:7761
+[    2235ms] [LOG] update_dashboard_order_laut @ https://phbidlautdemo.prahu-hub.com/home/penugasantracking:7802
+[    2266ms] [LOG] Connected @ https://phbidlautdemo.prahu-hub.com/home/penugasantracking:7802
+[    2745ms] [LOG] datanya20 @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/penugasantracking.js?m=1787972929:610
+[    2746ms] [LOG] [Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object] @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/penugasantracking.js?m=1787972929:248
+[    2747ms] [LOG] {ID: aHNFRzU3T1dRRlUrS2EvUmxHSUZqQT09, Nomor_Order: 20260828-02602, Nomor_Lelang: FALCON/NORMAL/CONNECTING/MADIUN, Tgl_Permintaan_Muat: 28/08/2026 11:05, Nama_Kapal: KM Swanra} @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/penugasantracking.js?m=1787972929:254
+[    2747ms] [LOG] {ID: S0g4bHJQdUpmSVpUVkVZWFM5YTlXUT09, Nomor_Order: 20260828-08501, Nomor_Lelang: COBA/20/TERNATE, Tgl_Permintaan_Muat: 28/08/2026 10:35, Nama_Kapal: KM Swarna} @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/penugasantracking.js?m=1787972929:254
+[    2748ms] [LOG] {ID: dmVSUnFiaGxwdU9oYjJnZHhEY0cyUT09, Nomor_Order: 20260827-06502, Nomor_Lelang: LELANGFCU/28082026IK, Tgl_Permintaan_Muat: 29/08/2026 09:13, Nama_Kapal: KM. Layar} @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/penugasantracking.js?m=1787972929:254
+[    2748ms] [LOG] {ID: ZWFjMCs1amZHTURpT2s5V3ltQWxMZz09, Nomor_Order: 20260827-06501, Nomor_Lelang: LELANGIK/02/2026/NRML#2, Tgl_Permintaan_Muat: 28/08/2026 09:00, Nama_Kapal: KM. Cahaya Mutiara} @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/penugasantracking.js?m=1787972929:254
+[    2748ms] [LOG] {ID: bkpnSEZpTnVhQ1p6aDNYOEpYS0krUT09, Nomor_Order: 20260826-06507, Nomor_Lelang: LELANGIK/02/2026/NRML#2, Tgl_Permintaan_Muat: 26/08/2026 13:43, Nama_Kapal: KM. Jaya} @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/penugasantracking.js?m=1787972929:254
+[    2749ms] [LOG] {ID: NkZkZjRwa0wxMDdsdGRIZkdhczU2dz09, Nomor_Order: 20260826-06505, Nomor_Lelang: LELANGIK/02/2026/NRML#2, Tgl_Permintaan_Muat: 29/08/2026 10:14, Nama_Kapal: KM. IK} @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/penugasantracking.js?m=1787972929:254
+[    2749ms] [LOG] {ID: RE92b0NsejJadUpvWTArZ2FhN0w2QT09, Nomor_Order: 20260826-06504, Nomor_Lelang: LELANGIK/02/2026/NRML#2, Tgl_Permintaan_Muat: 28/08/2026 10:11, Nama_Kapal: KM. IK gggh} @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/penugasantracking.js?m=1787972929:254
+[    2749ms] [LOG] {ID: R1pCUEhFZmkxb0toRVk3MEJTbnJWUT09, Nomor_Order: 20260826-06503, Nomor_Lelang: LELANGIK/02/2026/NRML#2, Tgl_Permintaan_Muat: 28/08/2026 10:03, Nama_Kapal: KM. IK} @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/penugasantracking.js?m=1787972929:254
+[    2750ms] [LOG] {ID: b2V4ME8rQ1NRZVY1d2ZNMDBCSzhKQT09, Nomor_Order: 20260826-06502, Nomor_Lelang: LELANGIK/02/2026/NRML#2, Tgl_Permintaan_Muat: 27/08/2026 09:23, Nama_Kapal: KM. IK} @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/penugasantracking.js?m=1787972929:254
+[    2750ms] [LOG] {ID: djlRUVp6YUU3Qm9FUFhKdFc0eEhpdz09, Nomor_Order: 20260826-06501, Nomor_Lelang: LELANGIK/02/2026/NRML#2, Tgl_Permintaan_Muat: 29/08/2026 09:11, Nama_Kapal: KM. IK} @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/penugasantracking.js?m=1787972929:254
+[    2751ms] [LOG] {ID: STV3RVd1aVowWG5UcWtsY3hmUkhQQT09, Nomor_Order: 20260822-08505, Nomor_Lelang: COBA/20/MAKASSAR, Tgl_Permintaan_Muat: 24/08/2026 12:54, Nama_Kapal: Pulau Layang} @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/penugasantracking.js?m=1787972929:254
+[    2751ms] [LOG] {ID: Um5uTzdEZHFYSWxGN0tlOXhhS1dFQT09, Nomor_Order: 20260822-08504, Nomor_Lelang: COBA/20/MAKASSAR, Tgl_Permintaan_Muat: 24/08/2026 11:42, Nama_Kapal: Pulau Layang} @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/penugasantracking.js?m=1787972929:254
+[    2751ms] [LOG] {ID: ejl5SG1sZjlCNm54cWtkVzcweWxtQT09, Nomor_Order: 20260822-08503, Nomor_Lelang: COBA/20/MAKASSAR, Tgl_Permintaan_Muat: 24/08/2026 11:11, Nama_Kapal: Pulau Layang} @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/penugasantracking.js?m=1787972929:254
+[    2751ms] [LOG] {ID: Mk56Y21DbGV2OHVGRGxpMk5CN3JCZz09, Nomor_Order: 20260822-08502, Nomor_Lelang: COBA/20/TERNATE, Tgl_Permintaan_Muat: 23/08/2026 08:00, Nama_Kapal: Nelly A100} @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/penugasantracking.js?m=1787972929:254
+[    2752ms] [LOG] {ID: YjMyTEgvYW40UUJldUNydGp2SS9wQT09, Nomor_Order: 20260822-08501, Nomor_Lelang: COBA/20/MAKASSAR, Tgl_Permintaan_Muat: 23/08/2026 10:58, Nama_Kapal: Pulau Layang} @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/penugasantracking.js?m=1787972929:254
+[    2752ms] [LOG] {ID: RU5JcnhCZE54TlhrTEswZEQyU0FEdz09, Nomor_Order: 20260820-06504, Nomor_Lelang: LELANGIK/02/2026/NRML#2, Tgl_Permintaan_Muat: 22/08/2026 10:15, Nama_Kapal: SS} @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/penugasantracking.js?m=1787972929:254
+[    2752ms] [LOG] {ID: dUkwK0ZZNEI4OVNoaktnQjZxSFA3QT09, Nomor_Order: 20260811-06501, Nomor_Lelang: LELANGIK/247/2026/MLTD, Tgl_Permintaan_Muat: 27/08/2026 09:05, Nama_Kapal: KM. Jaya} @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/penugasantracking.js?m=1787972929:254
+[    2753ms] [LOG] {ID: eEw1RzF5cXQ3dSs0ZGg5Vk1kdThsUT09, Nomor_Order: 20260807-06501, Nomor_Lelang: LELANGIK/02/2026/NRML#2, Tgl_Permintaan_Muat: 20/08/2026 11:02, Nama_Kapal: KM. Love} @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/penugasantracking.js?m=1787972929:254
+[    2753ms] [LOG] {ID: S1IxWjM2MUc0cE8xVER1UUtLc2dmQT09, Nomor_Order: 20260713-06501, Nomor_Lelang: LELANGIK/02/2026/NRML#2, Tgl_Permintaan_Muat: 13/07/2026 10:41, Nama_Kapal: KM. Kalimas} @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/penugasantracking.js?m=1787972929:254
+[    2754ms] [LOG] {ID: VVpWU1E2WGxjN09xRTJWc0hqeTZDQT09, Nomor_Order: 20260629-06501, Nomor_Lelang: LELANGIK/247/2026/MLTD, Tgl_Permintaan_Muat: 29/06/2026 15:08, Nama_Kapal: KM. Layar} @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/penugasantracking.js?m=1787972929:254
+[    2767ms] [LOG] [Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object] @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/penugasantracking.js?m=1787972929:39
+[    2770ms] [LOG] 647 @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/penugasantracking.js?m=1787972929:542
+[    2770ms] [LOG] 647 countView1 1 pageNow 20 limitView1 @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/penugasantracking.js?m=1787972929:544
+[    2770ms] [LOG] 20 @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/penugasantracking.js?m=1787972929:555
+[    2771ms] [LOG] 647 jumlah data @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/penugasantracking.js?m=1787972929:499
+[    2771ms] [LOG] 33 @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/penugasantracking.js?m=1787972929:501
+[    2772ms] [LOG] 33 1 pageCount & pageNow @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/penugasantracking.js?m=1787972929:426
+[    2774ms] [LOG] 200 xhrglobal @ https://phbidlautdemo.prahu-hub.com/home/penugasantracking:7683
+[    2880ms] [LOG] 200 xhrglobal @ https://phbidlautdemo.prahu-hub.com/home/penugasantracking:7683
+[    2921ms] [LOG] 200 xhrglobal @ https://phbidlautdemo.prahu-hub.com/home/penugasantracking:7683
+[    3991ms] TypeError: $(...).DataTable is not a function
+    at https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/js/scripts-init/tables.js:7:23

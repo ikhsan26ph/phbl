@@ -1,0 +1,245 @@
+- generic [active] [ref=f100e1]:
+  - generic [ref=f100e2]:
+    - generic [ref=f100e3]:
+      - generic [ref=f100e4]:
+        - link [ref=f100e6] [cursor=pointer]:
+          - /url: https://phbidlautdemo.prahu-hub.com/
+        - button [ref=f100e10] [cursor=pointer]
+      - text:  
+      - generic [ref=f100e13]:
+        - generic [ref=f100e14]:
+          - generic [ref=f100e15]: Admin PH Bid
+          - button "Administrator" [ref=f100e17]
+        - text: 
+        - generic [ref=f100e21]:
+          - generic [ref=f100e22]:
+            - generic [ref=f100e23]: Admin PH Bid
+            - generic [ref=f100e24]: prahu.bid20@gmail.com
+          - generic [ref=f100e25]: 
+          - link "" [ref=f100e28] [cursor=pointer]:
+            - /url: https://phbidlautdemo.prahu-hub.com/home/notification
+          - link [ref=f100e35] [cursor=pointer]:
+            - /url: https://phbidlautdemo.prahu-hub.com/user/do_logout
+    - generic [ref=f100e38]:
+      - generic [ref=f100e39]:
+        - text: 
+        - generic [ref=f100e40]:
+          - list [ref=f100e42]:
+            - listitem
+            - listitem [ref=f100e43]:
+              - link "CARI PENAWARAN" [ref=f100e44] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/lelang/carirute
+            - listitem [ref=f100e45]: MENU ADMIN
+            - listitem [ref=f100e46]:
+              - generic [ref=f100e47] [cursor=pointer]:
+                - text: DASHBOARD
+                - generic [ref=f100e50]: 
+              - list [ref=f100e51]:
+                - listitem [ref=f100e52]:
+                  - link "Monitoring Pengiriman" [ref=f100e53] [cursor=pointer]:
+                    - /url: https://phbidlautdemo.prahu-hub.com/home/dashboardorder
+                - listitem [ref=f100e54]:
+                  - link "Grafik Pengiriman" [ref=f100e55] [cursor=pointer]:
+                    - /url: https://phbidlautdemo.prahu-hub.com/home/dashboardpengiriman
+                - listitem [ref=f100e56]:
+                  - link "Ringkasan Analitik" [ref=f100e57] [cursor=pointer]:
+                    - /url: https://phbidlautdemo.prahu-hub.com/dashboardanalitik/ringkasan
+            - listitem [ref=f100e58]:
+              - generic [ref=f100e59] [cursor=pointer]:
+                - text: ANALITIK
+                - generic [ref=f100e62]: 
+            - listitem [ref=f100e63]:
+              - link "PENGAJUAN LELANG" [ref=f100e64] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/lelang/listlelang
+            - listitem [ref=f100e67]:
+              - link "PENGAJUAN NEGO" [ref=f100e68] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/lelang/pengajuannego
+            - listitem [ref=f100e71]:
+              - link [ref=f100e72] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/order/orderlist
+            - listitem [ref=f100e75]:
+              - link "PENUGASAN TRACKING" [ref=f100e76] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/home/penugasantracking
+            - listitem [ref=f100e79]:
+              - link "CEK JADWAL" [ref=f100e80] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/lelang/carijadwal
+            - listitem [ref=f100e83]:
+              - generic [ref=f100e84] [cursor=pointer]:
+                - text: LAPORAN
+                - generic [ref=f100e87]: 
+            - listitem [ref=f100e88]:
+              - generic [ref=f100e89] [cursor=pointer]:
+                - text: VALIDASI AKUN
+                - generic [ref=f100e92]: 
+            - listitem [ref=f100e93]:
+              - generic [ref=f100e94] [cursor=pointer]:
+                - text: SETTING
+                - generic [ref=f100e97]: 
+            - listitem [ref=f100e98]:
+              - generic [ref=f100e99] [cursor=pointer]:
+                - text: MASTER
+                - generic [ref=f100e102]: 
+            - listitem [ref=f100e103]:
+              - generic [ref=f100e104] [cursor=pointer]:
+                - text: PENGATURAN AKUN
+                - generic [ref=f100e107]: 
+            - listitem [ref=f100e108]:
+              - link "AKUN SAYA" [ref=f100e109] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/home/akunsaya
+            - listitem [ref=f100e112]: MENU TRANSPORTER
+            - listitem [ref=f100e113]:
+              - link "HARGA & JADWAL" [ref=f100e114] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/home/hargajadwal
+          - generic [ref=f100e119]:
+            - paragraph [ref=f100e121]: KONTAK KAMI
+            - generic [ref=f100e122]:
+              - generic [ref=f100e123]: 
+              - text: "081246665023"
+            - generic [ref=f100e124]:
+              - generic [ref=f100e125]: 
+              - text: "081246665023"
+            - generic [ref=f100e126]:
+              - generic [ref=f100e127]: 
+              - text: csct@prahu-hub.com
+            - generic [ref=f100e128]:
+              - link [ref=f100e129] [cursor=pointer]:
+                - /url: https://facebook.com/sosmed.phbid
+              - link [ref=f100e131] [cursor=pointer]:
+                - /url: https://twitter.com/PrahuHub
+              - link [ref=f100e133] [cursor=pointer]:
+                - /url: https://instagram.com/phbid_/
+              - link [ref=f100e135] [cursor=pointer]:
+                - /url: https://www.youtube.com/channel/UC41VntroP3zKmXZYnGgtFdw
+              - link [ref=f100e137] [cursor=pointer]:
+                - /url: http://linkedin.com/in/ph-bid-aa5393211/
+      - generic [ref=f100e139]:
+        - tabpanel [ref=f100e143]:
+          - generic [ref=f100e146]:
+            - generic [ref=f100e147]:
+              - text: Dashboard Monitoring Pengiriman
+              - button "" [ref=f100e149] [cursor=pointer]
+            - generic [ref=f100e151]:
+              - generic [ref=f100e153]:
+                - generic [ref=f100e155]:
+                  - generic [ref=f100e156]:
+                    - generic [ref=f100e157]:
+                      - generic [ref=f100e158]: Dari Tanggal *
+                      - textbox "DD/MM/YYYY" [ref=f100e160]: 01/08/2026
+                    - generic [ref=f100e161]: s.d
+                    - generic [ref=f100e163]:
+                      - generic [ref=f100e164]: Sampai Tanggal *
+                      - textbox "DD/MM/YYYY" [ref=f100e166]: 30/08/2026
+                  - text: Masukkan tanggal order (Maksimal range tanggal 90 hari)
+                - generic [ref=f100e168]:
+                  - generic [ref=f100e169]: Shipper *
+                  - generic [ref=f100e171]:
+                    - combobox [ref=f100e172]
+                    - combobox [ref=f100e175] [cursor=pointer]:
+                      - textbox "Tiara Afli Training" [ref=f100e176]
+                - button " Cari" [ref=f100e178] [cursor=pointer]:
+                  - generic [ref=f100e179]: 
+                  - text: Cari
+                - generic [ref=f100e180]:
+                  - text: Menampilkan
+                  - combobox [ref=f100e181]:
+                    - option "50" [selected]
+                    - option "100"
+                    - option "150"
+                    - option "250"
+                  - text: Data
+              - generic [ref=f100e182]:
+                - table [ref=f100e184]:
+                  - rowgroup [ref=f100e205]:
+                    - row [ref=f100e206]:
+                      - columnheader [ref=f100e207] [cursor=pointer]:
+                        - generic [ref=f100e208]:
+                          - generic [ref=f100e209]: ID Order
+                          - generic [ref=f100e210]: 
+                      - columnheader [ref=f100e212]:
+                        - generic [ref=f100e213]: Consignee
+                      - columnheader [ref=f100e215]:
+                        - generic [ref=f100e216]: Alamat Tujuan
+                      - columnheader [ref=f100e218]:
+                        - generic [ref=f100e219]: Nomer Referensi
+                      - columnheader [ref=f100e221]:
+                        - generic [ref=f100e222]: Jenis Kontainer
+                      - columnheader [ref=f100e224]:
+                        - generic [ref=f100e225]: Jumlah Dipesan
+                      - columnheader [ref=f100e227]:
+                        - generic [ref=f100e228]: Harga Order
+                      - columnheader [ref=f100e230]:
+                        - generic [ref=f100e231]: Total Harga
+                      - columnheader [ref=f100e233]:
+                        - generic [ref=f100e234]: Nama Kapal
+                      - columnheader [ref=f100e236] [cursor=pointer]:
+                        - generic [ref=f100e237]:
+                          - generic [ref=f100e238]: Stuffing
+                          - generic [ref=f100e239]: 
+                      - columnheader [ref=f100e241]:
+                        - generic [ref=f100e242]: Closing Time
+                      - columnheader [ref=f100e244] [cursor=pointer]:
+                        - generic [ref=f100e245]:
+                          - generic [ref=f100e246]: ETD
+                          - generic [ref=f100e247]: 
+                      - columnheader [ref=f100e249] [cursor=pointer]:
+                        - generic [ref=f100e250]:
+                          - generic [ref=f100e251]: ETA
+                          - generic [ref=f100e252]: 
+                      - columnheader [ref=f100e254] [cursor=pointer]:
+                        - generic [ref=f100e255]:
+                          - generic [ref=f100e256]: Kapal Sandar
+                          - generic [ref=f100e257]: 
+                      - columnheader [ref=f100e259]:
+                        - generic [ref=f100e260]: Rencana Dooring
+                      - columnheader [ref=f100e262]:
+                        - generic [ref=f100e263]: Dooring
+                      - columnheader [ref=f100e265]:
+                        - generic [ref=f100e266]: Keterangan Dooring
+                      - columnheader [ref=f100e268] [cursor=pointer]:
+                        - generic [ref=f100e269]:
+                          - generic [ref=f100e270]: Transporter
+                          - generic [ref=f100e271]: 
+                      - columnheader [ref=f100e273] [cursor=pointer]:
+                        - generic [ref=f100e274]:
+                          - generic [ref=f100e275]: Pelabuhan Tujuan (POD)
+                          - generic [ref=f100e276]: 
+                    - row [ref=f100e278]:
+                      - cell [ref=f100e279]
+                - table [ref=f100e281]:
+                  - rowgroup [ref=f100e302]:
+                    - row [ref=f100e303]:
+                      - columnheader "ID Order" [ref=f100e304]
+                      - columnheader "Consignee" [ref=f100e305]
+                      - columnheader "Alamat Tujuan" [ref=f100e306]
+                      - columnheader "Nomer Referensi" [ref=f100e307]
+                      - columnheader "Jenis Kontainer" [ref=f100e308]
+                      - columnheader "Jumlah Dipesan" [ref=f100e309]
+                      - columnheader "Harga Order" [ref=f100e310]
+                      - columnheader "Total Harga" [ref=f100e311]
+                      - columnheader "Nama Kapal" [ref=f100e312]
+                      - columnheader "Stuffing" [ref=f100e313]
+                      - columnheader "Closing Time" [ref=f100e314]
+                      - columnheader "ETD" [ref=f100e315]
+                      - columnheader "ETA" [ref=f100e316]
+                      - columnheader "Kapal Sandar" [ref=f100e317]
+                      - columnheader "Rencana Dooring" [ref=f100e318]
+                      - columnheader "Dooring" [ref=f100e319]
+                      - columnheader "Keterangan Dooring" [ref=f100e320]
+                      - columnheader "Transporter" [ref=f100e321]
+                      - columnheader "Pelabuhan Tujuan (POD)" [ref=f100e322]
+                  - rowgroup [ref=f100e323]:
+                    - row [ref=f100e324]:
+                      - cell "Mohon tunggu sebentar" [ref=f100e325]
+                    - row:
+                      - cell
+                    - row [ref=f100e327]:
+                      - cell [ref=f100e328]
+                      - cell [ref=f100e329]
+                    - row [ref=f100e330]:
+                      - cell [ref=f100e331]
+              - generic:
+                - status [ref=f100e333]
+                - generic [ref=f100e335]:
+                  - list
+        - paragraph [ref=f100e341]: © BETA 20260228 v1.3.28 - PH Bid Laut | Digital Logistic Platform
+  - text:  

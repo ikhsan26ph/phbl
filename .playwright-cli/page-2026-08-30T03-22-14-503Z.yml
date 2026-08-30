@@ -1,0 +1,204 @@
+- generic [active] [ref=f80e1]:
+  - generic [ref=f80e2]:
+    - generic [ref=f80e3]:
+      - generic [ref=f80e4]:
+        - link [ref=f80e6] [cursor=pointer]:
+          - /url: https://phbidlautdemo.prahu-hub.com/
+        - button [ref=f80e10] [cursor=pointer]
+      - text:  
+      - generic [ref=f80e13]:
+        - generic [ref=f80e14]:
+          - generic [ref=f80e15]: Admin PH Bid
+          - button "Administrator" [ref=f80e17]
+        - text: 
+        - generic [ref=f80e21]:
+          - generic [ref=f80e22]:
+            - generic [ref=f80e23]: Admin PH Bid
+            - generic [ref=f80e24]: prahu.bid20@gmail.com
+          - generic [ref=f80e25]: 
+          - link "" [ref=f80e28] [cursor=pointer]:
+            - /url: https://phbidlautdemo.prahu-hub.com/home/notification
+          - link [ref=f80e35] [cursor=pointer]:
+            - /url: https://phbidlautdemo.prahu-hub.com/user/do_logout
+    - generic [ref=f80e38]:
+      - generic [ref=f80e39]:
+        - text: 
+        - generic [ref=f80e40]:
+          - list [ref=f80e42]:
+            - listitem
+            - listitem [ref=f80e43]:
+              - link "CARI PENAWARAN" [ref=f80e44] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/lelang/carirute
+            - listitem [ref=f80e45]: MENU ADMIN
+            - listitem [ref=f80e46]:
+              - generic [ref=f80e47] [cursor=pointer]:
+                - text: DASHBOARD
+                - generic [ref=f80e50]: 
+            - listitem [ref=f80e51]:
+              - generic [ref=f80e52] [cursor=pointer]:
+                - text: ANALITIK
+                - generic [ref=f80e55]: 
+            - listitem [ref=f80e56]:
+              - link "PENGAJUAN LELANG" [ref=f80e57] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/lelang/listlelang
+            - listitem [ref=f80e60]:
+              - link "PENGAJUAN NEGO" [ref=f80e61] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/lelang/pengajuannego
+            - listitem [ref=f80e64]:
+              - link [ref=f80e65] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/order/orderlist
+            - listitem [ref=f80e68]:
+              - link "PENUGASAN TRACKING" [ref=f80e69] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/home/penugasantracking
+            - listitem [ref=f80e72]:
+              - link "CEK JADWAL" [ref=f80e73] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/lelang/carijadwal
+            - listitem [ref=f80e76]:
+              - generic [ref=f80e77] [cursor=pointer]:
+                - text: LAPORAN
+                - generic [ref=f80e80]: 
+            - listitem [ref=f80e81]:
+              - generic [ref=f80e82] [cursor=pointer]:
+                - text: VALIDASI AKUN
+                - generic [ref=f80e85]: 
+            - listitem [ref=f80e86]:
+              - generic [ref=f80e87] [cursor=pointer]:
+                - text: SETTING
+                - generic [ref=f80e90]: 
+            - listitem [ref=f80e91]:
+              - generic [ref=f80e92] [cursor=pointer]:
+                - text: MASTER
+                - generic [ref=f80e95]: 
+            - listitem [ref=f80e96]:
+              - generic [ref=f80e97] [cursor=pointer]:
+                - text: PENGATURAN AKUN
+                - generic [ref=f80e100]: 
+            - listitem [ref=f80e101]:
+              - link "AKUN SAYA" [ref=f80e102] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/home/akunsaya
+            - listitem [ref=f80e105]: MENU TRANSPORTER
+            - listitem [ref=f80e106]:
+              - link "HARGA & JADWAL" [ref=f80e107] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/home/hargajadwal
+          - generic [ref=f80e112]:
+            - paragraph [ref=f80e114]: KONTAK KAMI
+            - generic [ref=f80e115]:
+              - generic [ref=f80e116]: 
+              - text: "081246665023"
+            - generic [ref=f80e117]:
+              - generic [ref=f80e118]: 
+              - text: "081246665023"
+            - generic [ref=f80e119]:
+              - generic [ref=f80e120]: 
+              - text: csct@prahu-hub.com
+            - generic [ref=f80e121]:
+              - link [ref=f80e122] [cursor=pointer]:
+                - /url: https://facebook.com/sosmed.phbid
+              - link [ref=f80e124] [cursor=pointer]:
+                - /url: https://twitter.com/PrahuHub
+              - link [ref=f80e126] [cursor=pointer]:
+                - /url: https://instagram.com/phbid_/
+              - link [ref=f80e128] [cursor=pointer]:
+                - /url: https://www.youtube.com/channel/UC41VntroP3zKmXZYnGgtFdw
+              - link [ref=f80e130] [cursor=pointer]:
+                - /url: http://linkedin.com/in/ph-bid-aa5393211/
+      - generic [ref=f80e132]:
+        - generic [ref=f80e133]:
+          - generic [ref=f80e136]:
+            - link "Beranda" [ref=f80e138] [cursor=pointer]:
+              - /url: https://phbidlautdemo.prahu-hub.com/lelang/listLelang
+            - text: /
+            - link "Penugasan Tracking" [ref=f80e140] [cursor=pointer]:
+              - /url: https://phbidlautdemo.prahu-hub.com/home/penugasantracking
+            - text: / Lihat Data Tracking
+          - generic [ref=f80e142]:
+            - paragraph [ref=f80e143]: LIHAT DATA TRACKING
+            - button " Kembali" [ref=f80e144] [cursor=pointer]:
+              - generic [ref=f80e145]: 
+              - text: Kembali
+          - generic [ref=f80e147]:
+            - generic [ref=f80e150]:
+              - generic [ref=f80e151]: DETAIL ORDER
+              - generic [ref=f80e156]:
+                - generic [ref=f80e157]:
+                  - generic [ref=f80e158]:
+                    - text: Nomor Order
+                    - generic [ref=f80e159]: ":"
+                  - generic [ref=f80e160]: 20260827-06501
+                - generic [ref=f80e161]:
+                  - generic [ref=f80e162]:
+                    - text: Nomor Lelang
+                    - generic [ref=f80e163]: ":"
+                  - generic [ref=f80e164]: LELANGIK/02/2026/NRML#2
+                - generic [ref=f80e165]:
+                  - generic [ref=f80e166]:
+                    - text: Shipper
+                    - generic [ref=f80e167]: ":"
+                  - generic [ref=f80e168]: PT. Cipta Karya Abadi Sejahtera Sentora Mujur Selalu
+                - generic [ref=f80e169]:
+                  - generic [ref=f80e170]:
+                    - text: Rute
+                    - generic [ref=f80e171]: ":"
+                  - generic [ref=f80e172]: Dobo (DOB) - Bitung (BIT)
+                - generic [ref=f80e175]:
+                  - generic [ref=f80e176]:
+                    - text: Transporter
+                    - generic [ref=f80e177]: ":"
+                  - generic [ref=f80e178]: PT. Muda Jaya Wijaya Karya Sentosa Indah Elok (IK)
+                - generic [ref=f80e179]:
+                  - generic [ref=f80e180]:
+                    - text: Kapal / Voy.
+                    - generic [ref=f80e181]: ":"
+                  - generic [ref=f80e182]: KM. Cahaya Mutiara / KMCMTR001
+                - generic [ref=f80e183]:
+                  - generic [ref=f80e184]:
+                    - text: ETD - ETA
+                    - generic [ref=f80e185]: ":"
+                  - generic [ref=f80e186]: 30/08/2026 - 31/08/2026
+                - generic [ref=f80e187]:
+                  - generic [ref=f80e188]:
+                    - text: Closing Time
+                    - generic [ref=f80e189]: ":"
+                  - generic [ref=f80e190]: 28/08/2026 10:41
+                - generic [ref=f80e191]:
+                  - generic [ref=f80e192]:
+                    - text: Pelayaran
+                    - generic [ref=f80e193]: ":"
+                  - generic [ref=f80e194]: MERATUS
+                - generic [ref=f80e195]:
+                  - generic [ref=f80e196]:
+                    - text: Jenis Kontainer
+                    - generic [ref=f80e197]: ":"
+                  - generic [ref=f80e198]: 20 DRY
+                - generic [ref=f80e199]:
+                  - generic [ref=f80e200]:
+                    - text: Jumlah Dipesan
+                    - generic [ref=f80e201]: ":"
+                  - generic [ref=f80e202]: 2 Unit
+                - generic [ref=f80e203]:
+                  - generic [ref=f80e204]:
+                    - text: Permintaan Muat
+                    - generic [ref=f80e205]: ":"
+                  - generic [ref=f80e206]: 28/08/2026 09:00
+            - generic [ref=f80e212]:
+              - generic [ref=f80e213]: DATA TRACKING
+              - generic [ref=f80e219]:
+                - generic [ref=f80e220]: SJ Diterima Agen - 29/08/2026
+                - text: DATA DETAIL
+              - generic [ref=f80e230]:
+                - generic [ref=f80e231]: Dooring (2/2) - 29/08/2026
+                - text: DATA DETAIL
+              - generic [ref=f80e241]:
+                - generic [ref=f80e242]: Rencana Dooring (2/2) - 29/08/2026
+                - text: DATA DETAIL
+              - generic [ref=f80e252]:
+                - generic [ref=f80e253]: Kapal Sandar - 29/08/2026
+                - text: DATA DETAIL
+              - generic [ref=f80e263]:
+                - generic [ref=f80e264]: Kapal Berlayar - 28/08/2026
+                - text: DATA DETAIL
+              - generic [ref=f80e274]:
+                - generic [ref=f80e275]: Stuffing (2/2) - 28/08/2026
+                - text: DATA DETAIL
+        - paragraph [ref=f80e286]: © BETA 20260228 v1.3.28 - PH Bid Laut | Digital Logistic Platform
+  - text:     

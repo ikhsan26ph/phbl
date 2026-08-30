@@ -1,0 +1,480 @@
+- generic [active] [ref=f48e1]:
+  - generic [ref=f48e2]:
+    - generic [ref=f48e3]:
+      - generic [ref=f48e4]:
+        - link [ref=f48e6] [cursor=pointer]:
+          - /url: https://phbidlautdemo.prahu-hub.com/
+        - button [ref=f48e10] [cursor=pointer]
+      - text:  
+      - generic [ref=f48e13]:
+        - generic [ref=f48e14]:
+          - generic [ref=f48e15]: Admin PH Bid
+          - button "Administrator" [ref=f48e17]
+        - text: 
+        - generic [ref=f48e21]:
+          - generic [ref=f48e22]:
+            - generic [ref=f48e23]: Admin PH Bid
+            - generic [ref=f48e24]: prahu.bid20@gmail.com
+          - generic [ref=f48e25]: 
+          - link "" [ref=f48e28] [cursor=pointer]:
+            - /url: https://phbidlautdemo.prahu-hub.com/home/notification
+          - link [ref=f48e36] [cursor=pointer]:
+            - /url: https://phbidlautdemo.prahu-hub.com/user/do_logout
+    - generic [ref=f48e39]:
+      - generic [ref=f48e40]:
+        - text: 
+        - generic [ref=f48e41]:
+          - list [ref=f48e43]:
+            - listitem
+            - listitem [ref=f48e44]:
+              - link "CARI PENAWARAN" [ref=f48e45] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/lelang/carirute
+            - listitem [ref=f48e46]: MENU ADMIN
+            - listitem [ref=f48e47]:
+              - generic [ref=f48e48] [cursor=pointer]:
+                - text: DASHBOARD
+                - generic [ref=f48e51]: 
+            - listitem [ref=f48e52]:
+              - generic [ref=f48e53] [cursor=pointer]:
+                - text: ANALITIK
+                - generic [ref=f48e56]: 
+            - listitem [ref=f48e57]:
+              - link "PENGAJUAN LELANG" [ref=f48e58] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/lelang/listlelang
+            - listitem [ref=f48e61]:
+              - link "PENGAJUAN NEGO" [ref=f48e62] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/lelang/pengajuannego
+            - listitem [ref=f48e65]:
+              - link "DAFTAR ORDER" [ref=f48e66] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/order/orderlist
+            - listitem [ref=f48e70]:
+              - link "PENUGASAN TRACKING" [ref=f48e71] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/home/penugasantracking
+            - listitem [ref=f48e74]:
+              - link "CEK JADWAL" [ref=f48e75] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/lelang/carijadwal
+            - listitem [ref=f48e78]:
+              - generic [ref=f48e79] [cursor=pointer]:
+                - text: LAPORAN
+                - generic [ref=f48e82]: 
+            - listitem [ref=f48e83]:
+              - generic [ref=f48e84] [cursor=pointer]:
+                - text: VALIDASI AKUN
+                - generic [ref=f48e87]: 
+            - listitem [ref=f48e88]:
+              - generic [ref=f48e89] [cursor=pointer]:
+                - text: SETTING
+                - generic [ref=f48e92]: 
+            - listitem [ref=f48e93]:
+              - generic [ref=f48e94] [cursor=pointer]:
+                - text: MASTER
+                - generic [ref=f48e97]: 
+            - listitem [ref=f48e98]:
+              - generic [ref=f48e99] [cursor=pointer]:
+                - text: PENGATURAN AKUN
+                - generic [ref=f48e102]: 
+            - listitem [ref=f48e103]:
+              - link "AKUN SAYA" [ref=f48e104] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/home/akunsaya
+            - listitem [ref=f48e107]: MENU TRANSPORTER
+            - listitem [ref=f48e108]:
+              - link "HARGA & JADWAL" [ref=f48e109] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/home/hargajadwal
+          - generic [ref=f48e114]:
+            - paragraph [ref=f48e116]: KONTAK KAMI
+            - generic [ref=f48e117]:
+              - generic [ref=f48e118]: 
+              - text: "081246665023"
+            - generic [ref=f48e119]:
+              - generic [ref=f48e120]: 
+              - text: "081246665023"
+            - generic [ref=f48e121]:
+              - generic [ref=f48e122]: 
+              - text: csct@prahu-hub.com
+            - generic [ref=f48e123]:
+              - link [ref=f48e124] [cursor=pointer]:
+                - /url: https://facebook.com/sosmed.phbid
+              - link [ref=f48e126] [cursor=pointer]:
+                - /url: https://twitter.com/PrahuHub
+              - link [ref=f48e128] [cursor=pointer]:
+                - /url: https://instagram.com/phbid_/
+              - link [ref=f48e130] [cursor=pointer]:
+                - /url: https://www.youtube.com/channel/UC41VntroP3zKmXZYnGgtFdw
+              - link [ref=f48e132] [cursor=pointer]:
+                - /url: http://linkedin.com/in/ph-bid-aa5393211/
+      - generic [ref=f48e134]:
+        - generic [ref=f48e135]:
+          - generic [ref=f48e138]:
+            - link "Beranda" [ref=f48e140] [cursor=pointer]:
+              - /url: https://phbidlautdemo.prahu-hub.com/lelang/listLelang
+            - text: /
+            - link "Daftar Pengajuan Lelang" [ref=f48e142] [cursor=pointer]:
+              - /url: https://phbidlautdemo.prahu-hub.com/lelang/listLelang
+            - text: / Detail Pengajuan Lelang
+          - generic [ref=f48e144]:
+            - paragraph [ref=f48e145]: Detail Pengajuan Lelang
+            - button " Kembali" [ref=f48e146] [cursor=pointer]:
+              - generic [ref=f48e147]: 
+              - text: Kembali
+          - tabpanel [ref=f48e150]:
+            - generic [ref=f48e152]:
+              - table [ref=f48e158]:
+                - rowgroup [ref=f48e159]:
+                  - row [ref=f48e160]:
+                    - columnheader "Nomor Lelang" [ref=f48e161]
+                    - columnheader "Buka Lelang" [ref=f48e162]
+                    - columnheader "Tutup Lelang" [ref=f48e163]
+                    - columnheader "Rencana Mulai Kirim" [ref=f48e164]
+                    - columnheader "Rencana Akhir Kirim" [ref=f48e165]
+                - rowgroup [ref=f48e166]:
+                  - row [ref=f48e167]:
+                    - cell "AGS-NRM-001/24-08/2026-JKT" [ref=f48e168]
+                    - cell "24/08/2026 09:13" [ref=f48e169]
+                    - cell "25/08/2026 09:34" [ref=f48e170]
+                    - cell "28/08/2026 09:35" [ref=f48e171]
+                    - cell "25/09/2026 09:36" [ref=f48e172]
+              - generic [ref=f48e175]:
+                - generic [ref=f48e176]:
+                  - text: Lelang Dibuat
+                  - generic [ref=f48e177]: ":"
+                - generic [ref=f48e178]: 24/08/2026 09:03
+                - generic [ref=f48e179]:
+                  - text: Shipper
+                  - generic [ref=f48e180]: ":"
+                - generic [ref=f48e181]: PT Ikan Laut Jaya
+                - generic [ref=f48e182]:
+                  - text: Status Lelang
+                  - generic [ref=f48e183]: ":"
+                - generic [ref=f48e184]: LELANG DITUTUP
+                - generic [ref=f48e186]:
+                  - text: Perubahan Terakhir
+                  - generic [ref=f48e187]: ":"
+                - generic [ref=f48e188]:
+                  - text: 24/08/2026 09:13 (
+                  - link "History" [ref=f48e189] [cursor=pointer]:
+                    - /url: https://phbidlautdemo.prahu-hub.com/lelang/historyupdatelelang/R09VaStNcDI5TE5UT2o3YWNWWDRPQT09
+                  - text: )
+              - generic [ref=f48e191]:
+                - heading "SYARAT & KETENTUAN" [level=6] [ref=f48e192]
+                - generic [ref=f48e193]:
+                  - generic [ref=f48e194]:
+                    - text: Dokumen Aanwijzing
+                    - generic [ref=f48e195]: ":"
+                  - generic [ref=f48e196]: "-"
+                  - generic [ref=f48e198]:
+                    - text: Biaya Termasuk
+                    - generic [ref=f48e199]: ":"
+                  - generic [ref=f48e200]: Krani, Buruh Muat, Kawalan Asal, Trucking Asal, THC Asal, LOLO Asal, Freight Kapal, Buruh Bongkar, Kawalan Tujuan, Trucking Tujuan, THC Tujuan, LOLO Tujuan, Asuransi
+                  - generic [ref=f48e201]:
+                    - text: Harga yang ditawarkan telah termasuk
+                    - generic [ref=f48e202]: ":"
+                  - generic [ref=f48e203]: "-"
+                  - generic [ref=f48e204]:
+                    - text: Harga yang ditawarkan belum termasuk
+                    - generic [ref=f48e205]: ":"
+                  - generic [ref=f48e206]: "-"
+                  - generic [ref=f48e207]:
+                    - text: Dokumen Penagihan
+                    - generic [ref=f48e208]: ":"
+                  - generic [ref=f48e209]: Invoice, Faktur Pajak, Surat Jalan, DO, BL Pelayaran, Tanda Terima Barang, Dokumen Perjanjian, Dokumen Lelang
+                  - generic [ref=f48e210]:
+                    - text: Catatan Tambahan
+                    - generic [ref=f48e211]: 
+                    - generic [ref=f48e212]: ":"
+                  - generic [ref=f48e213]: "-"
+                  - generic [ref=f48e214]:
+                    - text: Budget Pengiriman
+                    - generic [ref=f48e215]: ":"
+                  - generic [ref=f48e216]: Rp. 80.000.000
+                  - generic [ref=f48e217]:
+                    - text: Dokumen Lelang
+                    - generic [ref=f48e218]: ":"
+                  - generic [ref=f48e219]: "-"
+            - generic [ref=f48e223]:
+              - heading "RUTE PENGIRIMAN" [level=6] [ref=f48e224]
+              - generic [ref=f48e225]:
+                - generic [ref=f48e226]:
+                  - text: Pelabuhan Asal (POL)
+                  - generic [ref=f48e227]: ":"
+                - generic [ref=f48e228]: Tanjung Perak (SUB) - Kota Surabaya
+                - generic [ref=f48e229]:
+                  - text: Informasi Alamat Lengkap Asal
+                  - generic [ref=f48e230]: ":"
+                - generic [ref=f48e231]: Jl. Surabaya No. 1
+                - generic [ref=f48e232]:
+                  - text: Kota / Kab. Alamat Asal
+                  - generic [ref=f48e233]: ":"
+                - generic [ref=f48e234]: Kota Surabaya
+                - generic [ref=f48e235]:
+                  - text: PIC Tempat Asal
+                  - generic [ref=f48e236]: ":"
+                - generic [ref=f48e237]: Andi
+                - generic [ref=f48e238]:
+                  - text: Telp. PIC Tempat Asal
+                  - generic [ref=f48e239]: ":"
+                - generic [ref=f48e240]: "082139240985"
+              - generic [ref=f48e241]:
+                - generic [ref=f48e242]:
+                  - text: Pelabuhan Tujuan (POD)
+                  - generic [ref=f48e243]: ":"
+                - generic [ref=f48e244]: Tanjung Priok (JKT) - Kota Jakarta Utara
+                - generic [ref=f48e245]:
+                  - text: Informasi Alamat Lengkap Tujuan
+                  - generic [ref=f48e246]: ":"
+                - generic [ref=f48e247]: Jl. Jaktim No. 20
+                - generic [ref=f48e248]:
+                  - text: Kota / Kab. Alamat Tujuan
+                  - generic [ref=f48e249]: ":"
+                - generic [ref=f48e250]: Kota Jakarta Timur
+                - generic [ref=f48e251]:
+                  - text: PIC Tempat Tujuan
+                  - generic [ref=f48e252]: ":"
+                - generic [ref=f48e253]: Budi
+                - generic [ref=f48e254]:
+                  - text: Telp. PIC Tempat Tujuan
+                  - generic [ref=f48e255]: ":"
+                - generic [ref=f48e256]: "082139240985"
+            - generic [ref=f48e260]:
+              - heading "INFORMASI KONTAINER" [level=6] [ref=f48e261]
+              - generic [ref=f48e262]:
+                - generic [ref=f48e263]:
+                  - text: Jenis Kontainer
+                  - generic [ref=f48e264]: ":"
+                - generic [ref=f48e265]: 20 DRY
+                - generic [ref=f48e266]:
+                  - text: Volume Pengiriman
+                  - generic [ref=f48e267]: ":"
+                - generic [ref=f48e268]: "1"
+                - generic [ref=f48e269]:
+                  - text: Deskripsi Barang
+                  - generic [ref=f48e270]: ":"
+                - generic [ref=f48e271]: Makanan Ringan
+          - button "Batalkan Lelang" [ref=f48e274] [cursor=pointer]
+          - generic [ref=f48e275]: TRANSPORTER PENERIMA LELANG
+          - generic [ref=f48e276]:
+            - generic [ref=f48e278]:
+              - generic [ref=f48e279]: "Penawaran : 0 dari 42"
+              - generic [ref=f48e280]: "*) Penawaran = Telah input harga dan jadwal"
+            - text: 
+            - table [ref=f48e283]:
+              - rowgroup [ref=f48e284]:
+                - row [ref=f48e285]:
+                  - columnheader "No" [ref=f48e286]
+                  - columnheader "Transporter" [ref=f48e287]
+                  - columnheader "Tanggal Terkirim" [ref=f48e288]
+                  - columnheader "Status Harga " [ref=f48e289]:
+                    - text: Status Harga
+                    - generic [ref=f48e290]: 
+              - rowgroup [ref=f48e291]:
+                - row [ref=f48e292]:
+                  - cell "1" [ref=f48e293]
+                  - cell "Bidder Chervano" [ref=f48e294]
+                  - cell "24/08/2026 09:03:47" [ref=f48e295]
+                  - cell "Belum Input Penawaran" [ref=f48e296]
+                - row [ref=f48e297]:
+                  - cell "2" [ref=f48e298]
+                  - cell "PT. Tristan Magelang" [ref=f48e299]
+                  - cell "24/08/2026 09:03:47" [ref=f48e300]
+                  - cell "Belum Input Penawaran" [ref=f48e301]
+                - row [ref=f48e302]:
+                  - cell "3" [ref=f48e303]
+                  - cell "PT. Vio Bidder" [ref=f48e304]
+                  - cell "24/08/2026 09:03:47" [ref=f48e305]
+                  - cell "Belum Input Penawaran" [ref=f48e306]
+                - row [ref=f48e307]:
+                  - cell "4" [ref=f48e308]
+                  - cell "PT. Logisticsplus International" [ref=f48e309]
+                  - cell "24/08/2026 09:03:47" [ref=f48e310]
+                  - cell "Belum Input Penawaran" [ref=f48e311]
+                - row [ref=f48e312]:
+                  - cell "5" [ref=f48e313]
+                  - cell "PT. Express Sumber" [ref=f48e314]
+                  - cell "24/08/2026 09:03:47" [ref=f48e315]
+                  - cell "Belum Input Penawaran" [ref=f48e316]
+                - row [ref=f48e317]:
+                  - cell "6" [ref=f48e318]
+                  - cell "PT. Santosa" [ref=f48e319]
+                  - cell "24/08/2026 09:03:47" [ref=f48e320]
+                  - cell "Belum Input Penawaran" [ref=f48e321]
+                - row [ref=f48e322]:
+                  - cell "7" [ref=f48e323]
+                  - cell "Widy Demo Bidder Office" [ref=f48e324]
+                  - cell "24/08/2026 09:03:47" [ref=f48e325]
+                  - cell "Belum Input Penawaran" [ref=f48e326]
+                - row [ref=f48e327]:
+                  - cell "8" [ref=f48e328]
+                  - cell "Fia Training" [ref=f48e329]
+                  - cell "24/08/2026 09:03:47" [ref=f48e330]
+                  - cell "Belum Input Penawaran" [ref=f48e331]
+                - row [ref=f48e332]:
+                  - cell "9" [ref=f48e333]
+                  - cell "PT APA YA" [ref=f48e334]
+                  - cell "24/08/2026 09:03:47" [ref=f48e335]
+                  - cell "Belum Input Penawaran" [ref=f48e336]
+                - row [ref=f48e337]:
+                  - cell "10" [ref=f48e338]
+                  - cell "PT X" [ref=f48e339]
+                  - cell "24/08/2026 09:03:47" [ref=f48e340]
+                  - cell "Belum Input Penawaran" [ref=f48e341]
+                - row [ref=f48e342]:
+                  - cell "11" [ref=f48e343]
+                  - cell "CBA" [ref=f48e344]
+                  - cell "24/08/2026 09:03:48" [ref=f48e345]
+                  - cell "Belum Input Penawaran" [ref=f48e346]
+                - row [ref=f48e347]:
+                  - cell "12" [ref=f48e348]
+                  - cell "PT Indonesia Jaya" [ref=f48e349]
+                  - cell "24/08/2026 09:03:48" [ref=f48e350]
+                  - cell "Belum Input Penawaran" [ref=f48e351]
+                - row [ref=f48e352]:
+                  - cell "13" [ref=f48e353]
+                  - cell "MY MOTOR (workshop)" [ref=f48e354]
+                  - cell "24/08/2026 09:03:48" [ref=f48e355]
+                  - cell "Belum Input Penawaran" [ref=f48e356]
+                - row [ref=f48e357]:
+                  - cell "14" [ref=f48e358]
+                  - cell "Erlangga Bidder" [ref=f48e359]
+                  - cell "24/08/2026 09:03:48" [ref=f48e360]
+                  - cell "Belum Input Penawaran" [ref=f48e361]
+                - row [ref=f48e362]:
+                  - cell "15" [ref=f48e363]
+                  - cell "PT. Bidder Coba" [ref=f48e364]
+                  - cell "24/08/2026 09:03:48" [ref=f48e365]
+                  - cell "Belum Input Penawaran" [ref=f48e366]
+                - row [ref=f48e367]:
+                  - cell "16" [ref=f48e368]
+                  - cell "PT Layar Bendera" [ref=f48e369]
+                  - cell "24/08/2026 09:03:48" [ref=f48e370]
+                  - cell "Belum Input Penawaran" [ref=f48e371]
+                - row [ref=f48e372]:
+                  - cell "17" [ref=f48e373]
+                  - cell "hanifah Training" [ref=f48e374]
+                  - cell "24/08/2026 09:03:48" [ref=f48e375]
+                  - cell "Belum Input Penawaran" [ref=f48e376]
+                - row [ref=f48e377]:
+                  - cell "18" [ref=f48e378]
+                  - cell "PT Anter Aja" [ref=f48e379]
+                  - cell "24/08/2026 09:03:48" [ref=f48e380]
+                  - cell "Belum Input Penawaran" [ref=f48e381]
+                - row [ref=f48e382]:
+                  - cell "19" [ref=f48e383]
+                  - cell "PT Kimiatama Logistic" [ref=f48e384]
+                  - cell "24/08/2026 09:03:48" [ref=f48e385]
+                  - cell "Belum Input Penawaran" [ref=f48e386]
+                - row [ref=f48e387]:
+                  - cell "20" [ref=f48e388]
+                  - cell "PT Jalur Besi Transindo" [ref=f48e389]
+                  - cell "24/08/2026 09:03:48" [ref=f48e390]
+                  - cell "Belum Input Penawaran" [ref=f48e391]
+                - row [ref=f48e392]:
+                  - cell "21" [ref=f48e393]
+                  - cell "PT. Lion Running" [ref=f48e394]
+                  - cell "24/08/2026 09:03:48" [ref=f48e395]
+                  - cell "Belum Input Penawaran" [ref=f48e396]
+                - row [ref=f48e397]:
+                  - cell "22" [ref=f48e398]
+                  - cell "PT DEMO BIDDER" [ref=f48e399]
+                  - cell "24/08/2026 09:03:48" [ref=f48e400]
+                  - cell "Belum Input Penawaran" [ref=f48e401]
+                - row [ref=f48e402]:
+                  - cell "23" [ref=f48e403]
+                  - cell "Afli Training" [ref=f48e404]
+                  - cell "24/08/2026 09:03:48" [ref=f48e405]
+                  - cell "Belum Input Penawaran" [ref=f48e406]
+                - row [ref=f48e407]:
+                  - cell "24" [ref=f48e408]
+                  - cell "PT. Sentosa Jaya" [ref=f48e409]
+                  - cell "24/08/2026 09:03:48" [ref=f48e410]
+                  - cell "Belum Input Penawaran" [ref=f48e411]
+                - row [ref=f48e412]:
+                  - cell "25" [ref=f48e413]
+                  - cell "PT Khusus" [ref=f48e414]
+                  - cell "24/08/2026 09:03:48" [ref=f48e415]
+                  - cell "Belum Input Penawaran" [ref=f48e416]
+                - row [ref=f48e417]:
+                  - cell "26" [ref=f48e418]
+                  - cell "PT Satria Jaya" [ref=f48e419]
+                  - cell "24/08/2026 09:03:48" [ref=f48e420]
+                  - cell "Belum Input Penawaran" [ref=f48e421]
+                - row [ref=f48e422]:
+                  - cell "27" [ref=f48e423]
+                  - cell "PT. Tiger Claws" [ref=f48e424]
+                  - cell "24/08/2026 09:03:48" [ref=f48e425]
+                  - cell "Belum Input Penawaran" [ref=f48e426]
+                - row [ref=f48e427]:
+                  - cell "28" [ref=f48e428]
+                  - cell "PT. Putri Cahaya Mentari" [ref=f48e429]
+                  - cell "24/08/2026 09:03:48" [ref=f48e430]
+                  - cell "Belum Input Penawaran" [ref=f48e431]
+                - row [ref=f48e432]:
+                  - cell "29" [ref=f48e433]
+                  - cell "REREHAA" [ref=f48e434]
+                  - cell "24/08/2026 09:03:48" [ref=f48e435]
+                  - cell "Belum Input Penawaran" [ref=f48e436]
+                - row [ref=f48e437]:
+                  - cell "30" [ref=f48e438]
+                  - cell "ZRBidder" [ref=f48e439]
+                  - cell "24/08/2026 09:03:48" [ref=f48e440]
+                  - cell "Belum Input Penawaran" [ref=f48e441]
+                - row [ref=f48e442]:
+                  - cell "31" [ref=f48e443]
+                  - cell "PT SID BIDDER" [ref=f48e444]
+                  - cell "24/08/2026 09:03:48" [ref=f48e445]
+                  - cell "Belum Input Penawaran" [ref=f48e446]
+                - row [ref=f48e447]:
+                  - cell "32" [ref=f48e448]
+                  - cell "PT. Bidder Indah" [ref=f48e449]
+                  - cell "24/08/2026 09:03:48" [ref=f48e450]
+                  - cell "Belum Input Penawaran" [ref=f48e451]
+                - row [ref=f48e452]:
+                  - cell "33" [ref=f48e453]
+                  - cell "bidder" [ref=f48e454]
+                  - cell "24/08/2026 09:03:48" [ref=f48e455]
+                  - cell "Belum Input Penawaran" [ref=f48e456]
+                - row [ref=f48e457]:
+                  - cell "34" [ref=f48e458]
+                  - cell "lidya33" [ref=f48e459]
+                  - cell "24/08/2026 09:03:48" [ref=f48e460]
+                  - cell "Belum Input Penawaran" [ref=f48e461]
+                - row [ref=f48e462]:
+                  - cell "35" [ref=f48e463]
+                  - cell "PT. Saparia Jaya" [ref=f48e464]
+                  - cell "24/08/2026 09:03:48" [ref=f48e465]
+                  - cell "Belum Input Penawaran" [ref=f48e466]
+                - row [ref=f48e467]:
+                  - cell "36" [ref=f48e468]
+                  - cell "PT. Solune 232" [ref=f48e469]
+                  - cell "24/08/2026 09:03:48" [ref=f48e470]
+                  - cell "Belum Input Penawaran" [ref=f48e471]
+                - row [ref=f48e472]:
+                  - cell "37" [ref=f48e473]
+                  - cell "PT SID BIDDER" [ref=f48e474]
+                  - cell "24/08/2026 09:03:48" [ref=f48e475]
+                  - cell "Belum Input Penawaran" [ref=f48e476]
+                - row [ref=f48e477]:
+                  - cell "38" [ref=f48e478]
+                  - cell "PT Nusantara Jembatan Mandiri" [ref=f48e479]
+                  - cell "24/08/2026 09:03:48" [ref=f48e480]
+                  - cell "Belum Input Penawaran" [ref=f48e481]
+                - row [ref=f48e482]:
+                  - cell "39" [ref=f48e483]
+                  - cell "PT Barang Tumpah Ruah" [ref=f48e484]
+                  - cell "24/08/2026 09:03:48" [ref=f48e485]
+                  - cell "Belum Input Penawaran" [ref=f48e486]
+                - row [ref=f48e487]:
+                  - cell "40" [ref=f48e488]
+                  - cell "PT. Nusa Amanah Mandiri Logistik" [ref=f48e489]
+                  - cell "24/08/2026 09:03:48" [ref=f48e490]
+                  - cell "Belum Input Penawaran" [ref=f48e491]
+                - row [ref=f48e492]:
+                  - cell "41" [ref=f48e493]
+                  - cell "PT. Jalur Lintas Logistik" [ref=f48e494]
+                  - cell "24/08/2026 09:03:48" [ref=f48e495]
+                  - cell "Belum Input Penawaran" [ref=f48e496]
+                - row [ref=f48e497]:
+                  - cell "42" [ref=f48e498]
+                  - cell "PT. Jaya LJM" [ref=f48e499]
+                  - cell "24/08/2026 09:03:48" [ref=f48e500]
+                  - cell "Belum Input Penawaran" [ref=f48e501]
+        - paragraph [ref=f48e507]: © BETA 20260228 v1.3.28 - PH Bid Laut | Digital Logistic Platform
+  - text:  

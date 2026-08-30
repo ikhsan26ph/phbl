@@ -1,0 +1,29 @@
+[    1392ms] Unexpected token '<'
+[    1431ms] Cannot use import statement outside a module
+[    1471ms] ReferenceError: Chart is not defined
+    at https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/js/scripts-init/charts/chartjs.js:8:13
+[    1472ms] Unexpected token '<'
+[    1474ms] Unexpected token '<'
+[    1608ms] Uncaught TypeError: expect element to be DOM Element, but got null
+    at <anonymous> (https://cdnjs.cloudflare.com/ajax/libs/smooth-scrollbar/8.5.2/smooth-scrollbar.js:24:264)
+    at <anonymous> (https://phbidlautdemo.prahu-hub.com/lelang/detaillistLelang/1070:6093:14)
+[    1678ms] [LOG] Pengajuan Lelangnamanya @ https://phbidlautdemo.prahu-hub.com/lelang/detaillistLelang/1070:2040
+[    1692ms] [LOG] undefined @ https://phbidlautdemo.prahu-hub.com/lelang/detaillistLelang/1070:6446
+[    1693ms] [LOG] undefined @ https://phbidlautdemo.prahu-hub.com/lelang/detaillistLelang/1070:6446
+[    1696ms] [LOG] WebSocket connection @ https://phbidlautdemo.prahu-hub.com/lelang/detaillistLelang/1070:6489
+[    1697ms] [LOG] WebSocket connection attempting... @ https://phbidlautdemo.prahu-hub.com/lelang/detaillistLelang/1070:6567
+[    1786ms] TypeError: Cannot read properties of undefined (reading 'top')
+    at Object.success (https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/hasilPenawaran.js?m=1787972929:967:62)
+    at c (https://code.jquery.com/jquery-3.7.1.min.js:2:25304)
+    at Object.fireWith [as resolveWith] (https://code.jquery.com/jquery-3.7.1.min.js:2:26053)
+    at l (https://code.jquery.com/jquery-3.7.1.min.js:2:77782)
+    at XMLHttpRequest.<anonymous> (https://code.jquery.com/jquery-3.7.1.min.js:2:80265)
+[    2077ms] [LOG] WebSocket connected @ https://phbidlautdemo.prahu-hub.com/lelang/detaillistLelang/1070:6498
+[    2404ms] [LOG] update_dashboard_order_laut @ https://phbidlautdemo.prahu-hub.com/lelang/detaillistLelang/1070:6539
+[    2406ms] [LOG] 200 xhrglobal @ https://phbidlautdemo.prahu-hub.com/lelang/detaillistLelang/1070:6420
+[    2409ms] [LOG] 200 xhrglobal @ https://phbidlautdemo.prahu-hub.com/lelang/detaillistLelang/1070:6420
+[    2883ms] [TABLE] {UI version: 8.4.1, Core version: 8.4.0, Build: NC8xMi8yMDIyfDRkZTU3MmExYg==, WebViewer Server: false, Full API: false} @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/PDFView/lib/ui/webviewer-ui.min.js:270
+[    2919ms] [LOG] Connected @ https://phbidlautdemo.prahu-hub.com/lelang/detaillistLelang/1070:6539
+[    3246ms] [VERBOSE] [DOM] Password forms should have (optionally hidden) username fields for accessibility: (More info: https://goo.gl/9p2vKq) %o @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/PDFView/lib/ui/index.html#a=1&disabledElements=downloadButton%2CprintButton%2ClanguageButton&filepicker=0&pdfnet=0&enableRedaction=0&enableMeasurement=0&pageHistory=1&notesInLeftPanel=0&singleServerMode=false&selectAnnotationOnCreation=0&autoFocusNoteOnAnnotationSelection=1&id=1&basePath=%2Flelang%2FdetaillistLelang%2F1070:0
+[    3696ms] TypeError: $(...).DataTable is not a function
+    at https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/js/scripts-init/tables.js:7:23

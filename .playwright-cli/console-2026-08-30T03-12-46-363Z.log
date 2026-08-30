@@ -1,0 +1,19 @@
+[    1088ms] Cannot use import statement outside a module
+[    1134ms] ReferenceError: Chart is not defined
+    at https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/js/scripts-init/charts/chartjs.js:8:13
+[    1301ms] Unexpected token '<'
+[    1302ms] Unexpected token '<'
+[    1358ms] Uncaught TypeError: expect element to be DOM Element, but got null
+    at <anonymous> (https://cdnjs.cloudflare.com/ajax/libs/smooth-scrollbar/8.5.2/smooth-scrollbar.js:24:264)
+    at <anonymous> (https://phbidlautdemo.prahu-hub.com/lelang/carijadwal:5692:14)
+[    1414ms] [LOG] jadwalnamanya @ https://phbidlautdemo.prahu-hub.com/lelang/carijadwal:2039
+[    1427ms] [LOG] DD/MM/YYYY @ https://phbidlautdemo.prahu-hub.com/lelang/carijadwal:6045
+[    1428ms] [LOG] WebSocket connection @ https://phbidlautdemo.prahu-hub.com/lelang/carijadwal:6088
+[    1428ms] [LOG] WebSocket connection attempting... @ https://phbidlautdemo.prahu-hub.com/lelang/carijadwal:6166
+[    1604ms] [LOG] WebSocket connected @ https://phbidlautdemo.prahu-hub.com/lelang/carijadwal:6097
+[    1607ms] [LOG] update_dashboard_order_laut @ https://phbidlautdemo.prahu-hub.com/lelang/carijadwal:6138
+[    1643ms] [LOG] Connected @ https://phbidlautdemo.prahu-hub.com/lelang/carijadwal:6138
+[    1786ms] [LOG] 200 xhrglobal @ https://phbidlautdemo.prahu-hub.com/lelang/carijadwal:6019
+[    1838ms] [LOG] 200 xhrglobal @ https://phbidlautdemo.prahu-hub.com/lelang/carijadwal:6019
+[    3428ms] TypeError: $(...).DataTable is not a function
+    at https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/js/scripts-init/tables.js:7:23
