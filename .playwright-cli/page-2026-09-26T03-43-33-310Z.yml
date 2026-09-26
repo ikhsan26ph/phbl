@@ -1,0 +1,261 @@
+- generic [active] [ref=f8e1]:
+  - generic [ref=f8e2]:
+    - generic [ref=f8e3]:
+      - generic [ref=f8e4]:
+        - link [ref=f8e6] [cursor=pointer]:
+          - /url: https://phbidlautdemo.prahu-hub.com/
+        - button [ref=f8e10] [cursor=pointer]
+      - text:  
+      - generic [ref=f8e13]:
+        - generic [ref=f8e14]:
+          - generic [ref=f8e15]: Admin PH Bid
+          - button "Administrator" [ref=f8e17]
+        - text: 
+        - generic [ref=f8e21]:
+          - generic [ref=f8e22]:
+            - generic [ref=f8e23]: Admin PH Bid
+            - generic [ref=f8e24]: prahu.bid20@gmail.com
+          - generic [ref=f8e25]: 
+          - link "" [ref=f8e28] [cursor=pointer]:
+            - /url: https://phbidlautdemo.prahu-hub.com/home/notification
+          - link [ref=f8e35] [cursor=pointer]:
+            - /url: https://phbidlautdemo.prahu-hub.com/user/do_logout
+    - generic [ref=f8e38]:
+      - generic [ref=f8e39]:
+        - text: 
+        - generic [ref=f8e40]:
+          - list [ref=f8e42]:
+            - listitem
+            - listitem [ref=f8e43]:
+              - link "CARI PENAWARAN" [ref=f8e44] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/lelang/carirute
+            - listitem [ref=f8e45]: MENU ADMIN
+            - listitem [ref=f8e46]:
+              - generic [ref=f8e47] [cursor=pointer]:
+                - text: DASHBOARD
+                - generic [ref=f8e50]: 
+            - listitem [ref=f8e51]:
+              - generic [ref=f8e52] [cursor=pointer]:
+                - text: ANALITIK
+                - generic [ref=f8e55]: 
+              - list [ref=f8e56]:
+                - listitem [ref=f8e57]:
+                  - link "Shipping Cost Sales Ratio" [ref=f8e58] [cursor=pointer]:
+                    - /url: https://phbidlautdemo.prahu-hub.com/home/analitikscsr
+                - listitem [ref=f8e59]:
+                  - link "Freight Cost" [ref=f8e60] [cursor=pointer]:
+                    - /url: https://phbidlautdemo.prahu-hub.com/analitik/analitikfcu
+                - listitem [ref=f8e61]:
+                  - link "On Time Delivery Rate" [ref=f8e62] [cursor=pointer]:
+                    - /url: https://phbidlautdemo.prahu-hub.com/analitik/analitikotdr
+                - listitem [ref=f8e63]:
+                  - link "Shipment Accuracy" [ref=f8e64] [cursor=pointer]:
+                    - /url: https://phbidlautdemo.prahu-hub.com/home/analitikshipmentaccuracy
+            - listitem [ref=f8e65]:
+              - link "PENGAJUAN LELANG" [ref=f8e66] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/lelang/listlelang
+            - listitem [ref=f8e69]:
+              - link "PENGAJUAN NEGO" [ref=f8e70] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/lelang/pengajuannego
+            - listitem [ref=f8e73]:
+              - link [ref=f8e74] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/order/orderlist
+            - listitem [ref=f8e77]:
+              - link "PENUGASAN TRACKING" [ref=f8e78] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/home/penugasantracking
+            - listitem [ref=f8e81]:
+              - link "CEK JADWAL" [ref=f8e82] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/lelang/carijadwal
+            - listitem [ref=f8e85]:
+              - generic [ref=f8e86] [cursor=pointer]:
+                - text: LAPORAN
+                - generic [ref=f8e89]: 
+            - listitem [ref=f8e90]:
+              - generic [ref=f8e91] [cursor=pointer]:
+                - text: VALIDASI AKUN
+                - generic [ref=f8e94]: 
+            - listitem [ref=f8e95]:
+              - generic [ref=f8e96] [cursor=pointer]:
+                - text: SETTING
+                - generic [ref=f8e99]: 
+            - listitem [ref=f8e100]:
+              - generic [ref=f8e101] [cursor=pointer]:
+                - text: MASTER
+                - generic [ref=f8e104]: 
+            - listitem [ref=f8e105]:
+              - generic [ref=f8e106] [cursor=pointer]:
+                - text: PENGATURAN AKUN
+                - generic [ref=f8e109]: 
+            - listitem [ref=f8e110]:
+              - link "AKUN SAYA" [ref=f8e111] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/home/akunsaya
+            - listitem [ref=f8e114]: MENU TRANSPORTER
+            - listitem [ref=f8e115]:
+              - link "HARGA & JADWAL" [ref=f8e116] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/home/hargajadwal
+          - generic [ref=f8e121]:
+            - paragraph [ref=f8e123]: KONTAK KAMI
+            - generic [ref=f8e124]:
+              - generic [ref=f8e125]: 
+              - text: "081246665023"
+            - generic [ref=f8e126]:
+              - generic [ref=f8e127]: 
+              - text: "081246665023"
+            - generic [ref=f8e128]:
+              - generic [ref=f8e129]: 
+              - text: csct@prahu-hub.com
+            - generic [ref=f8e130]:
+              - link [ref=f8e131] [cursor=pointer]:
+                - /url: https://facebook.com/sosmed.phbid
+              - link [ref=f8e133] [cursor=pointer]:
+                - /url: https://twitter.com/PrahuHub
+              - link [ref=f8e135] [cursor=pointer]:
+                - /url: https://instagram.com/phbid_/
+              - link [ref=f8e137] [cursor=pointer]:
+                - /url: https://www.youtube.com/channel/UC41VntroP3zKmXZYnGgtFdw
+              - link [ref=f8e139] [cursor=pointer]:
+                - /url: http://linkedin.com/in/ph-bid-aa5393211/
+      - generic [ref=f8e141]:
+        - generic [ref=f8e142]:
+          - generic [ref=f8e145]:
+            - link "Beranda" [ref=f8e147] [cursor=pointer]:
+              - /url: https://phbidlautdemo.prahu-hub.com/lelang/listLelang
+            - text: / Shipping Cost Sales Ratio
+          - generic [ref=f8e148]: Shipping Cost Sales Ratio
+          - generic [ref=f8e154]:
+            - generic [ref=f8e155]:
+              - generic [ref=f8e156]:
+                - generic [ref=f8e157]: Dari Tanggal *
+                - generic [ref=f8e158]:
+                  - textbox "DD/MM/YYYY" [ref=f8e161]: 01/01/2026
+                  - generic [ref=f8e162]: s.d
+                  - generic [ref=f8e164]:
+                    - generic [ref=f8e165]: Sampai Tanggal *
+                    - textbox "DD/MM/YYYY" [ref=f8e167]: 30/09/2026
+                - text: Masukkan tanggal permintaan muat (Maksimal range 12 bulan)
+              - generic [ref=f8e168]:
+                - generic [ref=f8e169]: Pilih Provinsi
+                - combobox [ref=f8e172]:
+                  - generic [ref=f8e173] [cursor=pointer]: Pilih Provinsi
+              - generic [ref=f8e175]:
+                - generic [ref=f8e176]: Pilih Consignee
+                - combobox [ref=f8e179]:
+                  - generic [ref=f8e180] [cursor=pointer]: Pilih Nama Consignee
+            - generic [ref=f8e183]:
+              - generic [ref=f8e184]: Shipper *
+              - combobox [ref=f8e187]:
+                - generic [ref=f8e188] [cursor=pointer]: PT. Cipta Karya Abadi Sejahtera Sentora Mujur Selalu
+            - button " Cari" [ref=f8e193] [cursor=pointer]:
+              - generic [ref=f8e194]: 
+              - text: Cari
+          - generic [ref=f8e197]:
+            - generic [ref=f8e198]:
+              - generic [ref=f8e199]: DATA ANALITIK
+              - button "Export Data By" [expanded] [ref=f8e203] [cursor=pointer]
+            - table [ref=f8e205]:
+              - rowgroup [ref=f8e206]:
+                - row [ref=f8e207]:
+                  - columnheader "No " [ref=f8e208] [cursor=pointer]:
+                    - generic [ref=f8e209]:
+                      - generic [ref=f8e210]: "No"
+                      - generic [ref=f8e211]: 
+                  - columnheader "Shipper " [ref=f8e213] [cursor=pointer]:
+                    - generic [ref=f8e214]:
+                      - generic [ref=f8e215]: Shipper
+                      - generic [ref=f8e216]: 
+                  - columnheader "Provinsi Tujuan  " [ref=f8e218] [cursor=pointer]:
+                    - generic [ref=f8e219]:
+                      - generic [ref=f8e220]:
+                        - text: Provinsi Tujuan
+                        - generic [ref=f8e221]: 
+                      - generic [ref=f8e222]: 
+                  - columnheader "Total Biaya Pengiriman (Rp) " [ref=f8e224] [cursor=pointer]:
+                    - generic [ref=f8e225]:
+                      - generic [ref=f8e226]: Total BiayaPengiriman (Rp)
+                      - generic [ref=f8e227]: 
+                  - columnheader "Total Harga Barang (Rp) " [ref=f8e229] [cursor=pointer]:
+                    - generic [ref=f8e230]:
+                      - generic [ref=f8e231]: Total HargaBarang (Rp)
+                      - generic [ref=f8e232]: 
+                  - columnheader "Logistic Cost Ratio (%)  " [ref=f8e234] [cursor=pointer]:
+                    - generic [ref=f8e235]:
+                      - generic [ref=f8e236]:
+                        - text: Logistic Cost Ratio (%)
+                        - generic [ref=f8e237]: 
+                      - generic [ref=f8e238]: 
+                  - columnheader "Aksi" [ref=f8e240]
+                - row [ref=f8e241]:
+                  - cell [ref=f8e242]
+              - rowgroup [ref=f8e243]:
+                - row:
+                  - cell
+                - row [ref=f8e244]:
+                  - cell "1" [ref=f8e245]
+                  - cell "PT. Cipta Karya Abadi Sejahtera Sentora Mujur Selalu" [ref=f8e247]
+                  - cell "Sulawesi Utara" [ref=f8e248]
+                  - cell "509.729.286" [ref=f8e249]
+                  - cell "9.952.444.080.896" [ref=f8e250]
+                  - cell "0.01%" [ref=f8e251]
+                  - cell [ref=f8e252]:
+                    - link "Detail Kota" [ref=f8e253] [cursor=pointer]:
+                      - /url: https://phbidlautdemo.prahu-hub.com/home/analitikscsrbykota?kota=true&session_get=exp_6ab73f62e47c90.25134797&PilihPropinsi=33&ShipperID=65
+                - row [ref=f8e254]:
+                  - cell "2" [ref=f8e255]
+                  - cell "PT. Cipta Karya Abadi Sejahtera Sentora Mujur Selalu" [ref=f8e257]
+                  - cell "Sulawesi Tengah" [ref=f8e258]
+                  - cell "44.801.525" [ref=f8e259]
+                  - cell "2.865.959.803.312" [ref=f8e260]
+                  - cell "0%" [ref=f8e261]
+                  - cell [ref=f8e262]:
+                    - link "Detail Kota" [ref=f8e263] [cursor=pointer]:
+                      - /url: https://phbidlautdemo.prahu-hub.com/home/analitikscsrbykota?kota=true&session_get=exp_6ab73f62e47c90.25134797&PilihPropinsi=30&ShipperID=65
+                - row [ref=f8e264]:
+                  - cell "3" [ref=f8e265]
+                  - cell "PT. Cipta Karya Abadi Sejahtera Sentora Mujur Selalu" [ref=f8e267]
+                  - cell "Bangka Belitung" [ref=f8e268]
+                  - cell "44.801.525" [ref=f8e269]
+                  - cell "3.014.098.923.312" [ref=f8e270]
+                  - cell "0%" [ref=f8e271]
+                  - cell [ref=f8e272]:
+                    - link "Detail Kota" [ref=f8e273] [cursor=pointer]:
+                      - /url: https://phbidlautdemo.prahu-hub.com/home/analitikscsrbykota?kota=true&session_get=exp_6ab73f62e47c90.25134797&PilihPropinsi=2&ShipperID=65
+                - row [ref=f8e274]:
+                  - cell "4" [ref=f8e275]
+                  - cell "PT. Cipta Karya Abadi Sejahtera Sentora Mujur Selalu" [ref=f8e277]
+                  - cell "Jawa Tengah" [ref=f8e278]
+                  - cell "129.778.744" [ref=f8e279]
+                  - cell "119.066.675.400" [ref=f8e280]
+                  - cell "0.11%" [ref=f8e281]
+                  - cell [ref=f8e282]:
+                    - link "Detail Kota" [ref=f8e283] [cursor=pointer]:
+                      - /url: https://phbidlautdemo.prahu-hub.com/home/analitikscsrbykota?kota=true&session_get=exp_6ab73f62e47c90.25134797&PilihPropinsi=10&ShipperID=65
+                - row [ref=f8e284]:
+                  - cell "5" [ref=f8e285]
+                  - cell "PT. Cipta Karya Abadi Sejahtera Sentora Mujur Selalu" [ref=f8e287]
+                  - cell "Sumatera Utara" [ref=f8e288]
+                  - cell "26.018.667" [ref=f8e289]
+                  - cell "6.050.973.153.312" [ref=f8e290]
+                  - cell "0%" [ref=f8e291]
+                  - cell [ref=f8e292]:
+                    - link "Detail Kota" [ref=f8e293] [cursor=pointer]:
+                      - /url: https://phbidlautdemo.prahu-hub.com/home/analitikscsrbykota?kota=true&session_get=exp_6ab73f62e47c90.25134797&PilihPropinsi=34&ShipperID=65
+                - row [ref=f8e294]:
+                  - cell "6" [ref=f8e295]
+                  - cell "PT. Cipta Karya Abadi Sejahtera Sentora Mujur Selalu" [ref=f8e297]
+                  - cell "Nangroe Aceh Darussalam" [ref=f8e298]
+                  - cell "6.150.000" [ref=f8e299]
+                  - cell "3.434.289.936" [ref=f8e300]
+                  - cell "0.18%" [ref=f8e301]
+                  - cell [ref=f8e302]:
+                    - link "Detail Kota" [ref=f8e303] [cursor=pointer]:
+                      - /url: https://phbidlautdemo.prahu-hub.com/home/analitikscsrbykota?kota=true&session_get=exp_6ab73f62e47c90.25134797&PilihPropinsi=21&ShipperID=65
+                - row [ref=f8e304]:
+                  - cell [ref=f8e305]
+                  - cell "761.279.747" [ref=f8e306]
+                  - cell "22.005.976.926.168" [ref=f8e307]
+                  - cell "0%" [ref=f8e308]
+                  - cell [ref=f8e309]
+                - row:
+                  - cell
+        - paragraph [ref=f8e315]: © BETA 20260228 v1.3.28 - PH Bid Laut | Digital Logistic Platform
+  - text:  

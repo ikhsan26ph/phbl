@@ -1,0 +1,373 @@
+- generic [active] [ref=f9e1]:
+  - generic [ref=f9e2]:
+    - generic [ref=f9e3]:
+      - generic [ref=f9e4]:
+        - link [ref=f9e6] [cursor=pointer]:
+          - /url: https://phbidlautdemo.prahu-hub.com/
+        - button [ref=f9e10] [cursor=pointer]
+      - text:  
+      - generic [ref=f9e13]:
+        - generic [ref=f9e14]:
+          - generic [ref=f9e15]: Admin PH Bid
+          - button "Administrator" [ref=f9e17]
+        - text: 
+        - generic [ref=f9e21]:
+          - generic [ref=f9e22]:
+            - generic [ref=f9e23]: Admin PH Bid
+            - generic [ref=f9e24]: prahu.bid20@gmail.com
+          - generic [ref=f9e25]: 
+          - link "" [ref=f9e28] [cursor=pointer]:
+            - /url: https://phbidlautdemo.prahu-hub.com/home/notification
+          - link [ref=f9e35] [cursor=pointer]:
+            - /url: https://phbidlautdemo.prahu-hub.com/user/do_logout
+    - generic [ref=f9e38]:
+      - generic [ref=f9e39]:
+        - text: 
+        - generic [ref=f9e40]:
+          - list [ref=f9e42]:
+            - listitem
+            - listitem [ref=f9e43]:
+              - link "CARI PENAWARAN" [ref=f9e44] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/lelang/carirute
+            - listitem [ref=f9e45]: MENU ADMIN
+            - listitem [ref=f9e46]:
+              - generic [ref=f9e47] [cursor=pointer]:
+                - text: DASHBOARD
+                - generic [ref=f9e50]: 
+            - listitem [ref=f9e51]:
+              - generic [ref=f9e52] [cursor=pointer]:
+                - text: ANALITIK
+                - generic [ref=f9e55]: 
+            - listitem [ref=f9e56]:
+              - link "PENGAJUAN LELANG" [ref=f9e57] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/lelang/listlelang
+            - listitem [ref=f9e60]:
+              - link "PENGAJUAN NEGO" [ref=f9e61] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/lelang/pengajuannego
+            - listitem [ref=f9e64]:
+              - link [ref=f9e65] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/order/orderlist
+            - listitem [ref=f9e68]:
+              - link "PENUGASAN TRACKING" [ref=f9e69] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/home/penugasantracking
+            - listitem [ref=f9e72]:
+              - link "CEK JADWAL" [ref=f9e73] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/lelang/carijadwal
+            - listitem [ref=f9e76]:
+              - generic [ref=f9e77] [cursor=pointer]:
+                - text: LAPORAN
+                - generic [ref=f9e80]: 
+            - listitem [ref=f9e81]:
+              - generic [ref=f9e82] [cursor=pointer]:
+                - text: VALIDASI AKUN
+                - generic [ref=f9e85]: 
+            - listitem [ref=f9e86]:
+              - generic [ref=f9e87] [cursor=pointer]:
+                - text: SETTING
+                - generic [ref=f9e90]: 
+            - listitem [ref=f9e91]:
+              - generic [ref=f9e92] [cursor=pointer]:
+                - text: MASTER
+                - generic [ref=f9e95]: 
+            - listitem [ref=f9e96]:
+              - generic [ref=f9e97] [cursor=pointer]:
+                - text: PENGATURAN AKUN
+                - generic [ref=f9e100]: 
+            - listitem [ref=f9e101]:
+              - link "AKUN SAYA" [ref=f9e102] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/home/akunsaya
+            - listitem [ref=f9e105]: MENU TRANSPORTER
+            - listitem [ref=f9e106]:
+              - link "HARGA & JADWAL" [ref=f9e107] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/home/hargajadwal
+          - generic [ref=f9e112]:
+            - paragraph [ref=f9e114]: KONTAK KAMI
+            - generic [ref=f9e115]:
+              - generic [ref=f9e116]: 
+              - text: "081246665023"
+            - generic [ref=f9e117]:
+              - generic [ref=f9e118]: 
+              - text: "081246665023"
+            - generic [ref=f9e119]:
+              - generic [ref=f9e120]: 
+              - text: csct@prahu-hub.com
+            - generic [ref=f9e121]:
+              - link [ref=f9e122] [cursor=pointer]:
+                - /url: https://facebook.com/sosmed.phbid
+              - link [ref=f9e124] [cursor=pointer]:
+                - /url: https://twitter.com/PrahuHub
+              - link [ref=f9e126] [cursor=pointer]:
+                - /url: https://instagram.com/phbid_/
+              - link [ref=f9e128] [cursor=pointer]:
+                - /url: https://www.youtube.com/channel/UC41VntroP3zKmXZYnGgtFdw
+              - link [ref=f9e130] [cursor=pointer]:
+                - /url: http://linkedin.com/in/ph-bid-aa5393211/
+      - generic [ref=f9e132]:
+        - generic [ref=f9e133]:
+          - generic [ref=f9e136]:
+            - link "Beranda" [ref=f9e138] [cursor=pointer]:
+              - /url: https://phbidlautdemo.prahu-hub.com/lelang/listLelang
+            - text: /
+            - link "Daftar Order" [ref=f9e140] [cursor=pointer]:
+              - /url: https://phbidlautdemo.prahu-hub.com/order/orderlist
+            - text: "/ Edit Order : 20260811-06501"
+          - generic [ref=f9e141]:
+            - generic [ref=f9e142]:
+              - generic [ref=f9e143]: "EDIT ORDER : 20260811-06501"
+              - button " Kembali" [ref=f9e146] [cursor=pointer]:
+                - generic [ref=f9e147]: 
+                - text: Kembali
+            - generic [ref=f9e148]:
+              - generic [ref=f9e149]:
+                - generic [ref=f9e150]:
+                  - tabpanel [ref=f9e152]:
+                    - generic [ref=f9e154]:
+                      - generic [ref=f9e155]: Detail PEMESAN
+                      - generic [ref=f9e156]:
+                        - generic [ref=f9e157]: Jaya Wijaya Kartika Abadi Sentosa Wijaya Jaya
+                        - link "pengirim.ph2021@gmail.com" [ref=f9e158] [cursor=pointer]:
+                          - /url: mailto:pengirim.ph2021@gmail.com
+                      - generic [ref=f9e159]:
+                        - generic [ref=f9e160]: PT. Cipta Karya Abadi Sejahtera Sentora Mujur Selalu
+                        - generic [ref=f9e161]: Kab. Pesisir Selatan
+                        - generic [ref=f9e162]: Jl. Mayjen Sungkono No.89, Gn. Sari, Kec. Dukuhpakis, Surabaya, Jawa Timur 6022569
+                    - generic [ref=f9e164]:
+                      - generic [ref=f9e165]:
+                        - generic [ref=f9e166]: Detail Order
+                        - generic [ref=f9e169]:
+                          - checkbox [ref=f9e170] [cursor=pointer]
+                          - text: Edit Data
+                      - generic [ref=f9e171]:
+                        - generic [ref=f9e172]:
+                          - generic [ref=f9e173]:
+                            - generic [ref=f9e174]: Nomor Referensi
+                            - textbox "Masukkan Nomor Referensi" [disabled] [ref=f9e175]: 7100399697, 7100399697, 7100399697
+                          - text: "Misal nomor dokumen inbound : 20210809-12092"
+                        - generic [ref=f9e176]:
+                          - generic [ref=f9e177]:
+                            - generic [ref=f9e178]: Apa alasan Anda memesan rute ini?
+                            - combobox [disabled] [ref=f9e179]
+                            - combobox [disabled] [ref=f9e182]:
+                              - textbox "Karena harga yang ditawarkan" [disabled] [ref=f9e183]
+                          - text: Sebagai catatan memesan rute yang dilelangkan
+                      - generic [ref=f9e184]:
+                        - generic [ref=f9e185]:
+                          - generic [ref=f9e186]:
+                            - generic [ref=f9e187]: Jumlah Yang Dipesan *
+                            - textbox "Masukkan Jumlah" [disabled] [ref=f9e188]: "1"
+                          - text: Jumlah unit yang dipesan
+                        - generic [ref=f9e189]:
+                          - generic [ref=f9e190]:
+                            - generic [ref=f9e191]: Permintaan Muat *
+                            - textbox "DD/MM/YYYY hh:mm" [disabled] [ref=f9e192]: 27/08/2026 09:05
+                          - text: Tanggal muat barang
+                        - generic [ref=f9e193]:
+                          - generic [ref=f9e194]:
+                            - generic [ref=f9e195]: Deskripsi Umum Barang *
+                            - textbox "Masukkan Deskripsi Umum Barang" [disabled] [ref=f9e196]: IK
+                          - text: "Keterangan barang secara umum. Contoh : Bahan bangunan, Bahan pertanian"
+                      - generic [ref=f9e199]:
+                        - generic [ref=f9e200]: Catatan Untuk Transporter
+                        - textbox "Masukkan Keterangan / Catatan tambahan untuk pesanan Anda" [disabled] [ref=f9e201]: IK
+                    - text:   
+                    - generic [ref=f9e202]: PEMUATAN BARANG
+                    - generic [ref=f9e204]:
+                      - generic [ref=f9e207]:
+                        - checkbox [ref=f9e208] [cursor=pointer]
+                        - text: Edit Data
+                      - generic [ref=f9e209]:
+                        - generic [ref=f9e210]:
+                          - generic [ref=f9e211]:
+                            - generic [ref=f9e212]: Nama PIC Pemuatan *
+                            - textbox "Masukkan Nama PIC Pemuatan" [disabled] [ref=f9e213]: IK Deli Serdang
+                          - text: PIC Pemuatan adalah Penanggung Jawab Pemuatan
+                        - generic [ref=f9e215]:
+                          - generic [ref=f9e216]: Telepon / WhatsApp *
+                          - textbox "Masukkan Nomor" [disabled] [ref=f9e217]: "083830011881"
+                        - generic [ref=f9e219]:
+                          - generic [ref=f9e220]: Kota Asal *
+                          - generic [ref=f9e222]:
+                            - combobox [disabled] [ref=f9e223]
+                            - combobox [disabled] [ref=f9e226]:
+                              - textbox "Kab. Deli Serdang" [disabled] [ref=f9e227]
+                      - generic [ref=f9e230]:
+                        - generic [ref=f9e231]: Alamat Pemuatan Barang *
+                        - textbox "Masukkan Alamat Lengkap Pemuatan Barang" [disabled] [ref=f9e232]: PT. Indomarco Prismatama - JL. Industri Dusun 1 No. 60 Kel. Tanjung Morawa Kab. Deli Serdang 20582 Telp. (061) 7877060, 7877731, 7876852
+                    - generic [ref=f9e233]: PENERIMA BARANG
+                    - generic [ref=f9e235]:
+                      - generic [ref=f9e236]:
+                        - generic [ref=f9e237]: Drop Off 1
+                        - generic [ref=f9e240]:
+                          - checkbox [ref=f9e241] [cursor=pointer]
+                          - text: Edit Data
+                      - generic [ref=f9e243]:
+                        - generic [ref=f9e244]:
+                          - generic [ref=f9e245]: Nama / Perusahaan *
+                          - textbox "Masukkan Nama Perusahaan" [disabled] [ref=f9e246]: IKHSAN JAYA
+                        - text: Nama Penerima adalah Nama Perusahaan penerima barang
+                      - generic [ref=f9e247]:
+                        - generic [ref=f9e248]:
+                          - generic [ref=f9e249]:
+                            - generic [ref=f9e250]: Nama PIC Penerimaan *
+                            - textbox "Masukkan Nama PIC Penerimaan" [disabled] [ref=f9e251]: IK Langkat
+                          - text: PIC Penerimaan adalah Penanggung Jawab pada tempat tujuan
+                        - generic [ref=f9e253]:
+                          - generic [ref=f9e254]: Telepon / WhatsApp *
+                          - textbox "Masukkan Nomor" [disabled] [ref=f9e255]: "083830011881"
+                        - generic [ref=f9e257]:
+                          - generic [ref=f9e258]: Kota Tujuan *
+                          - generic [ref=f9e260]:
+                            - combobox [disabled] [ref=f9e261]
+                            - combobox [disabled] [ref=f9e264]:
+                              - textbox "Kab. Langkat" [disabled] [ref=f9e265]
+                      - generic [ref=f9e268]:
+                        - generic [ref=f9e269]: Alamat Penerimaan Barang *
+                        - textbox "Masukkan Alamat Lengkap Penerimaan Barang" [disabled] [ref=f9e270]: PT. Indomarco Prismatama - Jl. Lintas Sumatera Kel. Karang Rejo, Kec. Stabat, Kota Stabat, Kab. Langkat, Sumatera Utara 20811 || Pak Hariadi - Ketua TKBM Stabat 082166285795
+                      - generic [ref=f9e271]:
+                        - generic [ref=f9e273]:
+                          - generic [ref=f9e274]: Nama Sales
+                          - textbox "Nama Sales Nama Sales Nama Sales" [disabled] [ref=f9e275]:
+                            - /placeholder: Masukkan Nama Sales
+                            - text: Ikhsan
+                        - generic [ref=f9e277]:
+                          - generic [ref=f9e278]: Nomor Sales
+                          - textbox "Nomor Sales Nomor Sales Nomor Sales" [disabled] [ref=f9e279]:
+                            - /placeholder: Masukkan Nomor Sales
+                            - text: "083830011881"
+                      - separator [ref=f9e280]
+                      - generic [ref=f9e281]: Drop Off 2
+                      - generic [ref=f9e285]:
+                        - generic [ref=f9e286]:
+                          - generic [ref=f9e287]: Nama / Perusahaan *
+                          - textbox "Masukkan Nama Perusahaan" [disabled] [ref=f9e288]: IKHSAN JAYA
+                        - text: Nama Penerima adalah Nama Perusahaan penerima barang
+                      - generic [ref=f9e289]:
+                        - generic [ref=f9e290]:
+                          - generic [ref=f9e291]:
+                            - generic [ref=f9e292]: Nama PIC Penerimaan *
+                            - textbox "Masukkan Nama PIC Penerimaan" [disabled] [ref=f9e293]: IK Deli Serdang
+                          - text: PIC Penerimaan adalah Penanggung Jawab pada tempat tujuan
+                        - generic [ref=f9e295]:
+                          - generic [ref=f9e296]: Telepon / WhatsApp *
+                          - textbox "Masukkan Nomor" [disabled] [ref=f9e297]: "083830011881"
+                        - generic [ref=f9e299]:
+                          - generic [ref=f9e300]: Kota Tujuan *
+                          - generic [ref=f9e302]:
+                            - combobox [disabled] [ref=f9e303]
+                            - combobox [disabled] [ref=f9e306]:
+                              - textbox "Kab. Banggai Kepulauan" [disabled] [ref=f9e307]
+                      - generic [ref=f9e310]:
+                        - generic [ref=f9e311]: Alamat Penerimaan Barang *
+                        - textbox "Masukkan Alamat Lengkap Penerimaan Barang" [disabled] [ref=f9e312]: Stock Point Indogrosir Mdn 1 (MEGAH DAYA INTI HARAPAN) Jl. Medan-Binjai Km.14 No.61 Kec. Medan Krio, Kel. Sunggal Deli Serdang, Sumatera Utara
+                      - generic [ref=f9e313]:
+                        - generic [ref=f9e315]:
+                          - generic [ref=f9e316]: Nama Sales
+                          - textbox "Masukkan Nama Sales" [disabled] [ref=f9e317]: Ikhsan
+                        - generic [ref=f9e319]:
+                          - generic [ref=f9e320]: Nomor Sales
+                          - textbox "Masukkan Nomor Sales" [disabled] [ref=f9e321]: "083830011881"
+                      - separator [ref=f9e322]
+                      - generic [ref=f9e323]: Drop Off 3
+                      - generic [ref=f9e327]:
+                        - generic [ref=f9e328]:
+                          - generic [ref=f9e329]: Nama / Perusahaan *
+                          - textbox "Masukkan Nama Perusahaan" [disabled] [ref=f9e330]: IKHSAN JAYA
+                        - text: Nama Penerima adalah Nama Perusahaan penerima barang
+                      - generic [ref=f9e331]:
+                        - generic [ref=f9e332]:
+                          - generic [ref=f9e333]:
+                            - generic [ref=f9e334]: Nama PIC Penerimaan *
+                            - textbox "Masukkan Nama PIC Penerimaan" [disabled] [ref=f9e335]: Ik Bangka Barat
+                          - text: PIC Penerimaan adalah Penanggung Jawab pada tempat tujuan
+                        - generic [ref=f9e337]:
+                          - generic [ref=f9e338]: Telepon / WhatsApp *
+                          - textbox "Masukkan Nomor" [disabled] [ref=f9e339]: "083830011881"
+                        - generic [ref=f9e341]:
+                          - generic [ref=f9e342]: Kota Tujuan *
+                          - generic [ref=f9e344]:
+                            - combobox [disabled] [ref=f9e345]
+                            - combobox [disabled] [ref=f9e348]:
+                              - textbox "Kab. Bangka Barat" [disabled] [ref=f9e349]
+                      - generic [ref=f9e352]:
+                        - generic [ref=f9e353]: Alamat Penerimaan Barang *
+                        - textbox "Masukkan Alamat Lengkap Penerimaan Barang" [disabled] [ref=f9e354]: CV. ALTAQNIA BANGKA ENGINEERING Simpang BTN, Jl. Taruma Negara, Karya Makmur, Kec. Pemali, Kabupaten Bangka, Kepulauan Bangka Belitung
+                      - generic [ref=f9e355]:
+                        - generic [ref=f9e357]:
+                          - generic [ref=f9e358]: Nama Sales
+                          - textbox "Masukkan Nama Sales" [disabled] [ref=f9e359]: Ikhsan
+                        - generic [ref=f9e361]:
+                          - generic [ref=f9e362]: Nomor Sales
+                          - textbox "Masukkan Nomor Sales" [disabled] [ref=f9e363]: "083830011881"
+                  - text: 
+                - tabpanel [ref=f9e368]:
+                  - generic [ref=f9e370]:
+                    - generic [ref=f9e371]: PELAYARAN
+                    - generic [ref=f9e372]: KM. Jaya
+                    - generic [ref=f9e376]:
+                      - generic [ref=f9e377]:
+                        - generic [ref=f9e378]: Voyage
+                        - generic [ref=f9e379]: ":"
+                        - generic [ref=f9e380]: KMJY001
+                      - generic [ref=f9e381]:
+                        - generic [ref=f9e382]: Open Stack
+                        - generic [ref=f9e383]: ":"
+                        - generic [ref=f9e384]: "-"
+                      - generic [ref=f9e385]:
+                        - generic [ref=f9e386]: Closing Time
+                        - generic [ref=f9e387]: ":"
+                        - generic [ref=f9e388]: 25/08/2026 08:44
+                  - generic [ref=f9e390]:
+                    - generic [ref=f9e391]:
+                      - text: RUTE
+                      - generic [ref=f9e392] [cursor=pointer]:
+                        - text: Detail Rute
+                        - generic [ref=f9e393]: 
+                    - generic [ref=f9e394]:
+                      - generic [ref=f9e395]: Lelang
+                      - generic [ref=f9e396]: ":"
+                      - generic [ref=f9e397]: LELANGIK/247/2026/MLTD
+                    - generic [ref=f9e398]:
+                      - generic [ref=f9e399]:
+                        - generic [ref=f9e400]: DOB
+                        - generic [ref=f9e401]: Dobo
+                        - generic [ref=f9e402]: 26/08/2026
+                      - generic [ref=f9e403]: 
+                      - generic [ref=f9e405]:
+                        - generic [ref=f9e406]: BLW
+                        - generic [ref=f9e407]: Belawan
+                        - generic [ref=f9e408]: 31/08/2026
+                    - generic [ref=f9e409]: Rute Multidrop
+                  - generic [ref=f9e413]:
+                    - generic [ref=f9e414]:
+                      - text: HARGA PENGIRIMAN
+                      - generic [ref=f9e415] [cursor=pointer]:
+                        - text: Info Harga
+                        - generic [ref=f9e416]: 
+                    - generic [ref=f9e417]: PT. Muda Jaya Wijaya Karya Sentosa Indah Elok (IK)
+                    - generic [ref=f9e418]:
+                      - generic [ref=f9e419]:
+                        - text: Jenis
+                        - generic [ref=f9e420]: ":"
+                      - generic [ref=f9e421]: 20 DRY
+                    - generic [ref=f9e422]:
+                      - generic [ref=f9e423]:
+                        - text: Harga Satuan
+                        - generic [ref=f9e424]: ":"
+                      - generic [ref=f9e425]: Rp. 4.230.000
+                    - generic [ref=f9e426]:
+                      - generic [ref=f9e427]:
+                        - text: Jumlah Dipesan
+                        - generic [ref=f9e428]: ":"
+                      - generic [ref=f9e429]: "1"
+                    - generic [ref=f9e430]:
+                      - generic [ref=f9e431]:
+                        - text: Total Harga Pengiriman
+                        - generic [ref=f9e432]: ":"
+                      - generic [ref=f9e433]: Rp. 4.230.000
+              - generic [ref=f9e439]:
+                - link [ref=f9e440] [cursor=pointer]:
+                  - /url: https://phbidlautdemo.prahu-hub.com/order/orderlist
+                  - button "Batal" [ref=f9e441]
+                - button "Submit" [disabled] [ref=f9e442]
+        - paragraph [ref=f9e448]: © BETA 20260228 v1.3.28 - PH Bid Laut | Digital Logistic Platform
+  - text:    

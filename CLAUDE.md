@@ -622,30 +622,155 @@ item menu itu TIDAK tersedia utk status ORDER BARU):
     rule menuntut alert penolakan. Test menelusuri beberapa lelang dan skip
     bila tak menemukan yang dinonaktifkan.
 
-## Langkah berikutnya (belum dikerjakan) — diperbarui 2026-08-30
+## Admin-sub & Shipper-sub — Akun Saya (2026-09-26)
+
+- `tests/admin-sub/akun-saya.spec.ts` (4 test) & `tests/shipper-sub/akun-saya.spec.ts`
+  (6 test) — project ini sebelumnya sudah didefinisikan di playwright.config.ts
+  tapi kosong; sekarang ditutup, pola sama dgn `tests/transporter-sub/akun-saya.spec.ts`.
+  Run gabungan (6 setup + 4 + 6): **16 test, semua LULUS**, ±1,5 mnt.
+- Kalibrasi kunci: kedua akun landing di `/home/akunsaya` (4 field Nama/Email/
+  Nomor Whatsapp/Bagian Staff, tanpa tombol Edit) dan `/home/editakunsaya`
+  SELALU ditolak (redirect + alert `.alert_negatif` "Anda Tidak Memiliki Akses
+  Ke Halaman Tersebut") — berlaku untuk SEMUA sub user lintas peran, terlepas
+  seberapa luas hak akses menu-nya.
+- **admin-sub** (`phbiddaratadmean@gmail.com`, grup akses "Software QC -
+  Training", akun yg sama dipakai sbg verifikasi defect #9 di
+  `pengaturan-akun-user.spec.ts`): hak akses SANGAT LUAS — sidebar memuat
+  hampir semua modul admin (Dashboard, Analitik, Pengajuan Lelang, Pengajuan
+  Nego, Daftar Order, Penugasan Tracking, Cek Jadwal, Laporan, Validasi Akun,
+  Setting, Master, Pengaturan Akun) DITAMBAH "Cari Penawaran" & seksi "MENU
+  TRANSPORTER" > "Harga & Jadwal" — akses lintas-modul yg tak dimiliki admin
+  utama secara default. Breadcrumb Beranda → `/lelang/listLelang` (sama dgn
+  admin utama). Bagian Staff terisi "Software QC - Training" (beda dari admin
+  utama/"akun pusat" yg baris ini selalu "-" — rule 15-akun-saya.md ttg "hanya
+  nama & email" cuma berlaku utk akun pusat, bukan sub user).
+- **shipper-sub** ("Jumadi", Bagian Staff "Penjualan"): menu standar bid owner
+  (Cari Penawaran, Dashboard, Pengajuan Lelang, Pengajuan Nego, Daftar Order,
+  Master, Cek Jadwal, Laporan, Pengaturan Akun, Akun Saya) tanpa Preference
+  Notif; breadcrumb Beranda → `/lelang/carirute` (khusus sisi bid owner, sesuai
+  rule 04-akun-saya.md) — beda dari admin-sub & transporter-sub. Akses langsung
+  `/home/preferenceNotifBidowner` & `/home/settingPreferenceNotifBidowner`
+  ditolak sama seperti transporter-sub.
+- Belum dicakup: sub user shipper/admin dgn hak akses SEMPIT (kedua akun demo
+  yg tersedia justru hak aksesnya luas) — pengujian gating granular per-akses
+  tetap domain `tests/admin/pengaturan-akun*.spec.ts`.
+
+## Improve 2026-09: Kota Asal di Analitik SCSR & No. Referensi di nama item Invoice
+
+Dua permintaan improve dari user, **keduanya sudah ter-deploy di demo** dan
+diverifikasi langsung (2026-09-26). Rule baru/ubahan: `docs/rules/analitik-scsr.md`
+(modul Analitik sebelumnya TIDAK punya rule doc sama sekali),
+`docs/rules/bid-owner/10-daftar-order.md` § Input/Edit Nomor Referensi,
+plus butir "Improve 2026-09" di `administrator/07-daftar-order.md` &
+`bidder/08-daftar-order.md`.
+
+- Spec baru: `tests/shipper/analitik-scsr.spec.ts` (5), `tests/admin/analitik-scsr.spec.ts`
+  (5), `tests/admin/invoice-nama-item.spec.ts` (5), `tests/shipper/nomor-referensi.spec.ts`
+  (3) = 18 test. Riwayat run 2026-09-26 (ditulis apa adanya karena pelajarannya
+  penting): run-1 5 gagal (locator/asumsi, lihat daftar di bawah) → run-2 23
+  lulus + **1 skip yang ternyata SKIP PALSU** → penjaga panen dipasang, run-3
+  sengaja **4 gagal keras** ("panen cuma 3") yang membuktikan diagnosisnya →
+  run-4 spec invoice **11 lulus (5 test + 6 setup), 0 skip** dengan test
+  multi-unit benar-benar berjalan (23 dtk). **Run final gabungan keempat spec
+  (18 test + 6 setup): 24 LULUS, 0 skip, 0 gagal, 4,2 mnt.**
+- **SCSR = Shipping Cost Sales Ratio** `/home/analitikscsr` (route SAMA untuk
+  shipper & admin). Menu ANALITIK: shipper 2 submenu, admin 5 (Ringkasan
+  `/dashboardanalitik/ringkasan`, SCSR, Freight Cost `/analitik/analitikfcu`,
+  On Time Delivery Rate `/analitik/analitikotdr`, Shipment Accuracy
+  `/home/analitikshipmentaccuracy`). Transporter TIDAK punya. **4 submenu
+  analitik selain SCSR masih 0 coverage.**
+- Drill-down 3 level: level 1 Provinsi Tujuan → `analitikscsrbykota` (kolom
+  **Kota / Kab. Asal** + Kota Tujuan + Jumlah Order) → `analitikscsrconsignee`
+  (No, ID Order, Consignee, Alamat Tujuan, biaya, ratio — TANPA kolom kota).
+  Bukti terkuat improve: **Sulawesi Tengah punya 2 pasangan ber-kota-tujuan SAMA**
+  (`PilihKota=372`) beda asal → Aru(440)=5 order, Deli Serdang(28)=9 order;
+  Detail Consignee keduanya 5 & 9 baris dan **daftarnya disjoint** (14 order
+  unik) → filter kota ASAL benar-benar diterapkan.
+- **Sumber nilai No. Referensi ditemukan** (sebelumnya tak terdokumentasi):
+  action menu **"Input/Edit Nomor Referensi"** di Daftar Order **sisi SHIPPER**
+  (`.btn_nomor_referensi` attr `idnya`, modal `#modalNomorReferensi`,
+  `order/cek_nomor_referensi` → `order/save_nomor_referensi`). **Admin TIDAK
+  punya menu ini** (0 trigger di 100 order vs shipper 24 trigger utk 12 order).
+  Validasi kosong = POPOVER transient ±2 dtk "Masukkan Nomor Referensi".
+- Nama item invoice = `textarea[name="item[]"]` per unit:
+  baris 1 `<Jenis Kontainer> (<No. Kontainer>) | <Asal (KODE)> - <Tujuan (KODE)>`,
+  baris 2 = No. Referensi (hanya bila ada). Multi-unit → referensi IDENTIK di
+  semua item (terbukti 20260625-02604 3 unit & 20260303-06501 3 unit).
+- **BELUM TERVERIFIKASI**: varian "Shipper punya Alamat Tujuan pada nama item"
+  (urutan armada → no referensi → alamat tujuan). 19 order dari 5 shipper
+  disampel, TIDAK ada yang memuat alamat tujuan; form validasi shipper admin
+  juga tanpa toggle terkait → perlu konfirmasi shipper/order contoh dari user/dev.
+
+### Pelajaran kalibrasi baru (asumsi yang terbukti SALAH, jangan diulang)
+
+1. **`innerText` sebuah `<textarea>` SELALU kosong** di Chromium — nilainya
+   hanya lewat `inputValue()`/`.value`/`textContent`. `allInnerTexts()` membuat
+   test salah lapor "item tanpa baris" (terbukti: innerText "" vs value berisi).
+2. **Nilai kosong di Detail Order dirender STRIP "-"**, bukan string kosong →
+   helper "ada/tidak ada nilai" wajib menormalkan "-" ke "".
+3. **Widget `.multi-select` (Provinsi/Consignee/Shipper) BUKAN `<select>`**:
+   `selectOption()` tak berlaku; klik `.multi-select-header` → klik
+   `[role=option][data-value=<id>]`. Setelah memilih, panel **tetap terbuka dan
+   menutupi tombol Cari** sehingga klik ter-intercept selamanya; **Escape TIDAK
+   menutupnya** (display tetap `flex`) — hanya klik header sekali lagi.
+4. **Tombol Cari = `#lanjutcari`**; `getByRole('button',{name:'Cari'})` TIDAK
+   pernah cocok karena glyph Font Awesome ikut terhitung di accessible name
+   (nama jadi "<glyph>&nbsp; Cari"). Usulan ke dev: aria-label/data-testid.
+5. **Baris hasil tabel analitik dimuat ASYNC setelah header** → `count()`
+   seketika = 0 dan test ikut "skip palsu"; wajib poll (`toPass`).
+6. **`#valuelimit` = 100 pada Daftar Order itu TRANSIEN** (terukur 2026-09-26
+   dengan sampling tiap 2 dtk): tabel merender 20 order di t≈4s, 100 order di
+   t≈14s, lalu **auto-refresh daftar order MENGEMBALIKANNYA ke 20 order di
+   t≈16s** (pada run lain 100 baris sempat bertahan >30 dtk — jadi RACY).
+   Akibatnya: menunggu "sudah 100 baris" lalu memanggil `evaluate()` panen
+   TERPISAH bisa memanen tabel yang sudah balik ke 20 order → cuma 3 kandidat
+   (semuanya order terbaru berstatus awal) → test multi-unit ter-SKIP padahal
+   datanya ada. Yang benar: (a) panen ATOMIK di dalam SATU `evaluate()`,
+   (b) polling `toPass` yang MEMILIH ULANG page size bila hasil panen kurang,
+   (c) penjaga `expect(kandidat.length).toBeGreaterThan(5)` supaya panen
+   terpotong GAGAL KERAS, bukan skip diam-diam. Catatan: teks "Menampilkan 20
+   30 50 100 Data" itu daftar opsi page size, BUKAN info jumlah data — jangan
+   dipakai sebagai penanda selesai render. Skala: 100 order ≈ 1681 baris
+   `tbody` (±17 baris per order), 96 di antaranya punya link uploadinvoice.
+7. **Helper ber-cache + assert di halaman saat ini = lulus palsu**: test yang
+   memakai cache tanpa navigasi meng-assert `about:blank` (count 0 selalu
+   benar). Setiap test yang meng-assert absennya elemen WAJIB memuat halamannya
+   sendiri.
+8. `^&` itu escape cmd.exe, BUKAN Git Bash — URL ber-`&` di Bash cukup dikutip;
+   memakai `^&` menyisipkan caret literal ke URL (hasil query jadi kosong).
+9. Edit Data Order (`/order/edit_inputpesanan/<hash>`) DIBLOKIR untuk status
+   ORDER SELESAI (redirect + alert `.alert_negatif`), tapi TERBUKA untuk
+   SJ DITERIMA AGEN.
+10. Order demo 20260811-06501 menyimpan `7100399697, 7100399697, 7100399697`
+    pada SATU field `#nomor_referensi` (field bebas teks tanpa maxlength).
+    Hipotesis "gabungan per-drop multidrop" TERBANTAH: 4 order multidrop lain
+    justru ber-referensi kosong. Invoice hanya meneruskan isi field apa adanya.
+
+## Langkah berikutnya (belum dikerjakan) — diperbarui 2026-09-26
 
 Urutan rekomendasi (dari paling aman/tanpa mutasi ke yang butuh izin):
 
-1. **Project sub user yang masih kosong**: `tests/admin-sub/` dan
-   `tests/shipper-sub/` BELUM ADA padahal project-nya sudah didefinisikan di
-   playwright.config.ts (hanya `transporter-sub` yang punya spec). Pola siap
-   pakai ada di `tests/transporter-sub/akun-saya.spec.ts` (akses ditolak →
-   redirect + `.alert_negatif`).
-2. **Sisa Daftar Order admin** (mutasi): Edit Data Order, Edit Status Order,
+1. **Sisa Daftar Order admin** (mutasi): Edit Data Order, Edit Status Order,
    Batalkan Order, Alihkan Order (baru dibuka GET di spec open-stack),
    Invoice. Edit Harga & Ganti Jadwal sudah selesai.
-3. **Sisa mutasi Validasi Akun/Master admin**: terima/tolak akun (mengubah
+2. **Sisa mutasi Validasi Akun/Master admin**: terima/tolak akun (mengubah
    akun demo permanen — TANYA user), rekening maks 3, verifikasi perubahan
    data, upload aanwijzing, hidden ulasan, gating petugas ditugaskan.
-4. **Alur mutasi Transporter** (semua modulnya kini read-only): tambah/edit
+3. **Alur mutasi Transporter** (semua modulnya kini read-only): tambah/edit
    harga penawaran, respon nego, input unit, invoice, penugasan petugas.
-5. **Alur mutasi Shipper**: ajukan nego, pembuatan order dari Cari Penawaran
+4. **Alur mutasi Shipper**: ajukan nego, pembuatan order dari Cari Penawaran
    (tersangkut `bootstrapMaterialDatePicker` pada Tanggal Permintaan Muat —
    lihat catatan Open Stack), validasi/terima order, simpan Preference Notif
    (test sekarang hanya toggle sisi klien).
-6. **Push Notif** (rule admin/bidder/bid-owner `*-push-notif.md`) belum
+5. **Modul Analitik sisanya** (baru SCSR yang punya spec): Ringkasan Analitik,
+   Freight Cost, On Time Delivery Rate, Shipment Accuracy — plus validasi range
+   > 12 bulan, sortir kolom, dan isi file "Export Data By" di SCSR.
+6. **Simpan Nomor Referensi** (`order/save_nomor_referensi`) — test sekarang
+   hanya menguji validasi kosong; menyimpan mengubah data order demo permanen
+   (bisa direvert bila nilai lama dicatat dulu — butuh izin user).
+7. **Push Notif** (rule admin/bidder/bid-owner `*-push-notif.md`) belum
    disentuh sama sekali — perlu keputusan apakah layak diotomasi.
-7. Housekeeping: `.env.example` masih berisi kredensial asli (kosongkan
+8. Housekeeping: `.env.example` masih berisi kredensial asli (kosongkan
    sebelum git init); generator report menamai file per TANGGAL saja
    sehingga run kedua di hari sama menimpa laporan sebelumnya (sudah 2x
    di-rename manual: `-admin`, `-admin-mutasi`, `-admin-readonly`) — saran:

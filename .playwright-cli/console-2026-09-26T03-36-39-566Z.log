@@ -1,0 +1,36 @@
+[    2325ms] Cannot use import statement outside a module
+[    2358ms] ReferenceError: Chart is not defined
+    at https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/js/scripts-init/charts/chartjs.js:8:13
+[    2893ms] Unexpected token '<'
+[    3413ms] Unexpected token '<'
+[    3476ms] Uncaught TypeError: expect element to be DOM Element, but got null
+    at n.init (https://cdnjs.cloudflare.com/ajax/libs/smooth-scrollbar/8.5.2/smooth-scrollbar.js:24:264)
+    at <anonymous> (https://phbidlautdemo.prahu-hub.com/home/analitikscsrconsignee?kota=true&kota=true&session_get=exp_6ab73cf432c353.62648248&PilihPropinsi=30&ShipperID=65&PilihKota=372&PilihKotaAsal=440:5351:14)
+[    3467ms] [LOG] Laporannamanya @ https://phbidlautdemo.prahu-hub.com/home/analitikscsrconsignee?kota=true&kota=true&session_get=exp_6ab73cf432c353.62648248&PilihPropinsi=30&ShipperID=65&PilihKota=372&PilihKotaAsal=440:1878
+[    3476ms] [WARNING] jQuery.Deferred exception: Cannot read properties of undefined (reading 'destroy') TypeError: Cannot read properties of undefined (reading 'destroy')
+    at HTMLDocument.<anonymous> (https://phbidlautdemo.prahu-hub.com/home/analitikscsrconsignee?kota=true&kota=true&session_get=exp_6ab73cf432c353.62648248&PilihPropinsi=30&ShipperID=65&PilihKota=372&PilihKotaAsal=440:4970:42)
+    at e (https://code.jquery.com/jquery-3.7.1.min.js:2:27028)
+    at t (https://code.jquery.com/jquery-3.7.1.min.js:2:27330) undefined @ https://code.jquery.com/jquery-3.7.1.min.js:1
+[    3478ms] [LOG] WebSocket connection @ https://phbidlautdemo.prahu-hub.com/home/analitikscsrconsignee?kota=true&kota=true&session_get=exp_6ab73cf432c353.62648248&PilihPropinsi=30&ShipperID=65&PilihKota=372&PilihKotaAsal=440:5747
+[    3478ms] [LOG] WebSocket connection attempting... @ https://phbidlautdemo.prahu-hub.com/home/analitikscsrconsignee?kota=true&kota=true&session_get=exp_6ab73cf432c353.62648248&PilihPropinsi=30&ShipperID=65&PilihKota=372&PilihKotaAsal=440:5825
+[    3524ms] TypeError: Cannot read properties of undefined (reading 'destroy')
+    at HTMLDocument.<anonymous> (https://phbidlautdemo.prahu-hub.com/home/analitikscsrconsignee?kota=true&kota=true&session_get=exp_6ab73cf432c353.62648248&PilihPropinsi=30&ShipperID=65&PilihKota=372&PilihKotaAsal=440:4970:42)
+    at e (https://code.jquery.com/jquery-3.7.1.min.js:2:27028)
+    at t (https://code.jquery.com/jquery-3.7.1.min.js:2:27330)
+[    3658ms] [LOG] WebSocket connected @ https://phbidlautdemo.prahu-hub.com/home/analitikscsrconsignee?kota=true&kota=true&session_get=exp_6ab73cf432c353.62648248&PilihPropinsi=30&ShipperID=65&PilihKota=372&PilihKotaAsal=440:5756
+[    3684ms] [LOG] update_dashboard_order_laut @ https://phbidlautdemo.prahu-hub.com/home/analitikscsrconsignee?kota=true&kota=true&session_get=exp_6ab73cf432c353.62648248&PilihPropinsi=30&ShipperID=65&PilihKota=372&PilihKotaAsal=440:5797
+[    3710ms] [LOG] Connected @ https://phbidlautdemo.prahu-hub.com/home/analitikscsrconsignee?kota=true&kota=true&session_get=exp_6ab73cf432c353.62648248&PilihPropinsi=30&ShipperID=65&PilihKota=372&PilihKotaAsal=440:5797
+[    3865ms] [LOG] [Object, Object, Object, Object, Object] @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/analitikscsrconsignee.js?m=1788319233:172
+[    3866ms] [LOG] undefined @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/analitikscsrconsignee.js?m=1788319233:717
+[    3867ms] [LOG] undefined countView1 1 pageNow 20 limitView1 @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/analitikscsrconsignee.js?m=1788319233:719
+[    3867ms] [LOG] undefined @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/analitikscsrconsignee.js?m=1788319233:725
+[    3867ms] [LOG] undefined jumlah data @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/analitikscsrconsignee.js?m=1788319233:694
+[    3867ms] [LOG] NaN @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/analitikscsrconsignee.js?m=1788319233:696
+[    3867ms] [LOG] NaN 1 pageCount & pageNow @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/analitikscsrconsignee.js?m=1788319233:620
+[    3868ms] [LOG] 200 xhrglobal @ https://phbidlautdemo.prahu-hub.com/home/analitikscsrconsignee?kota=true&kota=true&session_get=exp_6ab73cf432c353.62648248&PilihPropinsi=30&ShipperID=65&PilihKota=372&PilihKotaAsal=440:5678
+[    3868ms] [LOG] ce.fn.init stepItem @ https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/javascript/custom/analitikscsrconsignee.js?m=1788319233:594
+[    4116ms] [LOG] 200 xhrglobal @ https://phbidlautdemo.prahu-hub.com/home/analitikscsrconsignee?kota=true&kota=true&session_get=exp_6ab73cf432c353.62648248&PilihPropinsi=30&ShipperID=65&PilihKota=372&PilihKotaAsal=440:5678
+[    4194ms] [LOG] 200 xhrglobal @ https://phbidlautdemo.prahu-hub.com/home/analitikscsrconsignee?kota=true&kota=true&session_get=exp_6ab73cf432c353.62648248&PilihPropinsi=30&ShipperID=65&PilihKota=372&PilihKotaAsal=440:5678
+[    5444ms] [LOG] Connected @ https://phbidlautdemo.prahu-hub.com/home/analitikscsrconsignee?kota=true&kota=true&session_get=exp_6ab73cf432c353.62648248&PilihPropinsi=30&ShipperID=65&PilihKota=372&PilihKotaAsal=440:5797
+[    5505ms] TypeError: $(...).DataTable is not a function
+    at https://phbidlautdemo.prahu-hub.com/_resources/themes/prahutheme/js/scripts-init/tables.js:7:23

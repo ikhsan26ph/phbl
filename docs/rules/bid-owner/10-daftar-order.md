@@ -109,3 +109,38 @@
 - Bid Owner dapat melakukan edit data Muatan pada order dengan status PROSES PERJANJIAN s.d PROSES VALIDASI
 - Jika admin klik EDIT DATA MUATAN dengan status order KONFRIMASI UNIT s.d. ORDER SELESAI, maka akan menampilkan alert ‘Tidak bisa edit! Order sudah melewati tahap perjanjian’
 - Jika diklik , admin bisa bantu untuk edit muatan pada order terkait dan rule nya hampir sama seperti di halaman input muatan
+
+## Input / Edit Nomor Referensi (temuan kalibrasi 2026-09-26)
+
+Bagian ini TIDAK ada di dokumen rule sumber — hasil kalibrasi langsung ke demo.
+Nilai inilah yang kemudian tampil sebagai baris kedua nama item invoice jasa
+pengiriman (lihat `docs/rules/administrator/07-daftar-order.md` dan
+`docs/rules/bidder/08-daftar-order.md`, "Improve 2026-09").
+
+- Action menu Daftar Order di sisi Shipper punya item **"Input Nomor Referensi"**
+  (order belum punya referensi) atau **"Edit Nomor Referensi"** (sudah punya).
+  Sisi ADMIN TIDAK punya item ini (terverifikasi: 0 trigger pada 100 order yang
+  dirender admin, sementara shipper merender 24 trigger untuk 12 order karena
+  tiap order punya varian desktop + mobile).
+- Status order yang menampilkan menu ini saat kalibrasi: ORDER BARU, PROSES
+  VALIDASI, KONFIRMASI UNIT, PROSES PENUGASAN.
+- Alur klik: POST `general/cekLoginAjax` → POST `order/cek_nomor_referensi`
+  {OrderID}. Bila status != SUKSES muncul SweetAlert2 (dua baris pesan, tombol
+  "Mengerti"); bila SUKSES modal `#modalNomorReferensi` terbuka memuat Nomor
+  Order, Rute, Permintaan Muat, input `#input_nomor_referensi` (hint "Misal
+  nomor dokumen inbound : 20210809-12092"), tombol Batal dan
+  `#btn_simpan_nomor_referensi`.
+- Nomor Referensi bersifat WAJIB di modal: simpan dengan input kosong
+  memunculkan **popover Bootstrap transient ±2 detik** "Masukkan Nomor
+  Referensi" (bukan window.alert), modal tetap terbuka dan tidak ada request
+  simpan yang terkirim.
+- Penyimpanan via POST `order/save_nomor_referensi` {OrderID, nomor_referensi};
+  sukses → modal tertutup + SweetAlert2 pesan sukses + tabel di-refresh.
+- TIDAK ada batasan panjang maupun karakter di sisi klien (field bebas teks).
+  Order demo 20260811-06501 bahkan menyimpan `7100399697, 7100399697,
+  7100399697` pada SATU field `#nomor_referensi` — nilai berulang itu ikut
+  tampil apa adanya di nama item invoice. 4 order multidrop lain yang diperiksa
+  justru ber-referensi kosong, jadi pengulangan itu BUKAN pola sistematis
+  multidrop melainkan isi data order tersebut.
+- Order tanpa nomor referensi: Detail Order menampilkan strip "-", sedangkan
+  nama item invoice TIDAK menambahkan baris kedua sama sekali.

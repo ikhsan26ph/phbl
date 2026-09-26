@@ -1,0 +1,152 @@
+- generic [active] [ref=f29e1]:
+  - generic [ref=f29e2]:
+    - generic [ref=f29e3]:
+      - generic [ref=f29e4]:
+        - link [ref=f29e6] [cursor=pointer]:
+          - /url: https://phbidlautdemo.prahu-hub.com/
+        - button [ref=f29e10] [cursor=pointer]
+      - text:  
+      - generic [ref=f29e13]:
+        - generic [ref=f29e14]:
+          - generic [ref=f29e15]: Admin PH Bid
+          - button "Administrator" [ref=f29e17]
+        - text: 
+        - generic [ref=f29e21]:
+          - generic [ref=f29e22]:
+            - generic [ref=f29e23]: Admin PH Bid
+            - generic [ref=f29e24]: prahu.bid20@gmail.com
+          - generic [ref=f29e25]: 
+          - link "" [ref=f29e28] [cursor=pointer]:
+            - /url: https://phbidlautdemo.prahu-hub.com/home/notification
+          - link [ref=f29e35] [cursor=pointer]:
+            - /url: https://phbidlautdemo.prahu-hub.com/user/do_logout
+    - generic [ref=f29e38]:
+      - generic [ref=f29e39]:
+        - text: 
+        - generic [ref=f29e40]:
+          - list [ref=f29e42]:
+            - listitem
+            - listitem [ref=f29e43]:
+              - link "CARI PENAWARAN" [ref=f29e44] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/lelang/carirute
+            - listitem [ref=f29e45]: MENU ADMIN
+            - listitem [ref=f29e46]:
+              - generic [ref=f29e47] [cursor=pointer]:
+                - text: DASHBOARD
+                - generic [ref=f29e50]: 
+            - listitem [ref=f29e51]:
+              - generic [ref=f29e52] [cursor=pointer]:
+                - text: ANALITIK
+                - generic [ref=f29e55]: 
+              - list [ref=f29e56]:
+                - listitem [ref=f29e57]:
+                  - link "Shipping Cost Sales Ratio" [ref=f29e58] [cursor=pointer]:
+                    - /url: https://phbidlautdemo.prahu-hub.com/home/analitikscsr
+                - listitem [ref=f29e59]:
+                  - link "Freight Cost" [ref=f29e60] [cursor=pointer]:
+                    - /url: https://phbidlautdemo.prahu-hub.com/analitik/analitikfcu
+                - listitem [ref=f29e61]:
+                  - link "On Time Delivery Rate" [ref=f29e62] [cursor=pointer]:
+                    - /url: https://phbidlautdemo.prahu-hub.com/analitik/analitikotdr
+                - listitem [ref=f29e63]:
+                  - link "Shipment Accuracy" [ref=f29e64] [cursor=pointer]:
+                    - /url: https://phbidlautdemo.prahu-hub.com/home/analitikshipmentaccuracy
+            - listitem [ref=f29e65]:
+              - link "PENGAJUAN LELANG" [ref=f29e66] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/lelang/listlelang
+            - listitem [ref=f29e69]:
+              - link "PENGAJUAN NEGO" [ref=f29e70] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/lelang/pengajuannego
+            - listitem [ref=f29e73]:
+              - link [ref=f29e74] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/order/orderlist
+            - listitem [ref=f29e77]:
+              - link "PENUGASAN TRACKING" [ref=f29e78] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/home/penugasantracking
+            - listitem [ref=f29e81]:
+              - link "CEK JADWAL" [ref=f29e82] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/lelang/carijadwal
+            - listitem [ref=f29e85]:
+              - generic [ref=f29e86] [cursor=pointer]:
+                - text: LAPORAN
+                - generic [ref=f29e89]: 
+            - listitem [ref=f29e90]:
+              - generic [ref=f29e91] [cursor=pointer]:
+                - text: VALIDASI AKUN
+                - generic [ref=f29e94]: 
+            - listitem [ref=f29e95]:
+              - generic [ref=f29e96] [cursor=pointer]:
+                - text: SETTING
+                - generic [ref=f29e99]: 
+            - listitem [ref=f29e100]:
+              - generic [ref=f29e101] [cursor=pointer]:
+                - text: MASTER
+                - generic [ref=f29e104]: 
+            - listitem [ref=f29e105]:
+              - generic [ref=f29e106] [cursor=pointer]:
+                - text: PENGATURAN AKUN
+                - generic [ref=f29e109]: 
+            - listitem [ref=f29e110]:
+              - link "AKUN SAYA" [ref=f29e111] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/home/akunsaya
+            - listitem [ref=f29e114]: MENU TRANSPORTER
+            - listitem [ref=f29e115]:
+              - link "HARGA & JADWAL" [ref=f29e116] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/home/hargajadwal
+          - generic [ref=f29e121]:
+            - paragraph [ref=f29e123]: KONTAK KAMI
+            - generic [ref=f29e124]:
+              - generic [ref=f29e125]: 
+              - text: "081246665023"
+            - generic [ref=f29e126]:
+              - generic [ref=f29e127]: 
+              - text: "081246665023"
+            - generic [ref=f29e128]:
+              - generic [ref=f29e129]: 
+              - text: csct@prahu-hub.com
+            - generic [ref=f29e130]:
+              - link [ref=f29e131] [cursor=pointer]:
+                - /url: https://facebook.com/sosmed.phbid
+              - link [ref=f29e133] [cursor=pointer]:
+                - /url: https://twitter.com/PrahuHub
+              - link [ref=f29e135] [cursor=pointer]:
+                - /url: https://instagram.com/phbid_/
+              - link [ref=f29e137] [cursor=pointer]:
+                - /url: https://www.youtube.com/channel/UC41VntroP3zKmXZYnGgtFdw
+              - link [ref=f29e139] [cursor=pointer]:
+                - /url: http://linkedin.com/in/ph-bid-aa5393211/
+      - generic [ref=f29e141]:
+        - generic [ref=f29e142]:
+          - generic [ref=f29e145]:
+            - link "Beranda" [ref=f29e147] [cursor=pointer]:
+              - /url: https://phbidlautdemo.prahu-hub.com/lelang/listLelang
+            - text: / Shipping Cost Sales Ratio
+          - generic [ref=f29e148]: Shipping Cost Sales Ratio
+          - generic [ref=f29e154]:
+            - generic [ref=f29e155]:
+              - generic [ref=f29e156]:
+                - generic [ref=f29e157]: Dari Tanggal *
+                - generic [ref=f29e158]:
+                  - textbox "DD/MM/YYYY" [ref=f29e161]
+                  - generic [ref=f29e162]: s.d
+                  - generic [ref=f29e164]:
+                    - generic [ref=f29e165]: Sampai Tanggal *
+                    - textbox "DD/MM/YYYY" [ref=f29e167]
+                - text: Masukkan tanggal permintaan muat (Maksimal range 12 bulan)
+              - generic [ref=f29e168]:
+                - generic [ref=f29e169]: Pilih Provinsi
+                - combobox [ref=f29e172]:
+                  - generic [ref=f29e173] [cursor=pointer]: Pilih Provinsi
+              - generic [ref=f29e175]:
+                - generic [ref=f29e176]: Pilih Consignee
+                - combobox [ref=f29e179]:
+                  - generic [ref=f29e180] [cursor=pointer]: Pilih Nama Consignee
+            - generic [ref=f29e183]:
+              - generic [ref=f29e184]: Shipper *
+              - combobox [ref=f29e187]:
+                - generic [ref=f29e188] [cursor=pointer]: Pilih Shipper
+            - button " Cari" [ref=f29e193] [cursor=pointer]:
+              - generic [ref=f29e194]: 
+              - text: Cari
+        - paragraph [ref=f29e200]: © BETA 20260228 v1.3.28 - PH Bid Laut | Digital Logistic Platform
+  - text:  

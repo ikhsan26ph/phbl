@@ -1,0 +1,882 @@
+- generic [active] [ref=f8e1]:
+  - generic [ref=f8e2]:
+    - generic [ref=f8e3]:
+      - generic [ref=f8e4]:
+        - link [ref=f8e6] [cursor=pointer]:
+          - /url: https://phbidlautdemo.prahu-hub.com/
+        - button [ref=f8e10] [cursor=pointer]
+      - text:  
+      - generic [ref=f8e13]:
+        - generic [ref=f8e14]:
+          - generic [ref=f8e15]: Admin PH Bid
+          - button "Administrator" [ref=f8e17]
+        - text: 
+        - generic [ref=f8e21]:
+          - generic [ref=f8e22]:
+            - generic [ref=f8e23]: Admin PH Bid
+            - generic [ref=f8e24]: prahu.bid20@gmail.com
+          - generic [ref=f8e25]: 
+          - link "" [ref=f8e28] [cursor=pointer]:
+            - /url: https://phbidlautdemo.prahu-hub.com/home/notification
+          - link [ref=f8e35] [cursor=pointer]:
+            - /url: https://phbidlautdemo.prahu-hub.com/user/do_logout
+    - generic [ref=f8e38]:
+      - generic [ref=f8e39]:
+        - text: 
+        - generic [ref=f8e40]:
+          - list [ref=f8e42]:
+            - listitem
+            - listitem [ref=f8e43]:
+              - link "CARI PENAWARAN" [ref=f8e44] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/lelang/carirute
+            - listitem [ref=f8e45]: MENU ADMIN
+            - listitem [ref=f8e46]:
+              - generic [ref=f8e47] [cursor=pointer]:
+                - text: DASHBOARD
+                - generic [ref=f8e50]: 
+            - listitem [ref=f8e51]:
+              - generic [ref=f8e52] [cursor=pointer]:
+                - text: ANALITIK
+                - generic [ref=f8e55]: 
+            - listitem [ref=f8e56]:
+              - link "PENGAJUAN LELANG" [ref=f8e57] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/lelang/listlelang
+            - listitem [ref=f8e60]:
+              - link "PENGAJUAN NEGO" [ref=f8e61] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/lelang/pengajuannego
+            - listitem [ref=f8e64]:
+              - link "DAFTAR ORDER" [ref=f8e65] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/order/orderlist
+            - listitem [ref=f8e68]:
+              - link "PENUGASAN TRACKING" [ref=f8e69] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/home/penugasantracking
+            - listitem [ref=f8e72]:
+              - link "CEK JADWAL" [ref=f8e73] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/lelang/carijadwal
+            - listitem [ref=f8e76]:
+              - generic [ref=f8e77] [cursor=pointer]:
+                - text: LAPORAN
+                - generic [ref=f8e80]: 
+            - listitem [ref=f8e81]:
+              - generic [ref=f8e82] [cursor=pointer]:
+                - text: VALIDASI AKUN
+                - generic [ref=f8e85]: 
+            - listitem [ref=f8e86]:
+              - generic [ref=f8e87] [cursor=pointer]:
+                - text: SETTING
+                - generic [ref=f8e90]: 
+            - listitem [ref=f8e91]:
+              - generic [ref=f8e92] [cursor=pointer]:
+                - text: MASTER
+                - generic [ref=f8e95]: 
+            - listitem [ref=f8e96]:
+              - generic [ref=f8e97] [cursor=pointer]:
+                - text: PENGATURAN AKUN
+                - generic [ref=f8e100]: 
+            - listitem [ref=f8e101]:
+              - link "AKUN SAYA" [ref=f8e102] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/home/akunsaya
+            - listitem [ref=f8e105]: MENU TRANSPORTER
+            - listitem [ref=f8e106]:
+              - link "HARGA & JADWAL" [ref=f8e107] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/home/hargajadwal
+          - generic [ref=f8e112]:
+            - paragraph [ref=f8e114]: KONTAK KAMI
+            - generic [ref=f8e115]:
+              - generic [ref=f8e116]: 
+              - text: "081246665023"
+            - generic [ref=f8e117]:
+              - generic [ref=f8e118]: 
+              - text: "081246665023"
+            - generic [ref=f8e119]:
+              - generic [ref=f8e120]: 
+              - text: csct@prahu-hub.com
+            - generic [ref=f8e121]:
+              - link [ref=f8e122] [cursor=pointer]:
+                - /url: https://facebook.com/sosmed.phbid
+              - link [ref=f8e124] [cursor=pointer]:
+                - /url: https://twitter.com/PrahuHub
+              - link [ref=f8e126] [cursor=pointer]:
+                - /url: https://instagram.com/phbid_/
+              - link [ref=f8e128] [cursor=pointer]:
+                - /url: https://www.youtube.com/channel/UC41VntroP3zKmXZYnGgtFdw
+              - link [ref=f8e130] [cursor=pointer]:
+                - /url: http://linkedin.com/in/ph-bid-aa5393211/
+      - generic [ref=f8e132]:
+        - generic [ref=f8e133]:
+          - generic [ref=f8e136]:
+            - link "Beranda" [ref=f8e138] [cursor=pointer]:
+              - /url: https://phbidlautdemo.prahu-hub.com/lelang/listLelang
+            - text: / Daftar Order
+          - generic [ref=f8e139]:
+            - generic [ref=f8e141]:
+              - generic [ref=f8e142]: DAFTAR ORDER
+              - generic [ref=f8e143]:
+                - button " Filter" [ref=f8e144] [cursor=pointer]:
+                  - generic [ref=f8e145]: 
+                  - text: Filter
+                - generic [ref=f8e146]:
+                  - text: Menampilkan
+                  - combobox [ref=f8e147]:
+                    - option "20"
+                    - option "30"
+                    - option "50"
+                    - option "100" [selected]
+                  - text: Data
+            - text:  
+          - table [ref=f8e149]:
+            - rowgroup [ref=f8e150]:
+              - row [ref=f8e151]:
+                - columnheader "Lelang Status" [ref=f8e152]:
+                  - generic [ref=f8e153]: Lelang
+                  - generic [ref=f8e154]: Status
+                - columnheader "Nama Kapal Permintaan Muat & Closing Time" [ref=f8e155]:
+                  - generic [ref=f8e156]: Nama Kapal
+                  - generic [ref=f8e157]: Permintaan Muat & Closing Time
+                - columnheader "Pelabuhan Asal ETD" [ref=f8e158]:
+                  - generic [ref=f8e159]: Pelabuhan Asal
+                  - generic [ref=f8e160]: ETD
+                - columnheader "Pelabuhan Tujuan ETA" [ref=f8e161]:
+                  - generic [ref=f8e162]: Pelabuhan Tujuan
+                  - generic [ref=f8e163]: ETA
+                - columnheader "Transporter" [ref=f8e164]
+                - columnheader "Harga Jumlah Order" [ref=f8e166]:
+                  - generic [ref=f8e167]: Harga
+                  - generic [ref=f8e168]: Jumlah Order
+                - columnheader "Action" [ref=f8e169]
+              - row [ref=f8e171]
+            - rowgroup [ref=f8e172]:
+              - row [ref=f8e201]:
+                - cell "20260904-06501 LELANGFCU/28082026IK KONFIRMASI UNIT" [ref=f8e202]:
+                  - generic [ref=f8e203]: 20260904-06501
+                  - generic [ref=f8e204]: LELANGFCU/28082026IK
+                  - generic [ref=f8e205]: KONFIRMASI UNIT
+                - 'cell "AUTOTEST Kapal Pemuatan : 01/10/2026 09:26 Closing : 30/09/2026 10:00" [ref=f8e206]':
+                  - generic [ref=f8e207]: AUTOTEST Kapal
+                  - generic [ref=f8e208]:
+                    - generic [ref=f8e209]: Pemuatan
+                    - text: ": 01/10/2026 09:26"
+                  - generic [ref=f8e210]:
+                    - generic [ref=f8e211]: Closing
+                    - text: ": 30/09/2026 10:00"
+                - cell "Tanjung Perak (SUB) 01/10/2026" [ref=f8e212]:
+                  - generic [ref=f8e213]: Tanjung Perak (SUB)
+                  - generic [ref=f8e214]: 01/10/2026
+                - cell "Tanjung Emas (SRG) 05/10/2026" [ref=f8e215]:
+                  - generic [ref=f8e216]: Tanjung Emas (SRG)
+                  - generic [ref=f8e217]: 05/10/2026
+                - cell "PT. Muda Jaya Wijaya Karya Sentosa Indah Elok (IK)" [ref=f8e218]
+                - cell "Rp. 4.234.300 1 x 20 DRY" [ref=f8e220]:
+                  - generic [ref=f8e221]: Rp. 4.234.300
+                  - generic [ref=f8e222]: 1 x 20 DRY
+                - cell [ref=f8e223]:
+                  - button "Action Menu" [ref=f8e225] [cursor=pointer]
+              - row [ref=f8e226]:
+                - cell "Info Order Detail Order Dokumen Aanwijzing" [ref=f8e227]:
+                  - generic [ref=f8e229]:
+                    - link "Info Order" [ref=f8e231] [cursor=pointer]:
+                      - /url: javascript:void(0)
+                    - link "Detail Order" [ref=f8e233] [cursor=pointer]:
+                      - /url: order/orderdetail/MWhTQXZlTFZHM1lXZmlFSkJqUm5Gdz09
+                    - generic [ref=f8e234] [cursor=pointer]: Dokumen Aanwijzing
+              - row [ref=f8e235]
+              - row [ref=f8e236]:
+                - cell "20260829-06504 LELANGFCU/28082026IK ORDER BARU" [ref=f8e237]:
+                  - generic [ref=f8e238]: 20260829-06504
+                  - generic [ref=f8e239]: LELANGFCU/28082026IK
+                  - generic [ref=f8e240]: ORDER BARU
+                - 'cell "AUTOTEST Kapal Pemuatan : 20/09/2026 08:00 Closing : 30/09/2026 10:00" [ref=f8e241]':
+                  - generic [ref=f8e242]: AUTOTEST Kapal
+                  - generic [ref=f8e243]:
+                    - generic [ref=f8e244]: Pemuatan
+                    - text: ": 20/09/2026 08:00"
+                  - generic [ref=f8e245]:
+                    - generic [ref=f8e246]: Closing
+                    - text: ": 30/09/2026 10:00"
+                - cell "Tanjung Perak (SUB) 01/10/2026" [ref=f8e247]:
+                  - generic [ref=f8e248]: Tanjung Perak (SUB)
+                  - generic [ref=f8e249]: 01/10/2026
+                - cell "Tanjung Emas (SRG) 05/10/2026" [ref=f8e250]:
+                  - generic [ref=f8e251]: Tanjung Emas (SRG)
+                  - generic [ref=f8e252]: 05/10/2026
+                - cell "PT. Muda Jaya Wijaya Karya Sentosa Indah Elok (IK)" [ref=f8e253]
+                - cell "Rp. 4.234.300 1 x 20 DRY" [ref=f8e255]:
+                  - generic [ref=f8e256]: Rp. 4.234.300
+                  - generic [ref=f8e257]: 1 x 20 DRY
+                - cell [ref=f8e258]:
+                  - link "Input Muatan" [ref=f8e259] [cursor=pointer]:
+                    - /url: home/inputmuatan/MHZROHFLSlBlKyswU0p3SlpBRm5Idz09
+                  - button "Action Menu" [ref=f8e261] [cursor=pointer]
+              - row [ref=f8e262]:
+                - cell "Info Order Detail Order Dokumen Aanwijzing" [ref=f8e263]:
+                  - generic [ref=f8e265]:
+                    - link "Info Order" [ref=f8e267] [cursor=pointer]:
+                      - /url: javascript:void(0)
+                    - link "Detail Order" [ref=f8e269] [cursor=pointer]:
+                      - /url: order/orderdetail/MHZROHFLSlBlKyswU0p3SlpBRm5Idz09
+                    - generic [ref=f8e270] [cursor=pointer]: Dokumen Aanwijzing
+              - row [ref=f8e271]
+              - row [ref=f8e272]:
+                - cell "20260829-02603 FALCON/NORMAL/CONNECTING/PONOROGO PROSES VALIDASI" [ref=f8e273]:
+                  - generic [ref=f8e274]: 20260829-02603
+                  - generic [ref=f8e275]: FALCON/NORMAL/CONNECTING/PONOROGO
+                  - generic [ref=f8e276]: PROSES VALIDASI
+                - 'cell "KM Kartika Eka Paksi Edit Kapal Connecting 1x Pemuatan : 29/08/2026 10:13 Closing : 30/08/2026 10:12" [ref=f8e277]':
+                  - generic [ref=f8e278]: KM Kartika Eka Paksi Edit
+                  - generic [ref=f8e279] [cursor=pointer]: Kapal Connecting 1x
+                  - generic [ref=f8e280]:
+                    - generic [ref=f8e281]: Pemuatan
+                    - text: ": 29/08/2026 10:13"
+                  - generic [ref=f8e282]:
+                    - generic [ref=f8e283]: Closing
+                    - text: ": 30/08/2026 10:12"
+                - cell "Tanjung Perak (SUB) 01/09/2026" [ref=f8e284]:
+                  - generic [ref=f8e285]: Tanjung Perak (SUB)
+                  - generic [ref=f8e286]: 01/09/2026
+                - cell "Balikpapan (BPN) 05/09/2026" [ref=f8e287]:
+                  - generic [ref=f8e288]: Balikpapan (BPN)
+                  - generic [ref=f8e289]: 05/09/2026
+                - cell "PT. Logisticsplus International" [ref=f8e290]
+                - cell "Rp. 16.000.000 2 x 20 DRY" [ref=f8e292]:
+                  - generic [ref=f8e293]: Rp. 16.000.000
+                  - generic [ref=f8e294]: 2 x 20 DRY
+                - cell [ref=f8e295]:
+                  - link "Validasi Order" [ref=f8e296] [cursor=pointer]:
+                    - /url: order/validasiOrder/ek9HNzVDSHpGWVhkWTNOTXBkV2JKZz09
+                  - button "Action Menu" [ref=f8e298] [cursor=pointer]
+              - row [ref=f8e299]:
+                - cell "Info Order Detail Order Dokumen Aanwijzing" [ref=f8e300]:
+                  - generic [ref=f8e302]:
+                    - link "Info Order" [ref=f8e304] [cursor=pointer]:
+                      - /url: javascript:void(0)
+                    - link "Detail Order" [ref=f8e306] [cursor=pointer]:
+                      - /url: order/orderdetail/ek9HNzVDSHpGWVhkWTNOTXBkV2JKZz09
+                    - generic [ref=f8e307] [cursor=pointer]: Dokumen Aanwijzing
+              - row [ref=f8e308]
+              - row [ref=f8e309]:
+                - cell "20260829-02602 FALCON/NORMAL/CONNECTING/MADIUN PROSES VALIDASI" [ref=f8e310]:
+                  - generic [ref=f8e311]: 20260829-02602
+                  - generic [ref=f8e312]: FALCON/NORMAL/CONNECTING/MADIUN
+                  - generic [ref=f8e313]: PROSES VALIDASI
+                - 'cell "KM Swarna Warni Tapi Bukan Pelangi Edit Jadwal Kapal Connecting 1x Pemuatan : 29/08/2026 09:30 Closing : 29/08/2026 14:39" [ref=f8e314]':
+                  - generic [ref=f8e315]: KM Swarna Warni Tapi Bukan Pelangi Edit Jadwal
+                  - generic [ref=f8e316] [cursor=pointer]: Kapal Connecting 1x
+                  - generic [ref=f8e317]:
+                    - generic [ref=f8e318]: Pemuatan
+                    - text: ": 29/08/2026 09:30"
+                  - generic [ref=f8e319]:
+                    - generic [ref=f8e320]: Closing
+                    - text: ": 29/08/2026 14:39"
+                - cell "Balikpapan (BPN) 30/08/2026" [ref=f8e321]:
+                  - generic [ref=f8e322]: Balikpapan (BPN)
+                  - generic [ref=f8e323]: 30/08/2026
+                - cell "Labuan Bajo (LBJ) 31/08/2026" [ref=f8e324]:
+                  - generic [ref=f8e325]: Labuan Bajo (LBJ)
+                  - generic [ref=f8e326]: 31/08/2026
+                - cell "PT. Logisticsplus International" [ref=f8e327]
+                - cell "Rp. 15.600.000 1 x 20 ISOTANK" [ref=f8e329]:
+                  - generic [ref=f8e330]: Rp. 15.600.000
+                  - generic [ref=f8e331]: 1 x 20 ISOTANK
+                - cell [ref=f8e332]:
+                  - link "Validasi Order" [ref=f8e333] [cursor=pointer]:
+                    - /url: order/validasiOrder/b1VKRnFWQkdHLzFRdDlxb3ZVNXhQZz09
+                  - button "Action Menu" [ref=f8e335] [cursor=pointer]
+              - row [ref=f8e336]:
+                - cell "Info Order Detail Order Dokumen Aanwijzing" [ref=f8e337]:
+                  - generic [ref=f8e339]:
+                    - link "Info Order" [ref=f8e341] [cursor=pointer]:
+                      - /url: javascript:void(0)
+                    - link "Detail Order" [ref=f8e343] [cursor=pointer]:
+                      - /url: order/orderdetail/b1VKRnFWQkdHLzFRdDlxb3ZVNXhQZz09
+                    - generic [ref=f8e344] [cursor=pointer]: Dokumen Aanwijzing
+              - row [ref=f8e345]
+              - row [ref=f8e346]:
+                - cell "20260829-06501 LELANGFCU/28082026IK DIBATALKAN" [ref=f8e347]:
+                  - generic [ref=f8e348]: 20260829-06501
+                  - generic [ref=f8e349]: LELANGFCU/28082026IK
+                  - generic [ref=f8e350]: DIBATALKAN
+                - 'cell "KM. Malay Pemuatan : 01/10/2026 09:26 Closing : 09/12/2026 16:21" [ref=f8e351]':
+                  - generic [ref=f8e352]: KM. Malay
+                  - generic [ref=f8e353]:
+                    - generic [ref=f8e354]: Pemuatan
+                    - text: ": 01/10/2026 09:26"
+                  - generic [ref=f8e355]:
+                    - generic [ref=f8e356]: Closing
+                    - text: ": 09/12/2026 16:21"
+                - cell "Tanjung Perak (SUB) 10/12/2026" [ref=f8e357]:
+                  - generic [ref=f8e358]: Tanjung Perak (SUB)
+                  - generic [ref=f8e359]: 10/12/2026
+                - cell "Tanjung Emas (SRG) 11/12/2026" [ref=f8e360]:
+                  - generic [ref=f8e361]: Tanjung Emas (SRG)
+                  - generic [ref=f8e362]: 11/12/2026
+                - cell "PT. Muda Jaya Wijaya Karya Sentosa Indah Elok (IK)" [ref=f8e363]
+                - cell "Rp. 4.234.300 1 x 20 DRY" [ref=f8e365]:
+                  - generic [ref=f8e366]: Rp. 4.234.300
+                  - generic [ref=f8e367]: 1 x 20 DRY
+                - cell [ref=f8e368]:
+                  - button "Action Menu" [disabled] [ref=f8e370]
+              - row [ref=f8e371]:
+                - cell "Info Order Detail Order Dokumen Aanwijzing" [ref=f8e372]:
+                  - generic [ref=f8e374]:
+                    - link "Info Order" [ref=f8e376] [cursor=pointer]:
+                      - /url: javascript:void(0)
+                    - link "Detail Order" [ref=f8e378] [cursor=pointer]:
+                      - /url: order/orderdetail/WkhBYndCSkRCaEtwajBzTDBoS1l6UT09
+                    - generic [ref=f8e379] [cursor=pointer]: Dokumen Aanwijzing
+              - row [ref=f8e380]
+              - row [ref=f8e381]:
+                - cell "20260828-06506 LELANGFCU/28082026IK KONFIRMASI UNIT" [ref=f8e382]:
+                  - generic [ref=f8e383]: 20260828-06506
+                  - generic [ref=f8e384]: LELANGFCU/28082026IK
+                  - generic [ref=f8e385]: KONFIRMASI UNIT
+                - 'cell "KM. Malay Pemuatan : 08/09/2026 16:22 Closing : 01/12/2026 16:21" [ref=f8e386]':
+                  - generic [ref=f8e387]: KM. Malay
+                  - generic [ref=f8e388]:
+                    - generic [ref=f8e389]: Pemuatan
+                    - text: ": 08/09/2026 16:22"
+                  - generic [ref=f8e390]:
+                    - generic [ref=f8e391]: Closing
+                    - text: ": 01/12/2026 16:21"
+                - cell "Tanjung Perak (SUB) 02/12/2026" [ref=f8e392]:
+                  - generic [ref=f8e393]: Tanjung Perak (SUB)
+                  - generic [ref=f8e394]: 02/12/2026
+                - cell "Tanjung Emas (SRG) 03/12/2026" [ref=f8e395]:
+                  - generic [ref=f8e396]: Tanjung Emas (SRG)
+                  - generic [ref=f8e397]: 03/12/2026
+                - cell "PT. Muda Jaya Wijaya Karya Sentosa Indah Elok (IK)" [ref=f8e398]
+                - cell "Rp. 4.234.300 1 x 20 DRY" [ref=f8e400]:
+                  - generic [ref=f8e401]: Rp. 4.234.300
+                  - generic [ref=f8e402]: 1 x 20 DRY
+                - cell [ref=f8e403]:
+                  - button "Action Menu" [ref=f8e405] [cursor=pointer]
+              - row [ref=f8e406]:
+                - cell "Info Order Detail Order Dokumen Aanwijzing" [ref=f8e407]:
+                  - generic [ref=f8e409]:
+                    - link "Info Order" [ref=f8e411] [cursor=pointer]:
+                      - /url: javascript:void(0)
+                    - link "Detail Order" [ref=f8e413] [cursor=pointer]:
+                      - /url: order/orderdetail/Y1dzbERFYi9NenVYdHMzQWcrLzArQT09
+                    - generic [ref=f8e414] [cursor=pointer]: Dokumen Aanwijzing
+              - row [ref=f8e415]
+              - row [ref=f8e416]:
+                - cell "20260828-06505 LELANGFCU/28082026IK DIBATALKAN" [ref=f8e417]:
+                  - generic [ref=f8e418]: 20260828-06505
+                  - generic [ref=f8e419]: LELANGFCU/28082026IK
+                  - generic [ref=f8e420]: DIBATALKAN
+                - 'cell "KM. Layar Pemuatan : 30/08/2026 03:19 Closing : 30/08/2026 09:12" [ref=f8e421]':
+                  - generic [ref=f8e422]: KM. Layar
+                  - generic [ref=f8e423]:
+                    - generic [ref=f8e424]: Pemuatan
+                    - text: ": 30/08/2026 03:19"
+                  - generic [ref=f8e425]:
+                    - generic [ref=f8e426]: Closing
+                    - text: ": 30/08/2026 09:12"
+                - cell "Tanjung Perak (SUB) 31/08/2026" [ref=f8e427]:
+                  - generic [ref=f8e428]: Tanjung Perak (SUB)
+                  - generic [ref=f8e429]: 31/08/2026
+                - cell "Tanjung Emas (SRG) 05/09/2026" [ref=f8e430]:
+                  - generic [ref=f8e431]: Tanjung Emas (SRG)
+                  - generic [ref=f8e432]: 05/09/2026
+                - cell "PT. Muda Jaya Wijaya Karya Sentosa Indah Elok (IK)" [ref=f8e433]
+                - cell "Rp. 4.234.300 1 x 20 DRY" [ref=f8e435]:
+                  - generic [ref=f8e436]: Rp. 4.234.300
+                  - generic [ref=f8e437]: 1 x 20 DRY
+                - cell [ref=f8e438]:
+                  - button "Action Menu" [disabled] [ref=f8e440]
+              - row [ref=f8e441]:
+                - cell "Info Order Detail Order Dokumen Aanwijzing" [ref=f8e442]:
+                  - generic [ref=f8e444]:
+                    - link "Info Order" [ref=f8e446] [cursor=pointer]:
+                      - /url: javascript:void(0)
+                    - link "Detail Order" [ref=f8e448] [cursor=pointer]:
+                      - /url: order/orderdetail/U3M1bzFCejUxTUFqT3R4TUJBdTN5Zz09
+                    - generic [ref=f8e449] [cursor=pointer]: Dokumen Aanwijzing
+              - row [ref=f8e450]
+              - row [ref=f8e451]:
+                - cell "20260828-06504 LELANGFCU/28082026IK PROSES PENUGASAN" [ref=f8e452]:
+                  - generic [ref=f8e453]: 20260828-06504
+                  - generic [ref=f8e454]: LELANGFCU/28082026IK
+                  - generic [ref=f8e455]: PROSES PENUGASAN
+                - 'cell "KM. Layar Pemuatan : 30/08/2026 01:17 Closing : 30/08/2026 09:12" [ref=f8e456]':
+                  - generic [ref=f8e457]: KM. Layar
+                  - generic [ref=f8e458]:
+                    - generic [ref=f8e459]: Pemuatan
+                    - text: ": 30/08/2026 01:17"
+                  - generic [ref=f8e460]:
+                    - generic [ref=f8e461]: Closing
+                    - text: ": 30/08/2026 09:12"
+                - cell "Tanjung Perak (SUB) 31/08/2026" [ref=f8e462]:
+                  - generic [ref=f8e463]: Tanjung Perak (SUB)
+                  - generic [ref=f8e464]: 31/08/2026
+                - cell "Tanjung Emas (SRG) 05/09/2026" [ref=f8e465]:
+                  - generic [ref=f8e466]: Tanjung Emas (SRG)
+                  - generic [ref=f8e467]: 05/09/2026
+                - cell "PT. Muda Jaya Wijaya Karya Sentosa Indah Elok (IK)" [ref=f8e468]
+                - cell "Rp. 21.300.000 1 x 20 DRY" [ref=f8e470]:
+                  - generic [ref=f8e471]: Rp. 21.300.000
+                  - generic [ref=f8e472]: 1 x 20 DRY
+                - cell [ref=f8e473]:
+                  - button "Action Menu" [ref=f8e475] [cursor=pointer]
+              - row [ref=f8e476]:
+                - cell "Info Order Info Tracking Detail Order Dokumen Aanwijzing" [ref=f8e477]:
+                  - generic [ref=f8e479]:
+                    - link "Info Order" [ref=f8e481] [cursor=pointer]:
+                      - /url: javascript:void(0)
+                    - link "Info Tracking" [ref=f8e483] [cursor=pointer]:
+                      - /url: javascript:void(0)
+                    - link "Detail Order" [ref=f8e485] [cursor=pointer]:
+                      - /url: order/orderdetail/cE81VTMwcCswa2gzY09EQWtNclJHZz09
+                    - generic [ref=f8e486] [cursor=pointer]: Dokumen Aanwijzing
+              - row [ref=f8e487]
+              - row [ref=f8e488]:
+                - cell "20260828-08503 COBA/20/TERNATE ORDER BARU" [ref=f8e489]:
+                  - generic [ref=f8e490]: 20260828-08503
+                  - generic [ref=f8e491]: COBA/20/TERNATE
+                  - generic [ref=f8e492]: ORDER BARU
+                - 'cell "KM Swarna Pemuatan : 28/08/2026 14:00 Closing : 29/08/2026 10:34" [ref=f8e493]':
+                  - generic [ref=f8e494]: KM Swarna
+                  - generic [ref=f8e495]:
+                    - generic [ref=f8e496]: Pemuatan
+                    - text: ": 28/08/2026 14:00"
+                  - generic [ref=f8e497]:
+                    - generic [ref=f8e498]: Closing
+                    - text: ": 29/08/2026 10:34"
+                - cell "Tanjung Perak (SUB) 30/08/2026" [ref=f8e499]:
+                  - generic [ref=f8e500]: Tanjung Perak (SUB)
+                  - generic [ref=f8e501]: 30/08/2026
+                - cell "Ternate (TTE) 31/08/2026" [ref=f8e502]:
+                  - generic [ref=f8e503]: Ternate (TTE)
+                  - generic [ref=f8e504]: 31/08/2026
+                - cell "PT. Logisticsplus International" [ref=f8e505]
+                - cell "Rp. 19.500.000 1 x 20 ISOTANK" [ref=f8e507]:
+                  - generic [ref=f8e508]: Rp. 19.500.000
+                  - generic [ref=f8e509]: 1 x 20 ISOTANK
+                - cell [ref=f8e510]:
+                  - link "Input Muatan" [ref=f8e511] [cursor=pointer]:
+                    - /url: home/inputmuatan/T2RKY0k1aDVxSGhZT1Z5N3JMc1llQT09
+                  - button "Action Menu" [ref=f8e513] [cursor=pointer]
+              - row [ref=f8e514]:
+                - cell "Info Order Detail Order Dokumen Aanwijzing" [ref=f8e515]:
+                  - generic [ref=f8e517]:
+                    - link "Info Order" [ref=f8e519] [cursor=pointer]:
+                      - /url: javascript:void(0)
+                    - link "Detail Order" [ref=f8e521] [cursor=pointer]:
+                      - /url: order/orderdetail/T2RKY0k1aDVxSGhZT1Z5N3JMc1llQT09
+                    - generic [ref=f8e522] [cursor=pointer]: Dokumen Aanwijzing
+              - row [ref=f8e523]
+              - row [ref=f8e524]:
+                - cell "20260828-02602 FALCON/NORMAL/CONNECTING/MADIUN PROSES PENUGASAN" [ref=f8e525]:
+                  - generic [ref=f8e526]: 20260828-02602
+                  - generic [ref=f8e527]: FALCON/NORMAL/CONNECTING/MADIUN
+                  - generic [ref=f8e528]: PROSES PENUGASAN
+                - 'cell "KM Swanra Pemuatan : 28/08/2026 11:05 Closing : 29/08/2026 11:01" [ref=f8e529]':
+                  - generic [ref=f8e530]: KM Swanra
+                  - generic [ref=f8e531]:
+                    - generic [ref=f8e532]: Pemuatan
+                    - text: ": 28/08/2026 11:05"
+                  - generic [ref=f8e533]:
+                    - generic [ref=f8e534]: Closing
+                    - text: ": 29/08/2026 11:01"
+                - cell "Balikpapan (BPN) 30/08/2026" [ref=f8e535]:
+                  - generic [ref=f8e536]: Balikpapan (BPN)
+                  - generic [ref=f8e537]: 30/08/2026
+                - cell "Labuan Bajo (LBJ) 31/08/2026" [ref=f8e538]:
+                  - generic [ref=f8e539]: Labuan Bajo (LBJ)
+                  - generic [ref=f8e540]: 31/08/2026
+                - cell "PT. Logisticsplus International" [ref=f8e541]
+                - cell "Rp. 67.676.767 1 x 20 ISOTANK" [ref=f8e543]:
+                  - generic [ref=f8e544]: Rp. 67.676.767
+                  - generic [ref=f8e545]: 1 x 20 ISOTANK
+                - cell [ref=f8e546]:
+                  - button "Action Menu" [ref=f8e548] [cursor=pointer]
+              - row [ref=f8e549]:
+                - cell "Info Order Info Tracking Detail Order Dokumen Aanwijzing" [ref=f8e550]:
+                  - generic [ref=f8e552]:
+                    - link "Info Order" [ref=f8e554] [cursor=pointer]:
+                      - /url: javascript:void(0)
+                    - link "Info Tracking" [ref=f8e556] [cursor=pointer]:
+                      - /url: javascript:void(0)
+                    - link "Detail Order" [ref=f8e558] [cursor=pointer]:
+                      - /url: order/orderdetail/aHNFRzU3T1dRRlUrS2EvUmxHSUZqQT09
+                    - generic [ref=f8e559] [cursor=pointer]: Dokumen Aanwijzing
+              - row [ref=f8e560]
+              - row [ref=f8e561]:
+                - cell "20260828-08501 COBA/20/TERNATE PROSES PENUGASAN" [ref=f8e562]:
+                  - generic [ref=f8e563]: 20260828-08501
+                  - generic [ref=f8e564]: COBA/20/TERNATE
+                  - generic [ref=f8e565]: PROSES PENUGASAN
+                - 'cell "KM Swarna Pemuatan : 28/08/2026 10:35 Closing : 29/08/2026 10:34" [ref=f8e566]':
+                  - generic [ref=f8e567]: KM Swarna
+                  - generic [ref=f8e568]:
+                    - generic [ref=f8e569]: Pemuatan
+                    - text: ": 28/08/2026 10:35"
+                  - generic [ref=f8e570]:
+                    - generic [ref=f8e571]: Closing
+                    - text: ": 29/08/2026 10:34"
+                - cell "Tanjung Perak (SUB) 30/08/2026" [ref=f8e572]:
+                  - generic [ref=f8e573]: Tanjung Perak (SUB)
+                  - generic [ref=f8e574]: 30/08/2026
+                - cell "Ternate (TTE) 31/08/2026" [ref=f8e575]:
+                  - generic [ref=f8e576]: Ternate (TTE)
+                  - generic [ref=f8e577]: 31/08/2026
+                - cell "PT. Logisticsplus International" [ref=f8e578]
+                - cell "Rp. 19.500.000 1 x 20 ISOTANK" [ref=f8e580]:
+                  - generic [ref=f8e581]: Rp. 19.500.000
+                  - generic [ref=f8e582]: 1 x 20 ISOTANK
+                - cell [ref=f8e583]:
+                  - button "Action Menu" [ref=f8e585] [cursor=pointer]
+              - row [ref=f8e586]:
+                - cell "Info Order Info Tracking Detail Order Dokumen Aanwijzing" [ref=f8e587]:
+                  - generic [ref=f8e589]:
+                    - link "Info Order" [ref=f8e591] [cursor=pointer]:
+                      - /url: javascript:void(0)
+                    - link "Info Tracking" [ref=f8e593] [cursor=pointer]:
+                      - /url: javascript:void(0)
+                    - link "Detail Order" [ref=f8e595] [cursor=pointer]:
+                      - /url: order/orderdetail/S0g4bHJQdUpmSVpUVkVZWFM5YTlXUT09
+                    - generic [ref=f8e596] [cursor=pointer]: Dokumen Aanwijzing
+              - row [ref=f8e597]
+              - row [ref=f8e598]:
+                - cell "20260827-06503 LELANGFCU/28082026IK PROSES PERJANJIAN" [ref=f8e599]:
+                  - generic [ref=f8e600]: 20260827-06503
+                  - generic [ref=f8e601]: LELANGFCU/28082026IK
+                  - generic [ref=f8e602]: PROSES PERJANJIAN
+                - 'cell "KM. Layar Pemuatan : 29/08/2026 10:22 Closing : 30/08/2026 09:12" [ref=f8e603]':
+                  - generic [ref=f8e604]: KM. Layar
+                  - generic [ref=f8e605]:
+                    - generic [ref=f8e606]: Pemuatan
+                    - text: ": 29/08/2026 10:22"
+                  - generic [ref=f8e607]:
+                    - generic [ref=f8e608]: Closing
+                    - text: ": 30/08/2026 09:12"
+                - cell "Tanjung Perak (SUB) 31/08/2026" [ref=f8e609]:
+                  - generic [ref=f8e610]: Tanjung Perak (SUB)
+                  - generic [ref=f8e611]: 31/08/2026
+                - cell "Tanjung Emas (SRG) 05/09/2026" [ref=f8e612]:
+                  - generic [ref=f8e613]: Tanjung Emas (SRG)
+                  - generic [ref=f8e614]: 05/09/2026
+                - cell "PT. Muda Jaya Wijaya Karya Sentosa Indah Elok (IK)" [ref=f8e615]
+                - cell "Rp. 3.000.000 1 x 20 DRY" [ref=f8e617]:
+                  - generic [ref=f8e618]: Rp. 3.000.000
+                  - generic [ref=f8e619]: 1 x 20 DRY
+                - cell [ref=f8e620]:
+                  - link "Input Perjanjian" [ref=f8e621] [cursor=pointer]:
+                    - /url: order/kontrak_pengiriman/bXZMbnlNSjZjT0luOXFBaDN3bk41UT09
+                  - button "Action Menu" [ref=f8e623] [cursor=pointer]
+              - row [ref=f8e624]:
+                - cell "Info Order Detail Order Dokumen Aanwijzing" [ref=f8e625]:
+                  - generic [ref=f8e627]:
+                    - link "Info Order" [ref=f8e629] [cursor=pointer]:
+                      - /url: javascript:void(0)
+                    - link "Detail Order" [ref=f8e631] [cursor=pointer]:
+                      - /url: order/orderdetail/bXZMbnlNSjZjT0luOXFBaDN3bk41UT09
+                    - generic [ref=f8e632] [cursor=pointer]: Dokumen Aanwijzing
+              - row [ref=f8e633]
+              - row [ref=f8e634]:
+                - cell "20260827-06502 LELANGFCU/28082026IK ORDER SELESAI" [ref=f8e635]:
+                  - generic [ref=f8e636]: 20260827-06502
+                  - generic [ref=f8e637]: LELANGFCU/28082026IK
+                  - generic [ref=f8e638]: ORDER SELESAI
+                - 'cell "KM. Layar Pemuatan : 29/08/2026 09:13 Closing : 30/08/2026 09:12" [ref=f8e639]':
+                  - generic [ref=f8e640]: KM. Layar
+                  - generic [ref=f8e641]:
+                    - generic [ref=f8e642]: Pemuatan
+                    - text: ": 29/08/2026 09:13"
+                  - generic [ref=f8e643]:
+                    - generic [ref=f8e644]: Closing
+                    - text: ": 30/08/2026 09:12"
+                - cell "Tanjung Perak (SUB) 31/08/2026" [ref=f8e645]:
+                  - generic [ref=f8e646]: Tanjung Perak (SUB)
+                  - generic [ref=f8e647]: 31/08/2026
+                - cell "Tanjung Emas (SRG) 05/09/2026" [ref=f8e648]:
+                  - generic [ref=f8e649]: Tanjung Emas (SRG)
+                  - generic [ref=f8e650]: 05/09/2026
+                - cell "PT. Muda Jaya Wijaya Karya Sentosa Indah Elok (IK)" [ref=f8e651]
+                - cell "Rp. 444.444 1 x 20 DRY" [ref=f8e653]:
+                  - generic [ref=f8e654]: Rp. 444.444
+                  - generic [ref=f8e655]: 1 x 20 DRY
+                - cell [ref=f8e656]:
+                  - button "Action Menu" [ref=f8e658] [cursor=pointer]
+              - row [ref=f8e659]:
+                - cell "Info Order Info Tracking Detail Order Dokumen Aanwijzing" [ref=f8e660]:
+                  - generic [ref=f8e662]:
+                    - link "Info Order" [ref=f8e664] [cursor=pointer]:
+                      - /url: javascript:void(0)
+                    - link "Info Tracking" [ref=f8e666] [cursor=pointer]:
+                      - /url: javascript:void(0)
+                    - link "Detail Order" [ref=f8e668] [cursor=pointer]:
+                      - /url: order/orderdetail/dmVSUnFiaGxwdU9oYjJnZHhEY0cyUT09
+                    - generic [ref=f8e669] [cursor=pointer]: Dokumen Aanwijzing
+              - row [ref=f8e670]
+              - row [ref=f8e671]:
+                - cell "20260827-06501 LELANGIK/02/2026/NRML#2 ORDER SELESAI" [ref=f8e672]:
+                  - generic [ref=f8e673]: 20260827-06501
+                  - generic [ref=f8e674]: LELANGIK/02/2026/NRML#2
+                  - generic [ref=f8e675]: ORDER SELESAI
+                - 'cell "KM. Cahaya Mutiara Pemuatan : 28/08/2026 09:00 Closing : 28/08/2026 10:41" [ref=f8e676]':
+                  - generic [ref=f8e677]: KM. Cahaya Mutiara
+                  - generic [ref=f8e678]:
+                    - generic [ref=f8e679]: Pemuatan
+                    - text: ": 28/08/2026 09:00"
+                  - generic [ref=f8e680]:
+                    - generic [ref=f8e681]: Closing
+                    - text: ": 28/08/2026 10:41"
+                - cell "Dobo (DOB) 30/08/2026" [ref=f8e682]:
+                  - generic [ref=f8e683]: Dobo (DOB)
+                  - generic [ref=f8e684]: 30/08/2026
+                - cell "Bitung (BIT) 31/08/2026" [ref=f8e685]:
+                  - generic [ref=f8e686]: Bitung (BIT)
+                  - generic [ref=f8e687]: 31/08/2026
+                - cell "PT. Muda Jaya Wijaya Karya Sentosa Indah Elok (IK)" [ref=f8e688]
+                - cell "Rp. 40.000.000 2 x 20 DRY" [ref=f8e690]:
+                  - generic [ref=f8e691]: Rp. 40.000.000
+                  - generic [ref=f8e692]: 2 x 20 DRY
+                - cell [ref=f8e693]:
+                  - button "Action Menu" [ref=f8e695] [cursor=pointer]
+              - row [ref=f8e696]:
+                - cell "Info Order Info Tracking Detail Order Dokumen Aanwijzing" [ref=f8e697]:
+                  - generic [ref=f8e699]:
+                    - link "Info Order" [ref=f8e701] [cursor=pointer]:
+                      - /url: javascript:void(0)
+                    - link "Info Tracking" [ref=f8e703] [cursor=pointer]:
+                      - /url: javascript:void(0)
+                    - link "Detail Order" [ref=f8e705] [cursor=pointer]:
+                      - /url: order/orderdetail/ZWFjMCs1amZHTURpT2s5V3ltQWxMZz09
+                    - generic [ref=f8e706] [cursor=pointer]: Dokumen Aanwijzing
+              - row [ref=f8e707]
+              - row [ref=f8e708]:
+                - cell "20260826-06507 LELANGIK/02/2026/NRML#2 ORDER SELESAI" [ref=f8e709]:
+                  - generic [ref=f8e710]: 20260826-06507
+                  - generic [ref=f8e711]: LELANGIK/02/2026/NRML#2
+                  - generic [ref=f8e712]: ORDER SELESAI
+                - 'cell "KM. Jaya Pemuatan : 26/08/2026 13:43 Closing : 26/08/2026 23:37" [ref=f8e713]':
+                  - generic [ref=f8e714]: KM. Jaya
+                  - generic [ref=f8e715]:
+                    - generic [ref=f8e716]: Pemuatan
+                    - text: ": 26/08/2026 13:43"
+                  - generic [ref=f8e717]:
+                    - generic [ref=f8e718]: Closing
+                    - text: ": 26/08/2026 23:37"
+                - cell "Dobo (DOB) 27/08/2026" [ref=f8e719]:
+                  - generic [ref=f8e720]: Dobo (DOB)
+                  - generic [ref=f8e721]: 27/08/2026
+                - cell "Bitung (BIT) 29/08/2026" [ref=f8e722]:
+                  - generic [ref=f8e723]: Bitung (BIT)
+                  - generic [ref=f8e724]: 29/08/2026
+                - cell "PT. Muda Jaya Wijaya Karya Sentosa Indah Elok (IK)" [ref=f8e725]
+                - cell "Rp. 420.000 1 x 20 ISOTANK" [ref=f8e727]:
+                  - generic [ref=f8e728]: Rp. 420.000
+                  - generic [ref=f8e729]: 1 x 20 ISOTANK
+                - cell [ref=f8e730]:
+                  - button "Action Menu" [ref=f8e732] [cursor=pointer]
+              - row [ref=f8e733]:
+                - cell "Info Order Info Tracking Detail Order Dokumen Aanwijzing" [ref=f8e734]:
+                  - generic [ref=f8e736]:
+                    - link "Info Order" [ref=f8e738] [cursor=pointer]:
+                      - /url: javascript:void(0)
+                    - link "Info Tracking" [ref=f8e740] [cursor=pointer]:
+                      - /url: javascript:void(0)
+                    - link "Detail Order" [ref=f8e742] [cursor=pointer]:
+                      - /url: order/orderdetail/bkpnSEZpTnVhQ1p6aDNYOEpYS0krUT09
+                    - generic [ref=f8e743] [cursor=pointer]: Dokumen Aanwijzing
+              - row [ref=f8e744]
+              - row [ref=f8e745]:
+                - cell "20260826-06506 LELANGIK/02/2026/NRML#2 PROSES VALIDASI" [ref=f8e746]:
+                  - generic [ref=f8e747]: 20260826-06506
+                  - generic [ref=f8e748]: LELANGIK/02/2026/NRML#2
+                  - generic [ref=f8e749]: PROSES VALIDASI
+                - 'cell "KM. Cahaya Mutiara Pemuatan : 28/08/2026 10:40 Closing : 28/08/2026 10:41" [ref=f8e750]':
+                  - generic [ref=f8e751]: KM. Cahaya Mutiara
+                  - generic [ref=f8e752]:
+                    - generic [ref=f8e753]: Pemuatan
+                    - text: ": 28/08/2026 10:40"
+                  - generic [ref=f8e754]:
+                    - generic [ref=f8e755]: Closing
+                    - text: ": 28/08/2026 10:41"
+                - cell "Dobo (DOB) 30/08/2026" [ref=f8e756]:
+                  - generic [ref=f8e757]: Dobo (DOB)
+                  - generic [ref=f8e758]: 30/08/2026
+                - cell "Bitung (BIT) 31/08/2026" [ref=f8e759]:
+                  - generic [ref=f8e760]: Bitung (BIT)
+                  - generic [ref=f8e761]: 31/08/2026
+                - cell "PT. Muda Jaya Wijaya Karya Sentosa Indah Elok (IK)" [ref=f8e762]
+                - cell "Rp. 43.225.000 1 x 20 DRY" [ref=f8e764]:
+                  - generic [ref=f8e765]: Rp. 43.225.000
+                  - generic [ref=f8e766]: 1 x 20 DRY
+                - cell [ref=f8e767]:
+                  - link "Validasi Order" [ref=f8e768] [cursor=pointer]:
+                    - /url: order/validasiOrder/MGp0a1ZzY1piUG5DcGJaQmJhNDUyZz09
+                  - button "Action Menu" [ref=f8e770] [cursor=pointer]
+              - row [ref=f8e771]:
+                - cell "Info Order Detail Order Dokumen Aanwijzing" [ref=f8e772]:
+                  - generic [ref=f8e774]:
+                    - link "Info Order" [ref=f8e776] [cursor=pointer]:
+                      - /url: javascript:void(0)
+                    - link "Detail Order" [ref=f8e778] [cursor=pointer]:
+                      - /url: order/orderdetail/MGp0a1ZzY1piUG5DcGJaQmJhNDUyZz09
+                    - generic [ref=f8e779] [cursor=pointer]: Dokumen Aanwijzing
+              - row [ref=f8e780]
+              - row [ref=f8e781]:
+                - cell "20260826-06505 LELANGIK/02/2026/NRML#2 PROSES PENUGASAN" [ref=f8e782]:
+                  - generic [ref=f8e783]: 20260826-06505
+                  - generic [ref=f8e784]: LELANGIK/02/2026/NRML#2
+                  - generic [ref=f8e785]: PROSES PENUGASAN
+                - 'cell "KM. IK Pemuatan : 29/08/2026 10:14 Closing : 04/10/2026 09:10" [ref=f8e786]':
+                  - generic [ref=f8e787]: KM. IK
+                  - generic [ref=f8e788]:
+                    - generic [ref=f8e789]: Pemuatan
+                    - text: ": 29/08/2026 10:14"
+                  - generic [ref=f8e790]:
+                    - generic [ref=f8e791]: Closing
+                    - text: ": 04/10/2026 09:10"
+                - cell "Dobo (DOB) 05/10/2026" [ref=f8e792]:
+                  - generic [ref=f8e793]: Dobo (DOB)
+                  - generic [ref=f8e794]: 05/10/2026
+                - cell "Bitung (BIT) 10/10/2026" [ref=f8e795]:
+                  - generic [ref=f8e796]: Bitung (BIT)
+                  - generic [ref=f8e797]: 10/10/2026
+                - cell "PT. Muda Jaya Wijaya Karya Sentosa Indah Elok (IK)" [ref=f8e798]
+                - cell "Rp. 31.500.000 1 x 20 DRY" [ref=f8e800]:
+                  - generic [ref=f8e801]: Rp. 31.500.000
+                  - generic [ref=f8e802]: 1 x 20 DRY
+                - cell [ref=f8e803]:
+                  - button "Action Menu" [ref=f8e805] [cursor=pointer]
+              - row [ref=f8e806]:
+                - cell "Info Order Info Tracking Detail Order Dokumen Aanwijzing" [ref=f8e807]:
+                  - generic [ref=f8e809]:
+                    - link "Info Order" [ref=f8e811] [cursor=pointer]:
+                      - /url: javascript:void(0)
+                    - link "Info Tracking" [ref=f8e813] [cursor=pointer]:
+                      - /url: javascript:void(0)
+                    - link "Detail Order" [ref=f8e815] [cursor=pointer]:
+                      - /url: order/orderdetail/NkZkZjRwa0wxMDdsdGRIZkdhczU2dz09
+                    - generic [ref=f8e816] [cursor=pointer]: Dokumen Aanwijzing
+              - row [ref=f8e817]
+              - row [ref=f8e818]:
+                - cell "20260826-06504 LELANGIK/02/2026/NRML#2 PROSES PENUGASAN" [ref=f8e819]:
+                  - generic [ref=f8e820]: 20260826-06504
+                  - generic [ref=f8e821]: LELANGIK/02/2026/NRML#2
+                  - generic [ref=f8e822]: PROSES PENUGASAN
+                - 'cell "KM. IK gggh Pemuatan : 28/08/2026 10:11 Closing : 04/10/2026 09:10" [ref=f8e823]':
+                  - generic [ref=f8e824]: KM. IK gggh
+                  - generic [ref=f8e825]:
+                    - generic [ref=f8e826]: Pemuatan
+                    - text: ": 28/08/2026 10:11"
+                  - generic [ref=f8e827]:
+                    - generic [ref=f8e828]: Closing
+                    - text: ": 04/10/2026 09:10"
+                - cell "Dobo (DOB) 05/10/2026" [ref=f8e829]:
+                  - generic [ref=f8e830]: Dobo (DOB)
+                  - generic [ref=f8e831]: 05/10/2026
+                - cell "Bitung (BIT) 10/10/2026" [ref=f8e832]:
+                  - generic [ref=f8e833]: Bitung (BIT)
+                  - generic [ref=f8e834]: 10/10/2026
+                - cell "PT. Muda Jaya Wijaya Karya Sentosa Indah Elok (IK)" [ref=f8e835]
+                - cell "Rp. 31.500.000 2 x 20 DRY" [ref=f8e837]:
+                  - generic [ref=f8e838]: Rp. 31.500.000
+                  - generic [ref=f8e839]: 2 x 20 DRY
+                - cell [ref=f8e840]:
+                  - button "Action Menu" [ref=f8e842] [cursor=pointer]
+              - row [ref=f8e843]:
+                - cell "Info Order Info Tracking Detail Order Dokumen Aanwijzing" [ref=f8e844]:
+                  - generic [ref=f8e846]:
+                    - link "Info Order" [ref=f8e848] [cursor=pointer]:
+                      - /url: javascript:void(0)
+                    - link "Info Tracking" [ref=f8e850] [cursor=pointer]:
+                      - /url: javascript:void(0)
+                    - link "Detail Order" [ref=f8e852] [cursor=pointer]:
+                      - /url: order/orderdetail/RE92b0NsejJadUpvWTArZ2FhN0w2QT09
+                    - generic [ref=f8e853] [cursor=pointer]: Dokumen Aanwijzing
+              - row [ref=f8e854]
+              - row [ref=f8e855]:
+                - cell "20260826-06503 LELANGIK/02/2026/NRML#2 PROSES PENUGASAN" [ref=f8e856]:
+                  - generic [ref=f8e857]: 20260826-06503
+                  - generic [ref=f8e858]: LELANGIK/02/2026/NRML#2
+                  - generic [ref=f8e859]: PROSES PENUGASAN
+                - 'cell "KM. IK Pemuatan : 28/08/2026 10:03 Closing : 04/10/2026 09:10" [ref=f8e860]':
+                  - generic [ref=f8e861]: KM. IK
+                  - generic [ref=f8e862]:
+                    - generic [ref=f8e863]: Pemuatan
+                    - text: ": 28/08/2026 10:03"
+                  - generic [ref=f8e864]:
+                    - generic [ref=f8e865]: Closing
+                    - text: ": 04/10/2026 09:10"
+                - cell "Dobo (DOB) 05/10/2026" [ref=f8e866]:
+                  - generic [ref=f8e867]: Dobo (DOB)
+                  - generic [ref=f8e868]: 05/10/2026
+                - cell "Bitung (BIT) 10/10/2026" [ref=f8e869]:
+                  - generic [ref=f8e870]: Bitung (BIT)
+                  - generic [ref=f8e871]: 10/10/2026
+                - cell "PT. Muda Jaya Wijaya Karya Sentosa Indah Elok (IK)" [ref=f8e872]
+                - cell "Rp. 19.500.000 1 x 20 DRY" [ref=f8e874]:
+                  - generic [ref=f8e875]: Rp. 19.500.000
+                  - generic [ref=f8e876]: 1 x 20 DRY
+                - cell [ref=f8e877]:
+                  - button "Action Menu" [ref=f8e879] [cursor=pointer]
+              - row [ref=f8e880]:
+                - cell "Info Order Info Tracking Detail Order Dokumen Aanwijzing" [ref=f8e881]:
+                  - generic [ref=f8e883]:
+                    - link "Info Order" [ref=f8e885] [cursor=pointer]:
+                      - /url: javascript:void(0)
+                    - link "Info Tracking" [ref=f8e887] [cursor=pointer]:
+                      - /url: javascript:void(0)
+                    - link "Detail Order" [ref=f8e889] [cursor=pointer]:
+                      - /url: order/orderdetail/R1pCUEhFZmkxb0toRVk3MEJTbnJWUT09
+                    - generic [ref=f8e890] [cursor=pointer]: Dokumen Aanwijzing
+              - row [ref=f8e891]
+              - row [ref=f8e892]:
+                - cell "20260826-06502 LELANGIK/02/2026/NRML#2 PROSES PENUGASAN" [ref=f8e893]:
+                  - generic [ref=f8e894]: 20260826-06502
+                  - generic [ref=f8e895]: LELANGIK/02/2026/NRML#2
+                  - generic [ref=f8e896]: PROSES PENUGASAN
+                - 'cell "KM. IK Pemuatan : 27/08/2026 09:23 Closing : 04/10/2026 09:10" [ref=f8e897]':
+                  - generic [ref=f8e898]: KM. IK
+                  - generic [ref=f8e899]:
+                    - generic [ref=f8e900]: Pemuatan
+                    - text: ": 27/08/2026 09:23"
+                  - generic [ref=f8e901]:
+                    - generic [ref=f8e902]: Closing
+                    - text: ": 04/10/2026 09:10"
+                - cell "Dobo (DOB) 05/10/2026" [ref=f8e903]:
+                  - generic [ref=f8e904]: Dobo (DOB)
+                  - generic [ref=f8e905]: 05/10/2026
+                - cell "Bitung (BIT) 10/10/2026" [ref=f8e906]:
+                  - generic [ref=f8e907]: Bitung (BIT)
+                  - generic [ref=f8e908]: 10/10/2026
+                - cell "PT. Muda Jaya Wijaya Karya Sentosa Indah Elok (IK)" [ref=f8e909]
+                - cell "Rp. 20.000.000 1 x 20 DRY" [ref=f8e911]:
+                  - generic [ref=f8e912]: Rp. 20.000.000
+                  - generic [ref=f8e913]: 1 x 20 DRY
+                - cell [ref=f8e914]:
+                  - button "Action Menu" [ref=f8e916] [cursor=pointer]
+              - row [ref=f8e917]:
+                - cell "Info Order Info Tracking Detail Order Dokumen Aanwijzing" [ref=f8e918]:
+                  - generic [ref=f8e920]:
+                    - link "Info Order" [ref=f8e922] [cursor=pointer]:
+                      - /url: javascript:void(0)
+                    - link "Info Tracking" [ref=f8e924] [cursor=pointer]:
+                      - /url: javascript:void(0)
+                    - link "Detail Order" [ref=f8e926] [cursor=pointer]:
+                      - /url: order/orderdetail/b2V4ME8rQ1NRZVY1d2ZNMDBCSzhKQT09
+                    - generic [ref=f8e927] [cursor=pointer]: Dokumen Aanwijzing
+              - row [ref=f8e928]
+          - generic [ref=f8e929]:
+            - status [ref=f8e181]:
+              - status [ref=f8e930]: Menampilkan 1 sampai 100 dari 1453 data
+            - list [ref=f8e931]:
+              - listitem [ref=f8e932]:
+                - generic [ref=f8e933] [cursor=pointer]: "1"
+              - listitem [ref=f8e934]:
+                - generic [ref=f8e935] [cursor=pointer]: "2"
+              - listitem [ref=f8e936]:
+                - generic [ref=f8e937] [cursor=pointer]: "3"
+              - listitem [ref=f8e938]:
+                - generic [ref=f8e939] [cursor=pointer]: "4"
+              - listitem [ref=f8e940]:
+                - generic [ref=f8e941] [cursor=pointer]: "5"
+              - listitem [ref=f8e942]:
+                - generic "Selanjutnya" [ref=f8e943] [cursor=pointer]: Selanjutnya »
+              - listitem [ref=f8e944]:
+                - generic "Akhir" [ref=f8e945] [cursor=pointer]: Akhir »
+        - paragraph [ref=f8e189]: © BETA 20260228 v1.3.28 - PH Bid Laut | Digital Logistic Platform
+  - text:    

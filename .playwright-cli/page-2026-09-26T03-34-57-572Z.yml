@@ -1,0 +1,191 @@
+- generic [active] [ref=f14e1]:
+  - generic [ref=f14e2]:
+    - generic [ref=f14e3]:
+      - generic [ref=f14e4]:
+        - link [ref=f14e6] [cursor=pointer]:
+          - /url: https://phbidlautdemo.prahu-hub.com/
+        - button [ref=f14e10] [cursor=pointer]
+      - text:  
+      - generic [ref=f14e13]:
+        - generic [ref=f14e14]:
+          - generic [ref=f14e15]: PT. Cipta Karya Abadi Sejahtera Sentora Mujur Selalu
+          - button "Shipper" [ref=f14e17]
+        - generic [ref=f14e21]:
+          - generic [ref=f14e22]:
+            - generic [ref=f14e23]: Jaya Wijaya Kartika Abadi Sentosa Wijaya Jaya
+            - generic [ref=f14e24]: pengirim.ph2021@gmail.com
+          - img "assets/photo/1000002490.png" [ref=f14e26]
+          - link "" [ref=f14e27] [cursor=pointer]:
+            - /url: https://phbidlautdemo.prahu-hub.com/home/notification
+          - link [ref=f14e34] [cursor=pointer]:
+            - /url: https://phbidlautdemo.prahu-hub.com/user/do_logout
+    - generic [ref=f14e37]:
+      - generic [ref=f14e38]:
+        - text: 
+        - generic [ref=f14e39]:
+          - list [ref=f14e41]:
+            - listitem
+            - listitem [ref=f14e42]:
+              - link "CARI PENAWARAN" [ref=f14e43] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/lelang/carirute
+            - listitem [ref=f14e44]:
+              - generic [ref=f14e45] [cursor=pointer]:
+                - text: DASHBOARD
+                - generic [ref=f14e48]: 
+            - listitem [ref=f14e49]:
+              - generic [ref=f14e50] [cursor=pointer]:
+                - text: ANALITIK
+                - generic [ref=f14e53]: 
+              - list [ref=f14e54]:
+                - listitem [ref=f14e55]:
+                  - link "Shipping Cost Sales Ratio" [ref=f14e56] [cursor=pointer]:
+                    - /url: https://phbidlautdemo.prahu-hub.com/home/analitikscsr
+                - listitem [ref=f14e57]:
+                  - link "Freight Cost" [ref=f14e58] [cursor=pointer]:
+                    - /url: https://phbidlautdemo.prahu-hub.com/analitik/analitikfcu
+                - listitem [ref=f14e59]:
+                  - link "On Time Delivery Rate" [ref=f14e60] [cursor=pointer]:
+                    - /url: https://phbidlautdemo.prahu-hub.com/analitik/analitikotdr
+                - listitem [ref=f14e61]:
+                  - link "Shipment Accuracy" [ref=f14e62] [cursor=pointer]:
+                    - /url: https://phbidlautdemo.prahu-hub.com/home/analitikshipmentaccuracy
+            - listitem [ref=f14e63]:
+              - link "PENGAJUAN LELANG" [ref=f14e64] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/lelang/listlelang
+            - listitem [ref=f14e67]:
+              - link "PENGAJUAN NEGO" [ref=f14e68] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/lelang/pengajuannego
+            - listitem [ref=f14e71]:
+              - link "DAFTAR ORDER" [ref=f14e72] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/order/OrderList
+            - listitem [ref=f14e75]:
+              - generic [ref=f14e76] [cursor=pointer]:
+                - text: MASTER
+                - generic [ref=f14e79]: 
+            - listitem [ref=f14e80]:
+              - link "CEK JADWAL" [ref=f14e81] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/lelang/carijadwal
+            - listitem [ref=f14e84]:
+              - generic [ref=f14e85] [cursor=pointer]:
+                - text: LAPORAN
+                - generic [ref=f14e88]: 
+            - listitem [ref=f14e89]:
+              - generic [ref=f14e90] [cursor=pointer]:
+                - text: PENGATURAN AKUN
+                - generic [ref=f14e93]: 
+            - listitem [ref=f14e94]:
+              - link "PREFERENCE NOTIF" [ref=f14e95] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/home/preferenceNotifBidowner
+            - listitem [ref=f14e98]:
+              - link "AKUN SAYA" [ref=f14e99] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/home/akunsaya
+          - generic [ref=f14e104]:
+            - paragraph [ref=f14e106]: KONTAK KAMI
+            - generic [ref=f14e107]:
+              - generic [ref=f14e108]: 
+              - text: "081246665023"
+            - generic [ref=f14e109]:
+              - generic [ref=f14e110]: 
+              - text: "081246665023"
+            - generic [ref=f14e111]:
+              - generic [ref=f14e112]: 
+              - text: csct@prahu-hub.com
+            - generic [ref=f14e113]:
+              - link [ref=f14e114] [cursor=pointer]:
+                - /url: https://facebook.com/sosmed.phbid
+              - link [ref=f14e116] [cursor=pointer]:
+                - /url: https://twitter.com/PrahuHub
+              - link [ref=f14e118] [cursor=pointer]:
+                - /url: https://instagram.com/phbid_/
+              - link [ref=f14e120] [cursor=pointer]:
+                - /url: https://www.youtube.com/channel/UC41VntroP3zKmXZYnGgtFdw
+              - link [ref=f14e122] [cursor=pointer]:
+                - /url: http://linkedin.com/in/ph-bid-aa5393211/
+      - generic [ref=f14e124]:
+        - generic [ref=f14e125]:
+          - generic [ref=f14e128]:
+            - link "Beranda" [ref=f14e130] [cursor=pointer]:
+              - /url: https://phbidlautdemo.prahu-hub.com/lelang/carirute
+            - text: /
+            - link "Shipping Cost Sales Ratio" [ref=f14e132] [cursor=pointer]:
+              - /url: https://phbidlautdemo.prahu-hub.com/home/analitikscsr?session_get=exp_6ab73cf432c353.62648248&ShipperID=65
+            - text: "/ Detail Data : Kota"
+          - generic [ref=f14e134]:
+            - paragraph [ref=f14e135]: SHIPPING COST SALES RATIO
+            - button " Kembali" [ref=f14e136] [cursor=pointer]:
+              - generic [ref=f14e137]: 
+              - text: Kembali
+          - generic [ref=f14e138]:
+            - generic [ref=f14e139]: DATA BY PROVINSI
+            - generic [ref=f14e141]:
+              - generic [ref=f14e142]:
+                - text: Tanggal Permintaan Muat
+                - generic [ref=f14e143]: ":"
+              - generic [ref=f14e144]: 01/01/2026 - 30/09/2026
+            - generic [ref=f14e145]:
+              - generic [ref=f14e146]:
+                - text: Provinsi Tujuan
+                - generic [ref=f14e147]: ":"
+              - generic [ref=f14e148]: Sulawesi Tengah
+            - generic [ref=f14e149]:
+              - generic [ref=f14e150]:
+                - text: Total Biaya Pengiriman
+                - generic [ref=f14e151]: ":"
+              - generic [ref=f14e152]: 44.801.525
+            - generic [ref=f14e153]:
+              - generic [ref=f14e154]:
+                - text: Total Harga Barang
+                - generic [ref=f14e155]: ":"
+              - generic [ref=f14e156]: 2.865.959.803.312
+            - generic [ref=f14e157]:
+              - generic [ref=f14e158]:
+                - text: Logistic Cost Ratio
+                - generic [ref=f14e159]: ":"
+              - generic [ref=f14e160]: 0%
+          - generic [ref=f14e163]:
+            - generic [ref=f14e164]:
+              - generic [ref=f14e165]: "DATA ANALITIK : BY KOTA"
+              - button "Export Data By" [expanded] [ref=f14e169] [cursor=pointer]
+            - table [ref=f14e170]:
+              - rowgroup [ref=f14e171]:
+                - row [ref=f14e172]:
+                  - columnheader "No " [ref=f14e173] [cursor=pointer]:
+                    - generic [ref=f14e174]:
+                      - generic [ref=f14e175]: "No"
+                      - generic [ref=f14e176]: 
+                  - columnheader "Kota / Kab. Asal " [ref=f14e178] [cursor=pointer]:
+                    - generic [ref=f14e179]:
+                      - generic [ref=f14e180]: Kota / Kab. Asal
+                      - generic [ref=f14e181]: 
+                  - columnheader "Kota / Kab. Tujuan  " [ref=f14e183] [cursor=pointer]:
+                    - generic [ref=f14e184]:
+                      - generic [ref=f14e185]:
+                        - text: Kota / Kab. Tujuan
+                        - generic [ref=f14e186]: 
+                      - generic [ref=f14e187]: 
+                  - columnheader "Jumlah Order " [ref=f14e189] [cursor=pointer]:
+                    - generic [ref=f14e190]:
+                      - generic [ref=f14e191]: Jumlah Order
+                      - generic [ref=f14e192]: 
+                  - columnheader "Total Biaya Pengiriman (Rp) " [ref=f14e194] [cursor=pointer]:
+                    - generic [ref=f14e195]:
+                      - generic [ref=f14e196]: Total BiayaPengiriman (Rp)
+                      - generic [ref=f14e197]: 
+                  - columnheader "Total Harga Barang (Rp) " [ref=f14e199] [cursor=pointer]:
+                    - generic [ref=f14e200]:
+                      - generic [ref=f14e201]: Total HargaBarang (Rp)
+                      - generic [ref=f14e202]: 
+                  - columnheader "Logistic Cost Ratio (%)  " [ref=f14e204] [cursor=pointer]:
+                    - generic [ref=f14e205]:
+                      - generic [ref=f14e206]:
+                        - text: Logistic Cost Ratio (%)
+                        - generic [ref=f14e207]: 
+                      - generic [ref=f14e208]: 
+                  - columnheader "Aksi" [ref=f14e210]
+                - row [ref=f14e211]:
+                  - cell [ref=f14e212]
+              - rowgroup [ref=f14e213]:
+                - row [ref=f14e214]:
+                  - cell [ref=f14e215]
+        - paragraph [ref=f14e226]: © BETA 20260228 v1.3.28 - PH Bid Laut | Digital Logistic Platform
+  - text:  

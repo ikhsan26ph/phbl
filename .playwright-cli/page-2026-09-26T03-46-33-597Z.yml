@@ -1,0 +1,452 @@
+- generic [active] [ref=f28e1]:
+  - generic [ref=f28e2]:
+    - generic [ref=f28e3]:
+      - generic [ref=f28e4]:
+        - link [ref=f28e6] [cursor=pointer]:
+          - /url: https://phbidlautdemo.prahu-hub.com/
+        - button [ref=f28e10] [cursor=pointer]
+      - text:  
+      - generic [ref=f28e13]:
+        - generic [ref=f28e14]:
+          - generic [ref=f28e15]: PT. Cipta Karya Abadi Sejahtera Sentora Mujur Selalu
+          - button "Shipper" [ref=f28e17]
+        - generic [ref=f28e21]:
+          - generic [ref=f28e22]:
+            - generic [ref=f28e23]: Jaya Wijaya Kartika Abadi Sentosa Wijaya Jaya
+            - generic [ref=f28e24]: pengirim.ph2021@gmail.com
+          - img "assets/photo/1000002490.png" [ref=f28e26]
+          - link "" [ref=f28e27] [cursor=pointer]:
+            - /url: https://phbidlautdemo.prahu-hub.com/home/notification
+          - link [ref=f28e34] [cursor=pointer]:
+            - /url: https://phbidlautdemo.prahu-hub.com/user/do_logout
+    - generic [ref=f28e37]:
+      - generic [ref=f28e38]:
+        - text: 
+        - generic [ref=f28e39]:
+          - list [ref=f28e41]:
+            - listitem
+            - listitem [ref=f28e42]:
+              - link "CARI PENAWARAN" [ref=f28e43] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/lelang/carirute
+            - listitem [ref=f28e44]:
+              - generic [ref=f28e45] [cursor=pointer]:
+                - text: DASHBOARD
+                - generic [ref=f28e48]: 
+            - listitem [ref=f28e49]:
+              - generic [ref=f28e50] [cursor=pointer]:
+                - text: ANALITIK
+                - generic [ref=f28e53]: 
+            - listitem [ref=f28e54]:
+              - link "PENGAJUAN LELANG" [ref=f28e55] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/lelang/listlelang
+            - listitem [ref=f28e58]:
+              - link "PENGAJUAN NEGO" [ref=f28e59] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/lelang/pengajuannego
+            - listitem [ref=f28e62]:
+              - link "DAFTAR ORDER" [ref=f28e63] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/order/OrderList
+            - listitem [ref=f28e66]:
+              - generic [ref=f28e67] [cursor=pointer]:
+                - text: MASTER
+                - generic [ref=f28e70]: 
+            - listitem [ref=f28e71]:
+              - link "CEK JADWAL" [ref=f28e72] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/lelang/carijadwal
+            - listitem [ref=f28e75]:
+              - generic [ref=f28e76] [cursor=pointer]:
+                - text: LAPORAN
+                - generic [ref=f28e79]: 
+            - listitem [ref=f28e80]:
+              - generic [ref=f28e81] [cursor=pointer]:
+                - text: PENGATURAN AKUN
+                - generic [ref=f28e84]: 
+            - listitem [ref=f28e85]:
+              - link "PREFERENCE NOTIF" [ref=f28e86] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/home/preferenceNotifBidowner
+            - listitem [ref=f28e89]:
+              - link "AKUN SAYA" [ref=f28e90] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/home/akunsaya
+          - generic [ref=f28e95]:
+            - paragraph [ref=f28e97]: KONTAK KAMI
+            - generic [ref=f28e98]:
+              - generic [ref=f28e99]: 
+              - text: "081246665023"
+            - generic [ref=f28e100]:
+              - generic [ref=f28e101]: 
+              - text: "081246665023"
+            - generic [ref=f28e102]:
+              - generic [ref=f28e103]: 
+              - text: csct@prahu-hub.com
+            - generic [ref=f28e104]:
+              - link [ref=f28e105] [cursor=pointer]:
+                - /url: https://facebook.com/sosmed.phbid
+              - link [ref=f28e107] [cursor=pointer]:
+                - /url: https://twitter.com/PrahuHub
+              - link [ref=f28e109] [cursor=pointer]:
+                - /url: https://instagram.com/phbid_/
+              - link [ref=f28e111] [cursor=pointer]:
+                - /url: https://www.youtube.com/channel/UC41VntroP3zKmXZYnGgtFdw
+              - link [ref=f28e113] [cursor=pointer]:
+                - /url: http://linkedin.com/in/ph-bid-aa5393211/
+      - generic [ref=f28e115]:
+        - generic [ref=f28e116]:
+          - generic [ref=f28e119]:
+            - link "Beranda" [ref=f28e121] [cursor=pointer]:
+              - /url: https://phbidlautdemo.prahu-hub.com/lelang/carirute
+            - text: /
+            - link "Daftar Order" [ref=f28e123] [cursor=pointer]:
+              - /url: https://phbidlautdemo.prahu-hub.com/order/orderlist
+            - text: "/ Detail Order : 20260624-06501"
+          - generic [ref=f28e125]:
+            - text: "ID ORDER : 20260624-06501"
+            - link [ref=f28e126] [cursor=pointer]:
+              - /url: https://phbidlautdemo.prahu-hub.com/order/orderlist
+              - button " Kembali" [ref=f28e127]:
+                - generic [ref=f28e128]: 
+                - text: Kembali
+          - generic [ref=f28e129]:
+            - generic [ref=f28e130]:
+              - generic [ref=f28e131]:
+                - tabpanel [ref=f28e133]:
+                  - generic [ref=f28e137]:
+                    - generic [ref=f28e138]: DETAIL PEMESAN
+                    - generic [ref=f28e139]:
+                      - generic [ref=f28e140]: Jaya Wijaya Kartika Abadi Sentosa Wijaya Jaya
+                      - text: pengirim.ph2021@gmail.com
+                    - generic [ref=f28e141]:
+                      - generic [ref=f28e142]: PT. Cipta Karya Abadi Sejahtera Sentora Mujur Selalu
+                      - generic [ref=f28e143]: Kab. Pesisir Selatan
+                      - generic [ref=f28e144]: Jl. Mayjen Sungkono No.89, Gn. Sari, Kec. Dukuhpakis, Surabaya, Jawa Timur 6022569
+                - tabpanel [ref=f28e146]:
+                  - generic [ref=f28e148]:
+                    - generic [ref=f28e149]: DETAIL ORDER
+                    - generic [ref=f28e150]:
+                      - generic [ref=f28e151]:
+                        - text: Dokumen Aanwijzing
+                        - generic [ref=f28e152]: ":"
+                      - generic [ref=f28e153]: Aanwijzing PT. Primax Geo Sejahtera
+                      - generic [ref=f28e154]:
+                        - text: Nomor Order
+                        - generic [ref=f28e155]: ":"
+                      - generic [ref=f28e156]: 20260624-06501
+                      - generic [ref=f28e157]:
+                        - text: Tanggal Buat Order
+                        - generic [ref=f28e158]: ":"
+                      - generic [ref=f28e159]: 24/06/2026 15:31
+                      - generic [ref=f28e160]:
+                        - text: Tanggal Submit Perjanjian
+                        - generic [ref=f28e161]: ":"
+                      - generic [ref=f28e162]: 24/06/2026 15:32
+                      - generic [ref=f28e163]:
+                        - text: Nomor Referensi
+                        - generic [ref=f28e164]: ":"
+                      - generic [ref=f28e165]: "-"
+                      - generic [ref=f28e166]:
+                        - text: Alasan Memesan Rute Ini
+                        - generic [ref=f28e167]: ":"
+                      - generic [ref=f28e168]: "-"
+                      - generic [ref=f28e169]:
+                        - text: Permintaan Muat
+                        - generic [ref=f28e170]: ":"
+                      - generic [ref=f28e171]: 07/07/2026 15:31
+                      - generic [ref=f28e172]:
+                        - text: Deskripsi Umum Barang
+                        - generic [ref=f28e173]: ":"
+                      - generic [ref=f28e174]: "1997"
+                      - generic [ref=f28e175]:
+                        - text: Catatan Untuk Transporter
+                        - generic [ref=f28e176]: ":"
+                      - generic [ref=f28e177]: "-"
+                    - alert [ref=f28e178]: "Rencana Dooring : Pengiriman sedang diproses."
+                - text:   
+              - paragraph [ref=f28e181] [cursor=pointer]:
+                - text: 3. STATUS PENGIRIMAN
+                - generic [ref=f28e182]: 
+              - generic [ref=f28e186]:
+                - generic [ref=f28e187]: DATA TRACKING
+                - generic [ref=f28e193]:
+                  - generic [ref=f28e194]: Rencana Dooring 3 (2/2) - 20/08/2026
+                  - text: DATA DETAIL
+                - generic [ref=f28e204]:
+                  - generic [ref=f28e205]: Rencana Dooring 2 (2/2) - 22/08/2026
+                  - text: DATA DETAIL
+                - generic [ref=f28e215]:
+                  - generic [ref=f28e216]: Rencana Dooring 1 (2/2) - 27/08/2026
+                  - text: DATA DETAIL
+                - generic [ref=f28e226]:
+                  - generic [ref=f28e227]: Kapal Sandar - 31/07/2026
+                  - text: DATA DETAIL
+                - generic [ref=f28e237]:
+                  - generic [ref=f28e238]: Kapal Berlayar - 31/07/2026
+                  - text: DATA DETAIL
+                - generic [ref=f28e248]:
+                  - generic [ref=f28e249]: Stuffing (2/2) - 31/07/2026
+                  - text: DATA DETAIL
+              - paragraph [ref=f28e257] [cursor=pointer]:
+                - text: 2. PERJANJIAN PENGIRIMAN
+                - generic [ref=f28e258]: 
+              - text: 
+              - paragraph [ref=f28e261] [cursor=pointer]:
+                - text: 1. PEMESANAN
+                - generic [ref=f28e262]: 
+              - generic [ref=f28e263]:
+                - tabpanel [ref=f28e266]:
+                  - generic [ref=f28e268]:
+                    - generic [ref=f28e269]: PEMUATAN BARANG
+                    - generic [ref=f28e270]:
+                      - generic [ref=f28e271]:
+                        - text: PIC Pemuatan
+                        - generic [ref=f28e272]: ":"
+                      - generic [ref=f28e273]: IK Deli Serdang
+                      - generic [ref=f28e274]:
+                        - text: Telepon / Whatsapp
+                        - generic [ref=f28e275]: ":"
+                      - generic [ref=f28e276]: "083830011881"
+                      - generic [ref=f28e277]:
+                        - text: Kota / Kab.
+                        - generic [ref=f28e278]: ":"
+                      - generic [ref=f28e279]: Kab. Deli Serdang
+                      - generic [ref=f28e280]:
+                        - text: Alamat Pemuatan Barang
+                        - generic [ref=f28e281]: ":"
+                      - generic [ref=f28e282]: PT. Indomarco Prismatama - JL. Industri Dusun 1 No. 60 Kel. Tanjung Morawa Kab. Deli Serdang 20582 Telp. (061) 7877060, 7877731, 7876852
+                - tabpanel [ref=f28e285]:
+                  - generic [ref=f28e287]:
+                    - generic [ref=f28e288]: PENERIMA BARANG
+                    - generic [ref=f28e289]:
+                      - generic [ref=f28e290]: Drop Off 1
+                      - generic [ref=f28e291]:
+                        - text: Nama / Perusahaan
+                        - generic [ref=f28e292]: ":"
+                      - generic [ref=f28e293]: PT. Perkasa Adi Makmur Sentosa
+                      - generic [ref=f28e294]:
+                        - text: PIC Penerimaan
+                        - generic [ref=f28e295]: ":"
+                      - generic [ref=f28e296]: IK Langkat
+                      - generic [ref=f28e297]:
+                        - text: Telepon / Whatsapp
+                        - generic [ref=f28e298]: ":"
+                      - generic [ref=f28e299]: "083830011881"
+                      - generic [ref=f28e300]:
+                        - text: Kota / Kab.
+                        - generic [ref=f28e301]: ":"
+                      - generic [ref=f28e302]: Kab. Langkat
+                      - generic [ref=f28e303]:
+                        - text: Alamat Penerimaan Barang
+                        - generic [ref=f28e304]: ":"
+                      - generic [ref=f28e305]: PT. Indomarco Prismatama - Jl. Lintas Sumatera Kel. Karang Rejo, Kec. Stabat, Kota Stabat, Kab. Langkat, Sumatera Utara 20811 || Pak Hariadi - Ketua TKBM Stabat 082166285795
+                      - generic [ref=f28e306]:
+                        - text: Nama Sales
+                        - generic [ref=f28e307]: ":"
+                      - generic [ref=f28e308]: "-"
+                      - generic [ref=f28e309]:
+                        - text: Nomor Sales
+                        - generic [ref=f28e310]: ":"
+                      - generic [ref=f28e311]: "-"
+                    - separator [ref=f28e312]
+                    - generic [ref=f28e313]:
+                      - generic [ref=f28e314]: Drop Off 2
+                      - generic [ref=f28e315]:
+                        - text: Nama / Perusahaan
+                        - generic [ref=f28e316]: ":"
+                      - generic [ref=f28e317]: PT. Tridatu Jaya
+                      - generic [ref=f28e318]:
+                        - text: PIC Penerimaan
+                        - generic [ref=f28e319]: ":"
+                      - generic [ref=f28e320]: IK Deli Serdang
+                      - generic [ref=f28e321]:
+                        - text: Telepon / Whatsapp
+                        - generic [ref=f28e322]: ":"
+                      - generic [ref=f28e323]: "083830011881"
+                      - generic [ref=f28e324]:
+                        - text: Kota / Kab.
+                        - generic [ref=f28e325]: ":"
+                      - generic [ref=f28e326]: Kab. Banggai Kepulauan
+                      - generic [ref=f28e327]:
+                        - text: Alamat Penerimaan Barang
+                        - generic [ref=f28e328]: ":"
+                      - generic [ref=f28e329]: Stock Point Indogrosir Mdn 1 (MEGAH DAYA INTI HARAPAN) Jl. Medan-Binjai Km.14 No.61 Kec. Medan Krio, Kel. Sunggal Deli Serdang, Sumatera Utara
+                      - generic [ref=f28e330]:
+                        - text: Nama Sales
+                        - generic [ref=f28e331]: ":"
+                      - generic [ref=f28e332]: "-"
+                      - generic [ref=f28e333]:
+                        - text: Nomor Sales
+                        - generic [ref=f28e334]: ":"
+                      - generic [ref=f28e335]: "-"
+                    - separator [ref=f28e336]
+                    - generic [ref=f28e337]:
+                      - generic [ref=f28e338]: Drop Off 3
+                      - generic [ref=f28e339]:
+                        - text: Nama / Perusahaan
+                        - generic [ref=f28e340]: ":"
+                      - generic [ref=f28e341]: PT. Indajaya
+                      - generic [ref=f28e342]:
+                        - text: PIC Penerimaan
+                        - generic [ref=f28e343]: ":"
+                      - generic [ref=f28e344]: Ik Bangka Barat
+                      - generic [ref=f28e345]:
+                        - text: Telepon / Whatsapp
+                        - generic [ref=f28e346]: ":"
+                      - generic [ref=f28e347]: "083830011881"
+                      - generic [ref=f28e348]:
+                        - text: Kota / Kab.
+                        - generic [ref=f28e349]: ":"
+                      - generic [ref=f28e350]: Kab. Bangka Barat
+                      - generic [ref=f28e351]:
+                        - text: Alamat Penerimaan Barang
+                        - generic [ref=f28e352]: ":"
+                      - generic [ref=f28e353]: CV. ALTAQNIA BANGKA ENGINEERING Simpang BTN, Jl. Taruma Negara, Karya Makmur, Kec. Pemali, Kabupaten Bangka, Kepulauan Bangka Belitung
+                      - generic [ref=f28e354]:
+                        - text: Nama Sales
+                        - generic [ref=f28e355]: ":"
+                      - generic [ref=f28e356]: "-"
+                      - generic [ref=f28e357]:
+                        - text: Nomor Sales
+                        - generic [ref=f28e358]: ":"
+                      - generic [ref=f28e359]: "-"
+                - tabpanel [ref=f28e362]:
+                  - generic [ref=f28e364]:
+                    - generic [ref=f28e365]: DATA MUATAN
+                    - generic [ref=f28e366]: 
+                    - link "Lihat Dokumen Packing List" [ref=f28e367] [cursor=pointer]:
+                      - /url: /order/orderdetail/a2xGMUNUTHdGSjFRMW1aMzN2dVNtUT09#
+                    - generic [ref=f28e369]:
+                      - paragraph [ref=f28e370]: UNIT 1
+                      - table [ref=f28e371]:
+                        - rowgroup [ref=f28e372]:
+                          - row [ref=f28e373]:
+                            - columnheader "Alamat Tujuan / Drop Off" [ref=f28e374]
+                            - columnheader "Jenis Muatan" [ref=f28e375]
+                            - columnheader "Kemasan" [ref=f28e376]
+                            - columnheader "Jumlah" [ref=f28e377]
+                            - columnheader "Berat (Kg)" [ref=f28e378]
+                        - rowgroup [ref=f28e379]:
+                          - row [ref=f28e380]:
+                            - cell "PT. Indomarco Prismatama - Jl. Lintas Sumatera Kel. Karang Rejo, Kec. Stabat, Kota Stabat, Kab. Langkat, Sumatera Utara 20811 || Pak Hariadi - Ketua TKBM Stabat 082166285795" [ref=f28e381]
+                            - cell "Premium" [ref=f28e382]
+                            - cell "ISO TANK" [ref=f28e383]
+                            - cell "15.000" [ref=f28e384]
+                            - cell "15.000" [ref=f28e385]
+                          - row [ref=f28e386]:
+                            - cell "Stock Point Indogrosir Mdn 1 (MEGAH DAYA INTI HARAPAN) Jl. Medan-Binjai Km.14 No.61 Kec. Medan Krio, Kel. Sunggal Deli Serdang, Sumatera Utara" [ref=f28e387]
+                            - cell "Premium" [ref=f28e388]
+                            - cell "ISO TANK" [ref=f28e389]
+                            - cell "15.000" [ref=f28e390]
+                            - cell "15.000" [ref=f28e391]
+                          - row [ref=f28e392]:
+                            - cell "CV. ALTAQNIA BANGKA ENGINEERING Simpang BTN, Jl. Taruma Negara, Karya Makmur, Kec. Pemali, Kabupaten Bangka, Kepulauan Bangka Belitung" [ref=f28e393]
+                            - cell "Premium" [ref=f28e394]
+                            - cell "ISO TANK" [ref=f28e395]
+                            - cell "15.000" [ref=f28e396]
+                            - cell "15.000" [ref=f28e397]
+                      - separator [ref=f28e398]
+                      - paragraph [ref=f28e399]: "Total Berat : 45.000 Kg"
+                    - generic [ref=f28e401]:
+                      - paragraph [ref=f28e402]: UNIT 2
+                      - table [ref=f28e403]:
+                        - rowgroup [ref=f28e404]:
+                          - row [ref=f28e405]:
+                            - columnheader "Alamat Tujuan / Drop Off" [ref=f28e406]
+                            - columnheader "Jenis Muatan" [ref=f28e407]
+                            - columnheader "Kemasan" [ref=f28e408]
+                            - columnheader "Jumlah" [ref=f28e409]
+                            - columnheader "Berat (Kg)" [ref=f28e410]
+                        - rowgroup [ref=f28e411]:
+                          - row [ref=f28e412]:
+                            - cell "PT. Indomarco Prismatama - Jl. Lintas Sumatera Kel. Karang Rejo, Kec. Stabat, Kota Stabat, Kab. Langkat, Sumatera Utara 20811 || Pak Hariadi - Ketua TKBM Stabat 082166285795" [ref=f28e413]
+                            - cell "Premium" [ref=f28e414]
+                            - cell "ISO TANK" [ref=f28e415]
+                            - cell "15.000" [ref=f28e416]
+                            - cell "15.000" [ref=f28e417]
+                          - row [ref=f28e418]:
+                            - cell "Stock Point Indogrosir Mdn 1 (MEGAH DAYA INTI HARAPAN) Jl. Medan-Binjai Km.14 No.61 Kec. Medan Krio, Kel. Sunggal Deli Serdang, Sumatera Utara" [ref=f28e419]
+                            - cell "Premium" [ref=f28e420]
+                            - cell "ISO TANK" [ref=f28e421]
+                            - cell "15.000" [ref=f28e422]
+                            - cell "15.000" [ref=f28e423]
+                          - row [ref=f28e424]:
+                            - cell "CV. ALTAQNIA BANGKA ENGINEERING Simpang BTN, Jl. Taruma Negara, Karya Makmur, Kec. Pemali, Kabupaten Bangka, Kepulauan Bangka Belitung" [ref=f28e425]
+                            - cell "Premium" [ref=f28e426]
+                            - cell "ISO TANK" [ref=f28e427]
+                            - cell "15.000" [ref=f28e428]
+                            - cell "15.000" [ref=f28e429]
+                      - separator [ref=f28e430]
+                      - paragraph [ref=f28e431]: "Total Berat : 45.000 Kg"
+            - generic [ref=f28e435]:
+              - tabpanel [ref=f28e437]:
+                - generic [ref=f28e439]:
+                  - generic [ref=f28e440]: PELAYARAN
+                  - generic [ref=f28e441]: KM. Lamunan
+                  - generic [ref=f28e445]:
+                    - generic [ref=f28e446]:
+                      - generic [ref=f28e447]: Voyage
+                      - generic [ref=f28e448]: ":"
+                      - generic [ref=f28e449]: KMLMN001
+                    - generic [ref=f28e450]:
+                      - generic [ref=f28e451]: Open Stack
+                      - generic [ref=f28e452]: ":"
+                      - generic [ref=f28e453]: "-"
+                    - generic [ref=f28e454]:
+                      - generic [ref=f28e455]: Closing
+                      - generic [ref=f28e456]: ":"
+                      - generic [ref=f28e457]: 08/07/2026 16:00
+              - tabpanel [ref=f28e459]:
+                - generic [ref=f28e461]:
+                  - generic [ref=f28e462]:
+                    - text: RUTE
+                    - generic [ref=f28e463] [cursor=pointer]:
+                      - text: Detail Rute
+                      - generic [ref=f28e464]: 
+                  - generic [ref=f28e465]:
+                    - generic [ref=f28e466]: Lelang
+                    - generic [ref=f28e467]: ":"
+                    - generic [ref=f28e468]: LELANG0004
+                  - generic [ref=f28e469]:
+                    - generic [ref=f28e470]:
+                      - generic [ref=f28e471]: DOB
+                      - generic [ref=f28e472]: Dobo
+                      - generic [ref=f28e473]: 08/07/2026
+                    - generic [ref=f28e474]: 
+                    - generic [ref=f28e476]:
+                      - generic [ref=f28e477]: BLW
+                      - generic [ref=f28e478]: Belawan
+                      - generic [ref=f28e479]: 15/07/2026
+                  - button "Rute Multidrop" [ref=f28e482]
+              - tabpanel [ref=f28e484]:
+                - generic [ref=f28e486]:
+                  - generic [ref=f28e487]:
+                    - text: HARGA PENGIRIMAN
+                    - generic [ref=f28e488] [cursor=pointer]:
+                      - text: Info Harga
+                      - generic [ref=f28e489]: 
+                  - generic [ref=f28e490]: PT. Muda Jaya Wijaya Karya Sentosa Indah Elok (IK)
+                  - generic [ref=f28e491]:
+                    - generic [ref=f28e492]:
+                      - text: Jenis
+                      - generic [ref=f28e493]: ":"
+                    - generic [ref=f28e494]: 40 OD
+                  - generic [ref=f28e495]:
+                    - generic [ref=f28e496]:
+                      - text: Harga Satuan
+                      - generic [ref=f28e497]: ":"
+                    - generic [ref=f28e498]: Rp. 8.584.000
+                  - generic [ref=f28e499]:
+                    - generic [ref=f28e500]:
+                      - text: Jumlah Dipesan
+                      - generic [ref=f28e501]: ":"
+                    - generic [ref=f28e502]: "2"
+                  - generic [ref=f28e503]:
+                    - generic [ref=f28e504]:
+                      - text: Total Harga Pengiriman
+                      - generic [ref=f28e505]: ":"
+                    - generic [ref=f28e506]: Rp. 17.168.000
+              - generic [ref=f28e508]:
+                - generic [ref=f28e509]: BIAYA LAYANAN
+                - generic [ref=f28e510]:
+                  - generic [ref=f28e511]:
+                    - text: Total Biaya Layanan
+                    - generic [ref=f28e512]: ":"
+                  - generic [ref=f28e513]: Rp. 20.000
+        - paragraph [ref=f28e523]: © BETA 20260228 v1.3.28 - PH Bid Laut | Digital Logistic Platform
+  - text:     

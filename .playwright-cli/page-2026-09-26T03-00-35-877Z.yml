@@ -1,0 +1,238 @@
+- generic [active] [ref=f11e1]:
+  - generic [ref=f11e2]:
+    - generic [ref=f11e3]:
+      - generic [ref=f11e4]:
+        - link [ref=f11e6] [cursor=pointer]:
+          - /url: https://phbidlautdemo.prahu-hub.com/
+        - button [ref=f11e10] [cursor=pointer]
+      - text:  
+      - generic [ref=f11e13]:
+        - generic [ref=f11e14]:
+          - generic [ref=f11e15]: Admin PH Bid
+          - button "Administrator" [ref=f11e17]
+        - text: 
+        - generic [ref=f11e21]:
+          - generic [ref=f11e22]:
+            - generic [ref=f11e23]: Admin PH Bid
+            - generic [ref=f11e24]: prahu.bid20@gmail.com
+          - generic [ref=f11e25]: 
+          - link "" [ref=f11e28] [cursor=pointer]:
+            - /url: https://phbidlautdemo.prahu-hub.com/home/notification
+          - link [ref=f11e35] [cursor=pointer]:
+            - /url: https://phbidlautdemo.prahu-hub.com/user/do_logout
+    - generic [ref=f11e38]:
+      - generic [ref=f11e39]:
+        - text: 
+        - generic [ref=f11e40]:
+          - list [ref=f11e42]:
+            - listitem
+            - listitem [ref=f11e43]:
+              - link "CARI PENAWARAN" [ref=f11e44] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/lelang/carirute
+            - listitem [ref=f11e45]: MENU ADMIN
+            - listitem [ref=f11e46]:
+              - generic [ref=f11e47] [cursor=pointer]:
+                - text: DASHBOARD
+                - generic [ref=f11e50]: 
+            - listitem [ref=f11e51]:
+              - generic [ref=f11e52] [cursor=pointer]:
+                - text: ANALITIK
+                - generic [ref=f11e55]: 
+            - listitem [ref=f11e56]:
+              - link "PENGAJUAN LELANG" [ref=f11e57] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/lelang/listlelang
+            - listitem [ref=f11e60]:
+              - link "PENGAJUAN NEGO" [ref=f11e61] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/lelang/pengajuannego
+            - listitem [ref=f11e64]:
+              - link [ref=f11e65] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/order/orderlist
+            - listitem [ref=f11e68]:
+              - link "PENUGASAN TRACKING" [ref=f11e69] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/home/penugasantracking
+            - listitem [ref=f11e72]:
+              - link "CEK JADWAL" [ref=f11e73] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/lelang/carijadwal
+            - listitem [ref=f11e76]:
+              - generic [ref=f11e77] [cursor=pointer]:
+                - text: LAPORAN
+                - generic [ref=f11e80]: 
+            - listitem [ref=f11e81]:
+              - generic [ref=f11e82] [cursor=pointer]:
+                - text: VALIDASI AKUN
+                - generic [ref=f11e85]: 
+            - listitem [ref=f11e86]:
+              - generic [ref=f11e87] [cursor=pointer]:
+                - text: SETTING
+                - generic [ref=f11e90]: 
+            - listitem [ref=f11e91]:
+              - generic [ref=f11e92] [cursor=pointer]:
+                - text: MASTER
+                - generic [ref=f11e95]: 
+            - listitem [ref=f11e96]:
+              - generic [ref=f11e97] [cursor=pointer]:
+                - text: PENGATURAN AKUN
+                - generic [ref=f11e100]: 
+            - listitem [ref=f11e101]:
+              - link "AKUN SAYA" [ref=f11e102] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/home/akunsaya
+            - listitem [ref=f11e105]: MENU TRANSPORTER
+            - listitem [ref=f11e106]:
+              - link "HARGA & JADWAL" [ref=f11e107] [cursor=pointer]:
+                - /url: https://phbidlautdemo.prahu-hub.com/home/hargajadwal
+          - generic [ref=f11e112]:
+            - paragraph [ref=f11e114]: KONTAK KAMI
+            - generic [ref=f11e115]:
+              - generic [ref=f11e116]: 
+              - text: "081246665023"
+            - generic [ref=f11e117]:
+              - generic [ref=f11e118]: 
+              - text: "081246665023"
+            - generic [ref=f11e119]:
+              - generic [ref=f11e120]: 
+              - text: csct@prahu-hub.com
+            - generic [ref=f11e121]:
+              - link [ref=f11e122] [cursor=pointer]:
+                - /url: https://facebook.com/sosmed.phbid
+              - link [ref=f11e124] [cursor=pointer]:
+                - /url: https://twitter.com/PrahuHub
+              - link [ref=f11e126] [cursor=pointer]:
+                - /url: https://instagram.com/phbid_/
+              - link [ref=f11e128] [cursor=pointer]:
+                - /url: https://www.youtube.com/channel/UC41VntroP3zKmXZYnGgtFdw
+              - link [ref=f11e130] [cursor=pointer]:
+                - /url: http://linkedin.com/in/ph-bid-aa5393211/
+      - generic [ref=f11e132]:
+        - generic [ref=f11e133]:
+          - generic [ref=f11e136]:
+            - link "Beranda" [ref=f11e138] [cursor=pointer]:
+              - /url: https://phbidlautdemo.prahu-hub.com/lelang/listLelang
+            - text: /
+            - link "Daftar Order" [ref=f11e140] [cursor=pointer]:
+              - /url: https://phbidlautdemo.prahu-hub.com/order/orderlist
+            - text: /
+            - link "Invoice" [ref=f11e142] [cursor=pointer]:
+              - /url: https://phbidlautdemo.prahu-hub.com/order/uploadinvoice/1429
+            - text: / Buat Invoice Pengiriman
+          - generic [ref=f11e144]:
+            - paragraph [ref=f11e145]: BUAT INVOICE
+            - button " Kembali" [ref=f11e146] [cursor=pointer]:
+              - generic [ref=f11e147]: 
+              - text: Kembali
+          - tabpanel [ref=f11e150]:
+            - generic [ref=f11e151]:
+              - generic [ref=f11e154]:
+                - generic [ref=f11e155]: INFORMASI PERUSAHAAN
+                - generic [ref=f11e157]:
+                  - generic [ref=f11e158]: Nama Perusahaan *
+                  - textbox "Masukkan Nama Perusahaan" [ref=f11e159]: PT. Muda Jaya Wijaya Karya Sentosa Indah Elok (IK)
+                - generic [ref=f11e161]:
+                  - generic [ref=f11e162]: Alamat Perusahaan *
+                  - textbox "Masukkan Alamat Perusahaan" [ref=f11e163]: Jalan Kalianak
+                - generic [ref=f11e165]:
+                  - generic [ref=f11e166]: Nomor Telepon
+                  - textbox "Masukkan Nomor Telepon" [ref=f11e167]: "0851550708691"
+                - generic [ref=f11e169]:
+                  - generic [ref=f11e170]: Alamat Email
+                  - textbox "Masukkan Alamat Email" [ref=f11e171]: partner.ph2021@gmail.com
+                - generic [ref=f11e172]: INFORMASI SHIPPER
+                - generic [ref=f11e174]:
+                  - generic [ref=f11e175]: Nama Shipper *
+                  - textbox "Masukkan Nama Shipper" [ref=f11e176]: PT. Cipta Karya Abadi Sejahtera Sentora Mujur Selalu
+                - generic [ref=f11e178]:
+                  - generic [ref=f11e179]: Alamat Shipper *
+                  - textbox "Masukkan Alamat Shipper" [ref=f11e180]: Jl. Mayjen Sungkono No.89, Gn. Sari, Kec. Dukuhpakis, Surabaya, Jawa Timur 6022569
+              - generic [ref=f11e182]:
+                - generic [ref=f11e183]:
+                  - generic [ref=f11e184]: INVOICE
+                  - generic [ref=f11e186]:
+                    - generic [ref=f11e187]: ID Order *
+                    - textbox "Masukkan ID Order" [disabled] [ref=f11e188]: 20260811-06501
+                  - generic [ref=f11e190]:
+                    - generic [ref=f11e191]: Nomor Invoice *
+                    - textbox "Masukkan Nomor Invoice" [ref=f11e192]
+                  - generic [ref=f11e194]:
+                    - generic [ref=f11e195]: Tanggal Invoice *
+                    - textbox "DD/MM/YYYY" [ref=f11e197]: 26/09/2026
+                  - generic [ref=f11e199]:
+                    - generic [ref=f11e200]: Tanggal Jatuh Tempo *
+                    - textbox "DD/MM/YYYY" [ref=f11e202]
+                  - generic [ref=f11e203]: "*) Anda berada pada form invoice jasa pengiriman"
+                  - generic [ref=f11e204]: INFORMASI HARGA
+                - table [ref=f11e205]:
+                  - rowgroup [ref=f11e206]:
+                    - row [ref=f11e207]:
+                      - columnheader "No" [ref=f11e208]
+                      - columnheader "Nama Item" [ref=f11e209]
+                      - columnheader "Harga (Rp.)" [ref=f11e210]
+                      - columnheader [ref=f11e211]
+                  - rowgroup [ref=f11e212]:
+                    - row [ref=f11e213]:
+                      - cell "1" [ref=f11e214]
+                      - cell [ref=f11e215]:
+                        - textbox "Masukkan Nama Biaya" [ref=f11e216]: 20 DRY (EMCU4234234) | Dobo (DOB) - Belawan (BLW) 7100399697, 7100399697, 7100399697
+                      - cell [ref=f11e217]:
+                        - textbox "Harga" [ref=f11e218]: 4.230.000
+                      - cell [ref=f11e219]
+                - button " Tambah Biaya Lainnya" [ref=f11e222] [cursor=pointer]:
+                  - generic [ref=f11e223]: 
+                  - text: Tambah Biaya Lainnya
+                - separator [ref=f11e224]
+                - generic [ref=f11e225]:
+                  - generic [ref=f11e226]:
+                    - paragraph [ref=f11e227]: "*) Komponen Harga"
+                    - generic [ref=f11e228]:
+                      - link "" [ref=f11e229] [cursor=pointer]:
+                        - /url: javascript:void(0)
+                      - generic [ref=f11e231]: PPN
+                      - generic [ref=f11e232]:
+                        - textbox "0" [ref=f11e234]: 1,1
+                        - generic [ref=f11e235]: "%"
+                    - generic [ref=f11e237]:
+                      - link "" [ref=f11e238] [cursor=pointer]:
+                        - /url: javascript:void(0)
+                      - generic [ref=f11e240]: PPh
+                      - generic [ref=f11e241]:
+                        - textbox "0" [ref=f11e243]: "2"
+                        - generic [ref=f11e244]: "%"
+                    - text: 
+                    - generic [ref=f11e247]:
+                      - generic [ref=f11e248]: 
+                      - text: Tambah Komponen Harga
+                  - table [ref=f11e250]:
+                    - rowgroup [ref=f11e251]:
+                      - row [ref=f11e252]:
+                        - cell "Total" [ref=f11e253]
+                        - cell "Rp. 4.230.000" [ref=f11e254]
+                      - row [ref=f11e255]:
+                        - cell "PPN" [ref=f11e256]
+                        - cell "Rp. 46.530" [ref=f11e257]
+                      - row [ref=f11e258]:
+                        - cell "PPh" [ref=f11e259]
+                        - cell "- Rp. 84.600" [ref=f11e260]
+                      - row [ref=f11e261]:
+                        - cell "Grand Total" [ref=f11e262]
+                        - cell "Rp. 4.191.930" [ref=f11e263]
+              - generic [ref=f11e266]:
+                - generic [ref=f11e267]: INFORMASI PEMBAYARAN
+                - generic [ref=f11e269]:
+                  - generic [ref=f11e270]: Nomor Rekening
+                  - textbox "Masukkan Nomor Rekening" [disabled] [ref=f11e271]: "42343240000"
+                  - text: Biaya pengiriman dibayarkan ke nomor tersebut
+                - generic [ref=f11e273]:
+                  - generic [ref=f11e274]: Nama Bank
+                  - textbox "Masukkan Nama Bank" [disabled] [ref=f11e275]: CIMB Niaga
+                - generic [ref=f11e277]:
+                  - generic [ref=f11e278]: Atas Nama
+                  - textbox "Masukkan Nomor Invoice" [disabled] [ref=f11e279]: Ikhsan
+                - generic [ref=f11e281]:
+                  - generic [ref=f11e282]: Catatan untuk Shipper
+                  - textbox "Masukkan Catatan (Bila ada)" [ref=f11e283]
+              - generic [ref=f11e285]:
+                - link "Batal" [ref=f11e286] [cursor=pointer]:
+                  - /url: https://phbidlautdemo.prahu-hub.com/order/uploadinvoice/1429
+                - button "Lanjutkan " [ref=f11e287] [cursor=pointer]:
+                  - text: Lanjutkan
+                  - generic [ref=f11e288]: 
+        - paragraph [ref=f11e294]: © BETA 20260228 v1.3.28 - PH Bid Laut | Digital Logistic Platform
+  - text:  
