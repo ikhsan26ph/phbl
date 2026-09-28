@@ -144,3 +144,26 @@ pengiriman (lihat `docs/rules/administrator/07-daftar-order.md` dan
   multidrop melainkan isi data order tersebut.
 - Order tanpa nomor referensi: Detail Order menampilkan strip "-", sedangkan
   nama item invoice TIDAK menambahkan baris kedua sama sekali.
+
+### Hasil audit mendalam 2026-09-28
+
+- **Jendela ketersediaan menu (terukur pada 100 order shipper)**: menu Input /
+  Edit Nomor Referensi ADA pada status ORDER BARU, PROSES VALIDASI, KONFIRMASI
+  UNIT, PROSES PENUGASAN, AMBIL KONTAINER, STUFFING; **TIDAK ADA** pada KAPAL
+  SANDAR, RENCANA DOORING, SJ DITERIMA AGEN, DOKUMEN DIKIRIM, ORDER SELESAI
+  (0 dari 26 order di tahap-tahap itu).
+- Karena Proses Invoice baru terbuka mulai **KAPAL SANDAR** (order tahap awal
+  ditolak: `/order/buatinvoice/<id>` → redirect + alert "Anda Tidak Memiliki
+  Akses Ke Halaman Tersebut"), **tidak ada satu tahap pun di mana shipper bisa
+  mengisi/memperbaiki No. Referensi untuk order yang sudah bisa diinvoice**.
+  Ini gap fungsional improve 2026-09 (didokumentasikan `test.fail()` di
+  `tests/shipper/nomor-referensi.spec.ts`).
+- **Admin punya jalur lain**: field `#nomor_referensi` tersedia di halaman
+  admin Edit Data Order (`/order/edit_inputpesanan/<hash>`) dengan nilai sama
+  seperti Detail Order — jadi pernyataan lama "admin tidak bisa mengubah nomor
+  referensi" HANYA berlaku untuk action menu, bukan untuk field ini. Halaman itu
+  sendiri ditolak untuk status ORDER SELESAI, sehingga setelah order selesai
+  nilainya tidak bisa diubah siapa pun lewat UI.
+- Shipper TIDAK punya menu Proses Invoice sama sekali (0 link
+  `order/uploadinvoice` pada 100 order) — pembuatan invoice hanya di sisi admin
+  & transporter.

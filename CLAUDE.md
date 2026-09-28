@@ -622,6 +622,47 @@ item menu itu TIDAK tersedia utk status ORDER BARU):
     rule menuntut alert penolakan. Test menelusuri beberapa lelang dan skip
     bila tak menemukan yang dinonaktifkan.
 
+15. (2026-09-28, audit improve SCSR) **Drill-down SCSR mengabaikan shipper
+    baris saat >1 shipper dipilih (sisi ADMIN)**. Dengan opsi "Pilih Semua",
+    klik "Detail Kota" pada baris shipper A membuka
+    `analitikscsrbykota?...&ShipperID=A` yang blok infonya benar (nama +
+    total A) TAPI tabelnya memuat pasangan kota milik shipper lain → baris
+    TOTAL tabel ≠ total di blok info pada halaman yang sama. Bukti: Haier +
+    Kalimantan Timur → blok info Rp 7.000.000, tabel 2 baris TOTAL
+    Rp 52.800.000 (Rp 45.800.000 milik Katalisator). Drill ke level 3
+    pasangan "asing" menampilkan order 20260829-02603 / 20260625-02604 /
+    20260625-02602 (pemesan Katalisator) di halaman ber-blok info "PT. Haier
+    Sales Indonesia". Dua `test.fail()` di `tests/admin/analitik-scsr.spec.ts`.
+    Sisi shipper AMAN: ShipperID/PilihKota/PilihKotaAsal yang dipalsukan di URL
+    tidak membuka data shipper lain (diassert di spec shipper) — jadi ini
+    akurasi laporan admin, bukan kebocoran antar tenant.
+16. (2026-09-28) **File export SCSR: Logistic Cost Ratio baris TOTAL berupa
+    pecahan mentah** (mis. `0.000015632293568188`) sedangkan baris data
+    memakai "0.01 %" dan layar "0%" — terjadi di ketiga level export.
+    `test.fail()` di `tests/shipper/analitik-scsr.spec.ts`.
+17. (2026-09-28) **Kolom baru "Jumlah Order" tidak ditotal** pada baris TOTAL
+    level 2 (sel kosong) padahal biaya/harga/ratio ditotal; sama di layar &
+    file export. `test.fail()` di spec shipper.
+18. (2026-09-28) **Nomor urut tidak mengikuti hasil sortir**: setelah sortir
+    kolom Kota Asal (POST `searchanalitikscsrkota` sortBy=kota_asal), baris
+    pertama bisa bernomor 2. `test.fail()` di spec shipper.
+19. (2026-09-28) **`session_get` tak dikenal** (link lama/bookmark): blok info
+    menulis "Tanggal Permintaan Muat : -" lalu menampilkan Total Order & total
+    biaya SELURUH periode (247 order / Rp 2.176.696.260) sementara tabelnya nol
+    baris — halaman saling bertentangan tanpa pesan kesalahan. Varian lain
+    (session kedaluwarsa) membuat tabel menggantung di "Mohon tunggu sebentar"
+    tanpa batas. `test.fail()` di `tests/admin/analitik-scsr.spec.ts`.
+20. (2026-09-28, audit improve No. Referensi) **Tidak ada tahap di mana shipper
+    bisa mengisi No. Referensi untuk order yang sudah bisa diinvoice**: menu
+    Input/Edit Nomor Referensi ADA sampai STUFFING/AMBIL KONTAINER dan HILANG
+    mulai KAPAL SANDAR (0 dari 26 order di tahap KAPAL SANDAR s.d. ORDER
+    SELESAI), sementara Proses Invoice baru terbuka dari KAPAL SANDAR
+    (`/order/buatinvoice/<id>` untuk order tahap awal → redirect + alert).
+    Akibatnya order yang referensinya belum terisi sebelum kapal sandar tidak
+    bisa lagi diperbaiki shipper; satu-satunya jalur tersisa = admin lewat
+    field `#nomor_referensi` di Edit Data Order, dan itu pun ditolak untuk
+    ORDER SELESAI. `test.fail()` di `tests/shipper/nomor-referensi.spec.ts`.
+
 ## Admin-sub & Shipper-sub — Akun Saya (2026-09-26)
 
 - `tests/admin-sub/akun-saya.spec.ts` (4 test) & `tests/shipper-sub/akun-saya.spec.ts`
@@ -658,7 +699,10 @@ item menu itu TIDAK tersedia utk status ORDER BARU):
 ## Improve 2026-09: Kota Asal di Analitik SCSR & No. Referensi di nama item Invoice
 
 Dua permintaan improve dari user, **keduanya sudah ter-deploy di demo** dan
-diverifikasi langsung (2026-09-26). Rule baru/ubahan: `docs/rules/analitik-scsr.md`
+diverifikasi langsung (2026-09-26), lalu **diaudit ulang lebih dalam 2026-09-28
+— lihat bagian "Audit mendalam kedua improve 2026-09" di bawah** (di situ ada
+koreksi atas beberapa catatan di bagian ini, mis. jumlah submenu analitik
+shipper dan kemampuan admin mengubah No. Referensi). Rule baru/ubahan: `docs/rules/analitik-scsr.md`
 (modul Analitik sebelumnya TIDAK punya rule doc sama sekali),
 `docs/rules/bid-owner/10-daftar-order.md` § Input/Edit Nomor Referensi,
 plus butir "Improve 2026-09" di `administrator/07-daftar-order.md` &
@@ -674,7 +718,8 @@ plus butir "Improve 2026-09" di `administrator/07-daftar-order.md` &
   multi-unit benar-benar berjalan (23 dtk). **Run final gabungan keempat spec
   (18 test + 6 setup): 24 LULUS, 0 skip, 0 gagal, 4,2 mnt.**
 - **SCSR = Shipping Cost Sales Ratio** `/home/analitikscsr` (route SAMA untuk
-  shipper & admin). Menu ANALITIK: shipper 2 submenu, admin 5 (Ringkasan
+  shipper & admin). Menu ANALITIK: shipper 4 submenu (dikoreksi 2026-09-28,
+  catatan lama "2 submenu" salah), admin 5 (Ringkasan
   `/dashboardanalitik/ringkasan`, SCSR, Freight Cost `/analitik/analitikfcu`,
   On Time Delivery Rate `/analitik/analitikotdr`, Shipment Accuracy
   `/home/analitikshipmentaccuracy`). Transporter TIDAK punya. **4 submenu
@@ -746,7 +791,111 @@ plus butir "Improve 2026-09" di `administrator/07-daftar-order.md` &
     Hipotesis "gabungan per-drop multidrop" TERBANTAH: 4 order multidrop lain
     justru ber-referensi kosong. Invoice hanya meneruskan isi field apa adanya.
 
-## Langkah berikutnya (belum dikerjakan) — diperbarui 2026-09-26
+## Audit mendalam kedua improve 2026-09 (2026-09-28)
+
+Permintaan user: "pengecekan lagi secara detail dan lebih tajam, jangan ada bug
+kecil yang lolos". Metode: spec eksplorasi sekali-pakai (panen tabel atomik +
+dump JSON ke scratchpad) untuk ~14 halaman & 3 peran, lalu temuannya
+dipermanenkan jadi test. Semua defect baru dicatat di daftar Defect aktif
+(#15–#20). **STATUS RUN: TUNTAS** — run pembentuk report: **51 passed**
+(45 test fungsional + 6 setup; 44 lulus biasa + 7 `test.fail()` defect
+terdokumentasi), **0 skip, 0 unexpected failure**, 15,1 menit. Run final
+sebelumnya juga hijau 51/51 dalam 18,7 menit. Report:
+`report/hasil-testing-2026-09-28-audit-improve.xlsx`. Test mutasi No. Referensi
+lulus simpan → baca ulang server → revert → baca ulang nilai lama; cek independen
+pasca-run memastikan order 20260827-06503 kembali ke `523423-45745` (tidak ada
+drift data demo). Riwayat continuation dan recovery ada di
+`docs/HANDOFF-2026-09-28.md`.
+
+### Yang TERBUKTI BENAR (bukan bug) — jangan diutak-atik lagi
+
+- **Kota Asal SCSR = field `kota_asal` milik order**, bukan kota pelabuhan muat.
+  Dibandingkan langsung dengan `select#kota_asal` / `select[name="kota_tujuan[]"]`
+  di halaman admin Edit Data Order. Contoh: order 20260811-06501 berpelabuhan
+  Dobo (Kab. Kepulauan Aru) → Belawan (Kota Medan) tetapi `kota_asal = 28
+  (Kab. Deli Serdang)` dan `kota_tujuan[] = 35, 372, 127`; SCSR menampilkan
+  tepat itu. Jadi alamat/pelabuhan yang "tidak nyambung" di demo adalah
+  KUALITAS DATA, bukan bug improve. (Dulu sempat kusangka bug — cek sumber
+  kebenaran dulu sebelum melapor.)
+- **Order multidrop dipecah per drop**: muncul sekali per kota tujuan (bisa
+  lintas provinsi) dengan biaya DIBAGI (4.230.000 → 3 × 1.410.000), sehingga
+  Σ provinsi = total order (tidak ada dobel hitung). Kolom Consignee & Alamat
+  Tujuan mengikuti drop yang dipilih.
+- **Konsistensi berjenjang** terverifikasi untuk SEMUA provinsi shipper uji:
+  level 1 = Σ level 2, level 2 = Σ level 3, Jumlah Order = jumlah baris level 3,
+  dan tidak ada order dobel di dalam satu provinsi.
+- **Export Excel ketiga level memuat kota asal** (level 1 kolom "Kota/Kab.
+  Asal" pada daftar order datar, level 2 kolom, level 3 baris info) dan angkanya
+  cocok dengan layar (104 baris order-drop, Σ per provinsi identik).
+- **Sisi shipper tidak bisa dipakai membaca data shipper lain**: memalsukan
+  `ShipperID` / `PilihKota` / `PilihKotaAsal` di URL → "Tidak Ada Data yang
+  tersedia" (server memakai scope sesi, bukan parameter URL).
+- **No. Referensi pada nama item invoice juga BENAR di sisi TRANSPORTER**
+  (sebelumnya nol coverage): order 20260827-06502 → "20 DRY (EMCU4324531) |
+  Tanjung Perak (SUB) - Tanjung Emas (SRG)
+INBOUND0111". Order tanpa referensi
+  = satu baris. Invoice Tambahan tanpa item (referensi tidak ikut).
+- Order MULTIDROP pun tetap satu item per unit berisi rute PELABUHAN + baris
+  referensi → varian rule "armada → no referensi → alamat tujuan" tetap BELUM
+  TERAMATI (bukan cuma pada order biasa, tapi juga pada multidrop).
+
+### Fakta baru / koreksi dokumentasi
+
+- Menu ANALITIK **shipper punya 4 submenu** (SCSR, Freight Cost, On Time
+  Delivery Rate, Shipment Accuracy) — catatan lama "2 submenu" salah.
+- Dropdown Shipper admin punya opsi **"Pilih Semua"** (data-value `null`,
+  header jadi "N Data Terpilih"); level 1 sisi admin SELALU punya kolom Shipper.
+- Batas 12 bulan ditegakkan **senyap** oleh datepicker: tglawal 01/01/2025 +
+  ketik 30/09/2026 di tglakhir → nilainya jadi 01/01/2026 (di-clamp, tanpa pesan).
+- Kolom level 2 semuanya **sortable** via POST `/home/searchanalitikscsrkota`
+  (`sortBy=kota_asal&sortType=ASC|DESC`, limit=20).
+- Endpoint export: `exportexcelanalitikscsrall` / `...scsrkota` /
+  `...scsrconsignee` (+ varian `exportpdf...`), query sama dengan halamannya.
+- **Admin BISA mengubah No. Referensi** lewat field `#nomor_referensi` di
+  halaman Edit Data Order (`/order/edit_inputpesanan/<hash>`) — catatan lama
+  "admin tidak punya menu ini" hanya berlaku untuk action menu. Halaman itu
+  ditolak untuk ORDER SELESAI.
+- Jendela menu Input/Edit Nomor Referensi shipper: ORDER BARU s.d. STUFFING /
+  AMBIL KONTAINER; hilang mulai KAPAL SANDAR (jadi tidak pernah bertumpang
+  tindih dengan tahap invoice → defect #20).
+- Shipper TIDAK punya menu Proses Invoice sama sekali (0 link `uploadinvoice`
+  pada 100 order); di demo TIDAK ADA satu pun dokumen invoice yang sudah dibuat
+  (45 order disampel → "Tidak Ada Dokumen Tersedia"), sehingga tampilan
+  No. Referensi pada dokumen invoice JADI belum bisa diverifikasi tanpa membuat
+  invoice baru (izin user 2026-09-28: hanya mutasi simpan No. Referensi).
+
+### Pelajaran teknis baru (pakai sebagai checklist)
+
+1. **`document.querySelectorAll('*')` + `innerText` = jebakan performa**: satu
+   evaluate seperti itu membuat test timeout 12 menit (layout dihitung ulang per
+   elemen). Cari elemen lewat selector spesifik / XPath, jangan sapu seluruh DOM.
+2. **Blok info "DATA BY PROVINSI" tidak punya wrapper class khas** (bukan
+   `.main-card`) → assert lewat teks halaman (`page.locator('body')`) dengan
+   regex yang menyertakan NILAI-nya supaya tetap spesifik.
+3. Di level 3, "ada baris tbody" BUKAN penanda selesai: selagi memuat, tbody
+   berisi satu baris "Mohon tunggu sebentar" (43 order butuh ±6 detik). Poll
+   sampai ada baris ber-link `order/orderdetail`.
+4. Baris hasil analitik dimuat async SETELAH header → panen cepat bisa bikin
+   kesimpulan "shipper ini tidak punya data" yang PALSU (sempat kusimpulkan
+   Haier tidak punya data padahal hanya belum termuat). Selalu poll dulu.
+5. `filter({ hasText: /^Pilih Semua$/ })` gagal karena hasText memakai teks
+   MENTAH → regex berjangkar wajib `\s*` di kedua ujung (gotcha berulang).
+6. Mengunduh & memeriksa file export bisa langsung di test: `waitForEvent
+   ('download')` + `saveAs(testInfo.outputPath(...))` + baca pakai `exceljs`
+   (sudah jadi devDependency untuk generator laporan).
+7. Untuk membuktikan angka laporan, panen seluruh tabel dalam SATU `evaluate()`
+   lalu hitung di Node — jauh lebih murah dan bebas race dibanding puluhan
+   assertion per sel.
+8. Link download export Bootstrap tidak selalu menutup dropdown. Setelah file
+   tersimpan, tutup dropdown dan assert item tersembunyi; kalau tidak, menu
+   `Export PDF` dapat menutupi link drill-down berikutnya sampai timeout.
+9. Untuk mutasi yang wajib direvert, jangan biarkan nilai uji tersimpan selama
+   navigasi UI lambat. Verifikasi nilai baru lewat endpoint baca, lalu revert
+   segera di `finally` lewat endpoint tulis yang sama dan baca ulang nilai lama.
+   Ini memperkecil jendela drift; kill paksa proses tetap harus diikuti cek
+   independen karena tidak ada `finally` yang dapat bertahan setelah proses mati.
+
+## Langkah berikutnya (belum dikerjakan) — diperbarui 2026-09-28
 
 Urutan rekomendasi (dari paling aman/tanpa mutasi ke yang butuh izin):
 
@@ -763,11 +912,15 @@ Urutan rekomendasi (dari paling aman/tanpa mutasi ke yang butuh izin):
    lihat catatan Open Stack), validasi/terima order, simpan Preference Notif
    (test sekarang hanya toggle sisi klien).
 5. **Modul Analitik sisanya** (baru SCSR yang punya spec): Ringkasan Analitik,
-   Freight Cost, On Time Delivery Rate, Shipment Accuracy — plus validasi range
-   > 12 bulan, sortir kolom, dan isi file "Export Data By" di SCSR.
-6. **Simpan Nomor Referensi** (`order/save_nomor_referensi`) — test sekarang
-   hanya menguji validasi kosong; menyimpan mengubah data order demo permanen
-   (bisa direvert bila nilai lama dicatat dulu — butuh izin user).
+   Freight Cost, On Time Delivery Rate, Shipment Accuracy. Di SCSR sendiri yang
+   masih terbuka: isi file **Export PDF**, efek filter **Provinsi**/**Consignee**
+   pada ketiga level, dan paging `limit=20` POST `searchanalitikscsrkota` untuk
+   provinsi dengan >20 pasangan kota (data demo belum punya kasusnya). Validasi
+   range 12 bulan, sortir kolom, dan isi Export Excel sudah diuji 2026-09-28.
+6. **Dokumen invoice yang sudah JADI**: di demo belum ada satu pun (45 order
+   disampel), jadi tampilan No. Referensi pada dokumen invoice hasil "Buat
+   Invoice" belum terverifikasi. Butuh izin membuat 1 invoice (permanen,
+   memakan 1 dari 3 kesempatan order) — user menolak pada audit 2026-09-28.
 7. **Push Notif** (rule admin/bidder/bid-owner `*-push-notif.md`) belum
    disentuh sama sekali — perlu keputusan apakah layak diotomasi.
 8. Housekeeping: `.env.example` masih berisi kredensial asli (kosongkan

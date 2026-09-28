@@ -191,6 +191,10 @@ test.describe('Nama item Invoice Jasa Pengiriman (Admin)', () => {
 
   test('admin TIDAK punya action menu Input/Edit Nomor Referensi (khusus shipper)', async ({ page }) => {
     test.setTimeout(180_000);
+    // CATATAN 2026-09-28: absennya action menu BUKAN berarti admin tak bisa
+    // mengubah nilainya — field `#nomor_referensi` tersedia di halaman Edit
+    // Data Order admin (lihat test "admin bisa mengubah No. Referensi lewat
+    // Edit Data Order" di bawah).
     // Sumber nilai referensi adalah action menu di sisi SHIPPER (lihat
     // tests/shipper/nomor-referensi.spec.ts). Terbukti 2026-09-26: 0 trigger
     // `.btn_nomor_referensi` di 100 order yang dirender sisi admin, sementara
@@ -280,5 +284,129 @@ test.describe('Nama item Invoice Jasa Pengiriman (Admin)', () => {
       break;
     }
     test.skip(!diuji, 'Tidak ada order tahap akhir tanpa Nomor Referensi yang form invoice-nya bisa dibuka');
+  });
+
+  // ————— Tambahan audit mendalam 2026-09-28 —————
+
+  test('order MULTIDROP tetap satu item per unit: rute pelabuhan + No. Referensi, tanpa alamat drop', async ({
+    page,
+  }) => {
+    // Rule menyebut varian "Shipper memiliki Alamat Tujuan pada nama item"
+    // (urutan armada → no referensi → alamat tujuan). Order multidrop adalah
+    // kandidat paling mungkin memunculkannya (punya beberapa alamat tujuan),
+    // dan terbukti TIDAK: order 20260811-06501 (3 drop: Langkat, Banggai
+    // Kepulauan, Bangka Barat) hanya menghasilkan 1 item
+    // "20 DRY (EMCU4234234) | Dobo (DOB) - Belawan (BLW)" + baris referensi.
+    test.setTimeout(240_000);
+    const kandidat = await kandidatInvoice(page);
+    test.skip(kandidat.length === 0, 'Tidak ada order tahap akhir di demo');
+
+    let diuji = false;
+    for (const k of kandidat.slice(0, 14)) {
+      await page.goto(`/order/orderdetail/${k.hashDetail}`);
+      const teks = (await page.locator('body').innerText()).replace(/\s+/g, ' ');
+      if (!/Rute Multidrop/i.test(teks)) continue;
+      const referensi = ((teks.match(/Nomor Referensi\s*:\s*(.*?)\s*Alasan Memesan/) || ['', ''])[1] || '').trim();
+      const items = await itemInvoice(page, k.orderId);
+      if (!items || items.length === 0) continue;
+
+      for (const item of items) {
+        const isi = item.split('\n').map((b) => b.trim()).filter(Boolean);
+        expect(isi[0], `baris armada order multidrop ${k.nomor}`).toMatch(POLA_BARIS_ARMADA);
+        if (referensi && referensi !== '-') {
+          expect(isi.length, `order multidrop ${k.nomor} = armada + referensi (tanpa alamat drop)`).toBe(2);
+          expect(isi[1]).toBe(referensi);
+        } else {
+          expect(isi.length, `order multidrop ${k.nomor} tanpa referensi = 1 baris`).toBe(1);
+        }
+      }
+      diuji = true;
+      break;
+    }
+    test.skip(!diuji, 'Tidak ada order multidrop tahap akhir yang form invoice-nya bisa dibuka');
+  });
+
+  test('Invoice Tambahan tidak membawa nama item sehingga tanpa No. Referensi', async ({ page }) => {
+    test.setTimeout(240_000);
+    const kandidat = await kandidatInvoice(page);
+    test.skip(kandidat.length === 0, 'Tidak ada order tahap akhir di demo');
+
+    let diuji = false;
+    for (const k of kandidat.slice(0, 14)) {
+      const referensi = await nomorReferensi(page, k.hashDetail);
+      if (!referensi) continue;
+      await page.goto(`/order/buatinvoicetambahan/${k.orderId}`);
+      if (!new URL(page.url()).pathname.includes('buatinvoicetambahan')) continue;
+      const item = page.locator('textarea[name="item[]"]');
+      const jumlah = await item.count();
+      for (let i = 0; i < jumlah; i += 1) {
+        expect((await item.nth(i).inputValue()).trim(), `item invoice tambahan order ${k.nomor}`).toBe('');
+      }
+      diuji = true;
+      break;
+    }
+    test.skip(!diuji, 'Tidak ada order ber-referensi yang form invoice tambahan-nya bisa dibuka');
+  });
+
+  test('admin bisa mengubah No. Referensi lewat Edit Data Order (field #nomor_referensi)', async ({
+    page,
+  }) => {
+    // Koreksi dokumentasi 2026-09-28: admin memang TIDAK punya action menu
+    // "Input / Edit Nomor Referensi" (itu khusus shipper), TAPI field
+    // `#nomor_referensi` ada di halaman Edit Data Order admin dan nilainya =
+    // nilai di Detail Order. Halaman hanya DIBUKA (GET), tidak disubmit.
+    test.setTimeout(240_000);
+    const kandidat = await kandidatInvoice(page);
+    test.skip(kandidat.length === 0, 'Tidak ada order tahap akhir di demo');
+
+    let diuji = false;
+    for (const k of kandidat.slice(0, 14)) {
+      const referensi = await nomorReferensi(page, k.hashDetail);
+      await page.goto(`/order/edit_inputpesanan/${k.hashDetail}`);
+      await page.waitForLoadState('domcontentloaded');
+      if (!page.url().includes('edit_inputpesanan')) continue; // ORDER SELESAI ditolak
+      const field = page.locator('#nomor_referensi');
+      await expect(field).toBeVisible({ timeout: 30_000 });
+      await expect(field).toHaveValue(referensi);
+      diuji = true;
+      break;
+    }
+    test.skip(!diuji, 'Semua order tahap akhir yang disampel menolak halaman Edit Data Order');
+  });
+
+  test('Edit Data Order ditolak untuk ORDER SELESAI sehingga No. Referensi tak bisa lagi diubah', async ({
+    page,
+  }) => {
+    test.setTimeout(240_000);
+    const kandidat = await kandidatInvoice(page);
+    const selesai = kandidat.find((k) => /ORDER SELESAI/i.test(k.status));
+    test.skip(!selesai, 'Tidak ada order berstatus ORDER SELESAI di demo');
+    await page.goto(`/order/edit_inputpesanan/${selesai!.hashDetail}`);
+    await expect(page).not.toHaveURL(/edit_inputpesanan/);
+    await expect(page.locator('.alert_negatif, [role="alert"]').first()).toContainText(
+      /Anda Tidak Memiliki Akses Ke Halaman Tersebut/i,
+    );
+  });
+
+  test('form invoice ditolak untuk order tahap awal (belum boleh diinvoice)', async ({ page }) => {
+    // Gating server-side: /order/buatinvoice/<id> untuk order ORDER BARU dsb.
+    // me-redirect ke listlelang + alert. Ini sekaligus menjelaskan mengapa
+    // rantai "shipper isi referensi → invoice" tidak bisa diuji pada SATU
+    // order: menu Input/Edit Nomor Referensi sisi shipper hilang mulai
+    // KAPAL SANDAR, sementara invoice baru terbuka dari KAPAL SANDAR.
+    test.setTimeout(180_000);
+    await page.goto('/order/orderlist');
+    const trigger = page.locator('a.btn_edit_harga_order[idnya]');
+    await expect(async () => {
+      expect(await trigger.count()).toBeGreaterThan(0);
+    }).toPass({ timeout: 90_000, intervals: [1_000, 2_000, 3_000] });
+    const orderId = await trigger.first().getAttribute('idnya');
+    expect(orderId).toMatch(/^\d+$/);
+
+    await page.goto(`/order/buatinvoice/${orderId}`);
+    await expect(page).not.toHaveURL(/buatinvoice/);
+    await expect(page.locator('.alert_negatif, [role="alert"]').first()).toContainText(
+      /Anda Tidak Memiliki Akses Ke Halaman Tersebut/i,
+    );
   });
 });
