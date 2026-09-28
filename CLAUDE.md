@@ -551,7 +551,8 @@ item menu itu TIDAK tersedia utk status ORDER BARU):
 4. Halaman sandi baru (lupa kata sandi): submit sandi invalid diam tanpa alert;
    heading "HI, !" tanpa nama akun.
 5. Ikon popup daftar lelang tanpa accessible name (hanya `#list_lelang`) —
-   usulan data-testid/aria-label. Ikon notifikasi top bar juga tanpa nama.
+   usulan data-testid/aria-label. Ikon notifikasi top bar juga tanpa nama;
+   sekarang dipermanenkan sebagai `test.fail()` di suite Push Notif bersama.
 6. Detail lelang: handler klik dokumen aanwijzing (`span.modalwizing` →
    `$('#modalEditProvinsi').modal('show')`) baru di-bind setelah init WebViewer
    PDF.js Express (pihak ketiga, kadang detik-an) — klik user sebelum itu
@@ -895,6 +896,31 @@ INBOUND0111". Order tanpa referensi
    Ini memperkecil jendela drift; kill paksa proses tetap harus diikuti cek
    independen karena tidak ada `finally` yang dapat bertahan setelah proses mati.
 
+## Push Notif tiga peran (2026-09-28)
+
+- Coverage read-only selesai untuk akun utama Admin, Shipper/Bid Owner, dan
+  Transporter/Bidder: `tests/{admin,shipper,transporter}/push-notif.spec.ts`
+  memakai definisi bersama `tests/push-notif.shared.ts`.
+- Run final: **25 passed** (19 test modul + 6 setup), mencakup 18 lulus biasa
+  + 1 `test.fail()` defect aksesibilitas, **0 skip, 0 unexpected failure**,
+  durasi 2,4 menit pada run pembentuk report (run sebelumnya 2,2 menit).
+  Workbook: `report/hasil-testing-2026-09-28-push-notif.xlsx`.
+- Terverifikasi: ikon top bar dan indikator unread, route
+  `/home/notification`, default Belum Dibaca, filter Semua Notif, filter
+  kategori Lelang, kategori khusus tiap peran, pilihan limit 20/30/50/100,
+  badge unread, tujuan `Cek Disini`, label penerima khusus Admin, serta gating
+  Hapus Notif/Tandai Dibaca setelah checkbox/Pilih Semua.
+- Fakta UI: data dimuat dari `POST /home/searchpushnotif`; default limit 50.
+  Admin punya opsi kategori tambahan `Order Baru`. Tombol `Cek Disini` adalah
+  `<button>` dengan tujuan pada atribut nonstandar `hreff`, bukan `<a href>`.
+  Aksi Hapus/Tandai adalah `<div>` bergating class `item-disable/item-enable`.
+- Tidak ada data demo yang dimutasi: suite tidak mengklik Cek Disini (klik akan
+  menandai read), Hapus Notif, atau Tandai Dibaca. Perubahan checkbox hanya
+  state klien dan dikembalikan sebelum test selesai.
+- Belum dicakup: pemicu nyata tiap jenis notifikasi lintas modul, eksekusi
+  redirect, operasi hapus/tandai read, pembuktian job retensi 3 bulan, dan
+  perilaku Push Notif/Preferensi Notifikasi khusus sub-user.
+
 ## Langkah berikutnya (belum dikerjakan) — diperbarui 2026-09-28
 
 Urutan rekomendasi (dari paling aman/tanpa mutasi ke yang butuh izin):
@@ -921,8 +947,10 @@ Urutan rekomendasi (dari paling aman/tanpa mutasi ke yang butuh izin):
    disampel), jadi tampilan No. Referensi pada dokumen invoice hasil "Buat
    Invoice" belum terverifikasi. Butuh izin membuat 1 invoice (permanen,
    memakan 1 dari 3 kesempatan order) — user menolak pada audit 2026-09-28.
-7. **Push Notif** (rule admin/bidder/bid-owner `*-push-notif.md`) belum
-   disentuh sama sekali — perlu keputusan apakah layak diotomasi.
+7. **Sisa Push Notif**: coverage read-only akun utama sudah selesai. Yang masih
+   terbuka adalah sub-user, pemicu notifikasi nyata lintas modul, verifikasi
+   redirect dengan konsekuensi menandai read, operasi Hapus/Tandai Dibaca, dan
+   pembuktian job retensi 3 bulan.
 8. Housekeeping: `.env.example` masih berisi kredensial asli (kosongkan
    sebelum git init); generator report menamai file per TANGGAL saja
    sehingga run kedua di hari sama menimpa laporan sebelumnya (sudah 2x

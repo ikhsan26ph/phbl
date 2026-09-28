@@ -18,3 +18,18 @@
 - Apabila Bidder melakukan filter tampil Semua Notif, maka semua notifikasi yang diterima (baik yang sudah dibaca maupun yang belum) akan ditampilkan pada list
 - Fitur Hapus Notifikasi dan Tandai sebagai Dibaca secara default tidak aktif. Untuk mengaktifkan fitur ini, Bidder perlu mencentang notifikasi yang diinginkan atau memilih opsi Pilih Semua. Setelah notifikasi dipilih, tombol Hapus Notifikasi dan Tandai sebagai Dibaca akan otomatis aktif dan dapat digunakan.
 - Daftar notifikasi akan secara otomatis terhapus selama 3 bulan
+
+## Hasil kalibrasi automation 2026-09-28
+
+- Halaman akun utama berada di `/home/notification`; daftar dimuat async
+  melalui `POST /home/searchpushnotif`.
+- Filter default adalah `Belum Dibaca` (`unread`) dan semua kategori (`all`).
+  Opsi kategori aktual sesuai rule: Lelang, Order, Akun.
+- Setiap baris menampilkan kategori, tanggal, waktu, badge unread, checkbox,
+  serta tombol `Cek Disini` dengan tujuan detail yang masih berada di origin
+  PHBID yang sama.
+- Pilihan jumlah data adalah 20/30/50/100 dan default aktualnya 50.
+- Aksi Hapus Notif dan Tandai Dibaca baru aktif setelah satu notifikasi atau
+  Pilih Semua dicentang.
+- Coverage automation akun utama bersifat read-only: Cek Disini, Hapus Notif,
+  dan Tandai Dibaca tidak diklik agar data akun demo tidak berubah.

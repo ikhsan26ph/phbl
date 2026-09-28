@@ -32,3 +32,19 @@
 - Halaman ini berfungsi untuk menampilkan daftar notifikasi yang dapat diterima oleh sub user tersebut.
 - Jenis notifikasi yang ditampilkan mencakup Notifikasi Email dan Notifikasi Sistem (push notifikasi).
 - Daftar notifikasi yang muncul disesuaikan dengan hak akses notifikasi yang telah ditentukan dan diatur oleh Admin melalui panel pengelolaan.
+
+## Hasil kalibrasi automation 2026-09-28
+
+- Halaman akun utama berada di `/home/notification`; daftar dimuat async
+  melalui `POST /home/searchpushnotif`.
+- Filter default adalah `Belum Dibaca` (`unread`) dan semua kategori (`all`).
+  Opsi kategori aktual sesuai rule: Lelang, Order, Akun, Tracking.
+- Setiap baris menampilkan kategori, tanggal, waktu, badge unread, checkbox,
+  serta tombol `Cek Disini` dengan tujuan detail yang masih berada di origin
+  PHBID yang sama.
+- Pilihan jumlah data adalah 20/30/50/100 dan default aktualnya 50.
+- Aksi Hapus Notif dan Tandai Dibaca baru aktif setelah satu notifikasi atau
+  Pilih Semua dicentang.
+- Coverage automation akun utama bersifat read-only: Cek Disini, Hapus Notif,
+  dan Tandai Dibaca tidak diklik. Preferensi/daftar khusus sub-user belum masuk
+  scope suite ini.

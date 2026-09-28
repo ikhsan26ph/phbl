@@ -15,3 +15,21 @@
 - Apabila Admin melakukan filter tampil Semua Notif, maka semua notifikasi yang diterima (baik yang sudah dibaca maupun yang belum) akan ditampilkan pada list
 - Fitur Hapus Notifikasi dan Tandai sebagai Dibaca secara default tidak aktif. Untuk mengaktifkan fitur ini, Admin perlu mencentang notifikasi yang diinginkan atau memilih opsi Pilih Semua. Setelah notifikasi dipilih, tombol Hapus Notifikasi dan Tandai sebagai Dibaca akan otomatis aktif dan dapat digunakan.
 - Daftar notifikasi akan secara otomatis terhapus selama 3 bulan
+
+## Hasil kalibrasi automation 2026-09-28
+
+- Halaman aktual berada di `/home/notification`; daftar dimuat async melalui
+  `POST /home/searchpushnotif`.
+- Filter default adalah `Belum Dibaca` (`unread`) dan semua kategori (`all`).
+- Opsi kategori aktual Admin: Lelang, **Order Baru**, Order, Akun, Tracking.
+  `Order Baru` merupakan opsi tambahan yang tidak disebut terpisah pada rule.
+- Setiap baris menampilkan kategori, tanggal, waktu, label penerima
+  (`to Shipper`/`to Transporter`/`to Admin`), badge unread, checkbox, dan tombol
+  `Cek Disini` dengan tujuan detail.
+- Pilihan jumlah data adalah 20/30/50/100 dan default aktualnya 50.
+- Aksi Hapus Notif dan Tandai Dibaca memakai state `item-disable` sampai minimal
+  satu notifikasi dicentang; memilih satu atau Pilih Semua mengaktifkannya.
+- Ikon lonceng memiliki link yang benar tetapi belum mempunyai accessible name
+  (tanpa teks, `aria-label`, atau `title`); dicatat sebagai defect aksesibilitas.
+- Coverage automation bersifat read-only: Cek Disini, Hapus Notif, dan Tandai
+  Dibaca tidak diklik agar notifikasi akun demo tidak berubah.
