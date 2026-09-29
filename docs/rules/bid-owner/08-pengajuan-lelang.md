@@ -110,6 +110,25 @@
 - Jika status dokumen aanwijzing tidak aktif maka menampilkan tanda strip “-”
 - Dokumen aanwijzing ditampilkan berupa popup
 
+### Hasil uji trigger Push Notif 2026-09-29
+
+- Trigger diverifikasi dari alur sebenarnya: Shipper membuat lelang, membuka
+  halaman Pilih Peserta Lelang, memilih tepat satu Transporter aktif, lalu
+  submit ke endpoint `/lelang/do_buat_lelang`.
+- Identitas peserta tidak ditebak dari alias. Automation memverifikasi email
+  fixture `partner.ph2021@gmail.com` pada Akun Saya, lalu Admin memfilter email
+  exact pada Validasi Transporter untuk mendapatkan pemetaan ID 66 / alias
+  `(IK)MJW` sebelum checkbox peserta dipilih.
+- Run lulus memakai nomor `AUTOTEST/1790650401972`. Notifikasi baru diverifikasi
+  dari ID yang lebih besar daripada baseline sebelum trigger, sehingga tidak
+  mungkin tertukar dengan notifikasi lama.
+- Halaman peserta merender tombol sebelum handler JavaScript submit siap.
+  Automation wajib menunggu handler `do_buat_lelang`, indikator peserta bernilai
+  1, dan respons POST sukses; klik terlalu dini tidak menghasilkan request.
+- Dua draft dari kalibrasi yang berhenti sebelum submit akhir tetap tercatat:
+  `AUTOTEST/1790649754024` dan `AUTOTEST/1790650138303`. Keduanya tidak
+  mengirim notifikasi karena endpoint `do_buat_lelang` tidak terpanggil.
+
 ## Batalkan Lelang
 
       - Bid owner dapat batalkan lelang sampai kapanpun asalkan lelang tersebut belum ada order

@@ -921,6 +921,44 @@ INBOUND0111". Order tanpa referensi
   redirect, operasi hapus/tandai read, pembuktian job retensi 3 bulan, dan
   perilaku Push Notif/Preferensi Notifikasi khusus sub-user.
 
+## Trigger Push Notif Pengajuan Lelang (2026-09-29)
+
+- Test trigger ditanam pada alur sumbernya di
+  `tests/shipper/buat-lelang.spec.ts`, dengan helper lintas sesi di
+  `tests/push-notif.trigger.ts`; tidak hanya membuka halaman Push Notif.
+- Run final **1 passed** dalam 52,2 detik (`--no-deps`) untuk nomor
+  `AUTOTEST/1790650401972`. Shipper fixture hanya mengundang Transporter
+  `partner.ph2021@gmail.com`; pemetaan Admin membuktikan ID 66 / alias
+  `(IK)MJW` / status AKTIF sebelum pemilihan.
+- Workbook: `report/hasil-testing-2026-09-29-push-notif-trigger-lelang.xlsx`
+  (1 baris test Shipper, status LULUS, nomor dan email penerima tercatat).
+- Terverifikasi sesudah `POST /lelang/do_buat_lelang`: record ID baru pada
+  Transporter dan Admin, kategori Lelang, judul Pengajuan Lelang, body berisi
+  nomor unik yang sama, unread, redirect tab `perlu-input-harga`, expiry sekitar
+  3 bulan, serta label Admin `to Transporter`.
+- Gotcha: tombol Lanjutkan halaman peserta muncul sebelum handler jQuery siap.
+  Klik terlalu cepat menjadi no-op. Test menunggu event handler terpasang,
+  indikator peserta = 1, dan response endpoint submit sebelum menunggu inbox.
+- Draft kalibrasi yang tidak mencapai endpoint submit:
+  `AUTOTEST/1790649754024` dan `AUTOTEST/1790650138303`; tidak menghasilkan
+  push. Jangan hapus tanpa izin karena penghapusan data permanen di luar scope.
+
+## Trigger Push Notif lintas modul (2026-09-29)
+
+- Run konsolidasi `push-notif-trigger-*`: **13 passed** (dua di antaranya
+  expected failure defect server). Run terpisah buat/batalkan lelang: **7
+  passed**.
+- Trigger sukses: Pengajuan/Pembatalan Lelang, Request Harga, Request Jadwal,
+  Jadwal Tersedia, Kelengkapan Data Unit, Stuffing, Kapal Berlayar, Kapal
+  Sandar, Rencana Dooring, Dooring, dan SJ Diterima Agen. Aksi Tandai Dibaca
+  dan Hapus juga terbukti pada ID notifikasi hasil trigger.
+- Defect blocker: `/home/dosubmitnego` dan `/home/doupdateakunsaya/65`
+  mengembalikan HTTP 500. Trigger hasil nego dan validasi perubahan akun ikut
+  terblokir.
+- Detail akun, state fixture, hasil, serta gap tersisa:
+  `docs/PUSH-NOTIF-TRIGGER-REPORT-2026-09-29.md`. Workbook konsolidasi:
+  `report/hasil-testing-2026-09-29.xlsx`.
+
 ## Langkah berikutnya (belum dikerjakan) — diperbarui 2026-09-28
 
 Urutan rekomendasi (dari paling aman/tanpa mutasi ke yang butuh izin):
@@ -947,10 +985,11 @@ Urutan rekomendasi (dari paling aman/tanpa mutasi ke yang butuh izin):
    disampel), jadi tampilan No. Referensi pada dokumen invoice hasil "Buat
    Invoice" belum terverifikasi. Butuh izin membuat 1 invoice (permanen,
    memakan 1 dari 3 kesempatan order) — user menolak pada audit 2026-09-28.
-7. **Sisa Push Notif**: coverage read-only akun utama sudah selesai. Yang masih
-   terbuka adalah sub-user, pemicu notifikasi nyata lintas modul, verifikasi
-   redirect dengan konsekuensi menandai read, operasi Hapus/Tandai Dibaca, dan
-   pembuktian job retensi 3 bulan.
+7. **Sisa Push Notif**: coverage akun utama, 12 jenis trigger, serta operasi
+   Hapus/Tandai Dibaca sudah selesai. Yang masih terbuka: sub-user, hasil nego
+   dan perubahan akun (HTTP 500), validasi perjanjian/perubahan jadwal (state
+   fixture tidak tersedia), Ambil Kontainer/Dokumen Dikirim (tahap tidak
+   dirender), eksekusi redirect `Cek Disini`, dan job retensi fisik 3 bulan.
 8. Housekeeping: `.env.example` masih berisi kredensial asli (kosongkan
    sebelum git init); generator report menamai file per TANGGAL saja
    sehingga run kedua di hari sama menimpa laporan sebelumnya (sudah 2x

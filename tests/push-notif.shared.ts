@@ -14,8 +14,10 @@ import { expect, test, type Page, type Response } from '@playwright/test';
  *   item-enable. Test hanya mengubah checkbox di sisi klien dan TIDAK pernah
  *   mengklik kedua aksi tersebut maupun Cek Disini, sehingga data tetap utuh.
  *
- * Tidak dicakup: pemicu notifikasi lintas modul, eksekusi redirect yang akan
- * menandai read, hapus/tandai read, retensi server 3 bulan, dan akun sub-user.
+ * Suite ini tidak mencakup pemicu lintas modul (lihat
+ * shipper/buat-lelang.spec.ts untuk trigger Pengajuan Lelang), eksekusi
+ * redirect yang akan menandai read, hapus/tandai read, eksekusi job retensi
+ * server 3 bulan, dan akun sub-user.
  */
 
 interface PushNotifConfig {

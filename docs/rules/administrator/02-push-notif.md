@@ -33,3 +33,41 @@
   (tanpa teks, `aria-label`, atau `title`); dicatat sebagai defect aksesibilitas.
 - Coverage automation bersifat read-only: Cek Disini, Hapus Notif, dan Tandai
   Dibaca tidak diklik agar notifikasi akun demo tidak berubah.
+
+## Hasil uji trigger Pengajuan Lelang 2026-09-29
+
+- Trigger nyata `AUTOTEST/1790650401972` menghasilkan salinan record baru pada
+  inbox Admin `prahu.bid20@gmail.com` dengan kategori `Lelang`, judul
+  `Pengajuan Lelang`, label penerima `to Transporter`, dan status `belum`.
+- Isi salinan Admin identik dengan isi notifikasi Transporter dan memuat nomor
+  lelang unik. Redirect tetap berada pada origin PHBID dan menuju tab
+  `perlu-input-harga`; metadata expiry sekitar tiga bulan.
+- Pembuktian memakai ID baseline sebelum submit dan polling ID baru setelah
+  endpoint `/lelang/do_buat_lelang` sukses, bukan hanya memeriksa data lama di
+  halaman Push Notif.
+
+## Hasil uji trigger end-to-end 2026-09-29
+
+- Admin menerima salinan identik untuk trigger Lelang, Order, dan Tracking yang
+  berhasil. Label penerima cocok dengan target Shipper/Bid Owner atau
+  Transporter/Bidder.
+- Trigger yang terbukti mencakup buat/batal lelang, request harga/jadwal,
+  respons jadwal, kelengkapan unit, serta enam tahap tracking sampai SJ
+  Diterima Agen.
+- Dua alur Admin masih terblokir defect submit: Pengajuan Nego dan Konfirmasi
+  Perubahan Data. Rincian ada di
+  `docs/PUSH-NOTIF-TRIGGER-REPORT-2026-09-29.md`.
+
+## Hasil uji trigger Validasi Order dan Ganti Jadwal 2026-09-29
+
+- Terima Perjanjian Pengiriman order fixture `20260929-06501` menghasilkan
+  notifikasi baru ke Shipper dan Transporter serta dua salinan Admin dengan
+  label `to Shipper` dan `to Transporter`; status order menjadi
+  `KONFIRMASI UNIT`.
+- Tolak Perjanjian Pengiriman order fixture `20260826-06506` menghasilkan
+  notifikasi baru ke Shipper dan salinan Admin; status menjadi `ORDER DITOLAK`.
+- Ganti Jadwal order fixture `20260829-06504` menghasilkan notifikasi baru ke
+  Shipper dan salinan Admin. Nilai Open Stack dikembalikan ke nilai awal;
+  submit perubahan dan revert masing-masing menghasilkan satu notifikasi.
+- Semua record berkategori `Order`, berstatus belum dibaca, memiliki redirect
+  detail order pada origin yang sama, dan expiry sekitar tiga bulan.

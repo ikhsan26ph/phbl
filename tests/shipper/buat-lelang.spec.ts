@@ -1,4 +1,11 @@
 import { expect, test, type Page } from '@playwright/test';
+import {
+  aliasTransporter,
+  bukaKonteksAkun,
+  idNotifikasiTerakhir,
+  namaPerusahaan,
+  tungguNotifikasiBaru,
+} from '../push-notif.trigger';
 
 /**
  * Modul: Buat Lelang Pengiriman — peran Shipper/Bid Owner (project
@@ -8,10 +15,11 @@ import { expect, test, type Page } from '@playwright/test';
  *
  * KEPUTUSAN SCOPE: submit akhir di halaman "Pilih Peserta Lelang" mengirim
  * notifikasi email+WA sungguhan ke bidder yang diundang (efek samping
- * nyata). User mengizinkan alur penuh 2026-08-14 DENGAN SYARAT: hanya
- * mengundang bidder yang namanya mengandung "(IK)" — akun bidder demo
- * internal yang aman untuk menerima notifikasi test berulang (7 dari 21
- * bidder di data demo memenuhi kriteria ini). Test "alur penuh" di bawah
+ * nyata). User mengizinkan alur penuh 2026-08-14 dan menegaskan kembali
+ * 2026-09-29 bahwa trigger hanya boleh memakai akun dengan email fixture
+ * project. Karena itu test sekarang hanya mengundang akun tepat yang login
+ * sebagai `transporter` (`TRANSPORTER_EMAIL`), bukan seluruh bidder "(IK)".
+ * Test "alur penuh" di bawah
  * MEMBUAT LELANG BARU SUNGGUHAN setiap kali dijalankan (data terus
  * bertambah di akun demo, sama seperti pola registrasi.spec.ts yang bikin
  * akun yopmail asli) — nomor lelang dibuat unik per run via timestamp.
@@ -158,7 +166,22 @@ async function pilihSelect2(page: Page, nth: number, kataKunci: string) {
   await page.locator('.select2-results__option--highlighted').click();
 }
 
-test('alur penuh: buat lelang normal dan undang hanya bidder "(IK)" berhasil submit', async ({ page }) => {
+/** Tanggal Asia/Jakarta untuk offset hari, sesuai format mask aplikasi. */
+function tanggalJam(offsetHari: number): string {
+  const tanggal = new Date(Date.now() + offsetHari * 86_400_000);
+  const bagian = new Intl.DateTimeFormat('en-GB', {
+    timeZone: 'Asia/Jakarta',
+    day: '2-digit',
+    month: '2-digit',
+    year: 'numeric',
+  }).format(tanggal);
+  return `${bagian} 09:00`;
+}
+
+test('alur penuh: buat lalu batalkan lelang memicu Push Notif Transporter dan Admin', async ({
+  browser,
+  page,
+}) => {
   // Default 30s test timeout tidak cukup: banyak langkah select2, dan
   // halaman Pilih Peserta Lelang memuat library PDF.js Express (termasuk
   // WASM) untuk preview dokumen aanwijzing sebelum submit final bisa
@@ -167,62 +190,156 @@ test('alur penuh: buat lelang normal dan undang hanya bidder "(IK)" berhasil sub
   // BUKAN bisa diperbaiki dengan memblokir resource itu — sudah dicoba,
   // route blocking malah membuat redirect tidak pernah terjadi karena
   // logic submit menunggu resource itu berhasil dimuat).
-  test.setTimeout(150_000);
+  test.setTimeout(240_000);
 
   const nomorLelang = `AUTOTEST/${Date.now()}`;
+  test.info().annotations.push(
+    { type: 'data-uji', description: `Nomor lelang: ${nomorLelang}` },
+    { type: 'penerima', description: process.env.TRANSPORTER_EMAIL! },
+  );
+  const transporterContext = await bukaKonteksAkun(browser, 'transporter', process.env.TRANSPORTER_EMAIL);
+  const adminContext = await bukaKonteksAkun(browser, 'admin', process.env.ADMIN_EMAIL);
 
-  await formPage.nomorLelang(page).click();
-  await page.keyboard.type(nomorLelang);
+  try {
+    const transporter = await namaPerusahaan(transporterContext);
+    const alias = await aliasTransporter(adminContext, process.env.TRANSPORTER_EMAIL!, transporter);
+    const [baselineTransporter, baselineAdmin] = await Promise.all([
+      idNotifikasiTerakhir(transporterContext, 'Lelang'),
+      idNotifikasiTerakhir(adminContext, 'Lelang'),
+    ]);
 
-  await ketikTanggalJam(page, '#tanggal_buka_lelang', '20/08/2026 09:00');
-  await ketikTanggalJam(page, '#tanggal_tutup_lelang', '21/08/2026 09:00');
-  await ketikTanggalJam(page, '#tanggal_mulai_kontrak', '22/08/2026 09:00');
-  await ketikTanggalJam(page, '#tanggal_selesai_kontrak', '25/08/2026 09:00');
+    await expect(
+      page.getByText(process.env.SHIPPER_EMAIL!, { exact: true }).filter({ visible: true }).first(),
+    ).toBeVisible();
 
-  await pilihSelect2(page, 1, 'Tanjung Priok'); // Pelabuhan Asal (POL)
-  await pilihSelect2(page, 2, 'Tanjung Perak'); // Pelabuhan Tujuan (POD)
+    await formPage.nomorLelang(page).click();
+    await page.keyboard.type(nomorLelang);
 
-  await page.getByRole('textbox', { name: 'Masukkan Alamat Lengkap Asal' }).fill('Jl. Test Otomasi No. 1, Jakarta Utara');
-  await pilihSelect2(page, 3, 'Jakarta Utara'); // Kota Asal
+    await ketikTanggalJam(page, '#tanggal_buka_lelang', tanggalJam(1));
+    await ketikTanggalJam(page, '#tanggal_tutup_lelang', tanggalJam(2));
+    await ketikTanggalJam(page, '#tanggal_mulai_kontrak', tanggalJam(3));
+    await ketikTanggalJam(page, '#tanggal_selesai_kontrak', tanggalJam(6));
 
-  await page.getByRole('textbox', { name: 'Masukkan Alamat Lengkap Tujuan' }).fill('Jl. Test Otomasi No. 2, Surabaya');
-  await pilihSelect2(page, 4, 'Kota Surabaya'); // Kota Tujuan
+    await pilihSelect2(page, 1, 'Tanjung Priok'); // Pelabuhan Asal (POL)
+    await pilihSelect2(page, 2, 'Tanjung Perak'); // Pelabuhan Tujuan (POD)
 
-  await page.getByRole('searchbox', { name: 'Anda Bisa Memilih Beberapa' }).click();
-  await page.keyboard.type('20 DRY');
-  await page.locator('.select2-results__option--highlighted').click();
+    await page.getByRole('textbox', { name: 'Masukkan Alamat Lengkap Asal' }).fill('Jl. Test Otomasi No. 1, Jakarta Utara');
+    await pilihSelect2(page, 3, 'Jakarta Utara'); // Kota Asal
 
-  await formPage.lanjutkanButton(page).click();
+    await page.getByRole('textbox', { name: 'Masukkan Alamat Lengkap Tujuan' }).fill('Jl. Test Otomasi No. 2, Surabaya');
+    await pilihSelect2(page, 4, 'Kota Surabaya'); // Kota Tujuan
 
-  // Step 2: Pilih Peserta Lelang — lelang sudah tercipta, ringkasan tampil.
-  await expect(page).toHaveURL(/\/lelang\/pilihpesertalelang\/.+/);
-  await expect(page.getByRole('cell', { name: nomorLelang })).toBeVisible();
+    await page.getByRole('searchbox', { name: 'Anda Bisa Memilih Beberapa' }).click();
+    await page.keyboard.type('20 DRY');
+    await page.locator('.select2-results__option--highlighted').click();
 
-  // Undang HANYA bidder dengan "(IK)" di namanya (syarat dari user).
-  const barisIK = page.locator('tr.isiDataBidderTable_tr').filter({ hasText: '(IK)' });
-  const jumlahIK = await barisIK.count();
-  expect(jumlahIK).toBeGreaterThan(0);
-  for (let i = 0; i < jumlahIK; i++) {
-    await barisIK.nth(i).locator('input[type="checkbox"]').first().check();
+    await formPage.lanjutkanButton(page).click();
+
+    // Step 2: Pilih Peserta Lelang — lelang sudah tercipta, ringkasan tampil.
+    await expect(page).toHaveURL(/\/lelang\/pilihpesertalelang\/.+/);
+
+    // Tombol peserta dirender sebelum script jQuery selesai dipasang. Jika
+    // diklik terlalu cepat, button type="button" tidak melakukan apa pun.
+    // Tunggu handler do_buat_lelang benar-benar siap sebelum memilih peserta.
+    await page.waitForFunction(() => {
+      const jquery = (window as typeof window & {
+        jQuery?: { _data: (element: Element, key: string) => { click?: unknown[] } | undefined };
+      }).jQuery;
+      const button = document.querySelector('#tombol_lanjutkan');
+      return Boolean(jquery && button && jquery._data(button, 'events')?.click?.length);
+    }, undefined, { timeout: 90_000 });
+    await expect(page.getByRole('cell', { name: nomorLelang })).toBeVisible({ timeout: 30_000 });
+
+    // Undang HANYA akun yang sudah diverifikasi sebagai TRANSPORTER_EMAIL.
+    const barisTransporter = page.locator('tr.isiDataBidderTable_tr').filter({
+      has: page.getByRole('cell', { name: alias, exact: true }),
+    });
+    await expect(barisTransporter).toHaveCount(1);
+    await barisTransporter.locator('input[type="checkbox"]').first().check();
+    await expect(page.locator('tr.isiDataBidderTable_tr input[type="checkbox"]:checked')).toHaveCount(1);
+    await expect(page.locator('#jumlah_pilih_bidder')).toHaveText('1');
+
+    // Checkbox master "Pilih Semua" TIDAK ikut ter-check karena hanya satu
+    // akun fixture yang dipilih. Dirender dua kali (desktop/mobile).
+    await expect(
+      page.locator('input[type="checkbox"][name="pilih_semua_bidder"]').first(),
+    ).not.toBeChecked();
+
+    // Submit sesungguhnya: email/WA/push hanya menuju akun transporter fixture.
+    const submitPeserta = page.waitForResponse((response) =>
+      response.request().method() === 'POST' && response.url().endsWith('/lelang/do_buat_lelang'),
+    { timeout: 90_000 });
+    await formPage.lanjutkanButton(page).click();
+    const responsePeserta = await submitPeserta;
+    expect(responsePeserta.ok(), `Submit peserta gagal: ${responsePeserta.status()}`).toBeTruthy();
+    await expect(page).toHaveURL(/\/lelang\/listlelang/, { timeout: 90_000 });
+    await expect(page.getByText('Anda berhasil membuat pengajuan lelang')).toBeVisible();
+
+    // Tabel daftar lelang dimuat async ("Mohon tunggu sebentar" dulu).
+    await expect(page.getByText(nomorLelang).first()).toBeVisible({ timeout: 15_000 });
+
+    const [notifTransporter, notifAdmin] = await Promise.all([
+      tungguNotifikasiBaru(transporterContext, baselineTransporter, {
+        kategori: 'Lelang',
+        judul: /Pengajuan Lelang/i,
+        isi: [nomorLelang],
+        redirect: /\/lelang\/listlelang\/.+tab=perlu-input-harga/,
+      }),
+      tungguNotifikasiBaru(adminContext, baselineAdmin, {
+        kategori: 'Lelang',
+        judul: /Pengajuan Lelang/i,
+        isi: [nomorLelang],
+        penerima: /to Transporter/i,
+        redirect: /\/lelang\/listlelang\/.+tab=perlu-input-harga/,
+      }),
+    ]);
+    expect(notifTransporter.isi).toContain(nomorLelang);
+    expect(notifAdmin.isi).toBe(notifTransporter.isi);
+
+    // Trigger kedua: pembatalan lelang yang baru dibuat. Lelang ini hanya
+    // memiliki satu peserta, sehingga tidak ada notifikasi ke akun non-fixture.
+    await page.goto(
+      `/lelang/listlelang?tab=semua-lelang&status_filter=1&filter_1=${encodeURIComponent(nomorLelang)}`,
+    );
+    const barisLelang = page.locator('table tbody tr').filter({ hasText: nomorLelang });
+    await expect(barisLelang).toHaveCount(1, { timeout: 30_000 });
+    const linkPembatalan = await barisLelang.locator('span.batalkan_lelang').getAttribute('link');
+    expect(linkPembatalan).toMatch(/\/lelang\/batalkanlelang\/\d+$/);
+    await page.goto(linkPembatalan!);
+    await page.locator('#alasan_batal').selectOption({ label: 'Salah Input Informasi' });
+
+    const cekBatal = page.waitForResponse((response) =>
+      response.request().method() === 'POST' && response.url().endsWith('/lelang/cekactionbatallelang'));
+    await page.getByRole('button', { name: 'Submit', exact: true }).click();
+    expect((await cekBatal).ok()).toBeTruthy();
+    await expect(page.getByText('Apakah anda yakin membatalkan lelang ?')).toBeVisible();
+
+    const submitBatal = page.waitForResponse((response) =>
+      response.request().method() === 'POST' && response.url().endsWith('/lelang/do_batalkan_lelang'));
+    await page.getByRole('button', { name: 'Ya', exact: true }).click();
+    const responseBatal = await submitBatal;
+    expect(responseBatal.ok(), `Pembatalan gagal: ${responseBatal.status()}`).toBeTruthy();
+    await expect(page).toHaveURL(/\/lelang\/detaillistlelang\/\d+$/i, { timeout: 30_000 });
+    await expect(page.getByText('LELANG BATAL', { exact: true }).first()).toBeVisible();
+
+    const [batalTransporter, batalAdmin] = await Promise.all([
+      tungguNotifikasiBaru(transporterContext, Number(notifTransporter.ID), {
+        kategori: 'Lelang',
+        judul: /Pembatalan Lelang/i,
+        isi: [nomorLelang],
+        redirect: /\/lelang\/detaillistlelang\/\d+\?notif=batal/i,
+      }),
+      tungguNotifikasiBaru(adminContext, Number(notifAdmin.ID), {
+        kategori: 'Lelang',
+        judul: /Pembatalan Lelang/i,
+        isi: [nomorLelang],
+        penerima: /to (Transporter|Bidder)/i,
+        redirect: /\/lelang\/detaillistlelang\/\d+\?notif=batal/i,
+      }),
+    ]);
+    expect(batalAdmin.isi).toBe(batalTransporter.isi);
+  } finally {
+    await transporterContext.close();
+    await adminContext.close();
   }
-
-  // Checkbox master "Pilih Semua" TIDAK ikut ter-check (hanya sebagian
-  // bidder dipilih) — sesuai rule "checkbox salah satu dihapus, Pilih
-  // Semua akan hilang" (di sini: tidak pernah tercentang sama sekali).
-  // Tanpa accessible name — locate via name attribute, bukan role/name.
-  // Dirender 2x (varian pc/mobile) — cukup cek yang pertama.
-  await expect(
-    page.locator('input[type="checkbox"][name="pilih_semua_bidder"]').first(),
-  ).not.toBeChecked();
-
-  // Submit sesungguhnya (mengirim notifikasi email+WA nyata ke 7 bidder
-  // terpilih) — root cause lambatnya adalah library PDF.js Express untuk
-  // preview aanwijzing (lihat catatan di atas), bukan proses notifikasi.
-  await formPage.lanjutkanButton(page).click();
-  await expect(page).toHaveURL(/\/lelang\/listlelang/, { timeout: 90_000 });
-  await expect(page.getByText('Anda berhasil membuat pengajuan lelang')).toBeVisible();
-
-  // Tabel daftar lelang dimuat async ("Mohon tunggu sebentar" dulu). Teks
-  // nomor lelang dirender 2x (varian desktop cell + #render-mobile).
-  await expect(page.getByText(nomorLelang).first()).toBeVisible({ timeout: 15_000 });
 });

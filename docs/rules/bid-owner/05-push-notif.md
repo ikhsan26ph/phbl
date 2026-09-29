@@ -48,3 +48,23 @@
 - Coverage automation akun utama bersifat read-only: Cek Disini, Hapus Notif,
   dan Tandai Dibaca tidak diklik. Preferensi/daftar khusus sub-user belum masuk
   scope suite ini.
+
+## Hasil uji trigger end-to-end 2026-09-29
+
+- Terverifikasi menerima record baru dari respons jadwal, kelengkapan data unit,
+  serta update Tracking: Stuffing, Kapal Berlayar, Kapal Sandar, Rencana
+  Dooring, Dooring, dan SJ Diterima Agen. Salinan Admin mempunyai isi identik.
+- Aksi inbox Tandai Dibaca dan Hapus telah diuji pada satu notifikasi yang baru
+  dipicu, dengan ID yang sama dari awal sampai record terhapus.
+- Rincian trigger, akun, state fixture, dan blocker ada di
+  `docs/PUSH-NOTIF-TRIGGER-REPORT-2026-09-29.md`.
+
+## Hasil uji trigger Admin 2026-09-29
+
+- Shipper fixture menerima record baru `Perjanjian Pengiriman Divalidasi`
+  untuk order `20260929-06501` setelah Admin memilih Terima Order.
+- Shipper fixture menerima record baru `Perjanjian Pengiriman Ditolak` untuk
+  order `20260826-06506` setelah Admin memilih Tolak Order dan mengisi alasan.
+- Shipper fixture menerima `Perubahan Jadwal` untuk order `20260829-06504`
+  setelah Admin menyimpan Ganti Jadwal. Jadwal dikembalikan ke nilai semula;
+  submit revert juga menghasilkan notifikasi baru sesuai perilaku server.

@@ -33,3 +33,32 @@
   Pilih Semua dicentang.
 - Coverage automation akun utama bersifat read-only: Cek Disini, Hapus Notif,
   dan Tandai Dibaca tidak diklik agar data akun demo tidak berubah.
+
+## Hasil uji trigger Pengajuan Lelang 2026-09-29
+
+- Shipper `pengirim.ph2021@gmail.com` membuat dan submit lelang
+  `AUTOTEST/1790650401972` hanya kepada Transporter fixture
+  `partner.ph2021@gmail.com` (ID 66, alias `(IK)MJW`).
+- Sesudah submit, inbox Transporter menerima record **baru** kategori `Lelang`,
+  judul `Pengajuan Lelang`, status `belum`, dan isi memuat nomor lelang unik.
+- Redirect menuju `/lelang/listlelang/?tab=perlu-input-harga...` pada origin
+  PHBID yang sama. Metadata kedaluwarsa berjarak sekitar tiga bulan dari waktu
+  dibuat (eksekusi job penghapusan setelah tiga bulan belum diuji).
+- Test membaca payload melalui endpoint daftar dan tidak mengklik `Cek Disini`,
+  sehingga notifikasi hasil trigger tetap belum dibaca.
+
+## Hasil uji trigger end-to-end 2026-09-29
+
+- Terverifikasi menerima Pengajuan Lelang, Pembatalan Lelang, Request Update /
+  Input Harga, dan Shipper Request Jadwal dari akun Shipper fixture; salinan
+  Admin mempunyai isi yang sama.
+- Pengajuan Nego dan perubahan akun terblokir HTTP 500 pada endpoint submit.
+  Dampaknya, notifikasi hasil/validasi turunannya belum dapat dipicu.
+- Rincian lengkap ada di `docs/PUSH-NOTIF-TRIGGER-REPORT-2026-09-29.md`.
+
+## Hasil uji trigger Validasi Perjanjian 2026-09-29
+
+- Transporter fixture menerima record baru `Perjanjian Pengiriman Berhasil
+  Divalidasi` untuk order `20260929-06501` setelah Admin memilih Terima Order.
+- Penolakan order `20260826-06506` tidak ditujukan ke Transporter; sesuai rule,
+  penerimanya hanya Shipper dan salinan Admin.
