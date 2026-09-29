@@ -663,6 +663,11 @@ item menu itu TIDAK tersedia utk status ORDER BARU):
     bisa lagi diperbaiki shipper; satu-satunya jalur tersisa = admin lewat
     field `#nomor_referensi` di Edit Data Order, dan itu pun ditolak untuk
     ORDER SELESAI. `test.fail()` di `tests/shipper/nomor-referensi.spec.ts`.
+21. (2026-09-29, audit Daftar Order Admin) **Action yang menurut rule harus
+    tetap tampil pada status akhir lalu menampilkan alert justru dihilangkan
+    dari UI**. Batalkan Order, Edit Data Muatan, Alihkan Order, dan Ganti Jadwal
+    tidak tersedia pada status akhir; Edit Data Order juga hilang pada ORDER
+    SELESAI. `test.fail()` di `tests/admin/daftar-order.spec.ts`.
 
 ## Admin-sub & Shipper-sub — Akun Saya (2026-09-26)
 
@@ -963,9 +968,11 @@ INBOUND0111". Order tanpa referensi
 
 Urutan rekomendasi (dari paling aman/tanpa mutasi ke yang butuh izin):
 
-1. **Sisa Daftar Order admin** (mutasi): Edit Data Order, Edit Status Order,
-   Batalkan Order, Alihkan Order (baru dibuka GET di spec open-stack),
-   Invoice. Edit Harga & Ganti Jadwal sudah selesai.
+1. **Sisa Daftar Order admin** (mutasi): coverage read-only inti sudah selesai
+   2026-09-29 (`tests/admin/daftar-order.spec.ts`, 9 test). Yang masih perlu
+   mutasi: Edit Data Order, Edit Status Order, Batalkan Order, Alihkan Order
+   (baru dibuka GET di spec open-stack), dan membuat Invoice. Edit Harga,
+   Validasi Perjanjian, serta Ganti Jadwal sudah selesai.
 2. **Sisa mutasi Validasi Akun/Master admin**: terima/tolak akun (mengubah
    akun demo permanen — TANYA user), rekening maks 3, verifikasi perubahan
    data, upload aanwijzing, hidden ulasan, gating petugas ditugaskan.
@@ -985,11 +992,11 @@ Urutan rekomendasi (dari paling aman/tanpa mutasi ke yang butuh izin):
    disampel), jadi tampilan No. Referensi pada dokumen invoice hasil "Buat
    Invoice" belum terverifikasi. Butuh izin membuat 1 invoice (permanen,
    memakan 1 dari 3 kesempatan order) — user menolak pada audit 2026-09-28.
-7. **Sisa Push Notif**: coverage akun utama, 12 jenis trigger, serta operasi
-   Hapus/Tandai Dibaca sudah selesai. Yang masih terbuka: sub-user, hasil nego
-   dan perubahan akun (HTTP 500), validasi perjanjian/perubahan jadwal (state
-   fixture tidak tersedia), Ambil Kontainer/Dokumen Dikirim (tahap tidak
-   dirender), eksekusi redirect `Cek Disini`, dan job retensi fisik 3 bulan.
+7. **Sisa Push Notif**: coverage akun utama, trigger lintas modul termasuk
+   Validasi Perjanjian dan Perubahan Jadwal, serta operasi Hapus/Tandai Dibaca
+   sudah selesai. Yang masih terbuka: sub-user, hasil nego dan perubahan akun
+   (HTTP 500), eksekusi redirect `Cek Disini`, dan job retensi fisik 3 bulan.
+   Ambil Kontainer/Dokumen Dikirim sengaja tidak dilanjutkan sesuai arahan user.
 8. Housekeeping: `.env.example` masih berisi kredensial asli (kosongkan
    sebelum git init); generator report menamai file per TANGGAL saja
    sehingga run kedua di hari sama menimpa laporan sebelumnya (sudah 2x

@@ -59,6 +59,26 @@
   - Jika bid owner melakukan filter halaman daftar order, kemudian melakukan beberapa aksi : Edit Data Order, Batalkan Order, Ganti Jadwal, Edit Data Muatan, Validasi Order, Input Kelengkapan Unit, Alihkan Order, & Edit Status Order. setelah berhasil redirect ke halaman daftar order dengan posisi terfilter.
   - Jika bid owner ingin menghilangkan filter data halaman daftar order dengan cara klik reset kemudian filter kembali.
 
+## Hasil audit Admin 2026-09-29
+
+- Cakupan otomatis baru ada di `tests/admin/daftar-order.spec.ts` (9 skenario):
+  tabel dan seluruh filter utama, sanitasi Nomor Kontainer, persistensi filter
+  setelah Detail/Kembali, pemetaan action menu pada 100 order aktual, form
+  Input Muatan/Perjanjian/Kelengkapan Unit, Upload Dokumen, Biaya Tambahan,
+  Lihat Data Unit, batas rating 5.0, section default Detail Order, serta akses
+  read-only ke Batalkan Order, Edit Data Muatan, dan Edit Status Order.
+- Seluruh pemeriksaan baru bersifat read-only atau memakai input invalid yang
+  ditolak sebelum tersimpan. Trigger mutasi Validasi Perjanjian dan Ganti Jadwal
+  diuji terpisah; Ganti Jadwal selalu dikembalikan ke nilai awal.
+- **Defect terkonfirmasi:** beberapa action yang menurut rule harus tetap muncul
+  pada status akhir lalu menampilkan alert justru dihilangkan dari UI. Yang
+  terdampak adalah Batalkan Order, Edit Data Muatan, Alihkan Order, dan Ganti
+  Jadwal pada status akhir; Edit Data Order juga hilang pada ORDER SELESAI.
+  Kondisi ini dicatat sebagai expected failure agar regresi tetap terlihat.
+- Gating invoice diperkeras: pengujian penolakan `/order/buatinvoice/<id>` kini
+  mengambil ID dari baris yang benar-benar berstatus ORDER BARU, bukan dari
+  urutan tabel yang dapat berubah ketika fixture berjalan ke tahap berikutnya.
+
 ## Edit Data Order
 
 - Pilihan menu ini akan muncul apabila status order nya mulai status ORDER BARU s.d status ORDER SELESAI

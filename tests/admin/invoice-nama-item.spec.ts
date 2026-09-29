@@ -69,7 +69,6 @@ let cache: Kandidat[] | null = null;
 async function kandidatInvoice(page: Page): Promise<Kandidat[]> {
   if (cache) return cache;
   await page.goto('/order/orderlist');
-  await page.locator('#valuelimit').selectOption('100');
 
   // Tampilan 100 order itu TRANSIEN (terukur 2026-09-26): tabel merender 20
   // order di t≈4s, 100 order di t≈14s, lalu AUTO-REFRESH daftar order
@@ -81,18 +80,24 @@ async function kandidatInvoice(page: Page): Promise<Kandidat[]> {
   //  (b) polling harus memilih ulang page size bila tabel sudah balik ke 20.
   // Catatan: teks "Menampilkan 20 30 50 100 Data" itu opsi page size, BUKAN
   // info jumlah data — jangan dipakai sebagai penanda.
-  await expect(async () => {
-    const hasil = await panenBaris(page);
-    if (hasil.length <= 5) {
-      await page.locator('#valuelimit').selectOption('100');
-      await page.waitForTimeout(3_000);
+  // Jangan selectOption() lagi pada setiap poll: request 100 data memerlukan
+  // ±14 detik; retrigger tiap 2–5 detik membuat request tidak pernah selesai.
+  // Poll 500 ms menangkap jendela transien tersebut sebelum auto-refresh.
+  let terbaik: Kandidat[] = [];
+  for (let percobaan = 0; percobaan < 6 && terbaik.length <= 5; percobaan += 1) {
+    await page.locator('#valuelimit').selectOption('100');
+    for (let poll = 0; poll < 40; poll += 1) {
+      const hasil = await panenBaris(page);
+      if (hasil.length > terbaik.length) terbaik = hasil;
+      if (terbaik.length > 5) break;
+      await page.waitForTimeout(500);
     }
-    expect(
-      hasil.length,
-      'Panen kandidat invoice terlalu sedikit — tabel masih menampilkan 20 order terbaru (semuanya berstatus awal)',
-    ).toBeGreaterThan(5);
-    cache = hasil;
-  }).toPass({ timeout: 180_000, intervals: [2_000, 3_000, 5_000] });
+  }
+  expect(
+    terbaik.length,
+    'Panen kandidat invoice terlalu sedikit — tabel tidak sempat menampilkan 100 order',
+  ).toBeGreaterThan(5);
+  cache = terbaik;
 
   return cache!;
 }
@@ -396,11 +401,15 @@ test.describe('Nama item Invoice Jasa Pengiriman (Admin)', () => {
     // KAPAL SANDAR, sementara invoice baru terbuka dari KAPAL SANDAR.
     test.setTimeout(180_000);
     await page.goto('/order/orderlist');
-    const trigger = page.locator('a.btn_edit_harga_order[idnya]');
-    await expect(async () => {
-      expect(await trigger.count()).toBeGreaterThan(0);
-    }).toPass({ timeout: 90_000, intervals: [1_000, 2_000, 3_000] });
-    const orderId = await trigger.first().getAttribute('idnya');
+    // Jangan mengambil trigger pertama secara global: urutan tabel dapat berubah
+    // ketika order terbaru bergerak ke tahap KAPAL SANDAR dan sudah boleh
+    // diinvoice. Ambil ID dari baris yang statusnya benar-benar ORDER BARU.
+    const barisAwal = page
+      .locator('tr:has(a.btn_edit_harga_order[idnya])')
+      .filter({ hasText: /ORDER BARU/ })
+      .first();
+    await expect(barisAwal).toBeVisible({ timeout: 90_000 });
+    const orderId = await barisAwal.locator('a.btn_edit_harga_order[idnya]').getAttribute('idnya');
     expect(orderId).toMatch(/^\d+$/);
 
     await page.goto(`/order/buatinvoice/${orderId}`);
