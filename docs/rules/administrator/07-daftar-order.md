@@ -59,9 +59,9 @@
   - Jika bid owner melakukan filter halaman daftar order, kemudian melakukan beberapa aksi : Edit Data Order, Batalkan Order, Ganti Jadwal, Edit Data Muatan, Validasi Order, Input Kelengkapan Unit, Alihkan Order, & Edit Status Order. setelah berhasil redirect ke halaman daftar order dengan posisi terfilter.
   - Jika bid owner ingin menghilangkan filter data halaman daftar order dengan cara klik reset kemudian filter kembali.
 
-## Hasil audit Admin 2026-09-29
+## Hasil audit Admin 2026-09-29, dikoreksi 2026-09-30
 
-- Cakupan otomatis baru ada di `tests/admin/daftar-order.spec.ts` (9 skenario):
+- Cakupan otomatis baru ada di `tests/admin/daftar-order.spec.ts` (10 skenario):
   tabel dan seluruh filter utama, sanitasi Nomor Kontainer, persistensi filter
   setelah Detail/Kembali, pemetaan action menu pada 100 order aktual, form
   Input Muatan/Perjanjian/Kelengkapan Unit, Upload Dokumen, Biaya Tambahan,
@@ -70,11 +70,28 @@
 - Seluruh pemeriksaan baru bersifat read-only atau memakai input invalid yang
   ditolak sebelum tersimpan. Trigger mutasi Validasi Perjanjian dan Ganti Jadwal
   diuji terpisah; Ganti Jadwal selalu dikembalikan ke nilai awal.
-- **Defect terkonfirmasi:** beberapa action yang menurut rule harus tetap muncul
-  pada status akhir lalu menampilkan alert justru dihilangkan dari UI. Yang
-  terdampak adalah Batalkan Order, Edit Data Muatan, Alihkan Order, dan Ganti
-  Jadwal pada status akhir; Edit Data Order juga hilang pada ORDER SELESAI.
-  Kondisi ini dicatat sebagai expected failure agar regresi tetap terlihat.
+- **Koreksi 2026-09-30:** laporan bahwa Batalkan Order, Edit Data Muatan,
+  Alihkan Order, Ganti Jadwal, dan Edit Data Order hilang pada status akhir
+  adalah SALAH dan telah dicabut. Sebagian action pembatasan dirender sebagai
+  elemen `<span>`, sedangkan audit lama hanya membaca `<a>` dan `<button>`.
+  Audit ulang membaca seluruh `.dropdown-menu > *`: 100 order aktual serta
+  order KAPAL BERLAYAR `20260316-08501` membuktikan menu-menu tersebut tampil.
+- Hasil klik read-only juga terverifikasi: Batalkan/Edit Muatan/Alihkan pada
+  KAPAL BERLAYAR menampilkan alert tahap kapal berlayar; Ganti Jadwal masih
+  membuka halaman. Pada KAPAL SANDAR, Ganti Jadwal menampilkan alert tahap
+  kapal sandar. Pada ORDER SELESAI, action pembatasan tetap tampil dan memberi
+  alert; tidak ada form yang disubmit.
+- Status DOKUMEN DIKIRIM ditemukan melalui seluruh pagination pada order
+  `20260224-02606` dan `20260108-02602` (halaman 3 dari 15 pada limit 100).
+  Pada `20260224-02606`, sebelas action berikut terverifikasi tampil: Proses
+  Invoice, Lihat Data Unit, Upload Dokumen, Biaya Tambahan, Alihkan Order,
+  Edit Data Muatan, Edit Data Order, Edit Harga, Batalkan Order, Ganti Jadwal,
+  dan Edit Status Order. Klik Batalkan/Alihkan/Edit Muatan/Ganti Jadwal memberi
+  alert pembatasan sesuai tahap; Edit Data Order membuka halaman edit. Tidak
+  ada form yang disubmit.
+- Klik Edit Data Order pada ORDER SELESAI `20260827-06502` terverifikasi
+  menampilkan alert sesuai rule: "Tidak bisa edit! Order sudah tahap selesai".
+  Pengujian menunggu handler halaman siap sebelum klik.
 - Gating invoice diperkeras: pengujian penolakan `/order/buatinvoice/<id>` kini
   mengambil ID dari baris yang benar-benar berstatus ORDER BARU, bukan dari
   urutan tabel yang dapat berubah ketika fixture berjalan ke tahap berikutnya.
@@ -284,7 +301,11 @@
 ## Proses Invoice
 
 - Pada action menu dengan status ‘KAPAL SANDAR’ akan menampilkan submenu Proses Invoice. Ketika di klik maka akan menampilkan halaman Invoice
-- Pada action menu dengan status ‘KONFIRMASI UNIT s.d. DOKUMEN DIKIRIM’ tidak menampilkan submenu Proses Invoice
+- Ketentuan lama menyebut status ‘KONFIRMASI UNIT s.d. DOKUMEN DIKIRIM’ tidak
+  menampilkan submenu Proses Invoice. Namun ketentuan penyesuaian tepat di
+  bawahnya membolehkan proses invoice pada KAPAL SANDAR s.d ORDER SELESAI.
+  Hasil aktual 2026-09-30: submenu **Proses Invoice tampil** pada DOKUMEN
+  DIKIRIM `20260224-02606` dan `20260108-02602`.
 - Terdapat penyesuaian nama button “upload invoice” menjadi upload tagihan. pabila di klik maka akan menampilkan pop up upload dokumen tagihan
 - Terdapat penyesuaian rule untuk buat invoice. Bidder dan admin dapat melakukan proses invoice pada tahap KAPAL SANDAR - ORDER SELESAI
 - Jika bidder klik menu Proses Invoice pada status order PROSES PENUGASAN - KAPAL BERLAYAR, maka akan menampilkan alert 'Tidak Bisa! Proses invoice akan tersedia setelah tahap kapal sandar'

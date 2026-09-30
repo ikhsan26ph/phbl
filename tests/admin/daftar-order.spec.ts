@@ -1,4 +1,4 @@
-import { expect, test, type Page } from '@playwright/test';
+import { expect, test, type Locator, type Page } from '@playwright/test';
 
 /**
  * Modul inti Daftar Order — Administrator.
@@ -66,11 +66,9 @@ async function bukaDaftar(page: Page, resetFilter = true): Promise<void> {
   const filter = page.getByRole('button', { name: /Filter/ }).first();
   await expect(filter).toBeVisible({ timeout: 30_000 });
   if (resetFilter) {
-    await filter.click();
-    const reset = page.locator('#btn_reset_filter_orderlist1');
-    await expect(reset).toBeAttached();
-    await reset.click({ force: true });
-    await page.waitForTimeout(3_000);
+    // Filter disimpan pada sesi server. Submit eksplisit seluruh nilai kosong
+    // membuat test independen dari filter yang ditinggalkan request sebelumnya.
+    await submitFilterEksklusif(page, {});
   }
   await expect(page.getByRole('button', { name: 'Action Menu' }).first()).toBeVisible({ timeout: 60_000 });
 }
@@ -90,6 +88,31 @@ async function submitFilter(page: Page): Promise<void> {
   });
 }
 
+async function submitFilterEksklusif(
+  page: Page,
+  values: { idOrder?: string; nomorLelang?: string },
+): Promise<void> {
+  await bukaFilter(page);
+  await page.locator('#id_order').evaluate((field, requested) => {
+    const form = field.closest('form');
+    if (!form) throw new Error('Form filter tidak ditemukan');
+    for (const control of form.querySelectorAll<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>(
+      'input:not([type="hidden"]):not([type="submit"]):not([type="button"]), select, textarea',
+    )) {
+      if (control instanceof HTMLInputElement && ['checkbox', 'radio'].includes(control.type)) {
+        control.checked = false;
+      } else {
+        control.value = '';
+      }
+    }
+    (form.querySelector<HTMLInputElement>('#id_order'))!.value = requested.idOrder ?? '';
+    (form.querySelector<HTMLInputElement>('#nomor_lelang'))!.value = requested.nomorLelang ?? '';
+    const button = form.querySelector<HTMLButtonElement>('button[type="submit"]');
+    if (!button) throw new Error('Tombol submit filter tidak ditemukan');
+    button.click();
+  }, values);
+}
+
 async function bukaAksiOrder(
   page: Page,
   nomorOrder: string,
@@ -97,15 +120,39 @@ async function bukaAksiOrder(
   polaUrl: RegExp,
 ): Promise<void> {
   await bukaDaftar(page, false);
-  await bukaFilter(page);
-  await page.locator('#id_order').fill(nomorOrder);
-  await submitFilter(page);
+  await submitFilterEksklusif(page, { idOrder: nomorOrder });
   const baris = page.locator('table tbody tr').filter({ hasText: nomorOrder }).first();
   await expect(baris).toBeVisible({ timeout: 60_000 });
   const tautan = baris.locator('a').filter({ hasText: new RegExp(`^\\s*${namaAksi}\\s*$`, 'i') }).first();
   await expect(tautan).toHaveAttribute('href', polaUrl);
   await page.goto((await tautan.getAttribute('href'))!);
   await expect(page).toHaveURL(polaUrl, { timeout: 30_000 });
+}
+
+async function barisOrderAktual(page: Page, nomorOrder: string, status: string): Promise<Locator> {
+  await page.goto('/order/OrderList');
+  await expect(page.getByRole('button', { name: /Filter/ }).first()).toBeVisible({ timeout: 30_000 });
+  await submitFilterEksklusif(page, { idOrder: nomorOrder });
+  const row = page.locator('table tbody tr').filter({ hasText: nomorOrder }).first();
+  await expect(row).toBeVisible({ timeout: 60_000 });
+  await expect(row).toContainText(status);
+  return row;
+}
+
+async function klikAksiDanHarapkanAlert(
+  page: Page,
+  nomorOrder: string,
+  status: string,
+  action: string,
+  message: RegExp,
+): Promise<void> {
+  const row = await barisOrderAktual(page, nomorOrder, status);
+  const item = row.locator('.dropdown-menu > *').filter({ hasText: new RegExp(`^\\s*${action}\\s*$`, 'i') }).first();
+  await expect(item).toBeAttached();
+  await page.waitForTimeout(2_000);
+  await row.getByRole('button', { name: 'Action Menu' }).click();
+  await item.click({ force: true });
+  await expect(page.locator('.swal2-container:visible')).toContainText(message, { timeout: 20_000 });
 }
 
 async function panenOrderAktual(page: Page): Promise<OrderRow[]> {
@@ -126,7 +173,9 @@ async function panenOrderAktual(page: Page): Promise<OrderRow[]> {
             nomor: (text.match(/\d{8}-\d{5}/) ?? [''])[0],
             status,
             text,
-            actions: [...tr.querySelectorAll('a, button')]
+            // Sejumlah action pembatasan dirender sebagai <span>, bukan <a>.
+            // Wajib ikut dipanen agar menu tampil tidak salah dilaporkan hilang.
+            actions: [...tr.querySelectorAll('a, button, .dropdown-menu > span')]
               .map((el) => (el.textContent ?? '').replace(/\s+/g, ' ').trim())
               .filter(Boolean),
             actionDisabled: Boolean(button?.disabled || button?.hasAttribute('disabled')),
@@ -188,30 +237,20 @@ test.describe('Daftar Order — Administrator', () => {
 
   test('filter Nomor Lelang tetap tersimpan setelah membuka Detail Order lalu Kembali', async ({ page }) => {
     await bukaDaftar(page);
-    await bukaFilter(page);
-    const nomorLelang = page.locator('#nomor_lelang');
-    await nomorLelang.fill('LELANGFCU/28082026IK');
-    await submitFilter(page);
-    await expect(page.getByText('LELANGFCU/28082026IK', { exact: true }).first()).toBeVisible({ timeout: 60_000 });
-
     try {
+      await submitFilterEksklusif(page, { nomorLelang: 'LELANGFCU/28082026IK' });
+      await expect(page.getByText('LELANGFCU/28082026IK', { exact: true }).first()).toBeVisible({ timeout: 60_000 });
       await page.getByRole('link', { name: 'Detail Order' }).first().click({ force: true, timeout: 30_000 });
       await expect(page).toHaveURL(/\/order\/orderdetail\//, { timeout: 30_000 });
       const kembali = page.getByRole('link', { name: /Kembali/ });
-      await expect(kembali).toHaveAttribute('href', /\/order\/orderlist/i);
+      await expect(kembali).toHaveAttribute('href', /\/order\/orderlist/i, { timeout: 30_000 });
       await page.goto((await kembali.getAttribute('href'))!);
       await expect(page).toHaveURL(/\/order\/orderlist/i, { timeout: 30_000 });
       await bukaFilter(page);
       await expect(page.locator('#nomor_lelang')).toHaveValue('LELANGFCU/28082026IK');
     } finally {
       if (!/\/order\/orderlist/i.test(page.url())) await page.goto('/order/OrderList');
-      const toggle = page.getByRole('button', { name: /Filter/ }).first();
-      const reset = page.locator('#btn_reset_filter_orderlist1');
-      if (!(await reset.isVisible().catch(() => false))) await toggle.click();
-      if ((await reset.count()) > 0) {
-        await reset.click({ force: true, timeout: 5_000 }).catch(() => {});
-        await page.waitForTimeout(3_000);
-      }
+      await submitFilterEksklusif(page, {}).catch(() => {});
     }
   });
 
@@ -223,10 +262,10 @@ test.describe('Daftar Order — Administrator', () => {
       'PROSES VALIDASI': ['Validasi Order', 'Alihkan Order', 'Edit Data Muatan', 'Edit Data Order'],
       'KONFIRMASI UNIT': ['Input Kelengkapan Unit', 'Upload Dokumen', 'Biaya Tambahan', 'Alihkan Order'],
       'PROSES PENUGASAN': ['Lihat Data Unit', 'Upload Dokumen', 'Biaya Tambahan', 'Edit Status Order'],
-      'KAPAL SANDAR': ['Proses Invoice', 'Lihat Data Unit', 'Upload Dokumen', 'Biaya Tambahan', 'Edit Status Order'],
-      'RENCANA DOORING': ['Proses Invoice', 'Lihat Data Unit', 'Upload Dokumen', 'Biaya Tambahan', 'Edit Status Order'],
-      'SJ DITERIMA AGEN': ['Proses Invoice', 'Lihat Data Unit', 'Upload Dokumen', 'Biaya Tambahan', 'Edit Status Order'],
-      'ORDER SELESAI': ['Beri Nilai Pengerjaan Transporter', 'Proses Invoice', 'Lihat Data Unit', 'Upload Dokumen', 'Biaya Tambahan'],
+      'KAPAL SANDAR': ['Proses Invoice', 'Alihkan Order', 'Edit Data Muatan', 'Edit Data Order', 'Batalkan Order', 'Ganti Jadwal'],
+      'RENCANA DOORING': ['Proses Invoice', 'Alihkan Order', 'Edit Data Muatan', 'Edit Data Order', 'Batalkan Order', 'Ganti Jadwal'],
+      'SJ DITERIMA AGEN': ['Proses Invoice', 'Alihkan Order', 'Edit Data Muatan', 'Edit Data Order', 'Batalkan Order', 'Ganti Jadwal'],
+      'ORDER SELESAI': ['Beri Nilai Pengerjaan Transporter', 'Proses Invoice', 'Alihkan Order', 'Edit Data Muatan', 'Edit Data Order', 'Batalkan Order', 'Ganti Jadwal'],
     };
 
     let checked = 0;
@@ -241,22 +280,74 @@ test.describe('Daftar Order — Administrator', () => {
     for (const status of ['DIBATALKAN', 'ORDER DITOLAK']) {
       const row = rowFor(rows, status);
       if (!row) continue;
-      expect(row.actions).toEqual(['Action Menu']);
       expect(row.actionDisabled, `${status} harus menonaktifkan Action Menu`).toBeTruthy();
     }
   });
 
-  test('DEFECT: menu aksi terlarang seharusnya tetap tampil pada status akhir untuk memunculkan alert', async ({ page }) => {
-    test.fail(true, 'UI menghilangkan menu; rule meminta menu tampil lalu memberi alert pembatasan.');
-    const rows = await panenOrderAktual(page);
-    const late = rowFor(rows, 'KAPAL SANDAR') ?? rowFor(rows, 'RENCANA DOORING') ?? rowFor(rows, 'ORDER SELESAI');
-    test.skip(!late, 'Tidak ada order tahap akhir pada 100 data aktual');
+  test('action terbatas tetap tampil dan memberikan alert sesuai status aktual', async ({ page }) => {
+    test.setTimeout(300_000);
+    await klikAksiDanHarapkanAlert(
+      page, '20260316-08501', 'KAPAL BERLAYAR', 'Batalkan Order',
+      /Tidak bisa batal! Order sudah melewati tahap kapal berlayar/i,
+    );
+    await klikAksiDanHarapkanAlert(
+      page, '20260316-08501', 'KAPAL BERLAYAR', 'Alihkan Order',
+      /Tidak bisa alihkan! Order sudah melewati tahap kapal berlayar/i,
+    );
+    await klikAksiDanHarapkanAlert(
+      page, '20260316-08501', 'KAPAL BERLAYAR', 'Edit Data Muatan',
+      /Tidak bisa edit! Order sudah melewati tahap kapal berlayar/i,
+    );
+    const berlayar = await barisOrderAktual(page, '20260316-08501', 'KAPAL BERLAYAR');
+    await expect(berlayar.locator('.dropdown-menu > *').filter({ hasText: /^\s*Ganti Jadwal\s*$/i }).first())
+      .toHaveAttribute('href', /\/order\/ganti_jadwal\//i);
 
-    for (const action of ['Batalkan Order', 'Edit Data Muatan', 'Alihkan Order', 'Ganti Jadwal']) {
-      expect.soft(late!.actions, `${late!.status} harus tetap menampilkan ${action}`).toContain(action);
+    await klikAksiDanHarapkanAlert(
+      page, '20260929-06503', 'KAPAL SANDAR', 'Ganti Jadwal',
+      /Tidak bisa ganti! Order sudah melewati tahapan kapal sandar/i,
+    );
+
+    const dokumen = await barisOrderAktual(page, '20260224-02606', 'DOKUMEN DIKIRIM');
+    for (const action of [
+      'Proses Invoice', 'Lihat Data Unit', 'Upload Dokumen', 'Biaya Tambahan',
+      'Alihkan Order', 'Edit Data Muatan', 'Edit Data Order', 'Edit Harga',
+      'Batalkan Order', 'Ganti Jadwal', 'Edit Status Order',
+    ]) {
+      await expect(
+        dokumen.locator('.dropdown-menu > *').filter({ hasText: new RegExp(`^\\s*${action}\\s*$`, 'i') }).first(),
+        `${action} harus tampil pada DOKUMEN DIKIRIM`,
+      ).toBeAttached();
     }
-    const selesai = rowFor(rows, 'ORDER SELESAI');
-    if (selesai) expect.soft(selesai.actions, 'ORDER SELESAI harus menampilkan Edit Data Order lalu alert').toContain('Edit Data Order');
+    await klikAksiDanHarapkanAlert(
+      page, '20260224-02606', 'DOKUMEN DIKIRIM', 'Batalkan Order',
+      /Tidak bisa batal! Order sudah melewati tahap kapal berlayar/i,
+    );
+    await klikAksiDanHarapkanAlert(
+      page, '20260224-02606', 'DOKUMEN DIKIRIM', 'Alihkan Order',
+      /Tidak bisa alihkan! Order sudah melewati tahap kapal berlayar/i,
+    );
+    await klikAksiDanHarapkanAlert(
+      page, '20260224-02606', 'DOKUMEN DIKIRIM', 'Edit Data Muatan',
+      /Tidak bisa edit! Order sudah melewati tahap kapal berlayar/i,
+    );
+    await klikAksiDanHarapkanAlert(
+      page, '20260224-02606', 'DOKUMEN DIKIRIM', 'Ganti Jadwal',
+      /Tidak bisa ganti! Order sudah melewati tahapan kapal sandar/i,
+    );
+
+    const dokumenEdit = await barisOrderAktual(page, '20260224-02606', 'DOKUMEN DIKIRIM');
+    const editDataOrder = dokumenEdit.locator('a.editdataorder').filter({ hasText: /^\s*Edit Data Order\s*$/i }).first();
+    await expect(editDataOrder).toHaveAttribute('href', /\/order\/edit_inputpesanan\//i);
+    await dokumenEdit.getByRole('button', { name: 'Action Menu' }).click();
+    await editDataOrder.click();
+    await expect(page).toHaveURL(/\/order\/edit_inputpesanan\//i, { timeout: 30_000 });
+  });
+
+  test('Edit Data Order pada ORDER SELESAI tetap tampil dan memberi alert sesuai rule', async ({ page }) => {
+    await klikAksiDanHarapkanAlert(
+      page, '20260827-06502', 'ORDER SELESAI', 'Edit Data Order',
+      /Tidak bisa edit! Order sudah tahap selesai/i,
+    );
   });
 
   test('form tahap awal tersedia untuk Input Muatan, Perjanjian, dan Kelengkapan Unit fixture', async ({ page }) => {

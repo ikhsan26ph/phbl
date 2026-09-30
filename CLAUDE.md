@@ -663,11 +663,19 @@ item menu itu TIDAK tersedia utk status ORDER BARU):
     bisa lagi diperbaiki shipper; satu-satunya jalur tersisa = admin lewat
     field `#nomor_referensi` di Edit Data Order, dan itu pun ditolak untuk
     ORDER SELESAI. `test.fail()` di `tests/shipper/nomor-referensi.spec.ts`.
-21. (2026-09-29, audit Daftar Order Admin) **Action yang menurut rule harus
-    tetap tampil pada status akhir lalu menampilkan alert justru dihilangkan
-    dari UI**. Batalkan Order, Edit Data Muatan, Alihkan Order, dan Ganti Jadwal
-    tidak tersedia pada status akhir; Edit Data Order juga hilang pada ORDER
-    SELESAI. `test.fail()` di `tests/admin/daftar-order.spec.ts`.
+Koreksi audit 2026-09-30: laporan 2026-09-29 bahwa Batalkan Order, Edit Data
+Muatan, Alihkan Order, Ganti Jadwal, dan Edit Data Order hilang pada status
+akhir adalah SALAH. Action pembatasan dirender sebagai `<span>` dan terlewat
+oleh selector lama yang hanya membaca `<a>`/`<button>`. Audit ulang 100 order
+dan order KAPAL BERLAYAR `20260316-08501` membuktikan menu tetap tampil serta
+alert pembatasannya bekerja. Edit Data Order pada ORDER SELESAI `20260827-06502`
+juga memberi alert sesuai rule setelah handler halaman siap. Tidak ada defect
+aktif baru dari audit action menu ini; jangan menghidupkan kembali laporan lama.
+Status DOKUMEN DIKIRIM juga sudah ditemukan lewat sweep seluruh 15 halaman:
+order `20260224-02606` dan `20260108-02602` di halaman 3. Pada order pertama,
+11 action tampil; klik langsung Batalkan/Alihkan/Edit Muatan/Ganti Jadwal
+memberi alert pembatasan sesuai tahap dan Edit Data Order membuka halaman edit.
+Pengecekan ini tidak melakukan submit atau mutasi data.
 
 ## Admin-sub & Shipper-sub — Akun Saya (2026-09-26)
 
@@ -966,10 +974,30 @@ INBOUND0111". Order tanpa referensi
 
 ## Langkah berikutnya (belum dikerjakan) — diperbarui 2026-09-28
 
+Pembaruan kritis 2026-09-30: audit baca server menemukan demo dan live berbagi
+pool PHP-FPM `www` dengan `pm.max_children=5` (274 warning batas worker pada
+30 September). Hindari regresi besar sampai pool terisolasi. Enam action
+diagnostik/migrasi di `UserPage.php` demo diblokir sementara langsung pada
+server dengan guard `404` setelah `/user/tess` terbukti memaparkan `phpinfo()`
+tanpa login. File asli dibackup di `/home/ubuntu/UserPage.php.backup-20260930-1450`.
+Patch **belum** masuk repo source privat dan bisa tertimpa deploy. GET tanpa
+login ke `/user/tess` pada live juga terbukti menampilkan `phpinfo()`; source
+live identik dengan cadangan demo awal. Perubahan live menunggu keputusan
+eksplisit pemilik layanan. Detail lengkap ada di
+`report/hasil-pengecekan-demo-2026-09-30.md`.
+
+Lanjutan 2026-09-30 sekitar 15.25 WIB: tujuh action diagnostik/migrasi
+`GeneralPage.php` juga telah diblokir **hanya di demo** dengan guard 404,
+backup, PHP lint, dan smoke test; login Admin tetap lulus 1/1. File live
+`GeneralPage.php` masih identik dengan demo sebelum patch. Jangan menyebut
+audit/server "clear": source GitHub belum terhubung, patch demo dapat
+tertimpa deploy, live belum dimitigasi, dan route tulis lain masih perlu
+audit otorisasi. Persetujuan terpisah diminta untuk perubahan live.
+
 Urutan rekomendasi (dari paling aman/tanpa mutasi ke yang butuh izin):
 
 1. **Sisa Daftar Order admin** (mutasi): coverage read-only inti sudah selesai
-   2026-09-29 (`tests/admin/daftar-order.spec.ts`, 9 test). Yang masih perlu
+   2026-09-30 (`tests/admin/daftar-order.spec.ts`, 10 test). Yang masih perlu
    mutasi: Edit Data Order, Edit Status Order, Batalkan Order, Alihkan Order
    (baru dibuka GET di spec open-stack), dan membuat Invoice. Edit Harga,
    Validasi Perjanjian, serta Ganti Jadwal sudah selesai.
@@ -997,8 +1025,10 @@ Urutan rekomendasi (dari paling aman/tanpa mutasi ke yang butuh izin):
    sudah selesai. Yang masih terbuka: sub-user, hasil nego dan perubahan akun
    (HTTP 500), eksekusi redirect `Cek Disini`, dan job retensi fisik 3 bulan.
    Ambil Kontainer/Dokumen Dikirim sengaja tidak dilanjutkan sesuai arahan user.
-8. Housekeeping: `.env.example` masih berisi kredensial asli (kosongkan
-   sebelum git init); generator report menamai file per TANGGAL saja
+8. Housekeeping: `.env.example` telah dikosongkan dari enam password akun
+   pada 2026-09-30; versi Git sebelumnya sudah memuat nilai itu sehingga
+   kredensial terkait masih perlu dirotasi oleh pemilik akun. Generator report
+   menamai file per TANGGAL saja
    sehingga run kedua di hari sama menimpa laporan sebelumnya (sudah 2x
    di-rename manual: `-admin`, `-admin-mutasi`, `-admin-readonly`) — saran:
    tambahkan jam/suffix otomatis; folder `specs/` & `specs/_challenge/`
