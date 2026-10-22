@@ -1,0 +1,63 @@
+{
+  "started": "2026-10-22T06:40:48.475Z",
+  "label": "NOTIF-RETEST-1792651248475",
+  "roles": {
+    "cipta": {
+      "baselineMax": 37775,
+      "matched": [
+        {
+          "ID": 37848,
+          "judul": "Perjanjian Pengiriman Divalidasi : ",
+          "isi": "Perjanjian pengiriman 20261022-06508 berhasil divalidasi sistem. Menunggu bidder input data unit.",
+          "to": "to Shipper",
+          "tgl_buat": "2026-10-22 13:41:23",
+          "redirect": "https://phbidlautdemo.prahu-hub.com/order/orderdetail/K1I1anVmWUVnUGlOSGRzWmtpa0lCZz09#gtdetailorder"
+        }
+      ]
+    },
+    "admin": {
+      "baselineMax": 37776,
+      "matched": [
+        {
+          "ID": 37849,
+          "judul": "Perjanjian Pengiriman Divalidasi : ",
+          "isi": "Perjanjian pengiriman 20261022-06508 berhasil divalidasi sistem. Menunggu bidder input data unit.",
+          "to": "to Shipper",
+          "tgl_buat": "2026-10-22 13:41:23",
+          "redirect": "https://phbidlautdemo.prahu-hub.com/order/orderdetail/K1I1anVmWUVnUGlOSGRzWmtpa0lCZz09#gtdetailorder"
+        },
+        {
+          "ID": 37834,
+          "judul": "Perjanjian Pengiriman Berhasil Divalidasi :",
+          "isi": "Perjanjian pengiriman order 20261022-06508 berhasil divalidasi sistem (auto validasi) PH Bid.",
+          "to": "to Transporter",
+          "tgl_buat": "2026-10-22 13:41:23",
+          "redirect": "https://phbidlautdemo.prahu-hub.com/order/orderdetail/K1I1anVmWUVnUGlOSGRzWmtpa0lCZz09"
+        }
+      ]
+    },
+    "transporter": {
+      "baselineMax": 37663,
+      "matched": [
+        {
+          "ID": 37833,
+          "judul": "Perjanjian Pengiriman Berhasil Divalidasi :",
+          "isi": "Perjanjian pengiriman order 20261022-06508 berhasil divalidasi sistem (auto validasi) PH Bid.",
+          "to": "to Transporter",
+          "tgl_buat": "2026-10-22 13:41:23",
+          "redirect": "https://phbidlautdemo.prahu-hub.com/order/orderdetail/K1I1anVmWUVnUGlOSGRzWmtpa0lCZz09"
+        }
+      ]
+    }
+  },
+  "order": {
+    "id": "20261022-06508",
+    "hash": "K1I1anVmWUVnUGlOSGRzWmtpa0lCZz09",
+    "label": "NOTIF-RETEST-1792651248475",
+    "reference": "QA-AV2-NOTIF-RETEST-1792651248475",
+    "stage": "submitted",
+    "status": "KONFIRMASI UNIT"
+  },
+  "lastChecked": "2026-10-22T06:41:38.879Z",
+  "conclusion": "LULUS: notifikasi validasi otomatis baru ditemukan pada shipper, transporter dan admin. Penerimaan email dan push perangkat belum diverifikasi."
+}

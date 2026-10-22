@@ -1,0 +1,416 @@
+{
+  "notes": [
+    [
+      "Tanggal",
+      "22 Oktober 2026, staging phbidlautdemo.prahu-hub.com. Laporan ini melengkapi laporan tahap awal."
+    ],
+    [
+      "Kesimpulan",
+      "Edit data, muatan, status, tracking, biaya, dokumen dan invoice yang diuji dapat dijalankan pada order auto. Ditemukan satu ketidaksesuaian waktu eligibility auto validasi."
+    ],
+    [
+      "Temuan",
+      "AV-BUG-01: order dibuat saat OFF menjadi auto ketika perjanjian disimpan setelah ON."
+    ],
+    [
+      "Observasi notifikasi",
+      "Pada data yang diaudit, notifikasi validasi manual 06502 ditemukan; notifikasi validasi auto 06501/06504/06505/06507 tidak ditemukan. Aturan notifikasi auto belum ditentukan, sehingga belum dinilai sebagai defect. Audit 100 terbaru per kategori Order dan Tracking pada shipper, admin, transporter."
+    ],
+    [
+      "Pembanding",
+      "Pengujian awal mencakup auto Cipta, manual Cipta dan auto Jaya. Lanjutan detail terutama Cipta; ganti jadwal dan ekspor perjanjian memakai Jaya. Tidak mengklaim setiap skenario diulang di kedua perusahaan."
+    ],
+    [
+      "Batas edit",
+      "Jumlah kontainer disabled baik auto maupun manual. Pada ORDER SELESAI, edit tertentu diblokir sesuai aturan tahap yang ada. Setelah invoice dibuat, edit harga diblokir. Pembatasan ini tidak disimpulkan sebagai masalah auto validasi."
+    ],
+    [
+      "Konfigurasi akhir",
+      "Kedua setting auto semula aktif. Audit akhir ada pada lampiran bila berhasil. Biaya layanan Jaya Flat Rp10.000 22–31 Oktober dan jadwal QA tetap tersimpan. Open Stack order Jaya berubah dari kosong ke 24 Oktober."
+    ],
+    [
+      "Data yang tetap tersimpan",
+      "7 order QA total: tiga tahap awal dan empat tahap lanjutan. Invoice QA/AV2/20261022/06501 tersimpan, tidak ada transaksi pembayaran. Dokumen PNG dan biaya tambahan sementara sudah dihapus. Data edit QA, tracking, riwayat dan notifikasi tetap ada."
+    ],
+    [
+      "Kualitas bukti",
+      "Hasil akhir memakai verifikasi ulang data tersimpan. Kesalahan selector, wait dan pembacaan response setelah navigasi pada skrip eksplorasi dikecualikan dari defect produk."
+    ],
+    [
+      "Cakupan belum selesai",
+      "Lihat baris TERHALANG, BELUM DIUJI dan BELUM DIVERIFIKASI. Tidak menyatakan seluruh modul bebas bug."
+    ]
+  ],
+  "bug": {
+    "id": "AV-BUG-01",
+    "severity": "Sedang (usulan QA)",
+    "title": "Order dibuat saat OFF ikut auto validasi setelah setting ON",
+    "order": "20261022-06505",
+    "steps": "1. Nonaktifkan Cipta di Auto Validate Setting.\n2. Sebagai shipper buat order baru dan simpan data muatan; jangan simpan perjanjian dulu.\n3. Aktifkan Cipta kembali di CMS.\n4. Simpan perjanjian pengiriman untuk order yang sama.\n5. Periksa status order di admin.",
+    "expected": "Tetap PROSES VALIDASI karena dibuat sebelum setting diaktifkan. Acuan eksplisit user: berlaku hanya setelah diset dan order baru.",
+    "actual": "Langsung KONFIRMASI UNIT tanpa validasi manual. Setelah bukti direkam, order QA ini dibatalkan untuk skenario pembatalan.",
+    "scope": "Terbukti pada Cipta satu siklus OFF→ON. Bukan klaim bahwa semua order lama diproses tepat saat toggle ON. Order yang sudah menunggu validasi tetap tidak diproses surut pada pengujian awal.",
+    "evidence": "SETTING-OFF-ON.png"
+  },
+  "counts": {
+    "LULUS": 50,
+    "TEMUAN": 1,
+    "OBSERVASI": 8,
+    "TIDAK TERSEDIA": 3,
+    "TERHALANG": 2,
+    "BELUM DIVERIFIKASI": 1,
+    "BELUM DIUJI": 5
+  },
+  "rows": [
+    {
+      "id": "SUB-ORDER-AUTO",
+      "status": "LULUS",
+      "actual": "Order 20261022-06504 dibuat oleh Jumadi (sub-user Cipta), perjanjian disimpan melalui akun sub-user dan otomatis KONFIRMASI UNIT."
+    },
+    {
+      "id": "UPLOAD-SIMPAN",
+      "status": "LULUS",
+      "actual": "File QA-AV2-DOKUMEN.png terverifikasi tersimpan setelah membuka ulang halaman."
+    },
+    {
+      "id": "BIAYA-TAMBAH",
+      "status": "LULUS",
+      "actual": "Biaya QA-AV2-BIAYA Rp12.000 tersimpan dan total order Rp4.512.000."
+    },
+    {
+      "id": "UPLOAD-DOWNLOAD",
+      "status": "LULUS",
+      "actual": "Unduhan dokumen HTTP 200, 68 byte; signature PNG PNG"
+    },
+    {
+      "id": "EDIT-BATAL",
+      "status": "LULUS",
+      "actual": "Batal edit tidak mengubah data tersimpan pada 20261022-06504"
+    },
+    {
+      "id": "EDIT-INVALID",
+      "status": "LULUS",
+      "actual": "Deskripsi kosong tidak tersimpan; nilai lama bertahan setelah refresh."
+    },
+    {
+      "id": "UPLOAD-PREVIEW",
+      "status": "LULUS",
+      "actual": "Popup Lihat Dokumen tampil; file sudah diverifikasi dapat diunduh."
+    },
+    {
+      "id": "EDIT-TANPA-PERUBAHAN",
+      "status": "LULUS",
+      "actual": "Simpan nilai yang sama berhasil dan validasi tidak batal."
+    },
+    {
+      "id": "EDIT-FIELD-LENGKAP",
+      "status": "LULUS",
+      "actual": "Referensi, alasan, tanggal muat, deskripsi, catatan, kedua PIC/telepon/alamat/kota dan sales tersimpan; validasi tetap KONFIRMASI UNIT. Jumlah kontainer disabled di UI, tidak dipaksa."
+    },
+    {
+      "id": "SETTING-GAGAL-REQUEST",
+      "status": "LULUS",
+      "actual": "Request toggle sengaja digagalkan; UI kembali ke nilai semula dan refresh tidak menunjukkan sukses palsu."
+    },
+    {
+      "id": "SETTING-OFF-ON",
+      "status": "TEMUAN",
+      "actual": "20261022-06505 dibuat saat OFF, disubmit perjanjian setelah ON. Aktual: 20261022-06505 | LELANGIK/00001NRML | KONFIRMASI UNIT\t | KM. Segara Bapak. Acuan user: hanya order baru setelah setting diaktifkan."
+    },
+    {
+      "id": "SETTING-ON-OFF",
+      "status": "OBSERVASI",
+      "actual": "20261022-06506 dibuat saat ON, disubmit saat OFF. Aktual: 20261022-06506 | LELANGIK/00001NRML | PROSES VALIDASI\t | KM. Segara Bapak. Ketentuan jika setting dimatikan sebelum pemicu belum ditetapkan user."
+    },
+    {
+      "id": "BIAYA-EDIT",
+      "status": "LULUS",
+      "actual": "Edit biaya Rp12.000 ke Rp15.000 terverifikasi tersimpan sesudah halaman dibuka ulang."
+    },
+    {
+      "id": "BIAYA-HAPUS",
+      "status": "LULUS",
+      "actual": "Biaya QA dihapus; tersimpan sesudah refresh, biaya tambahan kembali nol."
+    },
+    {
+      "id": "UPLOAD-HAPUS",
+      "status": "LULUS",
+      "actual": "Dokumen QA dihapus dan tidak muncul setelah refresh."
+    },
+    {
+      "id": "UPLOAD-FORMAT-INVALID",
+      "status": "LULUS",
+      "actual": "File .txt ditolak: Format file tidak sesuai"
+    },
+    {
+      "id": "MENU-VALIDASI-TETAP",
+      "status": "LULUS",
+      "actual": "Upload/download/hapus dokumen dan tambah/edit/hapus biaya tidak membatalkan validasi order auto."
+    },
+    {
+      "id": "TRACKING-PENUGASAN",
+      "status": "LULUS",
+      "actual": "Enam penugasan tracking tersimpan dan dikonfirmasi pada order auto."
+    },
+    {
+      "id": "TRACK-2",
+      "status": "OBSERVASI",
+      "actual": "Isi Data Tracking tidak tersedia; periksa apakah tahap telah diisi."
+    },
+    {
+      "id": "TRACK-3",
+      "status": "LULUS",
+      "actual": "Input tracking KAPAL BERLAYAR berhasil disimpan. Status order: 20261022-06501 | LELANGIK/00001NRML | KAPAL BERLAYAR\t | KM. Segara Bapak"
+    },
+    {
+      "id": "TRACK-4",
+      "status": "LULUS",
+      "actual": "Input tracking KAPAL SANDAR berhasil disimpan. Status order: 20261022-06501 | LELANGIK/00001NRML | KAPAL SANDAR\t | KM. Segara Bapak"
+    },
+    {
+      "id": "GANTI-JADWAL-SIMPAN",
+      "status": "LULUS",
+      "actual": "Open Stack Jaya diubah menjadi 24/10/2026, tersimpan setelah buka ulang; validasi tetap berlaku."
+    },
+    {
+      "id": "GANTI-JADWAL-NOTIF",
+      "status": "LULUS",
+      "actual": "Push notifikasi perubahan jadwal baru diterima shipper; 1 record untuk aksi ini."
+    },
+    {
+      "id": "INVOICE-GENERATE-PDF",
+      "status": "LULUS",
+      "actual": "PDF invoice dihasilkan, signature %PDF, 602877 byte. Harga Rp4.500.000, PPN Rp49.500, PPh Rp90.000, grand total Rp4.459.500 dari form."
+    },
+    {
+      "id": "INVOICE-SIMPAN",
+      "status": "LULUS",
+      "actual": "Invoice jasa pengiriman QA terdaftar setelah Simpan di preview; aplikasi menawarkan lanjut membuat invoice tambahan."
+    },
+    {
+      "id": "INVOICE-BLOKIR-EDIT-HARGA",
+      "status": "LULUS",
+      "actual": "Harga tidak bisa diedit setelah invoice tersimpan, sesuai pembatasan normal aplikasi."
+    },
+    {
+      "id": "BATAL-ORDER-AUTO",
+      "status": "LULUS",
+      "actual": "Order auto 20261022-06505 berhasil dibatalkan admin."
+    },
+    {
+      "id": "TOLAK-ORDER-MANUAL-KONTROL",
+      "status": "LULUS",
+      "actual": "Order kontrol 20261022-06506 yang menunggu validasi berhasil ditolak."
+    },
+    {
+      "id": "HAPUS-PULIHKAN-UI",
+      "status": "TIDAK TERSEDIA",
+      "actual": "Pada order DIBATALKAN, action menu tidak menawarkan Hapus/Pulihkan; teks menu: \n              Dokumen Aanwijzing\n            "
+    },
+    {
+      "id": "TRACK-5",
+      "status": "LULUS",
+      "actual": "Input tracking RENCANA DOORING berhasil disimpan. Status order: 20261022-06501 | LELANGIK/00001NRML | RENCANA DOORING\t | KM. Segara Bapak"
+    },
+    {
+      "id": "TRACK-6",
+      "status": "LULUS",
+      "actual": "Input tracking DOORING berhasil disimpan. Status order: 20261022-06501 | LELANGIK/00001NRML | DOORING\t | KM. Segara Bapak"
+    },
+    {
+      "id": "TRACK-7",
+      "status": "OBSERVASI",
+      "actual": "Input tracking SJ DITERIMA AGEN berhasil disimpan. Status order: 20261022-06501 | LELANGIK/00001NRML | ORDER SELESAI\t | KM. Segara Bapak"
+    },
+    {
+      "id": "SELESAI-GUARD-Edit Data Order",
+      "status": "LULUS",
+      "actual": "Pembatasan Edit Data Order pada ORDER SELESAI: Tidak bisa edit! Order sudah tahap selesai\nMengerti"
+    },
+    {
+      "id": "SELESAI-GUARD-Edit Data Muatan",
+      "status": "LULUS",
+      "actual": "Pembatasan Edit Data Muatan pada ORDER SELESAI: Tidak bisa edit! Order sudah melewati tahap kapal berlayar\nMengerti"
+    },
+    {
+      "id": "SELESAI-GUARD-Batalkan Order",
+      "status": "LULUS",
+      "actual": "Pembatasan Batalkan Order pada ORDER SELESAI: Tidak bisa batal! Order sudah melewati tahap kapal berlayar\nMengerti"
+    },
+    {
+      "id": "SELESAI-GUARD-Ganti Jadwal",
+      "status": "LULUS",
+      "actual": "Pembatasan Ganti Jadwal pada ORDER SELESAI: Tidak bisa ganti! Order sudah melewati tahapan kapal sandar\nMengerti"
+    },
+    {
+      "id": "SELESAI-GUARD-Alihkan Order",
+      "status": "LULUS",
+      "actual": "Pembatasan Alihkan Order pada ORDER SELESAI: Tidak bisa alihkan! Order sudah melewati tahap kapal berlayar\nMengerti"
+    },
+    {
+      "id": "BACKWARD-SJ Diterima Agen",
+      "status": "LULUS",
+      "actual": "Status tersimpan menjadi SJ Diterima Agen."
+    },
+    {
+      "id": "BACKWARD-Dooring",
+      "status": "LULUS",
+      "actual": "Status tersimpan menjadi Dooring."
+    },
+    {
+      "id": "BACKWARD-Rencana Dooring",
+      "status": "LULUS",
+      "actual": "Status tersimpan menjadi Rencana Dooring."
+    },
+    {
+      "id": "BACKWARD-Kapal Sandar",
+      "status": "LULUS",
+      "actual": "Status tersimpan menjadi Kapal Sandar."
+    },
+    {
+      "id": "BACKWARD-Kapal Berlayar",
+      "status": "LULUS",
+      "actual": "Status tersimpan menjadi Kapal Berlayar."
+    },
+    {
+      "id": "BACKWARD-Stuffing",
+      "status": "LULUS",
+      "actual": "Status tersimpan menjadi Stuffing."
+    },
+    {
+      "id": "BACKWARD-Proses Penugasan",
+      "status": "LULUS",
+      "actual": "Status tersimpan menjadi Proses Penugasan."
+    },
+    {
+      "id": "BACKWARD-Konfirmasi Unit",
+      "status": "LULUS",
+      "actual": "Status tersimpan menjadi Konfirmasi Unit."
+    },
+    {
+      "id": "VALIDASI-SETELAH-SEMUA-MUNDUR",
+      "status": "LULUS",
+      "actual": "Tanggal validasi awal 22/10/2026 09:42 tetap tercatat setelah seluruh pengembalian status yang tersedia."
+    },
+    {
+      "id": "DOUBLE-SUBMIT",
+      "status": "LULUS",
+      "actual": "Dua tab mengirim perjanjian order 20261022-06507 hampir bersamaan. Satu order tetap KONFIRMASI UNIT. Hasil request: fulfilled, fulfilled. Notifikasi order baru terkait: "
+    },
+    {
+      "id": "DOUBLE-NOTIF",
+      "status": "OBSERVASI",
+      "actual": "Notifikasi validasi terkait 20261022-06507 setelah double submit: 0; judul: . Pengiriman email/WA eksternal belum diaudit."
+    },
+    {
+      "id": "QTY-AUTO-MANUAL",
+      "status": "OBSERVASI",
+      "actual": "Jumlah kontainer disabled setelah Edit Data dicentang: auto=true, manual=true. Pembatasan yang sama; tidak khusus auto validasi."
+    },
+    {
+      "id": "AKSI-MASSAL",
+      "status": "TIDAK TERSEDIA",
+      "actual": "Kontrol seleksi pada baris order: 0. Tidak ditemukan alur aksi massal pada baris order yang diperiksa."
+    },
+    {
+      "id": "SUBADMIN-EDIT-AUTO",
+      "status": "LULUS",
+      "actual": "Sub-admin yang memiliki action Edit Data Order berhasil menyimpan perubahan pada order auto 20261022-06504 tanpa membatalkan validasi."
+    },
+    {
+      "id": "ROLE-EDIT-HARGA-cipta",
+      "status": "LULUS",
+      "actual": "Menu Edit Harga admin tidak tampil untuk cipta"
+    },
+    {
+      "id": "ROLE-EDIT-HARGA-cipta-sub",
+      "status": "LULUS",
+      "actual": "Menu Edit Harga admin tidak tampil untuk cipta-sub"
+    },
+    {
+      "id": "ROLE-EDIT-HARGA-transporter",
+      "status": "LULUS",
+      "actual": "Menu Edit Harga admin tidak tampil untuk transporter"
+    },
+    {
+      "id": "LAPORAN-LOGISTIK",
+      "status": "LULUS",
+      "actual": "Order auto 20261022-06501 tercantum pada laporan logistik untuk Cipta, rentang permintaan muat 22–31 Oktober 2026."
+    },
+    {
+      "id": "LAPORAN-EXPORT",
+      "status": "LULUS",
+      "actual": "Export Laporan Logistik PT. Cipta Karya Abadi Sejahtera Sentora Mujur Selalu 22.10.2026 - 31.10.2026 - Admin.xlsx berhasil, 10377 byte. Nomor order ditemukan di isi file: true"
+    },
+    {
+      "id": "NOTIF-AUDIT-cipta",
+      "status": "OBSERVASI",
+      "actual": "Ditemukan 10 record Order/Tracking terkait order QA pada 100 notifikasi terbaru tiap kategori. Detail disimpan pada lampiran JSON."
+    },
+    {
+      "id": "NOTIF-AUDIT-admin",
+      "status": "OBSERVASI",
+      "actual": "Ditemukan 11 record Order/Tracking terkait order QA pada 100 notifikasi terbaru tiap kategori. Detail disimpan pada lampiran JSON."
+    },
+    {
+      "id": "NOTIF-AUDIT-transporter",
+      "status": "OBSERVASI",
+      "actual": "Ditemukan 1 record Order/Tracking terkait order QA pada 100 notifikasi terbaru tiap kategori. Detail disimpan pada lampiran JSON."
+    },
+    {
+      "id": "ALIHKAN-SUBMIT",
+      "status": "TERHALANG",
+      "actual": "Pada order QA 20261022-06507 terdapat 3 penawaran: dua jadwal lewat N/A, satu penawaran asal 1918 tombol Pesan disabled. Tidak tersedia harga lain yang dapat dipilih. Pengalihan aktual belum dijalankan."
+    },
+    {
+      "id": "EXPORT-PERJANJIAN",
+      "status": "LULUS",
+      "actual": "Tautan tombol Export Perjanjian Pengiriman Jaya menghasilkan PDF HTTP200, 65402 byte; signature %PDF. Isi teks PDF belum diparsing."
+    },
+    {
+      "id": "FINAL-SETTING",
+      "status": "LULUS",
+      "actual": "Cipta dan Jaya tetap Aktif, sesuai kondisi awal."
+    },
+    {
+      "id": "TEP",
+      "status": "TERHALANG",
+      "actual": "Tidak diuji: user mengonfirmasi terkait sistem lain; akses integrasi/kode uji tidak tersedia."
+    },
+    {
+      "id": "EMAIL-WA",
+      "status": "BELUM DIVERIFIKASI",
+      "actual": "Audit hanya notifikasi dalam aplikasi; penerimaan email/WhatsApp di tujuan tidak diperiksa."
+    },
+    {
+      "id": "PEMBAYARAN",
+      "status": "BELUM DIUJI",
+      "actual": "Pembuatan invoice diuji; pencatatan pelunasan, rekonsiliasi dan transfer dana belum dijalankan."
+    },
+    {
+      "id": "TRACKING-KONDISIONAL",
+      "status": "TIDAK TERSEDIA",
+      "actual": "Ambil Kontainer dan Dokumen Dikirim bukan tahap pada konfigurasi order QA ini; enam tahap yang tersedia digunakan."
+    },
+    {
+      "id": "SETTING-DUA-ADMIN",
+      "status": "BELUM DIUJI",
+      "actual": "Dua admin mengubah setting bersamaan belum disimulasikan. Submit perjanjian dua tab dan kegagalan request toggle sudah diuji."
+    },
+    {
+      "id": "JAYA-SUBUSER",
+      "status": "BELUM DIUJI",
+      "actual": "Order dari sub-user diuji pada Cipta. Sub-user Jaya belum membuat order."
+    },
+    {
+      "id": "OTORISASI-SERVER",
+      "status": "BELUM DIUJI",
+      "actual": "Pemeriksaan role terbatas pada menu yang tampil dan aksi sub-admin; bypass endpoint server sebagai role tanpa izin belum diuji."
+    },
+    {
+      "id": "UPLOAD-BATAS",
+      "status": "BELUM DIUJI",
+      "actual": "PNG valid dan TXT invalid diuji. Batas ukuran 4MB dan seluruh variasi ekstensi belum diuji."
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+Tanggal
+22 Oktober 2026, staging phbidlautdemo.prahu-hub.com. Laporan ini melengkapi laporan tahap awal.
+
+Kesimpulan
+Edit data, muatan, status, tracking, biaya, dokumen dan invoice yang diuji dapat dijalankan pada order auto. Ditemukan satu ketidaksesuaian waktu eligibility auto validasi.
+
+Temuan
+AV-BUG-01: order dibuat saat OFF menjadi auto ketika perjanjian disimpan setelah ON.
+
+Observasi notifikasi
+Pada data yang diaudit, notifikasi validasi manual 06502 ditemukan; notifikasi validasi auto 06501/06504/06505/06507 tidak ditemukan. Aturan notifikasi auto belum ditentukan, sehingga belum dinilai sebagai defect. Audit 100 terbaru per kategori Order dan Tracking pada shipper, admin, transporter.
+
+Pembanding
+Pengujian awal mencakup auto Cipta, manual Cipta dan auto Jaya. Lanjutan detail terutama Cipta; ganti jadwal dan ekspor perjanjian memakai Jaya. Tidak mengklaim setiap skenario diulang di kedua perusahaan.
+
+Batas edit
+Jumlah kontainer disabled baik auto maupun manual. Pada ORDER SELESAI, edit tertentu diblokir sesuai aturan tahap yang ada. Setelah invoice dibuat, edit harga diblokir. Pembatasan ini tidak disimpulkan sebagai masalah auto validasi.
+
+Konfigurasi akhir
+Kedua setting auto semula aktif. Audit akhir ada pada lampiran bila berhasil. Biaya layanan Jaya Flat Rp10.000 22–31 Oktober dan jadwal QA tetap tersimpan. Open Stack order Jaya berubah dari kosong ke 24 Oktober.
+
+Data yang tetap tersimpan
+7 order QA total: tiga tahap awal dan empat tahap lanjutan. Invoice QA/AV2/20261022/06501 tersimpan, tidak ada transaksi pembayaran. Dokumen PNG dan biaya tambahan sementara sudah dihapus. Data edit QA, tracking, riwayat dan notifikasi tetap ada.
+
+Kualitas bukti
+Hasil akhir memakai verifikasi ulang data tersimpan. Kesalahan selector, wait dan pembacaan response setelah navigasi pada skrip eksplorasi dikecualikan dari defect produk.
+
+Cakupan belum selesai
+Lihat baris TERHALANG, BELUM DIUJI dan BELUM DIVERIFIKASI. Tidak menyatakan seluruh modul bebas bug.
+
+TEMUAN
+id: AV-BUG-01
+
+severity: Sedang (usulan QA)
+
+title: Order dibuat saat OFF ikut auto validasi setelah setting ON
+
+order: 20261022-06505
+
+steps: 1. Nonaktifkan Cipta di Auto Validate Setting.
+2. Sebagai shipper buat order baru dan simpan data muatan; jangan simpan perjanjian dulu.
+3. Aktifkan Cipta kembali di CMS.
+4. Simpan perjanjian pengiriman untuk order yang sama.
+5. Periksa status order di admin.
+
+expected: Tetap PROSES VALIDASI karena dibuat sebelum setting diaktifkan. Acuan eksplisit user: berlaku hanya setelah diset dan order baru.
+
+actual: Langsung KONFIRMASI UNIT tanpa validasi manual. Setelah bukti direkam, order QA ini dibatalkan untuk skenario pembatalan.
+
+scope: Terbukti pada Cipta satu siklus OFF→ON. Bukan klaim bahwa semua order lama diproses tepat saat toggle ON. Order yang sudah menunggu validasi tetap tidak diproses surut pada pengujian awal.
+
+evidence: SETTING-OFF-ON.png

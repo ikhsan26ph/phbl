@@ -1,0 +1,370 @@
+{
+  "notes": [
+    [
+      "Tanggal",
+      "22 Oktober 2026, Asia/Jakarta; staging phbidlautdemo.prahu-hub.com"
+    ],
+    [
+      "Kesimpulan",
+      "Pada skenario yang dieksekusi, auto validasi kedua shipper berhasil dan tidak menghalangi edit data, muatan, input unit atau edit status yang diuji. Tidak menyatakan seluruh menu/transisi sudah bebas masalah."
+    ],
+    [
+      "Order auto Cipta",
+      "20261022-06501 | QA-AUTOVAL-20261022-CIPTA-A"
+    ],
+    [
+      "Order manual Cipta",
+      "20261022-06502 | QA-AUTOVAL-20261022-CIPTA-B"
+    ],
+    [
+      "Order auto Jaya",
+      "20261022-05903 | QA-AUTOVAL-20261022-JAYA-A"
+    ],
+    [
+      "Kondisi akhir",
+      "Ketiga order KONFIRMASI UNIT. Cipta/Jaya auto validate aktif. Harga Cipta Rp4.500.000, Jaya Rp1.000.000. Data QA dan riwayat tetap tersimpan."
+    ],
+    [
+      "Konfigurasi yang ditambahkan",
+      "Jadwal QA Jaya dan biaya layanan Flat Rp10.000 berlaku 22–31 Oktober 2026 tetap tersimpan. Konfigurasi lama tidak dihapus."
+    ],
+    [
+      "Batas kesimpulan",
+      "Baca status LULUS TERBATAS dan BELUM DIUJI pada sheet Skenario. Kesalahan locator/wait pada skrip eksplorasi tidak dihitung sebagai defect produk; hasil dikonfirmasi ulang dari data tersimpan."
+    ],
+    [
+      "Akses admin",
+      "CMS /admin memakai Default Admin; aplikasi operasional memakai akun Administrator yang sudah tersedia di workspace. Kredensial tidak disertakan."
+    ]
+  ],
+  "rows": [
+    {
+      "id": "SET-01",
+      "scenario": "Identitas, pencarian dan kondisi awal kedua shipper",
+      "status": "LULUS",
+      "steps": "Cari Cipta dan Jaya Elektronika pada Auto Validate Setting.",
+      "actual": "Cipta ID 65 dan Jaya ID 59 aktif; total 2 perusahaan aktif.",
+      "evidence": "settings-subusers-Cipta"
+    },
+    {
+      "id": "SET-02",
+      "scenario": "Nonaktif tersimpan tanpa Save",
+      "status": "LULUS",
+      "steps": "Nonaktifkan Cipta; buka ulang halaman.",
+      "actual": "Respons toggle ok=true, aktif=false, totalAktif=1; nilai Nonaktif bertahan.",
+      "evidence": "setting-65-off-persisted"
+    },
+    {
+      "id": "SET-03",
+      "scenario": "Aktif tersimpan tanpa Save",
+      "status": "LULUS",
+      "steps": "Aktifkan kembali Cipta; buka ulang halaman.",
+      "actual": "Respons toggle ok=true, aktif=true, totalAktif=2; nilai Aktif bertahan.",
+      "evidence": "setting-65-on-persisted"
+    },
+    {
+      "id": "SET-04",
+      "scenario": "Tampilan sub-user mengikuti induk",
+      "status": "LULUS TERBATAS",
+      "steps": "Buka panah kedua perusahaan.",
+      "actual": "Masing-masing 2 sub-user ditampilkan Aktif — ikut induk. Belum membuat order dari login sub-user.",
+      "evidence": "settings-subusers-Jaya-Elektronika"
+    },
+    {
+      "id": "AUT-01",
+      "scenario": "Auto validasi Cipta",
+      "status": "LULUS",
+      "steps": "Buat 20261022-06501 saat aktif, simpan muatan lalu perjanjian sebagai shipper.",
+      "actual": "Status menjadi KONFIRMASI UNIT tanpa validasi admin; tanggal validasi 22/10/2026 09:42.",
+      "evidence": "cipta-auto-validation-result"
+    },
+    {
+      "id": "AUT-02",
+      "scenario": "Order baru saat nonaktif",
+      "status": "LULUS",
+      "steps": "Nonaktifkan Cipta, buat 20261022-06502, simpan muatan dan perjanjian.",
+      "actual": "Order berhenti di PROSES VALIDASI.",
+      "evidence": "cipta-validation-result-B"
+    },
+    {
+      "id": "AUT-03",
+      "scenario": "Tidak berlaku surut",
+      "status": "LULUS",
+      "steps": "Aktifkan Cipta kembali setelah 20261022-06502 menunggu validasi.",
+      "actual": "Order 06502 tetap PROSES VALIDASI; tidak otomatis divalidasi saat setting diaktifkan.",
+      "evidence": "nonretro-and-existing-auto"
+    },
+    {
+      "id": "AUT-04",
+      "scenario": "Validasi lama tetap berlaku setelah setting off/on",
+      "status": "LULUS",
+      "steps": "Periksa 20261022-06501 sesudah menonaktifkan dan mengaktifkan setting untuk kontrol.",
+      "actual": "Order tetap KONFIRMASI UNIT; tidak kembali ke PROSES VALIDASI.",
+      "evidence": "nonretro-and-existing-auto"
+    },
+    {
+      "id": "AUT-05",
+      "scenario": "Validasi manual pembanding",
+      "status": "LULUS",
+      "steps": "Admin menerima perjanjian 20261022-06502 melalui Validasi Order.",
+      "actual": "Berhasil menjadi KONFIRMASI UNIT.",
+      "evidence": "final-20261022-06502"
+    },
+    {
+      "id": "AUT-06",
+      "scenario": "Auto validasi Jaya",
+      "status": "LULUS",
+      "steps": "Buat 20261022-05903 pada jadwal QA, simpan muatan dan perjanjian sebagai shipper.",
+      "actual": "Langsung KONFIRMASI UNIT tanpa validasi admin.",
+      "evidence": "jaya-auto-validation-result"
+    },
+    {
+      "id": "ADM-01",
+      "scenario": "Edit detail order auto Cipta",
+      "status": "LULUS",
+      "steps": "Centang Edit Data; ubah deskripsi barang dan catatan; Submit dan Ya; buka ulang.",
+      "actual": "Kedua nilai tersimpan; status tetap KONFIRMASI UNIT.",
+      "evidence": "admin-edit-persisted"
+    },
+    {
+      "id": "ADM-02",
+      "scenario": "Edit PIC pemuatan auto Cipta",
+      "status": "LULUS",
+      "steps": "Ubah PIC pemuatan melalui Edit Data Order dan buka ulang.",
+      "actual": "QA PIC Muat Auto tersimpan; validasi tetap berlaku.",
+      "evidence": "auto-loading-persisted"
+    },
+    {
+      "id": "ADM-03",
+      "scenario": "Edit penerima auto Cipta",
+      "status": "LULUS",
+      "steps": "Ubah nama perusahaan penerima dan PIC penerimaan; buka ulang.",
+      "actual": "QA Penerima Auto Edit dan QA PIC Terima Auto tersimpan; validasi tetap berlaku.",
+      "evidence": "auto-recipient-persisted"
+    },
+    {
+      "id": "ADM-04",
+      "scenario": "Edit muatan auto Cipta",
+      "status": "LULUS",
+      "steps": "Ubah jumlah muatan 1 ke 2 dan berat 10 ke 12 kg; simpan; buka ulang.",
+      "actual": "Jumlah 2 dan berat 12 tersimpan; status tetap KONFIRMASI UNIT.",
+      "evidence": "auto-cargo-edit-persisted"
+    },
+    {
+      "id": "ADM-05",
+      "scenario": "Input unit auto Cipta",
+      "status": "LULUS",
+      "steps": "Isi data unit QA; pilih Simpan Data Unit Saja.",
+      "actual": "Data unit tersimpan dan status menjadi PROSES PENUGASAN. Tidak mengirim ke Unifam.",
+      "evidence": "admin-unit-saved"
+    },
+    {
+      "id": "ADM-06",
+      "scenario": "Edit status auto Cipta",
+      "status": "LULUS",
+      "steps": "Pada PROSES PENUGASAN pilih Edit Status Order; kembalikan ke Konfirmasi Unit dan isi alasan QA.",
+      "actual": "Berhasil menjadi KONFIRMASI UNIT. Bukan pembatalan validasi; riwayat perubahan status tercatat.",
+      "evidence": "admin-status-result"
+    },
+    {
+      "id": "ADM-07",
+      "scenario": "Edit harga auto Cipta",
+      "status": "LULUS",
+      "steps": "Isi harga Rp4.500.100; simpan dan refresh; kembalikan ke Rp4.500.000.",
+      "actual": "Nilai tersimpan dan status tetap KONFIRMASI UNIT. Harga akhir Rp4.500.000. Percobaan awal input mask menghasilkan Rp4.501.000; telah dikembalikan, bukan disimpulkan sebagai bug auto validasi.",
+      "evidence": "price-4500100-verified"
+    },
+    {
+      "id": "ADM-08",
+      "scenario": "Edit detail order manual pembanding",
+      "status": "LULUS",
+      "steps": "Edit deskripsi dan catatan 20261022-06502 setelah divalidasi manual.",
+      "actual": "Nilai tersimpan dan status tetap KONFIRMASI UNIT, seperti order auto.",
+      "evidence": "manual-detail-persisted"
+    },
+    {
+      "id": "ADM-09",
+      "scenario": "Konsistensi tampilan shipper Cipta",
+      "status": "LULUS",
+      "steps": "Login shipper; buka detail 20261022-06501 setelah edit admin.",
+      "actual": "Deskripsi, catatan, kedua PIC, penerima, jumlah 2 dan berat 12 tampil; tanggal validasi tetap 09:42.",
+      "evidence": "shipper-edited-detail"
+    },
+    {
+      "id": "ADM-10",
+      "scenario": "Riwayat perubahan Cipta",
+      "status": "LULUS",
+      "steps": "Buka History Perubahan Data order auto.",
+      "actual": "Edit data, status dan harga tercatat dengan akun admin; timestamp validasi awal tetap tampil.",
+      "evidence": "history-perubahan-data-opened"
+    },
+    {
+      "id": "ADM-11",
+      "scenario": "Edit detail, pemuatan dan penerima auto Jaya",
+      "status": "LULUS",
+      "steps": "Ubah deskripsi, catatan, kedua PIC dan nama perusahaan penerima; simpan dan buka ulang.",
+      "actual": "Semua lima field tersimpan; status tetap KONFIRMASI UNIT.",
+      "evidence": "jaya-edit-persisted"
+    },
+    {
+      "id": "ADM-12",
+      "scenario": "Edit muatan auto Jaya",
+      "status": "LULUS",
+      "steps": "Ubah jumlah 1 ke 2 dan berat 10 ke 12; simpan dan buka ulang.",
+      "actual": "Nilai tersimpan; status tetap KONFIRMASI UNIT.",
+      "evidence": "jaya-cargo-edited"
+    },
+    {
+      "id": "ADM-13",
+      "scenario": "Input unit auto Jaya",
+      "status": "LULUS",
+      "steps": "Isi unit QA dan simpan melalui admin.",
+      "actual": "Data unit tersimpan; status PROSES PENUGASAN sebelum edit status.",
+      "evidence": "jaya-status-confirm"
+    },
+    {
+      "id": "ADM-14",
+      "scenario": "Edit status auto Jaya",
+      "status": "LULUS",
+      "steps": "Kembalikan PROSES PENUGASAN ke KONFIRMASI UNIT dengan alasan QA.",
+      "actual": "Status berhasil dikembalikan tanpa kembali ke proses validasi manual.",
+      "evidence": "jaya-status-result"
+    },
+    {
+      "id": "MENU-24",
+      "scenario": "Upload Dokumen",
+      "status": "LULUS TERBATAS",
+      "steps": "Buka halaman dari tautan action order auto Cipta.",
+      "actual": "HTTP 200 dan identitas order benar. Belum menguji submit, upload atau perubahan bisnis pada menu ini.",
+      "evidence": "upload-dokumen-opened"
+    },
+    {
+      "id": "MENU-25",
+      "scenario": "Biaya Tambahan",
+      "status": "LULUS TERBATAS",
+      "steps": "Buka halaman dari tautan action order auto Cipta.",
+      "actual": "HTTP 200 dan identitas order benar. Belum menguji submit, upload atau perubahan bisnis pada menu ini.",
+      "evidence": "biaya-tambahan-opened"
+    },
+    {
+      "id": "MENU-26",
+      "scenario": "Alihkan Order",
+      "status": "LULUS TERBATAS",
+      "steps": "Buka halaman dari tautan action order auto Cipta.",
+      "actual": "HTTP 200 dan identitas order benar. Belum menguji submit, upload atau perubahan bisnis pada menu ini.",
+      "evidence": "alihkan-order-opened"
+    },
+    {
+      "id": "MENU-27",
+      "scenario": "Ganti Jadwal",
+      "status": "LULUS TERBATAS",
+      "steps": "Buka halaman dari tautan action order auto Cipta.",
+      "actual": "HTTP 200 dan identitas order benar. Belum menguji submit, upload atau perubahan bisnis pada menu ini.",
+      "evidence": "ganti-jadwal-opened"
+    },
+    {
+      "id": "ENV-01",
+      "scenario": "Prasyarat Jaya: biaya layanan",
+      "status": "TERATASI",
+      "steps": "Coba booking sebelum ada biaya berlaku; periksa riwayat 20 biaya; tambah biaya setelah user mengizinkan.",
+      "actual": "Sebelumnya ditolak: biaya layanan tidak tersedia. 19 EXPIRED, 1 berlaku 4–5 Mei 2027. Ditambahkan Flat Rp10.000, 22–31 Oktober 2026; booking kemudian berhasil.",
+      "evidence": "jaya-biaya-layanan-blocked"
+    },
+    {
+      "id": "ENV-02",
+      "scenario": "Prasyarat Jaya: jadwal",
+      "status": "TERATASI",
+      "steps": "Periksa 15 lelang; tambah jadwal pada LELANG/IK/1604.",
+      "actual": "Jadwal QA AUTOVAL JAYA 20261022 / QAAV1022, closing 26 Oktober 2026 09:52, ETD 27 Oktober, ETA 30 Oktober; 20 DRY Rp1.000.000.",
+      "evidence": "jaya-booking-ready"
+    },
+    {
+      "id": "NEXT-30",
+      "scenario": "TEP",
+      "status": "BELUM DIUJI",
+      "steps": "—",
+      "actual": "Dikeluarkan dari fokus utama oleh user; tidak diuji.",
+      "evidence": ""
+    },
+    {
+      "id": "NEXT-31",
+      "scenario": "Order dibuat oleh sub-user",
+      "status": "BELUM DIUJI",
+      "steps": "—",
+      "actual": "Baru memeriksa tampilan pewarisan, belum menjalankan order dari login sub-user.",
+      "evidence": ""
+    },
+    {
+      "id": "NEXT-32",
+      "scenario": "Pemicu berulang dan kondisi bersamaan",
+      "status": "BELUM DIUJI",
+      "steps": "—",
+      "actual": "Belum menguji pengiriman ganda, race condition, dua admin atau dua pemicu.",
+      "evidence": ""
+    },
+    {
+      "id": "NEXT-33",
+      "scenario": "Simulasi gagal menyimpan setting",
+      "status": "BELUM DIUJI",
+      "steps": "—",
+      "actual": "Belum menyuntikkan gangguan jaringan/server.",
+      "evidence": ""
+    },
+    {
+      "id": "NEXT-34",
+      "scenario": "Seluruh field edit data",
+      "status": "BELUM DIUJI",
+      "steps": "—",
+      "actual": "Yang diuji: deskripsi, catatan, PIC, perusahaan penerima, jumlah/berat muatan; belum seluruh field termasuk jumlah kontainer dan perubahan tanggal/rute.",
+      "evidence": ""
+    },
+    {
+      "id": "NEXT-35",
+      "scenario": "Seluruh transisi status tracking",
+      "status": "BELUM DIUJI",
+      "steps": "—",
+      "actual": "Hanya PROSES PENUGASAN ke KONFIRMASI UNIT; belum tahapan tracking lainnya.",
+      "evidence": ""
+    },
+    {
+      "id": "NEXT-36",
+      "scenario": "Pembatalan, penolakan, penghapusan dan pemulihan",
+      "status": "BELUM DIUJI",
+      "steps": "—",
+      "actual": "Belum diuji terhadap order auto.",
+      "evidence": ""
+    },
+    {
+      "id": "NEXT-37",
+      "scenario": "Notifikasi, invoice, pembayaran, laporan dan ekspor",
+      "status": "BELUM DIUJI",
+      "steps": "—",
+      "actual": "Belum memverifikasi dampak lintas modul atau efek ganda.",
+      "evidence": ""
+    },
+    {
+      "id": "NEXT-38",
+      "scenario": "Hak akses role lain dan tindakan massal",
+      "status": "BELUM DIUJI",
+      "steps": "—",
+      "actual": "Belum diuji.",
+      "evidence": ""
+    },
+    {
+      "id": "NEXT-39",
+      "scenario": "Setting berubah sebelum pemicu perjanjian",
+      "status": "BELUM DIUJI",
+      "steps": "—",
+      "actual": "Belum menguji order yang dibuat saat off lalu perjanjian disubmit setelah on, atau sebaliknya.",
+      "evidence": ""
+    },
+    {
+      "id": "NEXT-40",
+      "scenario": "Batal edit, input invalid, simpan tanpa perubahan",
+      "status": "BELUM DIUJI",
+      "steps": "—",
+      "actual": "Belum diuji secara tersendiri.",
+      "evidence": ""
+    }
+  ]
+}
