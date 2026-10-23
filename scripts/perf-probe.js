@@ -5,7 +5,9 @@ const dotenv = require('dotenv');
 const path = require('path');
 const { performance } = require('perf_hooks');
 
-dotenv.config({ path: path.resolve(__dirname, '..', '.env'), quiet: true });
+// Target sama dengan playwright.config.ts: TARGET_ENV (demo | local, default demo).
+const envFile = path.resolve(__dirname, '..', `.env.${process.env.TARGET_ENV ?? 'demo'}`);
+dotenv.config({ path: envFile, quiet: true });
 
 const cases = [
   { role: 'anon', path: '/user/login' },
@@ -23,7 +25,7 @@ const credentials = {
 };
 
 async function main() {
-  if (!process.env.BASE_URL) throw new Error('BASE_URL belum diisi di .env');
+  if (!process.env.BASE_URL) throw new Error(`BASE_URL belum diisi di ${path.basename(envFile)}`);
   let invalidSessions = 0;
   let errors = 0;
   let invalidResponses = 0;

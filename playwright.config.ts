@@ -1,20 +1,38 @@
 import { defineConfig, devices } from '@playwright/test';
 import dotenv from 'dotenv';
+import fs from 'fs';
 import path from 'path';
 
-dotenv.config({ path: path.resolve(__dirname, '.env') });
+/**
+ * Target environment dipilih lewat TARGET_ENV (demo | local, default demo).
+ * Tiap target punya env file, storageState, dan hasil run sendiri sehingga
+ * run ke satu target tidak menimpa target lain:
+ *   .env.<target>   .auth/<target>/<peran>.json   test-results/<target>/
+ */
+const TARGET = process.env.TARGET_ENV ?? 'demo';
+const ENV_FILE = path.resolve(__dirname, `.env.${TARGET}`);
+if (!fs.existsSync(ENV_FILE)) {
+  throw new Error(
+    `TARGET_ENV=${TARGET}: file ${path.basename(ENV_FILE)} tidak ditemukan. ` +
+      'Salin .env.example ke file itu lalu isi BASE_URL & kredensial.',
+  );
+}
+dotenv.config({ path: ENV_FILE, quiet: true });
+// Diteruskan ke helper test (auth.setup, push-notif.trigger) & generator report.
+process.env.TARGET_ENV = TARGET;
 
 /**
  * Peran (dipakai konsisten di seluruh project):
  * - Bid Owner  = Shipper      (UI: "Pemilik Barang")
  * - Bidder     = Transporter  (UI: "Ekspedisi")
  */
-const AUTH_DIR = path.resolve(__dirname, '.auth');
+const AUTH_DIR = path.resolve(__dirname, '.auth', TARGET);
 
 /** Project ber-login: nama project = nama folder test = nama file storageState. */
 const authProjects = [
   'admin',
   'admin-sub',
+  'admin-sub-read',
   'shipper',
   'shipper-sub',
   'transporter',
@@ -40,11 +58,17 @@ export default defineConfig({
   // teramati berulang 2026-08-20) — 60 dtk memberi ruang tanpa menutupi
   // regresi nyata.
   timeout: 60_000,
-  // JSON dipakai scripts/generate-report.js untuk membuat report/hasil-testing-<tanggal>.xlsx.
+  // Per target: Playwright MEMBERSIHKAN outputDir di awal run, jadi folder
+  // bersama akan menghapus artefak/hasil target lain.
+  outputDir: `test-results/${TARGET}`,
+  // JSON dipakai scripts/generate-report.js untuk membuat
+  // report/hasil-testing-<tanggal>-<jam>-<target>.xlsx.
   reporter: [
-    ['html'],
-    ['json', { outputFile: 'test-results/results.json' }],
+    ['html', { outputFolder: `playwright-report/${TARGET}` }],
+    ['json', { outputFile: `test-results/${TARGET}/results.json` }],
   ],
+  // Dibaca generator report (JSON reporter tidak menyimpan use.baseURL).
+  metadata: { target: TARGET, baseURL: process.env.BASE_URL },
   use: {
     baseURL: process.env.BASE_URL,
     trace: 'retain-on-failure',

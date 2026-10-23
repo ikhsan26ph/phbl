@@ -2,10 +2,12 @@ import { expect, test as setup, type Page } from '@playwright/test';
 import path from 'path';
 
 /**
- * Login enam akun dan simpan storageState ke .auth/<peran>.json.
+ * Login tujuh akun dan simpan storageState ke .auth/<target>/<peran>.json
+ * (target = TARGET_ENV, lihat playwright.config.ts).
  *
- * Kredensial WAJIB dari .env (process.env) — dilarang hardcode email/password.
- * Peran yang kredensialnya kosong di .env akan di-skip, bukan error.
+ * Kredensial WAJIB dari .env.<target> (process.env) — dilarang hardcode
+ * email/password. Peran yang kredensialnya kosong akan di-skip, bukan error
+ * (mis. admin-sub-read hanya ada di target local; demo tetap 6 akun).
  *
  * Pemetaan peran:
  * - Bid Owner  = Shipper      (UI: "Pemilik Barang")
@@ -16,14 +18,21 @@ import path from 'path';
  * lewat form yang sama di root (/user/login) — dikonfirmasi user; ADMIN_PATH=/.
  * Halaman pendaratan pasca-login BERBEDA per akun (carirute / listlelang /
  * akunsaya), sehingga bukti login memakai elemen, bukan URL: link "KELUAR"
- * di top bar yang hanya ada setelah login (terverifikasi visible di 6 akun).
+ * di top bar yang hanya ada setelah login (terverifikasi visible di 6 akun demo).
  */
 
-const AUTH_DIR = path.resolve(__dirname, '..', '.auth');
+const AUTH_DIR = path.resolve(__dirname, '..', '.auth', process.env.TARGET_ENV ?? 'demo');
 
 interface RoleAccount {
   /** Nama project Playwright sekaligus nama file storageState. */
-  name: 'admin' | 'admin-sub' | 'shipper' | 'shipper-sub' | 'transporter' | 'transporter-sub';
+  name:
+    | 'admin'
+    | 'admin-sub'
+    | 'admin-sub-read'
+    | 'shipper'
+    | 'shipper-sub'
+    | 'transporter'
+    | 'transporter-sub';
   email: string | undefined;
   password: string | undefined;
   /** true = login lewat ADMIN_PATH, false = lewat root ("/"). */
@@ -33,6 +42,7 @@ interface RoleAccount {
 const accounts: RoleAccount[] = [
   { name: 'admin', email: process.env.ADMIN_EMAIL, password: process.env.ADMIN_PASSWORD, viaAdminPath: true },
   { name: 'admin-sub', email: process.env.ADMIN_SUB_EMAIL, password: process.env.ADMIN_SUB_PASSWORD, viaAdminPath: true },
+  { name: 'admin-sub-read', email: process.env.ADMIN_SUB_READ_EMAIL, password: process.env.ADMIN_SUB_READ_PASSWORD, viaAdminPath: true },
   { name: 'shipper', email: process.env.SHIPPER_EMAIL, password: process.env.SHIPPER_PASSWORD, viaAdminPath: false },
   { name: 'shipper-sub', email: process.env.SHIPPER_SUB_EMAIL, password: process.env.SHIPPER_SUB_PASSWORD, viaAdminPath: false },
   { name: 'transporter', email: process.env.TRANSPORTER_EMAIL, password: process.env.TRANSPORTER_PASSWORD, viaAdminPath: false },
@@ -57,7 +67,7 @@ for (const account of accounts) {
   setup(`login ${account.name}`, async ({ page }) => {
     setup.skip(
       !account.email || !account.password,
-      `Kredensial ${account.name} kosong di .env — dilewati`,
+      `Kredensial ${account.name} kosong di .env.${process.env.TARGET_ENV ?? 'demo'} — dilewati`,
     );
     await login(page, account);
   });

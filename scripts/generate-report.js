@@ -1,14 +1,18 @@
 /**
  * Konversi hasil Playwright (JSON reporter) menjadi laporan Excel.
  *
- * Input : test-results/results.json (diproduksi otomatis tiap `npm test`,
- *         lihat reporter di playwright.config.ts)
- * Output: report/hasil-testing-<YYYY-MM-DD>.xlsx
+ * Target dipilih lewat TARGET_ENV (demo | local, default demo) — sama dengan
+ * playwright.config.ts.
+ * Input : test-results/<target>/results.json (diproduksi otomatis tiap
+ *         `npm test`, lihat reporter di playwright.config.ts)
+ * Output: report/hasil-testing-<YYYY-MM-DD>-<HHmm>-<target>.xlsx (tanggal &
+ *         jam MULAI run, waktu lokal) — tidak menimpa laporan lain di hari
+ *         yang sama.
  *
  * Struktur workbook:
  * - Sheet "Ringkasan"    — metadata run + rekap jumlah test per peran.
  * - Sheet per peran      — Admin / Shipper / Transporter / Anon, satu baris
- *   per test. Test project `setup` (login 6 akun) dimasukkan ke sheet peran
+ *   per test. Test project `setup` (login 7 akun) dimasukkan ke sheet peran
  *   masing-masing dengan modul "Setup Login" agar bukti login per akun ikut
  *   terlacak.
  *
@@ -16,7 +20,8 @@
  * - Shipper     = Bid Owner  (UI: "Pemilik Barang")
  * - Transporter = Bidder     (UI: "Ekspedisi")
  *
- * Jalankan: npm run report  (setelah npm test)
+ * Jalankan: npm run report  (setelah npm test; untuk target lain:
+ *           TARGET_ENV=local npm run report)
  */
 
 const fs = require('fs');
@@ -24,10 +29,11 @@ const path = require('path');
 const ExcelJS = require('exceljs');
 
 const ROOT = path.resolve(__dirname, '..');
-const INPUT = path.join(ROOT, 'test-results', 'results.json');
+const TARGET = process.env.TARGET_ENV ?? 'demo';
+const INPUT = path.join(ROOT, 'test-results', TARGET, 'results.json');
 const OUT_DIR = path.join(ROOT, 'report');
 
-/** project Playwright → nama sheet peran */
+/** project Playwright → nama sheet peran (admin-sub-read → Admin). */
 function roleOfProject(projectName, testTitle) {
   if (projectName === 'setup') {
     // Judul setup: "login <nama-akun>", mis. "login shipper-sub".
@@ -123,11 +129,16 @@ async function main() {
   if (!fs.existsSync(INPUT)) {
     console.error(
       `Tidak menemukan ${path.relative(ROOT, INPUT)}.\n` +
-        'Jalankan "npm test" dulu agar JSON reporter menghasilkan file itu.'
+        `Jalankan "npm test" dengan TARGET_ENV=${TARGET} dulu agar JSON reporter menghasilkan file itu.`
     );
     process.exit(1);
   }
   const data = JSON.parse(fs.readFileSync(INPUT, 'utf8'));
+  const runTarget = data.config?.metadata?.target;
+  if (runTarget && runTarget !== TARGET) {
+    console.error(`${path.relative(ROOT, INPUT)} berasal dari target "${runTarget}", bukan "${TARGET}".`);
+    process.exit(1);
+  }
 
   const rows = [];
   for (const suite of data.suites || []) collectRows(suite, [], rows);
@@ -154,7 +165,8 @@ async function main() {
   summary.mergeCells(1, 1, 1, 7);
   summary.addRow([]);
   const meta = [
-    ['Aplikasi', data.config?.projects?.[0]?.use?.baseURL || process.env.BASE_URL || 'https://phbidlautdemo.prahu-hub.com'],
+    ['Target', TARGET],
+    ['Aplikasi', data.config?.metadata?.baseURL || '-'],
     ['Tanggal eksekusi', runDate.toLocaleString('id-ID', { dateStyle: 'full', timeStyle: 'short' })],
     ['Durasi total', `${Math.round((data.stats?.duration || 0) / 1000)} detik`],
     ['Framework', `Playwright ${data.config?.version || ''} + TypeScript`],
@@ -239,8 +251,11 @@ async function main() {
   }
 
   fs.mkdirSync(OUT_DIR, { recursive: true });
-  const stamp = runDate.toISOString().slice(0, 10);
-  const outFile = path.join(OUT_DIR, `hasil-testing-${stamp}.xlsx`);
+  const pad = (n) => String(n).padStart(2, '0');
+  const stamp =
+    `${runDate.getFullYear()}-${pad(runDate.getMonth() + 1)}-${pad(runDate.getDate())}` +
+    `-${pad(runDate.getHours())}${pad(runDate.getMinutes())}`;
+  const outFile = path.join(OUT_DIR, `hasil-testing-${stamp}-${TARGET}.xlsx`);
   await wb.xlsx.writeFile(outFile);
 
   console.log(`Laporan tersimpan: ${path.relative(ROOT, outFile)}`);

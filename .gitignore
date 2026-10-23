@@ -1,4 +1,6 @@
-.env
+# Semua env file per target (.env, .env.demo, .env.local, ...) berisi kredensial.
+.env*
+!.env.example
 .auth/
 node_modules/
 test-results/

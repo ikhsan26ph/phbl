@@ -12,10 +12,11 @@ ADMIN SILVERSTRIPE tidak ada di dokumen sumber).
 
 ## Struktur
 
-- `playwright.config.ts` — project `setup` (login 6 akun → `.auth/<peran>.json`),
-  `anon` (tanpa login), dan `admin`, `admin-sub`, `shipper`, `shipper-sub`,
-  `transporter`, `transporter-sub` (dependencies setup, testMatch `tests/<nama>/`).
-- Kredensial HANYA dari `.env` (lihat `.env.example`). Dilarang hardcode.
+- `playwright.config.ts` — project `setup` (login 7 akun → `.auth/<target>/<peran>.json`),
+  `anon` (tanpa login), dan `admin`, `admin-sub`, `admin-sub-read`, `shipper`,
+  `shipper-sub`, `transporter`, `transporter-sub` (dependencies setup, testMatch
+  `tests/<nama>/`). Target = `TARGET_ENV` (demo | local), lihat "Setup environment".
+- Kredensial HANYA dari `.env.<target>` (lihat `.env.example`). Dilarang hardcode.
 - `ADMIN_PATH=/` — admin login lewat form publik yang sama (konfirmasi user).
 
 ## Konvensi kerja (wajib)
@@ -62,8 +63,10 @@ ADMIN SILVERSTRIPE tidak ada di dokumen sumber).
 
 ## Laporan Excel
 
-- `npm test` → JSON reporter menulis `test-results/results.json`;
-  `npm run report` → `report/hasil-testing-<tanggal>.xlsx` (exceljs).
+- `npm test` → JSON reporter menulis `test-results/<target>/results.json`;
+  `npm run report` → `report/hasil-testing-<YYYY-MM-DD>-<HHmm>-<target>.xlsx`
+  (exceljs; tanggal-jam MULAI run, waktu lokal). Laporan sebelum 2026-10-23
+  masih bernama lama `hasil-testing-<tanggal>[-suffix].xlsx`.
 - Workbook: sheet Ringkasan (rekap per peran) + sheet Admin / Shipper /
   Transporter / Anon. Test `setup` (login) dipetakan ke sheet peran
   masing-masing dari judulnya (`login <akun>`). `test.fail()` tampil sebagai
@@ -1040,10 +1043,41 @@ Urutan rekomendasi (dari paling aman/tanpa mutasi ke yang butuh izin):
   (`.nvmrc` = 22, `nvm use`). Alias `default` nvm sudah di-set ke 22.19.0
   dan `prefix` di `~/.npmrc` dihapus (bentrok dgn nvm).
 - `npm install` → `npx playwright install chromium` (deps sistem sudah lengkap).
-- `cp .env.example .env`, set `ADMIN_PATH=/`.
+- Env per target (lihat bagian "Target environment" di bawah): salin
+  `.env.example` → `.env.demo` / `.env.local`, isi kredensial. `.env` polos
+  TIDAK dipakai lagi.
 - `playwright-cli` (kalibrasi) global: `npm i -g @playwright/cli@latest`
   (terpasang di bin nvm Node 22, bukan `~/.npm-global`).
-- Verifikasi: `npx playwright test --project=setup` → 6 login lulus, `.auth/` terisi.
+- Verifikasi: `npx playwright test --project=setup` → 6 login lulus + 1 skip
+  (admin-sub-read tidak ada di demo), `.auth/demo/` terisi.
 - Shell Bash tool Claude Code = non-interaktif (`.bashrc` return di awal, nvm
   tak dimuat); bila `node -v` masih 18 di sesi ini, prefix
   `export PATH="$HOME/.nvm/versions/node/v22.19.0/bin:$PATH"` atau restart sesi.
+
+### Target environment: demo vs local (2026-10-23)
+
+- Pilih target dengan variabel shell `TARGET_ENV=demo|local` (default `demo`),
+  mis. `TARGET_ENV=local npx playwright test --project=setup`,
+  `TARGET_ENV=local npm run report`. Config gagal dengan pesan jelas bila
+  `.env.<target>` tidak ada. Mengisi `TARGET_ENV` DI DALAM file env tidak
+  berpengaruh (dibaca sebelum file dimuat).
+- File per target (semua di-ignore git; pola `.env*` kecuali `.env.example`):
+  - env: `.env.demo`, `.env.local` (nama variabel identik; local menambah
+    `ADMIN_SUB_READ_EMAIL`/`ADMIN_SUB_READ_PASSWORD`).
+  - sesi login: `.auth/<target>/<peran>.json` (juga dipakai
+    `tests/push-notif.trigger.ts`).
+  - hasil run: `test-results/<target>/` (outputDir — Playwright MEMBERSIHKAN
+    folder ini di awal run, makanya dipisah per target) dan
+    `playwright-report/<target>/`.
+  - laporan: `report/hasil-testing-<YYYY-MM-DD>-<HHmm>-<target>.xlsx`;
+    generator menolak `results.json` yang `metadata.target`-nya beda.
+- Target local = `http://192.168.0.88:8102` (login `/user/login`,
+  `ADMIN_PATH=/`). Pakai host itu secara konsisten — cookie sesi terikat host.
+- Pemetaan 7 role akun local → project Playwright:
+  ADMIN → `admin`, SUB_ADMIN → `admin-sub`, SUB_ADMIN_READ → `admin-sub-read`
+  (BARU, hanya local), SHIPPER → `shipper`, SUB_SHIPPER → `shipper-sub`,
+  OPERATOR → `transporter`, SUB_OPERATOR → `transporter-sub`.
+- Login yang kredensialnya kosong di env aktif di-SKIP (bukan gagal); spec
+  `tests/admin-sub-read/` di-skip di level file bila kredensialnya kosong.
+  Spec admin-sub-read saat ini baru placeholder (cek link KELUAR).
+- Semua spec lama dikalibrasi ke DEMO; belum ada yang dijalankan ke local.

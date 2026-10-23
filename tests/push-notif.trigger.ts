@@ -28,7 +28,7 @@ interface ExpectedNotification {
   redirect?: RegExp;
 }
 
-const authDirectory = path.resolve(__dirname, '..', '.auth');
+const authDirectory = path.resolve(__dirname, '..', '.auth', process.env.TARGET_ENV ?? 'demo');
 
 /**
  * Membuka sesi penerima terpisah memakai akun fixture yang dibuat setup.
