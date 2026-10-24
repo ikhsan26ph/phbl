@@ -1,0 +1,103 @@
+- generic [active] [ref=f1e1]:
+  - generic [ref=f1e2]:
+    - generic [ref=f1e3]:
+      - generic [ref=f1e4]:
+        - link [ref=f1e6] [cursor=pointer]:
+          - /url: http://192.168.0.88:8102/
+        - button [ref=f1e10] [cursor=pointer]
+      - text:  
+      - generic [ref=f1e13]:
+        - generic [ref=f1e14]:
+          - generic [ref=f1e15]: QA Laut SHIPPER
+          - button "Shipper" [ref=f1e17]
+        - text: 
+        - generic [ref=f1e21]:
+          - generic [ref=f1e22]:
+            - generic [ref=f1e23]: QA Laut SHIPPER
+            - generic [ref=f1e24]: qa.laut.shipper@example.invalid
+          - generic [ref=f1e25]: 
+          - link "" [ref=f1e28] [cursor=pointer]:
+            - /url: http://192.168.0.88:8102/home/notification
+          - link [ref=f1e35] [cursor=pointer]:
+            - /url: http://192.168.0.88:8102/user/do_logout
+    - generic [ref=f1e38]:
+      - generic [ref=f1e39]:
+        - text: 
+        - generic [ref=f1e40]:
+          - list [ref=f1e42]:
+            - listitem
+            - listitem [ref=f1e43]:
+              - link "CARI PENAWARAN" [ref=f1e44] [cursor=pointer]:
+                - /url: http://192.168.0.88:8102/lelang/carirute
+            - listitem [ref=f1e45]:
+              - generic [ref=f1e46] [cursor=pointer]:
+                - text: DASHBOARD
+                - generic [ref=f1e49]: 
+            - listitem [ref=f1e50]:
+              - generic [ref=f1e51] [cursor=pointer]:
+                - text: ANALITIK
+                - generic [ref=f1e54]: 
+            - listitem [ref=f1e55]:
+              - link "PENGAJUAN LELANG" [ref=f1e56] [cursor=pointer]:
+                - /url: http://192.168.0.88:8102/lelang/listlelang
+            - listitem [ref=f1e59]:
+              - link "PENGAJUAN NEGO" [ref=f1e60] [cursor=pointer]:
+                - /url: http://192.168.0.88:8102/lelang/pengajuannego
+            - listitem [ref=f1e63]:
+              - link "DAFTAR ORDER" [ref=f1e64] [cursor=pointer]:
+                - /url: http://192.168.0.88:8102/order/OrderList
+            - listitem [ref=f1e67]:
+              - generic [ref=f1e68] [cursor=pointer]:
+                - text: MASTER
+                - generic [ref=f1e71]: 
+            - listitem [ref=f1e72]:
+              - link "CEK JADWAL" [ref=f1e73] [cursor=pointer]:
+                - /url: http://192.168.0.88:8102/lelang/carijadwal
+            - listitem [ref=f1e76]:
+              - generic [ref=f1e77] [cursor=pointer]:
+                - text: LAPORAN
+                - generic [ref=f1e80]: 
+            - listitem [ref=f1e81]:
+              - generic [ref=f1e82] [cursor=pointer]:
+                - text: PENGATURAN AKUN
+                - generic [ref=f1e85]: 
+            - listitem [ref=f1e86]:
+              - link "PREFERENCE NOTIF" [ref=f1e87] [cursor=pointer]:
+                - /url: http://192.168.0.88:8102/home/preferenceNotifBidowner
+            - listitem [ref=f1e90]:
+              - link "AKUN SAYA" [ref=f1e91] [cursor=pointer]:
+                - /url: http://192.168.0.88:8102/home/akunsaya
+          - paragraph [ref=f1e98]: KONTAK KAMI
+      - generic [ref=f1e110]:
+        - generic [ref=f1e111]:
+          - generic [ref=f1e112]: Beranda / Cari Penawaran Lelang
+          - generic [ref=f1e115]:
+            - generic [ref=f1e116]:
+              - generic [ref=f1e117]: Cari Penawaran Lelang
+              - generic [ref=f1e119]:
+                - text: 1. Pesan
+                - generic [ref=f1e120]: 
+                - text: 2. Data Muatan
+                - generic [ref=f1e121]: 
+                - text: 3. Perjanjian Pengiriman
+                - generic [ref=f1e122]: 
+                - text: 4. Pengiriman
+            - tabpanel [ref=f1e125]:
+              - generic [ref=f1e127]:
+                - generic [ref=f1e130]:
+                  - generic [ref=f1e131]: Nomor Lelang *
+                  - textbox "Nomor Lelang *" [ref=f1e132]:
+                    - /placeholder: Masukkan Nomor Lelang
+                  - generic [ref=f1e133] [cursor=pointer]: 
+                  - text: Masukkan nomor lelang yang akan di cari atau klik ikon sisi kanan untuk memilih dari daftar nomor yang ada
+                - generic [ref=f1e136]:
+                  - link "+ Buat Lelang Baru" [ref=f1e137] [cursor=pointer]:
+                    - /url: http://192.168.0.88:8102/lelang/buatlelang?newbook=1
+                    - generic [ref=f1e138]: +
+                    - text: Buat Lelang Baru
+                  - button "Cari Harga Penawaran" [disabled] [ref=f1e139]
+        - generic [ref=f1e142]:
+          - generic:
+            - generic:
+              - paragraph
+  - text:   

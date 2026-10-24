@@ -1,0 +1,138 @@
+- generic [active] [ref=f52e1]:
+  - generic [ref=f52e2]:
+    - generic [ref=f52e3]:
+      - generic [ref=f52e4]:
+        - link [ref=f52e6] [cursor=pointer]:
+          - /url: http://192.168.0.88:8102/
+        - button [ref=f52e10] [cursor=pointer]
+      - text:  
+      - generic [ref=f52e13]:
+        - generic [ref=f52e14]:
+          - generic [ref=f52e15]: Admin PH Bid
+          - button "Administrator" [ref=f52e17]
+        - text: 
+        - generic [ref=f52e21]:
+          - generic [ref=f52e22]:
+            - generic [ref=f52e23]: QA Laut ADMIN
+            - generic [ref=f52e24]: qa.laut.admin@example.invalid
+          - generic [ref=f52e25]: 
+          - link "" [ref=f52e28] [cursor=pointer]:
+            - /url: http://192.168.0.88:8102/home/notification
+          - link [ref=f52e35] [cursor=pointer]:
+            - /url: http://192.168.0.88:8102/user/do_logout
+    - generic [ref=f52e38]:
+      - generic [ref=f52e39]:
+        - text: 
+        - generic [ref=f52e40]:
+          - list [ref=f52e42]:
+            - listitem
+            - listitem [ref=f52e43]:
+              - link "CARI PENAWARAN" [ref=f52e44] [cursor=pointer]:
+                - /url: http://192.168.0.88:8102/lelang/carirute
+            - listitem [ref=f52e45]: MENU ADMIN
+            - listitem [ref=f52e46]:
+              - generic [ref=f52e47] [cursor=pointer]:
+                - text: DASHBOARD
+                - generic [ref=f52e50]: 
+            - listitem [ref=f52e51]:
+              - generic [ref=f52e52] [cursor=pointer]:
+                - text: ANALITIK
+                - generic [ref=f52e55]: 
+            - listitem [ref=f52e56]:
+              - link "PENGAJUAN LELANG" [ref=f52e57] [cursor=pointer]:
+                - /url: http://192.168.0.88:8102/lelang/listlelang
+            - listitem [ref=f52e60]:
+              - link "PENGAJUAN NEGO" [ref=f52e61] [cursor=pointer]:
+                - /url: http://192.168.0.88:8102/lelang/pengajuannego
+            - listitem [ref=f52e64]:
+              - link [ref=f52e65] [cursor=pointer]:
+                - /url: http://192.168.0.88:8102/order/orderlist
+            - listitem [ref=f52e68]:
+              - link "PENUGASAN TRACKING" [ref=f52e69] [cursor=pointer]:
+                - /url: http://192.168.0.88:8102/home/penugasantracking
+            - listitem [ref=f52e72]:
+              - link "CEK JADWAL" [ref=f52e73] [cursor=pointer]:
+                - /url: http://192.168.0.88:8102/lelang/carijadwal
+            - listitem [ref=f52e76]:
+              - generic [ref=f52e77] [cursor=pointer]:
+                - text: LAPORAN
+                - generic [ref=f52e80]: 
+            - listitem [ref=f52e81]:
+              - generic [ref=f52e82] [cursor=pointer]:
+                - text: VALIDASI AKUN
+                - generic [ref=f52e85]: 
+            - listitem [ref=f52e86]:
+              - generic [ref=f52e87] [cursor=pointer]:
+                - text: SETTING
+                - generic [ref=f52e90]: 
+            - listitem [ref=f52e91]:
+              - generic [ref=f52e92] [cursor=pointer]:
+                - text: MASTER
+                - generic [ref=f52e95]: 
+            - listitem [ref=f52e96]:
+              - generic [ref=f52e97] [cursor=pointer]:
+                - text: PENGATURAN AKUN
+                - generic [ref=f52e100]: 
+            - listitem [ref=f52e101]:
+              - link "AKUN SAYA" [ref=f52e102] [cursor=pointer]:
+                - /url: http://192.168.0.88:8102/home/akunsaya
+            - listitem [ref=f52e105]: MENU TRANSPORTER
+            - listitem [ref=f52e106]:
+              - link "HARGA & JADWAL" [ref=f52e107] [cursor=pointer]:
+                - /url: http://192.168.0.88:8102/home/hargajadwal
+          - paragraph [ref=f52e114]: KONTAK KAMI
+      - generic [ref=f52e126]:
+        - generic [ref=f52e127]:
+          - generic [ref=f52e130]:
+            - link "Beranda" [ref=f52e132] [cursor=pointer]:
+              - /url: http://192.168.0.88:8102/lelang/listLelang
+            - text: / Daftar Order
+          - generic [ref=f52e133]:
+            - generic [ref=f52e135]:
+              - generic [ref=f52e136]: DAFTAR ORDER
+              - generic [ref=f52e137]:
+                - button " Filter" [ref=f52e138] [cursor=pointer]:
+                  - generic [ref=f52e139]: 
+                  - text: Filter
+                - generic [ref=f52e140]:
+                  - text: Menampilkan
+                  - combobox [ref=f52e141]:
+                    - option "20" [selected]
+                    - option "30"
+                    - option "50"
+                    - option "100"
+                  - text: Data
+            - text:  
+          - table [ref=f52e143]:
+            - rowgroup [ref=f52e144]:
+              - row [ref=f52e145]:
+                - columnheader "Lelang Status" [ref=f52e146]:
+                  - generic [ref=f52e147]: Lelang
+                  - generic [ref=f52e148]: Status
+                - columnheader "Nama Kapal Permintaan Muat & Closing Time" [ref=f52e149]:
+                  - generic [ref=f52e150]: Nama Kapal
+                  - generic [ref=f52e151]: Permintaan Muat & Closing Time
+                - columnheader "Pelabuhan Asal ETD" [ref=f52e152]:
+                  - generic [ref=f52e153]: Pelabuhan Asal
+                  - generic [ref=f52e154]: ETD
+                - columnheader "Pelabuhan Tujuan ETA" [ref=f52e155]:
+                  - generic [ref=f52e156]: Pelabuhan Tujuan
+                  - generic [ref=f52e157]: ETA
+                - columnheader "Transporter" [ref=f52e158]
+                - columnheader "Harga Jumlah Order" [ref=f52e160]:
+                  - generic [ref=f52e161]: Harga
+                  - generic [ref=f52e162]: Jumlah Order
+                - columnheader "Action" [ref=f52e163]
+              - row [ref=f52e165]
+            - rowgroup [ref=f52e166]:
+              - row [ref=f52e167]:
+                - cell [ref=f52e168]
+          - generic:
+            - status [ref=f52e175]
+            - generic [ref=f52e177]:
+              - list
+        - generic [ref=f52e180]:
+          - generic:
+            - generic:
+              - paragraph
+  - text:    

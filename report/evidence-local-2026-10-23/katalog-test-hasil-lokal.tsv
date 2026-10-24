@@ -1,0 +1,534 @@
+Project	File	Line	Judul Test	Jenis	Hasil Lokal	Run ID	Penyebab QA	Error ringkas
+setup	auth.setup.ts	55	login admin	normal	LULUS	20261023-cakupan-readonly	-	-
+setup	auth.setup.ts	55	login admin-sub	normal	LULUS	20261023-cakupan-readonly	-	-
+setup	auth.setup.ts	55	login admin-sub-read	normal	LULUS	20261023-cakupan-readonly	-	-
+setup	auth.setup.ts	55	login shipper	normal	LULUS	20261023-cakupan-readonly	-	-
+setup	auth.setup.ts	55	login shipper-sub	normal	LULUS	20261023-cakupan-readonly	-	-
+setup	auth.setup.ts	55	login transporter	normal	LULUS	20261023-cakupan-readonly	-	-
+setup	auth.setup.ts	55	login transporter-sub	normal	LULUS	20261023-cakupan-readonly	-	-
+smoke	smoke/read-only.spec.ts	110	smoke admin > sesi hasil login setup dipakai ulang (tidak diarahkan ke login)	normal	LULUS	20261023-smoke-final	-	-
+smoke	smoke/read-only.spec.ts	139	smoke admin > halaman /lelang/listlelang?tab=semua-lelang terbuka tanpa 5xx dan tanpa penolakan akses	normal	LULUS	20261023-smoke-final	-	-
+smoke	smoke/read-only.spec.ts	139	smoke admin > halaman /order/OrderList terbuka tanpa 5xx dan tanpa penolakan akses	normal	LULUS	20261023-smoke-final	-	-
+smoke	smoke/read-only.spec.ts	139	smoke admin > halaman /lelang/pengajuannego terbuka tanpa 5xx dan tanpa penolakan akses	normal	LULUS	20261023-smoke-final	-	-
+smoke	smoke/read-only.spec.ts	139	smoke admin > halaman /home/hargajadwal?tab=1 terbuka tanpa 5xx dan tanpa penolakan akses	normal	LULUS	20261023-smoke-final	-	-
+smoke	smoke/read-only.spec.ts	139	smoke admin > halaman /home/penugasantracking terbuka tanpa 5xx dan tanpa penolakan akses	normal	GAGAL	20261023-smoke-final	Data (0 order/lelang)	Error: status dokumen /home/penugasantracking
+smoke	smoke/read-only.spec.ts	139	smoke admin > halaman /home/notification terbuka tanpa 5xx dan tanpa penolakan akses	normal	LULUS	20261023-smoke-final	-	-
+smoke	smoke/read-only.spec.ts	139	smoke admin > halaman /home/akunsaya terbuka tanpa 5xx dan tanpa penolakan akses	normal	LULUS	20261023-smoke-final	-	-
+smoke	smoke/read-only.spec.ts	139	smoke admin > halaman /adminprahu/masterpelabuhan terbuka tanpa 5xx dan tanpa penolakan akses	normal	LULUS	20261023-smoke-final	-	-
+smoke	smoke/read-only.spec.ts	110	smoke admin-sub > sesi hasil login setup dipakai ulang (tidak diarahkan ke login)	normal	LULUS	20261023-smoke-final	-	-
+smoke	smoke/read-only.spec.ts	118	smoke admin-sub > sub user: Edit Akun Saya ditolak (rule akun saya)	normal	LULUS	20261023-smoke-penolakan-sub	-	-
+smoke	smoke/read-only.spec.ts	110	smoke admin-sub-read > sesi hasil login setup dipakai ulang (tidak diarahkan ke login)	normal	LULUS	20261023-smoke-final	-	-
+smoke	smoke/read-only.spec.ts	118	smoke admin-sub-read > sub user: Edit Akun Saya ditolak (rule akun saya)	normal	LULUS	20261023-smoke-penolakan-sub	-	-
+smoke	smoke/read-only.spec.ts	110	smoke shipper > sesi hasil login setup dipakai ulang (tidak diarahkan ke login)	normal	LULUS	20261023-smoke-final	-	-
+smoke	smoke/read-only.spec.ts	139	smoke shipper > halaman /lelang/carirute terbuka tanpa 5xx dan tanpa penolakan akses	normal	LULUS	20261023-smoke-final	-	-
+smoke	smoke/read-only.spec.ts	139	smoke shipper > halaman /lelang/listlelang?tab=semua-lelang terbuka tanpa 5xx dan tanpa penolakan akses	normal	LULUS	20261023-smoke-final	-	-
+smoke	smoke/read-only.spec.ts	139	smoke shipper > halaman /order/OrderList terbuka tanpa 5xx dan tanpa penolakan akses	normal	LULUS	20261023-smoke-final	-	-
+smoke	smoke/read-only.spec.ts	139	smoke shipper > halaman /lelang/pengajuannego terbuka tanpa 5xx dan tanpa penolakan akses	normal	LULUS	20261023-smoke-final	-	-
+smoke	smoke/read-only.spec.ts	139	smoke shipper > halaman /home/notification terbuka tanpa 5xx dan tanpa penolakan akses	normal	LULUS	20261023-smoke-final	-	-
+smoke	smoke/read-only.spec.ts	139	smoke shipper > halaman /home/akunsaya terbuka tanpa 5xx dan tanpa penolakan akses	normal	LULUS	20261023-smoke-final	-	-
+smoke	smoke/read-only.spec.ts	110	smoke shipper-sub > sesi hasil login setup dipakai ulang (tidak diarahkan ke login)	normal	LULUS	20261023-smoke-final	-	-
+smoke	smoke/read-only.spec.ts	118	smoke shipper-sub > sub user: Edit Akun Saya ditolak (rule akun saya)	normal	LULUS	20261023-smoke-penolakan-sub	-	-
+smoke	smoke/read-only.spec.ts	110	smoke transporter > sesi hasil login setup dipakai ulang (tidak diarahkan ke login)	normal	LULUS	20261023-smoke-final	-	-
+smoke	smoke/read-only.spec.ts	139	smoke transporter > halaman /lelang/listlelang?tab=semua-lelang terbuka tanpa 5xx dan tanpa penolakan akses	normal	LULUS	20261023-smoke-final	-	-
+smoke	smoke/read-only.spec.ts	139	smoke transporter > halaman /order/OrderList terbuka tanpa 5xx dan tanpa penolakan akses	normal	LULUS	20261023-smoke-final	-	-
+smoke	smoke/read-only.spec.ts	139	smoke transporter > halaman /lelang/pengajuannego terbuka tanpa 5xx dan tanpa penolakan akses	normal	LULUS	20261023-smoke-final	-	-
+smoke	smoke/read-only.spec.ts	139	smoke transporter > halaman /home/hargajadwal?tab=1 terbuka tanpa 5xx dan tanpa penolakan akses	normal	LULUS	20261023-smoke-final	-	-
+smoke	smoke/read-only.spec.ts	139	smoke transporter > halaman /home/penugasantracking terbuka tanpa 5xx dan tanpa penolakan akses	normal	GAGAL	20261023-smoke-final	Data (0 order/lelang)	Error: status dokumen /home/penugasantracking
+smoke	smoke/read-only.spec.ts	139	smoke transporter > halaman /home/notification terbuka tanpa 5xx dan tanpa penolakan akses	normal	LULUS	20261023-smoke-final	-	-
+smoke	smoke/read-only.spec.ts	139	smoke transporter > halaman /home/akunsaya terbuka tanpa 5xx dan tanpa penolakan akses	normal	LULUS	20261023-smoke-final	-	-
+smoke	smoke/read-only.spec.ts	110	smoke transporter-sub > sesi hasil login setup dipakai ulang (tidak diarahkan ke login)	normal	LULUS	20261023-smoke-final	-	-
+smoke	smoke/read-only.spec.ts	118	smoke transporter-sub > sub user: Edit Akun Saya ditolak (rule akun saya)	normal	LULUS	20261023-smoke-penolakan-sub	-	-
+precondition	precondition/alur-buat-lelang.spec.ts	89	CP0: fixture pilihan master alur Buat Lelang ditetapkan untuk target ini	normal	GAGAL	20261023-precondition-buatlelang	Data N1/N2 (master kosong / fixture null)	Error: FIXTURES.local.buatLelang di scripts/targets.js masih null — isi setelah master tersedia & dikonfirmasi
+precondition	precondition/alur-buat-lelang.spec.ts	96	CP0: transporter fixture terdaftar AKTIF beralias di Validasi Transporter admin	normal	LULUS	20261023-precondition-buatlelang	-	-
+precondition	precondition/alur-buat-lelang.spec.ts	50	CP0/CP1 shipper — form Buat Lelang & data master > CP1: form Buat Lelang terbuka untuk shipper tanpa 5xx	normal	LULUS	20261023-precondition-buatlelang	-	-
+precondition	precondition/alur-buat-lelang.spec.ts	58	CP0/CP1 shipper — form Buat Lelang & data master > CP0: dropdown master wajib lelang normal berisi data (dan fixture target ada di dalamnya)	normal	GAGAL	20261023-precondition-buatlelang	Data N1/N2 (master kosong / fixture null)	Error: Data master Buat Lelang kurang di target local
+anon	anon/login.spec.ts	43	email belum terdaftar memunculkan alert "Akun Belum Terdaftar"	normal	LULUS	20261023-cakupan-readonly	-	-
+anon	anon/login.spec.ts	50	email terdaftar dengan kata sandi salah memunculkan alert "Masukkan Kata Sandi Dengan Benar"	normal	Belum dijalankan	-	-	-
+anon	anon/login.spec.ts	58	shipper (Pemilik Barang) login sukses dan diarahkan ke Cari Penawaran	normal	Belum dijalankan	-	-	-
+anon	anon/login.spec.ts	68	transporter (Ekspedisi) login sukses	normal	Belum dijalankan	-	-	-
+anon	anon/login.spec.ts	76	admin login sukses dan diarahkan ke halaman daftar pengajuan lelang	normal	Belum dijalankan	-	-	-
+anon	anon/lupa-kata-sandi.spec.ts	64	email belum terdaftar memunculkan alert "Akun Belum Terdaftar"	normal	LULUS	20261023-cakupan-readonly	-	-
+anon	anon/lupa-kata-sandi.spec.ts	74	alur penuh: kode via email valid, diarahkan ke kata sandi baru, sandi berhasil diubah	normal	Belum dijalankan	-	-	-
+anon	anon/lupa-kata-sandi.spec.ts	124	kode kadaluarsa memunculkan alert "Kode verifikasi kadaluarsa"	fixme	Belum dijalankan	-	-	-
+anon	anon/lupa-kata-sandi.spec.ts	125	kirim ulang kode baru bisa diklik setelah 5 menit	fixme	Belum dijalankan	-	-	-
+anon	anon/registrasi.spec.ts	70	radio peran menampilkan istilah "Pemilik Barang" dan "Ekspedisi"	normal	LULUS-DEFECT(test.fail)	20261023-cakupan-readonly	-	-
+anon	anon/registrasi.spec.ts	77	default radio peran tidak terpilih	normal	LULUS	20261023-cakupan-readonly	-	-
+anon	anon/registrasi.spec.ts	82	semua field registrasi dan tombol tampil	normal	LULUS	20261023-cakupan-readonly	-	-
+anon	anon/registrasi.spec.ts	92	field no. telepon hanya menerima angka	normal	Belum dijalankan	-	-	-
+anon	anon/registrasi.spec.ts	107	kata sandi hanya huruf memunculkan alert "Kombinasi Hanya Boleh Huruf dan Angka"	normal	Belum dijalankan	-	-	-
+anon	anon/registrasi.spec.ts	119	kata sandi kurang dari 6 digit memunculkan alert "Kata Sandi Minimal 6 Digit"	normal	Belum dijalankan	-	-	-
+anon	anon/registrasi.spec.ts	131	nomor whatsapp yang sudah terdaftar memunculkan alert "Nomor whatsapp sudah terdaftar di sistem"	normal	Belum dijalankan	-	-	-
+anon	anon/registrasi.spec.ts	143	registrasi sukses: email aktivasi diterima, akun aktif, login lanjut ke kelengkapan registrasi	normal	Belum dijalankan	-	-	-
+admin	admin/akun-saya.spec.ts	35	Akun Saya (Admin) > menampilkan nama dan email akun pusat admin	normal	LULUS	20261023-smoke-local	-	-
+admin	admin/akun-saya.spec.ts	47	Akun Saya (Admin) > data selain nama & email bernilai strip karena akun dibuat dari backend	normal	LULUS	20261023-smoke-local	-	-
+admin	admin/akun-saya.spec.ts	55	Akun Saya (Admin) > tidak menyediakan tombol edit akun maupun ubah kata sandi	normal	LULUS	20261023-smoke-local	-	-
+admin	admin/analitik-scsr.spec.ts	104	Analitik SCSR (Admin) > menu Analitik admin memuat lima submenu analitik	normal	LULUS	20261023-cakupan-readonly	-	-
+admin	admin/analitik-scsr.spec.ts	120	Analitik SCSR (Admin) > form admin mewajibkan filter Shipper dan menyediakan opsi Pilih Semua	normal	Belum dijalankan	-	-	-
+admin	admin/analitik-scsr.spec.ts	140	Analitik SCSR (Admin) > level 1 per Provinsi Tujuan punya kolom Shipper, tanpa kolom kota asal	normal	Belum dijalankan	-	-	-
+admin	admin/analitik-scsr.spec.ts	166	Analitik SCSR (Admin) > Detail Kota admin menampilkan pasangan Kota Asal → Kota Tujuan dengan Jumlah Order	normal	Belum dijalankan	-	-	-
+admin	admin/analitik-scsr.spec.ts	201	Analitik SCSR (Admin) > Detail Consignee admin sesuai pasangan kota terpilih dan tanpa kolom kota asal	normal	Belum dijalankan	-	-	-
+admin	admin/analitik-scsr.spec.ts	244	Analitik SCSR (Admin) > nilai Kota Asal & Kota Tujuan sama dengan field order di Edit Data Order	normal	Belum dijalankan	-	-	-
+admin	admin/analitik-scsr.spec.ts	289	Analitik SCSR (Admin) > DEFECT: Detail Kota mengabaikan ShipperID baris saat beberapa shipper dipilih	test.fail/defect	Belum dijalankan	-	-	-
+admin	admin/analitik-scsr.spec.ts	334	Analitik SCSR (Admin) > DEFECT: Detail Consignee lintas shipper menampilkan order milik shipper lain	test.fail/defect	Belum dijalankan	-	-	-
+admin	admin/analitik-scsr.spec.ts	383	Analitik SCSR (Admin) > DEFECT: session_get tak dikenal → blok info memakai data tanpa filter tanggal, tabel kosong	test.fail/defect	Belum dijalankan	-	-	-
+admin	admin/cari-penawaran.spec.ts	109	Form Cari Penawaran (Admin) > tombol Cari Harga Penawaran disable sampai nomor lelang diisi	normal	LULUS	20261023-cakupan-readonly	-	-
+admin	admin/cari-penawaran.spec.ts	116	Form Cari Penawaran (Admin) > nomor lelang tidak dikenal memunculkan alert "Nomor Lelang Tidak Ditemukan"	normal	LULUS	20261023-cakupan-readonly	-	-
+admin	admin/cari-penawaran.spec.ts	122	Form Cari Penawaran (Admin) > popup daftar lelang versi admin: filter Shipper + Nomor Lelang (terbaru dulu), tabel dengan rute UN Code	normal	Belum dijalankan	-	-	-
+admin	admin/cari-penawaran.spec.ts	145	Form Cari Penawaran (Admin) > pilih lelang dari popup mengisi nomor otomatis lalu pencarian menampilkan ringkasan	normal	Belum dijalankan	-	-	-
+admin	admin/cari-penawaran.spec.ts	165	Pesan kondisi lelang (Admin) > lelang belum melewati tutup lelang menampilkan pesan tunggu beserta kontak CS	normal	Belum dijalankan	-	-	-
+admin	admin/cari-penawaran.spec.ts	176	Pesan kondisi lelang (Admin) > lelang tanpa penawaran menampilkan keterangan belum ada peserta yang mengajukan	normal	Belum dijalankan	-	-	-
+admin	admin/cari-penawaran.spec.ts	192	Pesan kondisi lelang (Admin) > lelang yang sedang proses request harga menampilkan informasi proses update harga	normal	Belum dijalankan	-	-	-
+admin	admin/cari-penawaran.spec.ts	202	Hasil Harga Penawaran (Admin) > ringkasan lelang (dengan Shipper), seksi S&K/rute/kontainer, dan tabel harga sebelum PPN	normal	Belum dijalankan	-	-	-
+admin	admin/cari-penawaran.spec.ts	232	Hasil Harga Penawaran (Admin) > filter (transporter, ETD/ETA, jenis) dan sortir (6 kunci, 2 arah) tersedia	normal	Belum dijalankan	-	-	-
+admin	admin/cari-penawaran.spec.ts	250	Hasil Harga Penawaran (Admin) > aksi halaman: Request Jadwal, Request Harga, Export Harga Penawaran, dan tombol pesan/N-A per harga	normal	Belum dijalankan	-	-	-
+admin	admin/cari-penawaran.spec.ts	265	Hasil Harga Penawaran (Admin) > tombol N / A memunculkan alert alasan harga tidak bisa dipesan	normal	Belum dijalankan	-	-	-
+admin	admin/cari-penawaran.spec.ts	285	Hasil Harga Penawaran (Admin) > harga berjadwal kapal connecting menampilkan label Kapal Connecting nx	normal	Belum dijalankan	-	-	-
+admin	admin/cari-penawaran.spec.ts	292	Hasil Harga Penawaran (Admin) > Profil Transporter dibuka di tab baru: bergabung sejak, rating, tab Informasi/Ulasan	normal	Belum dijalankan	-	-	-
+admin	admin/cari-penawaran.spec.ts	313	Request Jadwal & Daftar Request Jadwal (Admin) > halaman Request Jadwal memuat data lelang dan daftar harga dengan tombol Request	normal	Belum dijalankan	-	-	-
+admin	admin/cari-penawaran.spec.ts	333	Request Jadwal & Daftar Request Jadwal (Admin) > lelang yang pernah request jadwal menampilkan label jumlah request dan halaman Daftar Request Jadwal	normal	Belum dijalankan	-	-	-
+admin	admin/cari-penawaran.spec.ts	366	Request Harga (Admin) > lelang lewat rencana akhir kirim: tombol Request Harga dinonaktifkan (rule: alert saat diklik)	normal	Belum dijalankan	-	-	-
+admin	admin/cari-penawaran.spec.ts	405	Request Harga (Admin) > lelang tutup: Request Harga membuka form dengan tanggal tutup request dan peserta beserta status harga	normal	Belum dijalankan	-	-	-
+admin	admin/cek-jadwal.spec.ts	53	Cek Jadwal Pelayaran (Admin) > form default: pelayaran terkunci Meratus, sortir tanggal berangkat, tanggal hari ini	normal	LULUS	20261023-cakupan-readonly	-	-
+admin	admin/cek-jadwal.spec.ts	71	Cek Jadwal Pelayaran (Admin) > logo liner tampil dengan link jadwal pelayaran masing-masing	normal	LULUS	20261023-cakupan-readonly	-	-
+admin	admin/cek-jadwal.spec.ts	78	Cek Jadwal Pelayaran (Admin) > klik Cari Jadwal tanpa pelabuhan tidak menampilkan hasil (POL/POD wajib)	normal	LULUS	20261023-cakupan-readonly	-	-
+admin	admin/cek-jadwal.spec.ts	84	Cek Jadwal Pelayaran (Admin) > pencarian jadwal menampilkan hasil atau pesan jadwal belum tersedia beserta kontak CS	normal	Belum dijalankan	-	-	-
+admin	admin/cek-jadwal.spec.ts	114	Setting Pelabuhan — UN Code Meratus (halaman tersembunyi) > tidak ada di menu navigasi, tapi bisa diakses langsung dengan tabel pelabuhan dan kolom UN Meratus	normal	Belum dijalankan	-	-	-
+admin	admin/cek-jadwal.spec.ts	139	Setting Pelabuhan — UN Code Meratus (halaman tersembunyi) > tombol Setting membuka modal Setting UNCODE yang hanya mengizinkan edit UN Code Meratus	normal	Belum dijalankan	-	-	-
+admin	admin/daftar-order-edit-harga.spec.ts	119	Daftar Order — Edit Harga (Admin) > menu Edit Harga tampil tepat di bawah Edit Data Order pada action menu	normal	Belum dijalankan	-	-	-
+admin	admin/daftar-order-edit-harga.spec.ts	132	Daftar Order — Edit Harga (Admin) > menu Edit Harga tersedia pada tiap status Order Baru s.d Order Selesai yang ada di demo	normal	Belum dijalankan	-	-	-
+admin	admin/daftar-order-edit-harga.spec.ts	150	Daftar Order — Edit Harga (Admin) > popup Edit Harga menampilkan Nomor Order dan Harga Saat Ini sesuai baris, dengan label dan placeholder sesuai rule	normal	Belum dijalankan	-	-	-
+admin	admin/daftar-order-edit-harga.spec.ts	184	Daftar Order — Edit Harga (Admin) > submit tanpa harga baru menampilkan pesan Masukkan Harga Baru	normal	Belum dijalankan	-	-	-
+admin	admin/daftar-order-edit-harga.spec.ts	197	Daftar Order — Edit Harga (Admin) > submit tanpa alasan menampilkan pesan Masukkan Alasan Edit Harga; input harga ber-mask ribuan	normal	Belum dijalankan	-	-	-
+admin	admin/daftar-order-edit-harga.spec.ts	215	Daftar Order — Edit Harga (Admin) > edit harga tersimpan, tercatat di History Perubahan Data, lalu dikembalikan ke harga semula	normal	Belum dijalankan	-	-	-
+admin	admin/daftar-order-edit-harga.spec.ts	316	Daftar Order — Edit Harga (Admin) > order yang invoicenya sudah dibuat tidak bisa edit harga	normal	Belum dijalankan	-	-	-
+admin	admin/daftar-order-edit-harga.spec.ts	375	Hak Akses Admin — checkbox Edit Harga > halaman Tambah Hak Akses memuat checkbox Edit Harga pada grup Modul Daftar Order	normal	LULUS	20261023-cakupan-readonly	-	-
+admin	admin/daftar-order-edit-harga.spec.ts	382	Hak Akses Admin — checkbox Edit Harga > halaman Edit dan Detail Hak Akses memuat checkbox Edit Harga	normal	Belum dijalankan	-	-	-
+admin	admin/daftar-order-edit-harga.spec.ts	447	Hak Akses Admin — defect penerapan izin Edit Harga > DEFECT: halaman Detail Hak Akses Admin tidak merefleksikan checkbox yang sebenarnya tercentang	test.fail/defect	Belum dijalankan	-	-	-
+admin	admin/daftar-order-edit-harga.spec.ts	480	Hak Akses Admin — defect penerapan izin Edit Harga > DEFECT: sub user admin dengan hak akses Edit Harga tercentang tetap ditolak menu & endpoint-nya	test.fail/defect	Belum dijalankan	-	-	-
+admin	admin/daftar-order.spec.ts	206	Daftar Order — Administrator > tabel dan panel filter memuat seluruh kontrol utama; Nomor Kontainer disanitasi	normal	GAGAL	20261023-cakupan-readonly	Data (0 order/lelang)	Error: expect(locator).toBeVisible() failed
+admin	admin/daftar-order.spec.ts	238	Daftar Order — Administrator > filter Nomor Lelang tetap tersimpan setelah membuka Detail Order lalu Kembali	normal	Belum dijalankan	-	-	-
+admin	admin/daftar-order.spec.ts	257	Daftar Order — Administrator > action utama dan submenu mengikuti tahap order yang tersedia pada 100 data aktual	normal	Belum dijalankan	-	-	-
+admin	admin/daftar-order.spec.ts	287	Daftar Order — Administrator > action terbatas tetap tampil dan memberikan alert sesuai status aktual	normal	Belum dijalankan	-	-	-
+admin	admin/daftar-order.spec.ts	346	Daftar Order — Administrator > Edit Data Order pada ORDER SELESAI tetap tampil dan memberi alert sesuai rule	normal	Belum dijalankan	-	-	-
+admin	admin/daftar-order.spec.ts	353	Daftar Order — Administrator > form tahap awal tersedia untuk Input Muatan, Perjanjian, dan Kelengkapan Unit fixture	normal	Belum dijalankan	-	-	-
+admin	admin/daftar-order.spec.ts	379	Daftar Order — Administrator > halaman Batalkan Order, Edit Data Muatan, dan Edit Status Order dapat dibuka tanpa mutasi	normal	Belum dijalankan	-	-	-
+admin	admin/daftar-order.spec.ts	390	Daftar Order — Administrator > Upload Dokumen, Biaya Tambahan invalid, dan Lihat Data Unit mengikuti fixture	normal	Belum dijalankan	-	-	-
+admin	admin/daftar-order.spec.ts	415	Daftar Order — Administrator > rating Admin menolak nilai di atas 5.0 tanpa menyimpan	normal	Belum dijalankan	-	-	-
+admin	admin/daftar-order.spec.ts	437	Daftar Order — Administrator > Detail Order membuka section default sesuai status fixture	normal	Belum dijalankan	-	-	-
+admin	admin/dashboard.spec.ts	63	Monitoring Pengiriman (Admin) > filter wajib memilih shipper dan berbatas 90 hari	normal	LULUS	20261023-cakupan-readonly	-	-
+admin	admin/dashboard.spec.ts	70	Monitoring Pengiriman (Admin) > tabel menampilkan kolom monitoring pengiriman sesuai rule	normal	LULUS	20261023-cakupan-readonly	-	-
+admin	admin/dashboard.spec.ts	89	Monitoring Pengiriman (Admin) > kolom yang bisa disortir sesuai rule (ID Order, Stuffing, ETD, ETA, Kapal Sandar, Transporter, POD)	normal	LULUS	20261023-cakupan-readonly	-	-
+admin	admin/dashboard.spec.ts	98	Monitoring Pengiriman (Admin) > ID Order berupa tautan ke detail pesanan yang dibuka di tab baru	normal	Belum dijalankan	-	-	-
+admin	admin/dashboard.spec.ts	106	Monitoring Pengiriman (Admin) > tracking yang belum dikerjakan ditampilkan strip	normal	Belum dijalankan	-	-	-
+admin	admin/dashboard.spec.ts	119	Monitoring Pengiriman (Admin) > rentang tanggal lebih dari 90 hari ditolak (field tanggal akhir tetap kosong)	normal	LULUS	20261023-cakupan-readonly	-	-
+admin	admin/dashboard.spec.ts	125	Monitoring Pengiriman (Admin) > rentang tanggal dalam 90 hari memperbarui query pencarian	normal	LULUS	20261023-cakupan-readonly	-	-
+admin	admin/dashboard.spec.ts	132	Monitoring Pengiriman (Admin) > menu aksi menyediakan Tampilkan Penuh (fullscreen) dan Export Excel	normal	LULUS	20261023-cakupan-readonly	-	-
+admin	admin/dashboard.spec.ts	151	Frekuensi Pengiriman (Admin) > menampilkan heading, map Indonesia, dan filter shipper sendiri	normal	LULUS	20261023-cakupan-readonly	-	-
+admin	admin/dashboard.spec.ts	159	Frekuensi Pengiriman (Admin) > Tampilkan Penuh mengaktifkan fullscreen pada #full1 dan menutupnya kembali	normal	LULUS	20261023-cakupan-readonly	-	-
+admin	admin/dashboard.spec.ts	166	Frekuensi Pengiriman (Admin) > DEFECT: teks batas filter tanggal seharusnya "90 hari" sesuai rule, bukan "12 Bulan"	test.fail/defect	LULUS-DEFECT(test.fail)	20261023-cakupan-readonly	-	-
+admin	admin/dashboard.spec.ts	178	Grafik Pengiriman (Admin) > menampilkan heading, diagram batang, dan filter shipper sendiri	normal	LULUS	20261023-cakupan-readonly	-	-
+admin	admin/dashboard.spec.ts	185	Grafik Pengiriman (Admin) > Tampilkan Penuh mengaktifkan fullscreen pada #full2 dan menutupnya kembali	normal	LULUS	20261023-cakupan-readonly	-	-
+admin	admin/dashboard.spec.ts	192	Grafik Pengiriman (Admin) > DEFECT: teks batas filter tanggal seharusnya "90 hari" sesuai rule, bukan "12 Bulan"	test.fail/defect	LULUS-DEFECT(test.fail)	20261023-cakupan-readonly	-	-
+admin	admin/harga-jadwal.spec.ts	69	Daftar Harga & Jadwal (Admin) > halaman default redirect ke tab Semua Harga & Jadwal dengan tab tersebut aktif	normal	LULUS	20261023-cakupan-readonly	-	-
+admin	admin/harga-jadwal.spec.ts	76	Daftar Harga & Jadwal (Admin) > kelima tab tampil dengan link benar dan klik tab memindahkan tab aktif	normal	LULUS	20261023-cakupan-readonly	-	-
+admin	admin/harga-jadwal.spec.ts	87	Daftar Harga & Jadwal (Admin) > tabel menampilkan kolom sisi admin (ada Transporter) beserta keterangan penanda	normal	LULUS	20261023-cakupan-readonly	-	-
+admin	admin/harga-jadwal.spec.ts	105	Daftar Harga & Jadwal (Admin) > harga tanpa jadwal di tab Butuh Jadwal Kapal ditandai merah, tab Sudah Lengkap tidak	normal	Belum dijalankan	-	-	-
+admin	admin/harga-jadwal.spec.ts	119	Daftar Harga & Jadwal (Admin) > aksi tab Butuh Jadwal Kapal: detail, edit, hapus harga, serta lihat & tambah jadwal	normal	Belum dijalankan	-	-	-
+admin	admin/harga-jadwal.spec.ts	119	Daftar Harga & Jadwal (Admin) > aksi tab Sudah Lengkap: detail, edit, hapus harga, serta lihat & tambah jadwal	normal	Belum dijalankan	-	-	-
+admin	admin/harga-jadwal.spec.ts	133	Daftar Harga & Jadwal (Admin) > aksi tab Perlu Update Harga: detail harga dan update harga	normal	Belum dijalankan	-	-	-
+admin	admin/harga-jadwal.spec.ts	142	Daftar Harga & Jadwal (Admin) > aksi tab Request Jadwal: update jadwal (bila belum direspon), detail harga, lihat jadwal	normal	Belum dijalankan	-	-	-
+admin	admin/harga-jadwal.spec.ts	157	Daftar Harga & Jadwal (Admin) > harga hasil respon update harga bertanda (#n) dan harga kadaluarsa bertanda (EXPIRED)	normal	Belum dijalankan	-	-	-
+admin	admin/harga-jadwal.spec.ts	174	Input Harga Penawaran (Admin, form dibuka tanpa simpan) > form tambah harga memuat pilihan transporter, lelang, pelayaran, jenis kontainer, dan rekomendasi PPN/PPh	normal	Belum dijalankan	-	-	-
+admin	admin/harga-jadwal.spec.ts	198	Input Harga Penawaran (Admin, form dibuka tanpa simpan) > nilai PPN di atas 100 otomatis direset menjadi 100	normal	LULUS	20261023-cakupan-readonly	-	-
+admin	admin/invoice-nama-item.spec.ts	176	Nama item Invoice Jasa Pengiriman (Admin) > menu Proses Invoice memakai OrderID mentah dan halaman invoice menyediakan Buat Invoice	normal	Belum dijalankan	-	-	-
+admin	admin/invoice-nama-item.spec.ts	197	Nama item Invoice Jasa Pengiriman (Admin) > admin TIDAK punya action menu Input/Edit Nomor Referensi (khusus shipper)	normal	Belum dijalankan	-	-	-
+admin	admin/invoice-nama-item.spec.ts	222	Nama item Invoice Jasa Pengiriman (Admin) > nama item menampilkan No. Referensi order di baris bawah jenis kendaraan	normal	Belum dijalankan	-	-	-
+admin	admin/invoice-nama-item.spec.ts	248	Nama item Invoice Jasa Pengiriman (Admin) > order dengan lebih dari satu kendaraan memakai No. Referensi yang sama di semua item	normal	Belum dijalankan	-	-	-
+admin	admin/invoice-nama-item.spec.ts	271	Nama item Invoice Jasa Pengiriman (Admin) > order tanpa No. Referensi hanya menampilkan baris jenis kendaraan	normal	Belum dijalankan	-	-	-
+admin	admin/invoice-nama-item.spec.ts	296	Nama item Invoice Jasa Pengiriman (Admin) > order MULTIDROP tetap satu item per unit: rute pelabuhan + No. Referensi, tanpa alamat drop	normal	Belum dijalankan	-	-	-
+admin	admin/invoice-nama-item.spec.ts	334	Nama item Invoice Jasa Pengiriman (Admin) > Invoice Tambahan tidak membawa nama item sehingga tanpa No. Referensi	normal	Belum dijalankan	-	-	-
+admin	admin/invoice-nama-item.spec.ts	356	Nama item Invoice Jasa Pengiriman (Admin) > admin bisa mengubah No. Referensi lewat Edit Data Order (field #nomor_referensi)	normal	Belum dijalankan	-	-	-
+admin	admin/invoice-nama-item.spec.ts	382	Nama item Invoice Jasa Pengiriman (Admin) > Edit Data Order ditolak untuk ORDER SELESAI sehingga No. Referensi tak bisa lagi diubah	normal	Belum dijalankan	-	-	-
+admin	admin/invoice-nama-item.spec.ts	396	Nama item Invoice Jasa Pengiriman (Admin) > form invoice ditolak untuk order tahap awal (belum boleh diinvoice)	normal	Belum dijalankan	-	-	-
+admin	admin/laporan.spec.ts	99	Laporan Daftar History Lelang (Admin) > form pencarian wajib memilih shipper dan berbatas range 90 hari	normal	LULUS	20261023-cakupan-readonly	-	-
+admin	admin/laporan.spec.ts	109	Laporan Daftar History Lelang (Admin) > hasil pencarian menampilkan total lelang, kolom, dan Export Excel	normal	Belum dijalankan	-	-	-
+admin	admin/laporan.spec.ts	128	Laporan Daftar History Lelang (Admin) > rute multidrop ditandai label Multidrop	normal	Belum dijalankan	-	-	-
+admin	admin/laporan.spec.ts	138	Laporan Owner (Admin) > form pencarian berbatas range 31 hari dan wajib memilih shipper	normal	LULUS	20261023-cakupan-readonly	-	-
+admin	admin/laporan.spec.ts	145	Laporan Owner (Admin) > hasil menampilkan total lelang & order, kolom laporan, dan Export Excel	normal	Belum dijalankan	-	-	-
+admin	admin/laporan.spec.ts	164	Laporan Owner (Admin) > lelang tanpa penawaran tampil dengan 0 harga dan strip pada harga dipilih/nomor order/transporter	normal	Belum dijalankan	-	-	-
+admin	admin/laporan.spec.ts	175	Laporan Owner (Admin) > detail laporan owner memuat data lelang, statistik bidder, dan harga; Kembali menuju hasil pencarian	normal	Belum dijalankan	-	-	-
+admin	admin/laporan.spec.ts	219	Laporan Logistik (Admin) > form pencarian memakai tanggal permintaan muat berbatas 31 hari	normal	LULUS	20261023-cakupan-readonly	-	-
+admin	admin/laporan.spec.ts	226	Laporan Logistik (Admin) > hasil menampilkan total lelang/order/unit, kolom berpasangan, dan Export Excel	normal	Belum dijalankan	-	-	-
+admin	admin/laporan.spec.ts	248	Laporan Logistik (Admin) > detail laporan logistik memuat tahapan tracking dan data unit (kontainer & seal)	normal	Belum dijalankan	-	-	-
+admin	admin/master-iklan-petugas.spec.ts	96	Master Iklan Berbayar (Admin, mutasi) > tambah iklan transporter → tampil di list, transporter yang sama ditolak, lalu dihapus	normal	Belum dijalankan	-	-	-
+admin	admin/master-iklan-petugas.spec.ts	154	Master Petugas APK (Admin, mutasi) > tambah petugas → list & detail, WA duplikat ditolak, edit nama, lalu dihapus	normal	Belum dijalankan	-	-	-
+admin	admin/master-iklan-petugas.spec.ts	221	Master Petugas APK (Admin, mutasi) > WA milik fixture petugas demo ditolak saat tambah petugas baru	normal	Belum dijalankan	-	-	-
+admin	admin/master.spec.ts	211	Master (Admin) — struktur halaman > Master Provinsi: kolom tabel sesuai kalibrasi	normal	Belum dijalankan	-	-	-
+admin	admin/master.spec.ts	211	Master (Admin) — struktur halaman > Master Kota: kolom tabel sesuai kalibrasi	normal	Belum dijalankan	-	-	-
+admin	admin/master.spec.ts	211	Master (Admin) — struktur halaman > Master Pelabuhan: kolom tabel, tombol Tambah, aksi baris sesuai kalibrasi	normal	Belum dijalankan	-	-	-
+admin	admin/master.spec.ts	211	Master (Admin) — struktur halaman > Master Bank: kolom tabel, tombol Tambah, aksi baris sesuai kalibrasi	normal	Belum dijalankan	-	-	-
+admin	admin/master.spec.ts	211	Master (Admin) — struktur halaman > Master Include: kolom tabel, tombol Tambah, aksi baris sesuai kalibrasi	normal	Belum dijalankan	-	-	-
+admin	admin/master.spec.ts	211	Master (Admin) — struktur halaman > Master Kemasan: kolom tabel, tombol Tambah, aksi baris sesuai kalibrasi	normal	Belum dijalankan	-	-	-
+admin	admin/master.spec.ts	211	Master (Admin) — struktur halaman > Master Jenis Muatan: kolom tabel, aksi baris sesuai kalibrasi	normal	Belum dijalankan	-	-	-
+admin	admin/master.spec.ts	211	Master (Admin) — struktur halaman > Master Harga Barang: kolom tabel, aksi baris sesuai kalibrasi	normal	Belum dijalankan	-	-	-
+admin	admin/master.spec.ts	211	Master (Admin) — struktur halaman > Master Free Time: kolom tabel, tombol Tambah, aksi baris sesuai kalibrasi	normal	Belum dijalankan	-	-	-
+admin	admin/master.spec.ts	211	Master (Admin) — struktur halaman > Master Pelayaran: kolom tabel, tombol Tambah, aksi baris sesuai kalibrasi	normal	Belum dijalankan	-	-	-
+admin	admin/master.spec.ts	211	Master (Admin) — struktur halaman > Master Jenis Kontainer: kolom tabel, tombol Tambah, aksi baris sesuai kalibrasi	normal	Belum dijalankan	-	-	-
+admin	admin/master.spec.ts	211	Master (Admin) — struktur halaman > Master Dokumen Penagihan: kolom tabel, tombol Tambah, aksi baris sesuai kalibrasi	normal	Belum dijalankan	-	-	-
+admin	admin/master.spec.ts	211	Master (Admin) — struktur halaman > Master Iklan Berbayar: kolom tabel, tombol Tambah, aksi baris sesuai kalibrasi	normal	Belum dijalankan	-	-	-
+admin	admin/master.spec.ts	211	Master (Admin) — struktur halaman > Master Petugas APK: kolom tabel, tombol Tambah, aksi baris sesuai kalibrasi	normal	Belum dijalankan	-	-	-
+admin	admin/master.spec.ts	235	Master (Admin) — CRUD data sederhana (mutasi) > Bank: tambah → tampil di list → edit nama via modal → hapus	normal	Belum dijalankan	-	-	-
+admin	admin/master.spec.ts	235	Master (Admin) — CRUD data sederhana (mutasi) > Kemasan: tambah → tampil di list → edit nama via modal → hapus	normal	Belum dijalankan	-	-	-
+admin	admin/master.spec.ts	235	Master (Admin) — CRUD data sederhana (mutasi) > Jenis Kontainer: tambah → tampil di list → edit nama via modal → hapus	normal	Belum dijalankan	-	-	-
+admin	admin/master.spec.ts	235	Master (Admin) — CRUD data sederhana (mutasi) > Dokumen Penagihan: tambah → tampil di list → edit nama via modal → hapus	normal	Belum dijalankan	-	-	-
+admin	admin/master.spec.ts	235	Master (Admin) — CRUD data sederhana (mutasi) > Include: tambah → tampil di list → edit nama via modal → hapus	normal	Belum dijalankan	-	-	-
+admin	admin/master.spec.ts	235	Master (Admin) — CRUD data sederhana (mutasi) > Pelabuhan: tambah → tampil di list → edit nama via modal → hapus	normal	Belum dijalankan	-	-	-
+admin	admin/master.spec.ts	279	Master (Admin) — CRUD data sederhana (mutasi) > Bank: field required divalidasi lewat popover berurutan (Nama Bank lalu Status)	normal	Belum dijalankan	-	-	-
+admin	admin/master.spec.ts	290	Master (Admin) — CRUD data sederhana (mutasi) > Bank: nama yang sudah ada ditolak dengan alert "Nama Bank Sudah Digunakan"	normal	Belum dijalankan	-	-	-
+admin	admin/master.spec.ts	290	Master (Admin) — CRUD data sederhana (mutasi) > Kemasan: nama yang sudah ada ditolak dengan alert "Nama Kemasan Sudah Digunakan"	normal	Belum dijalankan	-	-	-
+admin	admin/master.spec.ts	290	Master (Admin) — CRUD data sederhana (mutasi) > Jenis Kontainer: nama yang sudah ada ditolak dengan alert "Jenis Kontainer Sudah Digunakan"	normal	Belum dijalankan	-	-	-
+admin	admin/master.spec.ts	290	Master (Admin) — CRUD data sederhana (mutasi) > Dokumen Penagihan: nama yang sudah ada ditolak dengan alert "Nama Dokumen Penagihan Sudah digunakan"	normal	Belum dijalankan	-	-	-
+admin	admin/master.spec.ts	290	Master (Admin) — CRUD data sederhana (mutasi) > Include: nama yang sudah ada ditolak dengan alert "Nama Include Sudah Digunakan"	normal	Belum dijalankan	-	-	-
+admin	admin/master.spec.ts	290	Master (Admin) — CRUD data sederhana (mutasi) > Pelabuhan: nama yang sudah ada ditolak dengan alert "UN Code atau Nama Pelabuhan Sudah Digunakan"	normal	Belum dijalankan	-	-	-
+admin	admin/master.spec.ts	317	Master (Admin) — data yang sudah digunakan > Bank terpakai: Edit meminta konfirmasi dan Hapus ditolak	normal	Belum dijalankan	-	-	-
+admin	admin/master.spec.ts	317	Master (Admin) — data yang sudah digunakan > Include terpakai: Edit meminta konfirmasi dan Hapus ditolak	normal	Belum dijalankan	-	-	-
+admin	admin/master.spec.ts	317	Master (Admin) — data yang sudah digunakan > Dokumen Penagihan terpakai: Edit meminta konfirmasi dan Hapus ditolak	normal	Belum dijalankan	-	-	-
+admin	admin/master.spec.ts	317	Master (Admin) — data yang sudah digunakan > Pelayaran terpakai: Edit meminta konfirmasi dan Hapus ditolak	normal	Belum dijalankan	-	-	-
+admin	admin/master.spec.ts	336	Master (Admin) — data yang sudah digunakan > Kemasan terpakai: hanya status yang bisa diedit (nama disabled) dan hapus ditolak setelah konfirmasi	normal	Belum dijalankan	-	-	-
+admin	admin/open-stack-ganti-jadwal.spec.ts	126	Open Stack — Ganti Jadwal (Admin, mutasi) > mengubah Open Stack order via Ganti Jadwal tercermin di Detail Order dan Riwayat Perubahan Data, lalu dikembalikan	normal	Belum dijalankan	-	-	-
+admin	admin/open-stack.spec.ts	152	Open Stack — Daftar Order (Admin) > Detail Order: blok PELAYARAN memuat Open Stack di antara Voyage dan Closing (tanggal atau strip)	normal	Belum dijalankan	-	-	-
+admin	admin/open-stack.spec.ts	163	Open Stack — Daftar Order (Admin) > Detail Order: order dari jadwal ber-Open Stack menampilkan tanggalnya	normal	Belum dijalankan	-	-	-
+admin	admin/open-stack.spec.ts	181	Open Stack — Daftar Order (Admin) > Ganti Jadwal: blok PELAYARAN memuat Open Stack dan form jadwal baru menyediakan field Open Stack opsional	normal	Belum dijalankan	-	-	-
+admin	admin/open-stack.spec.ts	202	Open Stack — Daftar Order (Admin) > Edit Data Order: blok PELAYARAN memuat Open Stack berpasangan dengan label Closing Time	normal	Belum dijalankan	-	-	-
+admin	admin/open-stack.spec.ts	212	Open Stack — Daftar Order (Admin) > Edit Status Order: blok PELAYARAN memuat Open Stack (nilai kosong dirender strip)	normal	Belum dijalankan	-	-	-
+admin	admin/open-stack.spec.ts	232	Open Stack — Daftar Order (Admin) > Alihkan Order: ringkasan order memuat Open Stack di antara ETD - ETA dan Closing Time, tiap harga pengganti menampilkan Open Stack	normal	Belum dijalankan	-	-	-
+admin	admin/open-stack.spec.ts	250	Open Stack — Daftar Order (Admin) > Alihkan Order: order dari jadwal ber-Open Stack menampilkan tanggalnya di ringkasan	normal	Belum dijalankan	-	-	-
+admin	admin/pengajuan-lelang.spec.ts	171	Daftar Pengajuan Lelang (Admin) > halaman default redirect ke tab Semua Lelang; root "/" admin mendarat di halaman ini	normal	LULUS	20261023-cakupan-readonly	-	-
+admin	admin/pengajuan-lelang.spec.ts	180	Daftar Pengajuan Lelang (Admin) > keenam tab pengelompokan lelang tampil dan klik tab memindahkan tab aktif	normal	LULUS	20261023-cakupan-readonly	-	-
+admin	admin/pengajuan-lelang.spec.ts	191	Daftar Pengajuan Lelang (Admin) > tabel menampilkan kolom sisi admin (ada Shipper) dan keterangan hijau/#	normal	LULUS	20261023-cakupan-readonly	-	-
+admin	admin/pengajuan-lelang.spec.ts	212	Daftar Pengajuan Lelang (Admin) > panel filter memuat field lelang, shipper, dan pelabuhan	normal	LULUS	20261023-cakupan-readonly	-	-
+admin	admin/pengajuan-lelang.spec.ts	232	Daftar Pengajuan Lelang (Admin) > menu aksi tab semua-lelang memuat lima aksi dasar dengan tujuan link yang benar	normal	Belum dijalankan	-	-	-
+admin	admin/pengajuan-lelang.spec.ts	232	Daftar Pengajuan Lelang (Admin) > menu aksi tab perlu-input-harga memuat lima aksi dasar dengan tujuan link yang benar	normal	Belum dijalankan	-	-	-
+admin	admin/pengajuan-lelang.spec.ts	232	Daftar Pengajuan Lelang (Admin) > menu aksi tab perlu-update-harga memuat lima aksi dasar dengan tujuan link yang benar	normal	Belum dijalankan	-	-	-
+admin	admin/pengajuan-lelang.spec.ts	232	Daftar Pengajuan Lelang (Admin) > menu aksi tab lelang-tutup memuat lima aksi dasar dengan tujuan link yang benar	normal	Belum dijalankan	-	-	-
+admin	admin/pengajuan-lelang.spec.ts	232	Daftar Pengajuan Lelang (Admin) > menu aksi tab telah-akhir-kirim memuat lima aksi dasar dengan tujuan link yang benar	normal	Belum dijalankan	-	-	-
+admin	admin/pengajuan-lelang.spec.ts	232	Daftar Pengajuan Lelang (Admin) > menu aksi tab lelang-batal memuat lima aksi dasar dengan tujuan link yang benar	normal	Belum dijalankan	-	-	-
+admin	admin/pengajuan-lelang.spec.ts	262	Daftar Pengajuan Lelang (Admin) > DISKREPANSI: rule tab Lelang Tutup memuat menu "Minta Update Harga", UI tidak menyediakannya	test.fail/defect	Belum dijalankan	-	-	-
+admin	admin/pengajuan-lelang.spec.ts	273	Daftar Pengajuan Lelang (Admin) > History Data Lelang hanya tampil pada lelang yang pernah diubah, menuju halaman riwayat	normal	Belum dijalankan	-	-	-
+admin	admin/pengajuan-lelang.spec.ts	292	Daftar Pengajuan Lelang (Admin) > History Request Harga tampil pada lelang yang pernah request harga (nomor bertanda #n)	normal	Belum dijalankan	-	-	-
+admin	admin/pengajuan-lelang.spec.ts	318	Daftar Pengajuan Lelang (Admin) > nomor lelang tanpa order berwarna hijau	normal	Belum dijalankan	-	-	-
+admin	admin/pengajuan-lelang.spec.ts	339	Aksi lelang yang diblokir (SweetAlert2, rule menulis "alert") > lelang batal: Batalkan / Edit Data / Tambah Peserta ditolak dengan pesan "sudah dibatalkan"	normal	Belum dijalankan	-	-	-
+admin	admin/pengajuan-lelang.spec.ts	352	Aksi lelang yang diblokir (SweetAlert2, rule menulis "alert") > lelang lewat rencana akhir kirim: Tambah Peserta ditolak	normal	Belum dijalankan	-	-	-
+admin	admin/pengajuan-lelang.spec.ts	360	Aksi lelang yang diblokir (SweetAlert2, rule menulis "alert") > lelang yang sudah ada order tidak bisa dibatalkan	normal	Belum dijalankan	-	-	-
+admin	admin/pengajuan-lelang.spec.ts	369	Aksi lelang yang diblokir (SweetAlert2, rule menulis "alert") > akses langsung halaman edit/tambah peserta lelang batal ditolak dengan alert tidak memiliki akses	normal	Belum dijalankan	-	-	-
+admin	admin/pengajuan-lelang.spec.ts	394	Detail Pengajuan Lelang (Admin) > menampilkan status lelang, ringkasan, dan daftar transporter penerima lelang beserta status harga	normal	Belum dijalankan	-	-	-
+admin	admin/pengajuan-lelang.spec.ts	426	Detail Pengajuan Lelang (Admin) > detail lelang batal menampilkan card Lelang Batal dengan tanggal dan alasan, tanpa tombol Batalkan	normal	Belum dijalankan	-	-	-
+admin	admin/pengajuan-lelang.spec.ts	434	Detail Pengajuan Lelang (Admin) > detail lelang yang masih bisa dibatalkan menyediakan tombol Batalkan Lelang	normal	Belum dijalankan	-	-	-
+admin	admin/pengajuan-lelang.spec.ts	459	Halaman aksi lelang (dibuka tanpa submit) > Edit Data Lelang: seksi terkunci sampai checkbox edit dicentang, field sesuai rule, tombol Simpan	normal	Belum dijalankan	-	-	-
+admin	admin/pengajuan-lelang.spec.ts	516	Halaman aksi lelang (dibuka tanpa submit) > Tambah Peserta Lelang: bidder terundang terkunci tercentang, Simpan disable sampai ada bidder baru	normal	Belum dijalankan	-	-	-
+admin	admin/pengajuan-lelang.spec.ts	553	Halaman aksi lelang (dibuka tanpa submit) > Batalkan Lelang: form alasan (wajib) dengan opsi Lainnya + catatan, peringatan notifikasi peserta	normal	Belum dijalankan	-	-	-
+admin	admin/pengajuan-nego.spec.ts	80	Daftar Pengajuan Nego (Admin) > tabel menampilkan kolom berpasangan (Shipper di sisi admin) dan status nego pada baris	normal	Belum dijalankan	-	-	-
+admin	admin/pengajuan-nego.spec.ts	100	Daftar Pengajuan Nego (Admin) > filter menyediakan Shipper, Transporter, dan keempat status nego	normal	LULUS	20261023-cakupan-readonly	-	-
+admin	admin/pengajuan-nego.spec.ts	108	Daftar Pengajuan Nego (Admin) > nego berstatus WAITING atau DITOLAK menampilkan strip pada Harga Baru	normal	Belum dijalankan	-	-	-
+admin	admin/pengajuan-nego.spec.ts	119	Detail Nego (Admin, tanpa aksi) > detail memuat harga sebelum PPN, nilai PPN/PPh, data nego, tanpa tombol respon nego	normal	Belum dijalankan	-	-	-
+admin	admin/pengajuan-nego.spec.ts	156	Detail Nego (Admin, tanpa aksi) > nego WAITING berketerangan menunggu respon bidder	normal	Belum dijalankan	-	-	-
+admin	admin/pengajuan-nego.spec.ts	168	Riwayat Nego (Admin) > diakses dari textlink Lihat Riwayat; mencatat tanggal, nego harga, jumlah nego, konfirmasi, harga baru, status	normal	Belum dijalankan	-	-	-
+admin	admin/pengajuan-nego.spec.ts	194	Riwayat Nego (Admin) > riwayat berstatus Waiting/Ditolak menampilkan strip pada konfirmasi dan/atau harga baru	normal	Belum dijalankan	-	-	-
+admin	admin/pengaturan-akun-user.spec.ts	132	Hak Akses Shipper (Admin, mutasi) > Simpan tanpa akses ditolak dengan alert "Pilih Hak akses minimal 1"	normal	Belum dijalankan	-	-	-
+admin	admin/pengaturan-akun-user.spec.ts	143	Hak Akses Shipper (Admin, mutasi) > tambah grup satu akses untuk Shipper demo → tampil di list & detail, lalu dihapus	normal	Belum dijalankan	-	-	-
+admin	admin/pengaturan-akun-user.spec.ts	200	Sub User Shipper (Admin, mutasi) > tambah sub user Shipper demo → tampil di list & detail, lalu dihapus dengan konfirmasi	normal	Belum dijalankan	-	-	-
+admin	admin/pengaturan-akun-user.spec.ts	230	Sub User Shipper (Admin, mutasi) > email sub user Shipper yang sudah terdaftar ditolak	normal	Belum dijalankan	-	-	-
+admin	admin/pengaturan-akun-user.spec.ts	132	Hak Akses Transporter (Admin, mutasi) > Simpan tanpa akses ditolak dengan alert "Pilih Hak akses minimal 1"	normal	Belum dijalankan	-	-	-
+admin	admin/pengaturan-akun-user.spec.ts	143	Hak Akses Transporter (Admin, mutasi) > tambah grup satu akses untuk Transporter demo → tampil di list & detail, lalu dihapus	normal	Belum dijalankan	-	-	-
+admin	admin/pengaturan-akun-user.spec.ts	200	Sub User Transporter (Admin, mutasi) > tambah sub user Transporter demo → tampil di list & detail, lalu dihapus dengan konfirmasi	normal	Belum dijalankan	-	-	-
+admin	admin/pengaturan-akun-user.spec.ts	230	Sub User Transporter (Admin, mutasi) > email sub user Transporter yang sudah terdaftar ditolak	normal	Belum dijalankan	-	-	-
+admin	admin/pengaturan-akun-user.spec.ts	252	Hak Akses Shipper/Transporter — modul sesuai rule > form Tambah Hak Akses Shipper hanya memuat modul peran tersebut (DISKREPANSI: ada Modul Administrator, Modul Master, Modul Analitik)	test.fail/defect	LULUS-DEFECT(test.fail)	20261023-cakupan-readonly	-	-
+admin	admin/pengaturan-akun-user.spec.ts	252	Hak Akses Shipper/Transporter — modul sesuai rule > form Tambah Hak Akses Transporter hanya memuat modul peran tersebut (DISKREPANSI: ada Modul Administrator)	test.fail/defect	LULUS-DEFECT(test.fail)	20261023-cakupan-readonly	-	-
+admin	admin/pengaturan-akun.spec.ts	96	Pengaturan Akun (Admin) — struktur halaman > Hak Akses Shipper: kolom tabel, tombol Tambah Hak Akses, aksi baris sesuai kalibrasi	normal	Belum dijalankan	-	-	-
+admin	admin/pengaturan-akun.spec.ts	96	Pengaturan Akun (Admin) — struktur halaman > Sub User Shipper: kolom tabel, tombol Tambah Sub User, aksi baris sesuai kalibrasi	normal	Belum dijalankan	-	-	-
+admin	admin/pengaturan-akun.spec.ts	96	Pengaturan Akun (Admin) — struktur halaman > Hak Akses Transporter: kolom tabel, tombol Tambah Hak Akses, aksi baris sesuai kalibrasi	normal	Belum dijalankan	-	-	-
+admin	admin/pengaturan-akun.spec.ts	96	Pengaturan Akun (Admin) — struktur halaman > Sub User Transporter: kolom tabel, tombol Tambah Sub User, aksi baris sesuai kalibrasi	normal	Belum dijalankan	-	-	-
+admin	admin/pengaturan-akun.spec.ts	96	Pengaturan Akun (Admin) — struktur halaman > Hak Akses Admin: kolom tabel, tombol Tambah Hak Akses, aksi baris sesuai kalibrasi	normal	Belum dijalankan	-	-	-
+admin	admin/pengaturan-akun.spec.ts	96	Pengaturan Akun (Admin) — struktur halaman > Sub User Admin: kolom tabel, tombol Tambah Sub User, aksi baris sesuai kalibrasi	normal	Belum dijalankan	-	-	-
+admin	admin/pengaturan-akun.spec.ts	108	Pengaturan Akun (Admin) — struktur halaman > Tambah Hak Akses Shipper memuat pilihan shipper, nama/deskripsi, dan daftar checkbox akses	normal	LULUS	20261023-cakupan-readonly	-	-
+admin	admin/pengaturan-akun.spec.ts	119	Pengaturan Akun (Admin) — struktur halaman > Tambah Sub User Shipper memuat pilihan shipper, kredensial, data sub user, status, dan hak akses	normal	Belum dijalankan	-	-	-
+admin	admin/pengaturan-akun.spec.ts	134	Hak Akses Admin (mutasi) > Simpan tanpa memilih akses ditolak dengan alert "Pilih Hak akses minimal 1"	normal	Belum dijalankan	-	-	-
+admin	admin/pengaturan-akun.spec.ts	144	Hak Akses Admin (mutasi) > centang akses anak ikut mencentang induk, lepas induk melepas anak, Pilih Semua mencentang satu modul	normal	LULUS	20261023-cakupan-readonly	-	-
+admin	admin/pengaturan-akun.spec.ts	161	Hak Akses Admin (mutasi) > tambah grup dengan satu akses → Total Perizinan 1, detail & edit merefleksikan, lalu hapus	normal	Belum dijalankan	-	-	-
+admin	admin/pengaturan-akun.spec.ts	213	Sub User Admin (mutasi) > tambah sub user admin baru → tampil di list & detail, lalu dihapus dengan konfirmasi	normal	Belum dijalankan	-	-	-
+admin	admin/pengaturan-akun.spec.ts	255	Sub User Admin (mutasi) > email/nomor WhatsApp yang sudah terdaftar ditolak saat tambah sub user	normal	Belum dijalankan	-	-	-
+admin	admin/penugasan-tracking.spec.ts	69	Daftar Penugasan Tracking (Admin) > tombol Download APK Tracking tersedia dengan tautan berkas APK	normal	GAGAL	20261023-cakupan-readonly	Defect D1 (HTTP 500 Penugasan Tracking)	Error: expect(locator).toBeVisible() failed
+admin	admin/penugasan-tracking.spec.ts	76	Daftar Penugasan Tracking (Admin) > tabel menampilkan pasangan kolom termasuk Shipper dan Transporter, serta tombol filter	normal	GAGAL	20261023-cakupan-readonly	Defect D1 (HTTP 500 Penugasan Tracking)	Error: expect(locator).toBeVisible() failed
+admin	admin/penugasan-tracking.spec.ts	91	Daftar Penugasan Tracking (Admin) > order belum ditugaskan berstatus Proses Penugasan dengan tombol Tracking ke halaman tracking pengiriman	normal	Belum dijalankan	-	-	-
+admin	admin/penugasan-tracking.spec.ts	101	Daftar Penugasan Tracking (Admin) > order Menunggu Proses memiliki menu Edit Penugasan dan Lihat Data Tracking	normal	Belum dijalankan	-	-	-
+admin	admin/penugasan-tracking.spec.ts	113	Daftar Penugasan Tracking (Admin) > order yang sudah dikerjakan trackingnya berstatus tahap tracking dengan menu Penugasan Selesai	normal	Belum dijalankan	-	-	-
+admin	admin/penugasan-tracking.spec.ts	124	Tracking Pengiriman (Admin, dibuka tanpa menugaskan) > halaman memuat detail order dan form petugas per tahap; Lewati tidak tersedia untuk kapal berlayar/sandar	normal	Belum dijalankan	-	-	-
+admin	admin/penugasan-tracking.spec.ts	168	Lihat Data Tracking (Admin) > menampilkan breadcrumb, detail order, dan bagian data tracking	normal	Belum dijalankan	-	-	-
+admin	admin/penugasan-tracking.spec.ts	178	Lihat Data Tracking (Admin) > order yang sudah dikerjakan menampilkan tahapan tracking dengan tautan Data Detail	normal	Belum dijalankan	-	-	-
+admin	admin/penugasan-tracking.spec.ts	184	Lihat Data Tracking (Admin) > DISKREPANSI: order ditugaskan tapi belum dikerjakan seharusnya berketerangan "Tidak ada data tersedia"	test.fail/defect	Belum dijalankan	-	-	-
+admin	admin/push-notif-trigger-perubahan-jadwal.spec.ts	52	Ganti Jadwal oleh Admin mengirim Push Notif baru ke Shipper dan salinan Admin	normal	Belum dijalankan	-	-	-
+admin	admin/push-notif-trigger-validasi-perjanjian.spec.ts	59	Push Notif — validasi Perjanjian Pengiriman oleh Admin > terima perjanjian mengirim notifikasi baru ke Shipper, Transporter, dan salinan Admin	normal	Belum dijalankan	-	-	-
+admin	admin/push-notif-trigger-validasi-perjanjian.spec.ts	106	Push Notif — validasi Perjanjian Pengiriman oleh Admin > tolak perjanjian mengirim notifikasi baru ke Shipper dan salinan Admin	normal	Belum dijalankan	-	-	-
+admin	push-notif.shared.ts	91	Push Notif (Admin) > ikon lonceng top bar membuka halaman Notifikasi dan indikator unread tampil	normal	LULUS	20261023-smoke-local	-	-
+admin	push-notif.shared.ts	109	Push Notif (Admin) > DEFECT: ikon lonceng top bar memiliki accessible name	test.fail/defect	LULUS-DEFECT(test.fail)	20261023-smoke-local	-	-
+admin	push-notif.shared.ts	116	Push Notif (Admin) > default halaman, kategori per peran, batas data, dan informasi retensi sesuai rule	normal	LULUS	20261023-smoke-local	-	-
+admin	push-notif.shared.ts	129	Push Notif (Admin) > daftar unread memuat kategori, waktu, badge, checkbox, dan tujuan Cek Disini	normal	GAGAL	20261023-smoke-local	Data N3 (0 notifikasi)	Error: Akun demo perlu memiliki minimal satu notifikasi unread
+admin	push-notif.shared.ts	156	Push Notif (Admin) > filter Semua Notif dan kategori Lelang mengirim parameter dan menampilkan data yang sesuai	normal	LULUS	20261023-smoke-local	-	-
+admin	push-notif.shared.ts	170	Push Notif (Admin) > Hapus Notif dan Tandai Dibaca hanya aktif setelah notifikasi dipilih	normal	GAGAL	20261023-smoke-local	Data N3 (0 notifikasi)	Error: Akun demo perlu memiliki notifikasi untuk menguji selection state
+admin	push-notif.shared.ts	195	Push Notif (Admin) > pilihan jumlah data memperbarui limit daftar tanpa mengubah notifikasi	normal	LULUS	20261023-smoke-local	-	-
+admin	admin/setting.spec.ts	58	Setting General (Admin) > menampilkan seksi versi, kontak, sosial media, dan satu email admin dalam mode baca	normal	LULUS	20261023-cakupan-readonly	-	-
+admin	admin/setting.spec.ts	79	Setting General (Admin) > versi web tampil di footer dan WhatsApp CS tampil di sidebar	normal	GAGAL	20261023-cakupan-readonly	Perlu konfirmasi (Versi Web kosong di setting lokal)	Error: expect(received).not.toBe(expected) // Object.is equality
+admin	admin/setting.spec.ts	88	Setting General (Admin) > textlink List Email dan List Push Notif membuka popup daftar notifikasi admin	normal	LULUS	20261023-cakupan-readonly	-	-
+admin	admin/setting.spec.ts	106	Setting General (Admin) > Setting Preference admin memuat seksi Notifikasi Sistem dan Email berisi checkbox	normal	Belum dijalankan	-	-	-
+admin	admin/setting.spec.ts	117	Setting General (Admin) > Edit Versi Sistem: mengubah Versi Web tercermin di footer, lalu dikembalikan (mutasi)	normal	Belum dijalankan	-	-	-
+admin	admin/setting.spec.ts	146	Setting S&K Booking (Admin) > halaman menampilkan isi S&K, tombol Setting menuju editor dengan Terakhir Update dan Preview	normal	LULUS	20261023-cakupan-readonly	-	-
+admin	admin/setting.spec.ts	168	Setting Reminder (Admin) > tabel rule reminder memuat kolom dan tugas tracking yang tersedia di UI	normal	Belum dijalankan	-	-	-
+admin	admin/setting.spec.ts	181	Setting Reminder (Admin) > rule menyebut 8 trigger reminder termasuk Ambil Kontainer dan Dokumen Dikirim (DEFECT: UI hanya 6)	test.fail/defect	Belum dijalankan	-	-	-
+admin	admin/setting.spec.ts	188	Setting Reminder (Admin) > halaman Setting Rule Reminder bisa dibuka langsung lewat URL (DEFECT: bergantung HTTP_REFERER)	test.fail/defect	Belum dijalankan	-	-	-
+admin	admin/setting.spec.ts	197	Setting Reminder (Admin) > Setting: hanya rule trigger dan status yang bisa diubah; perubahan tersimpan lalu dikembalikan (mutasi)	normal	Belum dijalankan	-	-	-
+admin	admin/setting.spec.ts	255	Setting Notifikasi (Admin) > menampilkan status ON/OFF untuk Push Notifikasi, Notifikasi Email, dan Notifikasi Whatsapp	normal	Belum dijalankan	-	-	-
+admin	admin/setting.spec.ts	268	Setting Notifikasi (Admin) > menonaktifkan Notifikasi Email via switch berubah menjadi OFF, lalu diaktifkan kembali (mutasi)	normal	Belum dijalankan	-	-	-
+admin	admin/setting.spec.ts	307	Setting Pajak (Admin) > tabel menampilkan PPN dan PPh dengan nilai persen dan tombol Setting	normal	Belum dijalankan	-	-	-
+admin	admin/setting.spec.ts	319	Setting Pajak (Admin) > Setting PPh: nama item terkunci, nilai bisa diubah dan tersimpan, lalu dikembalikan (mutasi)	normal	Belum dijalankan	-	-	-
+admin	admin/validasi-akun-mutasi.spec.ts	95	Pre Register (Admin, mutasi) > akun yang baru registrasi (belum aktivasi) tampil di Pre Register, detailnya sesuai, lalu dihapus admin	normal	Belum dijalankan	-	-	-
+admin	admin/validasi-akun-mutasi.spec.ts	173	Validasi Transporter (Admin) — aturan rekening & email > menonaktifkan seluruh rekening ditolak: alert "Rekening aktif minimal satu!" dan data tidak berubah	normal	Belum dijalankan	-	-	-
+admin	admin/validasi-akun-mutasi.spec.ts	214	Validasi Transporter (Admin) — aturan rekening & email > mengubah email transporter meminta konfirmasi "Apakah anda yakin mengubah email user?" dan batal tidak mengubah data	normal	Belum dijalankan	-	-	-
+admin	admin/validasi-akun-mutasi.spec.ts	265	Transporter Khusus (Admin, mutasi) > tambah transporter khusus (alias otomatis) → setting: tambah shipper, shipper sama ditolak → hapus transporter khusus	normal	Belum dijalankan	-	-	-
+admin	admin/validasi-akun-mutasi.spec.ts	325	Transporter Khusus (Admin, mutasi) > tombol Batal pada tambah shipper meminta konfirmasi "Apakah Anda yakin ingin membatalkan ?"	normal	Belum dijalankan	-	-	-
+admin	admin/validasi-akun-mutasi.spec.ts	344	Relasi Satu Pintu (Admin, mutasi) > tambah relasi transporter (VA angka) → tampil, relasi sama ditolak "Data Relasi Sudah Ada", lalu dihapus	normal	Belum dijalankan	-	-	-
+admin	admin/validasi-akun.spec.ts	106	Validasi Akun (Admin) — struktur daftar > Pre Register: kolom tabel, filter, aksi baris	normal	Belum dijalankan	-	-	-
+admin	admin/validasi-akun.spec.ts	106	Validasi Akun (Admin) — struktur daftar > Validasi Shipper: kolom tabel, filter, aksi baris	normal	Belum dijalankan	-	-	-
+admin	admin/validasi-akun.spec.ts	106	Validasi Akun (Admin) — struktur daftar > Validasi Transporter: kolom tabel, filter, aksi baris	normal	Belum dijalankan	-	-	-
+admin	admin/validasi-akun.spec.ts	106	Validasi Akun (Admin) — struktur daftar > Transporter Khusus: kolom tabel, tombol Tambah, filter, aksi baris	normal	Belum dijalankan	-	-	-
+admin	admin/validasi-akun.spec.ts	106	Validasi Akun (Admin) — struktur daftar > Profil Transporter: kolom tabel, filter, aksi baris	normal	Belum dijalankan	-	-	-
+admin	admin/validasi-akun.spec.ts	106	Validasi Akun (Admin) — struktur daftar > Dokumen Aanwijzing: kolom tabel, filter, aksi baris	normal	Belum dijalankan	-	-	-
+admin	admin/validasi-akun.spec.ts	106	Validasi Akun (Admin) — struktur daftar > Biaya Layanan: kolom tabel, filter, aksi baris	normal	Belum dijalankan	-	-	-
+admin	admin/validasi-akun.spec.ts	106	Validasi Akun (Admin) — struktur daftar > Relasi Satu Pintu: kolom tabel, filter, aksi baris	normal	Belum dijalankan	-	-	-
+admin	admin/validasi-akun.spec.ts	106	Validasi Akun (Admin) — struktur daftar > Preference Notif: kolom tabel, filter, aksi baris	normal	Belum dijalankan	-	-	-
+admin	admin/validasi-akun.spec.ts	119	Validasi Akun (Admin) — struktur daftar > Peserta Lelang: kolom tabel, baris dimuat async, aksi Detail & Setting	normal	Belum dijalankan	-	-	-
+admin	admin/validasi-akun.spec.ts	135	Validasi Akun (Admin) — halaman detail & setting > Detail Pre Register menampilkan identitas pendaftar dan tanggal pre register	normal	Belum dijalankan	-	-	-
+admin	admin/validasi-akun.spec.ts	146	Validasi Akun (Admin) — halaman detail & setting > Detail Shipper memuat dokumen (identitas, logo, NPWP, SIUP), tanggal register, metode pembayaran, dan tombol Lakukan Validasi	normal	Belum dijalankan	-	-	-
+admin	admin/validasi-akun.spec.ts	157	Validasi Akun (Admin) — halaman detail & setting > Validasi Akun Shipper: form kelengkapan dengan email dapat diedit dan pilihan metode pembayaran	normal	Belum dijalankan	-	-	-
+admin	admin/validasi-akun.spec.ts	171	Validasi Akun (Admin) — halaman detail & setting > Validasi Akun Transporter: field Alias maksimal 8 karakter dan seksi rekening	normal	Belum dijalankan	-	-	-
+admin	admin/validasi-akun.spec.ts	182	Validasi Akun (Admin) — halaman detail & setting > Tambah Transporter Khusus: alias terisi otomatis dari transporter terpilih (input alias terkunci)	normal	LULUS	20261023-cakupan-readonly	-	-
+admin	admin/validasi-akun.spec.ts	193	Validasi Akun (Admin) — halaman detail & setting > Setting Transporter Khusus menampilkan info transporter, daftar shipper, dan tombol Tambah Shipper	normal	Belum dijalankan	-	-	-
+admin	admin/validasi-akun.spec.ts	206	Validasi Akun (Admin) — halaman detail & setting > Detail Profil Transporter menampilkan bergabung sejak, lokasi, rating, tab Informasi/Ulasan dan strip untuk data kosong	normal	Belum dijalankan	-	-	-
+admin	admin/validasi-akun.spec.ts	219	Validasi Akun (Admin) — halaman detail & setting > Dokumen Aanwijzing: detail default strip/WAITING dan setting memuat nama (maks 100), upload PDF 4MB, status	normal	Belum dijalankan	-	-	-
+admin	admin/validasi-akun.spec.ts	239	Validasi Akun (Admin) — halaman detail & setting > Setting Peserta Lelang: checkbox Pilih Semua dan per transporter; transporter terkunci shipper lain tidak bisa dicentang	normal	Belum dijalankan	-	-	-
+admin	admin/validasi-akun.spec.ts	256	Validasi Akun (Admin) — halaman detail & setting > Setting Relasi Satu Pintu: info shipper, tanggal satu pintu ber-jam, jumlah relasi, tabel relasi transporter, tombol Tambah Relasi	normal	Belum dijalankan	-	-	-
+admin	admin/validasi-akun.spec.ts	285	Validasi Akun (Admin) — halaman detail & setting > Preference Notif transporter: 8 push notif & 8 notif email sesuai rule	normal	LULUS	20261023-cakupan-readonly	-	-
+admin	admin/validasi-akun.spec.ts	290	Validasi Akun (Admin) — halaman detail & setting > Preference Notif shipper: 17 push notif & 13 notif email sesuai rule (DISKREPANSI: UI 16 & 12)	test.fail/defect	LULUS-DEFECT(test.fail)	20261023-cakupan-readonly	-	-
+admin-sub	admin-sub/akun-saya.spec.ts	42	Akun Saya sub user admin menampilkan Nama, Email, Nomor Whatsapp, Bagian Staff tanpa tombol edit	normal	LULUS	20261023-smoke-local	-	-
+admin-sub	admin-sub/akun-saya.spec.ts	59	breadcrumb Beranda mengarah ke listLelang (sama dengan admin utama)	normal	GAGAL	20261023-smoke-local	Clarification C1 (hak akses sub user)	Error: expect(locator).toHaveAttribute(expected) failed
+admin-sub	admin-sub/akun-saya.spec.ts	67	menu sidebar mencakup modul admin luas milik akun ini (Cari Penawaran & Harga Jadwal lintas-modul)	normal	GAGAL	20261023-smoke-local	Clarification C1 (hak akses sub user)	Error: expect(locator).toBeVisible() failed
+admin-sub	admin-sub/akun-saya.spec.ts	81	akses langsung Edit Akun Saya ditolak dan dikembalikan ke Akun Saya	normal	LULUS	20261023-smoke-local	-	-
+admin-sub-read	admin-sub-read/akun-saya.spec.ts	21	sesi admin-sub-read valid — link KELUAR tampil	placeholder	LULUS	20261023-smoke-local	-	-
+shipper	shipper/akun-saya.spec.ts	45	breadcrumb Beranda pada Akun Saya mengarah ke halaman Cari Penawaran	normal	LULUS	20261023-smoke-local	-	-
+shipper	shipper/akun-saya.spec.ts	50	identitas, logo perusahaan, NPWP, dan SIUP masing-masing punya link download ke file asli	normal	GAGAL	20261023-smoke-local	Data N4 (data akun QA: file/rekening/rating) - perlu konfirmasi	Error: expect(locator).toBeVisible() failed
+shipper	shipper/akun-saya.spec.ts	65	Edit Akun Saya membuka form terisi data akun dengan Email disabled	normal	LULUS	20261023-smoke-local	-	-
+shipper	shipper/analitik-scsr.spec.ts	112	Analitik SCSR (Shipper) > menu Analitik memuat empat submenu analitik	normal	LULUS	20261023-cakupan-readonly	-	-
+shipper	shipper/analitik-scsr.spec.ts	128	Analitik SCSR (Shipper) > form pencarian memuat tanggal wajib, filter provinsi & consignee, dan hint 12 bulan	normal	LULUS	20261023-cakupan-readonly	-	-
+shipper	shipper/analitik-scsr.spec.ts	147	Analitik SCSR (Shipper) > range tanggal > 12 bulan di-clamp senyap oleh datepicker	normal	LULUS	20261023-cakupan-readonly	-	-
+shipper	shipper/analitik-scsr.spec.ts	160	Analitik SCSR (Shipper) > level 1 menampilkan ringkasan per Provinsi Tujuan tanpa kolom kota asal maupun jumlah order	normal	Belum dijalankan	-	-	-
+shipper	shipper/analitik-scsr.spec.ts	190	Analitik SCSR (Shipper) > Detail Kota menambahkan kolom Kota / Kab. Asal berpasangan dengan Kota Tujuan & Jumlah Order	normal	Belum dijalankan	-	-	-
+shipper	shipper/analitik-scsr.spec.ts	229	Analitik SCSR (Shipper) > angka level 1 sama dengan jumlah seluruh pasangan kota di level 2 (semua provinsi)	normal	Belum dijalankan	-	-	-
+shipper	shipper/analitik-scsr.spec.ts	260	Analitik SCSR (Shipper) > Jumlah Order & angka pasangan kota sama dengan detail consignee-nya, dan antar pasangan disjoint	normal	Belum dijalankan	-	-	-
+shipper	shipper/analitik-scsr.spec.ts	322	Analitik SCSR (Shipper) > Detail Consignee memuat blok info pasangan kota terpilih dan tanpa kolom kota asal	normal	Belum dijalankan	-	-	-
+shipper	shipper/analitik-scsr.spec.ts	365	Analitik SCSR (Shipper) > kolom Kota / Kab. Asal bisa disortir naik dan turun	normal	Belum dijalankan	-	-	-
+shipper	shipper/analitik-scsr.spec.ts	414	Analitik SCSR (Shipper) > DEFECT: nomor urut baris tidak mengikuti hasil sortir kolom Kota Asal	test.fail/defect	Belum dijalankan	-	-	-
+shipper	shipper/analitik-scsr.spec.ts	446	Analitik SCSR (Shipper) > file Export Excel ketiga level memuat kota asal	normal	Belum dijalankan	-	-	-
+shipper	shipper/analitik-scsr.spec.ts	507	Analitik SCSR (Shipper) > DEFECT: Logistic Cost Ratio baris TOTAL di file export masih angka mentah	test.fail/defect	Belum dijalankan	-	-	-
+shipper	shipper/analitik-scsr.spec.ts	536	Analitik SCSR (Shipper) > DEFECT: baris TOTAL level 2 tidak menjumlahkan kolom Jumlah Order	test.fail/defect	Belum dijalankan	-	-	-
+shipper	shipper/analitik-scsr.spec.ts	559	Analitik SCSR (Shipper) > parameter URL milik shipper/kota lain tidak membuka data shipper lain	normal	Belum dijalankan	-	-	-
+shipper	shipper/analitik-scsr.spec.ts	592	Analitik SCSR (Shipper) > level 3 tanpa parameter PilihKotaAsal jatuh ke data kota tujuan (tanpa filter asal)	normal	Belum dijalankan	-	-	-
+shipper	shipper/buat-lelang.spec.ts	107	menampilkan panduan format nomor lelang	normal	LULUS	20261023-cakupan-readonly	-	-
+shipper	shipper/buat-lelang.spec.ts	111	nomor lelang menyaring simbol terlarang secara live, simbol diizinkan tetap lolos	normal	LULUS	20261023-cakupan-readonly	-	-
+shipper	shipper/buat-lelang.spec.ts	125	Biaya Laut dan Freight Kapal default aktif dan tidak bisa diunceklist	normal	GAGAL	20261023-cakupan-readonly	Data (master Include kosong: checkbox Biaya Laut/Freight Kapal tidak dirender)	Error: expect(locator).toBeChecked() failed
+shipper	shipper/buat-lelang.spec.ts	136	memilih rute Multidrop menggandakan section Tempat Tujuan menjadi 2 Drop Off	normal	LULUS	20261023-cakupan-readonly	-	-
+shipper	shipper/buat-lelang.spec.ts	146	field Telp. PIC hanya menerima angka	normal	LULUS	20261023-cakupan-readonly	-	-
+shipper	shipper/buat-lelang.spec.ts	153	DEFECT: klik Lanjutkan dengan field wajib kosong seharusnya menampilkan validasi, bukan diam	test.fail/defect	Belum dijalankan	-	-	-
+shipper	shipper/buat-lelang.spec.ts	193	alur penuh: buat lalu batalkan lelang memicu Push Notif Transporter dan Admin	normal	Belum dijalankan	-	-	-
+shipper	shipper/cari-penawaran.spec.ts	57	breadcrumb Beranda disable (bukan link) karena halaman default bid owner	normal	LULUS	20261023-smoke-local	-	-
+shipper	shipper/cari-penawaran.spec.ts	62	tombol Cari Harga Penawaran default disable, aktif setelah nomor lelang diisi	normal	LULUS	20261023-smoke-local	-	-
+shipper	shipper/cari-penawaran.spec.ts	68	nomor lelang tidak dikenal memunculkan alert "Nomor Lelang Tidak Ditemukan"	normal	LULUS	20261023-smoke-local	-	-
+shipper	shipper/cari-penawaran.spec.ts	74	popup daftar lelang menampilkan tabel lelang dengan rute pelabuhan asal - tujuan	normal	DILEWATI	20261023-smoke-local	Data (precondition tidak tersedia)	-
+shipper	shipper/cari-penawaran.spec.ts	95	pilih lelang dari popup mengisi nomor otomatis dan pencarian menampilkan ringkasan lengkap	normal	DILEWATI	20261023-smoke-local	Data (precondition tidak tersedia)	-
+shipper	shipper/cek-jadwal.spec.ts	54	form default: pelayaran terkunci Meratus, sortir tanggal berangkat, tanggal hari ini	normal	LULUS	20261023-cakupan-readonly	-	-
+shipper	shipper/cek-jadwal.spec.ts	80	logo kelima liner tampil dengan link jadwal pelayaran masing-masing	normal	LULUS	20261023-cakupan-readonly	-	-
+shipper	shipper/cek-jadwal.spec.ts	96	pencarian jadwal menampilkan hasil atau pesan jadwal belum tersedia beserta kontak CS	normal	Belum dijalankan	-	-	-
+shipper	shipper/daftar-order.spec.ts	52	tabel daftar order menampilkan kolom berpasangan sesuai rule	normal	LULUS	20261023-cakupan-readonly	-	-
+shipper	shipper/daftar-order.spec.ts	64	menu Edit Harga (fitur admin) tidak tersedia pada peran shipper	normal	LULUS	20261023-cakupan-readonly	-	-
+shipper	shipper/daftar-order.spec.ts	73	panel filter memuat semua field pencarian sesuai rule beserta Reset dan Filter	normal	LULUS	20261023-cakupan-readonly	-	-
+shipper	shipper/daftar-order.spec.ts	101	input nomor kontainer menyaring spasi/simbol, maksimal 11 karakter, tampil kapital	normal	LULUS	20261023-cakupan-readonly	-	-
+shipper	shipper/daftar-order.spec.ts	118	baris order memuat textlink info dan link Detail Order ke halaman detail	normal	Belum dijalankan	-	-	-
+shipper	shipper/daftar-order.spec.ts	129	order yang sudah konfirmasi unit menampilkan textlink Info Tracking	normal	Belum dijalankan	-	-	-
+shipper	shipper/dashboard.spec.ts	62	Monitoring Pengiriman > tabel menampilkan kolom sesuai rule	normal	LULUS	20261023-cakupan-readonly	-	-
+shipper	shipper/dashboard.spec.ts	82	Monitoring Pengiriman > rentang tanggal lebih dari 90 hari ditolak (field tanggal akhir tetap kosong)	normal	LULUS	20261023-cakupan-readonly	-	-
+shipper	shipper/dashboard.spec.ts	88	Monitoring Pengiriman > rentang tanggal dalam 90 hari berhasil memfilter data	normal	LULUS	20261023-cakupan-readonly	-	-
+shipper	shipper/dashboard.spec.ts	95	Monitoring Pengiriman > menu aksi menyediakan Tampilkan Penuh dan Export Excel	normal	LULUS	20261023-cakupan-readonly	-	-
+shipper	shipper/dashboard.spec.ts	101	Monitoring Pengiriman > Tampilkan Penuh mengaktifkan fullscreen sungguhan, Tutup menonaktifkannya	normal	LULUS	20261023-cakupan-readonly	-	-
+shipper	shipper/dashboard.spec.ts	119	Frekuensi Pengiriman > menampilkan heading, map, dan kontrol zoom	normal	LULUS	20261023-cakupan-readonly	-	-
+shipper	shipper/dashboard.spec.ts	126	Frekuensi Pengiriman > Tampilkan Penuh mengaktifkan fullscreen pada #full1	normal	LULUS	20261023-cakupan-readonly	-	-
+shipper	shipper/dashboard.spec.ts	135	Frekuensi Pengiriman > DEFECT: teks batas filter tanggal seharusnya "90 hari" sesuai rule, bukan "12 Bulan"	test.fail/defect	LULUS-DEFECT(test.fail)	20261023-cakupan-readonly	-	-
+shipper	shipper/dashboard.spec.ts	149	Grafik Pengiriman > menampilkan heading dan diagram batang	normal	LULUS	20261023-cakupan-readonly	-	-
+shipper	shipper/dashboard.spec.ts	154	Grafik Pengiriman > Tampilkan Penuh mengaktifkan fullscreen pada #full2	normal	LULUS	20261023-cakupan-readonly	-	-
+shipper	shipper/dashboard.spec.ts	161	Grafik Pengiriman > DEFECT: teks batas filter tanggal seharusnya "90 hari" sesuai rule, bukan "12 Bulan"	test.fail/defect	LULUS-DEFECT(test.fail)	20261023-cakupan-readonly	-	-
+shipper	shipper/laporan.spec.ts	67	Daftar History Lelang > form pencarian menampilkan batas range 90 hari	normal	LULUS	20261023-cakupan-readonly	-	-
+shipper	shipper/laporan.spec.ts	75	Daftar History Lelang > hasil pencarian menampilkan kolom lelang dan tombol Export Excel	normal	Belum dijalankan	-	-	-
+shipper	shipper/laporan.spec.ts	94	Laporan Logistik > form pencarian menampilkan batas range 31 hari	normal	LULUS	20261023-cakupan-readonly	-	-
+shipper	shipper/laporan.spec.ts	102	Laporan Logistik > hasil pencarian menampilkan ringkasan total, kolom order, dan Export Excel	normal	Belum dijalankan	-	-	-
+shipper	shipper/laporan.spec.ts	123	Laporan Logistik > detail laporan logistik menampilkan tahapan tracking dan data kontainer	normal	Belum dijalankan	-	-	-
+shipper	shipper/nomor-referensi.spec.ts	66	Input / Edit Nomor Referensi (Shipper) > action menu Daftar Order menyediakan Input atau Edit Nomor Referensi ber-OrderID	normal	Belum dijalankan	-	-	-
+shipper	shipper/nomor-referensi.spec.ts	86	Input / Edit Nomor Referensi (Shipper) > modal Nomor Referensi terbuka memuat data order yang dipilih	normal	Belum dijalankan	-	-	-
+shipper	shipper/nomor-referensi.spec.ts	108	Input / Edit Nomor Referensi (Shipper) > simpan tanpa mengisi memunculkan popover "Masukkan Nomor Referensi" tanpa request simpan	normal	Belum dijalankan	-	-	-
+shipper	shipper/nomor-referensi.spec.ts	134	Input / Edit Nomor Referensi (Shipper) > menu hanya tersedia sebelum tahap invoice (hilang mulai KAPAL SANDAR)	normal	Belum dijalankan	-	-	-
+shipper	shipper/nomor-referensi.spec.ts	180	Input / Edit Nomor Referensi (Shipper) > DEFECT: shipper tidak punya cara mengisi No. Referensi untuk order yang sudah bisa diinvoice	test.fail/defect	Belum dijalankan	-	-	-
+shipper	shipper/nomor-referensi.spec.ts	226	Input / Edit Nomor Referensi (Shipper) > MUTASI: simpan No. Referensi baru lalu kembalikan nilai lama	normal	Belum dijalankan	-	-	-
+shipper	shipper/open-stack.spec.ts	77	Open Stack — Cari Penawaran (Bid Owner) > hasil penawaran menampilkan Open Stack tiap kapal di antara voyage dan Closing	normal	Belum dijalankan	-	-	-
+shipper	shipper/open-stack.spec.ts	102	Open Stack — Detail Order (Bid Owner) > blok PELAYARAN memuat Open Stack di antara Voyage dan Closing (tanggal atau strip)	normal	Belum dijalankan	-	-	-
+shipper	shipper/open-stack.spec.ts	111	Open Stack — Detail Order (Bid Owner) > order dari jadwal ber-Open Stack menampilkan tanggalnya	normal	Belum dijalankan	-	-	-
+shipper	shipper/pengajuan-lelang.spec.ts	68	Daftar Pengajuan Lelang > halaman default redirect ke tab Semua Lelang dengan tab tersebut aktif	normal	LULUS	20261023-cakupan-readonly	-	-
+shipper	shipper/pengajuan-lelang.spec.ts	73	Daftar Pengajuan Lelang > kelima tab pengelompokan lelang tampil dengan link yang benar	normal	LULUS	20261023-cakupan-readonly	-	-
+shipper	shipper/pengajuan-lelang.spec.ts	79	Daftar Pengajuan Lelang > klik tab lain memindahkan tab aktif	normal	LULUS	20261023-cakupan-readonly	-	-
+shipper	shipper/pengajuan-lelang.spec.ts	86	Daftar Pengajuan Lelang > tabel menampilkan kolom sesuai rule beserta keterangan penanda hijau dan #	normal	LULUS	20261023-cakupan-readonly	-	-
+shipper	shipper/pengajuan-lelang.spec.ts	105	Daftar Pengajuan Lelang > tombol Buat Pengajuan Lelang mengarah ke halaman buat lelang	normal	LULUS	20261023-cakupan-readonly	-	-
+shipper	shipper/pengajuan-lelang.spec.ts	110	Daftar Pengajuan Lelang > menu aksi baris memuat Detail Pengajuan Lelang, Lihat Harga Penawaran, dan Batalkan Lelang	normal	Belum dijalankan	-	-	-
+shipper	shipper/pengajuan-lelang.spec.ts	131	Daftar Pengajuan Lelang > lelang yang pernah diajukan request harga bertanda (#n) di nomor lelang	normal	Belum dijalankan	-	-	-
+shipper	shipper/pengajuan-lelang.spec.ts	154	Detail Pengajuan Lelang > menampilkan status lelang, jumlah penawaran, dan status harga tiap bidder	normal	Belum dijalankan	-	-	-
+shipper	shipper/pengajuan-lelang.spec.ts	165	Detail Pengajuan Lelang > dokumen aanwijzing tampil sesuai nama dokumen dan dibuka sebagai popup	normal	Belum dijalankan	-	-	-
+shipper	shipper/pengajuan-nego.spec.ts	50	tabel pengajuan nego menampilkan kolom berpasangan sesuai rule	normal	LULUS	20261023-cakupan-readonly	-	-
+shipper	shipper/pengajuan-nego.spec.ts	60	filter Status menyediakan keempat status nego sesuai rule	normal	LULUS	20261023-cakupan-readonly	-	-
+shipper	shipper/pengajuan-nego.spec.ts	69	filter Transporter (nama bidder) berupa free text	normal	Belum dijalankan	-	-	-
+shipper	shipper/pengajuan-nego.spec.ts	79	nego berstatus DITOLAK menampilkan strip pada kolom Harga Baru	normal	Belum dijalankan	-	-	-
+shipper	shipper/pengajuan-nego.spec.ts	88	kolom jumlah nego menampilkan format "Nego Ke N"	normal	Belum dijalankan	-	-	-
+shipper	shipper/pengajuan-nego.spec.ts	93	detail nego menampilkan harga sebelum PPN, nilai PPN dan PPh	normal	Belum dijalankan	-	-	-
+shipper	shipper/pengajuan-nego.spec.ts	107	detail nego berstatus Ditolak/Negosiasi menyediakan tombol Ajukan Nego Kembali	normal	Belum dijalankan	-	-	-
+shipper	shipper/preference-notif.spec.ts	78	halaman ringkasan menampilkan info akun dan tombol Setting	normal	LULUS	20261023-smoke-local	-	-
+shipper	shipper/preference-notif.spec.ts	94	Setting Preference Notif > seksi Notifikasi Sistem menampilkan seluruh daftar notif sesuai rule	normal	LULUS	20261023-smoke-local	-	-
+shipper	shipper/preference-notif.spec.ts	101	Setting Preference Notif > seksi Notifikasi Email menampilkan seluruh daftar notif sesuai rule	normal	LULUS	20261023-smoke-local	-	-
+shipper	shipper/preference-notif.spec.ts	108	Setting Preference Notif > checklist/uncheklist notif berubah murni di sisi klien (belum tersimpan)	normal	LULUS	20261023-smoke-local	-	-
+shipper	shipper/preference-notif.spec.ts	121	Setting Preference Notif > tombol Batal kembali ke Daftar Order tanpa menyimpan perubahan	normal	LULUS	20261023-smoke-local	-	-
+shipper	shipper/push-notif-trigger-nego.spec.ts	10	pengajuan nego ke Transporter fixture memicu Push Notif Transporter dan Admin	normal	Belum dijalankan	-	-	-
+shipper	shipper/push-notif-trigger-perubahan-akun.spec.ts	8	perubahan data akun Shipper memicu Konfirmasi Perubahan Data ke Admin	normal	Belum dijalankan	-	-	-
+shipper	shipper/push-notif-trigger-request-harga.spec.ts	21	Request Update Harga hanya ke Transporter fixture memicu Push Notif Transporter dan Admin	normal	Belum dijalankan	-	-	-
+shipper	shipper/push-notif-trigger-request-jadwal.spec.ts	11	Request Jadwal ke Transporter fixture memicu Push Notif Transporter dan Admin	normal	Belum dijalankan	-	-	-
+shipper	push-notif.shared.ts	91	Push Notif (Shipper/Bid Owner) > ikon lonceng top bar membuka halaman Notifikasi dan indikator unread tampil	normal	LULUS	20261023-smoke-local	-	-
+shipper	push-notif.shared.ts	116	Push Notif (Shipper/Bid Owner) > default halaman, kategori per peran, batas data, dan informasi retensi sesuai rule	normal	LULUS	20261023-smoke-local	-	-
+shipper	push-notif.shared.ts	129	Push Notif (Shipper/Bid Owner) > daftar unread memuat kategori, waktu, badge, checkbox, dan tujuan Cek Disini	normal	GAGAL	20261023-smoke-local	Data N3 (0 notifikasi)	Error: Akun demo perlu memiliki minimal satu notifikasi unread
+shipper	push-notif.shared.ts	156	Push Notif (Shipper/Bid Owner) > filter Semua Notif dan kategori Lelang mengirim parameter dan menampilkan data yang sesuai	normal	LULUS	20261023-smoke-local	-	-
+shipper	push-notif.shared.ts	170	Push Notif (Shipper/Bid Owner) > Hapus Notif dan Tandai Dibaca hanya aktif setelah notifikasi dipilih	normal	GAGAL	20261023-smoke-local	Data N3 (0 notifikasi)	Error: Akun demo perlu memiliki notifikasi untuk menguji selection state
+shipper	push-notif.shared.ts	195	Push Notif (Shipper/Bid Owner) > pilihan jumlah data memperbarui limit daftar tanpa mengubah notifikasi	normal	LULUS	20261023-smoke-local	-	-
+shipper-sub	shipper-sub/akun-saya.spec.ts	36	Akun Saya sub user hanya menampilkan Nama, Email, Nomor Whatsapp, Bagian Staff tanpa tombol edit	normal	LULUS	20261023-smoke-local	-	-
+shipper-sub	shipper-sub/akun-saya.spec.ts	55	breadcrumb Beranda mengarah ke Cari Penawaran (khusus sisi bid owner)	normal	GAGAL	20261023-smoke-local	Clarification C1 (hak akses sub user)	Error: expect(locator).toHaveAttribute(expected) failed
+shipper-sub	shipper-sub/akun-saya.spec.ts	63	menu sub user tidak memuat Preference Notif	normal	GAGAL	20261023-smoke-local	Clarification C1 (hak akses sub user)	Error: expect(locator).toBeVisible() failed
+shipper-sub	shipper-sub/akun-saya.spec.ts	70	akses langsung Edit Akun Saya ditolak dan dikembalikan ke Akun Saya	normal	LULUS	20261023-smoke-local	-	-
+shipper-sub	shipper-sub/akun-saya.spec.ts	77	akses langsung /home/preferenceNotifBidowner ditolak (preference notif hanya akun utama)	normal	GAGAL	20261023-smoke-local	Clarification C1 (hak akses sub user)	Error: expect(page).toHaveURL(expected) failed
+shipper-sub	shipper-sub/akun-saya.spec.ts	77	akses langsung /home/settingPreferenceNotifBidowner ditolak (preference notif hanya akun utama)	normal	GAGAL	20261023-smoke-local	Clarification C1 (hak akses sub user)	Error: expect(page).toHaveURL(expected) failed
+transporter	transporter/akun-saya.spec.ts	65	breadcrumb Beranda pada Akun Saya mengarah ke daftar pengajuan lelang	normal	LULUS	20261023-smoke-local	-	-
+transporter	transporter/akun-saya.spec.ts	70	halaman menampilkan seluruh data akun utama beserta email akun login	normal	GAGAL	20261023-smoke-local	Data N4 (data akun QA: file/rekening/rating) - perlu konfirmasi	Error: expect(locator).toBeVisible() failed
+transporter	transporter/akun-saya.spec.ts	77	logo perusahaan dapat didownload kembali lewat link ke file asli	normal	GAGAL	20261023-smoke-local	Data N4 (data akun QA: file/rekening/rating) - perlu konfirmasi	Error: expect(locator).toBeVisible() failed
+transporter	transporter/akun-saya.spec.ts	87	NPWP yang telah diupload dapat didownload kembali	normal	DILEWATI	20261023-smoke-local	Data N4 (data akun QA: file/rekening/rating) - perlu konfirmasi	-
+transporter	transporter/akun-saya.spec.ts	87	SIUP yang telah diupload dapat didownload kembali	normal	DILEWATI	20261023-smoke-local	Data N4 (data akun QA: file/rekening/rating) - perlu konfirmasi	-
+transporter	transporter/akun-saya.spec.ts	98	Edit Akun Saya membuka form edit akun (DEFECT: server menjawab 500)	test.fail/defect	LULUS-DEFECT(test.fail)	20261023-smoke-local	-	-
+transporter	transporter/daftar-order.spec.ts	72	Daftar Order (Bidder) > tabel menampilkan pasangan kolom daftar order	normal	LULUS	20261023-cakupan-readonly	-	-
+transporter	transporter/daftar-order.spec.ts	87	Daftar Order (Bidder) > setiap order menampilkan baris info dengan link Info Order, Info Tracking, dan Detail Order	normal	Belum dijalankan	-	-	-
+transporter	transporter/daftar-order.spec.ts	98	Daftar Order (Bidder) > order berstatus Konfirmasi Unit memiliki tombol Input Unit dan menu Upload Dokumen	normal	Belum dijalankan	-	-	-
+transporter	transporter/daftar-order.spec.ts	108	Daftar Order (Bidder) > order berstatus Proses Penugasan memiliki menu Lihat Data Unit dan Upload Dokumen	normal	Belum dijalankan	-	-	-
+transporter	transporter/daftar-order.spec.ts	118	Daftar Order (Bidder) > Info Tracking dapat di-expand dan kontainer belum tracking berketerangan Menunggu Proses	normal	Belum dijalankan	-	-	-
+transporter	transporter/daftar-order.spec.ts	148	Daftar Order (Bidder) > menu Edit Harga (fitur admin) tidak tersedia pada peran transporter	normal	Belum dijalankan	-	-	-
+transporter	transporter/daftar-order.spec.ts	159	Daftar Order (Bidder) > filter menyediakan field Nomor Kontainer, checkbox Kapal Connecting, dan tombol Reset	normal	LULUS	20261023-cakupan-readonly	-	-
+transporter	transporter/daftar-order.spec.ts	170	Daftar Order (Bidder) > input filter Nomor Kontainer menolak spasi dan karakter khusus serta maksimal 11 karakter	normal	LULUS	20261023-cakupan-readonly	-	-
+transporter	transporter/daftar-order.spec.ts	187	Detail Order (Bidder) > menampilkan ID order, detail pemesan, detail order, dan section sesuai status	normal	Belum dijalankan	-	-	-
+transporter	transporter/harga-jadwal.spec.ts	77	Daftar Harga & Jadwal (Bidder) > halaman default redirect ke tab Semua Harga & Jadwal dengan tab tersebut aktif	normal	LULUS	20261023-cakupan-readonly	-	-
+transporter	transporter/harga-jadwal.spec.ts	83	Daftar Harga & Jadwal (Bidder) > kelima tab pengelompokan harga tampil dengan link yang benar	normal	LULUS	20261023-cakupan-readonly	-	-
+transporter	transporter/harga-jadwal.spec.ts	90	Daftar Harga & Jadwal (Bidder) > klik tab lain memindahkan tab aktif	normal	LULUS	20261023-cakupan-readonly	-	-
+transporter	transporter/harga-jadwal.spec.ts	98	Daftar Harga & Jadwal (Bidder) > tabel menampilkan kolom daftar harga dan jadwal	normal	LULUS	20261023-cakupan-readonly	-	-
+transporter	transporter/harga-jadwal.spec.ts	117	Daftar Harga & Jadwal (Bidder) > harga tanpa jadwal di tab Butuh Jadwal Kapal ditandai warna merah	normal	Belum dijalankan	-	-	-
+transporter	transporter/harga-jadwal.spec.ts	128	Daftar Harga & Jadwal (Bidder) > harga yang sudah lengkap jadwalnya tidak berwarna merah	normal	Belum dijalankan	-	-	-
+transporter	transporter/harga-jadwal.spec.ts	143	Daftar Harga & Jadwal (Bidder) > aksi tab Butuh Jadwal Kapal: detail, edit, hapus harga, serta lihat & tambah jadwal	normal	Belum dijalankan	-	-	-
+transporter	transporter/harga-jadwal.spec.ts	143	Daftar Harga & Jadwal (Bidder) > aksi tab Sudah Lengkap: detail, edit, hapus harga, serta lihat & tambah jadwal	normal	Belum dijalankan	-	-	-
+transporter	transporter/harga-jadwal.spec.ts	162	Daftar Harga & Jadwal (Bidder) > aksi tab Perlu Update Harga: detail harga dan update harga	normal	Belum dijalankan	-	-	-
+transporter	transporter/harga-jadwal.spec.ts	174	Daftar Harga & Jadwal (Bidder) > aksi tab Request Jadwal: update jadwal, detail harga, lihat jadwal	normal	Belum dijalankan	-	-	-
+transporter	transporter/harga-jadwal.spec.ts	195	Daftar Harga & Jadwal (Bidder) > harga hasil respon update harga bertanda (#n) di kolom Harga	normal	Belum dijalankan	-	-	-
+transporter	transporter/invoice-nama-item.spec.ts	122	Nama item Invoice Jasa Pengiriman (Transporter) > menu Proses Invoice memakai OrderID mentah dan halaman invoice menyediakan Buat Invoice	normal	Belum dijalankan	-	-	-
+transporter	transporter/invoice-nama-item.spec.ts	143	Nama item Invoice Jasa Pengiriman (Transporter) > nama item sisi bidder menampilkan No. Referensi order di baris bawah jenis kendaraan	normal	Belum dijalankan	-	-	-
+transporter	transporter/invoice-nama-item.spec.ts	169	Nama item Invoice Jasa Pengiriman (Transporter) > order tanpa No. Referensi hanya menampilkan baris jenis kendaraan	normal	Belum dijalankan	-	-	-
+transporter	transporter/invoice-nama-item.spec.ts	191	Nama item Invoice Jasa Pengiriman (Transporter) > Invoice Tambahan tidak membawa nama item sehingga tanpa No. Referensi	normal	Belum dijalankan	-	-	-
+transporter	transporter/invoice-nama-item.spec.ts	211	Nama item Invoice Jasa Pengiriman (Transporter) > transporter TIDAK punya action menu Input/Edit Nomor Referensi	normal	GAGAL	20261023-cakupan-readonly	Data (0 order/lelang)	Error: expect(received).toBeGreaterThan(expected)
+transporter	transporter/open-stack-jadwal.spec.ts	178	Open Stack — Tambah/Edit/Hapus Jadwal (Bidder, mutasi) > validasi required Tambah Jadwal berurutan lewat popover dan melewati Open Stack (opsional)	normal	Belum dijalankan	-	-	-
+transporter	transporter/open-stack-jadwal.spec.ts	208	Open Stack — Tambah/Edit/Hapus Jadwal (Bidder, mutasi) > tambah jadwal direct ber-Open Stack tampil di Lihat Jadwal & Detail Pengajuan Lelang, bisa diedit lalu dihapus	normal	Belum dijalankan	-	-	-
+transporter	transporter/open-stack-jadwal.spec.ts	271	Open Stack — Tambah/Edit/Hapus Jadwal (Bidder, mutasi) > Open Stack tidak dibatasi tanggal: diterima setelah ETA saat tambah dan tanggal lampau saat edit (perilaku teramati, belum ada rule)	normal	Belum dijalankan	-	-	-
+transporter	transporter/open-stack-jadwal.spec.ts	315	Open Stack — Tambah/Edit/Hapus Jadwal (Bidder, mutasi) > tambah jadwal connecting ber-Open Stack: baris (Connecting 1x) dan modal Jadwal Kapal Connecting menampilkan Open Stack, lalu dihapus	normal	Belum dijalankan	-	-	-
+transporter	transporter/open-stack-jadwal.spec.ts	379	Open Stack — template Import Jadwal (Bidder) > template berisi kolom jadwal (Kapal, Voyage, Closing Time, ETD, ETA) — belum ada kolom Open Stack	normal	Belum dijalankan	-	-	-
+transporter	transporter/open-stack-jadwal.spec.ts	396	Open Stack — template Import Jadwal (Bidder) > template hanya berisi satu sheet jadwal (DEFECT: sheet lain memuat data internal & data pribadi)	test.fail/defect	Belum dijalankan	-	-	-
+transporter	transporter/open-stack.spec.ts	158	Open Stack — Lihat Jadwal (Bidder) > kolom Open Stack tampil di antara Voyage dan Closing Time dan dapat diurutkan	normal	Belum dijalankan	-	-	-
+transporter	transporter/open-stack.spec.ts	170	Open Stack — Lihat Jadwal (Bidder) > nilai Open Stack berformat tanggal dd/mm/yyyy tanpa jam, berbeda dengan Closing Time	normal	Belum dijalankan	-	-	-
+transporter	transporter/open-stack.spec.ts	189	Open Stack — Lihat Jadwal (Bidder) > form Tambah Jadwal kapal direct/transit memuat field Open Stack opsional di antara Voyage dan Closing Time	normal	Belum dijalankan	-	-	-
+transporter	transporter/open-stack.spec.ts	212	Open Stack — Lihat Jadwal (Bidder) > form Tambah Jadwal kapal connecting memuat field Open Stack opsional hanya pada kapal awal	normal	Belum dijalankan	-	-	-
+transporter	transporter/open-stack.spec.ts	237	Open Stack — Detail Pengajuan Lelang (Bidder) > tabel harga penawaran menampilkan Open Stack tiap kapal di antara voyage dan Closing	normal	Belum dijalankan	-	-	-
+transporter	transporter/open-stack.spec.ts	255	Open Stack — Detail Order (Bidder) > blok PELAYARAN memuat Open Stack di antara Voyage dan Closing (tanggal atau strip)	normal	Belum dijalankan	-	-	-
+transporter	transporter/open-stack.spec.ts	264	Open Stack — Detail Order (Bidder) > order dari jadwal ber-Open Stack menampilkan tanggalnya	normal	Belum dijalankan	-	-	-
+transporter	transporter/pengajuan-lelang.spec.ts	86	Daftar Pengajuan Lelang (Bidder) > halaman default redirect ke tab Semua Lelang dengan tab tersebut aktif	normal	LULUS	20261023-cakupan-readonly	-	-
+transporter	transporter/pengajuan-lelang.spec.ts	91	Daftar Pengajuan Lelang (Bidder) > Beranda pada breadcrumb nonaktif dan mengarah ke daftar pengajuan lelang	normal	Belum dijalankan	-	-	-
+transporter	transporter/pengajuan-lelang.spec.ts	102	Daftar Pengajuan Lelang (Bidder) > keenam tab pengelompokan lelang tampil dengan link yang benar	normal	LULUS	20261023-cakupan-readonly	-	-
+transporter	transporter/pengajuan-lelang.spec.ts	108	Daftar Pengajuan Lelang (Bidder) > klik tab lain memindahkan tab aktif	normal	LULUS	20261023-cakupan-readonly	-	-
+transporter	transporter/pengajuan-lelang.spec.ts	115	Daftar Pengajuan Lelang (Bidder) > tabel menampilkan kolom sisi bidder beserta keterangan penanda merah dan #	normal	LULUS	20261023-cakupan-readonly	-	-
+transporter	transporter/pengajuan-lelang.spec.ts	134	Daftar Pengajuan Lelang (Bidder) > menu aksi tab perlu-input-harga memuat: Detail Pengajuan Lelang, Input Harga Penawaran	normal	Belum dijalankan	-	-	-
+transporter	transporter/pengajuan-lelang.spec.ts	134	Daftar Pengajuan Lelang (Bidder) > menu aksi tab perlu-update-harga memuat: Detail Pengajuan Lelang, Menuju Request Harga	normal	Belum dijalankan	-	-	-
+transporter	transporter/pengajuan-lelang.spec.ts	134	Daftar Pengajuan Lelang (Bidder) > menu aksi tab lelang-tutup memuat: Detail Pengajuan Lelang, Input Harga Penawaran	normal	Belum dijalankan	-	-	-
+transporter	transporter/pengajuan-lelang.spec.ts	134	Daftar Pengajuan Lelang (Bidder) > menu aksi tab telah-akhir-kirim memuat: Detail Pengajuan Lelang, Input Harga Penawaran	normal	Belum dijalankan	-	-	-
+transporter	transporter/pengajuan-lelang.spec.ts	134	Daftar Pengajuan Lelang (Bidder) > menu aksi tab lelang-batal memuat: Detail Pengajuan Lelang, Input Harga Penawaran	normal	Belum dijalankan	-	-	-
+transporter	transporter/pengajuan-lelang.spec.ts	151	Daftar Pengajuan Lelang (Bidder) > nomor lelang yang belum diinput harga berwarna merah di tab Perlu Input Harga	normal	Belum dijalankan	-	-	-
+transporter	transporter/pengajuan-lelang.spec.ts	161	Daftar Pengajuan Lelang (Bidder) > lelang yang pernah diajukan request harga bertanda (#n) di nomor lelang	normal	Belum dijalankan	-	-	-
+transporter	transporter/pengajuan-lelang.spec.ts	183	Detail Pengajuan Lelang (Bidder) > menampilkan status lelang dan bagian utama detail	normal	Belum dijalankan	-	-	-
+transporter	transporter/pengajuan-lelang.spec.ts	194	Detail Pengajuan Lelang (Bidder) > lelang belum tutup: tombol Tambah Harga Penawaran tampil menuju halaman Tambah Harga	normal	Belum dijalankan	-	-	-
+transporter	transporter/pengajuan-lelang.spec.ts	205	Detail Pengajuan Lelang (Bidder) > lelang tutup: tombol Tambah Harga Penawaran hilang	normal	Belum dijalankan	-	-	-
+transporter	transporter/pengajuan-lelang.spec.ts	212	Detail Pengajuan Lelang (Bidder) > belum ada harga penawaran: catatan merah dan keterangan daftar kosong tampil	normal	Belum dijalankan	-	-	-
+transporter	transporter/pengajuan-lelang.spec.ts	223	Detail Pengajuan Lelang (Bidder) > kontak dan nomor PIC muat disembunyikan dari bidder	normal	Belum dijalankan	-	-	-
+transporter	transporter/pengajuan-lelang.spec.ts	232	Detail Pengajuan Lelang (Bidder) > dokumen aanwijzing tampil sesuai nama dokumen dan dibuka sebagai popup	normal	Belum dijalankan	-	-	-
+transporter	transporter/pengajuan-nego.spec.ts	57	Daftar Pengajuan Nego (Bidder) > tabel menampilkan pasangan kolom daftar nego	normal	LULUS	20261023-cakupan-readonly	-	-
+transporter	transporter/pengajuan-nego.spec.ts	71	Daftar Pengajuan Nego (Bidder) > setiap baris menampilkan salah satu status nego yang dikenal	normal	Belum dijalankan	-	-	-
+transporter	transporter/pengajuan-nego.spec.ts	80	Daftar Pengajuan Nego (Bidder) > nego berstatus Waiting memiliki tombol Detail dan Aksi Nego	normal	Belum dijalankan	-	-	-
+transporter	transporter/pengajuan-nego.spec.ts	90	Daftar Pengajuan Nego (Bidder) > tombol Aksi Nego membuka pilihan Terima Nego, Tolak Nego, dan Negosiasi	normal	Belum dijalankan	-	-	-
+transporter	transporter/pengajuan-nego.spec.ts	112	Daftar Pengajuan Nego (Bidder) > nego yang sudah direspon hanya memiliki tombol Detail tanpa Aksi Nego	normal	Belum dijalankan	-	-	-
+transporter	transporter/pengajuan-nego.spec.ts	122	Daftar Pengajuan Nego (Bidder) > nego ditolak menampilkan strip pada kolom Harga Baru	normal	Belum dijalankan	-	-	-
+transporter	transporter/pengajuan-nego.spec.ts	135	Detail Nego (Bidder) > menampilkan informasi harga, PPN/PPh, dan section Data Nego	normal	Belum dijalankan	-	-	-
+transporter	transporter/penugasan-tracking.spec.ts	70	Daftar Penugasan Tracking (Bidder) > tombol Download APK Tracking tersedia dengan tautan berkas APK	normal	GAGAL	20261023-cakupan-readonly	Defect D1 (HTTP 500 Penugasan Tracking)	Error: expect(locator).toBeVisible() failed
+transporter	transporter/penugasan-tracking.spec.ts	76	Daftar Penugasan Tracking (Bidder) > tabel menampilkan pasangan kolom daftar penugasan	normal	GAGAL	20261023-cakupan-readonly	Defect D1 (HTTP 500 Penugasan Tracking)	Error: expect(locator).toBeVisible() failed
+transporter	transporter/penugasan-tracking.spec.ts	89	Daftar Penugasan Tracking (Bidder) > order belum ditugaskan berstatus Proses Penugasan dengan tombol Tracking	normal	Belum dijalankan	-	-	-
+transporter	transporter/penugasan-tracking.spec.ts	99	Daftar Penugasan Tracking (Bidder) > order Menunggu Proses memiliki menu Edit Penugasan dan Lihat Data Tracking	normal	Belum dijalankan	-	-	-
+transporter	transporter/penugasan-tracking.spec.ts	112	Daftar Penugasan Tracking (Bidder) > order selesai tracking memiliki menu Penugasan Selesai dan Lihat Data Tracking	normal	Belum dijalankan	-	-	-
+transporter	transporter/penugasan-tracking.spec.ts	121	Daftar Penugasan Tracking (Bidder) > order berjadwal kapal connecting menampilkan label Kapal Connecting	normal	Belum dijalankan	-	-	-
+transporter	transporter/penugasan-tracking.spec.ts	130	Lihat Data Tracking (Bidder) > menampilkan breadcrumb dan detail order terkait	normal	Belum dijalankan	-	-	-
+transporter	transporter/preference-notif.spec.ts	71	Ringkasan Preference Notif > menampilkan info akun, catatan akun utama, dan link Setting	normal	LULUS	20261023-smoke-local	-	-
+transporter	transporter/preference-notif.spec.ts	84	Ringkasan Preference Notif > daftar notifikasi sistem (push) dan email sesuai rule, tanpa checkbox	normal	LULUS	20261023-smoke-local	-	-
+transporter	transporter/preference-notif.spec.ts	101	Setting Preference Notif > seksi Notifikasi Sistem menampilkan 8 checkbox push notif sesuai rule	normal	LULUS	20261023-smoke-local	-	-
+transporter	transporter/preference-notif.spec.ts	109	Setting Preference Notif > seksi Notifikasi Email menampilkan 8 checkbox notif email sesuai rule	normal	LULUS	20261023-smoke-local	-	-
+transporter	transporter/preference-notif.spec.ts	117	Setting Preference Notif > checklist/uncheklist notif berubah murni di sisi klien (belum tersimpan)	normal	LULUS	20261023-smoke-local	-	-
+transporter	transporter/preference-notif.spec.ts	129	Setting Preference Notif > tombol Batal kembali ke daftar pengajuan lelang tanpa menyimpan; Simpan tersedia	normal	LULUS	20261023-smoke-local	-	-
+transporter	transporter/profil.spec.ts	55	header profil menampilkan bergabung sejak, lokasi, detail rating berbintang, dan jumlah menang lelang	normal	GAGAL	20261023-cakupan-readonly	Data N4 (data akun QA: file/rekening/rating) - perlu konfirmasi	Error: expect(locator).toHaveText(expected) failed
+transporter	transporter/profil.spec.ts	70	tab Informasi aktif default dan memuat tahun berdiri, jumlah karyawan, jenis pengiriman, tentang perusahaan	normal	LULUS	20261023-cakupan-readonly	-	-
+transporter	transporter/profil.spec.ts	84	galeri perusahaan menampilkan keterangan Tidak Ada Data Tersedia bila kosong, atau foto bila ada	normal	LULUS	20261023-cakupan-readonly	-	-
+transporter	transporter/profil.spec.ts	101	Edit Profil membuka form tahun berdiri & jumlah karyawan tanpa menyimpan	normal	Belum dijalankan	-	-	-
+transporter	transporter/profil.spec.ts	111	tab Ulasan menampilkan ulasan berlabel Shipper dengan tanggal, rute, isi, terbaru di atas	normal	Belum dijalankan	-	-	-
+transporter	transporter/push-notif-trigger-aksi-inbox.spec.ts	47	notifikasi hasil trigger dapat ditandai dibaca lalu dihapus dari inbox Transporter	normal	Belum dijalankan	-	-	-
+transporter	transporter/push-notif-trigger-jadwal-tersedia.spec.ts	63	respons Request Jadwal memicu Jadwal Telah Tersedia ke Shipper dan Admin	normal	Belum dijalankan	-	-	-
+transporter	transporter/push-notif-trigger-kelengkapan-unit.spec.ts	13	input unit order fixture memicu Kelengkapan Data Unit ke Shipper dan Admin	normal	Belum dijalankan	-	-	-
+transporter	transporter/push-notif-trigger-update-dooring.spec.ts	11	update Dooring memicu Push Notif Tracking ke Shipper dan Admin	normal	Belum dijalankan	-	-	-
+transporter	transporter/push-notif-trigger-update-kapal-berlayar.spec.ts	19	update Kapal Berlayar memicu Push Notif Tracking ke Shipper dan Admin	normal	Belum dijalankan	-	-	-
+transporter	transporter/push-notif-trigger-update-kapal-sandar.spec.ts	11	update Kapal Sandar memicu Push Notif Tracking ke Shipper dan Admin	normal	Belum dijalankan	-	-	-
+transporter	transporter/push-notif-trigger-update-rencana-dooring.spec.ts	11	update Rencana Dooring memicu Push Notif Tracking ke Shipper dan Admin	normal	Belum dijalankan	-	-	-
+transporter	transporter/push-notif-trigger-update-sj.spec.ts	11	update SJ Diterima Agen memicu Push Notif Tracking ke Shipper dan Admin	normal	Belum dijalankan	-	-	-
+transporter	transporter/push-notif-trigger-update-stuffing.spec.ts	20	update Stuffing oleh Transporter memicu Push Notif Tracking ke Shipper dan Admin	normal	Belum dijalankan	-	-	-
+transporter	push-notif.shared.ts	91	Push Notif (Transporter/Bidder) > ikon lonceng top bar membuka halaman Notifikasi dan indikator unread tampil	normal	LULUS	20261023-smoke-local	-	-
+transporter	push-notif.shared.ts	116	Push Notif (Transporter/Bidder) > default halaman, kategori per peran, batas data, dan informasi retensi sesuai rule	normal	LULUS	20261023-smoke-local	-	-
+transporter	push-notif.shared.ts	129	Push Notif (Transporter/Bidder) > daftar unread memuat kategori, waktu, badge, checkbox, dan tujuan Cek Disini	normal	GAGAL	20261023-smoke-local	Data N3 (0 notifikasi)	Error: Akun demo perlu memiliki minimal satu notifikasi unread
+transporter	push-notif.shared.ts	156	Push Notif (Transporter/Bidder) > filter Semua Notif dan kategori Lelang mengirim parameter dan menampilkan data yang sesuai	normal	LULUS	20261023-smoke-local	-	-
+transporter	push-notif.shared.ts	170	Push Notif (Transporter/Bidder) > Hapus Notif dan Tandai Dibaca hanya aktif setelah notifikasi dipilih	normal	GAGAL	20261023-smoke-local	Data N3 (0 notifikasi)	Error: Akun demo perlu memiliki notifikasi untuk menguji selection state
+transporter	push-notif.shared.ts	195	Push Notif (Transporter/Bidder) > pilihan jumlah data memperbarui limit daftar tanpa mengubah notifikasi	normal	LULUS	20261023-smoke-local	-	-
+transporter-sub	transporter-sub/akun-saya.spec.ts	36	Akun Saya sub user hanya menampilkan Nama, Email, Nomor Whatsapp, Bagian Staff tanpa tombol edit	normal	LULUS	20261023-smoke-local	-	-
+transporter-sub	transporter-sub/akun-saya.spec.ts	56	menu sub user tidak memuat Preference Notif	normal	GAGAL	20261023-smoke-local	Clarification C1 (hak akses sub user)	Error: expect(locator).toBeVisible() failed
+transporter-sub	transporter-sub/akun-saya.spec.ts	63	akses langsung Edit Akun Saya ditolak dan dikembalikan ke Akun Saya	normal	LULUS	20261023-smoke-local	-	-
+transporter-sub	transporter-sub/akun-saya.spec.ts	70	akses langsung /home/preferencenotifbidder ditolak (preference notif hanya akun utama)	normal	GAGAL	20261023-smoke-local	Clarification C1 (hak akses sub user)	Error: expect(page).toHaveURL(expected) failed
+transporter-sub	transporter-sub/akun-saya.spec.ts	70	akses langsung /home/settingpreferencenotifbidder ditolak (preference notif hanya akun utama)	normal	GAGAL	20261023-smoke-local	Clarification C1 (hak akses sub user)	Error: expect(page).toHaveURL(expected) failed
+transporter-sub	transporter-sub/akun-saya.spec.ts	77	halaman Profil terbuka untuk sub user berakses operasional	normal	GAGAL	20261023-smoke-local	Clarification C1 (hak akses sub user)	Error: expect(page).toHaveURL(expected) failed

@@ -1,0 +1,123 @@
+{
+  "target": "local",
+  "waktu": "2026-10-24T02:13:52.662Z",
+  "penghambat": [],
+  "observasi": [
+    "Cookie PHPSESSID tanpa HttpOnly",
+    "Cookie PHPSESSID tanpa SameSite eksplisit",
+    "/user/tess menampilkan phpinfo tanpa login"
+  ],
+  "cek": [
+    {
+      "item": ".env.local",
+      "status": "OK",
+      "detail": "ada"
+    },
+    {
+      "item": "BASE_URL",
+      "status": "OK",
+      "detail": "http://192.168.0.89:8102"
+    },
+    {
+      "item": "Akun admin",
+      "status": "OK",
+      "detail": "wajib; kredensial terisi"
+    },
+    {
+      "item": "Sesi admin",
+      "status": "INFO",
+      "detail": "file ada, umur 1036 mnt (validitas dibuktikan lewat project smoke, bukan keberadaan file)"
+    },
+    {
+      "item": "Akun admin-sub",
+      "status": "OK",
+      "detail": "wajib; kredensial terisi"
+    },
+    {
+      "item": "Sesi admin-sub",
+      "status": "INFO",
+      "detail": "file ada, umur 1036 mnt (validitas dibuktikan lewat project smoke, bukan keberadaan file)"
+    },
+    {
+      "item": "Akun admin-sub-read",
+      "status": "OK",
+      "detail": "wajib; kredensial terisi"
+    },
+    {
+      "item": "Sesi admin-sub-read",
+      "status": "INFO",
+      "detail": "file ada, umur 1036 mnt (validitas dibuktikan lewat project smoke, bukan keberadaan file)"
+    },
+    {
+      "item": "Akun shipper",
+      "status": "OK",
+      "detail": "wajib; kredensial terisi"
+    },
+    {
+      "item": "Sesi shipper",
+      "status": "INFO",
+      "detail": "file ada, umur 1036 mnt (validitas dibuktikan lewat project smoke, bukan keberadaan file)"
+    },
+    {
+      "item": "Akun shipper-sub",
+      "status": "OK",
+      "detail": "wajib; kredensial terisi"
+    },
+    {
+      "item": "Sesi shipper-sub",
+      "status": "INFO",
+      "detail": "file ada, umur 1036 mnt (validitas dibuktikan lewat project smoke, bukan keberadaan file)"
+    },
+    {
+      "item": "Akun transporter",
+      "status": "OK",
+      "detail": "wajib; kredensial terisi"
+    },
+    {
+      "item": "Sesi transporter",
+      "status": "INFO",
+      "detail": "file ada, umur 1036 mnt (validitas dibuktikan lewat project smoke, bukan keberadaan file)"
+    },
+    {
+      "item": "Akun transporter-sub",
+      "status": "OK",
+      "detail": "wajib; kredensial terisi"
+    },
+    {
+      "item": "Sesi transporter-sub",
+      "status": "INFO",
+      "detail": "file ada, umur 1036 mnt (validitas dibuktikan lewat project smoke, bukan keberadaan file)"
+    },
+    {
+      "item": "GET /user/login",
+      "status": "OK",
+      "detail": "HTTP 200, 370 ms"
+    },
+    {
+      "item": "X-Powered-By",
+      "status": "INFO",
+      "detail": "PHP/8.2.35"
+    },
+    {
+      "item": "Header Server",
+      "status": "INFO",
+      "detail": "tidak ada"
+    },
+    {
+      "item": "Nama header respons",
+      "status": "INFO",
+      "detail": "cache-control, connection, content-type, date, expires, host, pragma, set-cookie, vary, x-powered-by"
+    },
+    {
+      "item": "Cookie PHPSESSID",
+      "status": "INFO",
+      "detail": "HttpOnly=false, Secure=false, SameSite=tidak di-set (nilai tidak dicatat)"
+    },
+    {
+      "item": "GET /user/tess (tanpa login)",
+      "status": "TEMUAN",
+      "detail": "HTTP 200; phpinfo tampil: ya (badan respons tidak disimpan)"
+    }
+  ],
+  "runtimeTeramati": "PHP/8.2.35"
+}

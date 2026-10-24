@@ -1,0 +1,340 @@
+ID	Modul	Fitur/Aksi	Role	Sumber	Jenis	Mutasi	Prasyarat Data	Catatan
+SHP-01-001	Login	Login dengan email + kata sandi valid masuk ke aplikasi	Anon	docs/rules/bid-owner/01-login.md:3	Aksi-Baca	Tidak	akun shipper aktif	Rule hanya menulis kondisi gagal; skenario sukses tersirat
+SHP-01-002	Login	Email/akun belum terdaftar memunculkan alert "Akun belum terdaftar"	Anon	docs/rules/bid-owner/01-login.md:3	Validasi	Tidak	-	-
+SHP-01-003	Login	Kata sandi salah untuk email terdaftar memunculkan alert "Masukkan kata sandi dengan benar"	Anon	docs/rules/bid-owner/01-login.md:4	Validasi	Tidak	akun shipper aktif	-
+SHP-01-004	Login	Login menggunakan nomor WA akun bid owner	Anon	docs/rules/bid-owner/01-login.md:6	Aksi-Baca	Tidak	akun shipper dengan nomor WA terdaftar	-
+SHP-01-005	Login	Footer (sosmed, layanan email & WA, copyright) diambil dari Setting General admin	Anon	docs/rules/bid-owner/01-login.md:5	Tampilan	Tidak	setting general terisi	-
+SHP-02-001	Registrasi	Halaman registrasi menampilkan pilihan peran berlabel Pemilik Barang / Ekspedisi	Anon	docs/rules/bid-owner/02-registrasi.md:3	Tampilan	Tidak	-	-
+SHP-02-002	Registrasi	Radio Pemilik Barang/Ekspedisi default tidak terpilih namun wajib dipilih	Anon	docs/rules/bid-owner/02-registrasi.md:5	Validasi	Tidak	-	Teks alert bila tidak dipilih tidak disebut
+SHP-02-003	Registrasi	Semua field wajib (Nama, No. Telepon/WA, Nama Perusahaan, Email, Kata Sandi, Ketik Ulang, captcha)	Anon	docs/rules/bid-owner/02-registrasi.md:6	Validasi	Tidak	-	Teks alert per field tidak disebut; captcha disebut wajib
+SHP-02-004	Registrasi	Field No. Telepon/WhatsApp hanya menerima angka	Anon	docs/rules/bid-owner/02-registrasi.md:7	Validasi	Tidak	-	-
+SHP-02-005	Registrasi	Nomor WA sudah dipakai akun lain memunculkan alert "Nomor whatsapp sudah terdaftar di sistem"	Anon	docs/rules/bid-owner/02-registrasi.md:8	Validasi	Tidak	akun lain dengan nomor WA tsb	-
+SHP-02-006	Registrasi	Kata sandi hanya huruf/hanya angka memunculkan alert "Kombinasi Hanya Boleh Huruf dan Angka"	Anon	docs/rules/bid-owner/02-registrasi.md:10	Validasi	Tidak	-	-
+SHP-02-007	Registrasi	Kata sandi kurang dari 6 digit memunculkan alert "Kata Sandi Minimal 6 Digit"	Anon	docs/rules/bid-owner/02-registrasi.md:11	Validasi	Tidak	-	-
+SHP-02-008	Registrasi	Footer halaman registrasi diambil dari Setting General admin	Anon	docs/rules/bid-owner/02-registrasi.md:12	Tampilan	Tidak	setting general terisi	-
+SHP-02-009	Registrasi	Submit registrasi valid membuat akun baru (belum aktif)	Anon	docs/rules/bid-owner/02-registrasi.md:13	Aksi-Tulis	Ya	email & nomor WA unik	-
+SHP-02-010	Registrasi	Email aktivasi akun terkirim setelah registrasi	Anon	docs/rules/bid-owner/02-registrasi.md:13	Notifikasi-Email	Ya	inbox email uji	-
+SHP-02-011	Registrasi	Halaman Konfirmasi Email: tombol Kirim Ulang Notifikasi Registrasi mengirim ulang email	Anon	docs/rules/bid-owner/02-registrasi.md:17	Notifikasi-Email	Ya	akun baru belum aktivasi	Nama tombol di rule "Kirim Ulang Notifikasi Registrasi"
+SHP-02-012	Registrasi	Footer email notifikasi registrasi diambil dari Setting General admin	Anon	docs/rules/bid-owner/02-registrasi.md:18	Notifikasi-Email	Tidak	email aktivasi diterima	-
+SHP-02-013	Registrasi	Kelengkapan Registrasi: nama, nama perusahaan, nomor WA terisi otomatis dari registrasi awal	Shipper	docs/rules/bid-owner/02-registrasi.md:22	Tampilan	Tidak	akun baru sudah aktivasi email	-
+SHP-02-014	Registrasi	Kelengkapan Registrasi: field bertanda bintang wajib (Provinsi, Kota, Alamat, Identitas & Logo)	Shipper	docs/rules/bid-owner/02-registrasi.md:23	Validasi	Tidak	akun baru sudah aktivasi email	Teks alert tidak disebut
+SHP-02-015	Registrasi	Upload Identitas & Logo maks 4 MB .jpg/.jpeg/.png; NPWP & SIUP juga .pdf	Shipper	docs/rules/bid-owner/02-registrasi.md:24	Upload/Import	Ya	file uji berbagai ukuran/format	Teks alert format/ukuran tidak disebut
+SHP-02-016	Registrasi	Submit kelengkapan mengarahkan ke Akun Saya dengan notif menunggu validasi admin PHBID	Shipper	docs/rules/bid-owner/02-registrasi.md:25	Aksi-Tulis	Ya	akun baru sudah aktivasi email	-
+SHP-02-017	Registrasi	Akun menunggu validasi hanya bisa mengakses menu Akun Saya	Shipper	docs/rules/bid-owner/02-registrasi.md:26	Akses/Otorisasi	Tidak	akun menunggu validasi admin	-
+SHP-03-001	Lupa Kata Sandi	Input email atau nomor telepon terdaftar untuk meminta kode lupa kata sandi	Anon	docs/rules/bid-owner/03-lupa-kata-sandi.md:3	Aksi-Tulis	Ya	akun shipper aktif	Teks alert untuk email/nomor tidak terdaftar tidak disebut
+SHP-03-002	Lupa Kata Sandi	Kode dikirim ke WhatsApp bila yang diinput nomor WA	Anon	docs/rules/bid-owner/03-lupa-kata-sandi.md:4	Notifikasi-WA	Ya	akun dengan nomor WA yang dapat dipantau	-
+SHP-03-003	Lupa Kata Sandi	Kode dikirim ke email bila yang diinput email	Anon	docs/rules/bid-owner/03-lupa-kata-sandi.md:5	Notifikasi-Email	Ya	inbox email uji	-
+SHP-03-004	Lupa Kata Sandi	Kirim ulang kode hanya bisa diklik setelah lewat 5 menit	Anon	docs/rules/bid-owner/03-lupa-kata-sandi.md:6	Validasi	Ya	permintaan kode aktif	-
+SHP-03-005	Lupa Kata Sandi	Kode tidak berlaku memunculkan alert "Kode verifikasi kadaluarsa"	Anon	docs/rules/bid-owner/03-lupa-kata-sandi.md:7	Validasi	Tidak	kode kedaluwarsa	Masa berlaku kode tidak disebut
+SHP-03-006	Lupa Kata Sandi	Kode valid mengarahkan ke halaman input kata sandi baru	Anon	docs/rules/bid-owner/03-lupa-kata-sandi.md:8	Aksi-Baca	Tidak	kode valid	-
+SHP-03-007	Lupa Kata Sandi	Simpan kata sandi baru	Anon	docs/rules/bid-owner/03-lupa-kata-sandi.md:9	Aksi-Tulis	Ya	kode valid	Pesan sukses/arah redirect tidak disebut
+SHP-03-008	Lupa Kata Sandi	Kata sandi baru minimal 6 digit kombinasi huruf & angka (huruf besar/kecil boleh)	Anon	docs/rules/bid-owner/03-lupa-kata-sandi.md:9	Validasi	Tidak	kode valid	Teks alert tidak disebut
+SHP-03-009	Lupa Kata Sandi	Footer halaman diambil dari Setting General admin	Anon	docs/rules/bid-owner/03-lupa-kata-sandi.md:10	Tampilan	Tidak	setting general terisi	-
+SHP-04-001	Akun Saya	Halaman Akun Saya menampilkan data akun dan dokumen yang diupload	Shipper	docs/rules/bid-owner/04-akun-saya.md:5	Tampilan	Tidak	akun shipper aktif	Isi field halaman tidak dirinci di rule
+SHP-04-002	Akun Saya	Login pertama setelah akun aktif memunculkan notif "Selamat datang di PHBID"	Shipper	docs/rules/bid-owner/04-akun-saya.md:3	Tampilan	Tidak	akun baru aktif belum pernah login	-
+SHP-04-003	Akun Saya	Akun dinonaktifkan hanya bisa akses Akun Saya + notif "Akun anda dinonaktifkan"	Shipper	docs/rules/bid-owner/04-akun-saya.md:4	Akses/Otorisasi	Tidak	akun shipper dinonaktifkan admin	-
+SHP-04-004	Akun Saya	Download kembali NPWP dan SIUP yang telah diupload	Shipper	docs/rules/bid-owner/04-akun-saya.md:5	Export/Download	Tidak	akun dengan file NPWP/SIUP	-
+SHP-04-005	Akun Saya	Download kembali Identitas dan Logo Perusahaan	Shipper	docs/rules/bid-owner/04-akun-saya.md:5	Export/Download	Tidak	akun dengan file identitas/logo	Kalimat baris 5-6 terpotong/tergabung
+SHP-04-006	Akun Saya	Breadcrumb Beranda mengarah ke halaman Cari Penawaran	Shipper	docs/rules/bid-owner/04-akun-saya.md:7	Tampilan	Tidak	-	-
+SHP-04-007	Akun Saya	Edit Akun Saya mengajukan perubahan data yang menunggu konfirmasi admin (tidak langsung terganti)	Shipper	docs/rules/bid-owner/04-akun-saya.md:9	Aksi-Tulis	Ya	akun shipper aktif	-
+SHP-04-008	Akun Saya	Edit dengan nomor WA milik akun lain (termasuk sub user) memunculkan alert "Nomor whatsapp sudah terdaftar di sistem"	Shipper	docs/rules/bid-owner/04-akun-saya.md:8	Validasi	Tidak	nomor WA akun/sub user lain	-
+SHP-04-009	Akun Saya	Tombol Edit Akun Saya disable selama perubahan belum dikonfirmasi admin	Shipper	docs/rules/bid-owner/04-akun-saya.md:10	Status-Transisi	Tidak	perubahan data pending	-
+SHP-04-010	Akun Saya	Admin terima perubahan: data terganti dan tombol edit aktif kembali	Shipper	docs/rules/bid-owner/04-akun-saya.md:11	Status-Transisi	Ya	perubahan data pending	Aksi dilakukan admin
+SHP-04-011	Akun Saya	Admin tolak perubahan: data tetap dan tombol edit aktif kembali	Shipper	docs/rules/bid-owner/04-akun-saya.md:12	Status-Transisi	Ya	perubahan data pending	Aksi dilakukan admin
+SHP-04-012	Akun Saya	Email perubahan data diterima / ditolak terkirim ke bid owner	Shipper	docs/rules/bid-owner/04-akun-saya.md:13	Notifikasi-Email	Ya	perubahan data diproses admin	-
+SHP-05-001	Push Notif	Ikon lonceng di top bar membuka daftar push notifikasi	Shipper	docs/rules/bid-owner/05-push-notif.md:3	Aksi-Baca	Tidak	-	-
+SHP-05-002	Push Notif	Indikator titik merah di ikon lonceng saat ada notifikasi belum dibaca	Shipper	docs/rules/bid-owner/05-push-notif.md:4	Tampilan	Tidak	notifikasi unread	-
+SHP-05-003	Push Notif	Terima push Perubahan Data Diterima / Ditolak	Shipper	docs/rules/bid-owner/05-push-notif.md:6	Notifikasi-Internal	Ya	perubahan akun diproses admin	-
+SHP-05-004	Push Notif	Terima push Nego Diterima / Ditolak / Dicounter	Shipper	docs/rules/bid-owner/05-push-notif.md:8	Notifikasi-Internal	Ya	pengajuan nego direspon bidder	-
+SHP-05-005	Push Notif	Terima push Jadwal Tersedia	Shipper	docs/rules/bid-owner/05-push-notif.md:11	Notifikasi-Internal	Ya	request jadwal direspon bidder	-
+SHP-05-006	Push Notif	Terima push Perjanjian Diterima / Ditolak	Shipper	docs/rules/bid-owner/05-push-notif.md:12	Notifikasi-Internal	Ya	order PROSES VALIDASI diproses admin	-
+SHP-05-007	Push Notif	Terima push Kelengkapan Data Unit	Shipper	docs/rules/bid-owner/05-push-notif.md:14	Notifikasi-Internal	Ya	order KONFIRMASI UNIT dikonfirmasi bidder	-
+SHP-05-008	Push Notif	Terima push Perubahan Jadwal	Shipper	docs/rules/bid-owner/05-push-notif.md:15	Notifikasi-Internal	Ya	order dengan ganti jadwal	-
+SHP-05-009	Push Notif	Terima push update tracking (Ambil Kontainer, Stuffing, Kapal Berlayar, Kapal Sandar, Rencana Dooring, Dooring, SJ Diterima Agen, Dokumen Dikirim)	Shipper	docs/rules/bid-owner/05-push-notif.md:16	Notifikasi-Internal	Ya	order dalam proses tracking	Daftar setting push di 13-preference-notif.md:21 tidak memuat SJ Diterima Agen
+SHP-05-010	Push Notif	Kategori notif Lelang/Order/Tracking/Akun; default tampil Semua Kategori	Shipper	docs/rules/bid-owner/05-push-notif.md:24	Tampilan	Tidak	-	Tidak ada jenis notif shipper yang jelas masuk kategori Lelang; kalibrasi :40 mencatat default Belum Dibaca
+SHP-05-011	Push Notif	Filter kategori menampilkan notifikasi sesuai kategori dipilih	Shipper	docs/rules/bid-owner/05-push-notif.md:25	Aksi-Baca	Tidak	notifikasi lintas kategori	-
+SHP-05-012	Push Notif	Default list hanya notif belum dibaca; notif yang sudah dibaca hilang dari list	Shipper	docs/rules/bid-owner/05-push-notif.md:27	Tampilan	Tidak	notifikasi read & unread	-
+SHP-05-013	Push Notif	Filter Semua Notif menampilkan notif sudah dan belum dibaca	Shipper	docs/rules/bid-owner/05-push-notif.md:28	Aksi-Baca	Tidak	notifikasi read & unread	-
+SHP-05-014	Push Notif	Cek Disini mengarahkan ke halaman detail terkait (mis. Perubahan Data Diterima ke Akun Saya)	Shipper	docs/rules/bid-owner/05-push-notif.md:26	Aksi-Baca	Ya	notifikasi unread	Klik menandai notif terbaca (implikasi baris 27); tujuan per jenis tidak dirinci
+SHP-05-015	Push Notif	Hapus Notifikasi & Tandai Dibaca nonaktif default; aktif setelah centang notif atau Pilih Semua	Shipper	docs/rules/bid-owner/05-push-notif.md:29	Validasi	Tidak	minimal 1 notifikasi	-
+SHP-05-016	Push Notif	Hapus Notifikasi terpilih	Shipper	docs/rules/bid-owner/05-push-notif.md:29	Aksi-Tulis	Ya	notifikasi uji	-
+SHP-05-017	Push Notif	Tandai sebagai Dibaca untuk notifikasi terpilih	Shipper	docs/rules/bid-owner/05-push-notif.md:29	Aksi-Tulis	Ya	notifikasi unread uji	-
+SHP-05-018	Push Notif	Notifikasi otomatis terhapus setelah 3 bulan	Shipper	docs/rules/bid-owner/05-push-notif.md:30	Status-Transisi	Ya	notifikasi berumur >3 bulan	"selama 3 bulan" ambigu (diasumsikan setelah 3 bulan)
+SHP-05-019	Push Notif	Halaman Preferensi Notifikasi Sub User menampilkan daftar notif email & sistem yang dapat diterima	Shipper-Sub	docs/rules/bid-owner/05-push-notif.md:31	Tampilan	Tidak	akun sub user shipper	Nama halaman bentrok dengan 13-preference-notif.md:4 (sub user tidak bisa setting)
+SHP-05-020	Push Notif	Notif yang diterima sub user mengikuti hak akses notifikasi yang diatur admin	Shipper-Sub	docs/rules/bid-owner/05-push-notif.md:34	Akses/Otorisasi	Tidak	sub user dengan hak akses notif tertentu	-
+SHP-06-001	Dashboard	Monitoring Pengiriman menampilkan order berstatus Proses Penugasan s.d Order Selesai	Shipper	docs/rules/bid-owner/06-dashboard.md:5	Tampilan	Tidak	order sudah input unit	-
+SHP-06-002	Dashboard	Monitoring: pilihan rentang tanggal maksimal 90 hari	Shipper	docs/rules/bid-owner/06-dashboard.md:6	Validasi	Tidak	-	Perilaku saat >90 hari (alert/clamp) tidak disebut
+SHP-06-003	Dashboard	Monitoring: Tampilkan Penuh membuka layar penuh	Shipper	docs/rules/bid-owner/06-dashboard.md:7	Aksi-Baca	Tidak	-	-
+SHP-06-004	Dashboard	Monitoring: tombol Tutup menutup layar penuh	Shipper	docs/rules/bid-owner/06-dashboard.md:8	Aksi-Baca	Tidak	-	-
+SHP-06-005	Dashboard	Monitoring: Export Excel sesuai data hasil filter	Shipper	docs/rules/bid-owner/06-dashboard.md:9	Export/Download	Tidak	order dalam rentang	-
+SHP-06-006	Dashboard	Monitoring: kolom ID order, consignee, alamat tujuan, no referensi, kapal, stuffing, ETD, ETA, kapal sandar, dooring, bidder, pelabuhan tujuan	Shipper	docs/rules/bid-owner/06-dashboard.md:10	Tampilan	Tidak	order dalam rentang	-
+SHP-06-007	Dashboard	Monitoring: consignee = nama perusahaan penerima barang	Shipper	docs/rules/bid-owner/06-dashboard.md:11	Tampilan	Tidak	order dalam rentang	-
+SHP-06-008	Dashboard	Monitoring: stuffing per order (terbaru dari semua unit), dooring per unit	Shipper	docs/rules/bid-owner/06-dashboard.md:12	Tampilan	Tidak	order multi-unit ter-tracking	-
+SHP-06-009	Dashboard	Monitoring: strip bila tracking stuffing/kapal sandar/dooring belum ada	Shipper	docs/rules/bid-owner/06-dashboard.md:15	Tampilan	Tidak	order belum ter-tracking	-
+SHP-06-010	Dashboard	Monitoring: klik ID order membuka detail pesanan (tab baru) bagian status pengiriman	Shipper	docs/rules/bid-owner/06-dashboard.md:16	Aksi-Baca	Tidak	order dalam rentang	-
+SHP-06-011	Dashboard	Monitoring: sortir kolom ID order, stuffing, ETD, ETA, kapal sandar, bidder, pelabuhan tujuan	Shipper	docs/rules/bid-owner/06-dashboard.md:17	Aksi-Baca	Tidak	>=2 order dalam rentang	-
+SHP-06-012	Dashboard	Monitoring: auto update saat ada order baru input unit	Shipper	docs/rules/bid-owner/06-dashboard.md:18	Status-Transisi	Ya	bidder input unit saat dashboard terbuka	-
+SHP-06-013	Dashboard	Monitoring: auto update tanpa refresh saat jadwal/tracking berubah	Shipper	docs/rules/bid-owner/06-dashboard.md:19	Status-Transisi	Ya	perubahan jadwal/tracking saat dashboard terbuka	-
+SHP-06-014	Dashboard	Frekuensi Pengiriman: data jumlah pesanan status Proses Penugasan s.d Order Selesai	Shipper	docs/rules/bid-owner/06-dashboard.md:23	Laporan/Grafik	Tidak	order sudah input unit	-
+SHP-06-015	Dashboard	Frekuensi: rentang tanggal maksimal 90 hari	Shipper	docs/rules/bid-owner/06-dashboard.md:24	Validasi	Tidak	-	-
+SHP-06-016	Dashboard	Frekuensi: peta Indonesia dengan penanda kota tujuan	Shipper	docs/rules/bid-owner/06-dashboard.md:25	Laporan/Grafik	Tidak	order sudah input unit	-
+SHP-06-017	Dashboard	Frekuensi: klik lokasi menampilkan jumlah pesanan & persentase	Shipper	docs/rules/bid-owner/06-dashboard.md:26	Aksi-Baca	Tidak	order sudah input unit	-
+SHP-06-018	Dashboard	Frekuensi: zoom in / zoom out peta	Shipper	docs/rules/bid-owner/06-dashboard.md:27	Aksi-Baca	Tidak	-	-
+SHP-06-019	Dashboard	Frekuensi: Tampilkan Penuh dan Tutup layar penuh	Shipper	docs/rules/bid-owner/06-dashboard.md:28	Aksi-Baca	Tidak	-	-
+SHP-06-020	Dashboard	Frekuensi: tanpa data hanya peta tanpa penanda	Shipper	docs/rules/bid-owner/06-dashboard.md:30	Tampilan	Tidak	rentang tanpa order	-
+SHP-06-021	Dashboard	Frekuensi: auto update saat ada order baru input unit	Shipper	docs/rules/bid-owner/06-dashboard.md:31	Status-Transisi	Ya	bidder input unit saat dashboard terbuka	-
+SHP-06-022	Dashboard	Grafik Pengiriman: diagram batang jumlah pesanan per kota tujuan (status Proses Penugasan s.d Selesai)	Shipper	docs/rules/bid-owner/06-dashboard.md:35	Laporan/Grafik	Tidak	order sudah input unit	-
+SHP-06-023	Dashboard	Grafik: rentang tanggal maksimal 90 hari	Shipper	docs/rules/bid-owner/06-dashboard.md:36	Validasi	Tidak	-	-
+SHP-06-024	Dashboard	Grafik: Tampilkan Penuh dan Tutup layar penuh	Shipper	docs/rules/bid-owner/06-dashboard.md:38	Aksi-Baca	Tidak	-	-
+SHP-06-025	Dashboard	Grafik: tanpa data diagram batang tidak tampil	Shipper	docs/rules/bid-owner/06-dashboard.md:40	Tampilan	Tidak	rentang tanpa order	-
+SHP-06-026	Dashboard	Grafik: auto refresh saat ada order baru input unit	Shipper	docs/rules/bid-owner/06-dashboard.md:41	Status-Transisi	Ya	bidder input unit saat dashboard terbuka	-
+SHP-07-001	Cari Penawaran	Halaman default shipper; breadcrumb Beranda disable	Shipper	docs/rules/bid-owner/07-cari-penawaran.md:3	Tampilan	Tidak	-	-
+SHP-07-002	Cari Penawaran	Tombol Cari Harga Penawaran disable sampai Nomor Lelang diisi	Shipper	docs/rules/bid-owner/07-cari-penawaran.md:4	Validasi	Tidak	-	-
+SHP-07-003	Cari Penawaran	Cari penawaran dengan input nomor lelang manual	Shipper	docs/rules/bid-owner/07-cari-penawaran.md:5	Aksi-Baca	Tidak	lelang milik shipper	-
+SHP-07-004	Cari Penawaran	Nomor lelang tidak ada memunculkan alert "Nomor lelang tidak ditemukan"	Shipper	docs/rules/bid-owner/07-cari-penawaran.md:7	Validasi	Tidak	-	-
+SHP-07-005	Cari Penawaran	Popup daftar lelang: semua lelang milik shipper (termasuk lewat akhir kirim) kecuali batal; rute pelabuhan asal - tujuan	Shipper	docs/rules/bid-owner/07-cari-penawaran.md:26	Tampilan	Tidak	lelang aktif & batal	-
+SHP-07-006	Cari Penawaran	Popup: dropdown nomor lelang terbaru ke terlama tanpa lelang batal; pilih lelang untuk dicari	Shipper	docs/rules/bid-owner/07-cari-penawaran.md:29	Aksi-Baca	Tidak	>=2 lelang	-
+SHP-07-007	Cari Penawaran	Ringkasan lelang: info lelang, S&K, rute pengiriman, kontainer & harga penawaran	Shipper	docs/rules/bid-owner/07-cari-penawaran.md:10	Tampilan	Tidak	lelang ditemukan	-
+SHP-07-008	Cari Penawaran	Dokumen aanwijzing tampil sesuai nama dokumen; strip bila tidak aktif	Shipper	docs/rules/bid-owner/07-cari-penawaran.md:8	Tampilan	Tidak	lelang dengan & tanpa aanwijzing aktif	Duplikat di baris 89-90
+SHP-07-009	Cari Penawaran	Download dokumen tambahan pada Syarat dan Ketentuan	Shipper	docs/rules/bid-owner/07-cari-penawaran.md:12	Export/Download	Tidak	lelang dengan dokumen tambahan	-
+SHP-07-010	Cari Penawaran	Info rute: normal 1 asal 1 tujuan; multidrop 1 asal minimal 2 drop off	Shipper	docs/rules/bid-owner/07-cari-penawaran.md:14	Tampilan	Tidak	lelang normal & multidrop	-
+SHP-07-011	Cari Penawaran	Info kontainer sesuai jenis dipilih; data lama PHBL 1.2 tampil kombinasi ukuran x jenis	Shipper	docs/rules/bid-owner/07-cari-penawaran.md:17	Tampilan	Tidak	lelang PHBL 1.2	-
+SHP-07-012	Cari Penawaran	Keterangan belum ada peserta yang mengajukan penawaran + email/no CS dari Setting General	Shipper	docs/rules/bid-owner/07-cari-penawaran.md:34	Tampilan	Tidak	lelang tutup tanpa penawaran	-
+SHP-07-013	Cari Penawaran	Keterangan nomor lelang belum melewati batas tutup lelang + kontak CS	Shipper	docs/rules/bid-owner/07-cari-penawaran.md:36	Tampilan	Tidak	lelang belum tutup	-
+SHP-07-014	Cari Penawaran	Harga penawaran default 20 data	Shipper	docs/rules/bid-owner/07-cari-penawaran.md:38	Tampilan	Tidak	lelang dengan >20 penawaran	-
+SHP-07-015	Cari Penawaran	Filter harga penawaran: jenis kontainer, bidder, ETD & ETA	Shipper	docs/rules/bid-owner/07-cari-penawaran.md:38	Aksi-Baca	Tidak	lelang tutup dengan penawaran	-
+SHP-07-016	Cari Penawaran	Urutan default: tanggal efektif terbaru, harga, closing time, rating, jumlah menang, nama kapal	Shipper	docs/rules/bid-owner/07-cari-penawaran.md:39	Tampilan	Tidak	penawaran dengan nilai kembar	Urutan Export PDF (:96) tanpa tanggal efektif padahal disebut "default seperti di web"
+SHP-07-017	Cari Penawaran	Tombol "kapal connecting nx" pada penawaran jadwal connecting	Shipper	docs/rules/bid-owner/07-cari-penawaran.md:45	Aksi-Baca	Tidak	penawaran jadwal connecting	Isi popup tidak dirinci
+SHP-07-018	Cari Penawaran	Semua harga tampil (tanggal mulai berlaku kapanpun); harga DPP dengan nilai PPN & PPh	Shipper	docs/rules/bid-owner/07-cari-penawaran.md:46	Tampilan	Tidak	lelang tutup dengan penawaran	-
+SHP-07-019	Cari Penawaran	Info harga: keterangan tidak diinput bidder; biaya tidak termasuk merah; tanpa PPN/PPh	Shipper	docs/rules/bid-owner/07-cari-penawaran.md:48	Tampilan	Tidak	penawaran dengan info harga kosong & include berbeda	Kalimat baris 49 terpotong
+SHP-07-020	Cari Penawaran	Rating: bidder belum pernah menang hanya jumlah rating; bidder baru default 3.0	Shipper	docs/rules/bid-owner/07-cari-penawaran.md:51	Tampilan	Tidak	bidder baru di penawaran	-
+SHP-07-021	Cari Penawaran	Harga lama tergantikan harga baru: tombol N/A + alert "Harga sudah tidak berlaku. Mohon pilih penawaran lain"	Shipper	docs/rules/bid-owner/07-cari-penawaran.md:54	Validasi	Tidak	2 harga sama beda tanggal mulai berlaku	-
+SHP-07-022	Cari Penawaran	Lewat closing time: tombol N/A + alert "Jadwal sudah melewati tanggal closing time..."	Shipper	docs/rules/bid-owner/07-cari-penawaran.md:59	Validasi	Tidak	penawaran lewat closing	-
+SHP-07-023	Cari Penawaran	Harga tanpa jadwal: tombol Pesan disable + tooltip "Tanyakan Ke CS PH Bid"	Shipper	docs/rules/bid-owner/07-cari-penawaran.md:60	Validasi	Tidak	harga tanpa jadwal	-
+SHP-07-024	Cari Penawaran	Lelang lewat rencana akhir kirim: tombol N/A + alert "Nomor lelang sudah melewati tgl. rencana akhir kirim..."	Shipper	docs/rules/bid-owner/07-cari-penawaran.md:61	Validasi	Tidak	lelang lewat akhir kirim	-
+SHP-07-025	Cari Penawaran	Nego diterima bidder: harga satuan + PPN/PPh berubah di list	Shipper	docs/rules/bid-owner/07-cari-penawaran.md:62	Status-Transisi	Ya	nego diterima bidder	-
+SHP-07-026	Cari Penawaran	Tombol Nego disable pada harga tidak aktif; aktif kembali bila harga N/A aktif lagi	Shipper	docs/rules/bid-owner/07-cari-penawaran.md:63	Validasi	Tidak	harga tidak aktif	-
+SHP-07-027	Cari Penawaran	Email penawaran belum terpilih ke bidder lain (1x saat admin validasi terima order)	Shipper	docs/rules/bid-owner/07-cari-penawaran.md:65	Notifikasi-Email	Ya	lelang >1 bidder, order divalidasi admin	-
+SHP-07-028	Cari Penawaran	Data harga penawaran masuk spreadsheet penarikan data penawaran	Shipper	docs/rules/bid-owner/07-cari-penawaran.md:66	Laporan/Grafik	Tidak	lelang dengan penawaran	Spreadsheet internal, cara akses tidak disebut
+SHP-07-029	Cari Penawaran	Lelang proses update harga menampilkan info PROSES UPDATE HARGA	Shipper	docs/rules/bid-owner/07-cari-penawaran.md:72	Tampilan	Tidak	lelang sedang request harga	-
+SHP-07-030	Cari Penawaran	Saat request harga: klik tombol Expired memunculkan alert "Harga sudah tidak berlaku, tunggu sampai update harga..."	Shipper	docs/rules/bid-owner/07-cari-penawaran.md:73	Validasi	Tidak	lelang sedang request harga	Baris 71 (harga langsung expired) kontradiksi baris 76 & 81 (tidak langsung expired)
+SHP-07-031	Cari Penawaran	Saat request harga: tombol Daftar Nego disable	Shipper	docs/rules/bid-owner/07-cari-penawaran.md:74	Validasi	Tidak	lelang sedang request harga	-
+SHP-07-032	Cari Penawaran	Saat request harga: klik Pesan pada harga aktif memunculkan alert tidak bisa lanjut order	Shipper	docs/rules/bid-owner/07-cari-penawaran.md:77	Validasi	Tidak	lelang sedang request harga	Teks alert tidak disebut
+SHP-07-033	Cari Penawaran	Setelah request berakhir: harga lama expired; filter/sortir menampilkan harga baru dulu lalu expired	Shipper	docs/rules/bid-owner/07-cari-penawaran.md:75	Status-Transisi	Tidak	request harga sudah ditutup	-
+SHP-07-034	Cari Penawaran	Close Request Harga dengan field tanggal penutupan menghentikan request berjalan	Shipper	docs/rules/bid-owner/07-cari-penawaran.md:82	Aksi-Tulis	Ya	lelang sedang request harga	Lokasi tombol tidak disebut; duplikat 08-pengajuan-lelang.md:171
+SHP-07-035	Cari Penawaran	Card daftar riwayat menampilkan Close Request & Tanggal Close Request	Shipper	docs/rules/bid-owner/07-cari-penawaran.md:85	Tampilan	Tidak	request harga yang di-close	-
+SHP-07-036	Cari Penawaran	Integrasi PNP: harga lama tidak bisa dipesan di PNP + tooltip saat update harga	Shipper	docs/rules/bid-owner/07-cari-penawaran.md:88	Tampilan	Tidak	lelang sedang request harga	Diamati di sistem PNP, di luar aplikasi ini
+SHP-07-037	Cari Penawaran	Export Harga Penawaran PDF: tanggal = waktu export, email = user yang export	Shipper	docs/rules/bid-owner/07-cari-penawaran.md:94	Export/Download	Tidak	lelang tutup dengan penawaran	-
+SHP-07-038	Cari Penawaran	Isi PDF: urutan, harga DPP + PPN/PPh, info harga, biaya tidak termasuk merah, ID penawaran	Shipper	docs/rules/bid-owner/07-cari-penawaran.md:96	Export/Download	Tidak	lelang tutup dengan penawaran	Baris 102 menyinggung label PDF Perjanjian Pengiriman (biaya belum termasuk) di bagian ini
+SHP-07-039	Cari Penawaran	Harga respon update tampil keterangan "(Request Harga dd/mm/yyyy)" di samping harga satuan	Shipper	docs/rules/bid-owner/07-cari-penawaran.md:104	Export/Download	Tidak	harga hasil request harga	Tidak jelas apakah berlaku juga di layar web
+SHP-07-040	Cari Penawaran	Profil Bidder: data bergabung sejak = tanggal registrasi bidder	Shipper	docs/rules/bid-owner/07-cari-penawaran.md:109	Aksi-Baca	Tidak	penawaran dengan bidder	-
+SHP-07-041	Cari Penawaran	Profil Bidder: breadcrumb & Kembali ke hasil pencarian sebelumnya	Shipper	docs/rules/bid-owner/07-cari-penawaran.md:108	Aksi-Baca	Tidak	-	-
+SHP-07-042	Cari Penawaran	Profil Bidder: ulasan bid owner lain dengan nama disamarkan "Bid Owner"	Shipper	docs/rules/bid-owner/07-cari-penawaran.md:110	Tampilan	Tidak	bidder dengan ulasan	-
+SHP-07-043	Cari Penawaran	Pilih harga untuk nego masuk ke list Daftar Nego	Shipper	docs/rules/bid-owner/07-cari-penawaran.md:119	Aksi-Tulis	Ya	harga aktif	Tidak jelas apakah daftar nego tersimpan di server atau klien
+SHP-07-044	Cari Penawaran	Nego: maksimal 5 harga, lebih memunculkan alert "Ada 5 penawaran terpilih di daftar nego..."	Shipper	docs/rules/bid-owner/07-cari-penawaran.md:114	Validasi	Tidak	>=6 harga aktif	-
+SHP-07-045	Cari Penawaran	Nego ditolak: lewat akhir kirim / ada update harga / lewat closing time (alert masing-masing)	Shipper	docs/rules/bid-owner/07-cari-penawaran.md:115	Validasi	Tidak	harga dengan kondisi tsb	Baris 117 kutip ganda dobel
+SHP-07-046	Cari Penawaran	Nego: harga sudah ada di daftar memunculkan alert "Harga penawaran sudah ada di Daftar Nego"	Shipper	docs/rules/bid-owner/07-cari-penawaran.md:118	Validasi	Tidak	harga sudah di daftar nego	-
+SHP-07-047	Cari Penawaran	Popup info pengajuan nego: harga Sebelum PPn + PPN & PPh; strip bila tidak ada	Shipper	docs/rules/bid-owner/07-cari-penawaran.md:120	Tampilan	Tidak	harga dengan & tanpa PPN	-
+SHP-07-048	Cari Penawaran	Tombol Nego menampilkan penanda jumlah submit nego	Shipper	docs/rules/bid-owner/07-cari-penawaran.md:122	Tampilan	Tidak	harga pernah dinego	-
+SHP-07-049	Cari Penawaran	Sub user custom IMP & TCI tidak bisa akses fitur Nego	Shipper-Sub	docs/rules/bid-owner/07-cari-penawaran.md:123	Akses/Otorisasi	Tidak	sub user IMP/TCI	Istilah IMP/TCI tidak didefinisikan
+SHP-07-050	Cari Penawaran	Daftar Nego menampilkan harga Sebelum PPn	Shipper	docs/rules/bid-owner/07-cari-penawaran.md:127	Tampilan	Tidak	harga di daftar nego	-
+SHP-07-051	Cari Penawaran	Submit Daftar Nego ditolak: lewat akhir kirim / update harga / lewat closing (alert)	Shipper	docs/rules/bid-owner/07-cari-penawaran.md:128	Validasi	Tidak	harga di daftar nego dengan kondisi tsb	-
+SHP-07-052	Cari Penawaran	Submit Daftar Nego membuat pengajuan nego	Shipper	docs/rules/bid-owner/07-cari-penawaran.md:131	Aksi-Tulis	Ya	harga aktif di daftar nego	Input nominal & validasinya tidak dirinci di sini
+SHP-07-053	Cari Penawaran	Email pengajuan nego ke bidder setelah submit	Shipper	docs/rules/bid-owner/07-cari-penawaran.md:131	Notifikasi-Email	Ya	submit nego	-
+SHP-07-054	Cari Penawaran	WA pengajuan nego ke bidder setelah submit	Shipper	docs/rules/bid-owner/07-cari-penawaran.md:131	Notifikasi-WA	Ya	submit nego	-
+SHP-07-055	Cari Penawaran	Sub user custom IMP & TCI tidak bisa akses Daftar Nego	Shipper-Sub	docs/rules/bid-owner/07-cari-penawaran.md:132	Akses/Otorisasi	Tidak	sub user IMP/TCI	-
+SHP-07-056	Cari Penawaran	Halaman Request Jadwal: harga aktif (termasuk tanpa jadwal/lewat closing), tanpa lelang lewat akhir kirim & harga expired	Shipper	docs/rules/bid-owner/07-cari-penawaran.md:136	Tampilan	Tidak	lelang dengan harga aktif & expired	"sebelumnya telah dilakukan Request Harga" (:140) ambigu
+SHP-07-057	Cari Penawaran	Ajukan Request Jadwal (berulang tanpa batas pada harga sama)	Shipper	docs/rules/bid-owner/07-cari-penawaran.md:141	Aksi-Tulis	Ya	harga aktif	-
+SHP-07-058	Cari Penawaran	Popup konfirmasi izin menerima email respon request jadwal	Shipper	docs/rules/bid-owner/07-cari-penawaran.md:142	Setting	Ya	harga aktif	-
+SHP-07-059	Cari Penawaran	Email ke shipper saat bidder respon request jadwal hanya bila izin aktif	Shipper	docs/rules/bid-owner/07-cari-penawaran.md:143	Notifikasi-Email	Ya	request jadwal direspon bidder	-
+SHP-07-060	Cari Penawaran	WA "Request Jadwal tersedia" ke bidder setelah request jadwal	Shipper	docs/rules/bid-owner/07-cari-penawaran.md:146	Notifikasi-WA	Ya	request jadwal diajukan	-
+SHP-07-061	Cari Penawaran	Label "Daftar Request Jadwal : n Penawaran (Lihat Request)" di Harga Penawaran	Shipper	docs/rules/bid-owner/07-cari-penawaran.md:145	Tampilan	Tidak	lelang pernah request jadwal	-
+SHP-07-062	Cari Penawaran	Daftar Request Jadwal: kolom tgl request (DD/MM/YYYY HH:MM), bidder, pelayaran, jenis, harga sebelum PPn, terima notif, status	Shipper	docs/rules/bid-owner/07-cari-penawaran.md:150	Tampilan	Tidak	request jadwal tercatat	-
+SHP-07-063	Cari Penawaran	Kolom Terima Notif Ya/Tidak sesuai konfirmasi saat request	Shipper	docs/rules/bid-owner/07-cari-penawaran.md:153	Tampilan	Tidak	request dengan & tanpa izin notif	-
+SHP-07-064	Cari Penawaran	Status request jadwal Menunggu Bidder berubah Tersedia setelah direspon	Shipper	docs/rules/bid-owner/07-cari-penawaran.md:154	Status-Transisi	Ya	request jadwal direspon bidder	-
+SHP-07-065	Cari Penawaran	Respon update jadwal bidder terlihat di Cari Penawaran	Shipper	docs/rules/bid-owner/07-cari-penawaran.md:156	Tampilan	Tidak	request jadwal direspon bidder	-
+SHP-07-066	Cari Penawaran	Isi Data Pesanan: breadcrumb Hasil Penawaran & tombol Batal kembali ke hasil penawaran	Shipper	docs/rules/bid-owner/07-cari-penawaran.md:160	Aksi-Baca	Tidak	harga aktif dengan jadwal	-
+SHP-07-067	Cari Penawaran	Tanggal & jam permintaan muat via datepicker dalam rentang mulai berlaku/hari ini s.d sebelum closing atau harga baru	Shipper	docs/rules/bid-owner/07-cari-penawaran.md:161	Validasi	Tidak	harga aktif dengan jadwal	"rule a" (:164) tidak bernomor di dokumen
+SHP-07-068	Cari Penawaran	Data pemuatan & penerima barang ter-draft dari lelang (kecuali nama perusahaan); multidrop per drop off	Shipper	docs/rules/bid-owner/07-cari-penawaran.md:166	Tampilan	Tidak	lelang dengan data alamat	-
+SHP-07-069	Cari Penawaran	Field alamat muat/terima, kota asal & tujuan disable (termasuk multidrop)	Shipper	docs/rules/bid-owner/07-cari-penawaran.md:180	Validasi	Tidak	harga aktif dengan jadwal	-
+SHP-07-070	Cari Penawaran	Rute tampil pelabuhan asal (UN code) - pelabuhan tujuan (UN code)	Shipper	docs/rules/bid-owner/07-cari-penawaran.md:169	Tampilan	Tidak	-	-
+SHP-07-071	Cari Penawaran	Total harga default 0, dihitung jumlah dipesan x harga satuan	Shipper	docs/rules/bid-owner/07-cari-penawaran.md:170	Tampilan	Tidak	-	-
+SHP-07-072	Cari Penawaran	S&K dari setting S&K booking admin; wajib diceklist sebelum submit	Shipper	docs/rules/bid-owner/07-cari-penawaran.md:171	Validasi	Tidak	-	Alert bila S&K tidak diceklist tidak disebut
+SHP-07-073	Cari Penawaran	Nama & nomor sales opsional; nomor hanya angka, maks 1; draft nomor pertama dari lelang lama	Shipper	docs/rules/bid-owner/07-cari-penawaran.md:173	Validasi	Tidak	lelang lama dengan nomor sales	-
+SHP-07-074	Cari Penawaran	Nomor sales hanya tampil di detail order shipper & admin, tidak di bidder	Shipper	docs/rules/bid-owner/07-cari-penawaran.md:178	Akses/Otorisasi	Tidak	order dengan nomor sales	-
+SHP-07-075	Cari Penawaran	Submit Isi Data Pesanan: popup Konfirmasi Pesanan lalu ke Input Muatan (order dibuat)	Shipper	docs/rules/bid-owner/07-cari-penawaran.md:172	Aksi-Tulis	Ya	harga aktif dengan jadwal	-
+SHP-07-076	Cari Penawaran	Nomor consignee menerima WA Rencana Dooring saja	Shipper	docs/rules/bid-owner/07-cari-penawaran.md:179	Notifikasi-WA	Ya	order dengan nomor consignee sampai rencana dooring	Bertentangan dalam kalimat: "Notif whatsapp saat ini dimatikan"
+SHP-07-077	Cari Penawaran	Integrasi PNP data nama & nomor sales form booking	Shipper	docs/rules/bid-owner/07-cari-penawaran.md:181	Tampilan	Tidak	order via PNP	Integrasi backend, tidak teramati langsung di UI shipper
+SHP-07-078	Cari Penawaran	Input Muatan: alasan Lain-lain tampil "Lain-lain (alasan)" atau "Lain-lain" bila kosong	Shipper	docs/rules/bid-owner/07-cari-penawaran.md:185	Tampilan	Tidak	order baru	-
+SHP-07-079	Cari Penawaran	Input Muatan: download template excel sesuai jenis rute	Shipper	docs/rules/bid-owner/07-cari-penawaran.md:187	Export/Download	Tidak	order normal & multidrop	-
+SHP-07-080	Cari Penawaran	Upload packing list maks 10 file .pdf/.jpg/.png; format lain alert "Format File Tidak Sesuai"	Shipper	docs/rules/bid-owner/07-cari-penawaran.md:189	Upload/Import	Ya	order baru	-
+SHP-07-081	Cari Penawaran	Preview file packing list (foto/pdf) dalam popup	Shipper	docs/rules/bid-owner/07-cari-penawaran.md:190	Aksi-Baca	Tidak	packing list terupload	-
+SHP-07-082	Cari Penawaran	Import muatan excel; rute tidak sesuai alert "Format excel tidak sesuai"; data invalid tidak ditampilkan	Shipper	docs/rules/bid-owner/07-cari-penawaran.md:191	Upload/Import	Ya	order baru + file excel	-
+SHP-07-083	Cari Penawaran	Alamat excel tidak cocok: dropdown alamat kembali ke placeholder "Pilih Alamat Tujuan / Drop Off"	Shipper	docs/rules/bid-owner/07-cari-penawaran.md:193	Validasi	Tidak	file excel alamat salah	-
+SHP-07-084	Cari Penawaran	Dropdown alamat tujuan dari drop off isi data pesanan; multidrop default alamat 1	Shipper	docs/rules/bid-owner/07-cari-penawaran.md:194	Tampilan	Tidak	order multidrop	-
+SHP-07-085	Cari Penawaran	Kemasan dari master kemasan; total berat per kontainer	Shipper	docs/rules/bid-owner/07-cari-penawaran.md:195	Tampilan	Tidak	order baru	-
+SHP-07-086	Cari Penawaran	Checkbox "isi data seperti unit 1": tambah/hapus muatan tambahan unit lain	Shipper	docs/rules/bid-owner/07-cari-penawaran.md:198	Aksi-Baca	Tidak	order >1 unit	-
+SHP-07-087	Cari Penawaran	Sub user custom TCI tidak bisa akses Input Muatan	Shipper-Sub	docs/rules/bid-owner/07-cari-penawaran.md:201	Akses/Otorisasi	Tidak	sub user TCI	-
+SHP-07-088	Cari Penawaran	Input Perjanjian: dokumen & catatan opsional; tanggal default hari ini	Shipper	docs/rules/bid-owner/07-cari-penawaran.md:205	Validasi	Tidak	order PROSES PERJANJIAN	-
+SHP-07-089	Cari Penawaran	Input Perjanjian: isi detail perjanjian sesuai data shipper & bidder; tombol kapal connecting nx	Shipper	docs/rules/bid-owner/07-cari-penawaran.md:208	Tampilan	Tidak	order PROSES PERJANJIAN	-
+SHP-07-090	Cari Penawaran	Input Perjanjian: tombol Kembali ke halaman sebelumnya	Shipper	docs/rules/bid-owner/07-cari-penawaran.md:207	Aksi-Baca	Tidak	order PROSES PERJANJIAN	-
+SHP-07-091	Cari Penawaran	Sub user custom TCI tidak bisa akses Input Perjanjian	Shipper-Sub	docs/rules/bid-owner/07-cari-penawaran.md:210	Akses/Otorisasi	Tidak	sub user TCI	-
+SHP-08-001	Pengajuan Lelang	Daftar pengajuan lelang menampilkan semua lelang shipper termasuk yang batal	Shipper	docs/rules/bid-owner/08-pengajuan-lelang.md:32	Tampilan	Tidak	lelang aktif & batal	-
+SHP-08-002	Pengajuan Lelang	Tab Lelang Tersedia, Lelang Diproses, Telah Akhir Kirim, Lelang Batal, Semua Lelang	Shipper	docs/rules/bid-owner/08-pengajuan-lelang.md:4	Aksi-Baca	Tidak	lelang di tiap kondisi	Baris 31 menyebut tab "Lelang Tutup" yang tidak ada di daftar tab
+SHP-08-003	Pengajuan Lelang	Action menu per tab (Detail, Lihat Harga, Batalkan, Minta Update Harga, History Update Harga kondisional)	Shipper	docs/rules/bid-owner/08-pengajuan-lelang.md:10	Tampilan	Tidak	lelang di tiap tab	Batalkan Lelang tetap ada di tab Lelang Batal; nama "History Update Harga" vs "History Request Harga" (:183)
+SHP-08-004	Pengajuan Lelang	Detail Pengajuan Lelang dengan status BELUM BUKA / LELANG DIBUKA / LELANG DITUTUP / LELANG BATAL	Shipper	docs/rules/bid-owner/08-pengajuan-lelang.md:47	Aksi-Baca	Tidak	lelang di tiap status	-
+SHP-08-005	Pengajuan Lelang	Detail: jumlah penawaran = bidder input harga dari total diundang	Shipper	docs/rules/bid-owner/08-pengajuan-lelang.md:52	Tampilan	Tidak	lelang dengan penawaran	-
+SHP-08-006	Pengajuan Lelang	Detail: download dokumen lelang	Shipper	docs/rules/bid-owner/08-pengajuan-lelang.md:35	Export/Download	Tidak	lelang dengan dokumen	-
+SHP-08-007	Pengajuan Lelang	Detail: dokumen aanwijzing tampil nama dokumen; strip bila tidak aktif	Shipper	docs/rules/bid-owner/08-pengajuan-lelang.md:55	Tampilan	Tidak	lelang dengan & tanpa aanwijzing	-
+SHP-08-008	Pengajuan Lelang	Lihat Harga Penawaran mengarah ke Cari Penawaran dengan harga lelang tsb	Shipper	docs/rules/bid-owner/08-pengajuan-lelang.md:43	Aksi-Baca	Tidak	lelang tutup	-
+SHP-08-009	Pengajuan Lelang	Kolom Bidder (input harga/diundang), Tanggal Terkirim, Status Harga (Belum Input Penawaran/Telah Input Harga/Telah Input Penawaran)	Shipper	docs/rules/bid-owner/08-pengajuan-lelang.md:33	Tampilan	Tidak	lelang dengan bidder beragam status	-
+SHP-08-010	Pengajuan Lelang	Penanda #n di nomor lelang sesuai jumlah request update harga	Shipper	docs/rules/bid-owner/08-pengajuan-lelang.md:53	Tampilan	Tidak	lelang pernah request harga	-
+SHP-08-011	Pengajuan Lelang	Nomor lelang hijau bila lewat akhir kirim, ada harga, belum ada order	Shipper	docs/rules/bid-owner/08-pengajuan-lelang.md:54	Tampilan	Tidak	lelang dengan kondisi tsb	-
+SHP-08-012	Pengajuan Lelang	Lelang request update harga pindah ke tab Lelang Diproses, kembali setelah lewat tutup update harga	Shipper	docs/rules/bid-owner/08-pengajuan-lelang.md:31	Status-Transisi	Ya	lelang direquest harga	-
+SHP-08-013	Pengajuan Lelang	Buka form Buat Lelang Pengiriman	Shipper	docs/rules/bid-owner/08-pengajuan-lelang.md:58	Aksi-Baca	Tidak	-	Lokasi tombol/menu tidak disebut
+SHP-08-014	Pengajuan Lelang	Nomor lelang tidak boleh sama dengan lelang lain	Shipper	docs/rules/bid-owner/08-pengajuan-lelang.md:60	Validasi	Tidak	lelang eksisting	Teks alert tidak disebut
+SHP-08-015	Pengajuan Lelang	Panduan format nomor lelang tampil (hanya panduan, format lain diterima)	Shipper	docs/rules/bid-owner/08-pengajuan-lelang.md:61	Tampilan	Tidak	-	-
+SHP-08-016	Pengajuan Lelang	Nomor lelang hanya huruf dan / - # ( ) +; selain itu alert "Tidak Bisa Input Simbol"	Shipper	docs/rules/bid-owner/08-pengajuan-lelang.md:85	Validasi	Tidak	-	Angka tidak disebut padahal contoh format memuat tahun
+SHP-08-017	Pengajuan Lelang	Urutan tanggal buka/tutup lelang/rencana mulai/rencana akhir kirim (default hari ini)	Shipper	docs/rules/bid-owner/08-pengajuan-lelang.md:63	Validasi	Tidak	-	-
+SHP-08-018	Pengajuan Lelang	Pilih history data lelang mengisi seluruh data lelang	Shipper	docs/rules/bid-owner/08-pengajuan-lelang.md:68	Aksi-Baca	Tidak	lelang lama	-
+SHP-08-019	Pengajuan Lelang	History by range tanggal maks 90 hari; dropdown dinamis maks 200 + alert "Ada (n) data lelang tidak tampil..."; format Nomor/Rute/PIC	Shipper	docs/rules/bid-owner/08-pengajuan-lelang.md:69	Validasi	Tidak	>200 lelang dalam range (untuk alert)	Baris 69 menyebut "admin" di dokumen bid owner
+SHP-08-020	Pengajuan Lelang	Pilihan biaya termasuk, dokumen penagihan, pelabuhan aktif, jenis kontainer aktif dari master admin	Shipper	docs/rules/bid-owner/08-pengajuan-lelang.md:73	Tampilan	Tidak	master aktif & nonaktif	-
+SHP-08-021	Pengajuan Lelang	Field wajib lelang normal (pelabuhan, alamat lengkap, kota asal & tujuan)	Shipper	docs/rules/bid-owner/08-pengajuan-lelang.md:76	Validasi	Tidak	-	-
+SHP-08-022	Pengajuan Lelang	Field wajib lelang multidrop, default 2 alamat & kota tujuan	Shipper	docs/rules/bid-owner/08-pengajuan-lelang.md:78	Validasi	Tidak	-	-
+SHP-08-023	Pengajuan Lelang	Tanggal permintaan muat wajib mengisi jam	Shipper	docs/rules/bid-owner/08-pengajuan-lelang.md:77	Validasi	Tidak	-	Duplikat baris 79
+SHP-08-024	Pengajuan Lelang	Telp PIC tujuan hanya angka, maks 1 nomor	Shipper	docs/rules/bid-owner/08-pengajuan-lelang.md:80	Validasi	Tidak	-	-
+SHP-08-025	Pengajuan Lelang	Simpan tanpa jenis kontainer memunculkan alert "Pilih Jenis Kontainer"	Shipper	docs/rules/bid-owner/08-pengajuan-lelang.md:82	Validasi	Tidak	-	-
+SHP-08-026	Pengajuan Lelang	Biaya laut (freight kapal) auto tercentang dan tidak bisa di-uncheck	Shipper	docs/rules/bid-owner/08-pengajuan-lelang.md:84	Validasi	Tidak	-	-
+SHP-08-027	Pengajuan Lelang	History dari data lama PHBL 1.2: field yang belum ada tampil kosong	Shipper	docs/rules/bid-owner/08-pengajuan-lelang.md:83	Tampilan	Tidak	lelang PHBL 1.2	-
+SHP-08-028	Pengajuan Lelang	Data lelang masuk spreadsheet penarikan data lelang (per jenis kontainer, tanpa lelang batal)	Shipper	docs/rules/bid-owner/08-pengajuan-lelang.md:86	Laporan/Grafik	Tidak	lelang multi-kontainer	Spreadsheet internal, cara akses tidak disebut
+SHP-08-029	Pengajuan Lelang	Lanjut ke Pilih Peserta Lelang menampilkan ringkasan data lelang yang diisi	Shipper	docs/rules/bid-owner/08-pengajuan-lelang.md:95	Aksi-Baca	Tidak	form lelang valid	-
+SHP-08-030	Pengajuan Lelang	Kembali (tombol & breadcrumb) ke Buat Lelang dengan data tetap terisi	Shipper	docs/rules/bid-owner/08-pengajuan-lelang.md:97	Aksi-Baca	Tidak	form lelang valid	-
+SHP-08-031	Pengajuan Lelang	Urutan bidder default rating tertinggi & jumlah menang terbanyak	Shipper	docs/rules/bid-owner/08-pengajuan-lelang.md:98	Tampilan	Tidak	>=2 bidder aktif	-
+SHP-08-032	Pengajuan Lelang	Checkbox Pilih Semua mencentang semua bidder; uncheck satu bidder melepas Pilih Semua	Shipper	docs/rules/bid-owner/08-pengajuan-lelang.md:99	Aksi-Baca	Tidak	>=2 bidder aktif	-
+SHP-08-033	Pengajuan Lelang	Rekomendasi bidder dari iklan berbayar aktif; klik mencentang bidder; hilang bila tidak ada	Shipper	docs/rules/bid-owner/08-pengajuan-lelang.md:102	Aksi-Baca	Tidak	iklan berbayar aktif	-
+SHP-08-034	Pengajuan Lelang	Bidder dikunci untuk shipper lain atau di-hidden untuk shipper ini tidak tampil	Shipper	docs/rules/bid-owner/08-pengajuan-lelang.md:105	Akses/Otorisasi	Tidak	bidder khusus/hidden	-
+SHP-08-035	Pengajuan Lelang	Card bidder aktif: nama alias, lokasi, rating, jumlah menang	Shipper	docs/rules/bid-owner/08-pengajuan-lelang.md:107	Tampilan	Tidak	bidder aktif	-
+SHP-08-036	Pengajuan Lelang	Submit lelang dengan peserta terpilih	Shipper	docs/rules/bid-owner/08-pengajuan-lelang.md:108	Aksi-Tulis	Ya	form lelang valid	Hasil uji push notif lelang di :113 (observasi)
+SHP-08-037	Pengajuan Lelang	Email undangan lelang ke bidder yang diundang	Shipper	docs/rules/bid-owner/08-pengajuan-lelang.md:108	Notifikasi-Email	Ya	submit lelang	-
+SHP-08-038	Pengajuan Lelang	WA undangan lelang ke bidder yang diundang	Shipper	docs/rules/bid-owner/08-pengajuan-lelang.md:108	Notifikasi-WA	Ya	submit lelang	-
+SHP-08-039	Pengajuan Lelang	Pilih Peserta: dokumen aanwijzing tampil (popup) atau strip	Shipper	docs/rules/bid-owner/08-pengajuan-lelang.md:109	Tampilan	Tidak	lelang dengan aanwijzing	-
+SHP-08-040	Pengajuan Lelang	Batalkan lelang yang belum ada order	Shipper	docs/rules/bid-owner/08-pengajuan-lelang.md:134	Aksi-Tulis	Ya	lelang tanpa order	Alert untuk lelang yang sudah ada order tidak disebut
+SHP-08-041	Pengajuan Lelang	Lelang sudah batal: alert "Tidak bisa batal! Lelang sudah dibatalkan"	Shipper	docs/rules/bid-owner/08-pengajuan-lelang.md:135	Validasi	Tidak	lelang batal	-
+SHP-08-042	Pengajuan Lelang	Lelang proses update harga: alert "Tidak bisa batal! Lelang masih proses update harga"	Shipper	docs/rules/bid-owner/08-pengajuan-lelang.md:136	Validasi	Tidak	lelang sedang request harga	-
+SHP-08-043	Pengajuan Lelang	Alasan batal wajib dipilih; Lainnya + Catatan Lelang Dibatalkan	Shipper	docs/rules/bid-owner/08-pengajuan-lelang.md:137	Validasi	Tidak	lelang tanpa order	Teks alert tidak disebut
+SHP-08-044	Pengajuan Lelang	Batal sebelum tutup lelang: WA lelang dibatalkan ke semua bidder diundang	Shipper	docs/rules/bid-owner/08-pengajuan-lelang.md:138	Notifikasi-WA	Ya	lelang dibuka tanpa order	-
+SHP-08-045	Pengajuan Lelang	Batal setelah tutup lelang: email lelang dibatalkan ke bidder yang input harga	Shipper	docs/rules/bid-owner/08-pengajuan-lelang.md:139	Notifikasi-Email	Ya	lelang tutup dengan penawaran tanpa order	-
+SHP-08-046	Pengajuan Lelang	Lelang batal tetap tersedia di history data lelang saat buat lelang	Shipper	docs/rules/bid-owner/08-pengajuan-lelang.md:140	Status-Transisi	Tidak	lelang batal	-
+SHP-08-047	Pengajuan Lelang	Detail lelang batal menampilkan card Lelang Batal	Shipper	docs/rules/bid-owner/08-pengajuan-lelang.md:141	Tampilan	Tidak	lelang batal	-
+SHP-08-048	Pengajuan Lelang	Halaman Batalkan Lelang: dokumen aanwijzing popup atau strip	Shipper	docs/rules/bid-owner/08-pengajuan-lelang.md:142	Tampilan	Tidak	lelang dengan aanwijzing	-
+SHP-08-049	Pengajuan Lelang	Minta Update Harga hanya untuk lelang ditutup dan tidak batal	Shipper	docs/rules/bid-owner/08-pengajuan-lelang.md:148	Validasi	Tidak	lelang dibuka/batal	Respons UI untuk lelang batal tidak disebut
+SHP-08-050	Pengajuan Lelang	Ajukan request harga (lelang ber-harga = Request Update Harga, tanpa harga = Request Input Harga di bidder)	Shipper	docs/rules/bid-owner/08-pengajuan-lelang.md:149	Aksi-Tulis	Ya	lelang tutup dengan & tanpa harga	-
+SHP-08-051	Pengajuan Lelang	Lewat rencana akhir kirim: alert "Tidak bisa request harga! Lelang sudah melewati tgl. rencana akhir kirim"	Shipper	docs/rules/bid-owner/08-pengajuan-lelang.md:153	Validasi	Tidak	lelang lewat akhir kirim	-
+SHP-08-052	Pengajuan Lelang	Request ulang hanya setelah tutup request sebelumnya; tetap bisa bila semua peserta No Respon	Shipper	docs/rules/bid-owner/08-pengajuan-lelang.md:154	Validasi	Tidak	lelang pernah request harga	Respons UI saat request masih berjalan tidak disebut
+SHP-08-053	Pengajuan Lelang	Tanggal Tutup Request Harga maksimal tanggal rencana akhir kirim	Shipper	docs/rules/bid-owner/08-pengajuan-lelang.md:155	Validasi	Tidak	lelang tutup	-
+SHP-08-054	Pengajuan Lelang	Daftar peserta request harga: semua peserta + status harga; default tercentang Telah Input Penawaran/Harga	Shipper	docs/rules/bid-owner/08-pengajuan-lelang.md:156	Tampilan	Tidak	lelang dengan bidder beragam status	-
+SHP-08-055	Pengajuan Lelang	Label "(No Respon)" untuk bidder yang tidak merespon request sebelumnya	Shipper	docs/rules/bid-owner/08-pengajuan-lelang.md:162	Tampilan	Tidak	request sebelumnya tanpa respon	-
+SHP-08-056	Pengajuan Lelang	Email request update/input harga ke bidder yang diundang	Shipper	docs/rules/bid-owner/08-pengajuan-lelang.md:164	Notifikasi-Email	Ya	request harga diajukan	-
+SHP-08-057	Pengajuan Lelang	WA request update/input harga ke bidder yang diundang	Shipper	docs/rules/bid-owner/08-pengajuan-lelang.md:164	Notifikasi-WA	Ya	request harga diajukan	-
+SHP-08-058	Pengajuan Lelang	Harga lama expired saat tanggal tutup request berakhir (bukan langsung)	Shipper	docs/rules/bid-owner/08-pengajuan-lelang.md:165	Status-Transisi	Ya	request harga berjalan	-
+SHP-08-059	Pengajuan Lelang	Close Request Harga dengan field tanggal penutupan	Shipper	docs/rules/bid-owner/08-pengajuan-lelang.md:171	Aksi-Tulis	Ya	request harga berjalan	Lokasi tombol tidak disebut
+SHP-08-060	Pengajuan Lelang	Card daftar riwayat: Close Request & Tanggal Close Request	Shipper	docs/rules/bid-owner/08-pengajuan-lelang.md:174	Tampilan	Tidak	request harga di-close	-
+SHP-08-061	Pengajuan Lelang	Halaman Request Harga: dokumen aanwijzing atau strip	Shipper	docs/rules/bid-owner/08-pengajuan-lelang.md:178	Tampilan	Tidak	lelang dengan aanwijzing	-
+SHP-08-062	Pengajuan Lelang	Action menu History Request Harga muncul bila lelang pernah request harga	Shipper	docs/rules/bid-owner/08-pengajuan-lelang.md:183	Tampilan	Tidak	lelang pernah request harga	Nama menu beda dengan "History Update Harga" (:15, :46)
+SHP-08-063	Pengajuan Lelang	History Request Harga: tanggal request, tanggal tutup, peserta diundang; terbaru di atas	Shipper	docs/rules/bid-owner/08-pengajuan-lelang.md:184	Tampilan	Tidak	lelang >=2 kali request harga	-
+SHP-08-064	Pengajuan Lelang	History mencatat close request harga	Shipper	docs/rules/bid-owner/08-pengajuan-lelang.md:186	Tampilan	Tidak	request harga di-close	Baris 186 menyebut "dilakukan admin"
+SHP-09-001	Pengajuan Nego	Halaman daftar pengajuan nego tampil	Shipper	docs/rules/bid-owner/09-pengajuan-nego.md:3	Tampilan	Tidak	nego pernah diajukan	Kolom daftar tidak dirinci
+SHP-09-002	Pengajuan Nego	Status awal nego Waiting sebelum direspon bidder	Shipper	docs/rules/bid-owner/09-pengajuan-nego.md:3	Tampilan	Tidak	nego belum direspon	-
+SHP-09-003	Pengajuan Nego	Bidder terima: status Diterima, harga baru = nominal nego	Shipper	docs/rules/bid-owner/09-pengajuan-nego.md:5	Status-Transisi	Ya	nego Waiting	-
+SHP-09-004	Pengajuan Nego	Bidder tolak: status Ditolak, kolom Harga Baru strip	Shipper	docs/rules/bid-owner/09-pengajuan-nego.md:6	Status-Transisi	Ya	nego Waiting	-
+SHP-09-005	Pengajuan Nego	Bidder counter: status Negosiasi, harga baru = harga counter	Shipper	docs/rules/bid-owner/09-pengajuan-nego.md:7	Status-Transisi	Ya	nego Waiting	Istilah "Dicounter" (aksi) vs "Negosiasi" (status)
+SHP-09-006	Pengajuan Nego	Ajukan Nego Kembali dari detail (status Ditolak/Negosiasi) membuat entri baru Waiting & jumlah nego bertambah	Shipper	docs/rules/bid-owner/09-pengajuan-nego.md:8	Aksi-Tulis	Ya	nego Ditolak/Negosiasi	-
+SHP-09-007	Pengajuan Nego	Nominal nego kembali harus di antara nego awal dan harga asli	Shipper	docs/rules/bid-owner/09-pengajuan-nego.md:12	Validasi	Tidak	nego Ditolak/Negosiasi	Teks alert tidak disebut
+SHP-09-008	Pengajuan Nego	Nego kembali ditolak bila lewat selesai kontrak / ada update harga (alert sama dengan Daftar Nego)	Shipper	docs/rules/bid-owner/09-pengajuan-nego.md:11	Validasi	Tidak	nego dengan harga tidak berlaku	"tgl selesai kontrak" tidak didefinisikan
+SHP-09-009	Pengajuan Nego	Email pengajuan nego ke bidder saat nego kembali	Shipper	docs/rules/bid-owner/09-pengajuan-nego.md:14	Notifikasi-Email	Ya	ajukan nego kembali	-
+SHP-09-010	Pengajuan Nego	WA pengajuan nego ke bidder saat nego kembali	Shipper	docs/rules/bid-owner/09-pengajuan-nego.md:14	Notifikasi-WA	Ya	ajukan nego kembali	-
+SHP-09-011	Pengajuan Nego	Filter Nama Bidder free text	Shipper	docs/rules/bid-owner/09-pengajuan-nego.md:16	Aksi-Baca	Tidak	nego dengan >=2 bidder	Duplikat baris 19
+SHP-09-012	Pengajuan Nego	Detail pengajuan nego menampilkan PPN & PPh atau strip	Shipper	docs/rules/bid-owner/09-pengajuan-nego.md:17	Tampilan	Tidak	nego dengan & tanpa PPN	-
+SHP-09-013	Pengajuan Nego	Bid owner berakses Satoria: menu Pengajuan Nego disable	Shipper	docs/rules/bid-owner/09-pengajuan-nego.md:15	Akses/Otorisasi	Tidak	akun shipper Satoria	-
+SHP-09-014	Pengajuan Nego	Sub user custom IMP & TCI tidak bisa akses Pengajuan Nego	Shipper-Sub	docs/rules/bid-owner/09-pengajuan-nego.md:18	Akses/Otorisasi	Tidak	sub user IMP/TCI	-
+SHP-10-001	Daftar Order	Order muncul di list setelah konfirmasi pesanan (ORDER BARU); tanggal buat = waktu konfirmasi	Shipper	docs/rules/bid-owner/10-daftar-order.md:3	Tampilan	Tidak	order baru	Bagian Nomor Referensi (:113) adalah temuan kalibrasi, bukan rule sumber
+SHP-10-002	Daftar Order	Action menu ORDER BARU: Edit Data Order, Batalkan Order, Ganti Jadwal	Shipper	docs/rules/bid-owner/10-daftar-order.md:5	Tampilan	Tidak	order ORDER BARU	-
+SHP-10-003	Daftar Order	Edit Data Order (edit muatan; tanggal permintaan muat wajib jam)	Shipper	docs/rules/bid-owner/10-daftar-order.md:6	Aksi-Tulis	Ya	order ORDER BARU	-
+SHP-10-004	Daftar Order	Ganti Jadwal pada ORDER BARU	Shipper	docs/rules/bid-owner/10-daftar-order.md:9	Aksi-Tulis	Ya	order ORDER BARU	Perilaku Ganti Jadwal tidak dijelaskan sama sekali
+SHP-10-005	Daftar Order	Input muatan: status PROSES PERJANJIAN; menu Input Perjanjian, Edit Muatan, Batalkan Order	Shipper	docs/rules/bid-owner/10-daftar-order.md:11	Status-Transisi	Ya	order ORDER BARU	-
+SHP-10-006	Daftar Order	Input perjanjian: status PROSES VALIDASI; menu Edit Muatan	Shipper	docs/rules/bid-owner/10-daftar-order.md:15	Status-Transisi	Ya	order PROSES PERJANJIAN	-
+SHP-10-007	Daftar Order	Admin validasi terima: status KONFIRMASI UNIT; menu Download Dokumen, Biaya Tambahan	Shipper	docs/rules/bid-owner/10-daftar-order.md:17	Status-Transisi	Ya	order PROSES VALIDASI	Aksi oleh admin
+SHP-10-008	Daftar Order	Admin validasi tolak: status ORDER DITOLAK	Shipper	docs/rules/bid-owner/10-daftar-order.md:20	Status-Transisi	Ya	order PROSES VALIDASI	Aksi oleh admin
+SHP-10-009	Daftar Order	Bidder konfirmasi unit: status PROSES PENUGASAN; menu Lihat Data Unit, Download Dokumen, Biaya Tambahan	Shipper	docs/rules/bid-owner/10-daftar-order.md:21	Status-Transisi	Ya	order KONFIRMASI UNIT	Aksi oleh bidder
+SHP-10-010	Daftar Order	Download Dokumen: popup unduh dokumen yang diupload bidder	Shipper	docs/rules/bid-owner/10-daftar-order.md:18	Export/Download	Tidak	order KONFIRMASI UNIT ke atas dengan dokumen	-
+SHP-10-011	Daftar Order	Biaya Tambahan: input, edit, hapus biaya tambahan	Shipper	docs/rules/bid-owner/10-daftar-order.md:19	Aksi-Tulis	Ya	order KONFIRMASI UNIT ke atas	-
+SHP-10-012	Daftar Order	Biaya tambahan: harga per item tidak boleh 0	Shipper	docs/rules/bid-owner/10-daftar-order.md:19	Validasi	Tidak	order KONFIRMASI UNIT ke atas	Teks alert tidak disebut
+SHP-10-013	Daftar Order	Biaya tambahan tampil di list order di bawah jumlah & jenis kontainer	Shipper	docs/rules/bid-owner/10-daftar-order.md:50	Tampilan	Tidak	order dengan biaya tambahan	-
+SHP-10-014	Daftar Order	Lihat Data Unit membuka halaman kelengkapan unit	Shipper	docs/rules/bid-owner/10-daftar-order.md:22	Aksi-Baca	Tidak	order PROSES PENUGASAN ke atas	-
+SHP-10-015	Daftar Order	Status tracking: AMBIL KONTAINER, STUFFING (semua unit), KAPAL BERLAYAR, KAPAL SANDAR, RENCANA DOORING, DOORING (semua unit), SJ DITERIMA AGEN, DOKUMEN DIKIRIM	Shipper	docs/rules/bid-owner/10-daftar-order.md:27	Status-Transisi	Ya	order dengan tracking oleh bidder	-
+SHP-10-016	Daftar Order	Multi kontainer: status global Kapal Sandar bila masih ada kontainer Kapal Sandar	Shipper	docs/rules/bid-owner/10-daftar-order.md:35	Status-Transisi	Tidak	order multi-kontainer beda tahap	-
+SHP-10-017	Daftar Order	Action menu status tracking: Lihat Data Unit, Download Dokumen, Biaya Tambahan	Shipper	docs/rules/bid-owner/10-daftar-order.md:36	Tampilan	Tidak	order tahap tracking	-
+SHP-10-018	Daftar Order	Penugasan selesai dikunci: ORDER SELESAI dengan menu Beri Nilai Pengerjaan Bidder	Shipper	docs/rules/bid-owner/10-daftar-order.md:40	Status-Transisi	Ya	order semua tracking selesai	-
+SHP-10-019	Daftar Order	Beri Nilai Pengerjaan Bidder (rating) maks H+7 setelah selesai; setelahnya menu hilang	Shipper	docs/rules/bid-owner/10-daftar-order.md:51	Aksi-Tulis	Ya	order ORDER SELESAI <=7 hari	-
+SHP-10-020	Daftar Order	Tombol "kapal connecting nx" pada order jadwal connecting	Shipper	docs/rules/bid-owner/10-daftar-order.md:10	Aksi-Baca	Tidak	order connecting	-
+SHP-10-021	Daftar Order	Dokumen aanwijzing tampil; tidak muncul bila tidak aktif	Shipper	docs/rules/bid-owner/10-daftar-order.md:25	Tampilan	Tidak	order dengan aanwijzing	Beda dengan Detail Order (:92) yang menampilkan strip
+SHP-10-022	Daftar Order	Filter status order	Shipper	docs/rules/bid-owner/10-daftar-order.md:45	Aksi-Baca	Tidak	order beragam status	-
+SHP-10-023	Daftar Order	Filter Nomor Kontainer: auto kapital, alfanumerik maks 11, tanpa spasi/simbol	Shipper	docs/rules/bid-owner/10-daftar-order.md:46	Validasi	Tidak	order dengan nomor kontainer	-
+SHP-10-024	Daftar Order	Filter Kapal Connecting (checkbox)	Shipper	docs/rules/bid-owner/10-daftar-order.md:47	Aksi-Baca	Tidak	order connecting & direct	-
+SHP-10-025	Daftar Order	Filter Nama Bidder free text	Shipper	docs/rules/bid-owner/10-daftar-order.md:48	Aksi-Baca	Tidak	order >=2 bidder	-
+SHP-10-026	Daftar Order	Textlink Info Tracking menampilkan nomor kontainer & status tracking tiap kontainer	Shipper	docs/rules/bid-owner/10-daftar-order.md:49	Aksi-Baca	Tidak	order sudah konfirmasi unit	-
+SHP-10-027	Daftar Order	Order Satoria via PNP: menu Lihat QR Code & download QR	Shipper	docs/rules/bid-owner/10-daftar-order.md:52	Export/Download	Tidak	order PNP tervalidasi	-
+SHP-10-028	Daftar Order	Edit tanggal permintaan muat order PNP oleh PNP/Admin mengirim WA ke admin PHBID	Shipper	docs/rules/bid-owner/10-daftar-order.md:53	Notifikasi-WA	Ya	order PNP	Aktor PNP/admin, bukan shipper
+SHP-10-029	Daftar Order	Label "By PNP" di info order	Shipper	docs/rules/bid-owner/10-daftar-order.md:54	Tampilan	Tidak	order PNP	-
+SHP-10-030	Daftar Order	Data order masuk spreadsheet saving cost (tanpa order batal/ditolak; rumus saving cost)	Shipper	docs/rules/bid-owner/10-daftar-order.md:55	Laporan/Grafik	Tidak	order berjalan	Spreadsheet internal, cara akses tidak disebut
+SHP-10-031	Daftar Order	Filter dipertahankan setelah Kembali / aksi Edit Muatan, Batalkan Order, Penilaian Bidder	Shipper	docs/rules/bid-owner/10-daftar-order.md:61	Aksi-Baca	Tidak	daftar order terfilter	-
+SHP-10-032	Daftar Order	Reset filter	Shipper	docs/rules/bid-owner/10-daftar-order.md:63	Aksi-Baca	Tidak	daftar order terfilter	-
+SHP-10-033	Daftar Order	Detail Order: bagian yang terbuka mengikuti status (PEMESANAN/PERJANJIAN/STATUS PENGIRIMAN/PENILAIAN)	Shipper	docs/rules/bid-owner/10-daftar-order.md:67	Tampilan	Tidak	order di tiap status	-
+SHP-10-034	Daftar Order	Detail Order: download packing list & dokumen penanganan khusus	Shipper	docs/rules/bid-owner/10-daftar-order.md:70	Export/Download	Tidak	order dengan packing list	-
+SHP-10-035	Daftar Order	Detail Order PROSES VALIDASI: tanggal validasi "Menunggu Validasi PH BID"	Shipper	docs/rules/bid-owner/10-daftar-order.md:74	Tampilan	Tidak	order PROSES VALIDASI	-
+SHP-10-036	Daftar Order	Detail Order KONFIRMASI UNIT: export PDF perjanjian pengiriman; tanggal validasi admin	Shipper	docs/rules/bid-owner/10-daftar-order.md:76	Export/Download	Tidak	order KONFIRMASI UNIT	-
+SHP-10-037	Daftar Order	Detail Order PROSES PENUGASAN: card tracking "Tidak ada data tersedia"	Shipper	docs/rules/bid-owner/10-daftar-order.md:79	Tampilan	Tidak	order PROSES PENUGASAN	-
+SHP-10-038	Daftar Order	Detail Order tahap tracking: textlink data detail menampilkan rincian & foto tracking	Shipper	docs/rules/bid-owner/10-daftar-order.md:81	Aksi-Baca	Tidak	order tahap tracking	-
+SHP-10-039	Daftar Order	Detail Order ORDER SELESAI: Belum ada penilaian / Tidak ada penilaian (>7 hari) / bintang & ulasan	Shipper	docs/rules/bid-owner/10-daftar-order.md:84	Tampilan	Tidak	order selesai dinilai & belum	-
+SHP-10-040	Daftar Order	Detail Order: popup info harga sebelum PPn + PPN/PPh; strip untuk data lama	Shipper	docs/rules/bid-owner/10-daftar-order.md:88	Tampilan	Tidak	order lama & baru	-
+SHP-10-041	Daftar Order	Detail Order: dokumen aanwijzing popup atau strip	Shipper	docs/rules/bid-owner/10-daftar-order.md:91	Tampilan	Tidak	order dengan aanwijzing	-
+SHP-10-042	Daftar Order	Batalkan Order (ORDER BARU s.d PROSES PERJANJIAN) mengubah status DIBATALKAN	Shipper	docs/rules/bid-owner/10-daftar-order.md:98	Aksi-Tulis	Ya	order ORDER BARU/PROSES PERJANJIAN	-
+SHP-10-043	Daftar Order	Batalkan Order pada PROSES VALIDASI s.d SELESAI: alert "Tidak bisa batal! Order sudah melewati tahap perjanjian"	Shipper	docs/rules/bid-owner/10-daftar-order.md:99	Validasi	Tidak	order PROSES VALIDASI ke atas	:97 menu tampil s.d ORDER SELESAI, bertentangan dengan daftar menu per status (:5-:44)
+SHP-10-044	Daftar Order	Alasan Batal Order wajib: alert "Masukkan Alasan Batal Order"	Shipper	docs/rules/bid-owner/10-daftar-order.md:101	Validasi	Tidak	order ORDER BARU	-
+SHP-10-045	Daftar Order	Action menu order dibatalkan disabled	Shipper	docs/rules/bid-owner/10-daftar-order.md:104	Status-Transisi	Tidak	order DIBATALKAN	-
+SHP-10-046	Daftar Order	Edit Data Muatan pada PROSES PERJANJIAN s.d PROSES VALIDASI	Shipper	docs/rules/bid-owner/10-daftar-order.md:109	Aksi-Tulis	Ya	order PROSES PERJANJIAN/VALIDASI	Rule menyebut "admin" di dokumen bid owner (:110-:111)
+SHP-10-047	Daftar Order	Edit Data Muatan pada KONFIRMASI UNIT s.d SELESAI: alert "Tidak bisa edit! Order sudah melewati tahap perjanjian"	Shipper	docs/rules/bid-owner/10-daftar-order.md:110	Validasi	Tidak	order KONFIRMASI UNIT ke atas	-
+SHP-11-001	Cek Jadwal	Halaman Cek Jadwal pelayaran Meratus (integrasi API)	Shipper	docs/rules/bid-owner/11-cek-jadwal.md:3	Tampilan	Tidak	-	-
+SHP-11-002	Cek Jadwal	Pelabuhan asal & tujuan wajib dipilih untuk menampilkan data	Shipper	docs/rules/bid-owner/11-cek-jadwal.md:5	Validasi	Tidak	-	Respons bila kosong tidak disebut
+SHP-11-003	Cek Jadwal	Sortir default tanggal berangkat terdekat (ETD); opsi tanggal tiba terdekat (ETA)	Shipper	docs/rules/bid-owner/11-cek-jadwal.md:6	Aksi-Baca	Tidak	rute dengan jadwal Meratus	-
+SHP-11-004	Cek Jadwal	Tanggal pengiriman default hari ini, bisa dipilih sebelum/sesudah	Shipper	docs/rules/bid-owner/11-cek-jadwal.md:9	Aksi-Baca	Tidak	-	-
+SHP-11-005	Cek Jadwal	Liner Spil, Tanto, Temas selalu tampil (ditemukan atau tidak)	Shipper	docs/rules/bid-owner/11-cek-jadwal.md:10	Tampilan	Tidak	-	"hard code" bertentangan dengan "diambil dari master"
+SHP-11-006	Cek Jadwal	Kolom hasil: pelayaran, kapal, voyage, closing time, pelabuhan asal, ETD, pelabuhan tujuan, ETA; status jadwal strip	Shipper	docs/rules/bid-owner/11-cek-jadwal.md:12	Tampilan	Tidak	rute dengan jadwal Meratus	-
+SHP-11-007	Cek Jadwal	UN code tidak cocok/belum disetting atau jadwal kosong: keterangan "Mohon maaf, jadwal yang anda cari belum tersedia..." + kontak CS	Shipper	docs/rules/bid-owner/11-cek-jadwal.md:14	Tampilan	Tidak	rute tanpa UN code Meratus	Setting UN Code ada di halaman admin tersembunyi (:16), di luar peran shipper
+SHP-12-001	Laporan	Laporan Daftar History Lelang: cari berdasarkan tanggal buat lelang	Shipper	docs/rules/bid-owner/12-laporan.md:6	Aksi-Baca	Tidak	lelang dalam rentang	-
+SHP-12-002	Laporan	History Lelang: rentang pencarian 90 hari dari tanggal awal	Shipper	docs/rules/bid-owner/12-laporan.md:5	Validasi	Tidak	-	Perilaku saat >90 hari tidak disebut
+SHP-12-003	Laporan	History Lelang: lelang batal tidak muncul	Shipper	docs/rules/bid-owner/12-laporan.md:7	Tampilan	Tidak	lelang batal dalam rentang	-
+SHP-12-004	Laporan	History Lelang: label "Multidrop" untuk rute multidrop	Shipper	docs/rules/bid-owner/12-laporan.md:8	Tampilan	Tidak	lelang multidrop	-
+SHP-12-005	Laporan	History Lelang: export excel	Shipper	docs/rules/bid-owner/12-laporan.md:9	Export/Download	Tidak	lelang dalam rentang	-
+SHP-12-006	Laporan	Sub user custom IMP & TCI tidak bisa akses Laporan History Lelang	Shipper-Sub	docs/rules/bid-owner/12-laporan.md:10	Akses/Otorisasi	Tidak	sub user IMP/TCI	-
+SHP-12-007	Laporan	Laporan Logistik: cari tanggal permintaan muat, rentang 31 hari	Shipper	docs/rules/bid-owner/12-laporan.md:14	Validasi	Tidak	-	-
+SHP-12-008	Laporan	Logistik: ringkasan total lelang (unik), total order, total unit	Shipper	docs/rules/bid-owner/12-laporan.md:15	Laporan/Grafik	Tidak	order tervalidasi dalam rentang	-
+SHP-12-009	Laporan	Logistik: hanya order yang sudah divalidasi admin	Shipper	docs/rules/bid-owner/12-laporan.md:18	Tampilan	Tidak	order tervalidasi & belum	-
+SHP-12-010	Laporan	Logistik: tanggal order, harga = satuan x unit (tidak berubah walau dinego), urutan terbaru di atas	Shipper	docs/rules/bid-owner/12-laporan.md:20	Tampilan	Tidak	order tervalidasi dalam rentang	-
+SHP-12-011	Laporan	Detail Laporan Logistik: tahapan tracking (strip bila belum), nomor kontainer & seal	Shipper	docs/rules/bid-owner/12-laporan.md:24	Aksi-Baca	Tidak	order dengan unit	-
+SHP-12-012	Laporan	Detail Logistik multidrop: textlink "Multidrop" alamat drop & tanggal per alamat; alamat dobel dihitung 1	Shipper	docs/rules/bid-owner/12-laporan.md:27	Aksi-Baca	Tidak	order multidrop ter-tracking	Baris 37 menyebut tanggal per unit, bertentangan dengan per alamat (:27)
+SHP-12-013	Laporan	Detail Logistik: nominal biaya tambahan bila ada	Shipper	docs/rules/bid-owner/12-laporan.md:30	Tampilan	Tidak	order dengan biaya tambahan	-
+SHP-12-014	Laporan	Logistik: export excel (tanggal export, total unit, grand total, data sama dengan web)	Shipper	docs/rules/bid-owner/12-laporan.md:31	Export/Download	Tidak	order tervalidasi dalam rentang	-
+SHP-12-015	Laporan	Sub user custom TCI tidak bisa akses Laporan Logistik	Shipper-Sub	docs/rules/bid-owner/12-laporan.md:38	Akses/Otorisasi	Tidak	sub user TCI	-
+SHP-13-001	Preference Notif	Halaman Preference Notif akun utama dengan section notifikasi email & sistem	Shipper	docs/rules/bid-owner/13-preference-notif.md:3	Tampilan	Tidak	akun utama shipper	-
+SHP-13-002	Preference Notif	Sub user tidak dapat melakukan setting preference notifikasi	Shipper-Sub	docs/rules/bid-owner/13-preference-notif.md:4	Akses/Otorisasi	Tidak	sub user shipper	-
+SHP-13-003	Preference Notif	Daftar 13 notifikasi email yang dapat disetting	Shipper	docs/rules/bid-owner/13-preference-notif.md:5	Tampilan	Tidak	akun utama shipper	-
+SHP-13-004	Preference Notif	Daftar 17 push notifikasi (Notifikasi Sistem) yang dapat disetting	Shipper	docs/rules/bid-owner/13-preference-notif.md:21	Tampilan	Tidak	akun utama shipper	Tanpa SJ Diterima Agen padahal ada di 05-push-notif.md:22
+SHP-13-005	Preference Notif	Default preference email & sistem Aktif	Shipper	docs/rules/bid-owner/13-preference-notif.md:40	Tampilan	Tidak	akun utama tanpa ubahan preference	-
+SHP-13-006	Preference Notif	Checklist mengaktifkan / unchecklist menonaktifkan preference notif	Shipper	docs/rules/bid-owner/13-preference-notif.md:39	Setting	Ya	akun utama shipper	Ada/tidaknya tombol simpan tidak disebut
+SHP-13-007	Preference Notif	Notif nonaktif menampilkan label "Tidak Aktif" di sisi kanan	Shipper	docs/rules/bid-owner/13-preference-notif.md:42	Tampilan	Tidak	preference dinonaktifkan	-
+SHP-13-008	Preference Notif	Efek preference email: hanya menerima email yang aktif	Shipper	docs/rules/bid-owner/13-preference-notif.md:41	Notifikasi-Email	Ya	preference email diubah + pemicu notif	-
+SHP-13-009	Preference Notif	Efek preference push: hanya menerima push yang aktif	Shipper	docs/rules/bid-owner/13-preference-notif.md:41	Notifikasi-Internal	Ya	preference push diubah + pemicu notif	-
+SHP-13-010	Preference Notif	WA ke bid owner nonaktif kecuali Lupa Kata Sandi	Shipper	docs/rules/bid-owner/13-preference-notif.md:19	Notifikasi-WA	Ya	pemicu notif selain lupa sandi	-
+SHP-13-011	Preference Notif	Email tracking (Ambil Kontainer s.d Dokumen Dikirim) aktif kembali untuk akun utama	Shipper	docs/rules/bid-owner/13-preference-notif.md:43	Notifikasi-Email	Ya	order dalam proses tracking	-
+SHP-13-012	Preference Notif	Email menampilkan nomor referensi (strip bila kosong) pada 12 jenis notif perjanjian/unit/jadwal/tracking	Shipper	docs/rules/bid-owner/13-preference-notif.md:44	Notifikasi-Email	Ya	order dengan & tanpa nomor referensi	Daftar memuat SJ Diterima Agen & "Divalidasi", beda dengan daftar setting email (:5)

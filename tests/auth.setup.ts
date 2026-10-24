@@ -6,8 +6,9 @@ import path from 'path';
  * (target = TARGET_ENV, lihat playwright.config.ts).
  *
  * Kredensial WAJIB dari .env.<target> (process.env) — dilarang hardcode
- * email/password. Peran yang kredensialnya kosong akan di-skip, bukan error
- * (mis. admin-sub-read hanya ada di target local; demo tetap 6 akun).
+ * email/password. Daftar akun & status wajib/opsional per target ada di
+ * scripts/targets.js: akun WAJIB yang kosong = GAGAL (penghambat kesiapan),
+ * akun opsional yang kosong = skip (mis. admin-sub-read di demo).
  *
  * Pemetaan peran:
  * - Bid Owner  = Shipper      (UI: "Pemilik Barang")
@@ -21,40 +22,27 @@ import path from 'path';
  * di top bar yang hanya ada setelah login (terverifikasi visible di 6 akun demo).
  */
 
-const AUTH_DIR = path.resolve(__dirname, '..', '.auth', process.env.TARGET_ENV ?? 'demo');
+const { ACCOUNTS, targetName, isRequired, credentials } = require('../scripts/targets.js');
+
+const TARGET: string = targetName();
+const AUTH_DIR = path.resolve(__dirname, '..', '.auth', TARGET);
 
 interface RoleAccount {
   /** Nama project Playwright sekaligus nama file storageState. */
-  name:
-    | 'admin'
-    | 'admin-sub'
-    | 'admin-sub-read'
-    | 'shipper'
-    | 'shipper-sub'
-    | 'transporter'
-    | 'transporter-sub';
-  email: string | undefined;
-  password: string | undefined;
+  name: string;
+  /** Prefiks variabel env, mis. ADMIN_SUB → ADMIN_SUB_EMAIL/ADMIN_SUB_PASSWORD. */
+  env: string;
   /** true = login lewat ADMIN_PATH, false = lewat root ("/"). */
   viaAdminPath: boolean;
 }
 
-const accounts: RoleAccount[] = [
-  { name: 'admin', email: process.env.ADMIN_EMAIL, password: process.env.ADMIN_PASSWORD, viaAdminPath: true },
-  { name: 'admin-sub', email: process.env.ADMIN_SUB_EMAIL, password: process.env.ADMIN_SUB_PASSWORD, viaAdminPath: true },
-  { name: 'admin-sub-read', email: process.env.ADMIN_SUB_READ_EMAIL, password: process.env.ADMIN_SUB_READ_PASSWORD, viaAdminPath: true },
-  { name: 'shipper', email: process.env.SHIPPER_EMAIL, password: process.env.SHIPPER_PASSWORD, viaAdminPath: false },
-  { name: 'shipper-sub', email: process.env.SHIPPER_SUB_EMAIL, password: process.env.SHIPPER_SUB_PASSWORD, viaAdminPath: false },
-  { name: 'transporter', email: process.env.TRANSPORTER_EMAIL, password: process.env.TRANSPORTER_PASSWORD, viaAdminPath: false },
-  { name: 'transporter-sub', email: process.env.TRANSPORTER_SUB_EMAIL, password: process.env.TRANSPORTER_SUB_PASSWORD, viaAdminPath: false },
-];
-
 async function login(page: Page, account: RoleAccount): Promise<void> {
+  const { email, password } = credentials(account);
   const loginPath = account.viaAdminPath ? process.env.ADMIN_PATH ?? '/' : '/';
   await page.goto(loginPath);
 
-  await page.getByRole('textbox', { name: 'Masukkan Email / No. Whatsapp' }).fill(account.email!);
-  await page.getByRole('textbox', { name: 'Masukkan Kata Sandi Anda' }).fill(account.password!);
+  await page.getByRole('textbox', { name: 'Masukkan Email / No. Whatsapp' }).fill(email!);
+  await page.getByRole('textbox', { name: 'Masukkan Kata Sandi Anda' }).fill(password!);
   await page.getByRole('button', { name: 'Masuk' }).click();
 
   // Bukti login: link "KELUAR" hanya dirender setelah autentikasi.
@@ -63,12 +51,19 @@ async function login(page: Page, account: RoleAccount): Promise<void> {
   await page.context().storageState({ path: path.join(AUTH_DIR, `${account.name}.json`) });
 }
 
-for (const account of accounts) {
+for (const account of ACCOUNTS as RoleAccount[]) {
   setup(`login ${account.name}`, async ({ page }) => {
-    setup.skip(
-      !account.email || !account.password,
-      `Kredensial ${account.name} kosong di .env.${process.env.TARGET_ENV ?? 'demo'} — dilewati`,
-    );
+    const { email, password } = credentials(account);
+    const kosong = !email || !password;
+    // Akun WAJIB untuk target ini (scripts/targets.js) yang kredensialnya kosong
+    // adalah penghambat kesiapan → gagal keras, bukan skip diam-diam.
+    if (kosong && isRequired(account.name, TARGET)) {
+      throw new Error(
+        `Akun WAJIB ${account.name} (${account.env}_EMAIL/${account.env}_PASSWORD) kosong di ` +
+          `.env.${TARGET} — penghambat kesiapan target ${TARGET}`,
+      );
+    }
+    setup.skip(kosong, `Kredensial opsional ${account.name} kosong di .env.${TARGET} — dilewati`);
     await login(page, account);
   });
 }

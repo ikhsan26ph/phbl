@@ -1,0 +1,1589 @@
+{
+ "20261023-sesi-lama": {
+  "catatan": "tanpa results.json (reporter di-override --reporter=list); bukti = artefak test-failed-*.png & error-context.md di folder run"
+ },
+ "20261023-smoke-local": {
+  "metadata": {
+   "target": "local",
+   "baseURL": "http://192.168.0.88:8102",
+   "runId": "20261023-smoke-local",
+   "suiteVersion": "0fd24cd+perubahan-lokal",
+   "appBuild": "Belum diketahui",
+   "appRuntime": "PHP/8.2.35 (X-Powered-By)",
+   "dataset": "DB lokal kosong (inventaris 2026-10-23)",
+   "actualWorkers": 1
+  },
+  "stats": {
+   "startTime": "2026-10-23T07:46:16.771Z",
+   "duration": 524436.696,
+   "expected": 77,
+   "skipped": 4,
+   "unexpected": 22,
+   "flaky": 0
+  },
+  "tests": [
+   {
+    "project": "setup",
+    "file": "auth.setup.ts",
+    "line": 55,
+    "judul": "login admin",
+    "status": "expected",
+    "expectedStatus": "passed",
+    "durasiMs": 5885,
+    "error": "",
+    "anotasi": []
+   },
+   {
+    "project": "setup",
+    "file": "auth.setup.ts",
+    "line": 55,
+    "judul": "login admin-sub",
+    "status": "expected",
+    "expectedStatus": "passed",
+    "durasiMs": 5120,
+    "error": "",
+    "anotasi": []
+   },
+   {
+    "project": "setup",
+    "file": "auth.setup.ts",
+    "line": 55,
+    "judul": "login admin-sub-read",
+    "status": "expected",
+    "expectedStatus": "passed",
+    "durasiMs": 6421,
+    "error": "",
+    "anotasi": []
+   },
+   {
+    "project": "setup",
+    "file": "auth.setup.ts",
+    "line": 55,
+    "judul": "login shipper",
+    "status": "expected",
+    "expectedStatus": "passed",
+    "durasiMs": 4440,
+    "error": "",
+    "anotasi": []
+   },
+   {
+    "project": "setup",
+    "file": "auth.setup.ts",
+    "line": 55,
+    "judul": "login shipper-sub",
+    "status": "expected",
+    "expectedStatus": "passed",
+    "durasiMs": 4244,
+    "error": "",
+    "anotasi": []
+   },
+   {
+    "project": "setup",
+    "file": "auth.setup.ts",
+    "line": 55,
+    "judul": "login transporter",
+    "status": "expected",
+    "expectedStatus": "passed",
+    "durasiMs": 6841,
+    "error": "",
+    "anotasi": []
+   },
+   {
+    "project": "setup",
+    "file": "auth.setup.ts",
+    "line": 55,
+    "judul": "login transporter-sub",
+    "status": "expected",
+    "expectedStatus": "passed",
+    "durasiMs": 4462,
+    "error": "",
+    "anotasi": []
+   },
+   {
+    "project": "smoke",
+    "file": "smoke/read-only.spec.ts",
+    "line": 107,
+    "judul": "smoke admin › sesi hasil login setup dipakai ulang (tidak diarahkan ke login)",
+    "status": "expected",
+    "expectedStatus": "passed",
+    "durasiMs": 3326,
+    "error": "",
+    "anotasi": []
+   },
+   {
+    "project": "smoke",
+    "file": "smoke/read-only.spec.ts",
+    "line": 127,
+    "judul": "smoke admin › halaman /lelang/listlelang?tab=semua-lelang terbuka tanpa 5xx dan tanpa penolakan akses",
+    "status": "expected",
+    "expectedStatus": "passed",
+    "durasiMs": 3493,
+    "error": "",
+    "anotasi": []
+   },
+   {
+    "project": "smoke",
+    "file": "smoke/read-only.spec.ts",
+    "line": 127,
+    "judul": "smoke admin › halaman /order/OrderList terbuka tanpa 5xx dan tanpa penolakan akses",
+    "status": "expected",
+    "expectedStatus": "passed",
+    "durasiMs": 3787,
+    "error": "",
+    "anotasi": []
+   },
+   {
+    "project": "smoke",
+    "file": "smoke/read-only.spec.ts",
+    "line": 127,
+    "judul": "smoke admin › halaman /lelang/pengajuannego terbuka tanpa 5xx dan tanpa penolakan akses",
+    "status": "expected",
+    "expectedStatus": "passed",
+    "durasiMs": 2764,
+    "error": "",
+    "anotasi": []
+   },
+   {
+    "project": "smoke",
+    "file": "smoke/read-only.spec.ts",
+    "line": 127,
+    "judul": "smoke admin › halaman /home/hargajadwal?tab=1 terbuka tanpa 5xx dan tanpa penolakan akses",
+    "status": "expected",
+    "expectedStatus": "passed",
+    "durasiMs": 3212,
+    "error": "",
+    "anotasi": []
+   },
+   {
+    "project": "smoke",
+    "file": "smoke/read-only.spec.ts",
+    "line": 127,
+    "judul": "smoke admin › halaman /home/penugasantracking terbuka tanpa 5xx dan tanpa penolakan akses",
+    "status": "unexpected",
+    "expectedStatus": "passed",
+    "durasiMs": 822,
+    "error": "Error: status dokumen /home/penugasantracking | expect(received).toBeLessThan(expected) | Expected: < 500",
+    "anotasi": [
+     "http-5xx: GET 500 /home/penugasantracking"
+    ]
+   },
+   {
+    "project": "smoke",
+    "file": "smoke/read-only.spec.ts",
+    "line": 127,
+    "judul": "smoke admin › halaman /home/notification terbuka tanpa 5xx dan tanpa penolakan akses",
+    "status": "expected",
+    "expectedStatus": "passed",
+    "durasiMs": 4002,
+    "error": "",
+    "anotasi": []
+   },
+   {
+    "project": "smoke",
+    "file": "smoke/read-only.spec.ts",
+    "line": 127,
+    "judul": "smoke admin › halaman /home/akunsaya terbuka tanpa 5xx dan tanpa penolakan akses",
+    "status": "expected",
+    "expectedStatus": "passed",
+    "durasiMs": 2812,
+    "error": "",
+    "anotasi": []
+   },
+   {
+    "project": "smoke",
+    "file": "smoke/read-only.spec.ts",
+    "line": 127,
+    "judul": "smoke admin › halaman /adminprahu/masterpelabuhan terbuka tanpa 5xx dan tanpa penolakan akses",
+    "status": "expected",
+    "expectedStatus": "passed",
+    "durasiMs": 3559,
+    "error": "",
+    "anotasi": []
+   },
+   {
+    "project": "smoke",
+    "file": "smoke/read-only.spec.ts",
+    "line": 107,
+    "judul": "smoke admin-sub › sesi hasil login setup dipakai ulang (tidak diarahkan ke login)",
+    "status": "expected",
+    "expectedStatus": "passed",
+    "durasiMs": 2467,
+    "error": "",
+    "anotasi": []
+   },
+   {
+    "project": "smoke",
+    "file": "smoke/read-only.spec.ts",
+    "line": 115,
+    "judul": "smoke admin-sub › sub user: Edit Akun Saya ditolak (rule akun saya)",
+    "status": "expected",
+    "expectedStatus": "passed",
+    "durasiMs": 3490,
+    "error": "",
+    "anotasi": []
+   },
+   {
+    "project": "smoke",
+    "file": "smoke/read-only.spec.ts",
+    "line": 107,
+    "judul": "smoke admin-sub-read › sesi hasil login setup dipakai ulang (tidak diarahkan ke login)",
+    "status": "expected",
+    "expectedStatus": "passed",
+    "durasiMs": 3833,
+    "error": "",
+    "anotasi": []
+   },
+   {
+    "project": "smoke",
+    "file": "smoke/read-only.spec.ts",
+    "line": 115,
+    "judul": "smoke admin-sub-read › sub user: Edit Akun Saya ditolak (rule akun saya)",
+    "status": "expected",
+    "expectedStatus": "passed",
+    "durasiMs": 4839,
+    "error": "",
+    "anotasi": []
+   },
+   {
+    "project": "smoke",
+    "file": "smoke/read-only.spec.ts",
+    "line": 107,
+    "judul": "smoke shipper › sesi hasil login setup dipakai ulang (tidak diarahkan ke login)",
+    "status": "expected",
+    "expectedStatus": "passed",
+    "durasiMs": 2783,
+    "error": "",
+    "anotasi": []
+   },
+   {
+    "project": "smoke",
+    "file": "smoke/read-only.spec.ts",
+    "line": 127,
+    "judul": "smoke shipper › halaman /lelang/carirute terbuka tanpa 5xx dan tanpa penolakan akses",
+    "status": "unexpected",
+    "expectedStatus": "passed",
+    "durasiMs": 26825,
+    "error": "Error: tabel masih \"Mohon tunggu sebentar\" setelah 20 dtk (request belum selesai) | expect(received).toBe(expected) // Object.is equality | Expected: false",
+    "anotasi": [
+     "request-menggantung: /lelang/carirute masih \"Mohon tunggu sebentar\" setelah 20 dtk"
+    ]
+   },
+   {
+    "project": "smoke",
+    "file": "smoke/read-only.spec.ts",
+    "line": 127,
+    "judul": "smoke shipper › halaman /lelang/listlelang?tab=semua-lelang terbuka tanpa 5xx dan tanpa penolakan akses",
+    "status": "expected",
+    "expectedStatus": "passed",
+    "durasiMs": 4842,
+    "error": "",
+    "anotasi": []
+   },
+   {
+    "project": "smoke",
+    "file": "smoke/read-only.spec.ts",
+    "line": 127,
+    "judul": "smoke shipper › halaman /order/OrderList terbuka tanpa 5xx dan tanpa penolakan akses",
+    "status": "expected",
+    "expectedStatus": "passed",
+    "durasiMs": 4173,
+    "error": "",
+    "anotasi": []
+   },
+   {
+    "project": "smoke",
+    "file": "smoke/read-only.spec.ts",
+    "line": 127,
+    "judul": "smoke shipper › halaman /lelang/pengajuannego terbuka tanpa 5xx dan tanpa penolakan akses",
+    "status": "expected",
+    "expectedStatus": "passed",
+    "durasiMs": 3608,
+    "error": "",
+    "anotasi": []
+   },
+   {
+    "project": "smoke",
+    "file": "smoke/read-only.spec.ts",
+    "line": 127,
+    "judul": "smoke shipper › halaman /home/notification terbuka tanpa 5xx dan tanpa penolakan akses",
+    "status": "expected",
+    "expectedStatus": "passed",
+    "durasiMs": 3240,
+    "error": "",
+    "anotasi": []
+   },
+   {
+    "project": "smoke",
+    "file": "smoke/read-only.spec.ts",
+    "line": 127,
+    "judul": "smoke shipper › halaman /home/akunsaya terbuka tanpa 5xx dan tanpa penolakan akses",
+    "status": "expected",
+    "expectedStatus": "passed",
+    "durasiMs": 3181,
+    "error": "",
+    "anotasi": []
+   },
+   {
+    "project": "smoke",
+    "file": "smoke/read-only.spec.ts",
+    "line": 107,
+    "judul": "smoke shipper-sub › sesi hasil login setup dipakai ulang (tidak diarahkan ke login)",
+    "status": "expected",
+    "expectedStatus": "passed",
+    "durasiMs": 2779,
+    "error": "",
+    "anotasi": []
+   },
+   {
+    "project": "smoke",
+    "file": "smoke/read-only.spec.ts",
+    "line": 115,
+    "judul": "smoke shipper-sub › sub user: Edit Akun Saya ditolak (rule akun saya)",
+    "status": "expected",
+    "expectedStatus": "passed",
+    "durasiMs": 3260,
+    "error": "",
+    "anotasi": []
+   },
+   {
+    "project": "smoke",
+    "file": "smoke/read-only.spec.ts",
+    "line": 107,
+    "judul": "smoke transporter › sesi hasil login setup dipakai ulang (tidak diarahkan ke login)",
+    "status": "expected",
+    "expectedStatus": "passed",
+    "durasiMs": 3234,
+    "error": "",
+    "anotasi": []
+   },
+   {
+    "project": "smoke",
+    "file": "smoke/read-only.spec.ts",
+    "line": 127,
+    "judul": "smoke transporter › halaman /lelang/listlelang?tab=semua-lelang terbuka tanpa 5xx dan tanpa penolakan akses",
+    "status": "expected",
+    "expectedStatus": "passed",
+    "durasiMs": 3600,
+    "error": "",
+    "anotasi": []
+   },
+   {
+    "project": "smoke",
+    "file": "smoke/read-only.spec.ts",
+    "line": 127,
+    "judul": "smoke transporter › halaman /order/OrderList terbuka tanpa 5xx dan tanpa penolakan akses",
+    "status": "expected",
+    "expectedStatus": "passed",
+    "durasiMs": 4242,
+    "error": "",
+    "anotasi": []
+   },
+   {
+    "project": "smoke",
+    "file": "smoke/read-only.spec.ts",
+    "line": 127,
+    "judul": "smoke transporter › halaman /lelang/pengajuannego terbuka tanpa 5xx dan tanpa penolakan akses",
+    "status": "expected",
+    "expectedStatus": "passed",
+    "durasiMs": 2645,
+    "error": "",
+    "anotasi": []
+   },
+   {
+    "project": "smoke",
+    "file": "smoke/read-only.spec.ts",
+    "line": 127,
+    "judul": "smoke transporter › halaman /home/hargajadwal?tab=1 terbuka tanpa 5xx dan tanpa penolakan akses",
+    "status": "expected",
+    "expectedStatus": "passed",
+    "durasiMs": 2823,
+    "error": "",
+    "anotasi": []
+   },
+   {
+    "project": "smoke",
+    "file": "smoke/read-only.spec.ts",
+    "line": 127,
+    "judul": "smoke transporter › halaman /home/penugasantracking terbuka tanpa 5xx dan tanpa penolakan akses",
+    "status": "unexpected",
+    "expectedStatus": "passed",
+    "durasiMs": 773,
+    "error": "Error: status dokumen /home/penugasantracking | expect(received).toBeLessThan(expected) | Expected: < 500",
+    "anotasi": [
+     "http-5xx: GET 500 /home/penugasantracking"
+    ]
+   },
+   {
+    "project": "smoke",
+    "file": "smoke/read-only.spec.ts",
+    "line": 127,
+    "judul": "smoke transporter › halaman /home/notification terbuka tanpa 5xx dan tanpa penolakan akses",
+    "status": "expected",
+    "expectedStatus": "passed",
+    "durasiMs": 3364,
+    "error": "",
+    "anotasi": []
+   },
+   {
+    "project": "smoke",
+    "file": "smoke/read-only.spec.ts",
+    "line": 127,
+    "judul": "smoke transporter › halaman /home/akunsaya terbuka tanpa 5xx dan tanpa penolakan akses",
+    "status": "expected",
+    "expectedStatus": "passed",
+    "durasiMs": 2862,
+    "error": "",
+    "anotasi": []
+   },
+   {
+    "project": "smoke",
+    "file": "smoke/read-only.spec.ts",
+    "line": 107,
+    "judul": "smoke transporter-sub › sesi hasil login setup dipakai ulang (tidak diarahkan ke login)",
+    "status": "expected",
+    "expectedStatus": "passed",
+    "durasiMs": 2460,
+    "error": "",
+    "anotasi": []
+   },
+   {
+    "project": "smoke",
+    "file": "smoke/read-only.spec.ts",
+    "line": 115,
+    "judul": "smoke transporter-sub › sub user: Edit Akun Saya ditolak (rule akun saya)",
+    "status": "expected",
+    "expectedStatus": "passed",
+    "durasiMs": 3412,
+    "error": "",
+    "anotasi": []
+   },
+   {
+    "project": "admin",
+    "file": "admin/akun-saya.spec.ts",
+    "line": 35,
+    "judul": "Akun Saya (Admin) › menampilkan nama dan email akun pusat admin",
+    "status": "expected",
+    "expectedStatus": "passed",
+    "durasiMs": 4818,
+    "error": "",
+    "anotasi": []
+   },
+   {
+    "project": "admin",
+    "file": "admin/akun-saya.spec.ts",
+    "line": 47,
+    "judul": "Akun Saya (Admin) › data selain nama & email bernilai strip karena akun dibuat dari backend",
+    "status": "expected",
+    "expectedStatus": "passed",
+    "durasiMs": 3053,
+    "error": "",
+    "anotasi": []
+   },
+   {
+    "project": "admin",
+    "file": "admin/akun-saya.spec.ts",
+    "line": 55,
+    "judul": "Akun Saya (Admin) › tidak menyediakan tombol edit akun maupun ubah kata sandi",
+    "status": "expected",
+    "expectedStatus": "passed",
+    "durasiMs": 2996,
+    "error": "",
+    "anotasi": []
+   },
+   {
+    "project": "admin",
+    "file": "push-notif.shared.ts",
+    "line": 91,
+    "judul": "Push Notif (Admin) › ikon lonceng top bar membuka halaman Notifikasi dan indikator unread tampil",
+    "status": "expected",
+    "expectedStatus": "passed",
+    "durasiMs": 5914,
+    "error": "",
+    "anotasi": []
+   },
+   {
+    "project": "admin",
+    "file": "push-notif.shared.ts",
+    "line": 109,
+    "judul": "Push Notif (Admin) › DEFECT: ikon lonceng top bar memiliki accessible name",
+    "status": "expected",
+    "expectedStatus": "failed",
+    "durasiMs": 8093,
+    "error": "Error: expect(locator).toHaveAccessibleName(expected) failed | Locator: locator('a.link-notifikasi').filter({ visible: true }) | Expected pattern: /notifikasi/i",
+    "anotasi": [
+     "fail: Ikon notifikasi hanya berupa <i class=\"fa-bell\"> tanpa teks, aria-label, atau title."
+    ]
+   },
+   {
+    "project": "admin",
+    "file": "push-notif.shared.ts",
+    "line": 116,
+    "judul": "Push Notif (Admin) › default halaman, kategori per peran, batas data, dan informasi retensi sesuai rule",
+    "status": "expected",
+    "expectedStatus": "passed",
+    "durasiMs": 3438,
+    "error": "",
+    "anotasi": []
+   },
+   {
+    "project": "admin",
+    "file": "push-notif.shared.ts",
+    "line": 129,
+    "judul": "Push Notif (Admin) › daftar unread memuat kategori, waktu, badge, checkbox, dan tujuan Cek Disini",
+    "status": "unexpected",
+    "expectedStatus": "passed",
+    "durasiMs": 3388,
+    "error": "Error: Akun demo perlu memiliki minimal satu notifikasi unread | expect(received).toBeGreaterThan(expected) | Expected: > 0",
+    "anotasi": []
+   },
+   {
+    "project": "admin",
+    "file": "push-notif.shared.ts",
+    "line": 156,
+    "judul": "Push Notif (Admin) › filter Semua Notif dan kategori Lelang mengirim parameter dan menampilkan data yang sesuai",
+    "status": "expected",
+    "expectedStatus": "passed",
+    "durasiMs": 4067,
+    "error": "",
+    "anotasi": []
+   },
+   {
+    "project": "admin",
+    "file": "push-notif.shared.ts",
+    "line": 170,
+    "judul": "Push Notif (Admin) › Hapus Notif dan Tandai Dibaca hanya aktif setelah notifikasi dipilih",
+    "status": "unexpected",
+    "expectedStatus": "passed",
+    "durasiMs": 3158,
+    "error": "Error: Akun demo perlu memiliki notifikasi untuk menguji selection state | expect(received).toBeGreaterThan(expected) | Expected: > 0",
+    "anotasi": []
+   },
+   {
+    "project": "admin",
+    "file": "push-notif.shared.ts",
+    "line": 195,
+    "judul": "Push Notif (Admin) › pilihan jumlah data memperbarui limit daftar tanpa mengubah notifikasi",
+    "status": "expected",
+    "expectedStatus": "passed",
+    "durasiMs": 4045,
+    "error": "",
+    "anotasi": []
+   },
+   {
+    "project": "admin-sub",
+    "file": "admin-sub/akun-saya.spec.ts",
+    "line": 42,
+    "judul": "Akun Saya sub user admin menampilkan Nama, Email, Nomor Whatsapp, Bagian Staff tanpa tombol edit",
+    "status": "expected",
+    "expectedStatus": "passed",
+    "durasiMs": 2882,
+    "error": "",
+    "anotasi": []
+   },
+   {
+    "project": "admin-sub",
+    "file": "admin-sub/akun-saya.spec.ts",
+    "line": 59,
+    "judul": "breadcrumb Beranda mengarah ke listLelang (sama dengan admin utama)",
+    "status": "unexpected",
+    "expectedStatus": "passed",
+    "durasiMs": 8312,
+    "error": "Error: expect(locator).toHaveAttribute(expected) failed | Locator: getByRole('link', { name: 'Beranda' }).first() | Expected pattern: /\\/lelang\\/listLelang$/i",
+    "anotasi": []
+   },
+   {
+    "project": "admin-sub",
+    "file": "admin-sub/akun-saya.spec.ts",
+    "line": 67,
+    "judul": "menu sidebar mencakup modul admin luas milik akun ini (Cari Penawaran & Harga Jadwal lintas-modul)",
+    "status": "unexpected",
+    "expectedStatus": "passed",
+    "durasiMs": 8230,
+    "error": "Error: expect(locator).toBeVisible() failed | Locator: getByRole('link', { name: 'CARI PENAWARAN' }).first() | Expected: visible",
+    "anotasi": []
+   },
+   {
+    "project": "admin-sub",
+    "file": "admin-sub/akun-saya.spec.ts",
+    "line": 81,
+    "judul": "akses langsung Edit Akun Saya ditolak dan dikembalikan ke Akun Saya",
+    "status": "expected",
+    "expectedStatus": "passed",
+    "durasiMs": 3264,
+    "error": "",
+    "anotasi": []
+   },
+   {
+    "project": "admin-sub-read",
+    "file": "admin-sub-read/akun-saya.spec.ts",
+    "line": 21,
+    "judul": "sesi admin-sub-read valid — link KELUAR tampil",
+    "status": "expected",
+    "expectedStatus": "passed",
+    "durasiMs": 3198,
+    "error": "",
+    "anotasi": []
+   },
+   {
+    "project": "shipper",
+    "file": "shipper/akun-saya.spec.ts",
+    "line": 45,
+    "judul": "breadcrumb Beranda pada Akun Saya mengarah ke halaman Cari Penawaran",
+    "status": "expected",
+    "expectedStatus": "passed",
+    "durasiMs": 2728,
+    "error": "",
+    "anotasi": []
+   },
+   {
+    "project": "shipper",
+    "file": "shipper/akun-saya.spec.ts",
+    "line": 50,
+    "judul": "identitas, logo perusahaan, NPWP, dan SIUP masing-masing punya link download ke file asli",
+    "status": "unexpected",
+    "expectedStatus": "passed",
+    "durasiMs": 8007,
+    "error": "Error: expect(locator).toBeVisible() failed | Locator: getByRole('cell', { name: /Identitas \\(KTP \\/ SIM\\)/ }).locator('a').getByRole('button', { name: 'Download Gambar' }) | Expected: visible",
+    "anotasi": []
+   },
+   {
+    "project": "shipper",
+    "file": "shipper/akun-saya.spec.ts",
+    "line": 65,
+    "judul": "Edit Akun Saya membuka form terisi data akun dengan Email disabled",
+    "status": "expected",
+    "expectedStatus": "passed",
+    "durasiMs": 5213,
+    "error": "",
+    "anotasi": []
+   },
+   {
+    "project": "shipper",
+    "file": "shipper/cari-penawaran.spec.ts",
+    "line": 57,
+    "judul": "breadcrumb Beranda disable (bukan link) karena halaman default bid owner",
+    "status": "expected",
+    "expectedStatus": "passed",
+    "durasiMs": 5891,
+    "error": "",
+    "anotasi": []
+   },
+   {
+    "project": "shipper",
+    "file": "shipper/cari-penawaran.spec.ts",
+    "line": 62,
+    "judul": "tombol Cari Harga Penawaran default disable, aktif setelah nomor lelang diisi",
+    "status": "expected",
+    "expectedStatus": "passed",
+    "durasiMs": 4651,
+    "error": "",
+    "anotasi": []
+   },
+   {
+    "project": "shipper",
+    "file": "shipper/cari-penawaran.spec.ts",
+    "line": 68,
+    "judul": "nomor lelang tidak dikenal memunculkan alert \"Nomor Lelang Tidak Ditemukan\"",
+    "status": "expected",
+    "expectedStatus": "passed",
+    "durasiMs": 6332,
+    "error": "",
+    "anotasi": []
+   },
+   {
+    "project": "shipper",
+    "file": "shipper/cari-penawaran.spec.ts",
+    "line": 74,
+    "judul": "popup daftar lelang menampilkan tabel lelang dengan rute pelabuhan asal - tujuan",
+    "status": "skipped",
+    "expectedStatus": "skipped",
+    "durasiMs": 15768,
+    "error": "",
+    "anotasi": [
+     "skip: Tidak ada data lelang di akun demo — isi popup tidak bisa diverifikasi"
+    ]
+   },
+   {
+    "project": "shipper",
+    "file": "shipper/cari-penawaran.spec.ts",
+    "line": 95,
+    "judul": "pilih lelang dari popup mengisi nomor otomatis dan pencarian menampilkan ringkasan lengkap",
+    "status": "skipped",
+    "expectedStatus": "skipped",
+    "durasiMs": 15870,
+    "error": "",
+    "anotasi": [
+     "skip: Tidak ada data lelang aktif (non-AUTOTEST) di akun demo — alur pilih & cari tidak bisa diverifikasi"
+    ]
+   },
+   {
+    "project": "shipper",
+    "file": "shipper/preference-notif.spec.ts",
+    "line": 78,
+    "judul": "halaman ringkasan menampilkan info akun dan tombol Setting",
+    "status": "expected",
+    "expectedStatus": "passed",
+    "durasiMs": 2796,
+    "error": "",
+    "anotasi": []
+   },
+   {
+    "project": "shipper",
+    "file": "shipper/preference-notif.spec.ts",
+    "line": 94,
+    "judul": "Setting Preference Notif › seksi Notifikasi Sistem menampilkan seluruh daftar notif sesuai rule",
+    "status": "expected",
+    "expectedStatus": "passed",
+    "durasiMs": 2927,
+    "error": "",
+    "anotasi": []
+   },
+   {
+    "project": "shipper",
+    "file": "shipper/preference-notif.spec.ts",
+    "line": 101,
+    "judul": "Setting Preference Notif › seksi Notifikasi Email menampilkan seluruh daftar notif sesuai rule",
+    "status": "expected",
+    "expectedStatus": "passed",
+    "durasiMs": 2960,
+    "error": "",
+    "anotasi": []
+   },
+   {
+    "project": "shipper",
+    "file": "shipper/preference-notif.spec.ts",
+    "line": 108,
+    "judul": "Setting Preference Notif › checklist/uncheklist notif berubah murni di sisi klien (belum tersimpan)",
+    "status": "expected",
+    "expectedStatus": "passed",
+    "durasiMs": 2975,
+    "error": "",
+    "anotasi": []
+   },
+   {
+    "project": "shipper",
+    "file": "shipper/preference-notif.spec.ts",
+    "line": 121,
+    "judul": "Setting Preference Notif › tombol Batal kembali ke Daftar Order tanpa menyimpan perubahan",
+    "status": "expected",
+    "expectedStatus": "passed",
+    "durasiMs": 2907,
+    "error": "",
+    "anotasi": []
+   },
+   {
+    "project": "shipper",
+    "file": "push-notif.shared.ts",
+    "line": 91,
+    "judul": "Push Notif (Shipper/Bid Owner) › ikon lonceng top bar membuka halaman Notifikasi dan indikator unread tampil",
+    "status": "expected",
+    "expectedStatus": "passed",
+    "durasiMs": 6130,
+    "error": "",
+    "anotasi": []
+   },
+   {
+    "project": "shipper",
+    "file": "push-notif.shared.ts",
+    "line": 116,
+    "judul": "Push Notif (Shipper/Bid Owner) › default halaman, kategori per peran, batas data, dan informasi retensi sesuai rule",
+    "status": "expected",
+    "expectedStatus": "passed",
+    "durasiMs": 3031,
+    "error": "",
+    "anotasi": []
+   },
+   {
+    "project": "shipper",
+    "file": "push-notif.shared.ts",
+    "line": 129,
+    "judul": "Push Notif (Shipper/Bid Owner) › daftar unread memuat kategori, waktu, badge, checkbox, dan tujuan Cek Disini",
+    "status": "unexpected",
+    "expectedStatus": "passed",
+    "durasiMs": 3299,
+    "error": "Error: Akun demo perlu memiliki minimal satu notifikasi unread | expect(received).toBeGreaterThan(expected) | Expected: > 0",
+    "anotasi": []
+   },
+   {
+    "project": "shipper",
+    "file": "push-notif.shared.ts",
+    "line": 156,
+    "judul": "Push Notif (Shipper/Bid Owner) › filter Semua Notif dan kategori Lelang mengirim parameter dan menampilkan data yang sesuai",
+    "status": "expected",
+    "expectedStatus": "passed",
+    "durasiMs": 4455,
+    "error": "",
+    "anotasi": []
+   },
+   {
+    "project": "shipper",
+    "file": "push-notif.shared.ts",
+    "line": 170,
+    "judul": "Push Notif (Shipper/Bid Owner) › Hapus Notif dan Tandai Dibaca hanya aktif setelah notifikasi dipilih",
+    "status": "unexpected",
+    "expectedStatus": "passed",
+    "durasiMs": 3115,
+    "error": "Error: Akun demo perlu memiliki notifikasi untuk menguji selection state | expect(received).toBeGreaterThan(expected) | Expected: > 0",
+    "anotasi": []
+   },
+   {
+    "project": "shipper",
+    "file": "push-notif.shared.ts",
+    "line": 195,
+    "judul": "Push Notif (Shipper/Bid Owner) › pilihan jumlah data memperbarui limit daftar tanpa mengubah notifikasi",
+    "status": "expected",
+    "expectedStatus": "passed",
+    "durasiMs": 4455,
+    "error": "",
+    "anotasi": []
+   },
+   {
+    "project": "shipper-sub",
+    "file": "shipper-sub/akun-saya.spec.ts",
+    "line": 36,
+    "judul": "Akun Saya sub user hanya menampilkan Nama, Email, Nomor Whatsapp, Bagian Staff tanpa tombol edit",
+    "status": "expected",
+    "expectedStatus": "passed",
+    "durasiMs": 3599,
+    "error": "",
+    "anotasi": []
+   },
+   {
+    "project": "shipper-sub",
+    "file": "shipper-sub/akun-saya.spec.ts",
+    "line": 55,
+    "judul": "breadcrumb Beranda mengarah ke Cari Penawaran (khusus sisi bid owner)",
+    "status": "unexpected",
+    "expectedStatus": "passed",
+    "durasiMs": 8019,
+    "error": "Error: expect(locator).toHaveAttribute(expected) failed | Locator: getByRole('link', { name: 'Beranda' }).first() | Expected pattern: /\\/lelang\\/carirute$/i",
+    "anotasi": []
+   },
+   {
+    "project": "shipper-sub",
+    "file": "shipper-sub/akun-saya.spec.ts",
+    "line": 63,
+    "judul": "menu sub user tidak memuat Preference Notif",
+    "status": "unexpected",
+    "expectedStatus": "passed",
+    "durasiMs": 9342,
+    "error": "Error: expect(locator).toBeVisible() failed | Locator: getByRole('link', { name: /pengajuan lelang/i }).first() | Expected: visible",
+    "anotasi": []
+   },
+   {
+    "project": "shipper-sub",
+    "file": "shipper-sub/akun-saya.spec.ts",
+    "line": 70,
+    "judul": "akses langsung Edit Akun Saya ditolak dan dikembalikan ke Akun Saya",
+    "status": "expected",
+    "expectedStatus": "passed",
+    "durasiMs": 3364,
+    "error": "",
+    "anotasi": []
+   },
+   {
+    "project": "shipper-sub",
+    "file": "shipper-sub/akun-saya.spec.ts",
+    "line": 77,
+    "judul": "akses langsung /home/preferenceNotifBidowner ditolak (preference notif hanya akun utama)",
+    "status": "unexpected",
+    "expectedStatus": "passed",
+    "durasiMs": 9287,
+    "error": "Error: expect(page).toHaveURL(expected) failed | Expected pattern: /\\/lelang\\/carirute/ | Received string:  \"http://192.168.0.88:8102/home/akunSaya\"",
+    "anotasi": []
+   },
+   {
+    "project": "shipper-sub",
+    "file": "shipper-sub/akun-saya.spec.ts",
+    "line": 77,
+    "judul": "akses langsung /home/settingPreferenceNotifBidowner ditolak (preference notif hanya akun utama)",
+    "status": "unexpected",
+    "expectedStatus": "passed",
+    "durasiMs": 9108,
+    "error": "Error: expect(page).toHaveURL(expected) failed | Expected pattern: /\\/lelang\\/carirute/ | Received string:  \"http://192.168.0.88:8102/home/akunSaya\"",
+    "anotasi": []
+   },
+   {
+    "project": "transporter",
+    "file": "transporter/akun-saya.spec.ts",
+    "line": 65,
+    "judul": "breadcrumb Beranda pada Akun Saya mengarah ke daftar pengajuan lelang",
+    "status": "expected",
+    "expectedStatus": "passed",
+    "durasiMs": 4788,
+    "error": "",
+    "anotasi": []
+   },
+   {
+    "project": "transporter",
+    "file": "transporter/akun-saya.spec.ts",
+    "line": 70,
+    "judul": "halaman menampilkan seluruh data akun utama beserta email akun login",
+    "status": "unexpected",
+    "expectedStatus": "passed",
+    "durasiMs": 8981,
+    "error": "Error: expect(locator).toBeVisible() failed | Locator: getByRole('cell', { name: /^Nama Bank 1\\s*:/ }).first() | Expected: visible",
+    "anotasi": []
+   },
+   {
+    "project": "transporter",
+    "file": "transporter/akun-saya.spec.ts",
+    "line": 77,
+    "judul": "logo perusahaan dapat didownload kembali lewat link ke file asli",
+    "status": "unexpected",
+    "expectedStatus": "passed",
+    "durasiMs": 8544,
+    "error": "Error: expect(locator).toBeVisible() failed | Locator: getByRole('cell', { name: /Logo Perusahaan/ }).locator('a').getByRole('button', { name: 'Download Gambar' }) | Expected: visible",
+    "anotasi": []
+   },
+   {
+    "project": "transporter",
+    "file": "transporter/akun-saya.spec.ts",
+    "line": 87,
+    "judul": "NPWP yang telah diupload dapat didownload kembali",
+    "status": "skipped",
+    "expectedStatus": "skipped",
+    "durasiMs": 2947,
+    "error": "",
+    "anotasi": [
+     "skip: Akun demo transporter belum mengupload NPWP (nilai \"-\") — tidak ada file untuk diverifikasi"
+    ]
+   },
+   {
+    "project": "transporter",
+    "file": "transporter/akun-saya.spec.ts",
+    "line": 87,
+    "judul": "SIUP yang telah diupload dapat didownload kembali",
+    "status": "skipped",
+    "expectedStatus": "skipped",
+    "durasiMs": 2842,
+    "error": "",
+    "anotasi": [
+     "skip: Akun demo transporter belum mengupload SIUP (nilai \"-\") — tidak ada file untuk diverifikasi"
+    ]
+   },
+   {
+    "project": "transporter",
+    "file": "transporter/akun-saya.spec.ts",
+    "line": 98,
+    "judul": "Edit Akun Saya membuka form edit akun (DEFECT: server menjawab 500)",
+    "status": "expected",
+    "expectedStatus": "failed",
+    "durasiMs": 3692,
+    "error": "Error: status HTTP halaman Edit Akun Saya | expect(received).toBe(expected) // Object.is equality | Expected: 200",
+    "anotasi": [
+     "fail: DEFECT 2026-08-29: /home/editakunsaya transporter → HTTP 500 DatabaseException \"SELECT * FROM File where ID=\" (ID kosong, akun tanpa NPWP/SIUP); halaman error membocorkan stack trace"
+    ]
+   },
+   {
+    "project": "transporter",
+    "file": "transporter/preference-notif.spec.ts",
+    "line": 71,
+    "judul": "Ringkasan Preference Notif › menampilkan info akun, catatan akun utama, dan link Setting",
+    "status": "expected",
+    "expectedStatus": "passed",
+    "durasiMs": 3319,
+    "error": "",
+    "anotasi": []
+   },
+   {
+    "project": "transporter",
+    "file": "transporter/preference-notif.spec.ts",
+    "line": 84,
+    "judul": "Ringkasan Preference Notif › daftar notifikasi sistem (push) dan email sesuai rule, tanpa checkbox",
+    "status": "expected",
+    "expectedStatus": "passed",
+    "durasiMs": 3850,
+    "error": "",
+    "anotasi": []
+   },
+   {
+    "project": "transporter",
+    "file": "transporter/preference-notif.spec.ts",
+    "line": 101,
+    "judul": "Setting Preference Notif › seksi Notifikasi Sistem menampilkan 8 checkbox push notif sesuai rule",
+    "status": "expected",
+    "expectedStatus": "passed",
+    "durasiMs": 3068,
+    "error": "",
+    "anotasi": []
+   },
+   {
+    "project": "transporter",
+    "file": "transporter/preference-notif.spec.ts",
+    "line": 109,
+    "judul": "Setting Preference Notif › seksi Notifikasi Email menampilkan 8 checkbox notif email sesuai rule",
+    "status": "expected",
+    "expectedStatus": "passed",
+    "durasiMs": 2675,
+    "error": "",
+    "anotasi": []
+   },
+   {
+    "project": "transporter",
+    "file": "transporter/preference-notif.spec.ts",
+    "line": 117,
+    "judul": "Setting Preference Notif › checklist/uncheklist notif berubah murni di sisi klien (belum tersimpan)",
+    "status": "expected",
+    "expectedStatus": "passed",
+    "durasiMs": 2583,
+    "error": "",
+    "anotasi": []
+   },
+   {
+    "project": "transporter",
+    "file": "transporter/preference-notif.spec.ts",
+    "line": 129,
+    "judul": "Setting Preference Notif › tombol Batal kembali ke daftar pengajuan lelang tanpa menyimpan; Simpan tersedia",
+    "status": "expected",
+    "expectedStatus": "passed",
+    "durasiMs": 2953,
+    "error": "",
+    "anotasi": []
+   },
+   {
+    "project": "transporter",
+    "file": "push-notif.shared.ts",
+    "line": 91,
+    "judul": "Push Notif (Transporter/Bidder) › ikon lonceng top bar membuka halaman Notifikasi dan indikator unread tampil",
+    "status": "expected",
+    "expectedStatus": "passed",
+    "durasiMs": 4967,
+    "error": "",
+    "anotasi": []
+   },
+   {
+    "project": "transporter",
+    "file": "push-notif.shared.ts",
+    "line": 116,
+    "judul": "Push Notif (Transporter/Bidder) › default halaman, kategori per peran, batas data, dan informasi retensi sesuai rule",
+    "status": "expected",
+    "expectedStatus": "passed",
+    "durasiMs": 3171,
+    "error": "",
+    "anotasi": []
+   },
+   {
+    "project": "transporter",
+    "file": "push-notif.shared.ts",
+    "line": 129,
+    "judul": "Push Notif (Transporter/Bidder) › daftar unread memuat kategori, waktu, badge, checkbox, dan tujuan Cek Disini",
+    "status": "unexpected",
+    "expectedStatus": "passed",
+    "durasiMs": 3036,
+    "error": "Error: Akun demo perlu memiliki minimal satu notifikasi unread | expect(received).toBeGreaterThan(expected) | Expected: > 0",
+    "anotasi": []
+   },
+   {
+    "project": "transporter",
+    "file": "push-notif.shared.ts",
+    "line": 156,
+    "judul": "Push Notif (Transporter/Bidder) › filter Semua Notif dan kategori Lelang mengirim parameter dan menampilkan data yang sesuai",
+    "status": "expected",
+    "expectedStatus": "passed",
+    "durasiMs": 3975,
+    "error": "",
+    "anotasi": []
+   },
+   {
+    "project": "transporter",
+    "file": "push-notif.shared.ts",
+    "line": 170,
+    "judul": "Push Notif (Transporter/Bidder) › Hapus Notif dan Tandai Dibaca hanya aktif setelah notifikasi dipilih",
+    "status": "unexpected",
+    "expectedStatus": "passed",
+    "durasiMs": 2893,
+    "error": "Error: Akun demo perlu memiliki notifikasi untuk menguji selection state | expect(received).toBeGreaterThan(expected) | Expected: > 0",
+    "anotasi": []
+   },
+   {
+    "project": "transporter",
+    "file": "push-notif.shared.ts",
+    "line": 195,
+    "judul": "Push Notif (Transporter/Bidder) › pilihan jumlah data memperbarui limit daftar tanpa mengubah notifikasi",
+    "status": "expected",
+    "expectedStatus": "passed",
+    "durasiMs": 4234,
+    "error": "",
+    "anotasi": []
+   },
+   {
+    "project": "transporter-sub",
+    "file": "transporter-sub/akun-saya.spec.ts",
+    "line": 36,
+    "judul": "Akun Saya sub user hanya menampilkan Nama, Email, Nomor Whatsapp, Bagian Staff tanpa tombol edit",
+    "status": "expected",
+    "expectedStatus": "passed",
+    "durasiMs": 2911,
+    "error": "",
+    "anotasi": []
+   },
+   {
+    "project": "transporter-sub",
+    "file": "transporter-sub/akun-saya.spec.ts",
+    "line": 56,
+    "judul": "menu sub user tidak memuat Preference Notif",
+    "status": "unexpected",
+    "expectedStatus": "passed",
+    "durasiMs": 8295,
+    "error": "Error: expect(locator).toBeVisible() failed | Locator: getByRole('link', { name: /profil/i }).first() | Expected: visible",
+    "anotasi": []
+   },
+   {
+    "project": "transporter-sub",
+    "file": "transporter-sub/akun-saya.spec.ts",
+    "line": 63,
+    "judul": "akses langsung Edit Akun Saya ditolak dan dikembalikan ke Akun Saya",
+    "status": "expected",
+    "expectedStatus": "passed",
+    "durasiMs": 3254,
+    "error": "",
+    "anotasi": []
+   },
+   {
+    "project": "transporter-sub",
+    "file": "transporter-sub/akun-saya.spec.ts",
+    "line": 70,
+    "judul": "akses langsung /home/preferencenotifbidder ditolak (preference notif hanya akun utama)",
+    "status": "unexpected",
+    "expectedStatus": "passed",
+    "durasiMs": 8651,
+    "error": "Error: expect(page).toHaveURL(expected) failed | Expected pattern: /\\/lelang\\/listlelang/ | Received string:  \"http://192.168.0.88:8102/home/akunSaya\"",
+    "anotasi": []
+   },
+   {
+    "project": "transporter-sub",
+    "file": "transporter-sub/akun-saya.spec.ts",
+    "line": 70,
+    "judul": "akses langsung /home/settingpreferencenotifbidder ditolak (preference notif hanya akun utama)",
+    "status": "unexpected",
+    "expectedStatus": "passed",
+    "durasiMs": 8980,
+    "error": "Error: expect(page).toHaveURL(expected) failed | Expected pattern: /\\/lelang\\/listlelang/ | Received string:  \"http://192.168.0.88:8102/home/akunSaya\"",
+    "anotasi": []
+   },
+   {
+    "project": "transporter-sub",
+    "file": "transporter-sub/akun-saya.spec.ts",
+    "line": 77,
+    "judul": "halaman Profil terbuka untuk sub user berakses operasional",
+    "status": "unexpected",
+    "expectedStatus": "passed",
+    "durasiMs": 9194,
+    "error": "Error: expect(page).toHaveURL(expected) failed | Expected pattern: /\\/home\\/myprofile$/ | Received string:  \"http://192.168.0.88:8102/home/akunSaya\"",
+    "anotasi": []
+   }
+  ]
+ },
+ "20261023-smoke-carirute-fix": {
+  "metadata": {
+   "target": "local",
+   "baseURL": "http://192.168.0.88:8102",
+   "runId": "20261023-smoke-carirute-fix",
+   "suiteVersion": "0fd24cd+perubahan-lokal",
+   "appBuild": "Belum diketahui",
+   "appRuntime": "Belum diketahui",
+   "dataset": "Belum diketahui",
+   "actualWorkers": 1
+  },
+  "stats": {
+   "startTime": "2026-10-23T07:57:45.596Z",
+   "duration": 6730.264,
+   "expected": 1,
+   "skipped": 0,
+   "unexpected": 0,
+   "flaky": 0
+  },
+  "tests": [
+   {
+    "project": "smoke",
+    "file": "smoke/read-only.spec.ts",
+    "line": 130,
+    "judul": "smoke shipper › halaman /lelang/carirute terbuka tanpa 5xx dan tanpa penolakan akses",
+    "status": "expected",
+    "expectedStatus": "passed",
+    "durasiMs": 5554,
+    "error": "",
+    "anotasi": []
+   }
+  ]
+ },
+ "20261023-smoke-final": {
+  "metadata": {
+   "target": "local",
+   "baseURL": "http://192.168.0.88:8102",
+   "runId": "20261023-smoke-final",
+   "suiteVersion": "0fd24cd+perubahan-lokal",
+   "appBuild": "Belum diketahui",
+   "appRuntime": "PHP/8.2.35 (X-Powered-By)",
+   "dataset": "DB lokal kosong (inventaris 2026-10-23)",
+   "actualWorkers": 1
+  },
+  "stats": {
+   "startTime": "2026-10-23T07:58:03.450Z",
+   "duration": 103340.324,
+   "expected": 30,
+   "skipped": 0,
+   "unexpected": 2,
+   "flaky": 0
+  },
+  "tests": [
+   {
+    "project": "smoke",
+    "file": "smoke/read-only.spec.ts",
+    "line": 110,
+    "judul": "smoke admin › sesi hasil login setup dipakai ulang (tidak diarahkan ke login)",
+    "status": "expected",
+    "expectedStatus": "passed",
+    "durasiMs": 3155,
+    "error": "",
+    "anotasi": []
+   },
+   {
+    "project": "smoke",
+    "file": "smoke/read-only.spec.ts",
+    "line": 130,
+    "judul": "smoke admin › halaman /lelang/listlelang?tab=semua-lelang terbuka tanpa 5xx dan tanpa penolakan akses",
+    "status": "expected",
+    "expectedStatus": "passed",
+    "durasiMs": 4101,
+    "error": "",
+    "anotasi": []
+   },
+   {
+    "project": "smoke",
+    "file": "smoke/read-only.spec.ts",
+    "line": 130,
+    "judul": "smoke admin › halaman /order/OrderList terbuka tanpa 5xx dan tanpa penolakan akses",
+    "status": "expected",
+    "expectedStatus": "passed",
+    "durasiMs": 3362,
+    "error": "",
+    "anotasi": []
+   },
+   {
+    "project": "smoke",
+    "file": "smoke/read-only.spec.ts",
+    "line": 130,
+    "judul": "smoke admin › halaman /lelang/pengajuannego terbuka tanpa 5xx dan tanpa penolakan akses",
+    "status": "expected",
+    "expectedStatus": "passed",
+    "durasiMs": 3590,
+    "error": "",
+    "anotasi": []
+   },
+   {
+    "project": "smoke",
+    "file": "smoke/read-only.spec.ts",
+    "line": 130,
+    "judul": "smoke admin › halaman /home/hargajadwal?tab=1 terbuka tanpa 5xx dan tanpa penolakan akses",
+    "status": "expected",
+    "expectedStatus": "passed",
+    "durasiMs": 2945,
+    "error": "",
+    "anotasi": []
+   },
+   {
+    "project": "smoke",
+    "file": "smoke/read-only.spec.ts",
+    "line": 130,
+    "judul": "smoke admin › halaman /home/penugasantracking terbuka tanpa 5xx dan tanpa penolakan akses",
+    "status": "unexpected",
+    "expectedStatus": "passed",
+    "durasiMs": 866,
+    "error": "Error: status dokumen /home/penugasantracking | expect(received).toBeLessThan(expected) | Expected: < 500",
+    "anotasi": [
+     "http-5xx: GET 500 /home/penugasantracking"
+    ]
+   },
+   {
+    "project": "smoke",
+    "file": "smoke/read-only.spec.ts",
+    "line": 130,
+    "judul": "smoke admin › halaman /home/notification terbuka tanpa 5xx dan tanpa penolakan akses",
+    "status": "expected",
+    "expectedStatus": "passed",
+    "durasiMs": 3258,
+    "error": "",
+    "anotasi": []
+   },
+   {
+    "project": "smoke",
+    "file": "smoke/read-only.spec.ts",
+    "line": 130,
+    "judul": "smoke admin › halaman /home/akunsaya terbuka tanpa 5xx dan tanpa penolakan akses",
+    "status": "expected",
+    "expectedStatus": "passed",
+    "durasiMs": 2649,
+    "error": "",
+    "anotasi": []
+   },
+   {
+    "project": "smoke",
+    "file": "smoke/read-only.spec.ts",
+    "line": 130,
+    "judul": "smoke admin › halaman /adminprahu/masterpelabuhan terbuka tanpa 5xx dan tanpa penolakan akses",
+    "status": "expected",
+    "expectedStatus": "passed",
+    "durasiMs": 3352,
+    "error": "",
+    "anotasi": []
+   },
+   {
+    "project": "smoke",
+    "file": "smoke/read-only.spec.ts",
+    "line": 110,
+    "judul": "smoke admin-sub › sesi hasil login setup dipakai ulang (tidak diarahkan ke login)",
+    "status": "expected",
+    "expectedStatus": "passed",
+    "durasiMs": 2583,
+    "error": "",
+    "anotasi": []
+   },
+   {
+    "project": "smoke",
+    "file": "smoke/read-only.spec.ts",
+    "line": 118,
+    "judul": "smoke admin-sub › sub user: Edit Akun Saya ditolak (rule akun saya)",
+    "status": "expected",
+    "expectedStatus": "passed",
+    "durasiMs": 2901,
+    "error": "",
+    "anotasi": []
+   },
+   {
+    "project": "smoke",
+    "file": "smoke/read-only.spec.ts",
+    "line": 110,
+    "judul": "smoke admin-sub-read › sesi hasil login setup dipakai ulang (tidak diarahkan ke login)",
+    "status": "expected",
+    "expectedStatus": "passed",
+    "durasiMs": 2567,
+    "error": "",
+    "anotasi": []
+   },
+   {
+    "project": "smoke",
+    "file": "smoke/read-only.spec.ts",
+    "line": 118,
+    "judul": "smoke admin-sub-read › sub user: Edit Akun Saya ditolak (rule akun saya)",
+    "status": "expected",
+    "expectedStatus": "passed",
+    "durasiMs": 2982,
+    "error": "",
+    "anotasi": []
+   },
+   {
+    "project": "smoke",
+    "file": "smoke/read-only.spec.ts",
+    "line": 110,
+    "judul": "smoke shipper › sesi hasil login setup dipakai ulang (tidak diarahkan ke login)",
+    "status": "expected",
+    "expectedStatus": "passed",
+    "durasiMs": 2981,
+    "error": "",
+    "anotasi": []
+   },
+   {
+    "project": "smoke",
+    "file": "smoke/read-only.spec.ts",
+    "line": 130,
+    "judul": "smoke shipper › halaman /lelang/carirute terbuka tanpa 5xx dan tanpa penolakan akses",
+    "status": "expected",
+    "expectedStatus": "passed",
+    "durasiMs": 4057,
+    "error": "",
+    "anotasi": []
+   },
+   {
+    "project": "smoke",
+    "file": "smoke/read-only.spec.ts",
+    "line": 130,
+    "judul": "smoke shipper › halaman /lelang/listlelang?tab=semua-lelang terbuka tanpa 5xx dan tanpa penolakan akses",
+    "status": "expected",
+    "expectedStatus": "passed",
+    "durasiMs": 4790,
+    "error": "",
+    "anotasi": []
+   },
+   {
+    "project": "smoke",
+    "file": "smoke/read-only.spec.ts",
+    "line": 130,
+    "judul": "smoke shipper › halaman /order/OrderList terbuka tanpa 5xx dan tanpa penolakan akses",
+    "status": "expected",
+    "expectedStatus": "passed",
+    "durasiMs": 3326,
+    "error": "",
+    "anotasi": []
+   },
+   {
+    "project": "smoke",
+    "file": "smoke/read-only.spec.ts",
+    "line": 130,
+    "judul": "smoke shipper › halaman /lelang/pengajuannego terbuka tanpa 5xx dan tanpa penolakan akses",
+    "status": "expected",
+    "expectedStatus": "passed",
+    "durasiMs": 3987,
+    "error": "",
+    "anotasi": []
+   },
+   {
+    "project": "smoke",
+    "file": "smoke/read-only.spec.ts",
+    "line": 130,
+    "judul": "smoke shipper › halaman /home/notification terbuka tanpa 5xx dan tanpa penolakan akses",
+    "status": "expected",
+    "expectedStatus": "passed",
+    "durasiMs": 4599,
+    "error": "",
+    "anotasi": []
+   },
+   {
+    "project": "smoke",
+    "file": "smoke/read-only.spec.ts",
+    "line": 130,
+    "judul": "smoke shipper › halaman /home/akunsaya terbuka tanpa 5xx dan tanpa penolakan akses",
+    "status": "expected",
+    "expectedStatus": "passed",
+    "durasiMs": 3211,
+    "error": "",
+    "anotasi": []
+   },
+   {
+    "project": "smoke",
+    "file": "smoke/read-only.spec.ts",
+    "line": 110,
+    "judul": "smoke shipper-sub › sesi hasil login setup dipakai ulang (tidak diarahkan ke login)",
+    "status": "expected",
+    "expectedStatus": "passed",
+    "durasiMs": 2829,
+    "error": "",
+    "anotasi": []
+   },
+   {
+    "project": "smoke",
+    "file": "smoke/read-only.spec.ts",
+    "line": 118,
+    "judul": "smoke shipper-sub › sub user: Edit Akun Saya ditolak (rule akun saya)",
+    "status": "expected",
+    "expectedStatus": "passed",
+    "durasiMs": 2910,
+    "error": "",
+    "anotasi": []
+   },
+   {
+    "project": "smoke",
+    "file": "smoke/read-only.spec.ts",
+    "line": 110,
+    "judul": "smoke transporter › sesi hasil login setup dipakai ulang (tidak diarahkan ke login)",
+    "status": "expected",
+    "expectedStatus": "passed",
+    "durasiMs": 2883,
+    "error": "",
+    "anotasi": []
+   },
+   {
+    "project": "smoke",
+    "file": "smoke/read-only.spec.ts",
+    "line": 130,
+    "judul": "smoke transporter › halaman /lelang/listlelang?tab=semua-lelang terbuka tanpa 5xx dan tanpa penolakan akses",
+    "status": "expected",
+    "expectedStatus": "passed",
+    "durasiMs": 4242,
+    "error": "",
+    "anotasi": []
+   },
+   {
+    "project": "smoke",
+    "file": "smoke/read-only.spec.ts",
+    "line": 130,
+    "judul": "smoke transporter › halaman /order/OrderList terbuka tanpa 5xx dan tanpa penolakan akses",
+    "status": "expected",
+    "expectedStatus": "passed",
+    "durasiMs": 2782,
+    "error": "",
+    "anotasi": []
+   },
+   {
+    "project": "smoke",
+    "file": "smoke/read-only.spec.ts",
+    "line": 130,
+    "judul": "smoke transporter › halaman /lelang/pengajuannego terbuka tanpa 5xx dan tanpa penolakan akses",
+    "status": "expected",
+    "expectedStatus": "passed",
+    "durasiMs": 3364,
+    "error": "",
+    "anotasi": []
+   },
+   {
+    "project": "smoke",
+    "file": "smoke/read-only.spec.ts",
+    "line": 130,
+    "judul": "smoke transporter › halaman /home/hargajadwal?tab=1 terbuka tanpa 5xx dan tanpa penolakan akses",
+    "status": "expected",
+    "expectedStatus": "passed",
+    "durasiMs": 3053,
+    "error": "",
+    "anotasi": []
+   },
+   {
+    "project": "smoke",
+    "file": "smoke/read-only.spec.ts",
+    "line": 130,
+    "judul": "smoke transporter › halaman /home/penugasantracking terbuka tanpa 5xx dan tanpa penolakan akses",
+    "status": "unexpected",
+    "expectedStatus": "passed",
+    "durasiMs": 852,
+    "error": "Error: status dokumen /home/penugasantracking | expect(received).toBeLessThan(expected) | Expected: < 500",
+    "anotasi": [
+     "http-5xx: GET 500 /home/penugasantracking"
+    ]
+   },
+   {
+    "project": "smoke",
+    "file": "smoke/read-only.spec.ts",
+    "line": 130,
+    "judul": "smoke transporter › halaman /home/notification terbuka tanpa 5xx dan tanpa penolakan akses",
+    "status": "expected",
+    "expectedStatus": "passed",
+    "durasiMs": 3478,
+    "error": "",
+    "anotasi": []
+   },
+   {
+    "project": "smoke",
+    "file": "smoke/read-only.spec.ts",
+    "line": 130,
+    "judul": "smoke transporter › halaman /home/akunsaya terbuka tanpa 5xx dan tanpa penolakan akses",
+    "status": "expected",
+    "expectedStatus": "passed",
+    "durasiMs": 3013,
+    "error": "",
+    "anotasi": []
+   },
+   {
+    "project": "smoke",
+    "file": "smoke/read-only.spec.ts",
+    "line": 110,
+    "judul": "smoke transporter-sub › sesi hasil login setup dipakai ulang (tidak diarahkan ke login)",
+    "status": "expected",
+    "expectedStatus": "passed",
+    "durasiMs": 2396,
+    "error": "",
+    "anotasi": []
+   },
+   {
+    "project": "smoke",
+    "file": "smoke/read-only.spec.ts",
+    "line": 118,
+    "judul": "smoke transporter-sub › sub user: Edit Akun Saya ditolak (rule akun saya)",
+    "status": "expected",
+    "expectedStatus": "passed",
+    "durasiMs": 2659,
+    "error": "",
+    "anotasi": []
+   }
+  ]
+ }
+}

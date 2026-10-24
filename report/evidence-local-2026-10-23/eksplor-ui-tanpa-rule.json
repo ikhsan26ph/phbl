@@ -1,0 +1,1435 @@
+{
+ "waktu": "2026-10-24T02:22:13.930Z",
+ "host": "http://192.168.0.89:8102",
+ "out": [
+  {
+   "role": "admin",
+   "id": "UI-ADM-01",
+   "url": "/dashboardanalitik/ringkasan",
+   "status": 200,
+   "urlAkhir": "/dashboardanalitik/ringkasan",
+   "http5xx": [],
+   "xhr": [],
+   "judul": [
+    "RINGKASAN ANALITIK",
+    "FILTER"
+   ],
+   "breadcrumb": "",
+   "field": [
+    {
+     "label": "",
+     "id": "tglawal",
+     "tipe": "text",
+     "wajib": false,
+     "nilai": "24/09/2026",
+     "placeholder": "DD/MM/YYYY"
+    },
+    {
+     "label": "Sampai Tanggal *",
+     "id": "tglakhir",
+     "tipe": "text",
+     "wajib": false,
+     "nilai": "24/10/2026",
+     "placeholder": "DD/MM/YYYY"
+    },
+    {
+     "label": "",
+     "id": "BidOwnerID",
+     "tipe": "select",
+     "wajib": false,
+     "nilai": "2 opsi",
+     "placeholder": ""
+    }
+   ],
+   "multiSelect": [],
+   "tombol": [
+    {
+     "teks": "Beranda",
+     "href": "/lelang/listLelang",
+     "id": ""
+    },
+    {
+     "teks": "Cari",
+     "href": "",
+     "id": ""
+    }
+   ],
+   "kolom": [],
+   "petunjuk": [
+    "Masukkan tanggal permintaan muat (Maksimal range 12 bulan)"
+   ],
+   "tabelKosong": false,
+   "elemenGrafik": 0,
+   "subHalaman": []
+  },
+  {
+   "role": "admin",
+   "id": "UI-ADM-02",
+   "url": "/analitik/analitikfcu",
+   "status": 200,
+   "urlAkhir": "/analitik/analitikfcu",
+   "http5xx": [],
+   "xhr": [],
+   "judul": [
+    "FREIGHT COST"
+   ],
+   "breadcrumb": "",
+   "field": [
+    {
+     "label": "",
+     "id": "tglawal",
+     "tipe": "text",
+     "wajib": false,
+     "nilai": "",
+     "placeholder": "DD/MM/YYYY"
+    },
+    {
+     "label": "Sampai Tanggal *",
+     "id": "tglakhir",
+     "tipe": "text",
+     "wajib": false,
+     "nilai": "",
+     "placeholder": "DD/MM/YYYY"
+    },
+    {
+     "label": "",
+     "id": "",
+     "tipe": "text",
+     "wajib": false,
+     "nilai": "",
+     "placeholder": "Search..."
+    },
+    {
+     "label": "",
+     "id": "",
+     "tipe": "text",
+     "wajib": false,
+     "nilai": "",
+     "placeholder": "Search..."
+    },
+    {
+     "label": "",
+     "id": "",
+     "tipe": "text",
+     "wajib": false,
+     "nilai": "",
+     "placeholder": "Search..."
+    },
+    {
+     "label": "",
+     "id": "",
+     "tipe": "text",
+     "wajib": false,
+     "nilai": "",
+     "placeholder": "Search..."
+    }
+   ],
+   "multiSelect": [
+    {
+     "widget": "multi-select",
+     "header": "Pilih Transporter",
+     "opsi": 3
+    },
+    {
+     "widget": "multi-select",
+     "header": "Pilih Pelabuhan Asal",
+     "opsi": 1
+    },
+    {
+     "widget": "multi-select",
+     "header": "Pilih Pelabuhan Tujuan",
+     "opsi": 1
+    },
+    {
+     "widget": "multi-select",
+     "header": "Pilih Shipper",
+     "opsi": 3
+    }
+   ],
+   "tombol": [
+    {
+     "teks": "Beranda",
+     "href": "/lelang/listLelang",
+     "id": ""
+    },
+    {
+     "teks": "Cari",
+     "href": "",
+     "id": ""
+    }
+   ],
+   "kolom": [],
+   "petunjuk": [
+    "Masukkan tanggal permintaan muat (Maksimal range 12 bulan)"
+   ],
+   "tabelKosong": false,
+   "elemenGrafik": 0,
+   "subHalaman": []
+  },
+  {
+   "role": "admin",
+   "id": "UI-ADM-03",
+   "url": "/analitik/analitikotdr",
+   "status": 200,
+   "urlAkhir": "/analitik/analitikotdr",
+   "http5xx": [],
+   "xhr": [],
+   "judul": [
+    "ON TIME DELIVERY RATE"
+   ],
+   "breadcrumb": "",
+   "field": [
+    {
+     "label": "",
+     "id": "tglawal",
+     "tipe": "text",
+     "wajib": false,
+     "nilai": "",
+     "placeholder": "DD/MM/YYYY"
+    },
+    {
+     "label": "Sampai Tanggal *",
+     "id": "tglakhir",
+     "tipe": "text",
+     "wajib": false,
+     "nilai": "",
+     "placeholder": "DD/MM/YYYY"
+    },
+    {
+     "label": "",
+     "id": "",
+     "tipe": "text",
+     "wajib": false,
+     "nilai": "",
+     "placeholder": "Search..."
+    },
+    {
+     "label": "",
+     "id": "",
+     "tipe": "text",
+     "wajib": false,
+     "nilai": "",
+     "placeholder": "Search..."
+    },
+    {
+     "label": "",
+     "id": "",
+     "tipe": "text",
+     "wajib": false,
+     "nilai": "",
+     "placeholder": "Search..."
+    }
+   ],
+   "multiSelect": [
+    {
+     "widget": "multi-select",
+     "header": "Pilih Pelabuhan Tujuan (POD)",
+     "opsi": 1
+    },
+    {
+     "widget": "multi-select",
+     "header": "Pilih Transporter",
+     "opsi": 3
+    },
+    {
+     "widget": "multi-select",
+     "header": "Pilih Shipper",
+     "opsi": 3
+    }
+   ],
+   "tombol": [
+    {
+     "teks": "Beranda",
+     "href": "/lelang/listLelang",
+     "id": ""
+    },
+    {
+     "teks": "Cari",
+     "href": "",
+     "id": ""
+    }
+   ],
+   "kolom": [],
+   "petunjuk": [
+    "Masukkan tanggal permintaan muat (Maksimal range 12 bulan)"
+   ],
+   "tabelKosong": false,
+   "elemenGrafik": 0,
+   "subHalaman": []
+  },
+  {
+   "role": "admin",
+   "id": "UI-ADM-04",
+   "url": "/home/analitikshipmentaccuracy",
+   "status": 200,
+   "urlAkhir": "/home/analitikshipmentaccuracy",
+   "http5xx": [],
+   "xhr": [],
+   "judul": [
+    "SHIPMENT ACCURACY"
+   ],
+   "breadcrumb": "",
+   "field": [
+    {
+     "label": "",
+     "id": "tglawal",
+     "tipe": "text",
+     "wajib": false,
+     "nilai": "",
+     "placeholder": "DD/MM/YYYY"
+    },
+    {
+     "label": "Sampai Tanggal *",
+     "id": "tglakhir",
+     "tipe": "text",
+     "wajib": false,
+     "nilai": "",
+     "placeholder": "DD/MM/YYYY"
+    },
+    {
+     "label": "",
+     "id": "",
+     "tipe": "text",
+     "wajib": false,
+     "nilai": "",
+     "placeholder": "Search..."
+    },
+    {
+     "label": "",
+     "id": "",
+     "tipe": "text",
+     "wajib": false,
+     "nilai": "",
+     "placeholder": "Search..."
+    },
+    {
+     "label": "",
+     "id": "",
+     "tipe": "text",
+     "wajib": false,
+     "nilai": "",
+     "placeholder": "Search..."
+    },
+    {
+     "label": "",
+     "id": "",
+     "tipe": "text",
+     "wajib": false,
+     "nilai": "",
+     "placeholder": "Search..."
+    }
+   ],
+   "multiSelect": [
+    {
+     "widget": "multi-select",
+     "header": "Pilih Transporter",
+     "opsi": 3
+    },
+    {
+     "widget": "multi-select",
+     "header": "Pilih Pelabuhan Asal",
+     "opsi": 1
+    },
+    {
+     "widget": "multi-select",
+     "header": "Pilih Pelabuhan Tujuan",
+     "opsi": 1
+    },
+    {
+     "widget": "multi-select",
+     "header": "Pilih Shipper",
+     "opsi": 3
+    },
+    {
+     "widget": "multi-select",
+     "header": "Pilih Shipment Accuracy",
+     "opsi": 4
+    }
+   ],
+   "tombol": [
+    {
+     "teks": "Beranda",
+     "href": "/lelang/listLelang",
+     "id": ""
+    },
+    {
+     "teks": "Cari",
+     "href": "",
+     "id": "lanjutcari"
+    }
+   ],
+   "kolom": [],
+   "petunjuk": [
+    "Masukkan tanggal permintaan muat (Maksimal range 12 bulan)"
+   ],
+   "tabelKosong": false,
+   "elemenGrafik": 0,
+   "subHalaman": []
+  },
+  {
+   "role": "admin",
+   "id": "UI-ADM-05",
+   "url": "/adminprahu/biayalayanan",
+   "status": 200,
+   "urlAkhir": "/adminprahu/biayalayanan",
+   "http5xx": [],
+   "xhr": [
+    "POST 200 /adminprahu/searchbiayalayanan?undefined"
+   ],
+   "judul": [
+    "BIAYA LAYANAN"
+   ],
+   "breadcrumb": "",
+   "field": [
+    {
+     "label": "",
+     "id": "valuelimit",
+     "tipe": "select",
+     "wajib": false,
+     "nilai": "4 opsi",
+     "placeholder": ""
+    },
+    {
+     "label": "",
+     "id": "",
+     "tipe": "text",
+     "wajib": false,
+     "nilai": "",
+     "placeholder": "Search..."
+    },
+    {
+     "label": "",
+     "id": "jenis_biaya",
+     "tipe": "select",
+     "wajib": false,
+     "nilai": "4 opsi",
+     "placeholder": ""
+    }
+   ],
+   "multiSelect": [
+    {
+     "widget": "multi-select",
+     "header": "Pilih Shipper",
+     "opsi": 2
+    }
+   ],
+   "tombol": [
+    {
+     "teks": "Beranda",
+     "href": "/lelang/listLelang",
+     "id": ""
+    },
+    {
+     "teks": "Filter",
+     "href": "",
+     "id": "btn-filter-provinsi"
+    },
+    {
+     "teks": "Setting Biaya Layanan",
+     "href": "/adminprahu/settingbiayalayanan/WVdieFN2bXUvdTM3UlJ2RUkvSndwQT09",
+     "id": "select_golongan"
+    },
+    {
+     "teks": "1",
+     "href": "",
+     "id": ""
+    }
+   ],
+   "kolom": [
+    "ID",
+    "Tanggal Setting",
+    "Shipper",
+    "Jenis Biaya",
+    "Biaya Layanan",
+    "Masa Berlaku",
+    "Aksi"
+   ],
+   "petunjuk": [],
+   "tabelKosong": false,
+   "elemenGrafik": 0,
+   "subHalaman": []
+  },
+  {
+   "role": "admin",
+   "id": "UI-ADM-06",
+   "url": "/analitik/masterjenismuatan",
+   "status": 200,
+   "urlAkhir": "/analitik/masterjenismuatan",
+   "http5xx": [],
+   "xhr": [
+    "POST 200 /analitik/searchmasterjenismuatan?undefined"
+   ],
+   "judul": [
+    "MASTER JENIS MUATAN"
+   ],
+   "breadcrumb": "",
+   "field": [
+    {
+     "label": "",
+     "id": "valuelimit",
+     "tipe": "select",
+     "wajib": false,
+     "nilai": "4 opsi",
+     "placeholder": ""
+    },
+    {
+     "label": "",
+     "id": "sh",
+     "tipe": "select",
+     "wajib": false,
+     "nilai": "1 opsi",
+     "placeholder": ""
+    }
+   ],
+   "multiSelect": [],
+   "tombol": [
+    {
+     "teks": "Beranda",
+     "href": "/lelang/listLelang",
+     "id": ""
+    },
+    {
+     "teks": "Filter",
+     "href": "",
+     "id": "btn_filter"
+    },
+    {
+     "teks": "",
+     "href": "/analitik/datajenismuatan/NQ==",
+     "id": ""
+    },
+    {
+     "teks": "Lihat Daftar Jenis Muatan",
+     "href": "",
+     "id": "select_golongan"
+    },
+    {
+     "teks": "",
+     "href": "/analitik/datajenismuatan/Mg==",
+     "id": ""
+    },
+    {
+     "teks": "Lihat Daftar Jenis Muatan",
+     "href": "",
+     "id": "select_golongan"
+    },
+    {
+     "teks": "1",
+     "href": "",
+     "id": ""
+    }
+   ],
+   "kolom": [
+    "ID",
+    "Shipper",
+    "Email",
+    "Jml jenis Muatan",
+    "Aksi"
+   ],
+   "petunjuk": [],
+   "tabelKosong": false,
+   "elemenGrafik": 0,
+   "subHalaman": []
+  },
+  {
+   "role": "admin",
+   "id": "UI-ADM-07",
+   "url": "/analitik/masterhargabarang",
+   "status": 200,
+   "urlAkhir": "/analitik/masterhargabarang",
+   "http5xx": [],
+   "xhr": [
+    "POST 200 /analitik/searchmasterhargabarang?undefined"
+   ],
+   "judul": [
+    "MASTER HARGA BARANG"
+   ],
+   "breadcrumb": "",
+   "field": [
+    {
+     "label": "",
+     "id": "valuelimit",
+     "tipe": "select",
+     "wajib": false,
+     "nilai": "4 opsi",
+     "placeholder": ""
+    },
+    {
+     "label": "",
+     "id": "sh",
+     "tipe": "select",
+     "wajib": false,
+     "nilai": "1 opsi",
+     "placeholder": ""
+    }
+   ],
+   "multiSelect": [],
+   "tombol": [
+    {
+     "teks": "Beranda",
+     "href": "/lelang/listLelang",
+     "id": ""
+    },
+    {
+     "teks": "Filter",
+     "href": "",
+     "id": ""
+    },
+    {
+     "teks": "",
+     "href": "/analitik/hargabarang/Mg==",
+     "id": ""
+    },
+    {
+     "teks": "Lihat Daftar Harga Barang",
+     "href": "",
+     "id": "select_golongan"
+    },
+    {
+     "teks": "1",
+     "href": "",
+     "id": ""
+    }
+   ],
+   "kolom": [
+    "ID",
+    "Shipper",
+    "Email",
+    "Harga Terinput",
+    "Aksi"
+   ],
+   "petunjuk": [],
+   "tabelKosong": false,
+   "elemenGrafik": 0,
+   "subHalaman": []
+  },
+  {
+   "role": "admin",
+   "id": "UI-ADM-08",
+   "url": "/adminprahu/masterfreetime",
+   "status": 200,
+   "urlAkhir": "/adminprahu/masterfreetime",
+   "http5xx": [],
+   "xhr": [
+    "POST 200 /adminprahu/search_masterfreetime?undefined"
+   ],
+   "judul": [
+    "MASTER FREE TIME"
+   ],
+   "breadcrumb": "",
+   "field": [
+    {
+     "label": "",
+     "id": "valuelimit",
+     "tipe": "select",
+     "wajib": false,
+     "nilai": "4 opsi",
+     "placeholder": ""
+    },
+    {
+     "label": "",
+     "id": "filter_1",
+     "tipe": "select",
+     "wajib": false,
+     "nilai": "0 opsi",
+     "placeholder": ""
+    },
+    {
+     "label": "",
+     "id": "filter_3",
+     "tipe": "select",
+     "wajib": false,
+     "nilai": "2 opsi",
+     "placeholder": ""
+    }
+   ],
+   "multiSelect": [],
+   "tombol": [
+    {
+     "teks": "Beranda",
+     "href": "/lelang/listLelang",
+     "id": ""
+    },
+    {
+     "teks": "Filter",
+     "href": "",
+     "id": "btn-filter-provinsi"
+    },
+    {
+     "teks": "Tambah Free Time",
+     "href": "/adminprahu/tambahmasterfreetime",
+     "id": ""
+    },
+    {
+     "teks": "Tambah Free Time",
+     "href": "",
+     "id": ""
+    }
+   ],
+   "kolom": [
+    "No",
+    "Pelabuhan Tujuan (POD)",
+    "Storage (Hari)",
+    "Status",
+    "Aksi"
+   ],
+   "petunjuk": [],
+   "tabelKosong": true,
+   "elemenGrafik": 0,
+   "subHalaman": [
+    {
+     "dari": "Tambah Free Time",
+     "href": "/adminprahu/tambahmasterfreetime",
+     "status": 200,
+     "struktur": {
+      "judul": [
+       "TAMBAH FREE TIME"
+      ],
+      "breadcrumb": "",
+      "field": [
+       {
+        "label": "",
+        "id": "pelabuhan",
+        "tipe": "select",
+        "wajib": false,
+        "nilai": "0 opsi",
+        "placeholder": ""
+       },
+       {
+        "label": "",
+        "id": "storage0",
+        "tipe": "text",
+        "wajib": false,
+        "nilai": "",
+        "placeholder": "Storage"
+       },
+       {
+        "label": "",
+        "id": "status",
+        "tipe": "select",
+        "wajib": false,
+        "nilai": "2 opsi",
+        "placeholder": ""
+       }
+      ],
+      "multiSelect": [],
+      "tombol": [
+       {
+        "teks": "Beranda",
+        "href": "/lelang/listLelang",
+        "id": ""
+       },
+       {
+        "teks": "Master Free Time",
+        "href": "/adminprahu/masterfreetime",
+        "id": ""
+       },
+       {
+        "teks": "Kembali",
+        "href": "",
+        "id": ""
+       },
+       {
+        "teks": "Batal",
+        "href": "/adminprahu/Kontainer",
+        "id": ""
+       },
+       {
+        "teks": "Batal",
+        "href": "",
+        "id": ""
+       },
+       {
+        "teks": "Simpan",
+        "href": "",
+        "id": "tombol_simpan_bank"
+       }
+      ],
+      "kolom": [
+       "Pelabuhan Tujuan (POD)",
+       "Storage (Hari)",
+       "Status"
+      ],
+      "petunjuk": [],
+      "tabelKosong": false,
+      "elemenGrafik": 0
+     }
+    }
+   ]
+  },
+  {
+   "role": "shipper",
+   "id": "UI-SHP-01",
+   "url": "/dashboardanalitik/ringkasan",
+   "status": 200,
+   "urlAkhir": "/dashboardanalitik/ringkasan",
+   "http5xx": [],
+   "xhr": [
+    "GET 200 /dashboardanalitik/searchringkasan?session_get=exp_6adc15fe94a690.6489"
+   ],
+   "judul": [
+    "RINGKASAN ANALITIK",
+    "FILTER"
+   ],
+   "breadcrumb": "",
+   "field": [
+    {
+     "label": "",
+     "id": "tglawal",
+     "tipe": "text",
+     "wajib": false,
+     "nilai": "24/09/2026",
+     "placeholder": "DD/MM/YYYY"
+    },
+    {
+     "label": "Sampai Tanggal *",
+     "id": "tglakhir",
+     "tipe": "text",
+     "wajib": false,
+     "nilai": "24/10/2026",
+     "placeholder": "DD/MM/YYYY"
+    }
+   ],
+   "multiSelect": [],
+   "tombol": [
+    {
+     "teks": "Beranda",
+     "href": "/lelang/carirute",
+     "id": ""
+    },
+    {
+     "teks": "Cari",
+     "href": "",
+     "id": ""
+    },
+    {
+     "teks": "Lihat Laporan",
+     "href": "/home/analitikscsr?session_get=exp_6adc15fe94a690.64895128",
+     "id": ""
+    },
+    {
+     "teks": "Lihat Laporan",
+     "href": "/analitik/analitikfcu?session_get=exp_6adc15fe94a690.64895128",
+     "id": ""
+    },
+    {
+     "teks": "Lihat Laporan",
+     "href": "/analitik/analitikotdr?session_get=exp_6adc15fe94a690.64895128",
+     "id": ""
+    },
+    {
+     "teks": "Lihat Laporan",
+     "href": "/home/analitikshipmentaccuracy?session_get=exp_6adc15fe94a690.64895128",
+     "id": ""
+    }
+   ],
+   "kolom": [],
+   "petunjuk": [
+    "Masukkan tanggal permintaan muat (Maksimal range 12 bulan)"
+   ],
+   "tabelKosong": false,
+   "elemenGrafik": 4,
+   "subHalaman": [
+    {
+     "dari": "Lihat Laporan",
+     "href": "/home/analitikscsr?session_get=exp_6adc15fe94a690.64895128",
+     "status": 200,
+     "struktur": {
+      "judul": [
+       "SHIPPING COST SALES RATIO",
+       "DATA ANALITIK"
+      ],
+      "breadcrumb": "",
+      "field": [
+       {
+        "label": "",
+        "id": "tglawal",
+        "tipe": "text",
+        "wajib": false,
+        "nilai": "24/09/2026",
+        "placeholder": "DD/MM/YYYY"
+       },
+       {
+        "label": "Sampai Tanggal *",
+        "id": "tglakhir",
+        "tipe": "text",
+        "wajib": false,
+        "nilai": "24/10/2026",
+        "placeholder": "DD/MM/YYYY"
+       },
+       {
+        "label": "",
+        "id": "",
+        "tipe": "text",
+        "wajib": false,
+        "nilai": "",
+        "placeholder": "Search..."
+       },
+       {
+        "label": "",
+        "id": "",
+        "tipe": "text",
+        "wajib": false,
+        "nilai": "",
+        "placeholder": "Search..."
+       }
+      ],
+      "multiSelect": [
+       {
+        "widget": "multi-select",
+        "header": "Pilih Provinsi",
+        "opsi": 1
+       },
+       {
+        "widget": "multi-select",
+        "header": "Pilih Nama Consignee",
+        "opsi": 1
+       }
+      ],
+      "tombol": [
+       {
+        "teks": "Beranda",
+        "href": "/lelang/carirute",
+        "id": ""
+       },
+       {
+        "teks": "Cari",
+        "href": "",
+        "id": "lanjutcari"
+       }
+      ],
+      "kolom": [
+       "No",
+       "Provinsi Tujuan",
+       "Total Biaya Pengiriman (Rp)",
+       "Total Harga Barang (Rp)",
+       "Logistic Cost Ratio (%)",
+       "Aksi"
+      ],
+      "petunjuk": [
+       "Masukkan tanggal permintaan muat (Maksimal range 12 bulan)"
+      ],
+      "tabelKosong": false,
+      "elemenGrafik": 0
+     }
+    },
+    {
+     "dari": "Lihat Laporan",
+     "href": "/analitik/analitikfcu?session_get=exp_6adc15fe94a690.64895128",
+     "status": 200,
+     "struktur": {
+      "judul": [
+       "FREIGHT COST",
+       "DATA ANALITIK"
+      ],
+      "breadcrumb": "",
+      "field": [
+       {
+        "label": "",
+        "id": "tglawal",
+        "tipe": "text",
+        "wajib": false,
+        "nilai": "24/09/2026",
+        "placeholder": "DD/MM/YYYY"
+       },
+       {
+        "label": "Sampai Tanggal *",
+        "id": "tglakhir",
+        "tipe": "text",
+        "wajib": false,
+        "nilai": "24/10/2026",
+        "placeholder": "DD/MM/YYYY"
+       },
+       {
+        "label": "",
+        "id": "",
+        "tipe": "text",
+        "wajib": false,
+        "nilai": "",
+        "placeholder": "Search..."
+       },
+       {
+        "label": "",
+        "id": "",
+        "tipe": "text",
+        "wajib": false,
+        "nilai": "",
+        "placeholder": "Search..."
+       },
+       {
+        "label": "",
+        "id": "",
+        "tipe": "text",
+        "wajib": false,
+        "nilai": "",
+        "placeholder": "Search..."
+       },
+       {
+        "label": "",
+        "id": "valuelimit",
+        "tipe": "select",
+        "wajib": false,
+        "nilai": "4 opsi",
+        "placeholder": ""
+       }
+      ],
+      "multiSelect": [
+       {
+        "widget": "multi-select",
+        "header": "Pilih Transporter",
+        "opsi": 3
+       },
+       {
+        "widget": "multi-select",
+        "header": "Pilih Pelabuhan Asal",
+        "opsi": 1
+       },
+       {
+        "widget": "multi-select",
+        "header": "Pilih Pelabuhan Tujuan",
+        "opsi": 1
+       }
+      ],
+      "tombol": [
+       {
+        "teks": "Beranda",
+        "href": "/lelang/carirute",
+        "id": ""
+       },
+       {
+        "teks": "Cari",
+        "href": "",
+        "id": ""
+       }
+      ],
+      "kolom": [
+       "No",
+       "Bulan",
+       "Transporter",
+       "Pelabuhan Asal",
+       "Pelabuhan Tujuan",
+       "Provinsi Tujuan",
+       "Total Order",
+       "Total Biaya Pengiriman (Rp)",
+       "Total Qty",
+       "Avg. Freight Cost Per Unit (Rp.)"
+      ],
+      "petunjuk": [
+       "Masukkan tanggal permintaan muat (Maksimal range 12 bulan)"
+      ],
+      "tabelKosong": false,
+      "elemenGrafik": 0
+     }
+    }
+   ]
+  },
+  {
+   "role": "shipper",
+   "id": "UI-SHP-02",
+   "url": "/analitik/analitikfcu",
+   "status": 200,
+   "urlAkhir": "/analitik/analitikfcu",
+   "http5xx": [],
+   "xhr": [],
+   "judul": [
+    "FREIGHT COST"
+   ],
+   "breadcrumb": "",
+   "field": [
+    {
+     "label": "",
+     "id": "tglawal",
+     "tipe": "text",
+     "wajib": false,
+     "nilai": "",
+     "placeholder": "DD/MM/YYYY"
+    },
+    {
+     "label": "Sampai Tanggal *",
+     "id": "tglakhir",
+     "tipe": "text",
+     "wajib": false,
+     "nilai": "",
+     "placeholder": "DD/MM/YYYY"
+    },
+    {
+     "label": "",
+     "id": "",
+     "tipe": "text",
+     "wajib": false,
+     "nilai": "",
+     "placeholder": "Search..."
+    },
+    {
+     "label": "",
+     "id": "",
+     "tipe": "text",
+     "wajib": false,
+     "nilai": "",
+     "placeholder": "Search..."
+    },
+    {
+     "label": "",
+     "id": "",
+     "tipe": "text",
+     "wajib": false,
+     "nilai": "",
+     "placeholder": "Search..."
+    }
+   ],
+   "multiSelect": [
+    {
+     "widget": "multi-select",
+     "header": "Pilih Transporter",
+     "opsi": 3
+    },
+    {
+     "widget": "multi-select",
+     "header": "Pilih Pelabuhan Asal",
+     "opsi": 1
+    },
+    {
+     "widget": "multi-select",
+     "header": "Pilih Pelabuhan Tujuan",
+     "opsi": 1
+    }
+   ],
+   "tombol": [
+    {
+     "teks": "Beranda",
+     "href": "/lelang/carirute",
+     "id": ""
+    },
+    {
+     "teks": "Cari",
+     "href": "",
+     "id": ""
+    }
+   ],
+   "kolom": [],
+   "petunjuk": [
+    "Masukkan tanggal permintaan muat (Maksimal range 12 bulan)"
+   ],
+   "tabelKosong": false,
+   "elemenGrafik": 0,
+   "subHalaman": []
+  },
+  {
+   "role": "shipper",
+   "id": "UI-SHP-03",
+   "url": "/analitik/analitikotdr",
+   "status": 200,
+   "urlAkhir": "/analitik/analitikotdr",
+   "http5xx": [],
+   "xhr": [],
+   "judul": [
+    "ON TIME DELIVERY RATE"
+   ],
+   "breadcrumb": "",
+   "field": [
+    {
+     "label": "",
+     "id": "tglawal",
+     "tipe": "text",
+     "wajib": false,
+     "nilai": "",
+     "placeholder": "DD/MM/YYYY"
+    },
+    {
+     "label": "Sampai Tanggal *",
+     "id": "tglakhir",
+     "tipe": "text",
+     "wajib": false,
+     "nilai": "",
+     "placeholder": "DD/MM/YYYY"
+    },
+    {
+     "label": "",
+     "id": "",
+     "tipe": "text",
+     "wajib": false,
+     "nilai": "",
+     "placeholder": "Search..."
+    },
+    {
+     "label": "",
+     "id": "",
+     "tipe": "text",
+     "wajib": false,
+     "nilai": "",
+     "placeholder": "Search..."
+    }
+   ],
+   "multiSelect": [
+    {
+     "widget": "multi-select",
+     "header": "Pilih Pelabuhan Tujuan (POD)",
+     "opsi": 1
+    },
+    {
+     "widget": "multi-select",
+     "header": "Pilih Transporter",
+     "opsi": 3
+    }
+   ],
+   "tombol": [
+    {
+     "teks": "Beranda",
+     "href": "/lelang/carirute",
+     "id": ""
+    },
+    {
+     "teks": "Cari",
+     "href": "",
+     "id": ""
+    }
+   ],
+   "kolom": [],
+   "petunjuk": [
+    "Masukkan tanggal permintaan muat (Maksimal range 12 bulan)"
+   ],
+   "tabelKosong": false,
+   "elemenGrafik": 0,
+   "subHalaman": []
+  },
+  {
+   "role": "shipper",
+   "id": "UI-SHP-04",
+   "url": "/home/analitikshipmentaccuracy",
+   "status": 200,
+   "urlAkhir": "/home/analitikshipmentaccuracy",
+   "http5xx": [],
+   "xhr": [],
+   "judul": [
+    "SHIPMENT ACCURACY"
+   ],
+   "breadcrumb": "",
+   "field": [
+    {
+     "label": "",
+     "id": "tglawal",
+     "tipe": "text",
+     "wajib": false,
+     "nilai": "",
+     "placeholder": "DD/MM/YYYY"
+    },
+    {
+     "label": "Sampai Tanggal *",
+     "id": "tglakhir",
+     "tipe": "text",
+     "wajib": false,
+     "nilai": "",
+     "placeholder": "DD/MM/YYYY"
+    },
+    {
+     "label": "",
+     "id": "",
+     "tipe": "text",
+     "wajib": false,
+     "nilai": "",
+     "placeholder": "Search..."
+    },
+    {
+     "label": "",
+     "id": "",
+     "tipe": "text",
+     "wajib": false,
+     "nilai": "",
+     "placeholder": "Search..."
+    },
+    {
+     "label": "",
+     "id": "",
+     "tipe": "text",
+     "wajib": false,
+     "nilai": "",
+     "placeholder": "Search..."
+    }
+   ],
+   "multiSelect": [
+    {
+     "widget": "multi-select",
+     "header": "Pilih Transporter",
+     "opsi": 3
+    },
+    {
+     "widget": "multi-select",
+     "header": "Pilih Pelabuhan Asal",
+     "opsi": 1
+    },
+    {
+     "widget": "multi-select",
+     "header": "Pilih Pelabuhan Tujuan",
+     "opsi": 1
+    },
+    {
+     "widget": "multi-select",
+     "header": "Pilih Shipment Accuracy",
+     "opsi": 4
+    }
+   ],
+   "tombol": [
+    {
+     "teks": "Beranda",
+     "href": "/lelang/carirute",
+     "id": ""
+    },
+    {
+     "teks": "Cari",
+     "href": "",
+     "id": "lanjutcari"
+    }
+   ],
+   "kolom": [],
+   "petunjuk": [
+    "Masukkan tanggal permintaan muat (Maksimal range 12 bulan)"
+   ],
+   "tabelKosong": false,
+   "elemenGrafik": 0,
+   "subHalaman": []
+  },
+  {
+   "role": "shipper",
+   "id": "UI-SHP-06",
+   "url": "/analitik/hargabarang",
+   "status": 200,
+   "urlAkhir": "/analitik/hargabarang",
+   "http5xx": [
+    "/analitik/searchdatajenismuatan?undefined"
+   ],
+   "xhr": [
+    "POST 500 /analitik/searchdatajenismuatan?undefined"
+   ],
+   "judul": [
+    "MASTER HARGA BARANG"
+   ],
+   "breadcrumb": "",
+   "field": [
+    {
+     "label": "",
+     "id": "valuelimit",
+     "tipe": "select",
+     "wajib": false,
+     "nilai": "4 opsi",
+     "placeholder": ""
+    }
+   ],
+   "multiSelect": [],
+   "tombol": [
+    {
+     "teks": "Beranda",
+     "href": "/lelang/carirute",
+     "id": ""
+    },
+    {
+     "teks": "Filter",
+     "href": "",
+     "id": "btn_filter"
+    },
+    {
+     "teks": "Tambah Harga Barang",
+     "href": "/analitik/tambahhargabarang/Mg==",
+     "id": ""
+    }
+   ],
+   "kolom": [
+    "No",
+    "Nama Jenis Muatan",
+    "Harga Terinput",
+    "Aksi"
+   ],
+   "petunjuk": [],
+   "tabelKosong": false,
+   "elemenGrafik": 0,
+   "subHalaman": [
+    {
+     "dari": "Tambah Harga Barang",
+     "href": "/analitik/tambahhargabarang/Mg==",
+     "status": 200,
+     "struktur": {
+      "judul": [
+       "TAMBAH HARGA BARANG"
+      ],
+      "breadcrumb": "",
+      "field": [
+       {
+        "label": "",
+        "id": "jenis_muatan[]",
+        "tipe": "select",
+        "wajib": true,
+        "nilai": "0 opsi",
+        "placeholder": ""
+       },
+       {
+        "label": "",
+        "id": "harga_satuan[]",
+        "tipe": "text",
+        "wajib": true,
+        "nilai": "",
+        "placeholder": "Masukkan Harga"
+       },
+       {
+        "label": "",
+        "id": "tgl[]",
+        "tipe": "text",
+        "wajib": true,
+        "nilai": "",
+        "placeholder": "DD/MM/YYYY"
+       },
+       {
+        "label": "",
+        "id": "status[]",
+        "tipe": "select",
+        "wajib": true,
+        "nilai": "2 opsi",
+        "placeholder": ""
+       }
+      ],
+      "multiSelect": [],
+      "tombol": [
+       {
+        "teks": "Beranda",
+        "href": "/lelang/carirute",
+        "id": ""
+       },
+       {
+        "teks": "Master Harga Barang",
+        "href": "/analitik/hargabarang",
+        "id": ""
+       },
+       {
+        "teks": "Kembali",
+        "href": "",
+        "id": ""
+       },
+       {
+        "teks": "Download template disini",
+        "href": "/_resources/themes/prahutheme/javascript/custom/Template Harga Barang.",
+        "id": ""
+       },
+       {
+        "teks": "Import Harga Barang",
+        "href": "",
+        "id": ""
+       },
+       {
+        "teks": "Batal",
+        "href": "/analitik/hargabarang",
+        "id": ""
+       },
+       {
+        "teks": "Simpan",
+        "href": "",
+        "id": "tombolSimpanProvinsi"
+       }
+      ],
+      "kolom": [],
+      "petunjuk": [],
+      "tabelKosong": false,
+      "elemenGrafik": 0
+     }
+    }
+   ]
+  }
+ ]
+}

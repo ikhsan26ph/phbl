@@ -8,7 +8,8 @@
   },
   "scripts": {
     "test": "playwright test",
-    "report": "node scripts/generate-report.js"
+    "report": "node scripts/generate-report.js",
+    "readiness": "node scripts/readiness-check.js"
   },
   "keywords": [],
   "author": "",

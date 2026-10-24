@@ -1,0 +1,383 @@
+[    1905ms] [VERBOSE] [DOM] Input elements should have autocomplete attributes (suggested: "current-password"): (More info: https://goo.gl/9p2vKq) %o @ http://192.168.0.88:8102/user/login:0
+[    1906ms] [LOG] 0 @ http://192.168.0.88:8102/user/login:1432
+[    1907ms] [LOG] undefined scr @ http://192.168.0.88:8102/user/login:1436
+[    6971ms] [LOG] ddd @ http://192.168.0.88:8102/user/login:1531
+[    7387ms] [LOG] {pesan: sub_user_admin_data, status: 1, user_aktif: 1, hapus: 0, user_aktif_sub: aktif} @ http://192.168.0.88:8102/user/login:1564
+[    7388ms] [LOG] {pesan: sub_user_admin_data, status: 1, user_aktif: 1, hapus: 0, user_aktif_sub: aktif} a @ http://192.168.0.88:8102/user/login:1566
+[    9528ms] [LOG] Akun Sayanamanya @ http://192.168.0.88:8102/home/akunsaya:1675
+[    9538ms] [LOG] WebSocket connection @ http://192.168.0.88:8102/home/akunsaya:5398
+[    9538ms] [LOG] WebSocket connection attempting... @ http://192.168.0.88:8102/home/akunsaya:5476
+[    9848ms] [ERROR] WebSocket connection to 'ws://192.168.0.88:8102/' failed: Error during WebSocket handshake: Unexpected response code: 302 @ http://192.168.0.88:8102/home/akunsaya:5397
+[    9848ms] [LOG] WebSocket error: undefined @ http://192.168.0.88:8102/home/akunsaya:5442
+[    9848ms] [LOG] Reconnecting in 2 seconds... @ http://192.168.0.88:8102/home/akunsaya:5485
+[    9848ms] [LOG] WebSocket closed @ http://192.168.0.88:8102/home/akunsaya:5401
+[    9848ms] [LOG] Reconnecting in 4 seconds... @ http://192.168.0.88:8102/home/akunsaya:5485
+[   11861ms] [LOG] WebSocket connection @ http://192.168.0.88:8102/home/akunsaya:5398
+[   11861ms] [LOG] WebSocket connection attempting... @ http://192.168.0.88:8102/home/akunsaya:5476
+[   12158ms] [ERROR] WebSocket connection to 'ws://192.168.0.88:8102/' failed: Error during WebSocket handshake: Unexpected response code: 302 @ http://192.168.0.88:8102/home/akunsaya:5397
+[   12158ms] [LOG] WebSocket error: undefined @ http://192.168.0.88:8102/home/akunsaya:5442
+[   12158ms] [LOG] Reconnecting in 8 seconds... @ http://192.168.0.88:8102/home/akunsaya:5485
+[   12158ms] [LOG] WebSocket closed @ http://192.168.0.88:8102/home/akunsaya:5401
+[   12158ms] [LOG] Reconnecting in 16 seconds... @ http://192.168.0.88:8102/home/akunsaya:5485
+[   14227ms] [LOG] Akun Sayanamanya @ http://192.168.0.88:8102/home/akunSaya:1675
+[   14233ms] [LOG] WebSocket connection @ http://192.168.0.88:8102/home/akunSaya:5403
+[   14233ms] [LOG] WebSocket connection attempting... @ http://192.168.0.88:8102/home/akunSaya:5481
+[   14505ms] [ERROR] WebSocket connection to 'ws://192.168.0.88:8102/' failed: Error during WebSocket handshake: Unexpected response code: 302 @ http://192.168.0.88:8102/home/akunSaya:5402
+[   14505ms] [LOG] WebSocket error: undefined @ http://192.168.0.88:8102/home/akunSaya:5447
+[   14505ms] [LOG] Reconnecting in 2 seconds... @ http://192.168.0.88:8102/home/akunSaya:5490
+[   14505ms] [LOG] WebSocket closed @ http://192.168.0.88:8102/home/akunSaya:5406
+[   14505ms] [LOG] Reconnecting in 4 seconds... @ http://192.168.0.88:8102/home/akunSaya:5490
+[   16513ms] [LOG] WebSocket connection @ http://192.168.0.88:8102/home/akunSaya:5403
+[   16514ms] [LOG] WebSocket connection attempting... @ http://192.168.0.88:8102/home/akunSaya:5481
+[   16803ms] [ERROR] WebSocket connection to 'ws://192.168.0.88:8102/' failed: Error during WebSocket handshake: Unexpected response code: 302 @ http://192.168.0.88:8102/home/akunSaya:5402
+[   16803ms] [LOG] WebSocket error: undefined @ http://192.168.0.88:8102/home/akunSaya:5447
+[   16803ms] [LOG] Reconnecting in 8 seconds... @ http://192.168.0.88:8102/home/akunSaya:5490
+[   16803ms] [LOG] WebSocket closed @ http://192.168.0.88:8102/home/akunSaya:5406
+[   16803ms] [LOG] Reconnecting in 16 seconds... @ http://192.168.0.88:8102/home/akunSaya:5490
+[   18508ms] [LOG] WebSocket connection @ http://192.168.0.88:8102/home/akunSaya:5403
+[   18508ms] [LOG] WebSocket connection attempting... @ http://192.168.0.88:8102/home/akunSaya:5481
+[   18766ms] [ERROR] WebSocket connection to 'ws://192.168.0.88:8102/' failed: Error during WebSocket handshake: Unexpected response code: 302 @ http://192.168.0.88:8102/home/akunSaya:5402
+[   18766ms] [LOG] WebSocket error: undefined @ http://192.168.0.88:8102/home/akunSaya:5447
+[   18767ms] [LOG] Reconnecting in 32 seconds... @ http://192.168.0.88:8102/home/akunSaya:5490
+[   18767ms] [LOG] WebSocket closed @ http://192.168.0.88:8102/home/akunSaya:5406
+[   18768ms] [LOG] Reconnecting in 64 seconds... @ http://192.168.0.88:8102/home/akunSaya:5490
+[   24807ms] [LOG] WebSocket connection @ http://192.168.0.88:8102/home/akunSaya:5403
+[   24807ms] [LOG] WebSocket connection attempting... @ http://192.168.0.88:8102/home/akunSaya:5481
+[   25114ms] [ERROR] WebSocket connection to 'ws://192.168.0.88:8102/' failed: Error during WebSocket handshake: Unexpected response code: 302 @ http://192.168.0.88:8102/home/akunSaya:5402
+[   25114ms] [LOG] WebSocket error: undefined @ http://192.168.0.88:8102/home/akunSaya:5447
+[   25115ms] [LOG] Reconnecting in 128 seconds... @ http://192.168.0.88:8102/home/akunSaya:5490
+[   25115ms] [LOG] WebSocket closed @ http://192.168.0.88:8102/home/akunSaya:5406
+[   25116ms] [LOG] Reconnecting in 256 seconds... @ http://192.168.0.88:8102/home/akunSaya:5490
+[   27851ms] [LOG] Akun Sayanamanya @ http://192.168.0.88:8102/home/akunSaya:1675
+[   27856ms] [LOG] WebSocket connection @ http://192.168.0.88:8102/home/akunSaya:5403
+[   27857ms] [LOG] WebSocket connection attempting... @ http://192.168.0.88:8102/home/akunSaya:5481
+[   28174ms] [ERROR] WebSocket connection to 'ws://192.168.0.88:8102/' failed: Error during WebSocket handshake: Unexpected response code: 302 @ http://192.168.0.88:8102/home/akunSaya:5402
+[   28174ms] [LOG] WebSocket error: undefined @ http://192.168.0.88:8102/home/akunSaya:5447
+[   28175ms] [LOG] Reconnecting in 2 seconds... @ http://192.168.0.88:8102/home/akunSaya:5490
+[   28175ms] [LOG] WebSocket closed @ http://192.168.0.88:8102/home/akunSaya:5406
+[   28175ms] [LOG] Reconnecting in 4 seconds... @ http://192.168.0.88:8102/home/akunSaya:5490
+[   30176ms] [LOG] WebSocket connection @ http://192.168.0.88:8102/home/akunSaya:5403
+[   30177ms] [LOG] WebSocket connection attempting... @ http://192.168.0.88:8102/home/akunSaya:5481
+[   30471ms] [ERROR] WebSocket connection to 'ws://192.168.0.88:8102/' failed: Error during WebSocket handshake: Unexpected response code: 302 @ http://192.168.0.88:8102/home/akunSaya:5402
+[   30471ms] [LOG] WebSocket error: undefined @ http://192.168.0.88:8102/home/akunSaya:5447
+[   30471ms] [LOG] Reconnecting in 8 seconds... @ http://192.168.0.88:8102/home/akunSaya:5490
+[   30472ms] [LOG] WebSocket closed @ http://192.168.0.88:8102/home/akunSaya:5406
+[   30472ms] [LOG] Reconnecting in 16 seconds... @ http://192.168.0.88:8102/home/akunSaya:5490
+[   32184ms] [LOG] WebSocket connection @ http://192.168.0.88:8102/home/akunSaya:5403
+[   32185ms] [LOG] WebSocket connection attempting... @ http://192.168.0.88:8102/home/akunSaya:5481
+[   32482ms] [ERROR] WebSocket connection to 'ws://192.168.0.88:8102/' failed: Error during WebSocket handshake: Unexpected response code: 302 @ http://192.168.0.88:8102/home/akunSaya:5402
+[   32482ms] [LOG] WebSocket error: undefined @ http://192.168.0.88:8102/home/akunSaya:5447
+[   32482ms] [LOG] Reconnecting in 32 seconds... @ http://192.168.0.88:8102/home/akunSaya:5490
+[   32483ms] [LOG] WebSocket closed @ http://192.168.0.88:8102/home/akunSaya:5406
+[   32483ms] [LOG] Reconnecting in 64 seconds... @ http://192.168.0.88:8102/home/akunSaya:5490
+[   38484ms] [LOG] WebSocket connection @ http://192.168.0.88:8102/home/akunSaya:5403
+[   38484ms] [LOG] WebSocket connection attempting... @ http://192.168.0.88:8102/home/akunSaya:5481
+[   38815ms] [ERROR] WebSocket connection to 'ws://192.168.0.88:8102/' failed: Error during WebSocket handshake: Unexpected response code: 302 @ http://192.168.0.88:8102/home/akunSaya:5402
+[   38815ms] [LOG] WebSocket error: undefined @ http://192.168.0.88:8102/home/akunSaya:5447
+[   38815ms] [LOG] Reconnecting in 128 seconds... @ http://192.168.0.88:8102/home/akunSaya:5490
+[   38816ms] [LOG] WebSocket closed @ http://192.168.0.88:8102/home/akunSaya:5406
+[   38816ms] [LOG] Reconnecting in 256 seconds... @ http://192.168.0.88:8102/home/akunSaya:5490
+[   43263ms] [LOG] Akun Sayanamanya @ http://192.168.0.88:8102/home/akunSaya:1675
+[   43277ms] [LOG] WebSocket connection @ http://192.168.0.88:8102/home/akunSaya:5403
+[   43278ms] [LOG] WebSocket connection attempting... @ http://192.168.0.88:8102/home/akunSaya:5481
+[   43676ms] [ERROR] WebSocket connection to 'ws://192.168.0.88:8102/' failed: Error during WebSocket handshake: Unexpected response code: 302 @ http://192.168.0.88:8102/home/akunSaya:5402
+[   43676ms] [LOG] WebSocket error: undefined @ http://192.168.0.88:8102/home/akunSaya:5447
+[   43677ms] [LOG] Reconnecting in 2 seconds... @ http://192.168.0.88:8102/home/akunSaya:5490
+[   43677ms] [LOG] WebSocket closed @ http://192.168.0.88:8102/home/akunSaya:5406
+[   43677ms] [LOG] Reconnecting in 4 seconds... @ http://192.168.0.88:8102/home/akunSaya:5490
+[   45692ms] [LOG] WebSocket connection @ http://192.168.0.88:8102/home/akunSaya:5403
+[   45693ms] [LOG] WebSocket connection attempting... @ http://192.168.0.88:8102/home/akunSaya:5481
+[   46055ms] [ERROR] WebSocket connection to 'ws://192.168.0.88:8102/' failed: Error during WebSocket handshake: Unexpected response code: 302 @ http://192.168.0.88:8102/home/akunSaya:5402
+[   46055ms] [LOG] WebSocket error: undefined @ http://192.168.0.88:8102/home/akunSaya:5447
+[   46055ms] [LOG] Reconnecting in 8 seconds... @ http://192.168.0.88:8102/home/akunSaya:5490
+[   46056ms] [LOG] WebSocket closed @ http://192.168.0.88:8102/home/akunSaya:5406
+[   46056ms] [LOG] Reconnecting in 16 seconds... @ http://192.168.0.88:8102/home/akunSaya:5490
+[   47681ms] [LOG] WebSocket connection @ http://192.168.0.88:8102/home/akunSaya:5403
+[   47682ms] [LOG] WebSocket connection attempting... @ http://192.168.0.88:8102/home/akunSaya:5481
+[   48180ms] [ERROR] WebSocket connection to 'ws://192.168.0.88:8102/' failed: Error during WebSocket handshake: Unexpected response code: 302 @ http://192.168.0.88:8102/home/akunSaya:5402
+[   48180ms] [LOG] WebSocket error: undefined @ http://192.168.0.88:8102/home/akunSaya:5447
+[   48180ms] [LOG] Reconnecting in 32 seconds... @ http://192.168.0.88:8102/home/akunSaya:5490
+[   48181ms] [LOG] WebSocket closed @ http://192.168.0.88:8102/home/akunSaya:5406
+[   48181ms] [LOG] Reconnecting in 64 seconds... @ http://192.168.0.88:8102/home/akunSaya:5490
+[   54068ms] [LOG] WebSocket connection @ http://192.168.0.88:8102/home/akunSaya:5403
+[   54070ms] [LOG] WebSocket connection attempting... @ http://192.168.0.88:8102/home/akunSaya:5481
+[   58924ms] [LOG] Akun Sayanamanya @ http://192.168.0.88:8102/home/akunSaya:1675
+[   58929ms] [LOG] WebSocket connection @ http://192.168.0.88:8102/home/akunSaya:5403
+[   58929ms] [LOG] WebSocket connection attempting... @ http://192.168.0.88:8102/home/akunSaya:5481
+[   60308ms] [ERROR] WebSocket connection to 'ws://192.168.0.88:8102/' failed: Error during WebSocket handshake: Unexpected response code: 302 @ http://192.168.0.88:8102/home/akunSaya:5402
+[   60308ms] [LOG] WebSocket error: undefined @ http://192.168.0.88:8102/home/akunSaya:5447
+[   60309ms] [LOG] Reconnecting in 2 seconds... @ http://192.168.0.88:8102/home/akunSaya:5490
+[   60309ms] [LOG] WebSocket closed @ http://192.168.0.88:8102/home/akunSaya:5406
+[   60310ms] [LOG] Reconnecting in 4 seconds... @ http://192.168.0.88:8102/home/akunSaya:5490
+[   62314ms] [LOG] WebSocket connection @ http://192.168.0.88:8102/home/akunSaya:5403
+[   62315ms] [LOG] WebSocket connection attempting... @ http://192.168.0.88:8102/home/akunSaya:5481
+[   63726ms] [ERROR] WebSocket connection to 'ws://192.168.0.88:8102/' failed: Error during WebSocket handshake: Unexpected response code: 302 @ http://192.168.0.88:8102/home/akunSaya:5402
+[   63726ms] [LOG] WebSocket error: undefined @ http://192.168.0.88:8102/home/akunSaya:5447
+[   63726ms] [LOG] Reconnecting in 8 seconds... @ http://192.168.0.88:8102/home/akunSaya:5490
+[   63726ms] [LOG] WebSocket closed @ http://192.168.0.88:8102/home/akunSaya:5406
+[   63727ms] [LOG] Reconnecting in 16 seconds... @ http://192.168.0.88:8102/home/akunSaya:5490
+[   64313ms] [LOG] WebSocket connection @ http://192.168.0.88:8102/home/akunSaya:5403
+[   64314ms] [LOG] WebSocket connection attempting... @ http://192.168.0.88:8102/home/akunSaya:5481
+[   66599ms] [ERROR] WebSocket connection to 'ws://192.168.0.88:8102/' failed: Error during WebSocket handshake: Unexpected response code: 302 @ http://192.168.0.88:8102/home/akunSaya:5402
+[   66599ms] [LOG] WebSocket error: undefined @ http://192.168.0.88:8102/home/akunSaya:5447
+[   66599ms] [LOG] Reconnecting in 32 seconds... @ http://192.168.0.88:8102/home/akunSaya:5490
+[   66599ms] [LOG] WebSocket closed @ http://192.168.0.88:8102/home/akunSaya:5406
+[   66599ms] [LOG] Reconnecting in 64 seconds... @ http://192.168.0.88:8102/home/akunSaya:5490
+[   71733ms] [LOG] WebSocket connection @ http://192.168.0.88:8102/home/akunSaya:5403
+[   71733ms] [LOG] WebSocket connection attempting... @ http://192.168.0.88:8102/home/akunSaya:5481
+[   76044ms] [LOG] Akun Sayanamanya @ http://192.168.0.88:8102/home/akunSaya:1675
+[   76049ms] [LOG] WebSocket connection @ http://192.168.0.88:8102/home/akunSaya:5403
+[   76049ms] [LOG] WebSocket connection attempting... @ http://192.168.0.88:8102/home/akunSaya:5481
+[   78286ms] [ERROR] WebSocket connection to 'ws://192.168.0.88:8102/' failed: Error during WebSocket handshake: Unexpected response code: 302 @ http://192.168.0.88:8102/home/akunSaya:5402
+[   78286ms] [LOG] WebSocket error: undefined @ http://192.168.0.88:8102/home/akunSaya:5447
+[   78287ms] [LOG] Reconnecting in 2 seconds... @ http://192.168.0.88:8102/home/akunSaya:5490
+[   78288ms] [LOG] WebSocket closed @ http://192.168.0.88:8102/home/akunSaya:5406
+[   78288ms] [LOG] Reconnecting in 4 seconds... @ http://192.168.0.88:8102/home/akunSaya:5490
+[   80299ms] [LOG] WebSocket connection @ http://192.168.0.88:8102/home/akunSaya:5403
+[   80300ms] [LOG] WebSocket connection attempting... @ http://192.168.0.88:8102/home/akunSaya:5481
+[   82292ms] [LOG] WebSocket connection @ http://192.168.0.88:8102/home/akunSaya:5403
+[   82293ms] [LOG] WebSocket connection attempting... @ http://192.168.0.88:8102/home/akunSaya:5481
+[   84778ms] [ERROR] WebSocket connection to 'ws://192.168.0.88:8102/' failed: Error during WebSocket handshake: Unexpected response code: 302 @ http://192.168.0.88:8102/home/akunSaya:5402
+[   84779ms] [LOG] WebSocket error: undefined @ http://192.168.0.88:8102/home/akunSaya:5447
+[   84779ms] [LOG] Reconnecting in 8 seconds... @ http://192.168.0.88:8102/home/akunSaya:5490
+[   84779ms] [LOG] WebSocket closed @ http://192.168.0.88:8102/home/akunSaya:5406
+[   84780ms] [LOG] Reconnecting in 16 seconds... @ http://192.168.0.88:8102/home/akunSaya:5490
+[   86858ms] [ERROR] WebSocket connection to 'ws://192.168.0.88:8102/' failed: Error during WebSocket handshake: Unexpected response code: 302 @ http://192.168.0.88:8102/home/akunSaya:5402
+[   86859ms] [LOG] WebSocket error: undefined @ http://192.168.0.88:8102/home/akunSaya:5447
+[   86859ms] [LOG] Reconnecting in 32 seconds... @ http://192.168.0.88:8102/home/akunSaya:5490
+[   86859ms] [LOG] WebSocket closed @ http://192.168.0.88:8102/home/akunSaya:5406
+[   86859ms] [LOG] Reconnecting in 64 seconds... @ http://192.168.0.88:8102/home/akunSaya:5490
+[   90126ms] [LOG] Akun Sayanamanya @ http://192.168.0.88:8102/home/akunSaya:1675
+[   90130ms] [LOG] WebSocket connection @ http://192.168.0.88:8102/home/akunSaya:5403
+[   90130ms] [LOG] WebSocket connection attempting... @ http://192.168.0.88:8102/home/akunSaya:5481
+[   91723ms] [ERROR] WebSocket connection to 'ws://192.168.0.88:8102/' failed: Error during WebSocket handshake: Unexpected response code: 302 @ http://192.168.0.88:8102/home/akunSaya:5402
+[   91723ms] [LOG] WebSocket error: undefined @ http://192.168.0.88:8102/home/akunSaya:5447
+[   91723ms] [LOG] Reconnecting in 2 seconds... @ http://192.168.0.88:8102/home/akunSaya:5490
+[   91723ms] [LOG] WebSocket closed @ http://192.168.0.88:8102/home/akunSaya:5406
+[   91723ms] [LOG] Reconnecting in 4 seconds... @ http://192.168.0.88:8102/home/akunSaya:5490
+[   93731ms] [LOG] WebSocket connection @ http://192.168.0.88:8102/home/akunSaya:5403
+[   93732ms] [LOG] WebSocket connection attempting... @ http://192.168.0.88:8102/home/akunSaya:5481
+[   95736ms] [LOG] WebSocket connection @ http://192.168.0.88:8102/home/akunSaya:5403
+[   95736ms] [LOG] WebSocket connection attempting... @ http://192.168.0.88:8102/home/akunSaya:5481
+[   97588ms] [ERROR] WebSocket connection to 'ws://192.168.0.88:8102/' failed: Error during WebSocket handshake: Unexpected response code: 302 @ http://192.168.0.88:8102/home/akunSaya:5402
+[   97588ms] [LOG] WebSocket error: undefined @ http://192.168.0.88:8102/home/akunSaya:5447
+[   97588ms] [LOG] Reconnecting in 8 seconds... @ http://192.168.0.88:8102/home/akunSaya:5490
+[   97588ms] [LOG] WebSocket closed @ http://192.168.0.88:8102/home/akunSaya:5406
+[   97588ms] [LOG] Reconnecting in 16 seconds... @ http://192.168.0.88:8102/home/akunSaya:5490
+[   98742ms] [ERROR] WebSocket connection to 'ws://192.168.0.88:8102/' failed: Error during WebSocket handshake: Unexpected response code: 302 @ http://192.168.0.88:8102/home/akunSaya:5402
+[   98742ms] [LOG] WebSocket error: undefined @ http://192.168.0.88:8102/home/akunSaya:5447
+[   98742ms] [LOG] Reconnecting in 32 seconds... @ http://192.168.0.88:8102/home/akunSaya:5490
+[   98742ms] [LOG] WebSocket closed @ http://192.168.0.88:8102/home/akunSaya:5406
+[   98742ms] [LOG] Reconnecting in 64 seconds... @ http://192.168.0.88:8102/home/akunSaya:5490
+[  103181ms] [LOG] Akun Sayanamanya @ http://192.168.0.88:8102/home/akunSaya:1675
+[  103186ms] [LOG] WebSocket connection @ http://192.168.0.88:8102/home/akunSaya:5403
+[  103186ms] [LOG] WebSocket connection attempting... @ http://192.168.0.88:8102/home/akunSaya:5481
+[  106996ms] [ERROR] WebSocket connection to 'ws://192.168.0.88:8102/' failed: Error during WebSocket handshake: Unexpected response code: 302 @ http://192.168.0.88:8102/home/akunSaya:5402
+[  106996ms] [LOG] WebSocket error: undefined @ http://192.168.0.88:8102/home/akunSaya:5447
+[  106997ms] [LOG] Reconnecting in 2 seconds... @ http://192.168.0.88:8102/home/akunSaya:5490
+[  106997ms] [LOG] WebSocket closed @ http://192.168.0.88:8102/home/akunSaya:5406
+[  106997ms] [LOG] Reconnecting in 4 seconds... @ http://192.168.0.88:8102/home/akunSaya:5490
+[  109007ms] [LOG] WebSocket connection @ http://192.168.0.88:8102/home/akunSaya:5403
+[  109007ms] [LOG] WebSocket connection attempting... @ http://192.168.0.88:8102/home/akunSaya:5481
+[  110416ms] [ERROR] WebSocket connection to 'ws://192.168.0.88:8102/' failed: Error during WebSocket handshake: Unexpected response code: 302 @ http://192.168.0.88:8102/home/akunSaya:5402
+[  110416ms] [LOG] WebSocket error: undefined @ http://192.168.0.88:8102/home/akunSaya:5447
+[  110416ms] [LOG] Reconnecting in 8 seconds... @ http://192.168.0.88:8102/home/akunSaya:5490
+[  110417ms] [LOG] WebSocket closed @ http://192.168.0.88:8102/home/akunSaya:5406
+[  110417ms] [LOG] Reconnecting in 16 seconds... @ http://192.168.0.88:8102/home/akunSaya:5490
+[  111007ms] [LOG] WebSocket connection @ http://192.168.0.88:8102/home/akunSaya:5403
+[  111008ms] [LOG] WebSocket connection attempting... @ http://192.168.0.88:8102/home/akunSaya:5481
+[  112955ms] [ERROR] WebSocket connection to 'ws://192.168.0.88:8102/' failed: Error during WebSocket handshake: Unexpected response code: 302 @ http://192.168.0.88:8102/home/akunSaya:5402
+[  112955ms] [LOG] WebSocket error: undefined @ http://192.168.0.88:8102/home/akunSaya:5447
+[  112956ms] [LOG] Reconnecting in 32 seconds... @ http://192.168.0.88:8102/home/akunSaya:5490
+[  112956ms] [LOG] WebSocket closed @ http://192.168.0.88:8102/home/akunSaya:5406
+[  112956ms] [LOG] Reconnecting in 64 seconds... @ http://192.168.0.88:8102/home/akunSaya:5490
+[  116340ms] [LOG] Akun Sayanamanya @ http://192.168.0.88:8102/home/akunSaya:1675
+[  116344ms] [LOG] WebSocket connection @ http://192.168.0.88:8102/home/akunSaya:5403
+[  116344ms] [LOG] WebSocket connection attempting... @ http://192.168.0.88:8102/home/akunSaya:5481
+[  120977ms] [ERROR] WebSocket connection to 'ws://192.168.0.88:8102/' failed: Error during WebSocket handshake: Unexpected response code: 302 @ http://192.168.0.88:8102/home/akunSaya:5402
+[  120977ms] [LOG] WebSocket error: undefined @ http://192.168.0.88:8102/home/akunSaya:5447
+[  120977ms] [LOG] Reconnecting in 2 seconds... @ http://192.168.0.88:8102/home/akunSaya:5490
+[  120977ms] [LOG] WebSocket closed @ http://192.168.0.88:8102/home/akunSaya:5406
+[  120977ms] [LOG] Reconnecting in 4 seconds... @ http://192.168.0.88:8102/home/akunSaya:5490
+[  122983ms] [LOG] WebSocket connection @ http://192.168.0.88:8102/home/akunSaya:5403
+[  122984ms] [LOG] WebSocket connection attempting... @ http://192.168.0.88:8102/home/akunSaya:5481
+[  124625ms] [ERROR] WebSocket connection to 'ws://192.168.0.88:8102/' failed: Error during WebSocket handshake: Unexpected response code: 302 @ http://192.168.0.88:8102/home/akunSaya:5402
+[  124625ms] [LOG] WebSocket error: undefined @ http://192.168.0.88:8102/home/akunSaya:5447
+[  124625ms] [LOG] Reconnecting in 8 seconds... @ http://192.168.0.88:8102/home/akunSaya:5490
+[  124626ms] [LOG] WebSocket closed @ http://192.168.0.88:8102/home/akunSaya:5406
+[  124626ms] [LOG] Reconnecting in 16 seconds... @ http://192.168.0.88:8102/home/akunSaya:5490
+[  124989ms] [LOG] WebSocket connection @ http://192.168.0.88:8102/home/akunSaya:5403
+[  124989ms] [LOG] WebSocket connection attempting... @ http://192.168.0.88:8102/home/akunSaya:5481
+[  129322ms] [ERROR] WebSocket connection to 'ws://192.168.0.88:8102/' failed: Error during WebSocket handshake: Unexpected response code: 302 @ http://192.168.0.88:8102/home/akunSaya:5402
+[  129322ms] [LOG] WebSocket error: undefined @ http://192.168.0.88:8102/home/akunSaya:5447
+[  129322ms] [LOG] Reconnecting in 32 seconds... @ http://192.168.0.88:8102/home/akunSaya:5490
+[  129322ms] [LOG] WebSocket closed @ http://192.168.0.88:8102/home/akunSaya:5406
+[  129322ms] [LOG] Reconnecting in 64 seconds... @ http://192.168.0.88:8102/home/akunSaya:5490
+[  132632ms] [LOG] WebSocket connection @ http://192.168.0.88:8102/home/akunSaya:5403
+[  132632ms] [LOG] WebSocket connection attempting... @ http://192.168.0.88:8102/home/akunSaya:5481
+[  132953ms] [ERROR] WebSocket connection to 'ws://192.168.0.88:8102/' failed: Error during WebSocket handshake: Unexpected response code: 302 @ http://192.168.0.88:8102/home/akunSaya:5402
+[  132953ms] [LOG] WebSocket error: undefined @ http://192.168.0.88:8102/home/akunSaya:5447
+[  132953ms] [LOG] Reconnecting in 128 seconds... @ http://192.168.0.88:8102/home/akunSaya:5490
+[  132954ms] [LOG] WebSocket closed @ http://192.168.0.88:8102/home/akunSaya:5406
+[  132954ms] [LOG] Reconnecting in 256 seconds... @ http://192.168.0.88:8102/home/akunSaya:5490
+[  140628ms] [LOG] WebSocket connection @ http://192.168.0.88:8102/home/akunSaya:5403
+[  140629ms] [LOG] WebSocket connection attempting... @ http://192.168.0.88:8102/home/akunSaya:5481
+[  140909ms] [ERROR] WebSocket connection to 'ws://192.168.0.88:8102/' failed: Error during WebSocket handshake: Unexpected response code: 302 @ http://192.168.0.88:8102/home/akunSaya:5402
+[  140909ms] [LOG] WebSocket error: undefined @ http://192.168.0.88:8102/home/akunSaya:5447
+[  140909ms] [LOG] Reconnecting in 512 seconds... @ http://192.168.0.88:8102/home/akunSaya:5490
+[  140909ms] [LOG] WebSocket closed @ http://192.168.0.88:8102/home/akunSaya:5406
+[  140909ms] [LOG] Reconnecting in 1024 seconds... @ http://192.168.0.88:8102/home/akunSaya:5490
+[  154361ms] [LOG] Akun Sayanamanya @ http://192.168.0.88:8102/home/akunSaya:1675
+[  154365ms] [LOG] WebSocket connection @ http://192.168.0.88:8102/home/akunSaya:5403
+[  154365ms] [LOG] WebSocket connection attempting... @ http://192.168.0.88:8102/home/akunSaya:5481
+[  154629ms] [ERROR] WebSocket connection to 'ws://192.168.0.88:8102/' failed: Error during WebSocket handshake: Unexpected response code: 302 @ http://192.168.0.88:8102/home/akunSaya:5402
+[  154629ms] [LOG] WebSocket error: undefined @ http://192.168.0.88:8102/home/akunSaya:5447
+[  154629ms] [LOG] Reconnecting in 2 seconds... @ http://192.168.0.88:8102/home/akunSaya:5490
+[  154630ms] [LOG] WebSocket closed @ http://192.168.0.88:8102/home/akunSaya:5406
+[  154630ms] [LOG] Reconnecting in 4 seconds... @ http://192.168.0.88:8102/home/akunSaya:5490
+[  156635ms] [LOG] WebSocket connection @ http://192.168.0.88:8102/home/akunSaya:5403
+[  156635ms] [LOG] WebSocket connection attempting... @ http://192.168.0.88:8102/home/akunSaya:5481
+[  157009ms] [ERROR] WebSocket connection to 'ws://192.168.0.88:8102/' failed: Error during WebSocket handshake: Unexpected response code: 302 @ http://192.168.0.88:8102/home/akunSaya:5402
+[  157009ms] [LOG] WebSocket error: undefined @ http://192.168.0.88:8102/home/akunSaya:5447
+[  157010ms] [LOG] Reconnecting in 8 seconds... @ http://192.168.0.88:8102/home/akunSaya:5490
+[  157010ms] [LOG] WebSocket closed @ http://192.168.0.88:8102/home/akunSaya:5406
+[  157011ms] [LOG] Reconnecting in 16 seconds... @ http://192.168.0.88:8102/home/akunSaya:5490
+[  158639ms] [LOG] WebSocket connection @ http://192.168.0.88:8102/home/akunSaya:5403
+[  158639ms] [LOG] WebSocket connection attempting... @ http://192.168.0.88:8102/home/akunSaya:5481
+[  158946ms] [ERROR] WebSocket connection to 'ws://192.168.0.88:8102/' failed: Error during WebSocket handshake: Unexpected response code: 302 @ http://192.168.0.88:8102/home/akunSaya:5402
+[  158946ms] [LOG] WebSocket error: undefined @ http://192.168.0.88:8102/home/akunSaya:5447
+[  158947ms] [LOG] Reconnecting in 32 seconds... @ http://192.168.0.88:8102/home/akunSaya:5490
+[  158947ms] [LOG] WebSocket closed @ http://192.168.0.88:8102/home/akunSaya:5406
+[  158947ms] [LOG] Reconnecting in 64 seconds... @ http://192.168.0.88:8102/home/akunSaya:5490
+[  165026ms] [LOG] WebSocket connection @ http://192.168.0.88:8102/home/akunSaya:5403
+[  165026ms] [LOG] WebSocket connection attempting... @ http://192.168.0.88:8102/home/akunSaya:5481
+[  165327ms] [ERROR] WebSocket connection to 'ws://192.168.0.88:8102/' failed: Error during WebSocket handshake: Unexpected response code: 302 @ http://192.168.0.88:8102/home/akunSaya:5402
+[  165327ms] [LOG] WebSocket error: undefined @ http://192.168.0.88:8102/home/akunSaya:5447
+[  165328ms] [LOG] Reconnecting in 128 seconds... @ http://192.168.0.88:8102/home/akunSaya:5490
+[  165328ms] [LOG] WebSocket closed @ http://192.168.0.88:8102/home/akunSaya:5406
+[  165328ms] [LOG] Reconnecting in 256 seconds... @ http://192.168.0.88:8102/home/akunSaya:5490
+[  168136ms] [LOG] Akun Sayanamanya @ http://192.168.0.88:8102/home/akunSaya:1675
+[  168139ms] [LOG] WebSocket connection @ http://192.168.0.88:8102/home/akunSaya:5403
+[  168140ms] [LOG] WebSocket connection attempting... @ http://192.168.0.88:8102/home/akunSaya:5481
+[  168453ms] [ERROR] WebSocket connection to 'ws://192.168.0.88:8102/' failed: Error during WebSocket handshake: Unexpected response code: 302 @ http://192.168.0.88:8102/home/akunSaya:5402
+[  168453ms] [LOG] WebSocket error: undefined @ http://192.168.0.88:8102/home/akunSaya:5447
+[  168453ms] [LOG] Reconnecting in 2 seconds... @ http://192.168.0.88:8102/home/akunSaya:5490
+[  168454ms] [LOG] WebSocket closed @ http://192.168.0.88:8102/home/akunSaya:5406
+[  168454ms] [LOG] Reconnecting in 4 seconds... @ http://192.168.0.88:8102/home/akunSaya:5490
+[  170458ms] [LOG] WebSocket connection @ http://192.168.0.88:8102/home/akunSaya:5403
+[  170458ms] [LOG] WebSocket connection attempting... @ http://192.168.0.88:8102/home/akunSaya:5481
+[  171096ms] [ERROR] WebSocket connection to 'ws://192.168.0.88:8102/' failed: Error during WebSocket handshake: Unexpected response code: 302 @ http://192.168.0.88:8102/home/akunSaya:5402
+[  171097ms] [LOG] WebSocket error: undefined @ http://192.168.0.88:8102/home/akunSaya:5447
+[  171097ms] [LOG] Reconnecting in 8 seconds... @ http://192.168.0.88:8102/home/akunSaya:5490
+[  171098ms] [LOG] WebSocket closed @ http://192.168.0.88:8102/home/akunSaya:5406
+[  171098ms] [LOG] Reconnecting in 16 seconds... @ http://192.168.0.88:8102/home/akunSaya:5490
+[  172680ms] [LOG] Akun Sayanamanya @ http://192.168.0.88:8102/home/akunSaya:1675
+[  172696ms] [LOG] WebSocket connection @ http://192.168.0.88:8102/home/akunSaya:5403
+[  172697ms] [LOG] WebSocket connection attempting... @ http://192.168.0.88:8102/home/akunSaya:5481
+[  173001ms] [ERROR] WebSocket connection to 'ws://192.168.0.88:8102/' failed: Error during WebSocket handshake: Unexpected response code: 302 @ http://192.168.0.88:8102/home/akunSaya:5402
+[  173001ms] [LOG] WebSocket error: undefined @ http://192.168.0.88:8102/home/akunSaya:5447
+[  173002ms] [LOG] Reconnecting in 2 seconds... @ http://192.168.0.88:8102/home/akunSaya:5490
+[  173002ms] [LOG] WebSocket closed @ http://192.168.0.88:8102/home/akunSaya:5406
+[  173003ms] [LOG] Reconnecting in 4 seconds... @ http://192.168.0.88:8102/home/akunSaya:5490
+[  175006ms] [LOG] WebSocket connection @ http://192.168.0.88:8102/home/akunSaya:5403
+[  175006ms] [LOG] WebSocket connection attempting... @ http://192.168.0.88:8102/home/akunSaya:5481
+[  176331ms] [LOG] Akun Sayanamanya @ http://192.168.0.88:8102/home/akunSaya:1675
+[  176334ms] [LOG] WebSocket connection @ http://192.168.0.88:8102/home/akunSaya:5403
+[  176335ms] [LOG] WebSocket connection attempting... @ http://192.168.0.88:8102/home/akunSaya:5481
+[  176663ms] [ERROR] WebSocket connection to 'ws://192.168.0.88:8102/' failed: Error during WebSocket handshake: Unexpected response code: 302 @ http://192.168.0.88:8102/home/akunSaya:5402
+[  176663ms] [LOG] WebSocket error: undefined @ http://192.168.0.88:8102/home/akunSaya:5447
+[  176663ms] [LOG] Reconnecting in 2 seconds... @ http://192.168.0.88:8102/home/akunSaya:5490
+[  176664ms] [LOG] WebSocket closed @ http://192.168.0.88:8102/home/akunSaya:5406
+[  176664ms] [LOG] Reconnecting in 4 seconds... @ http://192.168.0.88:8102/home/akunSaya:5490
+[  178670ms] [LOG] WebSocket connection @ http://192.168.0.88:8102/home/akunSaya:5403
+[  178670ms] [LOG] WebSocket connection attempting... @ http://192.168.0.88:8102/home/akunSaya:5481
+[  180660ms] [LOG] Akun Sayanamanya @ http://192.168.0.88:8102/home/akunSaya:1675
+[  180663ms] [LOG] WebSocket connection @ http://192.168.0.88:8102/home/akunSaya:5403
+[  180664ms] [LOG] WebSocket connection attempting... @ http://192.168.0.88:8102/home/akunSaya:5481
+[  181124ms] [ERROR] WebSocket connection to 'ws://192.168.0.88:8102/' failed: Error during WebSocket handshake: Unexpected response code: 302 @ http://192.168.0.88:8102/home/akunSaya:5402
+[  181124ms] [LOG] WebSocket error: undefined @ http://192.168.0.88:8102/home/akunSaya:5447
+[  181124ms] [LOG] Reconnecting in 2 seconds... @ http://192.168.0.88:8102/home/akunSaya:5490
+[  181124ms] [LOG] WebSocket closed @ http://192.168.0.88:8102/home/akunSaya:5406
+[  181124ms] [LOG] Reconnecting in 4 seconds... @ http://192.168.0.88:8102/home/akunSaya:5490
+[  183131ms] [LOG] WebSocket connection @ http://192.168.0.88:8102/home/akunSaya:5403
+[  183132ms] [LOG] WebSocket connection attempting... @ http://192.168.0.88:8102/home/akunSaya:5481
+[  184521ms] [LOG] Akun Sayanamanya @ http://192.168.0.88:8102/home/akunSaya:1675
+[  184525ms] [LOG] WebSocket connection @ http://192.168.0.88:8102/home/akunSaya:5403
+[  184526ms] [LOG] WebSocket connection attempting... @ http://192.168.0.88:8102/home/akunSaya:5481
+[  185365ms] [ERROR] WebSocket connection to 'ws://192.168.0.88:8102/' failed: Error during WebSocket handshake: Unexpected response code: 302 @ http://192.168.0.88:8102/home/akunSaya:5402
+[  185365ms] [LOG] WebSocket error: undefined @ http://192.168.0.88:8102/home/akunSaya:5447
+[  185365ms] [LOG] Reconnecting in 2 seconds... @ http://192.168.0.88:8102/home/akunSaya:5490
+[  185365ms] [LOG] WebSocket closed @ http://192.168.0.88:8102/home/akunSaya:5406
+[  185365ms] [LOG] Reconnecting in 4 seconds... @ http://192.168.0.88:8102/home/akunSaya:5490
+[  187570ms] [LOG] Akun Sayanamanya @ http://192.168.0.88:8102/home/akunSaya:1675
+[  187575ms] [LOG] WebSocket connection @ http://192.168.0.88:8102/home/akunSaya:5403
+[  187575ms] [LOG] WebSocket connection attempting... @ http://192.168.0.88:8102/home/akunSaya:5481
+[  188421ms] [ERROR] WebSocket connection to 'ws://192.168.0.88:8102/' failed: Error during WebSocket handshake: Unexpected response code: 302 @ http://192.168.0.88:8102/home/akunSaya:5402
+[  188422ms] [LOG] WebSocket error: undefined @ http://192.168.0.88:8102/home/akunSaya:5447
+[  188422ms] [LOG] Reconnecting in 2 seconds... @ http://192.168.0.88:8102/home/akunSaya:5490
+[  188422ms] [LOG] WebSocket closed @ http://192.168.0.88:8102/home/akunSaya:5406
+[  188423ms] [LOG] Reconnecting in 4 seconds... @ http://192.168.0.88:8102/home/akunSaya:5490
+[  190257ms] [LOG] unread all @ http://192.168.0.88:8102/_resources/themes/prahutheme/javascript/custom/notification.js?m=1776747118:299
+[  190261ms] [LOG] undefinednamanya @ http://192.168.0.88:8102/home/notification:1676
+[  190264ms] [LOG] undefined @ http://192.168.0.88:8102/home/notification:5793
+[  190264ms] [LOG] undefined @ http://192.168.0.88:8102/home/notification:5793
+[  190265ms] [LOG] WebSocket connection @ http://192.168.0.88:8102/home/notification:5836
+[  190265ms] [LOG] WebSocket connection attempting... @ http://192.168.0.88:8102/home/notification:5914
+[  190600ms] [LOG] dariajax jumlah= 0 @ http://192.168.0.88:8102/_resources/themes/prahutheme/javascript/custom/notification.js?m=1776747118:336
+[  190600ms] [LOG] dariajax countView1 = 0 @ http://192.168.0.88:8102/_resources/themes/prahutheme/javascript/custom/notification.js?m=1776747118:337
+[  190600ms] [LOG] dariajax countView__= 0 @ http://192.168.0.88:8102/_resources/themes/prahutheme/javascript/custom/notification.js?m=1776747118:340
+[  190601ms] [LOG] mobile render ok @ http://192.168.0.88:8102/_resources/themes/prahutheme/javascript/custom/notification.js?m=1776747118:344
+[  190602ms] [LOG] countView1 =  0 @ http://192.168.0.88:8102/_resources/themes/prahutheme/javascript/custom/notification.js?m=1776747118:272
+[  190602ms] [LOG] pageNow Info_1 =  1 @ http://192.168.0.88:8102/_resources/themes/prahutheme/javascript/custom/notification.js?m=1776747118:273
+[  190602ms] [LOG] start Info =  1 @ http://192.168.0.88:8102/_resources/themes/prahutheme/javascript/custom/notification.js?m=1776747118:283
+[  190602ms] [LOG] pageNow Info_2 =  1 @ http://192.168.0.88:8102/_resources/themes/prahutheme/javascript/custom/notification.js?m=1776747118:284
+[  190602ms] [LOG] limitView1 Info =  50 @ http://192.168.0.88:8102/_resources/themes/prahutheme/javascript/custom/notification.js?m=1776747118:285
+[  190602ms] [LOG] total =  0 @ http://192.168.0.88:8102/_resources/themes/prahutheme/javascript/custom/notification.js?m=1776747118:258
+[  190603ms] [LOG] paginate =1 @ http://192.168.0.88:8102/_resources/themes/prahutheme/javascript/custom/notification.js?m=1776747118:237
+[  190603ms] [LOG] pageNow_ =1 @ http://192.168.0.88:8102/_resources/themes/prahutheme/javascript/custom/notification.js?m=1776747118:238
+[  190603ms] [LOG] createPagination=1 @ http://192.168.0.88:8102/_resources/themes/prahutheme/javascript/custom/notification.js?m=1776747118:183
+[  190604ms] [LOG] 200 xhrglobal @ http://192.168.0.88:8102/home/notification:5767
+[  194381ms] [ERROR] WebSocket connection to 'ws://192.168.0.88:8102/' failed: Error during WebSocket handshake: Unexpected response code: 302 @ http://192.168.0.88:8102/home/notification:5835
+[  194381ms] [LOG] WebSocket error: undefined @ http://192.168.0.88:8102/home/notification:5880
+[  194381ms] [LOG] Reconnecting in 2 seconds... @ http://192.168.0.88:8102/home/notification:5923
+[  194381ms] [LOG] WebSocket closed @ http://192.168.0.88:8102/home/notification:5839
+[  194382ms] [LOG] Reconnecting in 4 seconds... @ http://192.168.0.88:8102/home/notification:5923
+[  196239ms] [LOG] Akun Sayanamanya @ http://192.168.0.88:8102/home/akunsaya:1675
+[  196245ms] [LOG] WebSocket connection @ http://192.168.0.88:8102/home/akunsaya:5403
+[  196245ms] [LOG] WebSocket connection attempting... @ http://192.168.0.88:8102/home/akunsaya:5481
+[  199256ms] [LOG] Akun Sayanamanya @ http://192.168.0.88:8102/home/akunSaya:1675
+[  199263ms] [LOG] WebSocket connection @ http://192.168.0.88:8102/home/akunSaya:5403
+[  199263ms] [LOG] WebSocket connection attempting... @ http://192.168.0.88:8102/home/akunSaya:5481
+[  202374ms] [LOG] Akun Sayanamanya @ http://192.168.0.88:8102/home/akunSaya:1675
+[  202379ms] [LOG] WebSocket connection @ http://192.168.0.88:8102/home/akunSaya:5403
+[  202379ms] [LOG] WebSocket connection attempting... @ http://192.168.0.88:8102/home/akunSaya:5481
+[  203683ms] [ERROR] WebSocket connection to 'ws://192.168.0.88:8102/' failed: Error during WebSocket handshake: Unexpected response code: 302 @ http://192.168.0.88:8102/home/akunSaya:5402
+[  203683ms] [LOG] WebSocket error: undefined @ http://192.168.0.88:8102/home/akunSaya:5447
+[  203683ms] [LOG] Reconnecting in 2 seconds... @ http://192.168.0.88:8102/home/akunSaya:5490
+[  203684ms] [LOG] WebSocket closed @ http://192.168.0.88:8102/home/akunSaya:5406
+[  203684ms] [LOG] Reconnecting in 4 seconds... @ http://192.168.0.88:8102/home/akunSaya:5490
+[  205509ms] [LOG] Akun Sayanamanya @ http://192.168.0.88:8102/home/akunSaya:1675
+[  205514ms] [LOG] WebSocket connection @ http://192.168.0.88:8102/home/akunSaya:5403
+[  205515ms] [LOG] WebSocket connection attempting... @ http://192.168.0.88:8102/home/akunSaya:5481
+[  208608ms] [LOG] Akun Sayanamanya @ http://192.168.0.88:8102/home/akunSaya:1675
+[  208612ms] [LOG] WebSocket connection @ http://192.168.0.88:8102/home/akunSaya:5403
+[  208612ms] [LOG] WebSocket connection attempting... @ http://192.168.0.88:8102/home/akunSaya:5481
+[  211786ms] [LOG] Akun Sayanamanya @ http://192.168.0.88:8102/home/akunSaya:1675
+[  211789ms] [LOG] WebSocket connection @ http://192.168.0.88:8102/home/akunSaya:5403
+[  211789ms] [LOG] WebSocket connection attempting... @ http://192.168.0.88:8102/home/akunSaya:5481
+[  214010ms] [ERROR] WebSocket connection to 'ws://192.168.0.88:8102/' failed: Error during WebSocket handshake: Unexpected response code: 302 @ http://192.168.0.88:8102/home/akunSaya:5402
+[  214010ms] [LOG] WebSocket error: undefined @ http://192.168.0.88:8102/home/akunSaya:5447
+[  214010ms] [LOG] Reconnecting in 2 seconds... @ http://192.168.0.88:8102/home/akunSaya:5490
+[  214011ms] [LOG] WebSocket closed @ http://192.168.0.88:8102/home/akunSaya:5406
+[  214011ms] [LOG] Reconnecting in 4 seconds... @ http://192.168.0.88:8102/home/akunSaya:5490
+[  216420ms] [LOG] Akun Sayanamanya @ http://192.168.0.88:8102/home/akunSaya:1675
+[  216425ms] [LOG] WebSocket connection @ http://192.168.0.88:8102/home/akunSaya:5403
+[  216425ms] [LOG] WebSocket connection attempting... @ http://192.168.0.88:8102/home/akunSaya:5481
+[  219941ms] [LOG] Akun Sayanamanya @ http://192.168.0.88:8102/home/akunSaya:1675
+[  219948ms] [LOG] WebSocket connection @ http://192.168.0.88:8102/home/akunSaya:5403
+[  219948ms] [LOG] WebSocket connection attempting... @ http://192.168.0.88:8102/home/akunSaya:5481
+[  223546ms] [ERROR] WebSocket connection to 'ws://192.168.0.88:8102/' failed: Error during WebSocket handshake: Unexpected response code: 302 @ http://192.168.0.88:8102/home/akunSaya:5402
+[  223547ms] [LOG] WebSocket error: undefined @ http://192.168.0.88:8102/home/akunSaya:5447
+[  223547ms] [LOG] Reconnecting in 2 seconds... @ http://192.168.0.88:8102/home/akunSaya:5490
+[  223547ms] [LOG] WebSocket closed @ http://192.168.0.88:8102/home/akunSaya:5406
+[  223547ms] [LOG] Reconnecting in 4 seconds... @ http://192.168.0.88:8102/home/akunSaya:5490

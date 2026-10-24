@@ -1,0 +1,648 @@
+ID	Modul	Fitur/Aksi	Role	Sumber	Jenis	Mutasi	Prasyarat Data	Catatan
+ADM-01-001	Login	Login admin lewat form login yang sama dengan Bid Owner/Bidder	Admin	docs/rules/administrator/01-login.md:3	Aksi-Baca	Tidak	akun admin aktif	Kalibrasi CLAUDE.md: ADMIN_PATH=/ (form publik)
+ADM-01-002	Login	Akun admin hanya dibuat via backend (tidak ada registrasi admin di UI)	Admin	docs/rules/administrator/01-login.md:4	Akses/Otorisasi	Tidak	-	Hanya bisa diverifikasi negatif lewat UI
+ADM-01-003	Login	Setelah login diarahkan ke halaman Daftar Pengajuan Lelang	Admin	docs/rules/administrator/01-login.md:5	Tampilan	Tidak	akun admin aktif	-
+ADM-02-001	Push Notif	Buka daftar push notif via ikon lonceng di top bar	Admin	docs/rules/administrator/02-push-notif.md:3	Aksi-Baca	Tidak	-	Kalibrasi :32 ikon tanpa accessible name (defect aksesibilitas)
+ADM-02-002	Push Notif	Indikator titik merah di ikon lonceng saat ada notif belum dibaca	Admin	docs/rules/administrator/02-push-notif.md:4	Tampilan	Tidak	minimal 1 notif unread	-
+ADM-02-003	Push Notif	Admin menerima salinan semua notif to Bidder dan to Bid Owner (label penerima)	Admin	docs/rules/administrator/02-push-notif.md:5	Notifikasi-Internal	Tidak	trigger notif dari modul lain	Kalibrasi :49-59 terbukti untuk Lelang/Order/Tracking
+ADM-02-004	Push Notif	Notif to Admin: Konfirmasi Perubahan Data	Admin	docs/rules/administrator/02-push-notif.md:6	Notifikasi-Internal	Ya	bid owner/bidder aktif mengubah Akun Saya	Kalibrasi :57 trigger terblokir HTTP 500 doupdateakunsaya
+ADM-02-005	Push Notif	Notif to Admin: PNP Edit Permintaan Muat (TEP)	Admin	docs/rules/administrator/02-push-notif.md:8	Notifikasi-Internal	Ya	order dari PNP diedit tanggal muatnya	-
+ADM-02-006	Push Notif	Notif to Admin: Penilaian Order ke Bidder	Admin	docs/rules/administrator/02-push-notif.md:9	Notifikasi-Internal	Ya	order ORDER SELESAI dinilai bid owner	-
+ADM-02-007	Push Notif	Notif to Admin: Dokumen Tagihan Pengiriman	Admin	docs/rules/administrator/02-push-notif.md:10	Notifikasi-Internal	Ya	upload tagihan pada Proses Invoice	-
+ADM-02-008	Push Notif	Filter kategori notif (Lelang, Order, Tracking, Akun); default Semua Kategori	Admin	docs/rules/administrator/02-push-notif.md:11	Aksi-Baca	Tidak	notif berbagai kategori	Kalibrasi :24 UI punya opsi tambahan Order Baru
+ADM-02-009	Push Notif	Klik Cek Disini membuka halaman detail sesuai notif (mis. verifikasi perubahan data)	Admin	docs/rules/administrator/02-push-notif.md:13	Aksi-Baca	Ya	notif dengan tujuan detail	Klik menandai notif terbaca (mengubah state)
+ADM-02-010	Push Notif	Default list hanya notif belum dibaca; notif terbaca hilang dari list default	Admin	docs/rules/administrator/02-push-notif.md:14	Tampilan	Tidak	notif read & unread	Kalibrasi :23 default filter Belum Dibaca
+ADM-02-011	Push Notif	Filter tampil Semua Notif menampilkan notif terbaca dan belum terbaca	Admin	docs/rules/administrator/02-push-notif.md:15	Aksi-Baca	Tidak	notif read & unread	-
+ADM-02-012	Push Notif	Tombol Hapus Notif & Tandai Dibaca nonaktif sampai ada notif dicentang / Pilih Semua	Admin	docs/rules/administrator/02-push-notif.md:16	Validasi	Tidak	minimal 1 notif	-
+ADM-02-013	Push Notif	Hapus notifikasi terpilih	Admin	docs/rules/administrator/02-push-notif.md:16	Aksi-Tulis	Ya	notif hasil trigger uji	-
+ADM-02-014	Push Notif	Tandai notifikasi terpilih sebagai dibaca	Admin	docs/rules/administrator/02-push-notif.md:16	Aksi-Tulis	Ya	notif unread hasil trigger uji	-
+ADM-02-015	Push Notif	Notifikasi otomatis terhapus setelah 3 bulan	Admin	docs/rules/administrator/02-push-notif.md:17	Status-Transisi	Ya	notif berumur >3 bulan	Job retensi; kalibrasi :44 hanya metadata expiry ~3 bulan
+ADM-03-001	Cari Penawaran	Tombol Cari Penawaran disable sampai field Nomor Lelang diisi	Admin	docs/rules/administrator/03-cari-penawaran.md:3	Validasi	Tidak	-	-
+ADM-03-002	Cari Penawaran	Cari penawaran dengan input nomor lelang manual	Admin	docs/rules/administrator/03-cari-penawaran.md:4	Aksi-Baca	Tidak	lelang ada	-
+ADM-03-003	Cari Penawaran	Cari penawaran dengan memilih dari popup Daftar Lelang	Admin	docs/rules/administrator/03-cari-penawaran.md:4	Aksi-Baca	Tidak	lelang ada	Kalibrasi: popup #lelanglist admin punya filter bid owner
+ADM-03-004	Cari Penawaran	Nomor lelang tidak ada memunculkan alert Nomor lelang tidak ditemukan	Admin	docs/rules/administrator/03-cari-penawaran.md:5	Validasi	Tidak	-	UI berupa alert DOM role=alert (Title Case)
+ADM-03-005	Cari Penawaran	Ringkasan lelang tampil (data lelang, S&K, rute pengiriman, informasi kontainer)	Admin	docs/rules/administrator/03-cari-penawaran.md:6	Tampilan	Tidak	lelang ada	-
+ADM-03-006	Cari Penawaran	Download dokumen lelang yang diupload saat buat lelang	Admin	docs/rules/administrator/03-cari-penawaran.md:8	Export/Download	Tidak	lelang dengan dokumen	Rule menulis bid owner yang download pada file admin
+ADM-03-007	Cari Penawaran	Budget pengiriman tampil sesuai data buat lelang	Admin	docs/rules/administrator/03-cari-penawaran.md:9	Tampilan	Tidak	lelang dengan budget	-
+ADM-03-008	Cari Penawaran	Tampilan rute normal (1 asal-1 tujuan) vs multidrop (tujuan >=2)	Admin	docs/rules/administrator/03-cari-penawaran.md:11	Tampilan	Tidak	lelang normal & multidrop	-
+ADM-03-009	Cari Penawaran	Semua jenis kontainer tampil; volume/deskripsi kosong ditampilkan strip	Admin	docs/rules/administrator/03-cari-penawaran.md:14	Tampilan	Tidak	lelang tanpa volume/deskripsi	-
+ADM-03-010	Cari Penawaran	Popup Daftar Lelang memuat semua lelang (termasuk lewat rencana akhir kirim) kecuali lelang batal	Admin	docs/rules/administrator/03-cari-penawaran.md:19	Tampilan	Tidak	lelang batal & lelang lewat akhir kirim	-
+ADM-03-011	Cari Penawaran	Popup Daftar Lelang menampilkan rute format pelabuhan asal (UN Code) - tujuan (UN Code)	Admin	docs/rules/administrator/03-cari-penawaran.md:21	Tampilan	Tidak	lelang ada	-
+ADM-03-012	Cari Penawaran	Dropdown nomor lelang di popup urut terbaru sampai terlama	Admin	docs/rules/administrator/03-cari-penawaran.md:22	Aksi-Baca	Tidak	>=2 lelang	-
+ADM-03-013	Cari Penawaran	Pesan belum ada peserta yang mengajukan penawaran + email/WA CS dari setting general	Admin	docs/rules/administrator/03-cari-penawaran.md:26	Tampilan	Tidak	lelang tutup tanpa harga	-
+ADM-03-014	Cari Penawaran	Pesan nomor lelang belum melewati batas tutup lelang + kontak CS	Admin	docs/rules/administrator/03-cari-penawaran.md:28	Tampilan	Tidak	lelang status LELANG DIBUKA	-
+ADM-03-015	Cari Penawaran	Default 20 penawaran; filter jenis kontainer, bidder, ETD & ETA	Admin	docs/rules/administrator/03-cari-penawaran.md:30	Aksi-Baca	Tidak	lelang dengan >20 harga	Rule menulis Bid owner bisa filter; kalibrasi #page_size default 20
+ADM-03-016	Cari Penawaran	Urutan default berjenjang: efektif terbaru, harga, closing time, rating, menang lelang, nama kapal	Admin	docs/rules/administrator/03-cari-penawaran.md:31	Tampilan	Tidak	harga dengan nilai sama di beberapa kunci	Kalibrasi: sortir 6 kunci + 2 arah
+ADM-03-017	Cari Penawaran	Tombol kapal connecting nx pada penawaran jadwal connecting	Admin	docs/rules/administrator/03-cari-penawaran.md:37	Aksi-Baca	Tidak	harga dengan jadwal connecting	-
+ADM-03-018	Cari Penawaran	Semua harga tampil apa pun tanggal mulai berlakunya	Admin	docs/rules/administrator/03-cari-penawaran.md:38	Tampilan	Tidak	harga dengan mulai berlaku berbeda	-
+ADM-03-019	Cari Penawaran	Harga satuan DPP tampil beserta nilai PPn dan PPh	Admin	docs/rules/administrator/03-cari-penawaran.md:39	Tampilan	Tidak	harga dengan PPn/PPh	-
+ADM-03-020	Cari Penawaran	Info harga kosong tampil (Info harga tidak diinputkan oleh bidder)	Admin	docs/rules/administrator/03-cari-penawaran.md:40	Tampilan	Tidak	harga tanpa info	-
+ADM-03-021	Cari Penawaran	Biaya tidak termasuk tampil merah; biaya termasuk/tidak tanpa PPn/PPh	Admin	docs/rules/administrator/03-cari-penawaran.md:41	Tampilan	Tidak	harga yang tidak mengikutkan include lelang	-
+ADM-03-022	Cari Penawaran	Bidder belum pernah menang hanya tampil jumlah rating; bidder baru rating default 3.0	Admin	docs/rules/administrator/03-cari-penawaran.md:43	Tampilan	Tidak	bidder baru	-
+ADM-03-023	Cari Penawaran	Harga lama yang tergantikan harga terbaru jadi N/A + alert Harga sudah tidak berlaku	Admin	docs/rules/administrator/03-cari-penawaran.md:46	Validasi	Tidak	2 harga sama beda tgl mulai berlaku	Kalibrasi: native alert
+ADM-03-024	Cari Penawaran	Harga lewat closing time jadi N/A + alert Jadwal sudah melewati tanggal closing time	Admin	docs/rules/administrator/03-cari-penawaran.md:51	Validasi	Tidak	harga lewat closing time	-
+ADM-03-025	Cari Penawaran	Harga tanpa jadwal: tombol Pesan disable + tooltip Tanyakan Ke CS PH Bid	Admin	docs/rules/administrator/03-cari-penawaran.md:52	Validasi	Tidak	harga tanpa jadwal	-
+ADM-03-026	Cari Penawaran	Lelang lewat rencana akhir kirim: N/A + alert Nomor lelang sudah melewati tgl. rencana akhir kirim	Admin	docs/rules/administrator/03-cari-penawaran.md:53	Validasi	Tidak	lelang lewat rencana akhir kirim	-
+ADM-03-027	Cari Penawaran	Harga satuan + PPn/PPh berubah otomatis setelah nego diterima bidder	Admin	docs/rules/administrator/03-cari-penawaran.md:54	Tampilan	Tidak	nego DITERIMA	-
+ADM-03-028	Cari Penawaran	Email penawaran belum terpilih ke bidder lain saat admin validasi terima order	Admin	docs/rules/administrator/03-cari-penawaran.md:55	Notifikasi-Email	Ya	lelang >1 bidder input harga + order divalidasi terima	Terkirim 1x
+ADM-03-029	Cari Penawaran	Request update harga membuat harga sebelumnya expired	Admin	docs/rules/administrator/03-cari-penawaran.md:56	Status-Transisi	Ya	lelang di-request update harga	-
+ADM-03-030	Cari Penawaran	Informasi PROSES UPDATE HARGA tampil saat lelang proses update harga	Admin	docs/rules/administrator/03-cari-penawaran.md:57	Tampilan	Tidak	lelang proses update harga	Kalibrasi: teks di div.mb_5
+ADM-03-031	Cari Penawaran	Klik tombol Expired saat proses update harga memunculkan alert	Admin	docs/rules/administrator/03-cari-penawaran.md:58	Validasi	Tidak	lelang proses update harga	-
+ADM-03-032	Cari Penawaran	Tombol Daftar Nego disable saat proses update harga	Admin	docs/rules/administrator/03-cari-penawaran.md:59	Validasi	Tidak	lelang proses update harga	-
+ADM-03-033	Cari Penawaran	Setelah update harga berakhir, filter/sortir menampilkan harga baru dulu lalu harga expired	Admin	docs/rules/administrator/03-cari-penawaran.md:60	Aksi-Baca	Tidak	lelang selesai update harga	-
+ADM-03-034	Cari Penawaran	Integrasi PNP: harga lama tidak bisa dipesan di PNP + tooltip saat proses update harga	Admin	docs/rules/administrator/03-cari-penawaran.md:61	Tampilan	Tidak	lelang proses update harga + akses PNP	Di luar UI PH Bid
+ADM-03-035	Cari Penawaran	Dokumen aanwijzing tampil sesuai nama; strip bila status tidak aktif	Admin	docs/rules/administrator/03-cari-penawaran.md:62	Tampilan	Tidak	bid owner dengan aanwijzing aktif & tidak aktif	-
+ADM-03-036	Cari Penawaran	Request Jadwal: hanya harga aktif (termasuk tanpa jadwal/lewat closing) tampil; expired/lewat akhir kirim tidak	Admin	docs/rules/administrator/03-cari-penawaran.md:67	Tampilan	Tidak	variasi harga aktif/expired	-
+ADM-03-037	Cari Penawaran	Request jadwal pada harga yang sama dapat diulang tanpa batas	Admin	docs/rules/administrator/03-cari-penawaran.md:72	Aksi-Tulis	Ya	harga aktif	-
+ADM-03-038	Cari Penawaran	Popup konfirmasi request jadwal dengan opsi terima notifikasi respon bidder	Admin	docs/rules/administrator/03-cari-penawaran.md:73	Aksi-Tulis	Ya	harga aktif	-
+ADM-03-039	Cari Penawaran	Push notif ke admin saat bidder merespon request jadwal (hanya jika izin diaktifkan)	Admin	docs/rules/administrator/03-cari-penawaran.md:74	Notifikasi-Internal	Ya	request jadwal dengan izin on & off	-
+ADM-03-040	Cari Penawaran	Halaman Daftar Request Jadwal mencatat tgl request, bidder, pelayaran, jenis, harga sebelum PPn, terima notif, status	Admin	docs/rules/administrator/03-cari-penawaran.md:75	Tampilan	Tidak	pernah request jadwal	Format tanggal DD/MM/YYYY HH:MM (:83); rule :82-85 menulis bid owner
+ADM-03-041	Cari Penawaran	Label Daftar Request Jadwal : n Penawaran (Lihat Request) di halaman Harga Penawaran	Admin	docs/rules/administrator/03-cari-penawaran.md:77	Tampilan	Tidak	lelang pernah request jadwal	-
+ADM-03-042	Cari Penawaran	WA Request Jadwal tersedia ke bidder setelah request jadwal	Admin	docs/rules/administrator/03-cari-penawaran.md:78	Notifikasi-WA	Ya	request jadwal sukses	Rule menulis setelah bid owner request
+ADM-03-043	Cari Penawaran	Kolom Terima Notif tampil Ya/Tidak sesuai konfirmasi	Admin	docs/rules/administrator/03-cari-penawaran.md:85	Tampilan	Tidak	request jadwal dengan izin on & off	-
+ADM-03-044	Cari Penawaran	Status request Menunggu Bidder berubah Tersedia setelah bidder respon	Admin	docs/rules/administrator/03-cari-penawaran.md:86	Status-Transisi	Ya	request jadwal + respon bidder	-
+ADM-03-045	Cari Penawaran	Respon update jadwal bidder tampil di halaman Cari Penawaran	Admin	docs/rules/administrator/03-cari-penawaran.md:88	Tampilan	Tidak	request jadwal sudah direspon	-
+ADM-03-046	Cari Penawaran	Export Penawaran PDF: tanggal export, email user pengekspor, urutan default	Admin	docs/rules/administrator/03-cari-penawaran.md:92	Export/Download	Tidak	lelang dengan harga	Kalibrasi: href /lelang/exportpenawaran
+ADM-03-047	Cari Penawaran	PDF menampilkan harga DPP + PPn/PPh, info harga kosong, biaya tidak termasuk merah, ID penawaran	Admin	docs/rules/administrator/03-cari-penawaran.md:95	Export/Download	Tidak	lelang dengan harga	-
+ADM-03-048	Cari Penawaran	PDF menampilkan label (Request Harga dd/mm/yyyy) pada harga hasil update harga	Admin	docs/rules/administrator/03-cari-penawaran.md:100	Export/Download	Tidak	harga hasil update harga	-
+ADM-03-049	Cari Penawaran	Profil Bidder: breadcrumb & Kembali kembali ke hasil pencarian sebelumnya	Admin	docs/rules/administrator/03-cari-penawaran.md:104	Aksi-Baca	Tidak	hasil pencarian dengan harga	-
+ADM-03-050	Cari Penawaran	Profil Bidder: bergabung sejak = tgl registrasi; ulasan dengan nama disamarkan Bid Owner	Admin	docs/rules/administrator/03-cari-penawaran.md:105	Tampilan	Tidak	bidder dengan ulasan	-
+ADM-03-051	Cari Penawaran	Isi Data Pesanan: breadcrumb & Batal kembali ke hasil penawaran	Admin	docs/rules/administrator/03-cari-penawaran.md:110	Aksi-Baca	Tidak	harga dapat dipesan	-
+ADM-03-052	Cari Penawaran	Range tanggal permintaan muat (mulai berlaku/hari ini s.d sebelum closing time/harga terbaru)	Admin	docs/rules/administrator/03-cari-penawaran.md:111	Validasi	Tidak	harga dengan jadwal	Kalibrasi: bootstrapMaterialDatePicker, ketik tidak bekerja
+ADM-03-053	Cari Penawaran	Data pemuatan & penerima barang ter-draft dari lelang (kecuali nama perusahaan; multidrop per drop)	Admin	docs/rules/administrator/03-cari-penawaran.md:116	Tampilan	Tidak	lelang dengan data pemuatan/penerima	-
+ADM-03-054	Cari Penawaran	Rute format UN Code; total harga = jumlah dipesan x harga satuan (default 0)	Admin	docs/rules/administrator/03-cari-penawaran.md:119	Tampilan	Tidak	harga dapat dipesan	-
+ADM-03-055	Cari Penawaran	S&K diambil dari setting S&K Booking	Admin	docs/rules/administrator/03-cari-penawaran.md:121	Tampilan	Tidak	S&K booking terisi	-
+ADM-03-056	Cari Penawaran	Submit isi data pesanan -> popup konfirmasi pesanan -> halaman Input Muatan (order dibuat)	Admin	docs/rules/administrator/03-cari-penawaran.md:122	Aksi-Tulis	Ya	harga aktif dengan jadwal	-
+ADM-03-057	Cari Penawaran	Nama & nomor sales opsional; nomor hanya angka, maks 1 nomor	Admin	docs/rules/administrator/03-cari-penawaran.md:123	Validasi	Tidak	-	-
+ADM-03-058	Cari Penawaran	Nomor sales ter-draft dari lelang lama (hanya nomor pertama)	Admin	docs/rules/administrator/03-cari-penawaran.md:127	Tampilan	Tidak	lelang lama dengan nomor sales	-
+ADM-03-059	Cari Penawaran	Nomor sales tampil di detail order bid owner & admin, tidak di bidder	Admin	docs/rules/administrator/03-cari-penawaran.md:128	Tampilan	Tidak	order dengan nomor sales	-
+ADM-03-060	Cari Penawaran	WA tracking (ambil kontainer s.d dooring) ke nomor sales	Admin	docs/rules/administrator/03-cari-penawaran.md:129	Notifikasi-WA	Ya	order dengan nomor sales + update tracking	-
+ADM-03-061	Cari Penawaran	Alamat pemuatan/penerimaan, kota asal & tujuan disable di isi data pesanan admin (termasuk multidrop)	Admin	docs/rules/administrator/03-cari-penawaran.md:130	Validasi	Tidak	harga dapat dipesan	-
+ADM-03-062	Cari Penawaran	Integrasi API PNP untuk nama & nomor sales	Admin	docs/rules/administrator/03-cari-penawaran.md:131	Tampilan	Tidak	akses PNP	Di luar UI PH Bid
+ADM-03-063	Cari Penawaran	Input Muatan: alasan Lain-lain tampil Lain-lain (alasan) atau Lain-lain saja	Admin	docs/rules/administrator/03-cari-penawaran.md:135	Tampilan	Tidak	order ORDER BARU	-
+ADM-03-064	Cari Penawaran	Download template Excel muatan sesuai jenis rute order	Admin	docs/rules/administrator/03-cari-penawaran.md:137	Export/Download	Tidak	order ORDER BARU	-
+ADM-03-065	Cari Penawaran	Upload packing list maks 10 file pdf/jpg/png; alert Format File Tidak Sesuai	Admin	docs/rules/administrator/03-cari-penawaran.md:139	Upload/Import	Ya	order ORDER BARU	-
+ADM-03-066	Cari Penawaran	Preview file packing list dalam popup (foto & pdf)	Admin	docs/rules/administrator/03-cari-penawaran.md:140	Aksi-Baca	Tidak	packing list terupload	-
+ADM-03-067	Cari Penawaran	Import muatan Excel sesuai jenis rute; alert Format excel tidak sesuai; data tidak sesuai tidak ditampilkan	Admin	docs/rules/administrator/03-cari-penawaran.md:141	Upload/Import	Ya	order ORDER BARU + file excel	-
+ADM-03-068	Cari Penawaran	Dropdown alamat tujuan dari drop off; reset ke placeholder bila alamat excel tidak cocok	Admin	docs/rules/administrator/03-cari-penawaran.md:143	Validasi	Tidak	order multidrop	-
+ADM-03-069	Cari Penawaran	Kemasan dari master kemasan; total berat dihitung per kontainer	Admin	docs/rules/administrator/03-cari-penawaran.md:145	Tampilan	Tidak	master kemasan aktif	-
+ADM-03-070	Cari Penawaran	Multidrop default menampilkan alamat 1	Admin	docs/rules/administrator/03-cari-penawaran.md:147	Tampilan	Tidak	order multidrop	-
+ADM-03-071	Cari Penawaran	Checkbox isi data seperti unit 1 menambah/menghapus muatan tambahan di unit lain	Admin	docs/rules/administrator/03-cari-penawaran.md:148	Aksi-Baca	Tidak	order >1 unit	-
+ADM-03-072	Cari Penawaran	Input Perjanjian: dokumen & catatan opsional, tanggal default hari ini, Kembali ke halaman sebelumnya	Admin	docs/rules/administrator/03-cari-penawaran.md:154	Aksi-Tulis	Ya	order PROSES PERJANJIAN	-
+ADM-03-073	Cari Penawaran	Isi detail perjanjian pengiriman hardcode menyesuaikan bid owner & bidder	Admin	docs/rules/administrator/03-cari-penawaran.md:157	Tampilan	Tidak	order PROSES PERJANJIAN	-
+ADM-04-001	Pengajuan Lelang	Tab default saat membuka menu adalah Semua Lelang	Admin	docs/rules/administrator/04-pengajuan-lelang.md:4	Tampilan	Tidak	-	-
+ADM-04-002	Pengajuan Lelang	Tab Perlu Input Harga: lelang belum lewat tutup / request harga berstatus Belum Input Penawaran	Admin	docs/rules/administrator/04-pengajuan-lelang.md:6	Aksi-Baca	Tidak	lelang dibuka / request input harga	-
+ADM-04-003	Pengajuan Lelang	Tab Perlu Update Harga: lelang dengan request update harga	Admin	docs/rules/administrator/04-pengajuan-lelang.md:7	Aksi-Baca	Tidak	lelang proses update harga	Kalibrasi transporter: tab tanpa data demo
+ADM-04-004	Pengajuan Lelang	Tab Lelang Tutup: lewat tgl tutup lelang / tutup request harga	Admin	docs/rules/administrator/04-pengajuan-lelang.md:8	Aksi-Baca	Tidak	lelang ditutup	-
+ADM-04-005	Pengajuan Lelang	Tab Telah Akhir Kirim: lewat tgl rencana akhir kirim	Admin	docs/rules/administrator/04-pengajuan-lelang.md:9	Aksi-Baca	Tidak	lelang lewat akhir kirim	-
+ADM-04-006	Pengajuan Lelang	Tab Lelang Batal: lelang dibatalkan	Admin	docs/rules/administrator/04-pengajuan-lelang.md:10	Aksi-Baca	Tidak	lelang batal	-
+ADM-04-007	Pengajuan Lelang	Tab Semua Lelang: semua data lelang	Admin	docs/rules/administrator/04-pengajuan-lelang.md:11	Aksi-Baca	Tidak	-	-
+ADM-04-008	Pengajuan Lelang	Item action menu sesuai tab (Detail, Lihat Harga, Tambah Peserta, Edit, Batalkan, Minta/Menuju Update Harga, History)	Admin	docs/rules/administrator/04-pengajuan-lelang.md:12	Tampilan	Tidak	lelang di tiap tab	Kalibrasi/defect #14b: UI tanpa Minta Update Harga; item History bersyarat
+ADM-04-009	Pengajuan Lelang	Lelang pindah Perlu Update Harga saat ada harga diupdate dan ke Lelang Tutup setelah lewat tgl tutup update	Admin	docs/rules/administrator/04-pengajuan-lelang.md:54	Status-Transisi	Ya	lelang proses update harga	-
+ADM-04-010	Pengajuan Lelang	Lelang batal tetap muncul di list pengajuan lelang	Admin	docs/rules/administrator/04-pengajuan-lelang.md:56	Tampilan	Tidak	lelang batal	-
+ADM-04-011	Pengajuan Lelang	Download dokumen lelang di halaman detail pengajuan lelang	Admin	docs/rules/administrator/04-pengajuan-lelang.md:57	Export/Download	Tidak	lelang dengan dokumen	-
+ADM-04-012	Pengajuan Lelang	Kolom tanggal terkirim dan status harga (Belum Input Penawaran/Telah Input Harga/Telah Input Penawaran)	Admin	docs/rules/administrator/04-pengajuan-lelang.md:58	Tampilan	Tidak	lelang dengan variasi status harga	-
+ADM-04-013	Pengajuan Lelang	Aksi Detail Pengajuan Lelang membuka halaman detail	Admin	docs/rules/administrator/04-pengajuan-lelang.md:64	Aksi-Baca	Tidak	lelang ada	-
+ADM-04-014	Pengajuan Lelang	Aksi Lihat Harga Penawaran membuka Cari Penawaran dengan hasil lelang terkait	Admin	docs/rules/administrator/04-pengajuan-lelang.md:65	Aksi-Baca	Tidak	lelang ada	-
+ADM-04-015	Pengajuan Lelang	Detail menampilkan status lelang BELUM BUKA/LELANG DIBUKA/LELANG DITUTUP/LELANG BATAL	Admin	docs/rules/administrator/04-pengajuan-lelang.md:72	Tampilan	Tidak	lelang di tiap status	-
+ADM-04-016	Pengajuan Lelang	Bidder Penerima Lelang menampilkan jumlah penawaran (input harga dari total diundang)	Admin	docs/rules/administrator/04-pengajuan-lelang.md:77	Tampilan	Tidak	lelang dengan peserta	-
+ADM-04-017	Pengajuan Lelang	Data Perubahan Terakhir + link History di detail lelang yang pernah diedit/ditambah peserta	Admin	docs/rules/administrator/04-pengajuan-lelang.md:78	Aksi-Baca	Tidak	lelang pernah diedit	-
+ADM-04-018	Pengajuan Lelang	Penanda #n di nomor lelang sesuai jumlah request update harga	Admin	docs/rules/administrator/04-pengajuan-lelang.md:79	Tampilan	Tidak	lelang pernah request harga	Diulang di :167
+ADM-04-019	Pengajuan Lelang	Nomor lelang hijau: lewat akhir kirim, ada harga, belum ada order	Admin	docs/rules/administrator/04-pengajuan-lelang.md:80	Tampilan	Tidak	lelang lewat akhir kirim tanpa order	Kalibrasi: rgb(58,196,125)
+ADM-04-020	Pengajuan Lelang	Edit data lelang: rencana akhir kirim tanpa batas; alamat/kota & tambah kontainer s.d rencana akhir kirim	Admin	docs/rules/administrator/04-pengajuan-lelang.md:85	Aksi-Tulis	Ya	lelang aktif	-
+ADM-04-021	Pengajuan Lelang	Edit ditolak lelang batal: alert Tidak bisa edit! Lelang sudah dibatalkan	Admin	docs/rules/administrator/04-pengajuan-lelang.md:88	Validasi	Tidak	lelang batal	Kalibrasi: SweetAlert2 teks ber-br
+ADM-04-022	Pengajuan Lelang	Edit ditolak proses update harga: alert Tidak bisa edit! Lelang masih proses update harga	Admin	docs/rules/administrator/04-pengajuan-lelang.md:89	Validasi	Tidak	lelang proses update harga	-
+ADM-04-023	Pengajuan Lelang	Lelang sudah ada order: nomor, tgl buka & tutup tidak bisa diedit + alert sudah ada order	Admin	docs/rules/administrator/04-pengajuan-lelang.md:90	Validasi	Tidak	lelang dengan order	-
+ADM-04-024	Pengajuan Lelang	Lelang sudah ada input harga: alamat asal & tujuan tidak bisa diedit	Admin	docs/rules/administrator/04-pengajuan-lelang.md:91	Validasi	Tidak	lelang dengan harga	-
+ADM-04-025	Pengajuan Lelang	History edit lelang berlabel by admin dengan email admin pengedit	Admin	docs/rules/administrator/04-pengajuan-lelang.md:92	Tampilan	Tidak	lelang diedit admin	-
+ADM-04-026	Pengajuan Lelang	Simpan edit field yang diizinkan (nomor, tanggal, kota, alamat, PIC, volume & deskripsi)	Admin	docs/rules/administrator/04-pengajuan-lelang.md:93	Aksi-Tulis	Ya	lelang aktif	-
+ADM-04-027	Pengajuan Lelang	Nomor lelang hanya huruf & / - # ( ) +; selain itu alert Tidak Bisa Input Simbol	Admin	docs/rules/administrator/04-pengajuan-lelang.md:94	Validasi	Tidak	-	Rule tidak menyebut angka
+ADM-04-028	Pengajuan Lelang	Dokumen aanwijzing di halaman edit tampil popup / strip bila tidak aktif	Admin	docs/rules/administrator/04-pengajuan-lelang.md:95	Tampilan	Tidak	bid owner dengan aanwijzing	-
+ADM-04-029	Pengajuan Lelang	Tambah peserta ditolak lewat rencana akhir kirim (alert)	Admin	docs/rules/administrator/04-pengajuan-lelang.md:101	Validasi	Tidak	lelang lewat akhir kirim	-
+ADM-04-030	Pengajuan Lelang	Tambah peserta ditolak lelang batal (alert)	Admin	docs/rules/administrator/04-pengajuan-lelang.md:102	Validasi	Tidak	lelang batal	-
+ADM-04-031	Pengajuan Lelang	Tambah peserta ditolak proses update harga (alert)	Admin	docs/rules/administrator/04-pengajuan-lelang.md:103	Validasi	Tidak	lelang proses update harga	-
+ADM-04-032	Pengajuan Lelang	Daftar calon peserta dari setting peserta lelang bid owner; peserta lama tercentang & terkunci	Admin	docs/rules/administrator/04-pengajuan-lelang.md:104	Tampilan	Tidak	lelang dengan peserta	-
+ADM-04-033	Pengajuan Lelang	Tombol Simpan disable bila tidak ada bidder baru; enable bila ada	Admin	docs/rules/administrator/04-pengajuan-lelang.md:106	Validasi	Tidak	lelang aktif	-
+ADM-04-034	Pengajuan Lelang	Simpan tambah peserta: bidder baru bisa input harga, tidak menerima notif pengajuan lelang	Admin	docs/rules/administrator/04-pengajuan-lelang.md:108	Aksi-Tulis	Ya	lelang aktif + bidder belum diundang	-
+ADM-04-035	Pengajuan Lelang	Dokumen aanwijzing di halaman tambah peserta (popup / strip)	Admin	docs/rules/administrator/04-pengajuan-lelang.md:110	Tampilan	Tidak	bid owner dengan aanwijzing	-
+ADM-04-036	Pengajuan Lelang	History Data Lelang: daftar perubahan + tanggal, terbaru di atas	Admin	docs/rules/administrator/04-pengajuan-lelang.md:116	Aksi-Baca	Tidak	lelang pernah diedit/ditambah peserta	-
+ADM-04-037	Pengajuan Lelang	Batalkan lelang kapan pun selama belum ada order	Admin	docs/rules/administrator/04-pengajuan-lelang.md:122	Aksi-Tulis	Ya	lelang tanpa order	Rule tidak menulis alert sudah ada order; kalibrasi UI ada
+ADM-04-038	Pengajuan Lelang	Batalkan ditolak lelang sudah batal (alert)	Admin	docs/rules/administrator/04-pengajuan-lelang.md:123	Validasi	Tidak	lelang batal	-
+ADM-04-039	Pengajuan Lelang	Batalkan ditolak proses update harga (alert)	Admin	docs/rules/administrator/04-pengajuan-lelang.md:124	Validasi	Tidak	lelang proses update harga	-
+ADM-04-040	Pengajuan Lelang	Alasan batal wajib dipilih; opsi lainnya + Catatan Lelang Dibatalkan	Admin	docs/rules/administrator/04-pengajuan-lelang.md:125	Validasi	Tidak	lelang aktif	-
+ADM-04-041	Pengajuan Lelang	WA lelang dibatalkan ke semua bidder diundang (batal sebelum tutup lelang)	Admin	docs/rules/administrator/04-pengajuan-lelang.md:126	Notifikasi-WA	Ya	lelang dibuka dibatalkan	-
+ADM-04-042	Pengajuan Lelang	Email lelang dibatalkan ke bidder yang sudah input harga (batal setelah tutup lelang)	Admin	docs/rules/administrator/04-pengajuan-lelang.md:127	Notifikasi-Email	Ya	lelang ditutup dengan harga dibatalkan	-
+ADM-04-043	Pengajuan Lelang	Lelang batal masih dapat dipakai pada history data lelang saat buat lelang	Admin	docs/rules/administrator/04-pengajuan-lelang.md:128	Tampilan	Tidak	lelang batal	Fitur sisi bid owner
+ADM-04-044	Pengajuan Lelang	Detail lelang batal menampilkan card Lelang Batal + penanda (By Admin)	Admin	docs/rules/administrator/04-pengajuan-lelang.md:129	Tampilan	Tidak	lelang dibatalkan admin	-
+ADM-04-045	Pengajuan Lelang	Dokumen aanwijzing di halaman batalkan lelang (popup / strip)	Admin	docs/rules/administrator/04-pengajuan-lelang.md:131	Tampilan	Tidak	bid owner dengan aanwijzing	-
+ADM-04-046	Pengajuan Lelang	Request harga hanya untuk lelang status Lelang Ditutup	Admin	docs/rules/administrator/04-pengajuan-lelang.md:137	Validasi	Tidak	lelang ditutup	Kalibrasi: Request Harga via tombol di Cari Penawaran
+ADM-04-047	Pengajuan Lelang	Request harga: kategori Request Update Harga (sudah ada harga) / Request Input Harga (belum) di bidder	Admin	docs/rules/administrator/04-pengajuan-lelang.md:138	Aksi-Tulis	Ya	lelang ditutup dengan & tanpa harga	-
+ADM-04-048	Pengajuan Lelang	Request harga ditolak untuk lelang batal	Admin	docs/rules/administrator/04-pengajuan-lelang.md:141	Validasi	Tidak	lelang batal	-
+ADM-04-049	Pengajuan Lelang	Request harga ditolak lewat rencana akhir kirim (alert)	Admin	docs/rules/administrator/04-pengajuan-lelang.md:142	Validasi	Tidak	lelang lewat akhir kirim	Catatan dev: tombol tidak konsisten dinonaktifkan
+ADM-04-050	Pengajuan Lelang	Request ulang hanya setelah lewat tgl tutup request sebelumnya	Admin	docs/rules/administrator/04-pengajuan-lelang.md:143	Validasi	Tidak	lelang pernah request harga	-
+ADM-04-051	Pengajuan Lelang	Tanggal Tutup Request Harga maksimal tgl rencana akhir kirim	Admin	docs/rules/administrator/04-pengajuan-lelang.md:144	Validasi	Tidak	lelang ditutup	-
+ADM-04-052	Pengajuan Lelang	Daftar peserta request harga: semua bidder peserta dengan status harganya	Admin	docs/rules/administrator/04-pengajuan-lelang.md:145	Tampilan	Tidak	lelang dengan peserta	-
+ADM-04-053	Pengajuan Lelang	Default checkbox tercentang untuk Telah Input Penawaran/Harga dan dapat diubah	Admin	docs/rules/administrator/04-pengajuan-lelang.md:150	Aksi-Baca	Tidak	lelang dengan variasi status	Kalibrasi: #pilih_semua_bidder
+ADM-04-054	Pengajuan Lelang	Label (No Respon) pada bidder yang tidak merespon request sebelumnya	Admin	docs/rules/administrator/04-pengajuan-lelang.md:151	Tampilan	Tidak	request sebelumnya tanpa respon	-
+ADM-04-055	Pengajuan Lelang	Request ulang tetap bisa walau semua peserta No Respon	Admin	docs/rules/administrator/04-pengajuan-lelang.md:152	Aksi-Tulis	Ya	request sebelumnya semua No Respon	-
+ADM-04-056	Pengajuan Lelang	Email request update/input harga ke bidder yang diundang saja	Admin	docs/rules/administrator/04-pengajuan-lelang.md:153	Notifikasi-Email	Ya	request harga sukses	-
+ADM-04-057	Pengajuan Lelang	WA request update/input harga ke bidder yang diundang saja	Admin	docs/rules/administrator/04-pengajuan-lelang.md:153	Notifikasi-WA	Ya	request harga sukses	-
+ADM-04-058	Pengajuan Lelang	Lelang di-request harga tampil di tab Perlu Update Harga (ada harga) / Perlu Input Harga (belum)	Admin	docs/rules/administrator/04-pengajuan-lelang.md:154	Status-Transisi	Ya	request harga sukses	-
+ADM-04-059	Pengajuan Lelang	Harga tidak langsung expired; expired saat tgl tutup request harga berakhir	Admin	docs/rules/administrator/04-pengajuan-lelang.md:155	Status-Transisi	Ya	request harga berjalan	-
+ADM-04-060	Pengajuan Lelang	Bid owner klik Pesan saat request harga berjalan memunculkan alert	Admin	docs/rules/administrator/04-pengajuan-lelang.md:156	Validasi	Tidak	request harga berjalan	Perilaku sisi bid owner
+ADM-04-061	Pengajuan Lelang	Harga Telah Lama Expired diupdate melalui input harga baru	Admin	docs/rules/administrator/04-pengajuan-lelang.md:159	Tampilan	Tidak	bidder dengan harga expired semua	-
+ADM-04-062	Pengajuan Lelang	Close Request Harga menghentikan request berjalan dengan field tanggal penutupan	Admin	docs/rules/administrator/04-pengajuan-lelang.md:161	Aksi-Tulis	Ya	request harga berjalan	-
+ADM-04-063	Pengajuan Lelang	Setelah close, harga request yang sudah masuk tampil; harga lama tetap expired	Admin	docs/rules/administrator/04-pengajuan-lelang.md:162	Tampilan	Tidak	request harga di-close	-
+ADM-04-064	Pengajuan Lelang	Card riwayat menampilkan Close Request & Tanggal Close Request	Admin	docs/rules/administrator/04-pengajuan-lelang.md:164	Tampilan	Tidak	request harga di-close	-
+ADM-04-065	Pengajuan Lelang	Dokumen aanwijzing di halaman request harga (popup / strip)	Admin	docs/rules/administrator/04-pengajuan-lelang.md:168	Tampilan	Tidak	bid owner dengan aanwijzing	-
+ADM-04-066	Pengajuan Lelang	Action menu History Request Harga muncul bila lelang pernah request harga	Admin	docs/rules/administrator/04-pengajuan-lelang.md:174	Tampilan	Tidak	lelang pernah request harga	Rule :27 menyebut History Update Harga
+ADM-04-067	Pengajuan Lelang	Halaman History Request Harga: tgl request, tgl tutup, peserta diundang; terbaru di atas	Admin	docs/rules/administrator/04-pengajuan-lelang.md:175	Aksi-Baca	Tidak	lelang pernah request harga	-
+ADM-04-068	Pengajuan Lelang	Riwayat request harga mencatat aksi close request	Admin	docs/rules/administrator/04-pengajuan-lelang.md:177	Tampilan	Tidak	request harga di-close	-
+ADM-05-001	Pengajuan Nego	Lihat daftar pengajuan nego dengan status Waiting / Diterima / Ditolak / Dinegosiasi	Admin	docs/rules/administrator/05-pengajuan-nego.md:3	Aksi-Baca	Tidak	nego berbagai status	-
+ADM-05-002	Pengajuan Nego	Admin hanya melihat proses nego tanpa aksi nego apa pun	Admin	docs/rules/administrator/05-pengajuan-nego.md:5	Akses/Otorisasi	Tidak	nego WAITING	Kalibrasi: tidak ada tombol terima/tolak/nego
+ADM-05-003	Pengajuan Nego	Detail pengajuan nego menampilkan PPN & PPh atau strip bila tidak ada	Admin	docs/rules/administrator/05-pengajuan-nego.md:6	Tampilan	Tidak	nego data baru & lama	-
+ADM-06-001	Riwayat Nego	Setiap proses nego tercatat di halaman Riwayat Nego	Admin	docs/rules/administrator/06-riwayat-nego.md:3	Tampilan	Tidak	penawaran pernah dinego	-
+ADM-06-002	Riwayat Nego	Akses Riwayat Nego dari Detail Nego via textlink Lihat Riwayat Nego	Admin	docs/rules/administrator/06-riwayat-nego.md:5	Aksi-Baca	Tidak	penawaran pernah dinego	Kalibrasi: teks UI Lihat Riwayat, link dobel (target _blank)
+ADM-06-003	Riwayat Nego	Kolom tgl nego diajukan, nego harga, jumlah nego, konfirmasi bidder, harga baru, status (format DD/MM/YYYY HH:MM)	Admin	docs/rules/administrator/06-riwayat-nego.md:6	Tampilan	Tidak	penawaran pernah dinego	Kalibrasi: kolom UI Konfirmasi Transporter
+ADM-06-004	Riwayat Nego	Konfirmasi bidder tampil strip saat status Waiting	Admin	docs/rules/administrator/06-riwayat-nego.md:10	Tampilan	Tidak	nego WAITING	-
+ADM-06-005	Riwayat Nego	Harga baru tampil hanya untuk Negosiasi/Diterima; strip untuk Waiting/Ditolak	Admin	docs/rules/administrator/06-riwayat-nego.md:11	Tampilan	Tidak	nego berbagai status	-
+ADM-06-006	Riwayat Nego	Nego ulang melanjutkan riwayat (nego ke-4, 5, dst) dengan membawa riwayat lama	Admin	docs/rules/administrator/06-riwayat-nego.md:12	Tampilan	Tidak	penawaran dinego ulang	-
+ADM-06-007	Riwayat Nego	Data nego lama dibuatkan riwayat dari data tersedia	Admin	docs/rules/administrator/06-riwayat-nego.md:14	Tampilan	Tidak	nego data lama	-
+ADM-06-008	Riwayat Nego	Detail pengajuan nego menampilkan PPN & PPh atau strip	Admin	docs/rules/administrator/06-riwayat-nego.md:15	Tampilan	Tidak	nego data baru & lama	Duplikat 05:6
+ADM-07-001	Daftar Order	Tanggal buat order = waktu order dibuat sistem (konfirmasi pesanan)	Admin	docs/rules/administrator/07-daftar-order.md:3	Tampilan	Tidak	order ada	-
+ADM-07-002	Daftar Order	Order muncul di list admin setelah konfirmasi pesanan dengan status ORDER BARU	Admin	docs/rules/administrator/07-daftar-order.md:4	Tampilan	Tidak	order ORDER BARU	-
+ADM-07-003	Daftar Order	Tombol kapal connecting nx di list order connecting (popup detail kapal)	Admin	docs/rules/administrator/07-daftar-order.md:5	Aksi-Baca	Tidak	order jadwal connecting	-
+ADM-07-004	Daftar Order	Action menu ORDER BARU: Input Muatan, Edit Data Order, Tolak Order	Admin	docs/rules/administrator/07-daftar-order.md:6	Tampilan	Tidak	order ORDER BARU	Audit :73-91 item lain (Edit Harga, Batalkan, Ganti Jadwal) juga tampil
+ADM-07-005	Daftar Order	Input Muatan dari daftar order -> status PROSES PERJANJIAN	Admin	docs/rules/administrator/07-daftar-order.md:7	Status-Transisi	Ya	order ORDER BARU	-
+ADM-07-006	Daftar Order	Tolak Order -> status ORDER DITOLAK	Admin	docs/rules/administrator/07-daftar-order.md:9	Status-Transisi	Ya	order ORDER BARU / PROSES PERJANJIAN	-
+ADM-07-007	Daftar Order	Action menu PROSES PERJANJIAN: Input Perjanjian, Edit Muatan, Edit Data Order, Tolak Order	Admin	docs/rules/administrator/07-daftar-order.md:10	Tampilan	Tidak	order PROSES PERJANJIAN	-
+ADM-07-008	Daftar Order	Input Perjanjian -> status PROSES VALIDASI	Admin	docs/rules/administrator/07-daftar-order.md:11	Status-Transisi	Ya	order PROSES PERJANJIAN	-
+ADM-07-009	Daftar Order	Action menu PROSES VALIDASI: Alihkan Order, Edit Muatan, Edit Data Order	Admin	docs/rules/administrator/07-daftar-order.md:15	Tampilan	Tidak	order PROSES VALIDASI	Validasi Order disebut di :149
+ADM-07-010	Daftar Order	Action menu KONFIRMASI UNIT: Input Kelengkapan Unit, Alihkan, Upload Dokumen, Biaya Tambahan	Admin	docs/rules/administrator/07-daftar-order.md:19	Tampilan	Tidak	order KONFIRMASI UNIT	-
+ADM-07-011	Daftar Order	Konfirmasi unit oleh bidder -> PROSES PENUGASAN; menu Lihat Data Unit, Upload Dokumen, Biaya Tambahan	Admin	docs/rules/administrator/07-daftar-order.md:25	Status-Transisi	Ya	order KONFIRMASI UNIT	-
+ADM-07-012	Daftar Order	Dokumen aanwijzing tampil sesuai nama; tidak muncul bila status tidak aktif	Admin	docs/rules/administrator/07-daftar-order.md:29	Tampilan	Tidak	bid owner dengan aanwijzing	Kontradiksi dengan :236 (Detail Order tampil strip)
+ADM-07-013	Daftar Order	Status order mengikuti update tracking (AMBIL KONTAINER s.d DOKUMEN DIKIRIM, termasuk SJ Diterima Agen)	Admin	docs/rules/administrator/07-daftar-order.md:31	Status-Transisi	Ya	order dalam tracking	Stuffing & Dooring berubah setelah semua unit
+ADM-07-014	Daftar Order	Status global multi-kontainer = Kapal Sandar bila ada unit masih Kapal Sandar	Admin	docs/rules/administrator/07-daftar-order.md:39	Status-Transisi	Ya	order >1 kontainer beda tahap	-
+ADM-07-015	Daftar Order	Action menu status tracking: Lihat Data Unit, Upload Dokumen, Biaya Tambahan	Admin	docs/rules/administrator/07-daftar-order.md:40	Tampilan	Tidak	order status tracking	Audit :86 menu DOKUMEN DIKIRIM 11 item
+ADM-07-016	Daftar Order	Penugasan dikunci selesai -> ORDER SELESAI; menu Beri Nilai, Lihat Data Unit, Upload Dokumen, Biaya Tambahan	Admin	docs/rules/administrator/07-daftar-order.md:44	Status-Transisi	Ya	order semua tracking selesai	-
+ADM-07-017	Daftar Order	Filter status order	Admin	docs/rules/administrator/07-daftar-order.md:49	Aksi-Baca	Tidak	order berbagai status	-
+ADM-07-018	Daftar Order	Filter No. Kontainer: auto kapital, huruf & angka saja, maks 11, tanpa spasi	Admin	docs/rules/administrator/07-daftar-order.md:50	Validasi	Tidak	order dengan no kontainer	Defect #7 label for=jumlah
+ADM-07-019	Daftar Order	Filter checkbox Kapal Connecting	Admin	docs/rules/administrator/07-daftar-order.md:51	Aksi-Baca	Tidak	order jadwal connecting	-
+ADM-07-020	Daftar Order	Textlink Info Tracking menampilkan no kontainer & status tracking per kontainer	Admin	docs/rules/administrator/07-daftar-order.md:52	Aksi-Baca	Tidak	order PROSES PENUGASAN+	-
+ADM-07-021	Daftar Order	Biaya tambahan tampil di list di bawah jumlah & jenis kontainer	Admin	docs/rules/administrator/07-daftar-order.md:53	Tampilan	Tidak	order dengan biaya tambahan	-
+ADM-07-022	Daftar Order	Lihat QR Code order PNP (Satoria) dan download QR	Admin	docs/rules/administrator/07-daftar-order.md:55	Export/Download	Tidak	order dari PNP tervalidasi	-
+ADM-07-023	Daftar Order	Label By PNP di info order	Admin	docs/rules/administrator/07-daftar-order.md:56	Tampilan	Tidak	order dari PNP	-
+ADM-07-024	Daftar Order	Edit tgl permintaan muat order PNP mengirim WA ke admin PHBID	Admin	docs/rules/administrator/07-daftar-order.md:57	Notifikasi-WA	Ya	order dari PNP	-
+ADM-07-025	Daftar Order	Filter tetap aktif setelah Kembali dari halaman aksi/detail	Admin	docs/rules/administrator/07-daftar-order.md:58	Aksi-Baca	Tidak	order terfilter	Rule menulis bid owner pada file admin
+ADM-07-026	Daftar Order	Filter tetap aktif setelah aksi sukses redirect ke daftar order	Admin	docs/rules/administrator/07-daftar-order.md:59	Aksi-Baca	Ya	order terfilter	Rule menulis bid owner pada file admin
+ADM-07-027	Daftar Order	Reset filter menghapus filter daftar order	Admin	docs/rules/administrator/07-daftar-order.md:60	Aksi-Baca	Tidak	order terfilter	-
+ADM-07-028	Daftar Order	Menu Edit Data Order tampil ORDER BARU s.d ORDER SELESAI	Admin	docs/rules/administrator/07-daftar-order.md:101	Tampilan	Tidak	order berbagai status	Kalimat :102 terpotong (Admin dapat melakukan edit status order Mulai dari status)
+ADM-07-029	Daftar Order	Edit Data Order pada ORDER SELESAI memunculkan alert Tidak bisa edit! Order sudah tahap selesai	Admin	docs/rules/administrator/07-daftar-order.md:103	Validasi	Tidak	order ORDER SELESAI	-
+ADM-07-030	Daftar Order	Edit Data Order: centang Edit Data per section (Detail Order, Pemuatan, Penerima) lalu simpan	Admin	docs/rules/administrator/07-daftar-order.md:104	Aksi-Tulis	Ya	order ORDER BARU s.d sebelum SELESAI	Admin juga bisa ubah No. Referensi di sini (:365)
+ADM-07-031	Daftar Order	Perubahan Edit Data Order tercatat di History Perubahan Data	Admin	docs/rules/administrator/07-daftar-order.md:105	Tampilan	Ya	order diedit admin	-
+ADM-07-032	Daftar Order	Datepicker tanggal & jam permintaan muat di Edit Data Order	Admin	docs/rules/administrator/07-daftar-order.md:106	Validasi	Tidak	order dapat diedit	-
+ADM-07-033	Daftar Order	Menu Edit Harga hanya di admin, di bawah Edit Data Order, status ORDER BARU s.d ORDER SELESAI	Admin	docs/rules/administrator/07-daftar-order.md:111	Akses/Otorisasi	Tidak	order berbagai status	-
+ADM-07-034	Daftar Order	Popup Edit Harga: Nomor Order, Harga Saat Ini, input Harga Baru (placeholder Masukkan Harga Baru)	Admin	docs/rules/administrator/07-daftar-order.md:114	Tampilan	Tidak	order ORDER BARU	-
+ADM-07-035	Daftar Order	Harga baru & alasan wajib: Masukkan Harga Baru / Masukkan Alasan Edit Harga	Admin	docs/rules/administrator/07-daftar-order.md:119	Validasi	Tidak	order ORDER BARU	Kalibrasi: popover Bootstrap transient, bukan alert
+ADM-07-036	Daftar Order	Simpan edit harga (hanya order tsb) tercatat di History Perubahan Data (Edit Harga)	Admin	docs/rules/administrator/07-daftar-order.md:121	Aksi-Tulis	Ya	order tanpa invoice	Wajib revert pada test
+ADM-07-037	Daftar Order	Edit harga ditolak setelah invoice dibuat	Admin	docs/rules/administrator/07-daftar-order.md:125	Validasi	Tidak	order dengan invoice	Kalibrasi: SweetAlert2 Tidak bisa mengubah harga!
+ADM-07-038	Daftar Order	Checkbox hak akses Edit Harga di grup MENU DAFTAR ORDER (tambah/edit/detail hak akses admin)	Admin	docs/rules/administrator/07-daftar-order.md:126	Akses/Otorisasi	Ya	grup hak akses admin	Defect #8 dan #9
+ADM-07-039	Daftar Order	Menu Batalkan Order tampil ORDER BARU s.d SELESAI; batal hanya s.d STUFFING	Admin	docs/rules/administrator/07-daftar-order.md:131	Tampilan	Tidak	order berbagai status	-
+ADM-07-040	Daftar Order	Batalkan pada KAPAL BERLAYAR s.d SELESAI memunculkan alert Tidak bisa batal!	Admin	docs/rules/administrator/07-daftar-order.md:133	Validasi	Tidak	order KAPAL BERLAYAR+	-
+ADM-07-041	Daftar Order	Alasan Batal Order wajib: alert Masukkan Alasan Batal Order	Admin	docs/rules/administrator/07-daftar-order.md:135	Validasi	Tidak	order ORDER BARU s.d STUFFING	-
+ADM-07-042	Daftar Order	Submit Batalkan Order; action menu order batal jadi disabled	Admin	docs/rules/administrator/07-daftar-order.md:134	Aksi-Tulis	Ya	order ORDER BARU s.d STUFFING	Status hasil tidak disebut eksplisit
+ADM-07-043	Daftar Order	Menu Edit Data Muatan tampil PROSES PERJANJIAN s.d SELESAI; edit hanya s.d STUFFING	Admin	docs/rules/administrator/07-daftar-order.md:142	Tampilan	Tidak	order berbagai status	-
+ADM-07-044	Daftar Order	Edit Muatan pada KAPAL BERLAYAR s.d SELESAI memunculkan alert	Admin	docs/rules/administrator/07-daftar-order.md:144	Validasi	Tidak	order KAPAL BERLAYAR+	-
+ADM-07-045	Daftar Order	Simpan edit data muatan (rule mirip input muatan)	Admin	docs/rules/administrator/07-daftar-order.md:145	Aksi-Tulis	Ya	order PROSES PERJANJIAN s.d STUFFING	-
+ADM-07-046	Daftar Order	Tombol Validasi Order pada PROSES VALIDASI; tanggal perjanjian = waktu submit bid owner	Admin	docs/rules/administrator/07-daftar-order.md:149	Tampilan	Tidak	order PROSES VALIDASI	-
+ADM-07-047	Daftar Order	Validasi terima order -> KONFIRMASI UNIT	Admin	docs/rules/administrator/07-daftar-order.md:151	Status-Transisi	Ya	order PROSES VALIDASI	-
+ADM-07-048	Daftar Order	Validasi tolak order dengan alasan wajib -> ORDER DITOLAK	Admin	docs/rules/administrator/07-daftar-order.md:151	Status-Transisi	Ya	order PROSES VALIDASI	-
+ADM-07-049	Daftar Order	Notif terima order ke bid owner & bidder	Admin	docs/rules/administrator/07-daftar-order.md:152	Notifikasi-Internal	Ya	order divalidasi terima	Kanal tidak disebut; kalibrasi push terbukti
+ADM-07-050	Daftar Order	Notif perjanjian ditolak ke bid owner	Admin	docs/rules/administrator/07-daftar-order.md:153	Notifikasi-Internal	Ya	order divalidasi tolak	Kanal tidak disebut
+ADM-07-051	Daftar Order	Menu Alihkan Order PROSES VALIDASI s.d SELESAI; setelah STUFFING alert Tidak bisa alihkan!	Admin	docs/rules/administrator/07-daftar-order.md:158	Validasi	Tidak	order berbagai status	-
+ADM-07-052	Daftar Order	Status order baru per status asal (PROSES VALIDASI tetap; KONFIRMASI UNIT/PENUGASAN/STUFFING -> KONFIRMASI UNIT)	Admin	docs/rules/administrator/07-daftar-order.md:161	Status-Transisi	Ya	order PROSES VALIDASI s.d STUFFING	-
+ADM-07-053	Daftar Order	Harga lama tidak dapat dipilih; rule harga mengikuti cari penawaran	Admin	docs/rules/administrator/07-daftar-order.md:165	Validasi	Tidak	order dengan harga alternatif	-
+ADM-07-054	Daftar Order	Konfirmasi order & data muatan saat alihkan bersifat read-only	Admin	docs/rules/administrator/07-daftar-order.md:167	Tampilan	Tidak	order dialihkan	-
+ADM-07-055	Daftar Order	Submit alihkan: order baru dibuat; order lama DIBATALKAN, keterangan strip, menu disable	Admin	docs/rules/administrator/07-daftar-order.md:169	Aksi-Tulis	Ya	order + harga alternatif aktif	URL wajib dari klik menu (query idorder)
+ADM-07-056	Daftar Order	Harga saat proses update harga: label PROSES UPDATE HARGA, alert Expired, urutan harga baru dulu	Admin	docs/rules/administrator/07-daftar-order.md:171	Validasi	Tidak	lelang proses update harga	-
+ADM-07-057	Daftar Order	Validasi input unit: nopol & sopir wajib, kontainer & segel unik, no kontainer maks 11 alfanumerik, telp sopir angka & -	Admin	docs/rules/administrator/07-daftar-order.md:178	Validasi	Tidak	order KONFIRMASI UNIT	-
+ADM-07-058	Daftar Order	Submit input kelengkapan unit -> PROSES PENUGASAN	Admin	docs/rules/administrator/07-daftar-order.md:182	Status-Transisi	Ya	order KONFIRMASI UNIT	-
+ADM-07-059	Daftar Order	Email notif kelengkapan data unit ke bid owner	Admin	docs/rules/administrator/07-daftar-order.md:182	Notifikasi-Email	Ya	input unit sukses	-
+ADM-07-060	Daftar Order	WA notif kelengkapan data unit ke bid owner	Admin	docs/rules/administrator/07-daftar-order.md:182	Notifikasi-WA	Ya	input unit sukses	-
+ADM-07-061	Daftar Order	Lihat Data Unit; keterangan Data unit menunggu bidder update pengiriman bila input unit dilewati	Admin	docs/rules/administrator/07-daftar-order.md:184	Aksi-Baca	Tidak	order PROSES PENUGASAN+	-
+ADM-07-062	Daftar Order	Edit unit hanya sebelum tracking dikerjakan (aturan sama input unit)	Admin	docs/rules/administrator/07-daftar-order.md:185	Aksi-Tulis	Ya	order belum tracking	-
+ADM-07-063	Daftar Order	Menu Upload Dokumen tampil KONFIRMASI UNIT s.d ORDER SELESAI	Admin	docs/rules/administrator/07-daftar-order.md:191	Tampilan	Tidak	order KONFIRMASI UNIT+	-
+ADM-07-064	Daftar Order	Upload dokumen tambahan pdf/jpg/png maks 4MB, maks 10 file sekaligus	Admin	docs/rules/administrator/07-daftar-order.md:192	Upload/Import	Ya	order KONFIRMASI UNIT+	-
+ADM-07-065	Daftar Order	Alert Ukuran File Melebihi 4 MB dan Format file tidak sesuai	Admin	docs/rules/administrator/07-daftar-order.md:193	Validasi	Tidak	file invalid	-
+ADM-07-066	Daftar Order	Lihat & download dokumen tambahan	Admin	docs/rules/administrator/07-daftar-order.md:196	Export/Download	Tidak	dokumen terupload	-
+ADM-07-067	Daftar Order	Hapus dokumen tambahan	Admin	docs/rules/administrator/07-daftar-order.md:196	Aksi-Tulis	Ya	dokumen terupload	-
+ADM-07-068	Daftar Order	Tambah biaya tambahan (KONFIRMASI UNIT s.d SELESAI)	Admin	docs/rules/administrator/07-daftar-order.md:200	Aksi-Tulis	Ya	order KONFIRMASI UNIT+	-
+ADM-07-069	Daftar Order	Edit biaya tambahan	Admin	docs/rules/administrator/07-daftar-order.md:200	Aksi-Tulis	Ya	biaya tambahan ada	-
+ADM-07-070	Daftar Order	Hapus biaya tambahan	Admin	docs/rules/administrator/07-daftar-order.md:200	Aksi-Tulis	Ya	biaya tambahan ada	-
+ADM-07-071	Daftar Order	Nominal harga per item biaya tambahan tidak boleh 0	Admin	docs/rules/administrator/07-daftar-order.md:201	Validasi	Tidak	order KONFIRMASI UNIT+	-
+ADM-07-072	Daftar Order	Beri Nilai Pengerjaan Bidder pada ORDER SELESAI tanpa batas waktu	Admin	docs/rules/administrator/07-daftar-order.md:205	Aksi-Tulis	Ya	order ORDER SELESAI	-
+ADM-07-073	Daftar Order	Rating minimal 1.0 maksimal 5.0	Admin	docs/rules/administrator/07-daftar-order.md:206	Validasi	Tidak	order ORDER SELESAI	-
+ADM-07-074	Daftar Order	Detail Order ORDER BARU/PROSES PERJANJIAN membuka section PEMESANAN (pemuatan, penerima, muatan)	Admin	docs/rules/administrator/07-daftar-order.md:211	Tampilan	Tidak	order ORDER BARU/PROSES PERJANJIAN	-
+ADM-07-075	Daftar Order	Download dokumen packing list & penanganan khusus di Detail Order	Admin	docs/rules/administrator/07-daftar-order.md:214	Export/Download	Tidak	order dengan packing list	-
+ADM-07-076	Daftar Order	PROSES VALIDASI membuka PERJANJIAN PENGIRIMAN dengan tanggal Menunggu Validasi PH BID	Admin	docs/rules/administrator/07-daftar-order.md:216	Tampilan	Tidak	order PROSES VALIDASI	-
+ADM-07-077	Daftar Order	KONFIRMASI UNIT: perjanjian + tanggal validasi admin	Admin	docs/rules/administrator/07-daftar-order.md:219	Tampilan	Tidak	order KONFIRMASI UNIT	-
+ADM-07-078	Daftar Order	Export perjanjian pengiriman ke PDF	Admin	docs/rules/administrator/07-daftar-order.md:220	Export/Download	Tidak	order KONFIRMASI UNIT+	-
+ADM-07-079	Daftar Order	PROSES PENUGASAN membuka STATUS PENGIRIMAN dengan Tidak ada data tersedia	Admin	docs/rules/administrator/07-daftar-order.md:222	Tampilan	Tidak	order PROSES PENUGASAN	-
+ADM-07-080	Daftar Order	Status tracking: tahapan + textlink data detail (rincian & foto tracking)	Admin	docs/rules/administrator/07-daftar-order.md:224	Aksi-Baca	Tidak	order AMBIL KONTAINER s.d DOKUMEN DIKIRIM	-
+ADM-07-081	Daftar Order	ORDER SELESAI membuka PENILAIAN ORDER (Belum ada / Tidak ada setelah 7 hari / bintang & ulasan)	Admin	docs/rules/administrator/07-daftar-order.md:227	Tampilan	Tidak	order ORDER SELESAI	-
+ADM-07-082	Daftar Order	DIBATALKAN & ORDER DITOLAK membuka section PEMESANAN	Admin	docs/rules/administrator/07-daftar-order.md:231	Tampilan	Tidak	order DIBATALKAN/DITOLAK	-
+ADM-07-083	Daftar Order	Popup info harga: harga sebelum PPn + PPn & PPh; strip untuk data lama	Admin	docs/rules/administrator/07-daftar-order.md:232	Tampilan	Tidak	order baru & lama	-
+ADM-07-084	Daftar Order	Tombol kapal connecting nx di Detail Order	Admin	docs/rules/administrator/07-daftar-order.md:234	Aksi-Baca	Tidak	order jadwal connecting	-
+ADM-07-085	Daftar Order	Dokumen aanwijzing di Detail Order (popup / strip)	Admin	docs/rules/administrator/07-daftar-order.md:235	Tampilan	Tidak	bid owner dengan aanwijzing	-
+ADM-07-086	Daftar Order	Menu Ganti Jadwal ORDER BARU s.d SELESAI; ganti s.d KAPAL BERLAYAR; KAPAL SANDAR+ alert	Admin	docs/rules/administrator/07-daftar-order.md:241	Validasi	Tidak	order berbagai status	-
+ADM-07-087	Daftar Order	Form Ganti Jadwal Direct/Transit: Kapal, Voyage, Closing Time, ETD, ETA	Admin	docs/rules/administrator/07-daftar-order.md:244	Tampilan	Tidak	order jadwal direct	Kalibrasi: ada field Open Stack
+ADM-07-088	Daftar Order	Form Ganti Jadwal Connecting: data global + pelabuhan/kapal/voyage/ETA/ETD connecting	Admin	docs/rules/administrator/07-daftar-order.md:250	Tampilan	Tidak	order jadwal connecting	-
+ADM-07-089	Daftar Order	Ubah jenis Direct -> Connecting: section connecting kosong, tambah/hapus kapal connecting, label ETD/ETA	Admin	docs/rules/administrator/07-daftar-order.md:261	Aksi-Baca	Tidak	order jadwal direct	-
+ADM-07-090	Daftar Order	Ubah Connecting -> Direct menghilangkan section connecting; kembali ke Connecting memulihkan data sebelumnya	Admin	docs/rules/administrator/07-daftar-order.md:264	Aksi-Baca	Tidak	order jadwal connecting	-
+ADM-07-091	Daftar Order	Simpan ganti jadwal memperbarui data connecting di card pelayaran, daftar order & halaman terkait	Admin	docs/rules/administrator/07-daftar-order.md:272	Aksi-Tulis	Ya	order ORDER BARU s.d KAPAL BERLAYAR	Wajib revert; SweetAlert2 konfirmasi Ya
+ADM-07-092	Daftar Order	ETD aktif setelah closing time; ETA aktif setelah ETD	Admin	docs/rules/administrator/07-daftar-order.md:273	Validasi	Tidak	order dapat ganti jadwal	-
+ADM-07-093	Daftar Order	Field pelayaran default disabled; aktif via checkbox edit pelayaran	Admin	docs/rules/administrator/07-daftar-order.md:275	Validasi	Tidak	order dapat ganti jadwal	-
+ADM-07-094	Daftar Order	Email perubahan jadwal ke bid owner (detail bidder, lelang, rute, jadwal lama & baru)	Admin	docs/rules/administrator/07-daftar-order.md:276	Notifikasi-Email	Ya	ganti jadwal sukses	Gabungan :276 dan :278
+ADM-07-095	Daftar Order	WA perubahan jadwal ke bid owner	Admin	docs/rules/administrator/07-daftar-order.md:276	Notifikasi-WA	Ya	ganti jadwal sukses	-
+ADM-07-096	Daftar Order	Menu Edit Status Order tampil PROSES PENUGASAN s.d ORDER SELESAI	Admin	docs/rules/administrator/07-daftar-order.md:282	Tampilan	Tidak	order PROSES PENUGASAN+	-
+ADM-07-097	Daftar Order	Mundurkan status (ORDER SELESAI s.d KONFIRMASI UNIT, termasuk SJ Diterima Agen); data tahap setelahnya hilang	Admin	docs/rules/administrator/07-daftar-order.md:283	Status-Transisi	Ya	order tahap tracking/selesai	Destruktif; data tracking hilang
+ADM-07-098	Daftar Order	Edit status order hanya admin & sub user admin dengan akses	Admin	docs/rules/administrator/07-daftar-order.md:285	Akses/Otorisasi	Tidak	sub user admin	-
+ADM-07-099	Daftar Order	Menu History Perubahan Data muncul setelah edit data order/ganti jadwal/edit status; Edit By = email	Admin	docs/rules/administrator/07-daftar-order.md:290	Tampilan	Tidak	order pernah diubah admin	-
+ADM-07-100	Daftar Order	History perubahan data order hanya bisa dilihat admin	Admin	docs/rules/administrator/07-daftar-order.md:292	Akses/Otorisasi	Tidak	order pernah diubah	-
+ADM-07-101	Daftar Order	History mencatat perubahan jadwal (semua field, direct<->connecting, tambah/hapus kapal connecting)	Admin	docs/rules/administrator/07-daftar-order.md:293	Tampilan	Tidak	order pernah ganti jadwal	-
+ADM-07-102	Daftar Order	Submenu Proses Invoice membuka halaman Invoice	Admin	docs/rules/administrator/07-daftar-order.md:303	Aksi-Baca	Tidak	order KAPAL SANDAR+	Kontradiksi :304-308 (KONFIRMASI UNIT s.d DOKUMEN DIKIRIM vs KAPAL SANDAR s.d SELESAI)
+ADM-07-103	Daftar Order	Proses Invoice sebelum KAPAL SANDAR (termasuk status dimundurkan) memunculkan alert Tidak Bisa!	Admin	docs/rules/administrator/07-daftar-order.md:311	Validasi	Tidak	order PROSES PENUGASAN s.d KAPAL BERLAYAR	Rule menulis bidder klik
+ADM-07-104	Daftar Order	Invoice yang sudah dibuat/diupload tetap tersimpan saat status dimundurkan	Admin	docs/rules/administrator/07-daftar-order.md:313	Tampilan	Tidak	order dengan invoice dimundurkan	-
+ADM-07-105	Daftar Order	Upload tagihan via popup: maks 10 file, 4MB/file, pdf/jpg/png	Admin	docs/rules/administrator/07-daftar-order.md:309	Upload/Import	Ya	order KAPAL SANDAR+	Gabungan :309 dan :383
+ADM-07-106	Daftar Order	Tabel Invoice: nama dokumen, history Buat/Upload DD/MM/YYYY, urutan pengiriman-tambahan-upload	Admin	docs/rules/administrator/07-daftar-order.md:314	Tampilan	Tidak	order dengan invoice	Demo belum punya invoice jadi
+ADM-07-107	Daftar Order	Buat Invoice Jasa Pengiriman	Admin	docs/rules/administrator/07-daftar-order.md:317	Aksi-Tulis	Ya	order KAPAL SANDAR+ bid owner direct	Permanen, memakan 1 dari 3 kesempatan
+ADM-07-108	Daftar Order	Buat invoice biaya tambahan sebelum jasa pengiriman memunculkan alert	Admin	docs/rules/administrator/07-daftar-order.md:318	Validasi	Tidak	order tanpa invoice jasa	-
+ADM-07-109	Daftar Order	Kesempatan buat invoice jasa & biaya tambahan masing-masing 3x	Admin	docs/rules/administrator/07-daftar-order.md:319	Validasi	Tidak	order dengan invoice	-
+ADM-07-110	Daftar Order	Informasi perusahaan (bidder) & bid owner ter-draft dan dapat diedit; ID Order disabled	Admin	docs/rules/administrator/07-daftar-order.md:320	Tampilan	Tidak	order KAPAL SANDAR+	-
+ADM-07-111	Daftar Order	Nomor invoice: huruf, angka, . - / ( ) spasi; otomatis uppercase	Admin	docs/rules/administrator/07-daftar-order.md:324	Validasi	Tidak	order KAPAL SANDAR+	-
+ADM-07-112	Daftar Order	Range tanggal invoice (>= tgl validasi admin) & jatuh tempo (>= tgl invoice)	Admin	docs/rules/administrator/07-daftar-order.md:325	Validasi	Tidak	order KAPAL SANDAR+	-
+ADM-07-113	Daftar Order	Informasi pembayaran: rekening aktif (bid owner direct) / VA relasi + label 1 pintu (satu pintu)	Admin	docs/rules/administrator/07-daftar-order.md:327	Tampilan	Tidak	bid owner direct & satu pintu	-
+ADM-07-114	Daftar Order	Catatan untuk bid owner opsional dan tampil di invoice	Admin	docs/rules/administrator/07-daftar-order.md:330	Tampilan	Tidak	order KAPAL SANDAR+	-
+ADM-07-115	Daftar Order	Toggle setting buat invoice (on-disabled 3x, off-enable setelah buat, off-disabled saat 0x)	Admin	docs/rules/administrator/07-daftar-order.md:331	Setting	Ya	order dengan invoice	-
+ADM-07-116	Daftar Order	Bid owner satu pintu tanpa relasi: alert Akun bank Anda belum terdaftar!	Admin	docs/rules/administrator/07-daftar-order.md:339	Validasi	Tidak	bid owner satu pintu tanpa relasi	Berlaku jasa & biaya tambahan (:345)
+ADM-07-117	Daftar Order	Toggle off / kesempatan habis: alert Tidak bisa buat invoice! Silahkan hubungi Admin	Admin	docs/rules/administrator/07-daftar-order.md:341	Validasi	Tidak	order dengan invoice + toggle off	Berlaku jasa & biaya tambahan (:347)
+ADM-07-118	Daftar Order	Form invoice jasa: komponen PPn & PPh default tercentang disabled; diskon opsional	Admin	docs/rules/administrator/07-daftar-order.md:349	Tampilan	Tidak	order KAPAL SANDAR+	-
+ADM-07-119	Daftar Order	PPn disabled bila order membawa PPn; enabled + rekomendasi setting pajak untuk order lama; PPh enabled	Admin	docs/rules/administrator/07-daftar-order.md:353	Validasi	Tidak	order baru & lama	-
+ADM-07-120	Daftar Order	Rumus PPn, PPh & Grand Total dengan/tanpa diskon	Admin	docs/rules/administrator/07-daftar-order.md:356	Tampilan	Tidak	order KAPAL SANDAR+	Berlaku juga invoice biaya tambahan (:375)
+ADM-07-121	Daftar Order	Nama item per unit: Jenis Kontainer (No Kontainer) separator Rute + baris No. Referensi	Admin	docs/rules/administrator/07-daftar-order.md:362	Tampilan	Tidak	order dengan no referensi	Varian Alamat Tujuan belum teramati (:364-365)
+ADM-07-122	Daftar Order	Tambah biaya Lainnya menambah baris nama item & harga	Admin	docs/rules/administrator/07-daftar-order.md:366	Aksi-Baca	Tidak	order KAPAL SANDAR+	-
+ADM-07-123	Daftar Order	Form invoice biaya tambahan: diskon default tercentang, PPn/PPh opsional & editable, label Biaya tambahan	Admin	docs/rules/administrator/07-daftar-order.md:368	Tampilan	Tidak	order dengan invoice jasa	-
+ADM-07-124	Daftar Order	Invoice biaya tambahan: item default form kosong	Admin	docs/rules/administrator/07-daftar-order.md:381	Tampilan	Tidak	order dengan invoice jasa	-
+ADM-07-125	Daftar Order	Buat Invoice Biaya Tambahan	Admin	docs/rules/administrator/07-daftar-order.md:344	Aksi-Tulis	Ya	order dengan invoice jasa	-
+ADM-07-126	Daftar Order	Email Dokumen Tagihan Pengiriman saat upload (ID order, harga, bid owner, file kumulatif)	Admin	docs/rules/administrator/07-daftar-order.md:389	Notifikasi-Email	Ya	upload tagihan	-
+ADM-08-001	Penugasan Tracking	Download APK Tracking terbaru	Admin	docs/rules/administrator/08-penugasan-tracking.md:3	Export/Download	Tidak	-	-
+ADM-08-002	Penugasan Tracking	Order belum ditugaskan berstatus PROSES PENUGASAN dengan tombol Tracking ke halaman tracking pengiriman	Admin	docs/rules/administrator/08-penugasan-tracking.md:4	Aksi-Baca	Tidak	order PROSES PENUGASAN	Kalibrasi: href relatif
+ADM-08-003	Penugasan Tracking	List per order, urut terbaru ditugaskan di atas	Admin	docs/rules/administrator/08-penugasan-tracking.md:5	Tampilan	Tidak	>=2 order ditugaskan	Urutan di :22
+ADM-08-004	Penugasan Tracking	Status MENUNGGU PROSES dengan menu Edit Penugasan & Lihat Data Tracking	Admin	docs/rules/administrator/08-penugasan-tracking.md:6	Tampilan	Tidak	order ditugaskan belum dikerjakan	-
+ADM-08-005	Penugasan Tracking	Status list mengikuti update tracking AMBIL KONTAINER s.d DOKUMEN DIKIRIM	Admin	docs/rules/administrator/08-penugasan-tracking.md:9	Status-Transisi	Ya	order dalam tracking	-
+ADM-08-006	Penugasan Tracking	Status global multi-kontainer = Kapal Sandar	Admin	docs/rules/administrator/08-penugasan-tracking.md:17	Status-Transisi	Ya	order >1 kontainer beda tahap	-
+ADM-08-007	Penugasan Tracking	Semua tracking selesai: menu Penugasan Selesai & Lihat Data Tracking	Admin	docs/rules/administrator/08-penugasan-tracking.md:18	Tampilan	Tidak	order tracking selesai	-
+ADM-08-008	Penugasan Tracking	Kunci Penugasan Selesai -> order selesai; status list tetap status tracking terakhir	Admin	docs/rules/administrator/08-penugasan-tracking.md:19	Status-Transisi	Ya	order tracking selesai	Transisi ORDER SELESAI disebut 07:44
+ADM-08-009	Penugasan Tracking	Label Kapal Connecting pada ID Order (popup); tampil kapal connecting terakhir	Admin	docs/rules/administrator/08-penugasan-tracking.md:23	Aksi-Baca	Tidak	order jadwal connecting	-
+ADM-08-010	Penugasan Tracking	Tugaskan tracking ke petugas APK milik bidder	Admin	docs/rules/administrator/08-penugasan-tracking.md:28	Aksi-Tulis	Ya	order PROSES PENUGASAN + petugas aktif	-
+ADM-08-011	Penugasan Tracking	Edit petugas hanya sebelum tracking dikerjakan	Admin	docs/rules/administrator/08-penugasan-tracking.md:30	Aksi-Tulis	Ya	order ditugaskan belum dikerjakan	Rule menulis bidder tidak bisa edit
+ADM-08-012	Penugasan Tracking	Isi data tracking via web	Admin	docs/rules/administrator/08-penugasan-tracking.md:31	Aksi-Tulis	Ya	order ditugaskan	-
+ADM-08-013	Penugasan Tracking	Tracking harus berurutan: alert Harap Selesaikan Tracking Sebelumnya; per unit bisa lanjut	Admin	docs/rules/administrator/08-penugasan-tracking.md:32	Validasi	Tidak	order ditugaskan >1 tahap	-
+ADM-08-014	Penugasan Tracking	Edit data tracking + upload foto tanpa batas waktu (walau order selesai)	Admin	docs/rules/administrator/08-penugasan-tracking.md:36	Aksi-Tulis	Ya	order dengan tracking terisi	-
+ADM-08-015	Penugasan Tracking	No kontainer Ambil Kontainer/Stuffing: auto kapital, alfanumerik maks 11, tanpa spasi (juga di edit)	Admin	docs/rules/administrator/08-penugasan-tracking.md:37	Validasi	Tidak	order tahap ambil kontainer	-
+ADM-08-016	Penugasan Tracking	No telp sopir wajib, hanya angka & -	Admin	docs/rules/administrator/08-penugasan-tracking.md:38	Validasi	Tidak	order ditugaskan	-
+ADM-08-017	Penugasan Tracking	Kapal berlayar & sandar wajib; tahap lain dapat dilewati	Admin	docs/rules/administrator/08-penugasan-tracking.md:43	Validasi	Tidak	order ditugaskan	Kalibrasi: tombol .lewati hanya di SJ Diterima Agen
+ADM-08-018	Penugasan Tracking	WA penugasan tracking ke petugas	Admin	docs/rules/administrator/08-penugasan-tracking.md:44	Notifikasi-WA	Ya	penugasan sukses	-
+ADM-08-019	Penugasan Tracking	WA penugasan pertama ke petugas baru + link APK & kode verifikasi	Admin	docs/rules/administrator/08-penugasan-tracking.md:45	Notifikasi-WA	Ya	petugas baru ditugaskan	-
+ADM-08-020	Penugasan Tracking	Spreadsheet penarikan data order: label APK/ADMIN, strip dilewati, kosong belum diisi, kolom surat jalan	Admin	docs/rules/administrator/08-penugasan-tracking.md:46	Laporan/Grafik	Ya	update tracking	Spreadsheet eksternal, akses belum jelas
+ADM-08-021	Penugasan Tracking	Lihat Data Tracking hanya muncul setelah order ditugaskan	Admin	docs/rules/administrator/08-penugasan-tracking.md:56	Akses/Otorisasi	Tidak	order belum & sudah ditugaskan	-
+ADM-08-022	Penugasan Tracking	Lihat Data Tracking order belum dikerjakan: Tidak ada data tersedia	Admin	docs/rules/administrator/08-penugasan-tracking.md:57	Tampilan	Tidak	order ditugaskan belum dikerjakan	Defect #14c: UI Belum update tracking
+ADM-08-023	Penugasan Tracking	Lihat Data Tracking: tahapan + Data Detail, download foto tracking	Admin	docs/rules/administrator/08-penugasan-tracking.md:58	Export/Download	Tidak	order dengan tracking	Rule menulis bidder dapat download
+ADM-09-001	Cek Jadwal	Cek jadwal pelayaran Meratus via integrasi API	Admin	docs/rules/administrator/09-cek-jadwal.md:3	Aksi-Baca	Tidak	pelabuhan ber-UN Code Meratus	-
+ADM-09-002	Cek Jadwal	Pelabuhan asal & tujuan wajib dipilih	Admin	docs/rules/administrator/09-cek-jadwal.md:5	Validasi	Tidak	-	-
+ADM-09-003	Cek Jadwal	Sortir tanggal berangkat terdekat (default) / tanggal tiba terdekat	Admin	docs/rules/administrator/09-cek-jadwal.md:6	Aksi-Baca	Tidak	hasil jadwal >1	-
+ADM-09-004	Cek Jadwal	Tanggal pengiriman default hari ini, bisa diubah	Admin	docs/rules/administrator/09-cek-jadwal.md:9	Aksi-Baca	Tidak	-	-
+ADM-09-005	Cek Jadwal	Liner hard code Spil, Tanto, Temas tetap tampil ada/tidak hasil	Admin	docs/rules/administrator/09-cek-jadwal.md:10	Tampilan	Tidak	master pelayaran	Rule menulis di sisi bid owner pada file admin
+ADM-09-006	Cek Jadwal	Kolom pelayaran, kapal, voyage, closing, pelabuhan, ETD, ETA; status jadwal strip	Admin	docs/rules/administrator/09-cek-jadwal.md:12	Tampilan	Tidak	hasil jadwal ada	-
+ADM-09-007	Cek Jadwal	Pesan jadwal belum tersedia + email/WA CS dari setting general (UN Code beda/tidak ada jadwal)	Admin	docs/rules/administrator/09-cek-jadwal.md:14	Tampilan	Tidak	pelabuhan tanpa UN Code Meratus	-
+ADM-09-008	Cek Jadwal	Halaman tersembunyi Setting Pelabuhan untuk setting UN Code Meratus	Admin	docs/rules/administrator/09-cek-jadwal.md:16	Setting	Ya	master pelabuhan	Kalibrasi: /adminprahu/setting_pelabuhan
+ADM-10-001	Laporan	History Lelang: rentang pencarian maksimal 90 hari	Admin	docs/rules/administrator/10-laporan.md:5	Validasi	Tidak	-	-
+ADM-10-002	Laporan	History Lelang: data per tanggal buat lelang; lelang batal tidak tampil	Admin	docs/rules/administrator/10-laporan.md:6	Laporan/Grafik	Tidak	lelang & lelang batal dalam rentang	-
+ADM-10-003	Laporan	History Lelang: label Multidrop pada rute multidrop	Admin	docs/rules/administrator/10-laporan.md:8	Tampilan	Tidak	lelang multidrop	-
+ADM-10-004	Laporan	Export Excel Daftar History Lelang	Admin	docs/rules/administrator/10-laporan.md:9	Export/Download	Tidak	hasil pencarian	-
+ADM-10-005	Laporan	Logistik: rentang 31 hari dari tgl permintaan muat	Admin	docs/rules/administrator/10-laporan.md:13	Validasi	Tidak	-	Kalibrasi admin wajib pilih #BidOwnerID
+ADM-10-006	Laporan	Logistik: total lelang (unik), total order, total unit	Admin	docs/rules/administrator/10-laporan.md:14	Laporan/Grafik	Tidak	order tervalidasi dalam rentang	-
+ADM-10-007	Laporan	Logistik: hanya order tervalidasi admin	Admin	docs/rules/administrator/10-laporan.md:17	Laporan/Grafik	Tidak	order tervalidasi & belum	-
+ADM-10-008	Laporan	Logistik: tanggal order, harga = satuan x unit, harga nego tidak mengubah; terbaru di atas	Admin	docs/rules/administrator/10-laporan.md:19	Tampilan	Tidak	order nego	-
+ADM-10-009	Laporan	Detail Logistik: tahapan tracking (strip bila belum), no kontainer & seal	Admin	docs/rules/administrator/10-laporan.md:23	Aksi-Baca	Tidak	order dengan unit	Kembali = link
+ADM-10-010	Laporan	Detail Logistik multidrop: textlink Multidrop alamat drop & tgl tracking per alamat	Admin	docs/rules/administrator/10-laporan.md:26	Aksi-Baca	Tidak	order multidrop	Alamat dobel terbaca 1 (:28)
+ADM-10-011	Laporan	Detail Logistik: biaya tambahan tampil bila ada	Admin	docs/rules/administrator/10-laporan.md:29	Tampilan	Tidak	order dengan biaya tambahan	-
+ADM-10-012	Laporan	Export Excel Laporan Logistik (tgl export, total unit, grand total, data sama dengan web)	Admin	docs/rules/administrator/10-laporan.md:30	Export/Download	Tidak	hasil pencarian	Baris :31 dan :32 duplikat
+ADM-10-013	Laporan	Owner: rentang 31 hari	Admin	docs/rules/administrator/10-laporan.md:41	Validasi	Tidak	-	Kalibrasi wajib pilih #BidOwnerID
+ADM-10-014	Laporan	Owner: total lelang (unik) & total order	Admin	docs/rules/administrator/10-laporan.md:42	Laporan/Grafik	Tidak	lelang dalam rentang	-
+ADM-10-015	Laporan	Owner: lelang tanpa penawaran tampil strip & Penawaran 0 harga	Admin	docs/rules/administrator/10-laporan.md:44	Laporan/Grafik	Tidak	lelang tanpa harga	-
+ADM-10-016	Laporan	Owner: >1 order per lelang tampil multi-baris; lelang batal tidak tampil	Admin	docs/rules/administrator/10-laporan.md:47	Laporan/Grafik	Tidak	lelang dengan >1 order	-
+ADM-10-017	Laporan	Owner: tanggal lelang & periode lelang	Admin	docs/rules/administrator/10-laporan.md:49	Tampilan	Tidak	lelang ada	-
+ADM-10-018	Laporan	Owner: perhitungan Penawaran berubah bila harga dihapus/ditambah admin	Admin	docs/rules/administrator/10-laporan.md:51	Laporan/Grafik	Tidak	lelang dengan harga	-
+ADM-10-019	Laporan	Owner: Harga dipilih (strip bila belum; nego tidak mengubah)	Admin	docs/rules/administrator/10-laporan.md:54	Laporan/Grafik	Tidak	order nego	-
+ADM-10-020	Laporan	Owner: nomor order tervalidasi (strip bila belum); terbaru di atas	Admin	docs/rules/administrator/10-laporan.md:57	Laporan/Grafik	Tidak	order tervalidasi	-
+ADM-10-021	Laporan	Detail Owner: data lelang, bidder diundang, bidder respon (admin bantu tetap 1)	Admin	docs/rules/administrator/10-laporan.md:60	Aksi-Baca	Tidak	lelang dengan harga	-
+ADM-10-022	Laporan	Detail Owner: penawaran bidder, harga terendah/tertinggi, harga pemenang, bidder, catatan memilih	Admin	docs/rules/administrator/10-laporan.md:66	Laporan/Grafik	Tidak	lelang dengan order	-
+ADM-10-023	Laporan	Detail Owner: Kembali ke hasil pencarian sebelumnya	Admin	docs/rules/administrator/10-laporan.md:78	Aksi-Baca	Tidak	hasil pencarian	-
+ADM-10-024	Laporan	Export Excel Laporan Owner	Admin	docs/rules/administrator/10-laporan.md:79	Export/Download	Tidak	hasil pencarian	-
+ADM-11-001	Validasi Akun	Pre Register: list akun belum aktivasi + tanggal registrasi	Admin	docs/rules/administrator/11-validasi-akun.md:5	Tampilan	Tidak	akun registrasi belum aktivasi	-
+ADM-11-002	Validasi Akun	Pre Register: akun pindah ke Validasi Bid Owner/Bidder setelah Aktifkan Akun	Admin	docs/rules/administrator/11-validasi-akun.md:7	Status-Transisi	Ya	akun registrasi baru	-
+ADM-11-003	Validasi Akun	Pre Register: hapus data, user bisa registrasi ulang dengan akun sama	Admin	docs/rules/administrator/11-validasi-akun.md:8	Aksi-Tulis	Ya	akun pre register uji	Kalibrasi: swal Ya
+ADM-11-004	Validasi Akun	Validasi Bid Owner: akun aktivasi masuk status MENUNGGU	Admin	docs/rules/administrator/11-validasi-akun.md:12	Status-Transisi	Ya	bid owner baru aktivasi	-
+ADM-11-005	Validasi Akun	Validasi Bid Owner: label belum mengisi kelengkapan pendaftaran	Admin	docs/rules/administrator/11-validasi-akun.md:13	Tampilan	Tidak	bid owner belum lengkap	-
+ADM-11-006	Validasi Akun	Validasi Bid Owner: tanggal register, waktu aktif / tidak aktif	Admin	docs/rules/administrator/11-validasi-akun.md:15	Tampilan	Tidak	bid owner aktif & tidak aktif	-
+ADM-11-007	Validasi Akun	Validasi Bid Owner: download NPWP, SIUP, identitas, logo	Admin	docs/rules/administrator/11-validasi-akun.md:18	Export/Download	Tidak	bid owner dengan dokumen	-
+ADM-11-008	Validasi Akun	Validasi Bid Owner: admin isi kelengkapan registrasi (field required wajib)	Admin	docs/rules/administrator/11-validasi-akun.md:19	Aksi-Tulis	Ya	bid owner belum lengkap	-
+ADM-11-009	Validasi Akun	Validasi Bid Owner: terima -> akun aktif & masuk dropdown bid owner	Admin	docs/rules/administrator/11-validasi-akun.md:21	Status-Transisi	Ya	bid owner MENUNGGU	Mengubah akun permanen
+ADM-11-010	Validasi Akun	Validasi Bid Owner: tolak -> akun tidak aktif	Admin	docs/rules/administrator/11-validasi-akun.md:17	Status-Transisi	Ya	bid owner MENUNGGU	Aksi tolak tersirat dari :17
+ADM-11-011	Validasi Akun	Notif akun berhasil diaktifkan ke bid owner	Admin	docs/rules/administrator/11-validasi-akun.md:22	Notifikasi-Email	Ya	bid owner divalidasi	Kanal tidak disebut
+ADM-11-012	Validasi Akun	Notif perubahan data bid owner ke admin	Admin	docs/rules/administrator/11-validasi-akun.md:23	Notifikasi-Internal	Ya	bid owner ubah akun saya	Trigger HTTP 500 (CLAUDE.md)
+ADM-11-013	Validasi Akun	Tombol Verifikasi Perubahan Data (oranye belum, disable sudah)	Admin	docs/rules/administrator/11-validasi-akun.md:24	Tampilan	Tidak	bid owner dengan perubahan data	-
+ADM-11-014	Validasi Akun	Verifikasi perubahan bid owner: hanya field berubah editable, admin bisa koreksi, simpan	Admin	docs/rules/administrator/11-validasi-akun.md:26	Aksi-Tulis	Ya	bid owner dengan perubahan data	-
+ADM-11-015	Validasi Akun	Tolak perubahan bid owner wajib catatan	Admin	docs/rules/administrator/11-validasi-akun.md:28	Validasi	Tidak	bid owner dengan perubahan data	-
+ADM-11-016	Validasi Akun	Email perubahan data ditolak (memuat catatan) ke bid owner	Admin	docs/rules/administrator/11-validasi-akun.md:28	Notifikasi-Email	Ya	perubahan ditolak	-
+ADM-11-017	Validasi Akun	Riwayat perubahan data di detail bid owner	Admin	docs/rules/administrator/11-validasi-akun.md:29	Tampilan	Tidak	bid owner pernah ubah data	-
+ADM-11-018	Validasi Akun	Setting metode pembayaran Direct/Satu Pintu (baru Pilih Metode; lama default Direct)	Admin	docs/rules/administrator/11-validasi-akun.md:30	Setting	Ya	bid owner	Efek ke invoice & Relasi Satu Pintu (:31-32)
+ADM-11-019	Validasi Akun	Edit email bid owner + konfirmasi Apakah anda yakin mengubah email user?	Admin	docs/rules/administrator/11-validasi-akun.md:35	Aksi-Tulis	Ya	bid owner uji	Mengubah login user
+ADM-11-020	Validasi Akun	Validasi Bidder: akun aktivasi masuk status MENUNGGU	Admin	docs/rules/administrator/11-validasi-akun.md:40	Status-Transisi	Ya	bidder baru aktivasi	Rule menulis halaman validasi bid owner (typo)
+ADM-11-021	Validasi Akun	Validasi Bidder: label belum mengisi kelengkapan pendaftaran	Admin	docs/rules/administrator/11-validasi-akun.md:41	Tampilan	Tidak	bidder belum lengkap	-
+ADM-11-022	Validasi Akun	Validasi Bidder: tanggal register dari aktivasi	Admin	docs/rules/administrator/11-validasi-akun.md:43	Tampilan	Tidak	bidder ada	-
+ADM-11-023	Validasi Akun	Validasi Bidder: download NPWP, SIUP, logo	Admin	docs/rules/administrator/11-validasi-akun.md:44	Export/Download	Tidak	bidder dengan dokumen	-
+ADM-11-024	Validasi Akun	Validasi Bidder: admin isi kelengkapan registrasi (field required wajib)	Admin	docs/rules/administrator/11-validasi-akun.md:45	Aksi-Tulis	Ya	bidder belum lengkap	-
+ADM-11-025	Validasi Akun	Alias bidder wajib, maksimal 8 karakter	Admin	docs/rules/administrator/11-validasi-akun.md:47	Validasi	Tidak	bidder belum lengkap	-
+ADM-11-026	Validasi Akun	Validasi Bidder: terima -> akun aktif & masuk dropdown bidder	Admin	docs/rules/administrator/11-validasi-akun.md:49	Status-Transisi	Ya	bidder MENUNGGU	Mengubah akun permanen
+ADM-11-027	Validasi Akun	Notif akun berhasil diaktifkan ke bidder	Admin	docs/rules/administrator/11-validasi-akun.md:50	Notifikasi-Email	Ya	bidder divalidasi	Kanal tidak disebut
+ADM-11-028	Validasi Akun	Notif perubahan data bidder ke admin	Admin	docs/rules/administrator/11-validasi-akun.md:51	Notifikasi-Internal	Ya	bidder ubah akun saya	-
+ADM-11-029	Validasi Akun	Tombol Verifikasi Perubahan Data bidder (oranye/disable)	Admin	docs/rules/administrator/11-validasi-akun.md:52	Tampilan	Tidak	bidder dengan perubahan data	-
+ADM-11-030	Validasi Akun	Verifikasi perubahan bidder: hanya field berubah editable, admin bisa koreksi, simpan	Admin	docs/rules/administrator/11-validasi-akun.md:54	Aksi-Tulis	Ya	bidder dengan perubahan data	-
+ADM-11-031	Validasi Akun	Tolak perubahan bidder wajib catatan	Admin	docs/rules/administrator/11-validasi-akun.md:56	Validasi	Tidak	bidder dengan perubahan data	-
+ADM-11-032	Validasi Akun	Email perubahan data ditolak ke bidder	Admin	docs/rules/administrator/11-validasi-akun.md:56	Notifikasi-Email	Ya	perubahan ditolak	-
+ADM-11-033	Validasi Akun	Riwayat perubahan data di detail bidder	Admin	docs/rules/administrator/11-validasi-akun.md:57	Tampilan	Tidak	bidder pernah ubah data	-
+ADM-11-034	Validasi Akun	Setting rekening aktif bidder on/off (default baris pertama; baris baru default off)	Admin	docs/rules/administrator/11-validasi-akun.md:58	Setting	Ya	bidder dengan >=2 rekening	-
+ADM-11-035	Validasi Akun	Rekening aktif min 1 (alert Rekening aktif minimal satu!) maks 3 (alert Rekening aktif maksimal tiga!)	Admin	docs/rules/administrator/11-validasi-akun.md:60	Validasi	Tidak	bidder dengan >=4 rekening untuk maks 3	Kalibrasi: SweetAlert2
+ADM-11-036	Validasi Akun	Rekening on tampil di informasi pembayaran invoice, off tidak	Admin	docs/rules/administrator/11-validasi-akun.md:64	Tampilan	Tidak	bidder dengan rekening on & off	-
+ADM-11-037	Validasi Akun	Hanya admin dapat setting status rekening, bidder tidak	Admin	docs/rules/administrator/11-validasi-akun.md:66	Akses/Otorisasi	Tidak	akun bidder	-
+ADM-11-038	Validasi Akun	Edit email bidder + konfirmasi Apakah anda yakin mengubah email user?	Admin	docs/rules/administrator/11-validasi-akun.md:67	Aksi-Tulis	Ya	bidder uji	-
+ADM-11-039	Validasi Akun	Bidder Khusus: list dengan filter ID, Tanggal Setting, Alias, Bidder, Status Akun	Admin	docs/rules/administrator/11-validasi-akun.md:72	Aksi-Baca	Tidak	bidder khusus ada	-
+ADM-11-040	Validasi Akun	Bidder Khusus: alias terisi bila bidder melengkapi kelengkapan registrasi	Admin	docs/rules/administrator/11-validasi-akun.md:76	Tampilan	Tidak	bidder lengkap & belum	-
+ADM-11-041	Validasi Akun	Tambah bidder khusus: pilih bidder, alias otomatis, tambah bid owner	Admin	docs/rules/administrator/11-validasi-akun.md:77	Aksi-Tulis	Ya	bidder aktif	Kalibrasi: form render dua select[name=nama]
+ADM-11-042	Validasi Akun	Bid owner maks 10 (alert Lebih dari 10 data); duplikat (alert Input data ada yang sama)	Admin	docs/rules/administrator/11-validasi-akun.md:78	Validasi	Tidak	>10 bid owner	Kalibrasi: teks duplikat Shipper Telah Ditambahkan
+ADM-11-043	Validasi Akun	Konfirmasi Apakah Anda yakin ingin membatalkan ? saat batal tambah bid owner	Admin	docs/rules/administrator/11-validasi-akun.md:80	Validasi	Tidak	-	-
+ADM-11-044	Validasi Akun	Setting bidder: tambah & hapus bid owner pada bidder khusus	Admin	docs/rules/administrator/11-validasi-akun.md:81	Aksi-Tulis	Ya	bidder khusus ada	-
+ADM-11-045	Validasi Akun	Hapus bidder khusus	Admin	docs/rules/administrator/11-validasi-akun.md:82	Aksi-Tulis	Ya	bidder khusus uji	Kalibrasi: navigasi server, ERR_ABORTED
+ADM-11-046	Validasi Akun	Profil Bidder: list bidder aktif & tidak aktif	Admin	docs/rules/administrator/11-validasi-akun.md:86	Tampilan	Tidak	bidder aktif & tidak aktif	-
+ADM-11-047	Validasi Akun	Detail profil: bergabung sejak, lokasi, rating, menang lelang, data profil (strip bila kosong)	Admin	docs/rules/administrator/11-validasi-akun.md:87	Tampilan	Tidak	bidder ada	-
+ADM-11-048	Validasi Akun	Galeri perusahaan: Tidak Ada Data Tersedia / foto bisa dibuka	Admin	docs/rules/administrator/11-validasi-akun.md:92	Aksi-Baca	Tidak	bidder dengan & tanpa galeri	-
+ADM-11-049	Validasi Akun	Ulasan anonim (label Bid Owner) dengan tanggal, rute, isi; terbaru di atas	Admin	docs/rules/administrator/11-validasi-akun.md:93	Tampilan	Tidak	bidder dengan ulasan	-
+ADM-11-050	Validasi Akun	Hidden ulasan -> tidak tampil di profil sisi bid owner & bidder	Admin	docs/rules/administrator/11-validasi-akun.md:96	Aksi-Tulis	Ya	bidder dengan ulasan	-
+ADM-11-051	Validasi Akun	Tampilkan ulasan kembali -> tampil lagi di sisi bid owner & bidder	Admin	docs/rules/administrator/11-validasi-akun.md:98	Aksi-Tulis	Ya	ulasan hidden	-
+ADM-11-052	Validasi Akun	Dokumen Aanwijzing: list bid owner status waiting/aktif/tidak aktif; nama strip saat waiting	Admin	docs/rules/administrator/11-validasi-akun.md:102	Tampilan	Tidak	bid owner berbagai status	-
+ADM-11-053	Validasi Akun	Setting status dokumen aanwijzing (waiting/aktif/tidak aktif) dan efek tampil di halaman terkait	Admin	docs/rules/administrator/11-validasi-akun.md:104	Setting	Ya	bid owner	-
+ADM-11-054	Validasi Akun	Upload dokumen aanwijzing PDF maks 4MB	Admin	docs/rules/administrator/11-validasi-akun.md:106	Upload/Import	Ya	bid owner	-
+ADM-11-055	Validasi Akun	Nama dokumen aanwijzing tampil di pilih peserta, detail lelang, batalkan lelang, detail order	Admin	docs/rules/administrator/11-validasi-akun.md:107	Tampilan	Tidak	aanwijzing aktif	-
+ADM-11-056	Validasi Akun	Detail Dokumen Aanwijzing default nama, dokumen, tgl setting strip	Admin	docs/rules/administrator/11-validasi-akun.md:108	Tampilan	Tidak	bid owner tanpa aanwijzing	-
+ADM-11-057	Validasi Akun	Peserta Lelang: list bid owner aktif & tidak aktif	Admin	docs/rules/administrator/11-validasi-akun.md:112	Tampilan	Tidak	bid owner	Kalibrasi: halaman lambat (async)
+ADM-11-058	Validasi Akun	Default peserta = semua bidder aktif kecuali yang dikunci bid owner lain	Admin	docs/rules/administrator/11-validasi-akun.md:113	Tampilan	Tidak	bid owner	-
+ADM-11-059	Validasi Akun	Setting peserta lelang bid owner (centang/uncentang bidder)	Admin	docs/rules/administrator/11-validasi-akun.md:114	Setting	Ya	bid owner	-
+ADM-11-060	Validasi Akun	Bidder dikunci tidak bisa dicentang di bid owner lain & tidak bisa diuncentang di pemiliknya	Admin	docs/rules/administrator/11-validasi-akun.md:115	Validasi	Tidak	bidder terkunci	Penguncian via backend (:117)
+ADM-11-061	Validasi Akun	Bidder baru aktif otomatis menjadi peserta semua bid owner	Admin	docs/rules/administrator/11-validasi-akun.md:118	Status-Transisi	Ya	bidder baru divalidasi	-
+ADM-11-062	Validasi Akun	Relasi Satu Pintu: list bid owner satu pintu (tetap tampil bila Direct tapi masih ada relasi)	Admin	docs/rules/administrator/11-validasi-akun.md:122	Tampilan	Tidak	bid owner satu pintu	-
+ADM-11-063	Validasi Akun	Kolom list (ID, tgl 1 pintu DD/MM/YYYY, bid owner, email, jumlah relasi, metode); default 0 Bidder	Admin	docs/rules/administrator/11-validasi-akun.md:125	Tampilan	Tidak	bid owner satu pintu	-
+ADM-11-064	Validasi Akun	Bid owner Direct di halaman relasi: tombol aksi & tambah relasi disabled	Admin	docs/rules/administrator/11-validasi-akun.md:128	Validasi	Tidak	bid owner diubah Direct dengan relasi	-
+ADM-11-065	Validasi Akun	Tambah relasi bidder (VA, bank dari master aktif, atas nama, status)	Admin	docs/rules/administrator/11-validasi-akun.md:129	Aksi-Tulis	Ya	bid owner satu pintu + bidder aktif	-
+ADM-11-066	Validasi Akun	Detail setting relasi: data bid owner + tanggal perubahan metode DD/MM/YYYY HH:MM	Admin	docs/rules/administrator/11-validasi-akun.md:130	Tampilan	Tidak	bid owner satu pintu	-
+ADM-11-067	Validasi Akun	Nomor virtual account hanya angka	Admin	docs/rules/administrator/11-validasi-akun.md:134	Validasi	Tidak	-	-
+ADM-11-068	Validasi Akun	1 bidder 1 VA per bid owner; duplikat alert Data Relasi Sudah Ada	Admin	docs/rules/administrator/11-validasi-akun.md:136	Validasi	Tidak	relasi ada	-
+ADM-11-069	Validasi Akun	1 bidder dapat jadi relasi di banyak bid owner	Admin	docs/rules/administrator/11-validasi-akun.md:138	Aksi-Tulis	Ya	>=2 bid owner satu pintu	-
+ADM-11-070	Validasi Akun	VA relasi aktif tampil di invoice; tidak aktif tidak	Admin	docs/rules/administrator/11-validasi-akun.md:139	Tampilan	Tidak	relasi aktif & tidak aktif	-
+ADM-11-071	Validasi Akun	Setting relasi satu pintu hanya oleh admin	Admin	docs/rules/administrator/11-validasi-akun.md:141	Akses/Otorisasi	Tidak	-	Hak akses edit/hapus relasi di 14:330
+ADM-11-072	Validasi Akun	Preference Notifikasi: admin atur push & email notif bid owner dan bidder	Admin	docs/rules/administrator/11-validasi-akun.md:145	Setting	Ya	bid owner & bidder	-
+ADM-11-073	Validasi Akun	Jumlah jenis notif: email bid owner 13, email bidder 8, sistem bid owner 17, sistem bidder 8	Admin	docs/rules/administrator/11-validasi-akun.md:146	Tampilan	Tidak	-	Defect #13: UI shipper 16 push / 12 email
+ADM-11-074	Validasi Akun	Centang/uncentang menentukan pengguna menerima notif tersebut	Admin	docs/rules/administrator/11-validasi-akun.md:151	Setting	Ya	bid owner/bidder uji	-
+ADM-11-075	Validasi Akun	Preferensi admin tersinkron dengan tampilan preferensi di sisi pengguna	Admin	docs/rules/administrator/11-validasi-akun.md:153	Setting	Ya	bid owner/bidder	-
+ADM-11-076	Validasi Akun	Notif dimatikan berlabel Tidak Aktif di halaman detail	Admin	docs/rules/administrator/11-validasi-akun.md:156	Tampilan	Tidak	preferensi off	-
+ADM-11-077	Validasi Akun	Email notif menampilkan nomor referensi atau strip (daftar notif admin terkait)	Admin	docs/rules/administrator/11-validasi-akun.md:157	Notifikasi-Email	Ya	order dengan & tanpa no referensi	-
+ADM-12-001	Setting	Versi web tampil di web & footer email	Admin	docs/rules/administrator/12-setting.md:5	Setting	Ya	-	Kalibrasi: revert Versi Web tanpa AUTOTEST
+ADM-12-002	Setting	Versi & copyright APK tracking tampil di APK	Admin	docs/rules/administrator/12-setting.md:6	Setting	Ya	-	Efek di APK, di luar web
+ADM-12-003	Setting	WhatsApp CS tampil di sidebar, tombol Hubungi CS, profil APK, email	Admin	docs/rules/administrator/12-setting.md:8	Setting	Ya	-	-
+ADM-12-004	Setting	Telp CS tampil di sidebar & footer	Admin	docs/rules/administrator/12-setting.md:9	Setting	Ya	-	-
+ADM-12-005	Setting	Sosial media kosong -> ikon tidak bisa diklik	Admin	docs/rules/administrator/12-setting.md:10	Setting	Ya	-	-
+ADM-12-006	Setting	Email admin utama hanya satu; email lain lewat sub user admin	Admin	docs/rules/administrator/12-setting.md:11	Tampilan	Tidak	-	-
+ADM-12-007	Setting	Textlink List Email menampilkan popup daftar notif email admin	Admin	docs/rules/administrator/12-setting.md:13	Aksi-Baca	Tidak	-	-
+ADM-12-008	Setting	Textlink List Push Notif menampilkan popup daftar push notif admin	Admin	docs/rules/administrator/12-setting.md:14	Aksi-Baca	Tidak	-	-
+ADM-12-009	Setting	Setting Preference admin akun utama (default aktif) menentukan notif email/push yang diterima	Admin	docs/rules/administrator/12-setting.md:15	Setting	Ya	-	-
+ADM-12-010	Setting	Notif dinonaktifkan berlabel Tidak Aktif di popup daftar notif	Admin	docs/rules/administrator/12-setting.md:19	Tampilan	Tidak	preferensi off	-
+ADM-12-011	Setting	Email: admin sebagai To; bid owner/bidder sebagai Bcc	Admin	docs/rules/administrator/12-setting.md:20	Notifikasi-Email	Ya	trigger email	-
+ADM-12-012	Setting	Push ke admin & bid owner bersamaan; masing-masing mengikuti preferensinya	Admin	docs/rules/administrator/12-setting.md:22	Notifikasi-Internal	Ya	trigger push	-
+ADM-12-013	Setting	S&K Booking yang disetting tampil di halaman isi data pesanan	Admin	docs/rules/administrator/12-setting.md:28	Setting	Ya	-	-
+ADM-12-014	Setting	Terakhir update S&K: strip bila belum pernah, waktu perubahan bila sudah	Admin	docs/rules/administrator/12-setting.md:29	Tampilan	Tidak	-	-
+ADM-12-015	Setting	Preview S&K Booking	Admin	docs/rules/administrator/12-setting.md:31	Aksi-Baca	Tidak	-	-
+ADM-12-016	Setting	Reminder by tgl permintaan muat: Ambil Kontainer & Stuffing	Admin	docs/rules/administrator/12-setting.md:35	Notifikasi-WA	Ya	order lewat tgl permintaan muat tanpa tracking	Kanal reminder ke petugas tidak disebut; UI hanya 6 tugas (defect #13)
+ADM-12-017	Setting	Reminder by ETD: Kapal Berlayar	Admin	docs/rules/administrator/12-setting.md:37	Notifikasi-WA	Ya	order lewat ETD tanpa tracking	Kanal tidak disebut
+ADM-12-018	Setting	Reminder by ETA: Kapal Sandar, Rencana Dooring, Dooring, SJ Diterima Agen, Dokumen Dikirim	Admin	docs/rules/administrator/12-setting.md:38	Notifikasi-WA	Ya	order lewat ETA tanpa tracking	Kanal tidak disebut
+ADM-12-019	Setting	Cron reminder jam 05.00; rule trigger 0 hari = besok, 1 hari = lusa	Admin	docs/rules/administrator/12-setting.md:43	Status-Transisi	Ya	order memenuhi trigger	Sulit diuji (cron)
+ADM-12-020	Setting	Setting rule trigger & status reminder	Admin	docs/rules/administrator/12-setting.md:45	Setting	Ya	-	Defect #12: buka via klik (Referer); wajib revert +2 Hari
+ADM-12-021	Setting	Setting Notifikasi ON/OFF (Push, Email, WA), default ON	Admin	docs/rules/administrator/12-setting.md:49	Setting	Ya	-	-
+ADM-12-022	Setting	Notifikasi Email OFF -> tidak ada email terkirim	Admin	docs/rules/administrator/12-setting.md:52	Setting	Ya	-	Berdampak global; wajib revert
+ADM-12-023	Setting	Push Notifikasi OFF -> tidak ada push terkirim	Admin	docs/rules/administrator/12-setting.md:53	Setting	Ya	-	Berdampak global; wajib revert
+ADM-12-024	Setting	Notifikasi WhatsApp OFF -> tidak ada WA terkirim	Admin	docs/rules/administrator/12-setting.md:54	Setting	Ya	-	Berdampak global; wajib revert
+ADM-12-025	Setting	Setting nilai PPn & PPh (default PPn 1,1% atau 11%, PPh 2%)	Admin	docs/rules/administrator/12-setting.md:58	Setting	Ya	-	Rule ambigu 1,1% atau 11%; demo 1,1%
+ADM-12-026	Setting	Nilai pajak terbawa sebagai rekomendasi di harga, nego, detail order, invoice	Admin	docs/rules/administrator/12-setting.md:61	Tampilan	Tidak	-	-
+ADM-12-027	Setting	Order lama tanpa PPn/PPh menampilkan strip	Admin	docs/rules/administrator/12-setting.md:70	Tampilan	Tidak	order lama	-
+ADM-13-001	Master	Provinsi: lihat daftar (dari master PH Bid Darat)	Admin	docs/rules/administrator/13-master.md:5	Tampilan	Tidak	-	-
+ADM-13-002	Master	Kota: lihat daftar (dari master PH Bid Darat)	Admin	docs/rules/administrator/13-master.md:9	Tampilan	Tidak	-	-
+ADM-13-003	Master	Pelabuhan: lihat daftar dengan UN Code & kota	Admin	docs/rules/administrator/13-master.md:13	Tampilan	Tidak	-	-
+ADM-13-004	Master	Pelabuhan: tambah data	Admin	docs/rules/administrator/13-master.md:13	Aksi-Tulis	Ya	-	Aksi tersirat dari hak akses 14:228
+ADM-13-005	Master	Pelabuhan: edit data	Admin	docs/rules/administrator/13-master.md:13	Aksi-Tulis	Ya	pelabuhan uji	Tersirat 14:229
+ADM-13-006	Master	Pelabuhan: hapus data	Admin	docs/rules/administrator/13-master.md:13	Aksi-Tulis	Ya	pelabuhan uji	Tersirat 14:230
+ADM-13-007	Master	Pelabuhan: UN Code/nama duplikat ditolak (alert)	Admin	docs/rules/administrator/13-master.md:14	Validasi	Tidak	pelabuhan ada	-
+ADM-13-008	Master	Pelabuhan terpakai di lelang: hanya status yang bisa diedit	Admin	docs/rules/administrator/13-master.md:15	Validasi	Tidak	pelabuhan terpakai	-
+ADM-13-009	Master	Pelabuhan terpakai: hapus ditolak alert Data sudah digunakan pada lelang	Admin	docs/rules/administrator/13-master.md:16	Validasi	Tidak	pelabuhan terpakai	-
+ADM-13-010	Master	Pelabuhan: export Excel	Admin	docs/rules/administrator/13-master.md:17	Export/Download	Tidak	-	-
+ADM-13-011	Master	Bank: lihat daftar	Admin	docs/rules/administrator/13-master.md:21	Tampilan	Tidak	-	-
+ADM-13-012	Master	Bank: tambah	Admin	docs/rules/administrator/13-master.md:21	Aksi-Tulis	Ya	-	Tersirat 14:234
+ADM-13-013	Master	Bank: edit	Admin	docs/rules/administrator/13-master.md:21	Aksi-Tulis	Ya	bank uji	-
+ADM-13-014	Master	Bank: hapus	Admin	docs/rules/administrator/13-master.md:21	Aksi-Tulis	Ya	bank uji	-
+ADM-13-015	Master	Bank: nama duplikat alert Nama Bank Sudah Digunakan	Admin	docs/rules/administrator/13-master.md:22	Validasi	Tidak	bank ada	-
+ADM-13-016	Master	Bank terpakai registrasi: hanya status editable	Admin	docs/rules/administrator/13-master.md:23	Validasi	Tidak	bank terpakai	-
+ADM-13-017	Master	Bank terpakai: hapus ditolak alert Data sudah digunakan pada registrasi	Admin	docs/rules/administrator/13-master.md:24	Validasi	Tidak	bank terpakai	-
+ADM-13-018	Master	Include: lihat daftar	Admin	docs/rules/administrator/13-master.md:28	Tampilan	Tidak	-	-
+ADM-13-019	Master	Include: tambah	Admin	docs/rules/administrator/13-master.md:28	Aksi-Tulis	Ya	-	-
+ADM-13-020	Master	Include: edit	Admin	docs/rules/administrator/13-master.md:28	Aksi-Tulis	Ya	include uji	-
+ADM-13-021	Master	Include: hapus	Admin	docs/rules/administrator/13-master.md:28	Aksi-Tulis	Ya	include uji	-
+ADM-13-022	Master	Include: nama duplikat alert Nama Include Sudah Digunakan	Admin	docs/rules/administrator/13-master.md:29	Validasi	Tidak	include ada	-
+ADM-13-023	Master	Include terpakai (lelang/harga/keduanya): edit hanya status + konfirmasi Data sudah digunakan..., yakin untuk mengedit?	Admin	docs/rules/administrator/13-master.md:30	Validasi	Tidak	fixture include terpakai	Kalibrasi: native confirm
+ADM-13-024	Master	Include terpakai (lelang/harga/keduanya): hapus ditolak dengan alert sesuai	Admin	docs/rules/administrator/13-master.md:34	Validasi	Tidak	fixture include terpakai	Kalibrasi: swal
+ADM-13-025	Master	Data include tampil di buat lelang, buat harga, edit harga	Admin	docs/rules/administrator/13-master.md:38	Tampilan	Tidak	include aktif	-
+ADM-13-026	Master	Kemasan: lihat daftar	Admin	docs/rules/administrator/13-master.md:42	Tampilan	Tidak	-	-
+ADM-13-027	Master	Kemasan: tambah	Admin	docs/rules/administrator/13-master.md:42	Aksi-Tulis	Ya	-	-
+ADM-13-028	Master	Kemasan: edit	Admin	docs/rules/administrator/13-master.md:42	Aksi-Tulis	Ya	kemasan uji	-
+ADM-13-029	Master	Kemasan: hapus	Admin	docs/rules/administrator/13-master.md:42	Aksi-Tulis	Ya	kemasan uji	-
+ADM-13-030	Master	Kemasan: nama duplikat alert Nama Kemasan Sudah Digunakan	Admin	docs/rules/administrator/13-master.md:43	Validasi	Tidak	kemasan ada	-
+ADM-13-031	Master	Kemasan terpakai di order: hanya status editable	Admin	docs/rules/administrator/13-master.md:44	Validasi	Tidak	fixture kemasan terpakai	-
+ADM-13-032	Master	Kemasan terpakai: hapus ditolak alert Data sudah digunakan pada orderan	Admin	docs/rules/administrator/13-master.md:45	Validasi	Tidak	fixture kemasan terpakai	Defect #13: UI ...pada master jenis muatan
+ADM-13-033	Master	Pelayaran: lihat daftar	Admin	docs/rules/administrator/13-master.md:49	Tampilan	Tidak	-	-
+ADM-13-034	Master	Pelayaran: tambah	Admin	docs/rules/administrator/13-master.md:49	Aksi-Tulis	Ya	-	-
+ADM-13-035	Master	Pelayaran: edit	Admin	docs/rules/administrator/13-master.md:49	Aksi-Tulis	Ya	pelayaran uji	-
+ADM-13-036	Master	Pelayaran: hapus	Admin	docs/rules/administrator/13-master.md:49	Aksi-Tulis	Ya	pelayaran uji	-
+ADM-13-037	Master	Pelayaran: nama duplikat alert Nama Pelayaran Sudah Digunakan	Admin	docs/rules/administrator/13-master.md:50	Validasi	Tidak	pelayaran ada	-
+ADM-13-038	Master	Pelayaran terpakai di harga: hanya status editable	Admin	docs/rules/administrator/13-master.md:51	Validasi	Tidak	fixture pelayaran terpakai	-
+ADM-13-039	Master	Pelayaran terpakai: hapus ditolak alert Data Sudah digunakan pada master harga	Admin	docs/rules/administrator/13-master.md:52	Validasi	Tidak	fixture pelayaran terpakai	-
+ADM-13-040	Master	Jenis Kontainer: lihat daftar	Admin	docs/rules/administrator/13-master.md:56	Tampilan	Tidak	-	-
+ADM-13-041	Master	Jenis Kontainer: tambah	Admin	docs/rules/administrator/13-master.md:56	Aksi-Tulis	Ya	-	-
+ADM-13-042	Master	Jenis Kontainer: edit	Admin	docs/rules/administrator/13-master.md:56	Aksi-Tulis	Ya	jenis kontainer uji	-
+ADM-13-043	Master	Jenis Kontainer: hapus	Admin	docs/rules/administrator/13-master.md:56	Aksi-Tulis	Ya	jenis kontainer uji	-
+ADM-13-044	Master	Jenis Kontainer: nama duplikat alert Jenis Kontainer Sudah Digunakan	Admin	docs/rules/administrator/13-master.md:57	Validasi	Tidak	jenis kontainer ada	-
+ADM-13-045	Master	Jenis Kontainer terpakai di harga: hanya status editable	Admin	docs/rules/administrator/13-master.md:58	Validasi	Tidak	jenis kontainer terpakai	Fixture demo tidak terpakai
+ADM-13-046	Master	Jenis Kontainer terpakai: hapus ditolak alert Data sudah digunakan pada harga	Admin	docs/rules/administrator/13-master.md:59	Validasi	Tidak	jenis kontainer terpakai	-
+ADM-13-047	Master	Dokumen Penagihan: lihat daftar	Admin	docs/rules/administrator/13-master.md:63	Tampilan	Tidak	-	-
+ADM-13-048	Master	Dokumen Penagihan: tambah	Admin	docs/rules/administrator/13-master.md:63	Aksi-Tulis	Ya	-	-
+ADM-13-049	Master	Dokumen Penagihan: edit	Admin	docs/rules/administrator/13-master.md:63	Aksi-Tulis	Ya	dokumen penagihan uji	-
+ADM-13-050	Master	Dokumen Penagihan: hapus	Admin	docs/rules/administrator/13-master.md:63	Aksi-Tulis	Ya	dokumen penagihan uji	-
+ADM-13-051	Master	Dokumen Penagihan: nama duplikat alert Nama Dokumen Penagihan Sudah digunakan	Admin	docs/rules/administrator/13-master.md:64	Validasi	Tidak	dokumen penagihan ada	-
+ADM-13-052	Master	Dokumen Penagihan terpakai di lelang: hanya status editable	Admin	docs/rules/administrator/13-master.md:65	Validasi	Tidak	fixture DP terpakai	-
+ADM-13-053	Master	Dokumen Penagihan terpakai: hapus ditolak alert Data sudah digunakan pada lelang	Admin	docs/rules/administrator/13-master.md:66	Validasi	Tidak	fixture DP terpakai	-
+ADM-13-054	Master	Iklan Berbayar: lihat daftar	Admin	docs/rules/administrator/13-master.md:70	Tampilan	Tidak	-	-
+ADM-13-055	Master	Iklan Berbayar: tambah (tanggal mulai default tanggal & jam saat ini)	Admin	docs/rules/administrator/13-master.md:72	Aksi-Tulis	Ya	bidder aktif	Kalibrasi: #tgl_mulai_1 kosong saat load (bertentangan)
+ADM-13-056	Master	Iklan Berbayar: edit	Admin	docs/rules/administrator/13-master.md:70	Aksi-Tulis	Ya	iklan uji	-
+ADM-13-057	Master	Iklan Berbayar: hapus	Admin	docs/rules/administrator/13-master.md:70	Aksi-Tulis	Ya	iklan uji	-
+ADM-13-058	Master	Iklan Berbayar: bidder duplikat alert Ada nama bidder yang sama	Admin	docs/rules/administrator/13-master.md:73	Validasi	Tidak	iklan ada	-
+ADM-13-059	Master	Bidder iklan tampil di pilih peserta lelang & rekomendasi buat lelang sesuai rentang tanggal	Admin	docs/rules/administrator/13-master.md:70	Tampilan	Tidak	iklan aktif	Efek di sisi bid owner
+ADM-13-060	Master	Petugas APK: lihat daftar	Admin	docs/rules/administrator/13-master.md:77	Tampilan	Tidak	-	-
+ADM-13-061	Master	Petugas APK: tambah	Admin	docs/rules/administrator/13-master.md:77	Aksi-Tulis	Ya	bidder aktif	-
+ADM-13-062	Master	Petugas APK: lihat detail	Admin	docs/rules/administrator/13-master.md:77	Aksi-Baca	Tidak	petugas ada	-
+ADM-13-063	Master	Petugas APK: edit	Admin	docs/rules/administrator/13-master.md:77	Aksi-Tulis	Ya	petugas uji	Kalibrasi: swal konfirmasi mengganti data petugas
+ADM-13-064	Master	Petugas APK: hapus	Admin	docs/rules/administrator/13-master.md:77	Aksi-Tulis	Ya	petugas uji tanpa penugasan	-
+ADM-13-065	Master	Petugas APK: nomor WA duplikat alert Nomor Whatsapp Sudah Terdaftar	Admin	docs/rules/administrator/13-master.md:78	Validasi	Tidak	petugas ada	Kalibrasi: teks UI No. Whatsapp Sudah Terdaftar
+ADM-13-066	Master	Petugas dengan penugasan aktif: WA disable, ganti bidder alert Petugas masih ada Pengerjaan Tracking!	Admin	docs/rules/administrator/13-master.md:79	Validasi	Tidak	petugas ditugaskan belum dikerjakan	-
+ADM-13-067	Master	Petugas tanpa penugasan dapat dipindah ke bidder lain (efek profil APK & penugasan tracking)	Admin	docs/rules/administrator/13-master.md:80	Aksi-Tulis	Ya	petugas tanpa penugasan	-
+ADM-13-068	Master	Petugas sudah ditugaskan: hapus ditolak alert Petugas Sudah Ditugaskan	Admin	docs/rules/administrator/13-master.md:82	Validasi	Tidak	petugas ditugaskan	-
+ADM-13-069	Master	Data petugas tampil di halaman tracking pengiriman	Admin	docs/rules/administrator/13-master.md:83	Tampilan	Tidak	petugas aktif	-
+ADM-14-001	Pengaturan Akun	Hak Akses Bid Owner: lihat daftar (total perizinan tanpa Pilih Semua, tgl diperbarui, jumlah digunakan)	Admin	docs/rules/administrator/14-pengaturan-akun.md:6	Tampilan	Tidak	hak akses bid owner ada	-
+ADM-14-002	Pengaturan Akun	Hak Akses Bid Owner: tambah (hanya admin)	Admin	docs/rules/administrator/14-pengaturan-akun.md:5	Aksi-Tulis	Ya	bid owner aktif	-
+ADM-14-003	Pengaturan Akun	Hak Akses Bid Owner: lihat detail	Admin	docs/rules/administrator/14-pengaturan-akun.md:5	Aksi-Baca	Tidak	hak akses ada	Defect #8 serupa di admin
+ADM-14-004	Pengaturan Akun	Hak Akses Bid Owner: edit	Admin	docs/rules/administrator/14-pengaturan-akun.md:5	Aksi-Tulis	Ya	hak akses uji	-
+ADM-14-005	Pengaturan Akun	Hak Akses Bid Owner: hapus; yang telah digunakan tidak bisa dihapus	Admin	docs/rules/administrator/14-pengaturan-akun.md:7	Aksi-Tulis	Ya	hak akses uji & terpakai	Kalibrasi: button.btn-delete
+ADM-14-006	Pengaturan Akun	Hak Akses Bid Owner: minimal 1 akses (alert Pilih Hak akses minimal 1)	Admin	docs/rules/administrator/14-pengaturan-akun.md:10	Validasi	Tidak	-	-
+ADM-14-007	Pengaturan Akun	Hak Akses Bid Owner: centang anak ikut centang induk; uncentang induk ikut uncentang anak	Admin	docs/rules/administrator/14-pengaturan-akun.md:11	Validasi	Tidak	-	-
+ADM-14-008	Pengaturan Akun	Gating menu/aksi sub user bid owner per akses (Pengajuan Lelang, Cari Penawaran, Nego, Order, Cek Jadwal, Laporan, Dashboard, Pengaturan Akun)	Admin	docs/rules/administrator/14-pengaturan-akun.md:13	Akses/Otorisasi	Tidak	sub user bid owner dengan akses terbatas	Diskrepansi: form memuat Modul Administrator/Master/Analitik (test.fail)
+ADM-14-009	Pengaturan Akun	Gating notif email sub user bid owner per akses (13 jenis)	Admin	docs/rules/administrator/14-pengaturan-akun.md:75	Akses/Otorisasi	Tidak	sub user bid owner + trigger email	-
+ADM-14-010	Pengaturan Akun	Gating push notif sub user bid owner per akses (16 jenis)	Admin	docs/rules/administrator/14-pengaturan-akun.md:89	Akses/Otorisasi	Tidak	sub user bid owner + trigger push	-
+ADM-14-011	Pengaturan Akun	Sub User Bid Owner: tambah dari admin	Admin	docs/rules/administrator/14-pengaturan-akun.md:109	Aksi-Tulis	Ya	bid owner + hak akses	-
+ADM-14-012	Pengaturan Akun	Sub User Bid Owner: lihat daftar & detail (akses >1 dipisah koma)	Admin	docs/rules/administrator/14-pengaturan-akun.md:109	Aksi-Baca	Tidak	sub user ada	Koma di :113
+ADM-14-013	Pengaturan Akun	Sub User Bid Owner: edit	Admin	docs/rules/administrator/14-pengaturan-akun.md:109	Aksi-Tulis	Ya	sub user uji	-
+ADM-14-014	Pengaturan Akun	Sub User Bid Owner: hapus	Admin	docs/rules/administrator/14-pengaturan-akun.md:109	Aksi-Tulis	Ya	sub user uji	-
+ADM-14-015	Pengaturan Akun	Sub User Bid Owner: email & WA unik (WA opsional, tidak boleh sama dengan akun lain)	Admin	docs/rules/administrator/14-pengaturan-akun.md:110	Validasi	Tidak	akun dengan email/WA terdaftar	-
+ADM-14-016	Pengaturan Akun	Sub User Bid Owner: pilihan hak akses milik bid owner tsb, terbaru di atas	Admin	docs/rules/administrator/14-pengaturan-akun.md:111	Tampilan	Tidak	bid owner dengan >=2 hak akses	Kalibrasi: select diisi AJAX setelah #pilihuser
+ADM-14-017	Pengaturan Akun	Sub user tidak aktif tidak bisa login web	Admin	docs/rules/administrator/14-pengaturan-akun.md:112	Akses/Otorisasi	Tidak	sub user tidak aktif	-
+ADM-14-018	Pengaturan Akun	Sub user bid owner menerima notif to bid owner utama sesuai akses (secara to)	Admin	docs/rules/administrator/14-pengaturan-akun.md:115	Notifikasi-Email	Ya	sub user dengan akses notif	-
+ADM-14-019	Pengaturan Akun	Hak Akses Bidder: lihat daftar (total perizinan, tgl diperbarui, jumlah digunakan)	Admin	docs/rules/administrator/14-pengaturan-akun.md:119	Tampilan	Tidak	hak akses bidder ada	-
+ADM-14-020	Pengaturan Akun	Hak Akses Bidder: tambah (hanya admin)	Admin	docs/rules/administrator/14-pengaturan-akun.md:119	Aksi-Tulis	Ya	bidder aktif	-
+ADM-14-021	Pengaturan Akun	Hak Akses Bidder: lihat detail	Admin	docs/rules/administrator/14-pengaturan-akun.md:119	Aksi-Baca	Tidak	hak akses ada	-
+ADM-14-022	Pengaturan Akun	Hak Akses Bidder: edit	Admin	docs/rules/administrator/14-pengaturan-akun.md:119	Aksi-Tulis	Ya	hak akses uji	-
+ADM-14-023	Pengaturan Akun	Hak Akses Bidder: hapus; yang telah digunakan tidak bisa dihapus	Admin	docs/rules/administrator/14-pengaturan-akun.md:121	Aksi-Tulis	Ya	hak akses uji & terpakai	Kalibrasi: button.hapus_hak_akses
+ADM-14-024	Pengaturan Akun	Hak Akses Bidder: minimal 1 akses (alert)	Admin	docs/rules/administrator/14-pengaturan-akun.md:124	Validasi	Tidak	-	-
+ADM-14-025	Pengaturan Akun	Hak Akses Bidder: cascade centang induk/anak	Admin	docs/rules/administrator/14-pengaturan-akun.md:125	Validasi	Tidak	-	-
+ADM-14-026	Pengaturan Akun	Gating menu/aksi sub user bidder per akses (Lelang, Harga & Jadwal, Nego, Profil, Order, Penugasan, Pengaturan Akun)	Admin	docs/rules/administrator/14-pengaturan-akun.md:127	Akses/Otorisasi	Tidak	sub user bidder dengan akses terbatas	Diskrepansi: form memuat Modul Administrator (test.fail)
+ADM-14-027	Pengaturan Akun	Gating notif email sub user bidder per akses (8 jenis)	Admin	docs/rules/administrator/14-pengaturan-akun.md:185	Akses/Otorisasi	Tidak	sub user bidder + trigger email	-
+ADM-14-028	Pengaturan Akun	Gating push notif sub user bidder per akses (6 jenis)	Admin	docs/rules/administrator/14-pengaturan-akun.md:194	Akses/Otorisasi	Tidak	sub user bidder + trigger push	-
+ADM-14-029	Pengaturan Akun	Sub User Bidder: tambah dari admin	Admin	docs/rules/administrator/14-pengaturan-akun.md:204	Aksi-Tulis	Ya	bidder + hak akses	-
+ADM-14-030	Pengaturan Akun	Sub User Bidder: lihat daftar & detail (akses >1 dipisah koma)	Admin	docs/rules/administrator/14-pengaturan-akun.md:204	Aksi-Baca	Tidak	sub user ada	-
+ADM-14-031	Pengaturan Akun	Sub User Bidder: edit	Admin	docs/rules/administrator/14-pengaturan-akun.md:204	Aksi-Tulis	Ya	sub user uji	-
+ADM-14-032	Pengaturan Akun	Sub User Bidder: hapus	Admin	docs/rules/administrator/14-pengaturan-akun.md:204	Aksi-Tulis	Ya	sub user uji	-
+ADM-14-033	Pengaturan Akun	Sub User Bidder: email & WA unik (WA opsional)	Admin	docs/rules/administrator/14-pengaturan-akun.md:205	Validasi	Tidak	akun dengan email/WA terdaftar	-
+ADM-14-034	Pengaturan Akun	Sub User Bidder: pilihan hak akses milik bidder tsb, terbaru di atas	Admin	docs/rules/administrator/14-pengaturan-akun.md:206	Tampilan	Tidak	bidder dengan >=2 hak akses	-
+ADM-14-035	Pengaturan Akun	Sub user bidder tidak aktif tidak bisa login web	Admin	docs/rules/administrator/14-pengaturan-akun.md:207	Akses/Otorisasi	Tidak	sub user tidak aktif	-
+ADM-14-036	Pengaturan Akun	Sub user bidder menerima notif to bidder utama sesuai akses (secara to)	Admin	docs/rules/administrator/14-pengaturan-akun.md:210	Notifikasi-Email	Ya	sub user dengan akses notif	-
+ADM-14-037	Pengaturan Akun	Hak Akses Admin: lihat daftar (total perizinan, tgl diperbarui, jumlah digunakan)	Admin	docs/rules/administrator/14-pengaturan-akun.md:214	Tampilan	Tidak	hak akses admin ada	-
+ADM-14-038	Pengaturan Akun	Hak Akses Admin: tambah	Admin	docs/rules/administrator/14-pengaturan-akun.md:214	Aksi-Tulis	Ya	-	-
+ADM-14-039	Pengaturan Akun	Hak Akses Admin: lihat detail	Admin	docs/rules/administrator/14-pengaturan-akun.md:214	Aksi-Baca	Tidak	hak akses ada	Defect #8: checkbox tersimpan tidak tercermin di Detail
+ADM-14-040	Pengaturan Akun	Hak Akses Admin: edit	Admin	docs/rules/administrator/14-pengaturan-akun.md:214	Aksi-Tulis	Ya	hak akses uji	-
+ADM-14-041	Pengaturan Akun	Hak Akses Admin: hapus; yang telah digunakan tidak bisa dihapus	Admin	docs/rules/administrator/14-pengaturan-akun.md:216	Aksi-Tulis	Ya	hak akses uji & terpakai	-
+ADM-14-042	Pengaturan Akun	Hak Akses Admin: minimal 1 akses (alert)	Admin	docs/rules/administrator/14-pengaturan-akun.md:219	Validasi	Tidak	-	-
+ADM-14-043	Pengaturan Akun	Hak Akses Admin: cascade centang induk/anak	Admin	docs/rules/administrator/14-pengaturan-akun.md:220	Validasi	Tidak	-	-
+ADM-14-044	Pengaturan Akun	Gating sub user admin: Master, Setting, Validasi Akun per akses	Admin	docs/rules/administrator/14-pengaturan-akun.md:222	Akses/Otorisasi	Tidak	sub user admin dengan akses terbatas	Defect #9: akses Edit Harga tidak aktif; banyak menu tidak tergating
+ADM-14-045	Pengaturan Akun	Gating sub user admin: Pengajuan Lelang, Harga & Jadwal, Cari Penawaran, Nego, Order, Penugasan, Cek Jadwal, Laporan, Dashboard	Admin	docs/rules/administrator/14-pengaturan-akun.md:314	Akses/Otorisasi	Tidak	sub user admin dengan akses terbatas	Lihat Daftar Relasi Satu Pintu (:327) salah tulis halaman pengajuan lelang
+ADM-14-046	Pengaturan Akun	Akses Harga Disembunyikan: budget pengiriman dihidden di detail/edit/tambah peserta/batalkan lelang	Admin	docs/rules/administrator/14-pengaturan-akun.md:325	Akses/Otorisasi	Tidak	sub user admin dengan akses ini	-
+ADM-14-047	Pengaturan Akun	Gating sub user admin: Pengaturan Akun (hak akses & sub user bid owner/bidder/admin)	Admin	docs/rules/administrator/14-pengaturan-akun.md:406	Akses/Otorisasi	Tidak	sub user admin dengan akses terbatas	-
+ADM-14-048	Pengaturan Akun	Gating notif email sub user admin per akses (28 jenis; bcc / to admin cc sub user)	Admin	docs/rules/administrator/14-pengaturan-akun.md:442	Akses/Otorisasi	Tidak	sub user admin + trigger email	-
+ADM-14-049	Pengaturan Akun	Gating push notif sub user admin per akses (26 jenis)	Admin	docs/rules/administrator/14-pengaturan-akun.md:471	Akses/Otorisasi	Tidak	sub user admin + trigger push	-
+ADM-14-050	Pengaturan Akun	Sub User Admin: tambah	Admin	docs/rules/administrator/14-pengaturan-akun.md:501	Aksi-Tulis	Ya	hak akses admin ada	-
+ADM-14-051	Pengaturan Akun	Sub User Admin: lihat daftar & detail (akses >1 dipisah koma)	Admin	docs/rules/administrator/14-pengaturan-akun.md:501	Aksi-Baca	Tidak	sub user ada	-
+ADM-14-052	Pengaturan Akun	Sub User Admin: edit	Admin	docs/rules/administrator/14-pengaturan-akun.md:501	Aksi-Tulis	Ya	sub user uji	-
+ADM-14-053	Pengaturan Akun	Sub User Admin: hapus	Admin	docs/rules/administrator/14-pengaturan-akun.md:501	Aksi-Tulis	Ya	sub user uji	Kalibrasi: native confirm
+ADM-14-054	Pengaturan Akun	Sub User Admin: email & WA unik (WA opsional)	Admin	docs/rules/administrator/14-pengaturan-akun.md:502	Validasi	Tidak	akun dengan email/WA terdaftar	-
+ADM-14-055	Pengaturan Akun	Sub User Admin: pilihan hak akses admin, terbaru di atas	Admin	docs/rules/administrator/14-pengaturan-akun.md:503	Tampilan	Tidak	>=2 hak akses admin	-
+ADM-14-056	Pengaturan Akun	Sub user admin tidak aktif tidak bisa login web	Admin	docs/rules/administrator/14-pengaturan-akun.md:504	Akses/Otorisasi	Tidak	sub user tidak aktif	-
+ADM-14-057	Pengaturan Akun	Sub user admin menerima notif to bid owner utama sesuai akses secara BCC	Admin	docs/rules/administrator/14-pengaturan-akun.md:507	Notifikasi-Email	Ya	sub user dengan akses notif	Kemungkinan typo (to admin utama?)
+ADM-15-001	Akun Saya	Akun admin pusat menampilkan hanya nama & email	Admin	docs/rules/administrator/15-akun-saya.md:3	Tampilan	Tidak	akun admin pusat	Kalibrasi: Nomor WA & Bagian Staff tampil strip
+ADM-16-001	Harga & Jadwal	Harga tanpa jadwal ditampilkan merah	Admin	docs/rules/administrator/16-harga-jadwal.md:3	Tampilan	Tidak	harga tanpa jadwal	-
+ADM-16-002	Harga & Jadwal	Tab default Semua Harga & Jadwal	Admin	docs/rules/administrator/16-harga-jadwal.md:4	Tampilan	Tidak	-	-
+ADM-16-003	Harga & Jadwal	Tab Butuh Jadwal Kapal, Perlu Update Harga, Sudah Lengkap, Semua Harga & Jadwal	Admin	docs/rules/administrator/16-harga-jadwal.md:5	Aksi-Baca	Tidak	harga berbagai kondisi	Tab Request Jadwal disebut di :19 tapi tidak di daftar tab
+ADM-16-004	Harga & Jadwal	Aksi per tab (detail/edit/hapus harga, lihat & tambah jadwal, update harga, update jadwal)	Admin	docs/rules/administrator/16-harga-jadwal.md:10	Tampilan	Tidak	harga di tiap tab	-
+ADM-16-005	Harga & Jadwal	Penanda (#n) harga hasil update harga + info Request Harga di detail harga	Admin	docs/rules/administrator/16-harga-jadwal.md:23	Tampilan	Tidak	harga hasil update harga	-
+ADM-16-006	Harga & Jadwal	Update harga dari tab Perlu Update Harga (ikon pena) tampil popup	Admin	docs/rules/administrator/16-harga-jadwal.md:25	Aksi-Baca	Tidak	harga perlu update	Kontradiksi :64 (diarahkan ke halaman Update Harga)
+ADM-16-007	Harga & Jadwal	Perpindahan tab: harga lama ke Butuh Jadwal/Sudah Lengkap setelah update atau lewat tutup; harga baru ke Butuh Jadwal	Admin	docs/rules/administrator/16-harga-jadwal.md:26	Status-Transisi	Ya	harga perlu update	-
+ADM-16-008	Harga & Jadwal	Tab Request Jadwal berisi harga yang di-request jadwal (aktif/tidak aktif/sudah direspon)	Admin	docs/rules/administrator/16-harga-jadwal.md:29	Tampilan	Tidak	harga di-request jadwal	-
+ADM-16-009	Harga & Jadwal	Update Jadwal (tombol aktif sebelum respon) ke halaman Update Jadwal	Admin	docs/rules/administrator/16-harga-jadwal.md:30	Aksi-Tulis	Ya	request jadwal belum direspon	Rule menulis bidder
+ADM-16-010	Harga & Jadwal	Update jadwal ditolak harga expired: alert Tidak bisa update! Harga telah expired	Admin	docs/rules/administrator/16-harga-jadwal.md:32	Validasi	Tidak	request jadwal harga expired	-
+ADM-16-011	Harga & Jadwal	Update jadwal ditolak lewat rencana akhir kirim (aktif lagi bila diperpanjang)	Admin	docs/rules/administrator/16-harga-jadwal.md:33	Validasi	Tidak	request jadwal lelang lewat akhir kirim	-
+ADM-16-012	Harga & Jadwal	Update jadwal ditolak ada request jadwal terbaru ID harga sama	Admin	docs/rules/administrator/16-harga-jadwal.md:34	Validasi	Tidak	request jadwal ganda	-
+ADM-16-013	Harga & Jadwal	Tombol Update hilang setelah request direspon	Admin	docs/rules/administrator/16-harga-jadwal.md:35	Tampilan	Tidak	request jadwal sudah direspon	-
+ADM-16-014	Harga & Jadwal	Tombol Update disable untuk harga yang dihapus admin	Admin	docs/rules/administrator/16-harga-jadwal.md:36	Validasi	Tidak	harga dihapus	-
+ADM-16-015	Harga & Jadwal	Tambah jadwal lagi setelah respon lewat halaman Tambah Jadwal	Admin	docs/rules/administrator/16-harga-jadwal.md:37	Aksi-Baca	Tidak	request jadwal sudah direspon	-
+ADM-16-016	Harga & Jadwal	Navigasi dari Pengajuan Lelang terfilter; filter tetap setelah aksi/kembali; reset filter	Admin	docs/rules/administrator/16-harga-jadwal.md:39	Aksi-Baca	Tidak	harga terfilter	Rule menulis bidder reset filter
+ADM-16-017	Harga & Jadwal	Tambah harga penawaran (buka lelang s.d sebelum rencana akhir kirim)	Admin	docs/rules/administrator/16-harga-jadwal.md:48	Aksi-Tulis	Ya	lelang aktif + bidder peserta	Kalibrasi: /home/tambahharga dengan #BidderID
+ADM-16-018	Harga & Jadwal	Input harga ditolak lewat rencana akhir kirim	Admin	docs/rules/administrator/16-harga-jadwal.md:49	Validasi	Tidak	lelang lewat akhir kirim	Rule menulis bidder
+ADM-16-019	Harga & Jadwal	Biaya Termasuk ter-draft dari lelang dan dapat diubah	Admin	docs/rules/administrator/16-harga-jadwal.md:50	Tampilan	Tidak	lelang dengan biaya termasuk	-
+ADM-16-020	Harga & Jadwal	Pilihan lelang hanya yang aktif; lelang batal tidak muncul	Admin	docs/rules/administrator/16-harga-jadwal.md:52	Validasi	Tidak	lelang aktif & batal	-
+ADM-16-021	Harga & Jadwal	Pilihan pelayaran & jenis kontainer dari master admin	Admin	docs/rules/administrator/16-harga-jadwal.md:53	Tampilan	Tidak	master aktif	-
+ADM-16-022	Harga & Jadwal	PPn/PPh rekomendasi setting pajak, desimal koma, >100 otomatis jadi 100	Admin	docs/rules/administrator/16-harga-jadwal.md:55	Validasi	Tidak	-	-
+ADM-16-023	Harga & Jadwal	Kolom PPn/PPh tampil di semua rute; data lama strip	Admin	docs/rules/administrator/16-harga-jadwal.md:59	Tampilan	Tidak	harga lama & baru	-
+ADM-16-024	Harga & Jadwal	PPn/PPh wajib: alert Masukkan Nilai PPn / Masukkan Nilai PPh	Admin	docs/rules/administrator/16-harga-jadwal.md:60	Validasi	Tidak	-	-
+ADM-16-025	Harga & Jadwal	Edit harga (PPn/PPh prefill, dapat diubah)	Admin	docs/rules/administrator/16-harga-jadwal.md:62	Aksi-Tulis	Ya	harga uji lelang aktif	-
+ADM-16-026	Harga & Jadwal	Edit harga ditolak lewat rencana akhir kirim (alert)	Admin	docs/rules/administrator/16-harga-jadwal.md:62	Validasi	Tidak	harga lelang lewat akhir kirim	-
+ADM-16-027	Harga & Jadwal	Hapus harga	Admin	docs/rules/administrator/16-harga-jadwal.md:63	Aksi-Tulis	Ya	harga uji lelang aktif	-
+ADM-16-028	Harga & Jadwal	Hapus harga ditolak lewat rencana akhir kirim (alert)	Admin	docs/rules/administrator/16-harga-jadwal.md:63	Validasi	Tidak	harga lelang lewat akhir kirim	-
+ADM-16-029	Harga & Jadwal	Halaman Update Harga: data lelang, harga sebelumnya, tgl request & tutup update	Admin	docs/rules/administrator/16-harga-jadwal.md:64	Tampilan	Tidak	harga perlu update	-
+ADM-16-030	Harga & Jadwal	Checkbox Harga Seperti Sebelumnya: PPn/PPh ikut data sebelumnya (atau setting pajak untuk data lama), kolom disabled	Admin	docs/rules/administrator/16-harga-jadwal.md:68	Aksi-Baca	Tidak	harga perlu update	-
+ADM-16-031	Harga & Jadwal	Tgl mulai berlaku update harga disabled = hari ini	Admin	docs/rules/administrator/16-harga-jadwal.md:75	Validasi	Tidak	harga perlu update	-
+ADM-16-032	Harga & Jadwal	Harga sama tanpa ceklist alert Harga sama seperti sebelumnya!	Admin	docs/rules/administrator/16-harga-jadwal.md:76	Validasi	Tidak	harga perlu update	-
+ADM-16-033	Harga & Jadwal	Submit update harga membuat harga baru yang perlu jadwal ulang	Admin	docs/rules/administrator/16-harga-jadwal.md:77	Aksi-Tulis	Ya	harga perlu update	-
+ADM-16-034	Harga & Jadwal	Tambah jadwal (buka lelang s.d sebelum rencana akhir kirim)	Admin	docs/rules/administrator/16-harga-jadwal.md:81	Aksi-Tulis	Ya	harga aktif	-
+ADM-16-035	Harga & Jadwal	Tambah jadwal ditolak lewat rencana akhir kirim (alert)	Admin	docs/rules/administrator/16-harga-jadwal.md:82	Validasi	Tidak	lelang lewat akhir kirim	-
+ADM-16-036	Harga & Jadwal	Dropdown jenis jadwal wajib; form muncul tanpa reload	Admin	docs/rules/administrator/16-harga-jadwal.md:83	Aksi-Baca	Tidak	harga aktif	Kalibrasi: Open Stack opsional
+ADM-16-037	Harga & Jadwal	Form jadwal connecting + tambah kapal connecting	Admin	docs/rules/administrator/16-harga-jadwal.md:85	Aksi-Tulis	Ya	harga aktif	Kalibrasi: #submitonce_connecting
+ADM-16-038	Harga & Jadwal	Validasi tanggal jadwal direct (closing >= now/mulai berlaku, ETD >= closing, ETA >= ETD)	Admin	docs/rules/administrator/16-harga-jadwal.md:100	Validasi	Tidak	harga aktif	-
+ADM-16-039	Harga & Jadwal	Validasi tanggal jadwal connecting (termasuk ETA/ETD kapal connecting)	Admin	docs/rules/administrator/16-harga-jadwal.md:110	Validasi	Tidak	harga aktif	-
+ADM-16-040	Harga & Jadwal	Download template import jadwal	Admin	docs/rules/administrator/16-harga-jadwal.md:106	Export/Download	Tidak	-	Defect #11 data pribadi di template
+ADM-16-041	Harga & Jadwal	Import jadwal dari Excel	Admin	docs/rules/administrator/16-harga-jadwal.md:106	Upload/Import	Ya	harga aktif	-
+ADM-16-042	Harga & Jadwal	Import jadwal maksimal 50 data	Admin	docs/rules/administrator/16-harga-jadwal.md:107	Validasi	Tidak	file >50 baris	-
+ADM-16-043	Harga & Jadwal	Edit jadwal sebelum H+2 ETA; closing boleh dimundurkan s.d mulai berlaku	Admin	docs/rules/administrator/16-harga-jadwal.md:121	Aksi-Tulis	Ya	jadwal belum lewat H+2 ETA	Rule bidder serupa :108-120; kalibrasi: jadwal ter-order alert
+ADM-16-044	Harga & Jadwal	Hapus jadwal; ditolak bila sudah di-order (alert Jadwal sudah di order tidak bisa di hapus)	Admin	docs/rules/administrator/16-harga-jadwal.md:123	Aksi-Tulis	Ya	jadwal uji tanpa order	-
+ADM-17-001	Dashboard	Monitoring: data order status Proses Penugasan s.d Order Selesai	Admin	docs/rules/administrator/17-dashboard.md:5	Laporan/Grafik	Tidak	order PROSES PENUGASAN+	-
+ADM-17-002	Dashboard	Monitoring: rentang tanggal maks 90 hari	Admin	docs/rules/administrator/17-dashboard.md:6	Validasi	Tidak	-	Defect #14a: UI 12 Bulan
+ADM-17-003	Dashboard	Monitoring: Tampilkan Penuh & Tutup	Admin	docs/rules/administrator/17-dashboard.md:7	Aksi-Baca	Tidak	-	-
+ADM-17-004	Dashboard	Monitoring: export Excel sesuai filter	Admin	docs/rules/administrator/17-dashboard.md:9	Export/Download	Tidak	hasil filter	-
+ADM-17-005	Dashboard	Monitoring: kolom (ID order, consignee, alamat, no referensi, kapal, stuffing, ETD, ETA, sandar, dooring, bidder, pelabuhan); strip bila belum	Admin	docs/rules/administrator/17-dashboard.md:10	Tampilan	Tidak	order dengan tracking	Kalibrasi: kolom admin lebih banyak dari rule
+ADM-17-006	Dashboard	Monitoring: klik ID order membuka detail (tab baru) section status pengiriman	Admin	docs/rules/administrator/17-dashboard.md:16	Aksi-Baca	Tidak	order ada	-
+ADM-17-007	Dashboard	Monitoring: sortir kolom	Admin	docs/rules/administrator/17-dashboard.md:17	Aksi-Baca	Tidak	>=2 order	-
+ADM-17-008	Dashboard	Monitoring: auto update untuk order baru & perubahan jadwal/tracking tanpa refresh	Admin	docs/rules/administrator/17-dashboard.md:18	Tampilan	Tidak	order berubah saat halaman terbuka	-
+ADM-17-009	Dashboard	Frekuensi: data jumlah order Proses Penugasan s.d Order Selesai	Admin	docs/rules/administrator/17-dashboard.md:23	Laporan/Grafik	Tidak	order PROSES PENUGASAN+	-
+ADM-17-010	Dashboard	Frekuensi: rentang tanggal maks 90 hari	Admin	docs/rules/administrator/17-dashboard.md:24	Validasi	Tidak	-	Defect #14a: UI 12 Bulan
+ADM-17-011	Dashboard	Frekuensi: map Indonesia dengan penanda kota tujuan; klik penanda tampil jumlah & persentase	Admin	docs/rules/administrator/17-dashboard.md:25	Laporan/Grafik	Tidak	order dengan kota tujuan	-
+ADM-17-012	Dashboard	Frekuensi: zoom in/out map	Admin	docs/rules/administrator/17-dashboard.md:27	Aksi-Baca	Tidak	-	-
+ADM-17-013	Dashboard	Frekuensi: Tampilkan Penuh & Tutup	Admin	docs/rules/administrator/17-dashboard.md:28	Aksi-Baca	Tidak	-	-
+ADM-17-014	Dashboard	Frekuensi: tanpa data hanya map tanpa penanda	Admin	docs/rules/administrator/17-dashboard.md:30	Tampilan	Tidak	rentang tanpa data	-
+ADM-17-015	Dashboard	Frekuensi: auto refresh saat ada order baru input unit	Admin	docs/rules/administrator/17-dashboard.md:31	Tampilan	Tidak	order baru	-
+ADM-17-016	Dashboard	Grafik: data jumlah order Proses Penugasan s.d Order Selesai	Admin	docs/rules/administrator/17-dashboard.md:35	Laporan/Grafik	Tidak	order PROSES PENUGASAN+	-
+ADM-17-017	Dashboard	Grafik: rentang tanggal maks 90 hari	Admin	docs/rules/administrator/17-dashboard.md:36	Validasi	Tidak	-	Defect #14a: UI 12 Bulan
+ADM-17-018	Dashboard	Grafik: diagram batang jumlah pengiriman per kota tujuan	Admin	docs/rules/administrator/17-dashboard.md:37	Laporan/Grafik	Tidak	order dengan kota tujuan	-
+ADM-17-019	Dashboard	Grafik: Tampilkan Penuh & Tutup	Admin	docs/rules/administrator/17-dashboard.md:38	Aksi-Baca	Tidak	-	-
+ADM-17-020	Dashboard	Grafik: tanpa data diagram tidak tampil	Admin	docs/rules/administrator/17-dashboard.md:40	Tampilan	Tidak	rentang tanpa data	-
+ADM-17-021	Dashboard	Grafik: auto refresh saat ada order baru input unit	Admin	docs/rules/administrator/17-dashboard.md:41	Tampilan	Tidak	order baru	-

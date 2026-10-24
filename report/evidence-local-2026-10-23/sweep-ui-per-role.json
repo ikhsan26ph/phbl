@@ -1,0 +1,3497 @@
+{
+ "waktu": "2026-10-23T09:13:08.256Z",
+ "target": "local",
+ "catatan": "GET halaman menu saja; Provinsi/Kota dilewati",
+ "role": {
+  "admin": {
+   "menu": [
+    {
+     "teks": "CARI PENAWARAN",
+     "href": "http://192.168.0.88:8102/lelang/carirute"
+    },
+    {
+     "teks": "Monitoring Pengiriman",
+     "href": "http://192.168.0.88:8102/home/dashboardorder"
+    },
+    {
+     "teks": "Grafik Pengiriman",
+     "href": "http://192.168.0.88:8102/home/dashboardpengiriman"
+    },
+    {
+     "teks": "Ringkasan Analitik",
+     "href": "http://192.168.0.88:8102/dashboardanalitik/ringkasan"
+    },
+    {
+     "teks": "Shipping Cost Sales Ratio",
+     "href": "http://192.168.0.88:8102/home/analitikscsr"
+    },
+    {
+     "teks": "Freight Cost",
+     "href": "http://192.168.0.88:8102/analitik/analitikfcu"
+    },
+    {
+     "teks": "On Time Delivery Rate",
+     "href": "http://192.168.0.88:8102/analitik/analitikotdr"
+    },
+    {
+     "teks": "Shipment Accuracy",
+     "href": "http://192.168.0.88:8102/home/analitikshipmentaccuracy"
+    },
+    {
+     "teks": "PENGAJUAN LELANG",
+     "href": "http://192.168.0.88:8102/lelang/listlelang"
+    },
+    {
+     "teks": "PENGAJUAN NEGO",
+     "href": "http://192.168.0.88:8102/lelang/pengajuannego"
+    },
+    {
+     "teks": "DAFTAR ORDER",
+     "href": "http://192.168.0.88:8102/order/orderlist"
+    },
+    {
+     "teks": "PENUGASAN TRACKING",
+     "href": "http://192.168.0.88:8102/home/penugasantracking"
+    },
+    {
+     "teks": "CEK JADWAL",
+     "href": "http://192.168.0.88:8102/lelang/carijadwal"
+    },
+    {
+     "teks": "Daftar History Lelang",
+     "href": "http://192.168.0.88:8102/home/history_lelang"
+    },
+    {
+     "teks": "Laporan Owner",
+     "href": "http://192.168.0.88:8102/home/laporanowner"
+    },
+    {
+     "teks": "Laporan Logistik",
+     "href": "http://192.168.0.88:8102/home/laporanlogistik"
+    },
+    {
+     "teks": "Pre Register",
+     "href": "http://192.168.0.88:8102/adminprahu/preregister"
+    },
+    {
+     "teks": "Validasi Shipper",
+     "href": "http://192.168.0.88:8102/home/bidowner"
+    },
+    {
+     "teks": "Validasi Transporter",
+     "href": "http://192.168.0.88:8102/home/bidder"
+    },
+    {
+     "teks": "Transporter Khusus",
+     "href": "http://192.168.0.88:8102/adminprahu/listBidderKhusus"
+    },
+    {
+     "teks": "Profil Transporter",
+     "href": "http://192.168.0.88:8102/home/profilbidders"
+    },
+    {
+     "teks": "Dokumen Aanwijzing",
+     "href": "http://192.168.0.88:8102/adminprahu/aanwijzing"
+    },
+    {
+     "teks": "Peserta Lelang",
+     "href": "http://192.168.0.88:8102/home/pesertalelang"
+    },
+    {
+     "teks": "Biaya Layanan",
+     "href": "http://192.168.0.88:8102/adminprahu/biayalayanan"
+    },
+    {
+     "teks": "Relasi Satu Pintu",
+     "href": "http://192.168.0.88:8102/home/relasi_satu_pintu"
+    },
+    {
+     "teks": "Preference Notif",
+     "href": "http://192.168.0.88:8102/home/adminprefnotif"
+    },
+    {
+     "teks": "General",
+     "href": "http://192.168.0.88:8102/adminprahu/setting_general"
+    },
+    {
+     "teks": "S&K Booking",
+     "href": "http://192.168.0.88:8102/adminprahu/syaratdanketentuan"
+    },
+    {
+     "teks": "Reminder",
+     "href": "http://192.168.0.88:8102/adminprahu/reminder"
+    },
+    {
+     "teks": "Setting Notifikasi",
+     "href": "http://192.168.0.88:8102/adminprahu/settingNotifonof"
+    },
+    {
+     "teks": "Setting Pajak",
+     "href": "http://192.168.0.88:8102/adminprahu/settingpajak"
+    },
+    {
+     "teks": "Provinsi",
+     "href": "http://192.168.0.88:8102/adminprahu/masterpropinsi"
+    },
+    {
+     "teks": "Kota",
+     "href": "http://192.168.0.88:8102/adminprahu/masterkota"
+    },
+    {
+     "teks": "Pelabuhan",
+     "href": "http://192.168.0.88:8102/adminprahu/masterpelabuhan"
+    },
+    {
+     "teks": "Bank",
+     "href": "http://192.168.0.88:8102/adminprahu/masterbank"
+    },
+    {
+     "teks": "Include",
+     "href": "http://192.168.0.88:8102/adminprahu/masterInclude"
+    },
+    {
+     "teks": "Kemasan",
+     "href": "http://192.168.0.88:8102/adminprahu/masterkemasan"
+    },
+    {
+     "teks": "Jenis Muatan",
+     "href": "http://192.168.0.88:8102/analitik/masterjenismuatan"
+    },
+    {
+     "teks": "Harga Barang",
+     "href": "http://192.168.0.88:8102/analitik/masterhargabarang"
+    },
+    {
+     "teks": "Free Time",
+     "href": "http://192.168.0.88:8102/adminprahu/masterfreetime"
+    },
+    {
+     "teks": "Pelayaran",
+     "href": "http://192.168.0.88:8102/adminprahu/pelayaran"
+    },
+    {
+     "teks": "Jenis Kontainer",
+     "href": "http://192.168.0.88:8102/adminprahu/kontainer"
+    },
+    {
+     "teks": "Dokumen Penagihan",
+     "href": "http://192.168.0.88:8102/adminprahu/masterDP"
+    },
+    {
+     "teks": "Iklan Berbayar",
+     "href": "http://192.168.0.88:8102/adminprahu/masteriklan"
+    },
+    {
+     "teks": "Petugas APK",
+     "href": "http://192.168.0.88:8102/adminprahu/masterpetugasapk"
+    },
+    {
+     "teks": "Hak Akses Shipper",
+     "href": "http://192.168.0.88:8102/home/hakaksesbidowner"
+    },
+    {
+     "teks": "Sub User Shipper",
+     "href": "http://192.168.0.88:8102/home/subuserbidowner"
+    },
+    {
+     "teks": "Hak Akses Transporter",
+     "href": "http://192.168.0.88:8102/home/hakaksesbidder"
+    },
+    {
+     "teks": "Sub User Transporter",
+     "href": "http://192.168.0.88:8102/home/subuserbidder"
+    },
+    {
+     "teks": "Hak Akses Admin",
+     "href": "http://192.168.0.88:8102/adminprahu/hakaksesadmin"
+    },
+    {
+     "teks": "Sub User Admin",
+     "href": "http://192.168.0.88:8102/adminprahu/subUserAdmin"
+    },
+    {
+     "teks": "AKUN SAYA",
+     "href": "http://192.168.0.88:8102/home/akunsaya"
+    },
+    {
+     "teks": "HARGA & JADWAL",
+     "href": "http://192.168.0.88:8102/home/hargajadwal"
+    }
+   ],
+   "halaman": [
+    {
+     "menu": "CARI PENAWARAN",
+     "path": "/lelang/carirute",
+     "status": 200,
+     "ms": 3416,
+     "akhir": "/lelang/carirute",
+     "gagal": "",
+     "http5xx": [],
+     "judul": "Cari Penawaran Lelang",
+     "aksi": [
+      "CARI PENAWARAN",
+      "PENGAJUAN NEGO",
+      "PENUGASAN TRACKING",
+      "VALIDASI AKUN",
+      "SETTING",
+      "Cari Harga Penawaran"
+     ],
+     "tab": [
+      "KELUAR",
+      "CARI PENAWARAN",
+      "DASHBOARD",
+      "ANALITIK",
+      "PENGAJUAN LELANG",
+      "PENGAJUAN NEGO",
+      "DAFTAR ORDER",
+      "PENUGASAN TRACKING",
+      "CEK JADWAL",
+      "LAPORAN",
+      "VALIDASI AKUN",
+      "SETTING"
+     ],
+     "kolom": [],
+     "tolak": "",
+     "kosong": false
+    },
+    {
+     "menu": "Monitoring Pengiriman",
+     "path": "/home/dashboardorder",
+     "status": 200,
+     "ms": 4293,
+     "akhir": "/home/dashboardorder/?tgl_awal=22%2F09%2F2026&tgl_akhir=23%2F10%2F2026&BidOwnerID=2",
+     "gagal": "",
+     "http5xx": [],
+     "judul": "",
+     "aksi": [
+      "CARI PENAWARAN",
+      "PENGAJUAN NEGO",
+      "PENUGASAN TRACKING",
+      "VALIDASI AKUN",
+      "SETTING",
+      "Cari"
+     ],
+     "tab": [
+      "KELUAR",
+      "CARI PENAWARAN",
+      "DASHBOARD",
+      "Monitoring Pengiriman",
+      "Grafik Pengiriman",
+      "Ringkasan Analitik",
+      "ANALITIK",
+      "PENGAJUAN LELANG",
+      "PENGAJUAN NEGO",
+      "DAFTAR ORDER",
+      "PENUGASAN TRACKING",
+      "CEK JADWAL"
+     ],
+     "kolom": [
+      "ID Order",
+      "Consignee",
+      "Alamat Tujuan",
+      "Nomer Referensi",
+      "Jenis Kontainer",
+      "Jumlah Dipesan",
+      "Harga Order",
+      "Total Harga",
+      "Nama Kapal",
+      "Stuffing",
+      "Closing Time",
+      "ETD",
+      "ETA",
+      "Kapal Sandar",
+      "Rencana Dooring",
+      "Dooring",
+      "Keterangan Dooring",
+      "Transporter",
+      "Pelabuhan Tujuan (POD)"
+     ],
+     "tolak": "",
+     "kosong": true
+    },
+    {
+     "menu": "Grafik Pengiriman",
+     "path": "/home/dashboardpengiriman",
+     "status": 200,
+     "ms": 1375,
+     "akhir": "/home/dashboardpengiriman",
+     "gagal": "",
+     "http5xx": [],
+     "judul": "",
+     "aksi": [
+      "CARI PENAWARAN",
+      "PENGAJUAN NEGO",
+      "PENUGASAN TRACKING",
+      "VALIDASI AKUN",
+      "SETTING",
+      "Cari"
+     ],
+     "tab": [
+      "KELUAR",
+      "CARI PENAWARAN",
+      "DASHBOARD",
+      "Monitoring Pengiriman",
+      "Grafik Pengiriman",
+      "Ringkasan Analitik",
+      "ANALITIK",
+      "PENGAJUAN LELANG",
+      "PENGAJUAN NEGO",
+      "DAFTAR ORDER",
+      "PENUGASAN TRACKING",
+      "CEK JADWAL"
+     ],
+     "kolom": [],
+     "tolak": "",
+     "kosong": false
+    },
+    {
+     "menu": "Ringkasan Analitik",
+     "path": "/dashboardanalitik/ringkasan",
+     "status": 200,
+     "ms": 2943,
+     "akhir": "/dashboardanalitik/ringkasan",
+     "gagal": "",
+     "http5xx": [],
+     "judul": "RINGKASAN ANALITIK",
+     "aksi": [
+      "CARI PENAWARAN",
+      "PENGAJUAN NEGO",
+      "PENUGASAN TRACKING",
+      "VALIDASI AKUN",
+      "SETTING",
+      "Cari"
+     ],
+     "tab": [
+      "KELUAR",
+      "CARI PENAWARAN",
+      "DASHBOARD",
+      "Monitoring Pengiriman",
+      "Grafik Pengiriman",
+      "Ringkasan Analitik",
+      "ANALITIK",
+      "PENGAJUAN LELANG",
+      "PENGAJUAN NEGO",
+      "DAFTAR ORDER",
+      "PENUGASAN TRACKING",
+      "CEK JADWAL"
+     ],
+     "kolom": [],
+     "tolak": "",
+     "kosong": false
+    },
+    {
+     "menu": "Shipping Cost Sales Ratio",
+     "path": "/home/analitikscsr",
+     "status": 200,
+     "ms": 1394,
+     "akhir": "/home/analitikscsr",
+     "gagal": "",
+     "http5xx": [],
+     "judul": "Shipping Cost Sales Ratio",
+     "aksi": [
+      "CARI PENAWARAN",
+      "PENGAJUAN NEGO",
+      "PENUGASAN TRACKING",
+      "VALIDASI AKUN",
+      "SETTING",
+      "Cari"
+     ],
+     "tab": [
+      "KELUAR",
+      "CARI PENAWARAN",
+      "DASHBOARD",
+      "ANALITIK",
+      "Shipping Cost Sales Ratio",
+      "Freight Cost",
+      "On Time Delivery Rate",
+      "Shipment Accuracy",
+      "PENGAJUAN LELANG",
+      "PENGAJUAN NEGO",
+      "DAFTAR ORDER",
+      "PENUGASAN TRACKING"
+     ],
+     "kolom": [],
+     "tolak": "",
+     "kosong": false
+    },
+    {
+     "menu": "Freight Cost",
+     "path": "/analitik/analitikfcu",
+     "status": 200,
+     "ms": 1330,
+     "akhir": "/analitik/analitikfcu",
+     "gagal": "",
+     "http5xx": [],
+     "judul": "FREIGHT COST",
+     "aksi": [
+      "CARI PENAWARAN",
+      "PENGAJUAN NEGO",
+      "PENUGASAN TRACKING",
+      "VALIDASI AKUN",
+      "SETTING",
+      "Cari"
+     ],
+     "tab": [
+      "KELUAR",
+      "CARI PENAWARAN",
+      "DASHBOARD",
+      "ANALITIK",
+      "Shipping Cost Sales Ratio",
+      "Freight Cost",
+      "On Time Delivery Rate",
+      "Shipment Accuracy",
+      "PENGAJUAN LELANG",
+      "PENGAJUAN NEGO",
+      "DAFTAR ORDER",
+      "PENUGASAN TRACKING"
+     ],
+     "kolom": [],
+     "tolak": "",
+     "kosong": false
+    },
+    {
+     "menu": "On Time Delivery Rate",
+     "path": "/analitik/analitikotdr",
+     "status": 200,
+     "ms": 2112,
+     "akhir": "/analitik/analitikotdr",
+     "gagal": "",
+     "http5xx": [],
+     "judul": "ON TIME DELIVERY RATE",
+     "aksi": [
+      "CARI PENAWARAN",
+      "PENGAJUAN NEGO",
+      "PENUGASAN TRACKING",
+      "VALIDASI AKUN",
+      "SETTING",
+      "Cari"
+     ],
+     "tab": [
+      "KELUAR",
+      "CARI PENAWARAN",
+      "DASHBOARD",
+      "ANALITIK",
+      "Shipping Cost Sales Ratio",
+      "Freight Cost",
+      "On Time Delivery Rate",
+      "Shipment Accuracy",
+      "PENGAJUAN LELANG",
+      "PENGAJUAN NEGO",
+      "DAFTAR ORDER",
+      "PENUGASAN TRACKING"
+     ],
+     "kolom": [],
+     "tolak": "",
+     "kosong": false
+    },
+    {
+     "menu": "Shipment Accuracy",
+     "path": "/home/analitikshipmentaccuracy",
+     "status": 200,
+     "ms": 1571,
+     "akhir": "/home/analitikshipmentaccuracy",
+     "gagal": "",
+     "http5xx": [],
+     "judul": "Shipment Accuracy Export Data By Export Excel Export PDF",
+     "aksi": [
+      "CARI PENAWARAN",
+      "PENGAJUAN NEGO",
+      "PENUGASAN TRACKING",
+      "VALIDASI AKUN",
+      "SETTING",
+      "Cari"
+     ],
+     "tab": [
+      "KELUAR",
+      "CARI PENAWARAN",
+      "DASHBOARD",
+      "ANALITIK",
+      "Shipping Cost Sales Ratio",
+      "Freight Cost",
+      "On Time Delivery Rate",
+      "Shipment Accuracy",
+      "PENGAJUAN LELANG",
+      "PENGAJUAN NEGO",
+      "DAFTAR ORDER",
+      "PENUGASAN TRACKING"
+     ],
+     "kolom": [],
+     "tolak": "",
+     "kosong": false
+    },
+    {
+     "menu": "PENGAJUAN LELANG",
+     "path": "/lelang/listlelang",
+     "status": 200,
+     "ms": 2803,
+     "akhir": "/lelang/listlelang?tab=semua-lelang",
+     "gagal": "",
+     "http5xx": [],
+     "judul": "Daftar Pengajuan Lelang",
+     "aksi": [
+      "CARI PENAWARAN",
+      "PENGAJUAN NEGO",
+      "PENUGASAN TRACKING",
+      "VALIDASI AKUN",
+      "SETTING",
+      "Filter",
+      "Perlu Input Harga",
+      "Telah Akhir Kirim",
+      "Lelang Batal"
+     ],
+     "tab": [
+      "KELUAR",
+      "CARI PENAWARAN",
+      "DASHBOARD",
+      "ANALITIK",
+      "PENGAJUAN LELANG",
+      "PENGAJUAN NEGO",
+      "DAFTAR ORDER",
+      "PENUGASAN TRACKING",
+      "CEK JADWAL",
+      "LAPORAN",
+      "VALIDASI AKUN",
+      "SETTING"
+     ],
+     "kolom": [
+      "No",
+      "Shipper",
+      "Nomor Lelang",
+      "Buka Lelang",
+      "Tutup Lelang",
+      "Rencana Mulai Kirim",
+      "Rencana Akhir Kirim",
+      "Aksi"
+     ],
+     "tolak": "",
+     "kosong": true
+    },
+    {
+     "menu": "PENGAJUAN NEGO",
+     "path": "/lelang/pengajuannego",
+     "status": 200,
+     "ms": 2216,
+     "akhir": "/lelang/pengajuannego",
+     "gagal": "",
+     "http5xx": [],
+     "judul": "PENGAJUAN NEGO",
+     "aksi": [
+      "CARI PENAWARAN",
+      "PENGAJUAN NEGO",
+      "PENUGASAN TRACKING",
+      "VALIDASI AKUN",
+      "SETTING",
+      "Filter"
+     ],
+     "tab": [
+      "KELUAR",
+      "CARI PENAWARAN",
+      "DASHBOARD",
+      "ANALITIK",
+      "PENGAJUAN LELANG",
+      "PENGAJUAN NEGO",
+      "DAFTAR ORDER",
+      "PENUGASAN TRACKING",
+      "CEK JADWAL",
+      "LAPORAN",
+      "VALIDASI AKUN",
+      "SETTING"
+     ],
+     "kolom": [
+      "Shipper Status Nego",
+      "Pelayaran Jenis",
+      "Pelabuhan Asal ETD",
+      "Pelabuhan Tujuan ETA",
+      "Nego Harga Harga Awal",
+      "Harga Baru Jumlah Nego",
+      "Aksi"
+     ],
+     "tolak": "",
+     "kosong": true
+    },
+    {
+     "menu": "DAFTAR ORDER",
+     "path": "/order/orderlist",
+     "status": 200,
+     "ms": 2702,
+     "akhir": "/order/orderlist",
+     "gagal": "",
+     "http5xx": [],
+     "judul": "DAFTAR ORDER",
+     "aksi": [
+      "CARI PENAWARAN",
+      "PENGAJUAN NEGO",
+      "PENUGASAN TRACKING",
+      "VALIDASI AKUN",
+      "SETTING",
+      "Filter 2"
+     ],
+     "tab": [
+      "KELUAR",
+      "CARI PENAWARAN",
+      "DASHBOARD",
+      "ANALITIK",
+      "PENGAJUAN LELANG",
+      "PENGAJUAN NEGO",
+      "DAFTAR ORDER",
+      "PENUGASAN TRACKING",
+      "CEK JADWAL",
+      "LAPORAN",
+      "VALIDASI AKUN",
+      "SETTING"
+     ],
+     "kolom": [
+      "Lelang Status",
+      "Nama Kapal Permintaan Muat & Closing Time",
+      "Pelabuhan Asal ETD",
+      "Pelabuhan Tujuan ETA",
+      "Transporter",
+      "Harga Jumlah Order",
+      "Action"
+     ],
+     "tolak": "",
+     "kosong": true
+    },
+    {
+     "menu": "PENUGASAN TRACKING",
+     "path": "/home/penugasantracking",
+     "status": 500,
+     "ms": 422,
+     "akhir": "/home/penugasantracking",
+     "gagal": "",
+     "http5xx": [
+      "GET 500 /home/penugasantracking"
+     ],
+     "judul": "[Emergency] Uncaught Error: Call to a member function FileAp",
+     "aksi": [],
+     "tab": [],
+     "kolom": [],
+     "tolak": "",
+     "kosong": false
+    },
+    {
+     "menu": "CEK JADWAL",
+     "path": "/lelang/carijadwal",
+     "status": 200,
+     "ms": 1282,
+     "akhir": "/lelang/carijadwal",
+     "gagal": "",
+     "http5xx": [],
+     "judul": "CEK JADWAL PELAYARAN",
+     "aksi": [
+      "CARI PENAWARAN",
+      "PENGAJUAN NEGO",
+      "PENUGASAN TRACKING",
+      "VALIDASI AKUN",
+      "SETTING",
+      "Cari Jadwal"
+     ],
+     "tab": [
+      "KELUAR",
+      "CARI PENAWARAN",
+      "DASHBOARD",
+      "ANALITIK",
+      "PENGAJUAN LELANG",
+      "PENGAJUAN NEGO",
+      "DAFTAR ORDER",
+      "PENUGASAN TRACKING",
+      "CEK JADWAL",
+      "LAPORAN",
+      "VALIDASI AKUN",
+      "SETTING"
+     ],
+     "kolom": [],
+     "tolak": "",
+     "kosong": false
+    },
+    {
+     "menu": "Daftar History Lelang",
+     "path": "/home/history_lelang",
+     "status": 200,
+     "ms": 1118,
+     "akhir": "/home/history_lelang",
+     "gagal": "",
+     "http5xx": [],
+     "judul": "Daftar History Lelang",
+     "aksi": [
+      "CARI PENAWARAN",
+      "PENGAJUAN NEGO",
+      "PENUGASAN TRACKING",
+      "VALIDASI AKUN",
+      "SETTING",
+      "Cari"
+     ],
+     "tab": [
+      "KELUAR",
+      "CARI PENAWARAN",
+      "DASHBOARD",
+      "ANALITIK",
+      "PENGAJUAN LELANG",
+      "PENGAJUAN NEGO",
+      "DAFTAR ORDER",
+      "PENUGASAN TRACKING",
+      "CEK JADWAL",
+      "LAPORAN",
+      "Daftar History Lelang",
+      "Laporan Owner"
+     ],
+     "kolom": [],
+     "tolak": "",
+     "kosong": false
+    },
+    {
+     "menu": "Laporan Owner",
+     "path": "/home/laporanowner",
+     "status": 200,
+     "ms": 1172,
+     "akhir": "/home/laporanowner",
+     "gagal": "",
+     "http5xx": [],
+     "judul": "Laporan Owner",
+     "aksi": [
+      "CARI PENAWARAN",
+      "PENGAJUAN NEGO",
+      "PENUGASAN TRACKING",
+      "VALIDASI AKUN",
+      "SETTING",
+      "Cari"
+     ],
+     "tab": [
+      "KELUAR",
+      "CARI PENAWARAN",
+      "DASHBOARD",
+      "ANALITIK",
+      "PENGAJUAN LELANG",
+      "PENGAJUAN NEGO",
+      "DAFTAR ORDER",
+      "PENUGASAN TRACKING",
+      "CEK JADWAL",
+      "LAPORAN",
+      "Daftar History Lelang",
+      "Laporan Owner"
+     ],
+     "kolom": [],
+     "tolak": "",
+     "kosong": false
+    },
+    {
+     "menu": "Laporan Logistik",
+     "path": "/home/laporanlogistik",
+     "status": 200,
+     "ms": 1067,
+     "akhir": "/home/laporanlogistik",
+     "gagal": "",
+     "http5xx": [],
+     "judul": "Laporan Logistik",
+     "aksi": [
+      "CARI PENAWARAN",
+      "PENGAJUAN NEGO",
+      "PENUGASAN TRACKING",
+      "VALIDASI AKUN",
+      "SETTING",
+      "Cari"
+     ],
+     "tab": [
+      "KELUAR",
+      "CARI PENAWARAN",
+      "DASHBOARD",
+      "ANALITIK",
+      "PENGAJUAN LELANG",
+      "PENGAJUAN NEGO",
+      "DAFTAR ORDER",
+      "PENUGASAN TRACKING",
+      "CEK JADWAL",
+      "LAPORAN",
+      "VALIDASI AKUN",
+      "SETTING"
+     ],
+     "kolom": [],
+     "tolak": "",
+     "kosong": false
+    },
+    {
+     "menu": "Pre Register",
+     "path": "/adminprahu/preregister",
+     "status": 200,
+     "ms": 2175,
+     "akhir": "/adminprahu/preregister",
+     "gagal": "",
+     "http5xx": [],
+     "judul": "PRE REGISTER",
+     "aksi": [
+      "CARI PENAWARAN",
+      "PENGAJUAN NEGO",
+      "PENUGASAN TRACKING",
+      "VALIDASI AKUN",
+      "Validasi Shipper",
+      "Validasi Transporter",
+      "SETTING",
+      "Filter"
+     ],
+     "tab": [
+      "KELUAR",
+      "CARI PENAWARAN",
+      "DASHBOARD",
+      "ANALITIK",
+      "PENGAJUAN LELANG",
+      "PENGAJUAN NEGO",
+      "DAFTAR ORDER",
+      "PENUGASAN TRACKING",
+      "CEK JADWAL",
+      "LAPORAN",
+      "VALIDASI AKUN",
+      "Pre Register"
+     ],
+     "kolom": [
+      "ID",
+      "Nama",
+      "Nama Perusahaan",
+      "Email",
+      "Telp / WA",
+      "Jenis Register",
+      "Tanggal",
+      "Aksi"
+     ],
+     "tolak": "",
+     "kosong": true
+    },
+    {
+     "menu": "Validasi Shipper",
+     "path": "/home/bidowner",
+     "status": 200,
+     "ms": 2383,
+     "akhir": "/home/bidowner",
+     "gagal": "",
+     "http5xx": [],
+     "judul": "Validasi Shipper",
+     "aksi": [
+      "CARI PENAWARAN",
+      "PENGAJUAN NEGO",
+      "PENUGASAN TRACKING",
+      "VALIDASI AKUN",
+      "Validasi Shipper",
+      "Validasi Transporter",
+      "SETTING",
+      "Filter"
+     ],
+     "tab": [
+      "KELUAR",
+      "CARI PENAWARAN",
+      "DASHBOARD",
+      "ANALITIK",
+      "PENGAJUAN LELANG",
+      "PENGAJUAN NEGO",
+      "DAFTAR ORDER",
+      "PENUGASAN TRACKING",
+      "CEK JADWAL",
+      "LAPORAN",
+      "VALIDASI AKUN",
+      "Pre Register"
+     ],
+     "kolom": [
+      "ID",
+      "Nama Perusahaan",
+      "Email",
+      "Telp/ WA",
+      "Status",
+      "Aksi"
+     ],
+     "tolak": "",
+     "kosong": false
+    },
+    {
+     "menu": "Validasi Transporter",
+     "path": "/home/bidder",
+     "status": 200,
+     "ms": 2395,
+     "akhir": "/home/bidder",
+     "gagal": "",
+     "http5xx": [],
+     "judul": "Validasi Transporter",
+     "aksi": [
+      "CARI PENAWARAN",
+      "PENGAJUAN NEGO",
+      "PENUGASAN TRACKING",
+      "VALIDASI AKUN",
+      "Validasi Shipper",
+      "Validasi Transporter",
+      "SETTING",
+      "Filter"
+     ],
+     "tab": [
+      "KELUAR",
+      "CARI PENAWARAN",
+      "DASHBOARD",
+      "ANALITIK",
+      "PENGAJUAN LELANG",
+      "PENGAJUAN NEGO",
+      "DAFTAR ORDER",
+      "PENUGASAN TRACKING",
+      "CEK JADWAL",
+      "LAPORAN",
+      "VALIDASI AKUN",
+      "Pre Register"
+     ],
+     "kolom": [
+      "ID",
+      "Nama Perusahaan",
+      "Alias",
+      "Email",
+      "Telp/ WA",
+      "Status",
+      "Aksi"
+     ],
+     "tolak": "",
+     "kosong": false
+    },
+    {
+     "menu": "Transporter Khusus",
+     "path": "/adminprahu/listBidderKhusus",
+     "status": 200,
+     "ms": 2423,
+     "akhir": "/adminprahu/listBidderKhusus",
+     "gagal": "",
+     "http5xx": [],
+     "judul": "TRANSPORTER KHUSUS",
+     "aksi": [
+      "CARI PENAWARAN",
+      "PENGAJUAN NEGO",
+      "PENUGASAN TRACKING",
+      "VALIDASI AKUN",
+      "Validasi Shipper",
+      "Validasi Transporter",
+      "SETTING",
+      "Filter 0",
+      "Tambah Transporter"
+     ],
+     "tab": [
+      "KELUAR",
+      "CARI PENAWARAN",
+      "DASHBOARD",
+      "ANALITIK",
+      "PENGAJUAN LELANG",
+      "PENGAJUAN NEGO",
+      "DAFTAR ORDER",
+      "PENUGASAN TRACKING",
+      "CEK JADWAL",
+      "LAPORAN",
+      "VALIDASI AKUN",
+      "Pre Register"
+     ],
+     "kolom": [
+      "ID",
+      "Tanggal Setting",
+      "Alias",
+      "Transporter",
+      "Khusus Shipper",
+      "Status Akun",
+      "Aksi"
+     ],
+     "tolak": "",
+     "kosong": true
+    },
+    {
+     "menu": "Profil Transporter",
+     "path": "/home/profilbidders",
+     "status": 200,
+     "ms": 2333,
+     "akhir": "/home/profilbidders",
+     "gagal": "",
+     "http5xx": [],
+     "judul": "PROFIL TRANSPORTER",
+     "aksi": [
+      "CARI PENAWARAN",
+      "PENGAJUAN NEGO",
+      "PENUGASAN TRACKING",
+      "VALIDASI AKUN",
+      "Validasi Shipper",
+      "Validasi Transporter",
+      "SETTING",
+      "Filter"
+     ],
+     "tab": [
+      "KELUAR",
+      "CARI PENAWARAN",
+      "DASHBOARD",
+      "ANALITIK",
+      "PENGAJUAN LELANG",
+      "PENGAJUAN NEGO",
+      "DAFTAR ORDER",
+      "PENUGASAN TRACKING",
+      "CEK JADWAL",
+      "LAPORAN",
+      "VALIDASI AKUN",
+      "Pre Register"
+     ],
+     "kolom": [
+      "No",
+      "Nama Perusahaan",
+      "Bergabung Sejak",
+      "Detail Rating",
+      "Aksi"
+     ],
+     "tolak": "",
+     "kosong": false
+    },
+    {
+     "menu": "Dokumen Aanwijzing",
+     "path": "/adminprahu/aanwijzing",
+     "status": 200,
+     "ms": 2280,
+     "akhir": "/adminprahu/aanwijzing",
+     "gagal": "",
+     "http5xx": [],
+     "judul": "DOKUMEN AANWIJZING",
+     "aksi": [
+      "CARI PENAWARAN",
+      "PENGAJUAN NEGO",
+      "PENUGASAN TRACKING",
+      "VALIDASI AKUN",
+      "Validasi Shipper",
+      "Validasi Transporter",
+      "SETTING",
+      "Filter"
+     ],
+     "tab": [
+      "KELUAR",
+      "CARI PENAWARAN",
+      "DASHBOARD",
+      "ANALITIK",
+      "PENGAJUAN LELANG",
+      "PENGAJUAN NEGO",
+      "DAFTAR ORDER",
+      "PENUGASAN TRACKING",
+      "CEK JADWAL",
+      "LAPORAN",
+      "VALIDASI AKUN",
+      "Pre Register"
+     ],
+     "kolom": [
+      "ID",
+      "Nama Perusahaan",
+      "Nama Dokumen Aanwijzing",
+      "Status Dokumen",
+      "Aksi"
+     ],
+     "tolak": "",
+     "kosong": false
+    },
+    {
+     "menu": "Peserta Lelang",
+     "path": "/home/pesertalelang",
+     "status": 200,
+     "ms": 2228,
+     "akhir": "/home/pesertalelang",
+     "gagal": "",
+     "http5xx": [],
+     "judul": "PESERTA LELANG",
+     "aksi": [
+      "CARI PENAWARAN",
+      "PENGAJUAN NEGO",
+      "PENUGASAN TRACKING",
+      "VALIDASI AKUN",
+      "Validasi Shipper",
+      "Validasi Transporter",
+      "SETTING",
+      "Filter"
+     ],
+     "tab": [
+      "KELUAR",
+      "CARI PENAWARAN",
+      "DASHBOARD",
+      "ANALITIK",
+      "PENGAJUAN LELANG",
+      "PENGAJUAN NEGO",
+      "DAFTAR ORDER",
+      "PENUGASAN TRACKING",
+      "CEK JADWAL",
+      "LAPORAN",
+      "VALIDASI AKUN",
+      "Pre Register"
+     ],
+     "kolom": [
+      "ID",
+      "Shipper",
+      "Kota",
+      "Email",
+      "Transporter",
+      "Aksi"
+     ],
+     "tolak": "",
+     "kosong": false
+    },
+    {
+     "menu": "Biaya Layanan",
+     "path": "/adminprahu/biayalayanan",
+     "status": 200,
+     "ms": 2169,
+     "akhir": "/adminprahu/biayalayanan",
+     "gagal": "",
+     "http5xx": [],
+     "judul": "BIAYA LAYANAN",
+     "aksi": [
+      "CARI PENAWARAN",
+      "PENGAJUAN NEGO",
+      "PENUGASAN TRACKING",
+      "VALIDASI AKUN",
+      "Validasi Shipper",
+      "Validasi Transporter",
+      "SETTING",
+      "Filter"
+     ],
+     "tab": [
+      "KELUAR",
+      "CARI PENAWARAN",
+      "DASHBOARD",
+      "ANALITIK",
+      "PENGAJUAN LELANG",
+      "PENGAJUAN NEGO",
+      "DAFTAR ORDER",
+      "PENUGASAN TRACKING",
+      "CEK JADWAL",
+      "LAPORAN",
+      "VALIDASI AKUN",
+      "Pre Register"
+     ],
+     "kolom": [
+      "ID",
+      "Tanggal Setting",
+      "Shipper",
+      "Jenis Biaya",
+      "Biaya Layanan",
+      "Masa Berlaku",
+      "Aksi"
+     ],
+     "tolak": "",
+     "kosong": false
+    },
+    {
+     "menu": "Relasi Satu Pintu",
+     "path": "/home/relasi_satu_pintu",
+     "status": 200,
+     "ms": 1686,
+     "akhir": "/home/relasi_satu_pintu",
+     "gagal": "",
+     "http5xx": [],
+     "judul": "Relasi Satu Pintu",
+     "aksi": [
+      "CARI PENAWARAN",
+      "PENGAJUAN NEGO",
+      "PENUGASAN TRACKING",
+      "VALIDASI AKUN",
+      "Validasi Shipper",
+      "Validasi Transporter",
+      "SETTING",
+      "Filter"
+     ],
+     "tab": [
+      "KELUAR",
+      "CARI PENAWARAN",
+      "DASHBOARD",
+      "ANALITIK",
+      "PENGAJUAN LELANG",
+      "PENGAJUAN NEGO",
+      "DAFTAR ORDER",
+      "PENUGASAN TRACKING",
+      "CEK JADWAL",
+      "LAPORAN",
+      "VALIDASI AKUN",
+      "Pre Register"
+     ],
+     "kolom": [
+      "ID",
+      "Tanggal 1 Pintu",
+      "Shipper",
+      "Email",
+      "Relasi Transporter",
+      "Metode Pembayaran",
+      "Aksi"
+     ],
+     "tolak": "",
+     "kosong": true
+    },
+    {
+     "menu": "Preference Notif",
+     "path": "/home/adminprefnotif",
+     "status": 200,
+     "ms": 2475,
+     "akhir": "/home/adminprefnotif",
+     "gagal": "",
+     "http5xx": [],
+     "judul": "Preference Notif",
+     "aksi": [
+      "CARI PENAWARAN",
+      "PENGAJUAN NEGO",
+      "PENUGASAN TRACKING",
+      "VALIDASI AKUN",
+      "Validasi Shipper",
+      "Validasi Transporter",
+      "SETTING",
+      "Filter 0"
+     ],
+     "tab": [
+      "KELUAR",
+      "CARI PENAWARAN",
+      "DASHBOARD",
+      "ANALITIK",
+      "PENGAJUAN LELANG",
+      "PENGAJUAN NEGO",
+      "DAFTAR ORDER",
+      "PENUGASAN TRACKING",
+      "CEK JADWAL",
+      "LAPORAN",
+      "VALIDASI AKUN",
+      "Pre Register"
+     ],
+     "kolom": [
+      "ID",
+      "Register",
+      "Nama Perusahaan",
+      "Jenis User",
+      "Notif Email",
+      "Push Notif",
+      "Tanggal Setting",
+      "Aksi"
+     ],
+     "tolak": "",
+     "kosong": false
+    },
+    {
+     "menu": "General",
+     "path": "/adminprahu/setting_general",
+     "status": 200,
+     "ms": 1498,
+     "akhir": "/adminprahu/setting_general",
+     "gagal": "",
+     "http5xx": [],
+     "judul": "SETTING GENERAL",
+     "aksi": [
+      "CARI PENAWARAN",
+      "PENGAJUAN NEGO",
+      "PENUGASAN TRACKING",
+      "VALIDASI AKUN",
+      "SETTING",
+      "Edit data",
+      "Setting Preference"
+     ],
+     "tab": [
+      "KELUAR",
+      "CARI PENAWARAN",
+      "DASHBOARD",
+      "ANALITIK",
+      "PENGAJUAN LELANG",
+      "PENGAJUAN NEGO",
+      "DAFTAR ORDER",
+      "PENUGASAN TRACKING",
+      "CEK JADWAL",
+      "LAPORAN",
+      "VALIDASI AKUN",
+      "SETTING"
+     ],
+     "kolom": [],
+     "tolak": "",
+     "kosong": false
+    },
+    {
+     "menu": "S&K Booking",
+     "path": "/adminprahu/syaratdanketentuan",
+     "status": 200,
+     "ms": 2007,
+     "akhir": "/adminprahu/syaratdanketentuan",
+     "gagal": "",
+     "http5xx": [],
+     "judul": "SYARAT & KETENTUAN",
+     "aksi": [
+      "CARI PENAWARAN",
+      "PENGAJUAN NEGO",
+      "PENUGASAN TRACKING",
+      "VALIDASI AKUN",
+      "SETTING",
+      "Setting Notifikasi",
+      "Setting Pajak",
+      "Setting"
+     ],
+     "tab": [
+      "KELUAR",
+      "CARI PENAWARAN",
+      "DASHBOARD",
+      "ANALITIK",
+      "PENGAJUAN LELANG",
+      "PENGAJUAN NEGO",
+      "DAFTAR ORDER",
+      "PENUGASAN TRACKING",
+      "CEK JADWAL",
+      "LAPORAN",
+      "VALIDASI AKUN",
+      "SETTING"
+     ],
+     "kolom": [],
+     "tolak": "",
+     "kosong": false
+    },
+    {
+     "menu": "Reminder",
+     "path": "/adminprahu/reminder",
+     "status": 200,
+     "ms": 1072,
+     "akhir": "/adminprahu/reminder",
+     "gagal": "",
+     "http5xx": [],
+     "judul": "RULE REMINDER",
+     "aksi": [
+      "CARI PENAWARAN",
+      "PENGAJUAN NEGO",
+      "PENUGASAN TRACKING",
+      "VALIDASI AKUN",
+      "SETTING"
+     ],
+     "tab": [
+      "KELUAR",
+      "CARI PENAWARAN",
+      "DASHBOARD",
+      "ANALITIK",
+      "PENGAJUAN LELANG",
+      "PENGAJUAN NEGO",
+      "DAFTAR ORDER",
+      "PENUGASAN TRACKING",
+      "CEK JADWAL",
+      "LAPORAN",
+      "VALIDASI AKUN",
+      "SETTING"
+     ],
+     "kolom": [
+      "Tugas Tracking",
+      "Berulang Setiap",
+      "Trigger by",
+      "Rule Trigger",
+      "Status Reminder",
+      "Aksi"
+     ],
+     "tolak": "",
+     "kosong": false
+    },
+    {
+     "menu": "Setting Notifikasi",
+     "path": "/adminprahu/settingNotifonof",
+     "status": 200,
+     "ms": 1581,
+     "akhir": "/adminprahu/settingNotifonof",
+     "gagal": "",
+     "http5xx": [],
+     "judul": "SETTING NOTIFIKASI",
+     "aksi": [
+      "CARI PENAWARAN",
+      "PENGAJUAN NEGO",
+      "PENUGASAN TRACKING",
+      "VALIDASI AKUN",
+      "SETTING",
+      "Setting"
+     ],
+     "tab": [
+      "KELUAR",
+      "CARI PENAWARAN",
+      "DASHBOARD",
+      "ANALITIK",
+      "PENGAJUAN LELANG",
+      "PENGAJUAN NEGO",
+      "DAFTAR ORDER",
+      "PENUGASAN TRACKING",
+      "CEK JADWAL",
+      "LAPORAN",
+      "VALIDASI AKUN",
+      "SETTING"
+     ],
+     "kolom": [],
+     "tolak": "",
+     "kosong": false
+    },
+    {
+     "menu": "Setting Pajak",
+     "path": "/adminprahu/settingpajak",
+     "status": 200,
+     "ms": 1054,
+     "akhir": "/adminprahu/settingpajak",
+     "gagal": "",
+     "http5xx": [],
+     "judul": "SETTING PAJAK",
+     "aksi": [
+      "CARI PENAWARAN",
+      "PENGAJUAN NEGO",
+      "PENUGASAN TRACKING",
+      "VALIDASI AKUN",
+      "SETTING"
+     ],
+     "tab": [
+      "KELUAR",
+      "CARI PENAWARAN",
+      "DASHBOARD",
+      "ANALITIK",
+      "PENGAJUAN LELANG",
+      "PENGAJUAN NEGO",
+      "DAFTAR ORDER",
+      "PENUGASAN TRACKING",
+      "CEK JADWAL",
+      "LAPORAN",
+      "VALIDASI AKUN",
+      "SETTING"
+     ],
+     "kolom": [
+      "Nama Item",
+      "Nilai",
+      "Aksi"
+     ],
+     "tolak": "",
+     "kosong": true
+    },
+    {
+     "menu": "Pelabuhan",
+     "path": "/adminprahu/masterpelabuhan",
+     "status": 200,
+     "ms": 2080,
+     "akhir": "/adminprahu/masterpelabuhan",
+     "gagal": "",
+     "http5xx": [],
+     "judul": "MASTER PELABUHAN",
+     "aksi": [
+      "CARI PENAWARAN",
+      "PENGAJUAN NEGO",
+      "PENUGASAN TRACKING",
+      "VALIDASI AKUN",
+      "SETTING",
+      "Petugas APK",
+      "Filter 0",
+      "Tambah Pelabuhan",
+      "Export Data Pelabuhan"
+     ],
+     "tab": [
+      "KELUAR",
+      "CARI PENAWARAN",
+      "DASHBOARD",
+      "ANALITIK",
+      "PENGAJUAN LELANG",
+      "PENGAJUAN NEGO",
+      "DAFTAR ORDER",
+      "PENUGASAN TRACKING",
+      "CEK JADWAL",
+      "LAPORAN",
+      "VALIDASI AKUN",
+      "SETTING"
+     ],
+     "kolom": [
+      "No",
+      "UN Code",
+      "Nama Pelabuhan",
+      "Nama Kota / Kab.",
+      "Status",
+      "Aksi"
+     ],
+     "tolak": "",
+     "kosong": true
+    },
+    {
+     "menu": "Bank",
+     "path": "/adminprahu/masterbank",
+     "status": 200,
+     "ms": 2129,
+     "akhir": "/adminprahu/masterbank",
+     "gagal": "",
+     "http5xx": [],
+     "judul": "Master Bank",
+     "aksi": [
+      "CARI PENAWARAN",
+      "PENGAJUAN NEGO",
+      "PENUGASAN TRACKING",
+      "VALIDASI AKUN",
+      "SETTING",
+      "Petugas APK",
+      "Filter",
+      "Tambah Bank",
+      "Edit Bank",
+      "Hapus Bank"
+     ],
+     "tab": [
+      "KELUAR",
+      "CARI PENAWARAN",
+      "DASHBOARD",
+      "ANALITIK",
+      "PENGAJUAN LELANG",
+      "PENGAJUAN NEGO",
+      "DAFTAR ORDER",
+      "PENUGASAN TRACKING",
+      "CEK JADWAL",
+      "LAPORAN",
+      "VALIDASI AKUN",
+      "SETTING"
+     ],
+     "kolom": [
+      "No",
+      "Nama Bank",
+      "Status",
+      "Aksi"
+     ],
+     "tolak": "",
+     "kosong": false
+    },
+    {
+     "menu": "Include",
+     "path": "/adminprahu/masterInclude",
+     "status": 200,
+     "ms": 2284,
+     "akhir": "/adminprahu/masterInclude",
+     "gagal": "",
+     "http5xx": [],
+     "judul": "Master Include",
+     "aksi": [
+      "CARI PENAWARAN",
+      "PENGAJUAN NEGO",
+      "PENUGASAN TRACKING",
+      "VALIDASI AKUN",
+      "SETTING",
+      "Petugas APK",
+      "Filter",
+      "Tambah Include"
+     ],
+     "tab": [
+      "KELUAR",
+      "CARI PENAWARAN",
+      "DASHBOARD",
+      "ANALITIK",
+      "PENGAJUAN LELANG",
+      "PENGAJUAN NEGO",
+      "DAFTAR ORDER",
+      "PENUGASAN TRACKING",
+      "CEK JADWAL",
+      "LAPORAN",
+      "VALIDASI AKUN",
+      "SETTING"
+     ],
+     "kolom": [
+      "No",
+      "Nama Include",
+      "Tipe Include",
+      "Status",
+      "Aksi"
+     ],
+     "tolak": "",
+     "kosong": true
+    },
+    {
+     "menu": "Kemasan",
+     "path": "/adminprahu/masterkemasan",
+     "status": 200,
+     "ms": 2264,
+     "akhir": "/adminprahu/masterkemasan",
+     "gagal": "",
+     "http5xx": [],
+     "judul": "MASTER KEMASAN",
+     "aksi": [
+      "CARI PENAWARAN",
+      "PENGAJUAN NEGO",
+      "PENUGASAN TRACKING",
+      "VALIDASI AKUN",
+      "SETTING",
+      "Petugas APK",
+      "Filter 0",
+      "Tambah Kemasan"
+     ],
+     "tab": [
+      "KELUAR",
+      "CARI PENAWARAN",
+      "DASHBOARD",
+      "ANALITIK",
+      "PENGAJUAN LELANG",
+      "PENGAJUAN NEGO",
+      "DAFTAR ORDER",
+      "PENUGASAN TRACKING",
+      "CEK JADWAL",
+      "LAPORAN",
+      "VALIDASI AKUN",
+      "SETTING"
+     ],
+     "kolom": [
+      "No",
+      "Nama Kemasan",
+      "Status",
+      "Aksi"
+     ],
+     "tolak": "",
+     "kosong": true
+    },
+    {
+     "menu": "Jenis Muatan",
+     "path": "/analitik/masterjenismuatan",
+     "status": 200,
+     "ms": 2321,
+     "akhir": "/analitik/masterjenismuatan",
+     "gagal": "",
+     "http5xx": [],
+     "judul": "MASTER JENIS MUATAN",
+     "aksi": [
+      "CARI PENAWARAN",
+      "PENGAJUAN NEGO",
+      "PENUGASAN TRACKING",
+      "VALIDASI AKUN",
+      "SETTING",
+      "Petugas APK",
+      "Filter"
+     ],
+     "tab": [
+      "KELUAR",
+      "CARI PENAWARAN",
+      "DASHBOARD",
+      "ANALITIK",
+      "PENGAJUAN LELANG",
+      "PENGAJUAN NEGO",
+      "DAFTAR ORDER",
+      "PENUGASAN TRACKING",
+      "CEK JADWAL",
+      "LAPORAN",
+      "VALIDASI AKUN",
+      "SETTING"
+     ],
+     "kolom": [
+      "ID",
+      "Shipper",
+      "Email",
+      "Jml jenis Muatan",
+      "Aksi"
+     ],
+     "tolak": "",
+     "kosong": false
+    },
+    {
+     "menu": "Harga Barang",
+     "path": "/analitik/masterhargabarang",
+     "status": 200,
+     "ms": 2311,
+     "akhir": "/analitik/masterhargabarang",
+     "gagal": "",
+     "http5xx": [],
+     "judul": "MASTER HARGA BARANG",
+     "aksi": [
+      "CARI PENAWARAN",
+      "PENGAJUAN NEGO",
+      "PENUGASAN TRACKING",
+      "VALIDASI AKUN",
+      "SETTING",
+      "Petugas APK",
+      "Filter"
+     ],
+     "tab": [
+      "KELUAR",
+      "CARI PENAWARAN",
+      "DASHBOARD",
+      "ANALITIK",
+      "PENGAJUAN LELANG",
+      "PENGAJUAN NEGO",
+      "DAFTAR ORDER",
+      "PENUGASAN TRACKING",
+      "CEK JADWAL",
+      "LAPORAN",
+      "VALIDASI AKUN",
+      "SETTING"
+     ],
+     "kolom": [
+      "ID",
+      "Shipper",
+      "Email",
+      "Harga Terinput",
+      "Aksi"
+     ],
+     "tolak": "",
+     "kosong": false
+    },
+    {
+     "menu": "Free Time",
+     "path": "/adminprahu/masterfreetime",
+     "status": 200,
+     "ms": 2593,
+     "akhir": "/adminprahu/masterfreetime",
+     "gagal": "",
+     "http5xx": [],
+     "judul": "Master Free Time",
+     "aksi": [
+      "CARI PENAWARAN",
+      "PENGAJUAN NEGO",
+      "PENUGASAN TRACKING",
+      "VALIDASI AKUN",
+      "SETTING",
+      "Petugas APK",
+      "Filter",
+      "Tambah Free Time"
+     ],
+     "tab": [
+      "KELUAR",
+      "CARI PENAWARAN",
+      "DASHBOARD",
+      "ANALITIK",
+      "PENGAJUAN LELANG",
+      "PENGAJUAN NEGO",
+      "DAFTAR ORDER",
+      "PENUGASAN TRACKING",
+      "CEK JADWAL",
+      "LAPORAN",
+      "VALIDASI AKUN",
+      "SETTING"
+     ],
+     "kolom": [
+      "No",
+      "Pelabuhan Tujuan (POD)",
+      "Storage (Hari)",
+      "Status",
+      "Aksi"
+     ],
+     "tolak": "",
+     "kosong": true
+    },
+    {
+     "menu": "Pelayaran",
+     "path": "/adminprahu/pelayaran",
+     "status": 200,
+     "ms": 2758,
+     "akhir": "/adminprahu/pelayaran",
+     "gagal": "",
+     "http5xx": [],
+     "judul": "Master Pelayaran",
+     "aksi": [
+      "CARI PENAWARAN",
+      "PENGAJUAN NEGO",
+      "PENUGASAN TRACKING",
+      "VALIDASI AKUN",
+      "SETTING",
+      "Petugas APK",
+      "Filter",
+      "Tambah Pelayaran"
+     ],
+     "tab": [
+      "KELUAR",
+      "CARI PENAWARAN",
+      "DASHBOARD",
+      "ANALITIK",
+      "PENGAJUAN LELANG",
+      "PENGAJUAN NEGO",
+      "DAFTAR ORDER",
+      "PENUGASAN TRACKING",
+      "CEK JADWAL",
+      "LAPORAN",
+      "VALIDASI AKUN",
+      "SETTING"
+     ],
+     "kolom": [
+      "No",
+      "Nama Pelayaran",
+      "Logo Pelayaran",
+      "Status",
+      "Aksi"
+     ],
+     "tolak": "",
+     "kosong": true
+    },
+    {
+     "menu": "Jenis Kontainer",
+     "path": "/adminprahu/kontainer",
+     "status": 200,
+     "ms": 2329,
+     "akhir": "/adminprahu/kontainer",
+     "gagal": "",
+     "http5xx": [],
+     "judul": "Master Jenis Kontainer",
+     "aksi": [
+      "CARI PENAWARAN",
+      "PENGAJUAN NEGO",
+      "PENUGASAN TRACKING",
+      "VALIDASI AKUN",
+      "SETTING",
+      "Petugas APK",
+      "Filter",
+      "Tambah Jenis Kontainer"
+     ],
+     "tab": [
+      "KELUAR",
+      "CARI PENAWARAN",
+      "DASHBOARD",
+      "ANALITIK",
+      "PENGAJUAN LELANG",
+      "PENGAJUAN NEGO",
+      "DAFTAR ORDER",
+      "PENUGASAN TRACKING",
+      "CEK JADWAL",
+      "LAPORAN",
+      "VALIDASI AKUN",
+      "SETTING"
+     ],
+     "kolom": [
+      "No",
+      "Jenis Kontainer",
+      "Status",
+      "Aksi"
+     ],
+     "tolak": "",
+     "kosong": true
+    },
+    {
+     "menu": "Dokumen Penagihan",
+     "path": "/adminprahu/masterDP",
+     "status": 200,
+     "ms": 2438,
+     "akhir": "/adminprahu/masterDP",
+     "gagal": "",
+     "http5xx": [],
+     "judul": "MASTER Dokumen Penagihan",
+     "aksi": [
+      "CARI PENAWARAN",
+      "PENGAJUAN NEGO",
+      "PENUGASAN TRACKING",
+      "VALIDASI AKUN",
+      "SETTING",
+      "Petugas APK",
+      "Filter 0",
+      "Tambah Dokumen Penagihan"
+     ],
+     "tab": [
+      "KELUAR",
+      "CARI PENAWARAN",
+      "DASHBOARD",
+      "ANALITIK",
+      "PENGAJUAN LELANG",
+      "PENGAJUAN NEGO",
+      "DAFTAR ORDER",
+      "PENUGASAN TRACKING",
+      "CEK JADWAL",
+      "LAPORAN",
+      "VALIDASI AKUN",
+      "SETTING"
+     ],
+     "kolom": [
+      "No",
+      "Nama Dokumen Penagihan",
+      "Status",
+      "Aksi"
+     ],
+     "tolak": "",
+     "kosong": true
+    },
+    {
+     "menu": "Iklan Berbayar",
+     "path": "/adminprahu/masteriklan",
+     "status": 200,
+     "ms": 2283,
+     "akhir": "/adminprahu/masteriklan",
+     "gagal": "",
+     "http5xx": [],
+     "judul": "MASTER IKLAN BERBAYAR",
+     "aksi": [
+      "CARI PENAWARAN",
+      "PENGAJUAN NEGO",
+      "PENUGASAN TRACKING",
+      "VALIDASI AKUN",
+      "SETTING",
+      "Petugas APK",
+      "Filter",
+      "Tambah Iklan Berbayar"
+     ],
+     "tab": [
+      "KELUAR",
+      "CARI PENAWARAN",
+      "DASHBOARD",
+      "ANALITIK",
+      "PENGAJUAN LELANG",
+      "PENGAJUAN NEGO",
+      "DAFTAR ORDER",
+      "PENUGASAN TRACKING",
+      "CEK JADWAL",
+      "LAPORAN",
+      "VALIDASI AKUN",
+      "SETTING"
+     ],
+     "kolom": [
+      "No",
+      "Nama Transporter",
+      "Tanggal Mulai",
+      "Tanggal Berakhir",
+      "Aksi"
+     ],
+     "tolak": "",
+     "kosong": true
+    },
+    {
+     "menu": "Petugas APK",
+     "path": "/adminprahu/masterpetugasapk",
+     "status": 200,
+     "ms": 2072,
+     "akhir": "/adminprahu/masterpetugasapk",
+     "gagal": "",
+     "http5xx": [],
+     "judul": "MASTER PETUGAS APK TRACKING",
+     "aksi": [
+      "CARI PENAWARAN",
+      "PENGAJUAN NEGO",
+      "PENUGASAN TRACKING",
+      "VALIDASI AKUN",
+      "SETTING",
+      "Petugas APK",
+      "Filter",
+      "Tambah Petugas"
+     ],
+     "tab": [
+      "KELUAR",
+      "CARI PENAWARAN",
+      "DASHBOARD",
+      "ANALITIK",
+      "PENGAJUAN LELANG",
+      "PENGAJUAN NEGO",
+      "DAFTAR ORDER",
+      "PENUGASAN TRACKING",
+      "CEK JADWAL",
+      "LAPORAN",
+      "VALIDASI AKUN",
+      "SETTING"
+     ],
+     "kolom": [
+      "No",
+      "Nama Transporter",
+      "Nama Petugas",
+      "No. Whatsapp",
+      "Kota",
+      "Status",
+      "Aksi"
+     ],
+     "tolak": "",
+     "kosong": true
+    },
+    {
+     "menu": "Hak Akses Shipper",
+     "path": "/home/hakaksesbidowner",
+     "status": 200,
+     "ms": 2365,
+     "akhir": "/home/hakaksesbidowner",
+     "gagal": "",
+     "http5xx": [],
+     "judul": "HAK AKSES SHIPPER",
+     "aksi": [
+      "CARI PENAWARAN",
+      "PENGAJUAN NEGO",
+      "PENUGASAN TRACKING",
+      "VALIDASI AKUN",
+      "SETTING",
+      "Filter 0",
+      "Tambah Hak Akses"
+     ],
+     "tab": [
+      "KELUAR",
+      "CARI PENAWARAN",
+      "DASHBOARD",
+      "ANALITIK",
+      "PENGAJUAN LELANG",
+      "PENGAJUAN NEGO",
+      "DAFTAR ORDER",
+      "PENUGASAN TRACKING",
+      "CEK JADWAL",
+      "LAPORAN",
+      "VALIDASI AKUN",
+      "SETTING"
+     ],
+     "kolom": [
+      "No",
+      "Nama Shipper",
+      "Nama Hak Akses",
+      "Total Perizinan",
+      "Aksi"
+     ],
+     "tolak": "",
+     "kosong": true
+    },
+    {
+     "menu": "Sub User Shipper",
+     "path": "/home/subuserbidowner",
+     "status": 200,
+     "ms": 2420,
+     "akhir": "/home/subuserbidowner",
+     "gagal": "",
+     "http5xx": [],
+     "judul": "Sub User Shipper",
+     "aksi": [
+      "CARI PENAWARAN",
+      "PENGAJUAN NEGO",
+      "PENUGASAN TRACKING",
+      "VALIDASI AKUN",
+      "SETTING",
+      "Filter 0",
+      "Tambah Sub User"
+     ],
+     "tab": [
+      "KELUAR",
+      "CARI PENAWARAN",
+      "DASHBOARD",
+      "ANALITIK",
+      "PENGAJUAN LELANG",
+      "PENGAJUAN NEGO",
+      "DAFTAR ORDER",
+      "PENUGASAN TRACKING",
+      "CEK JADWAL",
+      "LAPORAN",
+      "VALIDASI AKUN",
+      "SETTING"
+     ],
+     "kolom": [
+      "No",
+      "Nama Shipper",
+      "Nama Sub User",
+      "Email",
+      "Status",
+      "Aksi"
+     ],
+     "tolak": "",
+     "kosong": false
+    },
+    {
+     "menu": "Hak Akses Transporter",
+     "path": "/home/hakaksesbidder",
+     "status": 200,
+     "ms": 2344,
+     "akhir": "/home/hakaksesbidder",
+     "gagal": "",
+     "http5xx": [],
+     "judul": "Hak Akses Transporter",
+     "aksi": [
+      "CARI PENAWARAN",
+      "PENGAJUAN NEGO",
+      "PENUGASAN TRACKING",
+      "VALIDASI AKUN",
+      "SETTING",
+      "Filter",
+      "Tambah Hak Akses"
+     ],
+     "tab": [
+      "KELUAR",
+      "CARI PENAWARAN",
+      "DASHBOARD",
+      "ANALITIK",
+      "PENGAJUAN LELANG",
+      "PENGAJUAN NEGO",
+      "DAFTAR ORDER",
+      "PENUGASAN TRACKING",
+      "CEK JADWAL",
+      "LAPORAN",
+      "VALIDASI AKUN",
+      "SETTING"
+     ],
+     "kolom": [
+      "No",
+      "Nama Transporter",
+      "Nama Hak Akses",
+      "Total Perizinan",
+      "Aksi"
+     ],
+     "tolak": "",
+     "kosong": true
+    },
+    {
+     "menu": "Sub User Transporter",
+     "path": "/home/subuserbidder",
+     "status": 200,
+     "ms": 2256,
+     "akhir": "/home/subuserbidder",
+     "gagal": "",
+     "http5xx": [],
+     "judul": "Sub User Transporter",
+     "aksi": [
+      "CARI PENAWARAN",
+      "PENGAJUAN NEGO",
+      "PENUGASAN TRACKING",
+      "VALIDASI AKUN",
+      "SETTING",
+      "Filter",
+      "Tambah Sub User"
+     ],
+     "tab": [
+      "KELUAR",
+      "CARI PENAWARAN",
+      "DASHBOARD",
+      "ANALITIK",
+      "PENGAJUAN LELANG",
+      "PENGAJUAN NEGO",
+      "DAFTAR ORDER",
+      "PENUGASAN TRACKING",
+      "CEK JADWAL",
+      "LAPORAN",
+      "VALIDASI AKUN",
+      "SETTING"
+     ],
+     "kolom": [
+      "No",
+      "Nama Transporter",
+      "Nama Sub User",
+      "Email",
+      "Status",
+      "Aksi"
+     ],
+     "tolak": "",
+     "kosong": false
+    },
+    {
+     "menu": "Hak Akses Admin",
+     "path": "/adminprahu/hakaksesadmin",
+     "status": 200,
+     "ms": 1722,
+     "akhir": "/adminprahu/hakaksesadmin",
+     "gagal": "",
+     "http5xx": [],
+     "judul": "HAK AKSES ADMIN",
+     "aksi": [
+      "CARI PENAWARAN",
+      "PENGAJUAN NEGO",
+      "PENUGASAN TRACKING",
+      "VALIDASI AKUN",
+      "SETTING",
+      "Filter 0",
+      "Tambah Hak Akses"
+     ],
+     "tab": [
+      "KELUAR",
+      "CARI PENAWARAN",
+      "DASHBOARD",
+      "ANALITIK",
+      "PENGAJUAN LELANG",
+      "PENGAJUAN NEGO",
+      "DAFTAR ORDER",
+      "PENUGASAN TRACKING",
+      "CEK JADWAL",
+      "LAPORAN",
+      "VALIDASI AKUN",
+      "SETTING"
+     ],
+     "kolom": [
+      "No",
+      "Nama Hak Akses",
+      "Deskripsi Hak Akses",
+      "Total Perizinan",
+      "Aksi"
+     ],
+     "tolak": "",
+     "kosong": false
+    },
+    {
+     "menu": "Sub User Admin",
+     "path": "/adminprahu/subUserAdmin",
+     "status": 200,
+     "ms": 2134,
+     "akhir": "/adminprahu/subUserAdmin",
+     "gagal": "",
+     "http5xx": [],
+     "judul": "SUB USER ADMIN",
+     "aksi": [
+      "CARI PENAWARAN",
+      "PENGAJUAN NEGO",
+      "PENUGASAN TRACKING",
+      "VALIDASI AKUN",
+      "SETTING",
+      "Filter 0",
+      "Tambah Sub User"
+     ],
+     "tab": [
+      "KELUAR",
+      "CARI PENAWARAN",
+      "DASHBOARD",
+      "ANALITIK",
+      "PENGAJUAN LELANG",
+      "PENGAJUAN NEGO",
+      "DAFTAR ORDER",
+      "PENUGASAN TRACKING",
+      "CEK JADWAL",
+      "LAPORAN",
+      "VALIDASI AKUN",
+      "SETTING"
+     ],
+     "kolom": [
+      "No.",
+      "Nama Sub User",
+      "Email",
+      "Bagian Staff",
+      "Status",
+      "Aksi"
+     ],
+     "tolak": "",
+     "kosong": false
+    },
+    {
+     "menu": "AKUN SAYA",
+     "path": "/home/akunsaya",
+     "status": 200,
+     "ms": 1155,
+     "akhir": "/home/akunsaya",
+     "gagal": "",
+     "http5xx": [],
+     "judul": "AKUN SAYA",
+     "aksi": [
+      "CARI PENAWARAN",
+      "PENGAJUAN NEGO",
+      "PENUGASAN TRACKING",
+      "VALIDASI AKUN",
+      "SETTING"
+     ],
+     "tab": [
+      "KELUAR",
+      "CARI PENAWARAN",
+      "DASHBOARD",
+      "ANALITIK",
+      "PENGAJUAN LELANG",
+      "PENGAJUAN NEGO",
+      "DAFTAR ORDER",
+      "PENUGASAN TRACKING",
+      "CEK JADWAL",
+      "LAPORAN",
+      "VALIDASI AKUN",
+      "SETTING"
+     ],
+     "kolom": [],
+     "tolak": "",
+     "kosong": false
+    },
+    {
+     "menu": "HARGA & JADWAL",
+     "path": "/home/hargajadwal",
+     "status": 200,
+     "ms": 2756,
+     "akhir": "/home/hargajadwal?tab=1",
+     "gagal": "",
+     "http5xx": [],
+     "judul": "HARGA & JADWAL",
+     "aksi": [
+      "CARI PENAWARAN",
+      "PENGAJUAN NEGO",
+      "PENUGASAN TRACKING",
+      "VALIDASI AKUN",
+      "SETTING",
+      "Filter 0",
+      "Input Harga Penawaran",
+      "Request Jadwal"
+     ],
+     "tab": [
+      "KELUAR",
+      "CARI PENAWARAN",
+      "DASHBOARD",
+      "ANALITIK",
+      "PENGAJUAN LELANG",
+      "PENGAJUAN NEGO",
+      "DAFTAR ORDER",
+      "PENUGASAN TRACKING",
+      "CEK JADWAL",
+      "LAPORAN",
+      "VALIDASI AKUN",
+      "SETTING"
+     ],
+     "kolom": [
+      "Transporter",
+      "Nomor Lelang",
+      "Rute",
+      "Jenis",
+      "Harga (Rp.)",
+      "Mulai Berlaku",
+      "Aksi"
+     ],
+     "tolak": "",
+     "kosong": true
+    }
+   ]
+  },
+  "shipper": {
+   "menu": [
+    {
+     "teks": "CARI PENAWARAN",
+     "href": "http://192.168.0.88:8102/lelang/carirute"
+    },
+    {
+     "teks": "Monitoring Pengiriman",
+     "href": "http://192.168.0.88:8102/home/dashboardorder"
+    },
+    {
+     "teks": "Grafik Pengiriman",
+     "href": "http://192.168.0.88:8102/home/dashboardpengiriman"
+    },
+    {
+     "teks": "Ringkasan Analitik",
+     "href": "http://192.168.0.88:8102/dashboardanalitik/ringkasan"
+    },
+    {
+     "teks": "Shipping Cost Sales Ratio",
+     "href": "http://192.168.0.88:8102/home/analitikscsr"
+    },
+    {
+     "teks": "Freight Cost",
+     "href": "http://192.168.0.88:8102/analitik/analitikfcu"
+    },
+    {
+     "teks": "On Time Delivery Rate",
+     "href": "http://192.168.0.88:8102/analitik/analitikotdr"
+    },
+    {
+     "teks": "Shipment Accuracy",
+     "href": "http://192.168.0.88:8102/home/analitikshipmentaccuracy"
+    },
+    {
+     "teks": "PENGAJUAN LELANG",
+     "href": "http://192.168.0.88:8102/lelang/listlelang"
+    },
+    {
+     "teks": "PENGAJUAN NEGO",
+     "href": "http://192.168.0.88:8102/lelang/pengajuannego"
+    },
+    {
+     "teks": "DAFTAR ORDER",
+     "href": "http://192.168.0.88:8102/order/OrderList"
+    },
+    {
+     "teks": "Jenis Muatan",
+     "href": "http://192.168.0.88:8102/analitik/datajenismuatan"
+    },
+    {
+     "teks": "Harga Barang",
+     "href": "http://192.168.0.88:8102/analitik/hargabarang"
+    },
+    {
+     "teks": "CEK JADWAL",
+     "href": "http://192.168.0.88:8102/lelang/carijadwal"
+    },
+    {
+     "teks": "Daftar History Lelang",
+     "href": "http://192.168.0.88:8102/home/history_lelang"
+    },
+    {
+     "teks": "Laporan Logistik",
+     "href": "http://192.168.0.88:8102/home/laporanlogistik"
+    },
+    {
+     "teks": "Hak Akses",
+     "href": "http://192.168.0.88:8102/home/hakaksesbidowner"
+    },
+    {
+     "teks": "Sub User",
+     "href": "http://192.168.0.88:8102/home/subuserbidowner"
+    },
+    {
+     "teks": "PREFERENCE NOTIF",
+     "href": "http://192.168.0.88:8102/home/preferenceNotifBidowner"
+    },
+    {
+     "teks": "AKUN SAYA",
+     "href": "http://192.168.0.88:8102/home/akunsaya"
+    }
+   ],
+   "halaman": [
+    {
+     "menu": "CARI PENAWARAN",
+     "path": "/lelang/carirute",
+     "status": 200,
+     "ms": 3438,
+     "akhir": "/lelang/carirute",
+     "gagal": "",
+     "http5xx": [],
+     "judul": "Cari Penawaran Lelang",
+     "aksi": [
+      "CARI PENAWARAN",
+      "PENGAJUAN NEGO",
+      "Buat Lelang Baru",
+      "Cari Harga Penawaran"
+     ],
+     "tab": [
+      "KELUAR",
+      "CARI PENAWARAN",
+      "DASHBOARD",
+      "ANALITIK",
+      "PENGAJUAN LELANG",
+      "PENGAJUAN NEGO",
+      "DAFTAR ORDER",
+      "MASTER",
+      "CEK JADWAL",
+      "LAPORAN",
+      "PENGATURAN AKUN",
+      "PREFERENCE NOTIF"
+     ],
+     "kolom": [],
+     "tolak": "",
+     "kosong": false
+    },
+    {
+     "menu": "Monitoring Pengiriman",
+     "path": "/home/dashboardorder",
+     "status": 200,
+     "ms": 4554,
+     "akhir": "/home/dashboardorder/?tgl_awal=22%2F09%2F2026&tgl_akhir=23%2F10%2F2026",
+     "gagal": "",
+     "http5xx": [],
+     "judul": "",
+     "aksi": [
+      "CARI PENAWARAN",
+      "PENGAJUAN NEGO",
+      "Cari"
+     ],
+     "tab": [
+      "KELUAR",
+      "CARI PENAWARAN",
+      "DASHBOARD",
+      "Monitoring Pengiriman",
+      "Grafik Pengiriman",
+      "Ringkasan Analitik",
+      "ANALITIK",
+      "PENGAJUAN LELANG",
+      "PENGAJUAN NEGO",
+      "DAFTAR ORDER",
+      "MASTER",
+      "CEK JADWAL"
+     ],
+     "kolom": [
+      "ID Order",
+      "Consignee",
+      "Alamat Tujuan",
+      "Nomer Referensi",
+      "Jenis Kontainer",
+      "Jumlah Dipesan",
+      "Harga Order",
+      "Total Harga",
+      "Nama Kapal",
+      "Stuffing",
+      "Closing Time",
+      "ETD",
+      "ETA",
+      "Kapal Sandar",
+      "Rencana Dooring",
+      "Dooring",
+      "Keterangan Dooring",
+      "Transporter",
+      "Pelabuhan Tujuan (POD)"
+     ],
+     "tolak": "",
+     "kosong": true
+    },
+    {
+     "menu": "Grafik Pengiriman",
+     "path": "/home/dashboardpengiriman",
+     "status": 200,
+     "ms": 1697,
+     "akhir": "/home/dashboardpengiriman",
+     "gagal": "",
+     "http5xx": [],
+     "judul": "",
+     "aksi": [
+      "CARI PENAWARAN",
+      "PENGAJUAN NEGO",
+      "Cari"
+     ],
+     "tab": [
+      "KELUAR",
+      "CARI PENAWARAN",
+      "DASHBOARD",
+      "Monitoring Pengiriman",
+      "Grafik Pengiriman",
+      "Ringkasan Analitik",
+      "ANALITIK",
+      "PENGAJUAN LELANG",
+      "PENGAJUAN NEGO",
+      "DAFTAR ORDER",
+      "MASTER",
+      "CEK JADWAL"
+     ],
+     "kolom": [],
+     "tolak": "",
+     "kosong": false
+    },
+    {
+     "menu": "Ringkasan Analitik",
+     "path": "/dashboardanalitik/ringkasan",
+     "status": 200,
+     "ms": 2895,
+     "akhir": "/dashboardanalitik/ringkasan",
+     "gagal": "",
+     "http5xx": [],
+     "judul": "RINGKASAN ANALITIK",
+     "aksi": [
+      "CARI PENAWARAN",
+      "PENGAJUAN NEGO",
+      "Cari",
+      "Lihat Laporan"
+     ],
+     "tab": [
+      "KELUAR",
+      "CARI PENAWARAN",
+      "DASHBOARD",
+      "Monitoring Pengiriman",
+      "Grafik Pengiriman",
+      "Ringkasan Analitik",
+      "ANALITIK",
+      "PENGAJUAN LELANG",
+      "PENGAJUAN NEGO",
+      "DAFTAR ORDER",
+      "MASTER",
+      "CEK JADWAL"
+     ],
+     "kolom": [],
+     "tolak": "",
+     "kosong": false
+    },
+    {
+     "menu": "Shipping Cost Sales Ratio",
+     "path": "/home/analitikscsr",
+     "status": 200,
+     "ms": 2960,
+     "akhir": "/home/analitikscsr",
+     "gagal": "",
+     "http5xx": [],
+     "judul": "Shipping Cost Sales Ratio",
+     "aksi": [
+      "CARI PENAWARAN",
+      "PENGAJUAN NEGO",
+      "Cari"
+     ],
+     "tab": [
+      "KELUAR",
+      "CARI PENAWARAN",
+      "DASHBOARD",
+      "ANALITIK",
+      "Shipping Cost Sales Ratio",
+      "Freight Cost",
+      "On Time Delivery Rate",
+      "Shipment Accuracy",
+      "PENGAJUAN LELANG",
+      "PENGAJUAN NEGO",
+      "DAFTAR ORDER",
+      "MASTER"
+     ],
+     "kolom": [],
+     "tolak": "",
+     "kosong": false
+    },
+    {
+     "menu": "Freight Cost",
+     "path": "/analitik/analitikfcu",
+     "status": 200,
+     "ms": 1470,
+     "akhir": "/analitik/analitikfcu",
+     "gagal": "",
+     "http5xx": [],
+     "judul": "FREIGHT COST",
+     "aksi": [
+      "CARI PENAWARAN",
+      "PENGAJUAN NEGO",
+      "Cari"
+     ],
+     "tab": [
+      "KELUAR",
+      "CARI PENAWARAN",
+      "DASHBOARD",
+      "ANALITIK",
+      "Shipping Cost Sales Ratio",
+      "Freight Cost",
+      "On Time Delivery Rate",
+      "Shipment Accuracy",
+      "PENGAJUAN LELANG",
+      "PENGAJUAN NEGO",
+      "DAFTAR ORDER",
+      "MASTER"
+     ],
+     "kolom": [],
+     "tolak": "",
+     "kosong": false
+    },
+    {
+     "menu": "On Time Delivery Rate",
+     "path": "/analitik/analitikotdr",
+     "status": 200,
+     "ms": 1689,
+     "akhir": "/analitik/analitikotdr",
+     "gagal": "",
+     "http5xx": [],
+     "judul": "ON TIME DELIVERY RATE",
+     "aksi": [
+      "CARI PENAWARAN",
+      "PENGAJUAN NEGO",
+      "Cari"
+     ],
+     "tab": [
+      "KELUAR",
+      "CARI PENAWARAN",
+      "DASHBOARD",
+      "ANALITIK",
+      "Shipping Cost Sales Ratio",
+      "Freight Cost",
+      "On Time Delivery Rate",
+      "Shipment Accuracy",
+      "PENGAJUAN LELANG",
+      "PENGAJUAN NEGO",
+      "DAFTAR ORDER",
+      "MASTER"
+     ],
+     "kolom": [],
+     "tolak": "",
+     "kosong": false
+    },
+    {
+     "menu": "Shipment Accuracy",
+     "path": "/home/analitikshipmentaccuracy",
+     "status": 200,
+     "ms": 1555,
+     "akhir": "/home/analitikshipmentaccuracy",
+     "gagal": "",
+     "http5xx": [],
+     "judul": "Shipment Accuracy Export Data By Export Excel Export PDF",
+     "aksi": [
+      "CARI PENAWARAN",
+      "PENGAJUAN NEGO",
+      "Cari"
+     ],
+     "tab": [
+      "KELUAR",
+      "CARI PENAWARAN",
+      "DASHBOARD",
+      "ANALITIK",
+      "Shipping Cost Sales Ratio",
+      "Freight Cost",
+      "On Time Delivery Rate",
+      "Shipment Accuracy",
+      "PENGAJUAN LELANG",
+      "PENGAJUAN NEGO",
+      "DAFTAR ORDER",
+      "MASTER"
+     ],
+     "kolom": [],
+     "tolak": "",
+     "kosong": false
+    },
+    {
+     "menu": "PENGAJUAN LELANG",
+     "path": "/lelang/listlelang",
+     "status": 200,
+     "ms": 3028,
+     "akhir": "/lelang/listlelang?tab=semua-lelang",
+     "gagal": "",
+     "http5xx": [],
+     "judul": "Daftar Pengajuan Lelang",
+     "aksi": [
+      "CARI PENAWARAN",
+      "PENGAJUAN NEGO",
+      "Filter",
+      "Buat Pengajuan Lelang",
+      "Telah Akhir Kirim",
+      "Lelang Batal"
+     ],
+     "tab": [
+      "KELUAR",
+      "CARI PENAWARAN",
+      "DASHBOARD",
+      "ANALITIK",
+      "PENGAJUAN LELANG",
+      "PENGAJUAN NEGO",
+      "DAFTAR ORDER",
+      "MASTER",
+      "CEK JADWAL",
+      "LAPORAN",
+      "PENGATURAN AKUN",
+      "PREFERENCE NOTIF"
+     ],
+     "kolom": [
+      "No",
+      "Nomor Lelang",
+      "Buka Lelang",
+      "Tutup Lelang",
+      "Rencana Mulai Kirim",
+      "Rencana Akhir Kirim",
+      "Transporter",
+      "Aksi"
+     ],
+     "tolak": "",
+     "kosong": true
+    },
+    {
+     "menu": "PENGAJUAN NEGO",
+     "path": "/lelang/pengajuannego",
+     "status": 200,
+     "ms": 2335,
+     "akhir": "/lelang/pengajuannego",
+     "gagal": "",
+     "http5xx": [],
+     "judul": "PENGAJUAN NEGO",
+     "aksi": [
+      "CARI PENAWARAN",
+      "PENGAJUAN NEGO",
+      "Filter"
+     ],
+     "tab": [
+      "KELUAR",
+      "CARI PENAWARAN",
+      "DASHBOARD",
+      "ANALITIK",
+      "PENGAJUAN LELANG",
+      "PENGAJUAN NEGO",
+      "DAFTAR ORDER",
+      "MASTER",
+      "CEK JADWAL",
+      "LAPORAN",
+      "PENGATURAN AKUN",
+      "PREFERENCE NOTIF"
+     ],
+     "kolom": [
+      "Transporter Status Nego",
+      "Pelayaran Jenis",
+      "Pelabuhan Asal ETD",
+      "Pelabuhan Tujuan ETA",
+      "Nego Harga Harga Awal",
+      "Harga Baru Jumlah Nego",
+      "Aksi"
+     ],
+     "tolak": "",
+     "kosong": true
+    },
+    {
+     "menu": "DAFTAR ORDER",
+     "path": "/order/OrderList",
+     "status": 200,
+     "ms": 3024,
+     "akhir": "/order/OrderList",
+     "gagal": "",
+     "http5xx": [],
+     "judul": "DAFTAR ORDER",
+     "aksi": [
+      "CARI PENAWARAN",
+      "PENGAJUAN NEGO",
+      "Filter 2"
+     ],
+     "tab": [
+      "KELUAR",
+      "CARI PENAWARAN",
+      "DASHBOARD",
+      "ANALITIK",
+      "PENGAJUAN LELANG",
+      "PENGAJUAN NEGO",
+      "DAFTAR ORDER",
+      "MASTER",
+      "CEK JADWAL",
+      "LAPORAN",
+      "PENGATURAN AKUN",
+      "PREFERENCE NOTIF"
+     ],
+     "kolom": [
+      "Lelang Status",
+      "Nama Kapal Permintaan Muat & Closing Time",
+      "Pelabuhan Asal ETD",
+      "Pelabuhan Tujuan ETA",
+      "Transporter",
+      "Harga Jumlah Order",
+      "Action"
+     ],
+     "tolak": "",
+     "kosong": true
+    },
+    {
+     "menu": "Jenis Muatan",
+     "path": "/analitik/datajenismuatan",
+     "status": null,
+     "ms": 60490,
+     "akhir": "/analitik/datajenismuatan",
+     "gagal": "page.goto: Timeout 45000ms exceeded.",
+     "http5xx": [
+      "GET 500 /analitik/datajenismuatan"
+     ],
+     "judul": "",
+     "aksi": [],
+     "tab": [],
+     "kolom": [],
+     "tolak": "",
+     "kosong": false
+    },
+    {
+     "menu": "Harga Barang",
+     "path": "/analitik/hargabarang",
+     "status": 200,
+     "ms": 17409,
+     "akhir": "/analitik/hargabarang",
+     "gagal": "",
+     "http5xx": [],
+     "judul": "Master Harga Barang",
+     "aksi": [
+      "CARI PENAWARAN",
+      "PENGAJUAN NEGO",
+      "Filter",
+      "Tambah Harga Barang"
+     ],
+     "tab": [
+      "KELUAR",
+      "CARI PENAWARAN",
+      "DASHBOARD",
+      "ANALITIK",
+      "PENGAJUAN LELANG",
+      "PENGAJUAN NEGO",
+      "DAFTAR ORDER",
+      "MASTER",
+      "Jenis Muatan",
+      "Harga Barang",
+      "CEK JADWAL",
+      "LAPORAN"
+     ],
+     "kolom": [
+      "No",
+      "Nama Jenis Muatan",
+      "Harga Terinput",
+      "Aksi"
+     ],
+     "tolak": "",
+     "kosong": false
+    },
+    {
+     "menu": "CEK JADWAL",
+     "path": "/lelang/carijadwal",
+     "status": null,
+     "ms": 45966,
+     "akhir": "/lelang/carijadwal",
+     "gagal": "page.goto: Timeout 45000ms exceeded.",
+     "http5xx": [
+      "POST 500 /analitik/searchdatajenismuatan?undefined"
+     ],
+     "error": "page.evaluate: TypeError: Cannot read properties of null (reading 'innerText')\n "
+    },
+    {
+     "menu": "Daftar History Lelang",
+     "path": "/home/history_lelang",
+     "status": 200,
+     "ms": 1088,
+     "akhir": "/home/history_lelang",
+     "gagal": "",
+     "http5xx": [],
+     "judul": "Daftar History Lelang",
+     "aksi": [
+      "CARI PENAWARAN",
+      "PENGAJUAN NEGO",
+      "Cari"
+     ],
+     "tab": [
+      "KELUAR",
+      "CARI PENAWARAN",
+      "DASHBOARD",
+      "ANALITIK",
+      "PENGAJUAN LELANG",
+      "PENGAJUAN NEGO",
+      "DAFTAR ORDER",
+      "MASTER",
+      "CEK JADWAL",
+      "LAPORAN",
+      "Daftar History Lelang",
+      "Laporan Logistik"
+     ],
+     "kolom": [],
+     "tolak": "",
+     "kosong": false
+    },
+    {
+     "menu": "Laporan Logistik",
+     "path": "/home/laporanlogistik",
+     "status": 200,
+     "ms": 1137,
+     "akhir": "/home/laporanlogistik",
+     "gagal": "",
+     "http5xx": [],
+     "judul": "Laporan Logistik",
+     "aksi": [
+      "CARI PENAWARAN",
+      "PENGAJUAN NEGO",
+      "Cari"
+     ],
+     "tab": [
+      "KELUAR",
+      "CARI PENAWARAN",
+      "DASHBOARD",
+      "ANALITIK",
+      "PENGAJUAN LELANG",
+      "PENGAJUAN NEGO",
+      "DAFTAR ORDER",
+      "MASTER",
+      "CEK JADWAL",
+      "LAPORAN",
+      "PENGATURAN AKUN",
+      "PREFERENCE NOTIF"
+     ],
+     "kolom": [],
+     "tolak": "",
+     "kosong": false
+    },
+    {
+     "menu": "Hak Akses",
+     "path": "/home/hakaksesbidowner",
+     "status": 200,
+     "ms": 2209,
+     "akhir": "/home/hakaksesbidowner",
+     "gagal": "",
+     "http5xx": [],
+     "judul": "HAK AKSES",
+     "aksi": [
+      "CARI PENAWARAN",
+      "PENGAJUAN NEGO",
+      "Filter 0"
+     ],
+     "tab": [
+      "KELUAR",
+      "CARI PENAWARAN",
+      "DASHBOARD",
+      "ANALITIK",
+      "PENGAJUAN LELANG",
+      "PENGAJUAN NEGO",
+      "DAFTAR ORDER",
+      "MASTER",
+      "CEK JADWAL",
+      "LAPORAN",
+      "PENGATURAN AKUN",
+      "Hak Akses"
+     ],
+     "kolom": [
+      "No",
+      "Nama Hak Akses",
+      "Total Perizinan",
+      "Aksi"
+     ],
+     "tolak": "",
+     "kosong": true
+    },
+    {
+     "menu": "Sub User",
+     "path": "/home/subuserbidowner",
+     "status": 200,
+     "ms": 2135,
+     "akhir": "/home/subuserbidowner",
+     "gagal": "",
+     "http5xx": [],
+     "judul": "Sub User",
+     "aksi": [
+      "CARI PENAWARAN",
+      "PENGAJUAN NEGO",
+      "Filter 0",
+      "Tambah Sub User"
+     ],
+     "tab": [
+      "KELUAR",
+      "CARI PENAWARAN",
+      "DASHBOARD",
+      "ANALITIK",
+      "PENGAJUAN LELANG",
+      "PENGAJUAN NEGO",
+      "DAFTAR ORDER",
+      "MASTER",
+      "CEK JADWAL",
+      "LAPORAN",
+      "PENGATURAN AKUN",
+      "Hak Akses"
+     ],
+     "kolom": [
+      "No",
+      "Nama Sub User",
+      "Email",
+      "Bagian Staff",
+      "Status",
+      "Aksi"
+     ],
+     "tolak": "",
+     "kosong": false
+    },
+    {
+     "menu": "PREFERENCE NOTIF",
+     "path": "/home/preferenceNotifBidowner",
+     "status": 200,
+     "ms": 1098,
+     "akhir": "/home/preferenceNotifBidowner",
+     "gagal": "",
+     "http5xx": [],
+     "judul": "PREFERENCE NOTIF",
+     "aksi": [
+      "CARI PENAWARAN",
+      "PENGAJUAN NEGO",
+      "Setting"
+     ],
+     "tab": [
+      "KELUAR",
+      "CARI PENAWARAN",
+      "DASHBOARD",
+      "ANALITIK",
+      "PENGAJUAN LELANG",
+      "PENGAJUAN NEGO",
+      "DAFTAR ORDER",
+      "MASTER",
+      "CEK JADWAL",
+      "LAPORAN",
+      "PENGATURAN AKUN",
+      "PREFERENCE NOTIF"
+     ],
+     "kolom": [],
+     "tolak": "",
+     "kosong": false
+    },
+    {
+     "menu": "AKUN SAYA",
+     "path": "/home/akunsaya",
+     "status": 200,
+     "ms": 1036,
+     "akhir": "/home/akunsaya",
+     "gagal": "",
+     "http5xx": [],
+     "judul": "AKUN SAYA",
+     "aksi": [
+      "CARI PENAWARAN",
+      "PENGAJUAN NEGO",
+      "Edit Akun Saya",
+      "Belum Upload Identitas",
+      "Belum Upload Logo"
+     ],
+     "tab": [
+      "KELUAR",
+      "CARI PENAWARAN",
+      "DASHBOARD",
+      "ANALITIK",
+      "PENGAJUAN LELANG",
+      "PENGAJUAN NEGO",
+      "DAFTAR ORDER",
+      "MASTER",
+      "CEK JADWAL",
+      "LAPORAN",
+      "PENGATURAN AKUN",
+      "PREFERENCE NOTIF"
+     ],
+     "kolom": [],
+     "tolak": "",
+     "kosong": false
+    }
+   ]
+  },
+  "transporter": {
+   "menu": [
+    {
+     "teks": "PENGAJUAN LELANG",
+     "href": "http://192.168.0.88:8102/lelang/listlelang"
+    },
+    {
+     "teks": "HARGA & JADWAL",
+     "href": "http://192.168.0.88:8102/home/hargajadwal"
+    },
+    {
+     "teks": "PENGAJUAN NEGO",
+     "href": "http://192.168.0.88:8102/lelang/pengajuannego"
+    },
+    {
+     "teks": "DAFTAR ORDER",
+     "href": "http://192.168.0.88:8102/order/orderlist"
+    },
+    {
+     "teks": "PENUGASAN TRACKING",
+     "href": "http://192.168.0.88:8102/home/penugasantracking"
+    },
+    {
+     "teks": "PROFIL",
+     "href": "http://192.168.0.88:8102/home/myprofile"
+    },
+    {
+     "teks": "Hak Akses",
+     "href": "http://192.168.0.88:8102/home/hakaksesbidder"
+    },
+    {
+     "teks": "Sub User",
+     "href": "http://192.168.0.88:8102/home/subuserbidder"
+    },
+    {
+     "teks": "PREFERENCE NOTIF",
+     "href": "http://192.168.0.88:8102/home/preferencenotifbidder"
+    },
+    {
+     "teks": "AKUN SAYA",
+     "href": "http://192.168.0.88:8102/home/akunsaya"
+    }
+   ],
+   "halaman": [
+    {
+     "menu": "PENGAJUAN LELANG",
+     "path": "/lelang/listlelang",
+     "status": 200,
+     "ms": 2592,
+     "akhir": "/lelang/listlelang?tab=semua-lelang",
+     "gagal": "",
+     "http5xx": [],
+     "judul": "Daftar Pengajuan Lelang",
+     "aksi": [
+      "PENGAJUAN NEGO",
+      "PENUGASAN TRACKING",
+      "Filter",
+      "Perlu Input Harga",
+      "Telah Akhir Kirim",
+      "Lelang Batal"
+     ],
+     "tab": [
+      "KELUAR",
+      "PENGAJUAN LELANG",
+      "HARGA & JADWAL",
+      "PENGAJUAN NEGO",
+      "DAFTAR ORDER",
+      "PENUGASAN TRACKING",
+      "PROFIL",
+      "PENGATURAN AKUN",
+      "PREFERENCE NOTIF",
+      "AKUN SAYA",
+      "Semua Lelang",
+      "Perlu Input Harga"
+     ],
+     "kolom": [
+      "No",
+      "Shipper",
+      "Nomor Lelang",
+      "Buka Lelang",
+      "Tutup Lelang",
+      "Rencana Mulai Kirim",
+      "Rencana Akhir Kirim",
+      "Aksi"
+     ],
+     "tolak": "",
+     "kosong": true
+    },
+    {
+     "menu": "HARGA & JADWAL",
+     "path": "/home/hargajadwal",
+     "status": 200,
+     "ms": 2309,
+     "akhir": "/home/hargajadwal?tab=1",
+     "gagal": "",
+     "http5xx": [],
+     "judul": "HARGA & JADWAL",
+     "aksi": [
+      "PENGAJUAN NEGO",
+      "PENUGASAN TRACKING",
+      "Filter 0",
+      "Input Harga Penawaran",
+      "Request Jadwal"
+     ],
+     "tab": [
+      "KELUAR",
+      "PENGAJUAN LELANG",
+      "HARGA & JADWAL",
+      "PENGAJUAN NEGO",
+      "DAFTAR ORDER",
+      "PENUGASAN TRACKING",
+      "PROFIL",
+      "PENGATURAN AKUN",
+      "PREFERENCE NOTIF",
+      "AKUN SAYA",
+      "Beranda",
+      "Input Harga Penawaran"
+     ],
+     "kolom": [
+      "Nomor Lelang",
+      "Rute",
+      "Pelayaran",
+      "Jenis",
+      "Harga (Rp.)",
+      "Mulai Berlaku",
+      "Aksi"
+     ],
+     "tolak": "",
+     "kosong": true
+    },
+    {
+     "menu": "PENGAJUAN NEGO",
+     "path": "/lelang/pengajuannego",
+     "status": 200,
+     "ms": 2262,
+     "akhir": "/lelang/pengajuannego",
+     "gagal": "",
+     "http5xx": [],
+     "judul": "PENGAJUAN NEGO",
+     "aksi": [
+      "PENGAJUAN NEGO",
+      "PENUGASAN TRACKING",
+      "Filter"
+     ],
+     "tab": [
+      "KELUAR",
+      "PENGAJUAN LELANG",
+      "HARGA & JADWAL",
+      "PENGAJUAN NEGO",
+      "DAFTAR ORDER",
+      "PENUGASAN TRACKING",
+      "PROFIL",
+      "PENGATURAN AKUN",
+      "PREFERENCE NOTIF",
+      "AKUN SAYA",
+      "Beranda"
+     ],
+     "kolom": [
+      "Shipper Status Nego",
+      "Pelayaran Jenis",
+      "Pelabuhan Asal ETD",
+      "Pelabuhan Tujuan ETA",
+      "Nego Harga Harga Awal",
+      "Harga Baru Jumlah Nego",
+      "Aksi"
+     ],
+     "tolak": "",
+     "kosong": true
+    },
+    {
+     "menu": "DAFTAR ORDER",
+     "path": "/order/orderlist",
+     "status": 200,
+     "ms": 2123,
+     "akhir": "/order/orderlist",
+     "gagal": "",
+     "http5xx": [],
+     "judul": "DAFTAR ORDER",
+     "aksi": [
+      "PENGAJUAN NEGO",
+      "PENUGASAN TRACKING",
+      "Filter 2"
+     ],
+     "tab": [
+      "KELUAR",
+      "PENGAJUAN LELANG",
+      "HARGA & JADWAL",
+      "PENGAJUAN NEGO",
+      "DAFTAR ORDER",
+      "PENUGASAN TRACKING",
+      "PROFIL",
+      "PENGATURAN AKUN",
+      "PREFERENCE NOTIF",
+      "AKUN SAYA",
+      "Beranda"
+     ],
+     "kolom": [
+      "Lelang Status",
+      "Nama Kapal Permintaan Muat & Closing Time",
+      "Pelabuhan Asal ETD",
+      "Pelabuhan Tujuan ETA",
+      "Shipper",
+      "Harga Jumlah Order",
+      "Action"
+     ],
+     "tolak": "",
+     "kosong": true
+    },
+    {
+     "menu": "PENUGASAN TRACKING",
+     "path": "/home/penugasantracking",
+     "status": 500,
+     "ms": 411,
+     "akhir": "/home/penugasantracking",
+     "gagal": "",
+     "http5xx": [
+      "GET 500 /home/penugasantracking"
+     ],
+     "judul": "[Emergency] Uncaught Error: Call to a member function FileAp",
+     "aksi": [],
+     "tab": [],
+     "kolom": [],
+     "tolak": "",
+     "kosong": false
+    },
+    {
+     "menu": "PROFIL",
+     "path": "/home/myprofile",
+     "status": 200,
+     "ms": 1924,
+     "akhir": "/home/myprofile",
+     "gagal": "",
+     "http5xx": [],
+     "judul": "PROFIL",
+     "aksi": [
+      "PENGAJUAN NEGO",
+      "PENUGASAN TRACKING",
+      "Edit Profil"
+     ],
+     "tab": [
+      "KELUAR",
+      "PENGAJUAN LELANG",
+      "HARGA & JADWAL",
+      "PENGAJUAN NEGO",
+      "DAFTAR ORDER",
+      "PENUGASAN TRACKING",
+      "PROFIL",
+      "PENGATURAN AKUN",
+      "PREFERENCE NOTIF",
+      "AKUN SAYA",
+      "Beranda",
+      "Informasi"
+     ],
+     "kolom": [],
+     "tolak": "",
+     "kosong": false
+    },
+    {
+     "menu": "Hak Akses",
+     "path": "/home/hakaksesbidder",
+     "status": null,
+     "ms": 61079,
+     "akhir": "/home/hakaksesbidder",
+     "gagal": "page.goto: Timeout 45000ms exceeded.",
+     "http5xx": [
+      "POST 500 /home/searchulasan?undefined"
+     ],
+     "error": "page.evaluate: TypeError: Cannot read properties of null (reading 'innerText')\n "
+    },
+    {
+     "menu": "Sub User",
+     "path": "/home/subuserbidder",
+     "status": 200,
+     "ms": 2264,
+     "akhir": "/home/subuserbidder",
+     "gagal": "",
+     "http5xx": [],
+     "judul": "Sub User",
+     "aksi": [
+      "PENGAJUAN NEGO",
+      "PENUGASAN TRACKING",
+      "Filter",
+      "Tambah Sub User"
+     ],
+     "tab": [
+      "KELUAR",
+      "PENGAJUAN LELANG",
+      "HARGA & JADWAL",
+      "PENGAJUAN NEGO",
+      "DAFTAR ORDER",
+      "PENUGASAN TRACKING",
+      "PROFIL",
+      "PENGATURAN AKUN",
+      "Hak Akses",
+      "Sub User",
+      "PREFERENCE NOTIF",
+      "AKUN SAYA"
+     ],
+     "kolom": [
+      "No",
+      "Nama Sub User",
+      "Email",
+      "Bagian Staff",
+      "Status",
+      "Aksi"
+     ],
+     "tolak": "",
+     "kosong": false
+    },
+    {
+     "menu": "PREFERENCE NOTIF",
+     "path": "/home/preferencenotifbidder",
+     "status": 200,
+     "ms": 1128,
+     "akhir": "/home/preferencenotifbidder",
+     "gagal": "",
+     "http5xx": [],
+     "judul": "PREFERENCE NOTIF",
+     "aksi": [
+      "PENGAJUAN NEGO",
+      "PENUGASAN TRACKING",
+      "Setting"
+     ],
+     "tab": [
+      "KELUAR",
+      "PENGAJUAN LELANG",
+      "HARGA & JADWAL",
+      "PENGAJUAN NEGO",
+      "DAFTAR ORDER",
+      "PENUGASAN TRACKING",
+      "PROFIL",
+      "PENGATURAN AKUN",
+      "PREFERENCE NOTIF",
+      "AKUN SAYA",
+      "Beranda",
+      "Setting"
+     ],
+     "kolom": [],
+     "tolak": "",
+     "kosong": false
+    },
+    {
+     "menu": "AKUN SAYA",
+     "path": "/home/akunsaya",
+     "status": 200,
+     "ms": 1406,
+     "akhir": "/home/akunsaya",
+     "gagal": "",
+     "http5xx": [],
+     "judul": "AKUN SAYA",
+     "aksi": [
+      "PENGAJUAN NEGO",
+      "PENUGASAN TRACKING",
+      "Edit Akun Saya",
+      "Belum Upload Logo"
+     ],
+     "tab": [
+      "KELUAR",
+      "PENGAJUAN LELANG",
+      "HARGA & JADWAL",
+      "PENGAJUAN NEGO",
+      "DAFTAR ORDER",
+      "PENUGASAN TRACKING",
+      "PROFIL",
+      "PENGATURAN AKUN",
+      "PREFERENCE NOTIF",
+      "AKUN SAYA",
+      "Beranda",
+      "Edit Akun Saya"
+     ],
+     "kolom": [],
+     "tolak": "",
+     "kosong": false
+    }
+   ]
+  },
+  "admin-sub-read": {
+   "menu": [
+    {
+     "teks": "Bank",
+     "href": "http://192.168.0.88:8102/adminprahu/masterbank"
+    },
+    {
+     "teks": "AKUN SAYA",
+     "href": "http://192.168.0.88:8102/home/akunsaya"
+    }
+   ],
+   "halaman": [
+    {
+     "menu": "Bank",
+     "path": "/adminprahu/masterbank",
+     "status": 200,
+     "ms": 2409,
+     "akhir": "/adminprahu/masterbank",
+     "gagal": "",
+     "http5xx": [],
+     "judul": "Master Bank",
+     "aksi": [
+      "Filter"
+     ],
+     "tab": [
+      "KELUAR",
+      "MASTER",
+      "Bank",
+      "AKUN SAYA",
+      "1"
+     ],
+     "kolom": [
+      "No",
+      "Nama Bank",
+      "Status"
+     ],
+     "tolak": "",
+     "kosong": false
+    },
+    {
+     "menu": "AKUN SAYA",
+     "path": "/home/akunsaya",
+     "status": 200,
+     "ms": 1098,
+     "akhir": "/home/akunsaya",
+     "gagal": "",
+     "http5xx": [],
+     "judul": "AKUN SAYA",
+     "aksi": [],
+     "tab": [
+      "KELUAR",
+      "MASTER",
+      "AKUN SAYA"
+     ],
+     "kolom": [],
+     "tolak": "",
+     "kosong": false
+    }
+   ]
+  }
+ }
+}

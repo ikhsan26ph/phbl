@@ -1,0 +1,27 @@
+ID	Status	Alasan
+SHP-03-001	Belum diuji	Test yang lulus hanya kasus NEGATIF (email tidak terdaftar → "Akun Belum Terdaftar"); permintaan kode untuk email terdaftar butuh mail/inbox (E4) dan belum diuji
+TRP-03-001	Belum diuji	Test yang lulus hanya kasus NEGATIF (email tidak terdaftar); permintaan kode untuk email/WA terdaftar belum diuji (butuh mail/WA, E4)
+SHP-13-003	Bermasalah	Rule menuntut 13 notifikasi email; spec preference shipper meng-assert daftar UI (12) yang lulus → diskrepansi rule vs UI masih ada (defect #13 / test.fail validasi-akun:290)
+SHP-13-004	Bermasalah	Rule menuntut 17 push notifikasi; spec meng-assert daftar UI (16) yang lulus → diskrepansi rule vs UI masih ada (defect #13)
+SHP-13-006	Belum diuji	Terbukti hanya toggle checkbox di sisi klien; simpan preference (mutasi) dan efeknya belum diuji
+TRP-12-006	Belum diuji	Terbukti hanya toggle checkbox di sisi klien; klik Simpan dan efek preference belum diuji (mutasi)
+SHP-02-002	Belum diuji	Terbukti hanya radio peran default tidak terpilih; aturan "wajib dipilih" (submit tanpa memilih) belum diuji, dan validasi registrasi lain tercatat diam (defect #1)
+TRP-11-006	Blocked	Terbukti hanya keadaan galeri kosong ("Tidak Ada Data Tersedia"); klik foto untuk melihat butuh data galeri
+ADM-13-003	Blocked	Smoke hanya membuktikan halaman Master Pelabuhan terbuka tanpa 5xx; master lokal 0 baris sehingga kolom UN Code & kota pada data belum teruji (N1)
+ADM-04-007	Blocked	Tab Semua Lelang tampil & dapat dibuka terbukti, tetapi isi "semua data lelang" tidak dapat diverifikasi dengan 0 lelang lokal
+SHP-04-001	Belum diuji	Smoke hanya membuktikan halaman Akun Saya terbuka (link KELUAR); isi data akun & dokumen yang diupload belum diassert di lokal (akun QA tanpa dokumen, N4)
+SHP-11-001	Belum diuji	Test membuktikan form default (pelayaran terkunci Meratus); integrasi API Meratus (hasil pencarian jadwal) belum diuji
+ADM-02-001	Berjalan	Fungsi (ikon lonceng membuka halaman Notifikasi) lulus untuk admin; yang gagal sesuai harapan adalah test.fail aksesibilitas (ikon tanpa accessible name, defect #5) — dicatat terpisah, bukan kegagalan fungsi
+ADM-12-003	Belum diuji	Test setting.spec.ts:79 gagal lebih dulu pada assertion Versi Web (footer kosong); tampilan WhatsApp CS belum terevaluasi
+UI-ADM-01	Perlu clarification	Fitur ada di UI lokal (halaman terbuka HTTP 200 di sweep) tetapi tidak punya requirement di docs/rules; expected result belum dapat ditetapkan
+UI-ADM-02	Perlu clarification	Fitur ada di UI lokal (halaman terbuka HTTP 200 di sweep) tetapi tidak punya requirement di docs/rules; expected result belum dapat ditetapkan
+UI-ADM-03	Perlu clarification	Fitur ada di UI lokal (halaman terbuka HTTP 200 di sweep) tetapi tidak punya requirement di docs/rules; expected result belum dapat ditetapkan
+UI-ADM-04	Perlu clarification	Fitur ada di UI lokal (halaman terbuka HTTP 200 di sweep) tetapi tidak punya requirement di docs/rules; expected result belum dapat ditetapkan
+UI-ADM-05	Perlu clarification	Fitur ada di UI lokal (halaman terbuka HTTP 200 di sweep) tetapi tidak punya requirement di docs/rules; expected result belum dapat ditetapkan
+UI-ADM-06	Perlu clarification	Fitur ada di UI lokal (halaman terbuka HTTP 200 di sweep) tetapi tidak punya requirement di docs/rules; expected result belum dapat ditetapkan
+UI-ADM-07	Perlu clarification	Fitur ada di UI lokal (halaman terbuka HTTP 200 di sweep) tetapi tidak punya requirement di docs/rules; expected result belum dapat ditetapkan
+UI-ADM-08	Perlu clarification	Fitur ada di UI lokal (halaman terbuka HTTP 200 di sweep) tetapi tidak punya requirement di docs/rules; expected result belum dapat ditetapkan
+UI-SHP-01	Perlu clarification	Fitur ada di UI lokal (halaman terbuka HTTP 200 di sweep) tetapi tidak punya requirement di docs/rules; expected result belum dapat ditetapkan
+UI-SHP-02	Perlu clarification	Fitur ada di UI lokal (halaman terbuka HTTP 200 di sweep) tetapi tidak punya requirement di docs/rules; expected result belum dapat ditetapkan
+UI-SHP-03	Perlu clarification	Fitur ada di UI lokal (halaman terbuka HTTP 200 di sweep) tetapi tidak punya requirement di docs/rules; expected result belum dapat ditetapkan
+UI-SHP-04	Perlu clarification	Fitur ada di UI lokal (halaman terbuka HTTP 200 di sweep) tetapi tidak punya requirement di docs/rules; expected result belum dapat ditetapkan

@@ -1,0 +1,177 @@
+- generic [active] [ref=f50e1]:
+  - generic [ref=f50e2]:
+    - generic [ref=f50e3]:
+      - generic [ref=f50e4]:
+        - link [ref=f50e6] [cursor=pointer]:
+          - /url: http://192.168.0.88:8102/
+        - button [ref=f50e10] [cursor=pointer]
+      - text:  
+      - generic [ref=f50e13]:
+        - generic [ref=f50e14]:
+          - generic [ref=f50e15]: Admin PH Bid
+          - button "Administrator" [ref=f50e17]
+        - text: 
+        - generic [ref=f50e21]:
+          - generic [ref=f50e22]:
+            - generic [ref=f50e23]: QA Laut ADMIN
+            - generic [ref=f50e24]: qa.laut.admin@example.invalid
+          - generic [ref=f50e25]: 
+          - link "" [ref=f50e28] [cursor=pointer]:
+            - /url: http://192.168.0.88:8102/home/notification
+          - link [ref=f50e35] [cursor=pointer]:
+            - /url: http://192.168.0.88:8102/user/do_logout
+    - generic [ref=f50e38]:
+      - generic [ref=f50e39]:
+        - text: 
+        - generic [ref=f50e40]:
+          - list [ref=f50e42]:
+            - listitem
+            - listitem [ref=f50e43]:
+              - link "CARI PENAWARAN" [ref=f50e44] [cursor=pointer]:
+                - /url: http://192.168.0.88:8102/lelang/carirute
+            - listitem [ref=f50e45]: MENU ADMIN
+            - listitem [ref=f50e46]:
+              - generic [ref=f50e47] [cursor=pointer]:
+                - text: DASHBOARD
+                - generic [ref=f50e50]: 
+            - listitem [ref=f50e51]:
+              - generic [ref=f50e52] [cursor=pointer]:
+                - text: ANALITIK
+                - generic [ref=f50e55]: 
+            - listitem [ref=f50e56]:
+              - link "PENGAJUAN LELANG" [ref=f50e57] [cursor=pointer]:
+                - /url: http://192.168.0.88:8102/lelang/listlelang
+            - listitem [ref=f50e60]:
+              - link "PENGAJUAN NEGO" [ref=f50e61] [cursor=pointer]:
+                - /url: http://192.168.0.88:8102/lelang/pengajuannego
+            - listitem [ref=f50e64]:
+              - link [ref=f50e65] [cursor=pointer]:
+                - /url: http://192.168.0.88:8102/order/orderlist
+            - listitem [ref=f50e68]:
+              - link "PENUGASAN TRACKING" [ref=f50e69] [cursor=pointer]:
+                - /url: http://192.168.0.88:8102/home/penugasantracking
+            - listitem [ref=f50e72]:
+              - link "CEK JADWAL" [ref=f50e73] [cursor=pointer]:
+                - /url: http://192.168.0.88:8102/lelang/carijadwal
+            - listitem [ref=f50e76]:
+              - generic [ref=f50e77] [cursor=pointer]:
+                - text: LAPORAN
+                - generic [ref=f50e80]: 
+            - listitem [ref=f50e81]:
+              - generic [ref=f50e82] [cursor=pointer]:
+                - text: VALIDASI AKUN
+                - generic [ref=f50e85]: 
+            - listitem [ref=f50e86]:
+              - generic [ref=f50e87] [cursor=pointer]:
+                - text: SETTING
+                - generic [ref=f50e90]: 
+            - listitem [ref=f50e91]:
+              - generic [ref=f50e92] [cursor=pointer]:
+                - text: MASTER
+                - generic [ref=f50e95]: 
+              - list [ref=f50e96]:
+                - listitem [ref=f50e97]:
+                  - link "Provinsi" [ref=f50e98] [cursor=pointer]:
+                    - /url: http://192.168.0.88:8102/adminprahu/masterpropinsi
+                - listitem [ref=f50e99]:
+                  - link "Kota" [ref=f50e100] [cursor=pointer]:
+                    - /url: http://192.168.0.88:8102/adminprahu/masterkota
+                - listitem [ref=f50e101]:
+                  - link "Pelabuhan" [ref=f50e102] [cursor=pointer]:
+                    - /url: http://192.168.0.88:8102/adminprahu/masterpelabuhan
+                - listitem [ref=f50e103]:
+                  - link "Bank" [ref=f50e104] [cursor=pointer]:
+                    - /url: http://192.168.0.88:8102/adminprahu/masterbank
+                - listitem [ref=f50e105]:
+                  - link "Include" [ref=f50e106] [cursor=pointer]:
+                    - /url: http://192.168.0.88:8102/adminprahu/masterInclude
+                - listitem [ref=f50e107]:
+                  - link "Kemasan" [ref=f50e108] [cursor=pointer]:
+                    - /url: http://192.168.0.88:8102/adminprahu/masterkemasan
+                - listitem [ref=f50e109]:
+                  - link "Jenis Muatan" [ref=f50e110] [cursor=pointer]:
+                    - /url: http://192.168.0.88:8102/analitik/masterjenismuatan
+                - listitem [ref=f50e111]:
+                  - link "Harga Barang" [ref=f50e112] [cursor=pointer]:
+                    - /url: http://192.168.0.88:8102/analitik/masterhargabarang
+                - listitem [ref=f50e113]:
+                  - link "Free Time" [ref=f50e114] [cursor=pointer]:
+                    - /url: http://192.168.0.88:8102/adminprahu/masterfreetime
+                - listitem [ref=f50e115]:
+                  - link "Pelayaran" [ref=f50e116] [cursor=pointer]:
+                    - /url: http://192.168.0.88:8102/adminprahu/pelayaran
+                - listitem [ref=f50e117]:
+                  - link "Jenis Kontainer" [ref=f50e118] [cursor=pointer]:
+                    - /url: http://192.168.0.88:8102/adminprahu/kontainer
+                - listitem [ref=f50e119]:
+                  - link "Dokumen Penagihan" [ref=f50e120] [cursor=pointer]:
+                    - /url: http://192.168.0.88:8102/adminprahu/masterDP
+                - listitem [ref=f50e121]:
+                  - link "Iklan Berbayar" [ref=f50e122] [cursor=pointer]:
+                    - /url: http://192.168.0.88:8102/adminprahu/masteriklan
+                - listitem [ref=f50e123]:
+                  - link "Petugas APK" [ref=f50e124] [cursor=pointer]:
+                    - /url: http://192.168.0.88:8102/adminprahu/masterpetugasapk
+            - listitem [ref=f50e125]:
+              - generic [ref=f50e126] [cursor=pointer]:
+                - text: PENGATURAN AKUN
+                - generic [ref=f50e129]: 
+            - listitem [ref=f50e130]:
+              - link "AKUN SAYA" [ref=f50e131] [cursor=pointer]:
+                - /url: http://192.168.0.88:8102/home/akunsaya
+            - listitem [ref=f50e134]: MENU TRANSPORTER
+            - listitem [ref=f50e135]:
+              - link "HARGA & JADWAL" [ref=f50e136] [cursor=pointer]:
+                - /url: http://192.168.0.88:8102/home/hargajadwal
+          - paragraph [ref=f50e143]: KONTAK KAMI
+      - generic [ref=f50e155]:
+        - generic [ref=f50e156]:
+          - generic [ref=f50e159]:
+            - link "Beranda" [ref=f50e161] [cursor=pointer]:
+              - /url: http://192.168.0.88:8102/lelang/listLelang
+            - text: / Master Provinsi
+          - generic [ref=f50e163]:
+            - generic [ref=f50e164]: MASTER PROVINSI
+            - generic [ref=f50e165]:
+              - button " Filter" [ref=f50e166] [cursor=pointer]:
+                - generic [ref=f50e167]: 
+                - text: Filter
+              - generic [ref=f50e168]: "*) Data dari sistem PH Bid Darat"
+              - generic [ref=f50e169]:
+                - text: Menampilkan
+                - combobox [ref=f50e170]:
+                  - option "20" [selected]
+                  - option "30"
+                  - option "50"
+                  - option "100"
+                - text: Data
+          - text:  
+          - table [ref=f50e172]:
+            - rowgroup [ref=f50e173]:
+              - row [ref=f50e174]:
+                - columnheader "No " [ref=f50e175] [cursor=pointer]:
+                  - generic [ref=f50e176]:
+                    - generic [ref=f50e177]: "No"
+                    - generic [ref=f50e178]: 
+                - columnheader "Nama Provinsi " [ref=f50e180] [cursor=pointer]:
+                  - generic [ref=f50e181]:
+                    - generic [ref=f50e182]: Nama Provinsi
+                    - generic [ref=f50e183]: 
+                - columnheader "Status " [ref=f50e185] [cursor=pointer]:
+                  - generic [ref=f50e186]:
+                    - generic [ref=f50e187]: Status
+                    - generic [ref=f50e188]: 
+              - row [ref=f50e190]:
+                - cell [ref=f50e191]
+            - rowgroup [ref=f50e192]:
+              - row [ref=f50e193]:
+                - cell [ref=f50e194]
+          - generic:
+            - status [ref=f50e201]
+            - generic [ref=f50e203]:
+              - list
+        - generic [ref=f50e206]:
+          - generic:
+            - generic:
+              - paragraph
+  - text:   

@@ -78,6 +78,18 @@ import {
 
 const buatLelangUrl = '/lelang/buatlelang';
 
+// Pilihan master per target (scripts/targets.js FIXTURES). null = target belum
+// punya data master/fixture sah → alur penuh GAGAL eksplisit sebelum mutasi.
+const { fixture, targetName } = require('../../scripts/targets.js');
+interface FixtureBuatLelang {
+  pelabuhanAsal: string;
+  pelabuhanTujuan: string;
+  kotaAsal: string;
+  kotaTujuan: string;
+  jenisKontainer: string;
+}
+const dataLelang: FixtureBuatLelang | null = fixture('buatLelang');
+
 const formPage = {
   nomorLelang: (page: Page) => page.getByRole('textbox', { name: 'Masukkan Nomor Lelang' }),
   biayaLaut: (page: Page) => page.getByRole('checkbox', { name: 'Biaya Laut' }),
@@ -192,6 +204,14 @@ test('alur penuh: buat lalu batalkan lelang memicu Push Notif Transporter dan Ad
   // logic submit menunggu resource itu berhasil dimuat).
   test.setTimeout(240_000);
 
+  // Precondition SEBELUM akses data: tanpa fixture sah tidak ada yang dibuat.
+  expect(
+    dataLelang,
+    `Fixture alur Buat Lelang untuk target ${targetName()} belum ditetapkan ` +
+      '(scripts/targets.js FIXTURES.<target>.buatLelang) — data master belum tersedia/terkonfirmasi',
+  ).not.toBeNull();
+  const data = dataLelang!;
+
   const nomorLelang = `AUTOTEST/${Date.now()}`;
   test.info().annotations.push(
     { type: 'data-uji', description: `Nomor lelang: ${nomorLelang}` },
@@ -220,17 +240,17 @@ test('alur penuh: buat lalu batalkan lelang memicu Push Notif Transporter dan Ad
     await ketikTanggalJam(page, '#tanggal_mulai_kontrak', tanggalJam(3));
     await ketikTanggalJam(page, '#tanggal_selesai_kontrak', tanggalJam(6));
 
-    await pilihSelect2(page, 1, 'Tanjung Priok'); // Pelabuhan Asal (POL)
-    await pilihSelect2(page, 2, 'Tanjung Perak'); // Pelabuhan Tujuan (POD)
+    await pilihSelect2(page, 1, data.pelabuhanAsal); // Pelabuhan Asal (POL)
+    await pilihSelect2(page, 2, data.pelabuhanTujuan); // Pelabuhan Tujuan (POD)
 
     await page.getByRole('textbox', { name: 'Masukkan Alamat Lengkap Asal' }).fill('Jl. Test Otomasi No. 1, Jakarta Utara');
-    await pilihSelect2(page, 3, 'Jakarta Utara'); // Kota Asal
+    await pilihSelect2(page, 3, data.kotaAsal); // Kota Asal
 
     await page.getByRole('textbox', { name: 'Masukkan Alamat Lengkap Tujuan' }).fill('Jl. Test Otomasi No. 2, Surabaya');
-    await pilihSelect2(page, 4, 'Kota Surabaya'); // Kota Tujuan
+    await pilihSelect2(page, 4, data.kotaTujuan); // Kota Tujuan
 
     await page.getByRole('searchbox', { name: 'Anda Bisa Memilih Beberapa' }).click();
-    await page.keyboard.type('20 DRY');
+    await page.keyboard.type(data.jenisKontainer);
     await page.locator('.select2-results__option--highlighted').click();
 
     await formPage.lanjutkanButton(page).click();

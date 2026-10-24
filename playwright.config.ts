@@ -1,4 +1,6 @@
 import { defineConfig, devices } from '@playwright/test';
+import { execSync } from 'child_process';
+import { createHash } from 'crypto';
 import dotenv from 'dotenv';
 import fs from 'fs';
 import path from 'path';
@@ -6,8 +8,10 @@ import path from 'path';
 /**
  * Target environment dipilih lewat TARGET_ENV (demo | local, default demo).
  * Tiap target punya env file, storageState, dan hasil run sendiri sehingga
- * run ke satu target tidak menimpa target lain:
- *   .env.<target>   .auth/<target>/<peran>.json   test-results/<target>/
+ * run ke satu target tidak menimpa target lain; tiap RUN juga punya folder
+ * sendiri agar bukti run sebelumnya (termasuk kegagalan pertama) tidak hilang:
+ *   .env.<target>   .auth/<target>/<peran>.json
+ *   test-results/<target>/runs/<runId>/   playwright-report/<target>/<runId>/
  */
 const TARGET = process.env.TARGET_ENV ?? 'demo';
 const ENV_FILE = path.resolve(__dirname, `.env.${TARGET}`);
@@ -20,6 +24,33 @@ if (!fs.existsSync(ENV_FILE)) {
 dotenv.config({ path: ENV_FILE, quiet: true });
 // Diteruskan ke helper test (auth.setup, push-notif.trigger) & generator report.
 process.env.TARGET_ENV = TARGET;
+
+// Run ID & versi suite dihitung SEKALI di proses utama lalu diwariskan lewat env
+// ke worker (config dievaluasi ulang di tiap worker; tanpa ini tiap worker
+// menghitung stempel waktu berbeda). PW_RUN_ID boleh di-set manual.
+const pad = (n: number) => String(n).padStart(2, '0');
+const now = new Date();
+process.env.PW_RUN_ID ??=
+  `${now.getFullYear()}${pad(now.getMonth() + 1)}${pad(now.getDate())}-` +
+  `${pad(now.getHours())}${pad(now.getMinutes())}${pad(now.getSeconds())}`;
+const RUN_ID = process.env.PW_RUN_ID;
+if (!process.env.PW_SUITE_VERSION) {
+  try {
+    // HEAD + sidik jari perubahan lokal (diff tracked + isi file untracked di
+    // tests/ & scripts/), supaya dua run dengan isi spec berbeda tidak tampak
+    // bervers sama (terjadi 2026-10-23: spec smoke berubah di antara run).
+    const git = (a: string) => execSync(`git ${a}`, { cwd: __dirname, stdio: ['ignore', 'pipe', 'ignore'] }).toString();
+    const head = git('rev-parse --short HEAD').trim();
+    const untracked = git('ls-files --others --exclude-standard -- tests scripts').split('\n').filter(Boolean).sort();
+    const hash = createHash('sha1').update(git('diff HEAD'));
+    for (const f of untracked) hash.update(f).update(fs.readFileSync(path.join(__dirname, f)));
+    const dirty = git('status --porcelain --untracked-files=no').trim() || untracked.length;
+    process.env.PW_SUITE_VERSION = dirty ? `${head}+lokal-${hash.digest('hex').slice(0, 8)}` : head;
+  } catch {
+    process.env.PW_SUITE_VERSION = 'Belum diketahui';
+  }
+}
+const RUN_DIR = `test-results/${TARGET}/runs/${RUN_ID}`;
 
 /**
  * Peran (dipakai konsisten di seluruh project):
@@ -58,17 +89,27 @@ export default defineConfig({
   // teramati berulang 2026-08-20) — 60 dtk memberi ruang tanpa menutupi
   // regresi nyata.
   timeout: 60_000,
-  // Per target: Playwright MEMBERSIHKAN outputDir di awal run, jadi folder
-  // bersama akan menghapus artefak/hasil target lain.
-  outputDir: `test-results/${TARGET}`,
+  // Per target & per run: Playwright MEMBERSIHKAN outputDir di awal run, jadi
+  // folder bersama akan menghapus artefak/hasil run atau target lain.
+  outputDir: RUN_DIR,
   // JSON dipakai scripts/generate-report.js untuk membuat
   // report/hasil-testing-<tanggal>-<jam>-<target>.xlsx.
   reporter: [
-    ['html', { outputFolder: `playwright-report/${TARGET}` }],
-    ['json', { outputFile: `test-results/${TARGET}/results.json` }],
+    ['html', { outputFolder: `playwright-report/${TARGET}/${RUN_ID}`, open: 'never' }],
+    ['json', { outputFile: `${RUN_DIR}/results.json` }],
   ],
   // Dibaca generator report (JSON reporter tidak menyimpan use.baseURL).
-  metadata: { target: TARGET, baseURL: process.env.BASE_URL },
+  // Build/runtime/dataset aplikasi tidak bisa dibaca otomatis dari UI → isi
+  // lewat env APP_BUILD / APP_RUNTIME / DATASET bila dev/DevOps sudah memberi.
+  metadata: {
+    target: TARGET,
+    baseURL: process.env.BASE_URL,
+    runId: RUN_ID,
+    suiteVersion: process.env.PW_SUITE_VERSION,
+    appBuild: process.env.APP_BUILD || 'Belum diketahui',
+    appRuntime: process.env.APP_RUNTIME || 'Belum diketahui',
+    dataset: process.env.DATASET || 'Belum diketahui',
+  },
   use: {
     baseURL: process.env.BASE_URL,
     trace: 'retain-on-failure',
@@ -80,6 +121,22 @@ export default defineConfig({
     {
       name: 'setup',
       testMatch: /auth\.setup\.ts/,
+      use: { ...devices['Desktop Chrome'] },
+    },
+    {
+      // Smoke lintas role, READ-ONLY (sesi tersimpan dipakai ulang + halaman
+      // inti tanpa 5xx). storageState di-set per describe di dalam spec.
+      name: 'smoke',
+      testMatch: 'smoke/**/*.spec.ts',
+      dependencies: ['setup'],
+      use: { ...devices['Desktop Chrome'] },
+    },
+    {
+      // Precondition alur bisnis kritis, READ-ONLY; gagal dengan daftar data
+      // yang kurang. storageState di-set per describe/konteks di dalam spec.
+      name: 'precondition',
+      testMatch: 'precondition/**/*.spec.ts',
+      dependencies: ['setup'],
       use: { ...devices['Desktop Chrome'] },
     },
     {

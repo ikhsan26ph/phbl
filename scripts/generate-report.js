@@ -3,8 +3,10 @@
  *
  * Target dipilih lewat TARGET_ENV (demo | local, default demo) — sama dengan
  * playwright.config.ts.
- * Input : test-results/<target>/results.json (diproduksi otomatis tiap
- *         `npm test`, lihat reporter di playwright.config.ts)
+ * Input : test-results/<target>/runs/<runId>/results.json — run TERBARU yang
+ *         benar-benar mengeksekusi test (bukan hasil --list), atau run tertentu
+ *         lewat PW_RUN_ID=<runId>. Format lama test-results/<target>/results.json
+ *         tetap dibaca bila belum ada folder runs/.
  * Output: report/hasil-testing-<YYYY-MM-DD>-<HHmm>-<target>.xlsx (tanggal &
  *         jam MULAI run, waktu lokal) — tidak menimpa laporan lain di hari
  *         yang sama.
@@ -30,7 +32,33 @@ const ExcelJS = require('exceljs');
 
 const ROOT = path.resolve(__dirname, '..');
 const TARGET = process.env.TARGET_ENV ?? 'demo';
-const INPUT = path.join(ROOT, 'test-results', TARGET, 'results.json');
+const TARGET_DIR = path.join(ROOT, 'test-results', TARGET);
+
+/** Jumlah test yang benar-benar dieksekusi (run --list = 0). */
+function executed(file) {
+  try {
+    const st = JSON.parse(fs.readFileSync(file, 'utf8')).stats || {};
+    return (st.expected || 0) + (st.unexpected || 0) + (st.flaky || 0) + (st.skipped || 0);
+  } catch {
+    return 0;
+  }
+}
+
+function resolveInput() {
+  const runsDir = path.join(TARGET_DIR, 'runs');
+  if (process.env.PW_RUN_ID) return path.join(runsDir, process.env.PW_RUN_ID, 'results.json');
+  if (fs.existsSync(runsDir)) {
+    // Urut menurut waktu tulis results.json, BUKAN nama folder: PW_RUN_ID
+    // manual (mis. "20261023-smoke-final") tidak terurut kronologis.
+    const runs = fs.readdirSync(runsDir)
+      .map((r) => path.join(runsDir, r, 'results.json'))
+      .filter((f) => fs.existsSync(f) && executed(f) > 0)
+      .sort((a, b) => fs.statSync(b).mtimeMs - fs.statSync(a).mtimeMs);
+    if (runs.length) return runs[0];
+  }
+  return path.join(TARGET_DIR, 'results.json');
+}
+const INPUT = resolveInput();
 const OUT_DIR = path.join(ROOT, 'report');
 
 /** project Playwright → nama sheet peran (admin-sub-read → Admin). */
@@ -89,17 +117,27 @@ function collectRows(suite, titleChain, rows) {
       const last = test.results[test.results.length - 1] || {};
       const durationMs = test.results.reduce((a, r) => a + (r.duration || 0), 0);
       const notes = [];
-      for (const a of test.annotations || []) {
-        notes.push(a.description ? `${a.type}: ${a.description}` : a.type);
+      // Anotasi statis (test.annotations) + anotasi runtime per attempt
+      // (results[].annotations, mis. http-5xx dari smoke), tanpa duplikat.
+      const seen = new Set();
+      for (const a of [...(test.annotations || []), ...test.results.flatMap((r) => r.annotations || [])]) {
+        const n = a.description ? `${a.type}: ${a.description}` : a.type;
+        if (!seen.has(n)) { seen.add(n); notes.push(n); }
       }
       if (test.status === 'unexpected' && last.errors && last.errors.length) {
         notes.push(stripAnsi(last.errors[0].message).split('\n')[0]);
       }
       if (test.status === 'flaky') {
         notes.push(`lulus setelah ${test.results.length - 1}x retry`);
+        // Bukti kegagalan PERTAMA tetap dicatat walau retry akhirnya lulus.
+        const first = test.results.find((r) => r.errors && r.errors.length);
+        if (first) notes.push(`kegagalan pertama: ${stripAnsi(first.errors[0].message).split('\n')[0]}`);
       }
       rows.push({
-        role: roleOfProject(test.projectName, spec.title),
+        // Project smoke lintas role: peran diambil dari describe "smoke <akun>".
+        role: test.projectName === 'smoke'
+          ? roleOfProject((titleChain.find((t) => /^smoke /.test(t)) || '').replace(/^smoke\s+/, ''), '')
+          : roleOfProject(test.projectName, spec.title),
         project: test.projectName,
         file: suite.file,
         module: moduleOfFile(suite.file),
@@ -167,6 +205,12 @@ async function main() {
   const meta = [
     ['Target', TARGET],
     ['Aplikasi', data.config?.metadata?.baseURL || '-'],
+    ['Run ID', data.config?.metadata?.runId || '-'],
+    ['Versi suite (git)', data.config?.metadata?.suiteVersion || 'Belum diketahui'],
+    ['Build aplikasi', data.config?.metadata?.appBuild || 'Belum diketahui'],
+    ['Runtime aplikasi', data.config?.metadata?.appRuntime || 'Belum diketahui'],
+    ['Dataset', data.config?.metadata?.dataset || 'Belum diketahui'],
+    ['File hasil', path.relative(ROOT, INPUT)],
     ['Tanggal eksekusi', runDate.toLocaleString('id-ID', { dateStyle: 'full', timeStyle: 'short' })],
     ['Durasi total', `${Math.round((data.stats?.duration || 0) / 1000)} detik`],
     ['Framework', `Playwright ${data.config?.version || ''} + TypeScript`],

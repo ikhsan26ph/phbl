@@ -1066,18 +1066,120 @@ Urutan rekomendasi (dari paling aman/tanpa mutasi ke yang butuh izin):
     `ADMIN_SUB_READ_EMAIL`/`ADMIN_SUB_READ_PASSWORD`).
   - sesi login: `.auth/<target>/<peran>.json` (juga dipakai
     `tests/push-notif.trigger.ts`).
-  - hasil run: `test-results/<target>/` (outputDir — Playwright MEMBERSIHKAN
-    folder ini di awal run, makanya dipisah per target) dan
-    `playwright-report/<target>/`.
+  - hasil run: `test-results/<target>/runs/<runId>/` (outputDir — Playwright
+    MEMBERSIHKAN folder ini di awal run, makanya dipisah per target DAN per run;
+    `PW_RUN_ID=<nama>` opsional) dan `playwright-report/<target>/<runId>/`.
+    `npm run report` memilih run terbaru menurut WAKTU results.json (bukan
+    nama folder) atau run tertentu via `PW_RUN_ID`. Metadata run: target,
+    runId, versi suite git, `APP_BUILD`/`APP_RUNTIME`/`DATASET` (env; default
+    "Belum diketahui"). JANGAN override reporter (`--reporter=list`) — JSON
+    hilang dan run tak bisa dilaporkan.
   - laporan: `report/hasil-testing-<YYYY-MM-DD>-<HHmm>-<target>.xlsx`;
     generator menolak `results.json` yang `metadata.target`-nya beda.
-- Target local = `http://192.168.0.88:8102` (login `/user/login`,
+- Target local = `http://192.168.0.89:8102` (sejak 2026-10-24; sebelumnya `.88`, instance
+  sama — PHP 8.2.35, data & akun identik) (login `/user/login`,
   `ADMIN_PATH=/`). Pakai host itu secara konsisten — cookie sesi terikat host.
 - Pemetaan 7 role akun local → project Playwright:
   ADMIN → `admin`, SUB_ADMIN → `admin-sub`, SUB_ADMIN_READ → `admin-sub-read`
   (BARU, hanya local), SHIPPER → `shipper`, SUB_SHIPPER → `shipper-sub`,
   OPERATOR → `transporter`, SUB_OPERATOR → `transporter-sub`.
-- Login yang kredensialnya kosong di env aktif di-SKIP (bukan gagal); spec
-  `tests/admin-sub-read/` di-skip di level file bila kredensialnya kosong.
-  Spec admin-sub-read saat ini baru placeholder (cek link KELUAR).
-- Semua spec lama dikalibrasi ke DEMO; belum ada yang dijalankan ke local.
+- Akun WAJIB/opsional per target di `scripts/targets.js` (local: 7 wajib;
+  demo: 6 wajib + admin-sub-read opsional). Akun WAJIB berkredensial kosong =
+  login setup GAGAL (penghambat kesiapan); opsional = skip. Spec
+  `tests/admin-sub-read/` masih placeholder (cek link KELUAR).
+- `TARGET_ENV=local npm run readiness` (`scripts/readiness-check.js`): wajib
+  TARGET_ENV eksplisit; cek env/akun/host/sesi + GET pasif /user/login &
+  /user/tess (jaringan hanya ke local). Project `smoke` (`tests/smoke/`):
+  32 skenario READ-ONLY lintas 7 role (sesi dipakai ulang, halaman inti tanpa
+  5xx/penolakan, sub user ditolak Edit Akun Saya). `scripts/klasifikasi-skenario.js`
+  = klasifikasi statis per skenario (heuristik, tinjau manual).
+
+### Lokal PHP 8.2.35 — inventaris & kesiapan (2026-10-23, read-only)
+
+- Laporan: `report/inventaris-local-2026-10-23.{md,xlsx}` (data & akses per
+  role) dan `report/kesiapan-php82-local-2026-10-23.{md,xlsx}` (matriks
+  kesiapan, 529 skenario terklasifikasi, temuan, rencana alur kritis, Go/No-Go);
+  bukti teredaksi di `report/evidence-local-2026-10-23/`.
+- Hasil lokal = baseline VERSI TUJUAN (8.2.35), bukan pra-upgrade. Pembanding
+  pra-upgrade hanya: pool demo/live `php8.1-fpm` per 2026-09-30. Demo BUKAN
+  pembanding sah (build/data/role/konfigurasi berbeda). Keputusan: BELUM SIAP
+  regresi bisnis/rilis; smoke read-only = gerbang awal.
+- Run gabungan (setup + smoke + 13 spec read-only): 103 test → 78 passed (2
+  test.fail), 21 failed, 4 skipped. Penyebab: 2 HTTP 500 Penugasan Tracking
+  (`FileApk() on null`), 13 data/precondition (DB kosong, 0 notif, akun QA
+  tanpa file/rekening), 10 clarification hak akses sub user. Smoke final 30/32.
+- Fakta lokal: DB kosong; sub user hanya Akun Saya (admin-sub-read + Master ›
+  Bank); Master Provinsi = HTTP 500 DITERIMA setelah ±60 dtk (max_execution_time
+  30 dtk) — jangan dimuat berulang (request lain antre); /user/tess = phpinfo
+  tanpa login; cookie PHPSESSID tanpa HttpOnly/SameSite; display_errors aktif.
+  Sesi TIDAK seragam: setelah login lain, sesi admin & admin-sub-read tetap
+  diterima, 5 akun lain ditolak → selalu jalankan setup ulang sebelum run.
+- Jebakan: Cari Penawaran shipper membawa `div.loading` TERSEMBUNYI berteks
+  "Mohon tunggu sebentar" → penanda loading wajib `.filter({ visible: true })`.
+
+### Lanjutan 2026-10-23: rekonsiliasi, tindak lanjut, alur kritis #1
+
+- `report/tindak-lanjut-php82-local-2026-10-23.{md,xlsx}`: rekonsiliasi PER RUN
+  (angka "103/78 passed" = tampilan turunan 2 run: 75 normal + 2 test.fail +
+  1 placeholder), koreksi interpretasi, tindak lanjut D/C/N/S/E. Koreksi kunci:
+  php -v CLI ≠ bukti runtime web/FPM; phpinfo publik = temuan keamanan, bukan
+  alat verifikasi patch; detail error di response ≠ display_errors terverifikasi;
+  `--list` ≠ type-check.
+- Type-check: `npx -p typescript@5.6.3 tsc --noEmit --skipLibCheck --strict
+  --target es2022 --module commonjs --moduleResolution node --esModuleInterop
+  --types node <file>` (tanpa ubah package.json). Seluruh tests/: 1 error lama
+  `admin/daftar-order-edit-harga.spec.ts:239` (TS2339).
+- Label versi suite kini `HEAD+lokal-<hash isi perubahan>`.
+- Alur kritis #1 = Buat Lelang normal → 1 peserta → submit
+  (`report/alur-kritis-buat-lelang-2026-10-23.md`). Pilihan master per target di
+  `scripts/targets.js` `FIXTURES` (demo = literal lama; local = null → spec alur
+  GAGAL eksplisit sebelum mutasi). Project `precondition`
+  (`tests/precondition/`, read-only) melaporkan data yang kurang. Lokal: form
+  terbuka, transporter fixture AKTIF alias QAL3, tapi dropdown POL/POD/Kota/
+  Jenis Kontainer 0 opsi (dirender server, tanpa AJAX). Kota & Provinsi TANPA
+  tombol Tambah (lokal & demo) → butuh seed. Setting Notifikasi lokal: push/
+  email/WA semua OFF (Push Notif CP6 kemungkinan tidak terjadi).
+- Penugasan Tracking 500 identik (`FileApk() on null`) untuk admin,
+  transporter, dan SHIPPER (shipper tanpa menu pun 500, bukan ditolak). Sub
+  user `/home/editakunsaya` = 302 → akunsaya, body kosong (smoke kini assert
+  status 3xx + tanpa form update). Membuka `/adminprahu/masterkota` sempat
+  diikuti antrean server (login 12,4 dtk; pulih sendiri) → jangan dibuka
+  berulang.
+- Handoff tahap matriks: `docs/HANDOFF-2026-10-23.md` (bagian akhir diperbarui 2026-10-24).
+
+### Matriks cakupan fitur (2026-10-24) — ACUAN UTAMA status fitur
+
+- `report/matriks-cakupan-fitur-2026-10-24.{md,xlsx}`: 1.331 aksi (rules 1.317 +
+  14 fitur UI tanpa rule `UI-*`), status per aksi: Berjalan 56, Bermasalah 24,
+  Blocked 1.010 (data 618, izin mutasi 347, D1 42), Perlu clarification 16,
+  Belum diuji 225. Cakupan fitur ≠ jumlah test.
+- Bangun ulang: `node scripts/matriks-cakupan.js` lalu
+  `node scripts/matriks-cakupan-xlsx.js --md=<laporan.md>`. Input di
+  `report/evidence-local-2026-10-23/` (`inventaris-fitur/fitur-*.tsv`, `map-*.tsv`,
+  `koreksi-qa.tsv`, `katalog-test-hasil-lokal.tsv`). Katalog perlu dibangun ulang
+  setelah run baru (skrip pembentuknya ada di handoff/riwayat; hasil terbaru
+  menimpa per test).
+- Penyaring bukti WAJIB (spot-check membuktikan klaim berlebih tanpa ini): spec
+  bersama `push-notif.shared.ts` & smoke (satu file:line utk banyak test) hanya
+  dihitung untuk role/halaman yang cocok; fitur ber-prasyarat data tidak boleh
+  "Berjalan" hanya karena struktur lulus saat DB kosong; kasus negatif ≠ bukti
+  kasus positif. Koreksi manual WAJIB lewat `koreksi-qa.tsv` (dengan alasan).
+- Rule Setting Notifikasi (admin 12-setting:49-54): default ON, OFF = tidak
+  dikirim → perilaku OFF bisa diuji TANPA ubah setting (trigger + bandingkan ID).
+- Fitur UI tanpa rule: Analitik Ringkasan/Freight Cost/OTDR/Shipment Accuracy,
+  Biaya Layanan, Master Jenis Muatan/Harga Barang, Free Time. D5 = Master Jenis
+  Muatan shipper `/analitik/datajenismuatan` HTTP 500 ±60 dtk.
+- JANGAN jalankan `admin/master.spec.ts:211` (loop memuat Provinsi/Kota → antrean)
+  dan `anon/registrasi.spec.ts:107/119` (submit registrasi; validasi diam → risiko
+  membuat akun).
+- 2026-10-24: server `.88` mati; user memberi host baru `.89` (BASE_URL diganti).
+  Upaya mutasi pertama (trigger notifikasi via perubahan akun shipper) DITOLAK
+  pengaman otomatis Claude Code ("Modify Shared Resources") — user perlu
+  menambah izin di pengaturan Claude Code sebelum mutasi bisa dieksekusi; jangan
+  memutar lewat test runner. Admin lokal 0 notifikasi (baseline 02:19 UTC).
+  Form Edit Akun Saya shipper lokal = `POST /home/doupdateakunsaya/2`, tombol
+  `#tombolSimpanEditAkun`; rule: admin TOLAK perubahan → data tetap (bid-owner
+  04-akun-saya:12) → kandidat trigger Akun yang bersih untuk uji Push ON/OFF.
+- Draf observasi 13 fitur UI tanpa rule (read-only):
+  `report/draft-observasi-fitur-ui-tanpa-rule-2026-10-24.md`. D5 juga memukul
+  daftar Harga Barang shipper (XHR `searchdatajenismuatan` 500).

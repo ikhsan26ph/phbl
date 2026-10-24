@@ -1,0 +1,680 @@
+[    1959ms] [VERBOSE] [DOM] Input elements should have autocomplete attributes (suggested: "current-password"): (More info: https://goo.gl/9p2vKq) %o @ http://192.168.0.88:8102/user/login:0
+[    1961ms] [LOG] 0 @ http://192.168.0.88:8102/user/login:1432
+[    1961ms] [LOG] undefined scr @ http://192.168.0.88:8102/user/login:1436
+[    6267ms] [LOG] ddd @ http://192.168.0.88:8102/user/login:1531
+[    6684ms] [LOG] {pesan: SHIPPER, status: 1, user_aktif: 1, ParentID: 0, redirect: } @ http://192.168.0.88:8102/user/login:1564
+[    6685ms] [LOG] {pesan: SHIPPER, status: 1, user_aktif: 1, ParentID: 0, redirect: } a @ http://192.168.0.88:8102/user/login:1566
+[    8322ms] [LOG] undefinednamanya @ http://192.168.0.88:8102/lelang/carirute:2138
+[    8346ms] [LOG] undefined @ http://192.168.0.88:8102/lelang/carirute:6262
+[    8347ms] [LOG] undefined @ http://192.168.0.88:8102/lelang/carirute:6262
+[    8347ms] [LOG] undefined @ http://192.168.0.88:8102/lelang/carirute:6262
+[    8347ms] [LOG] Masukkan Nomor Lelang @ http://192.168.0.88:8102/lelang/carirute:6262
+[    8347ms] [LOG] undefined @ http://192.168.0.88:8102/lelang/carirute:6262
+[    8348ms] [LOG] WebSocket connection @ http://192.168.0.88:8102/lelang/carirute:6305
+[    8349ms] [LOG] WebSocket connection attempting... @ http://192.168.0.88:8102/lelang/carirute:6383
+[    8539ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://192.168.0.88:8102/assets/tombol_close.png:0
+[    8818ms] [ERROR] WebSocket connection to 'ws://192.168.0.88:8102/' failed: Error during WebSocket handshake: Unexpected response code: 302 @ http://192.168.0.88:8102/lelang/carirute:6304
+[    8819ms] [LOG] WebSocket error: undefined @ http://192.168.0.88:8102/lelang/carirute:6349
+[    8819ms] [LOG] Reconnecting in 2 seconds... @ http://192.168.0.88:8102/lelang/carirute:6392
+[    8819ms] [LOG] WebSocket closed @ http://192.168.0.88:8102/lelang/carirute:6308
+[    8819ms] [LOG] Reconnecting in 4 seconds... @ http://192.168.0.88:8102/lelang/carirute:6392
+[   10613ms] [TABLE] {UI version: 8.4.1, Core version: 8.4.0, Build: NC8xMi8yMDIyfDRkZTU3MmExYg==, WebViewer Server: false, Full API: false} @ http://192.168.0.88:8102/_resources/themes/prahutheme/javascript/PDFView/lib/ui/webviewer-ui.min.js:270
+[   10861ms] [VERBOSE] [DOM] Password forms should have (optionally hidden) username fields for accessibility: (More info: https://goo.gl/9p2vKq) %o @ http://192.168.0.88:8102/_resources/themes/prahutheme/javascript/PDFView/lib/ui/index.html#a=1&disabledElements=downloadButton%2CprintButton%2ClanguageButton&filepicker=0&pdfnet=0&enableRedaction=0&enableMeasurement=0&pageHistory=1&notesInLeftPanel=0&singleServerMode=false&selectAnnotationOnCreation=0&autoFocusNoteOnAnnotationSelection=1&id=1&basePath=%2Flelang%2Fcarirute:0
+[   10944ms] [LOG] WebSocket connection @ http://192.168.0.88:8102/lelang/carirute:6305
+[   10944ms] [LOG] WebSocket connection attempting... @ http://192.168.0.88:8102/lelang/carirute:6383
+[   11217ms] [ERROR] WebSocket connection to 'ws://192.168.0.88:8102/' failed: Error during WebSocket handshake: Unexpected response code: 302 @ http://192.168.0.88:8102/lelang/carirute:6304
+[   11217ms] [LOG] WebSocket error: undefined @ http://192.168.0.88:8102/lelang/carirute:6349
+[   11217ms] [LOG] Reconnecting in 8 seconds... @ http://192.168.0.88:8102/lelang/carirute:6392
+[   11217ms] [LOG] WebSocket closed @ http://192.168.0.88:8102/lelang/carirute:6308
+[   11217ms] [LOG] Reconnecting in 16 seconds... @ http://192.168.0.88:8102/lelang/carirute:6392
+[   12827ms] [LOG] WebSocket connection @ http://192.168.0.88:8102/lelang/carirute:6305
+[   12827ms] [LOG] WebSocket connection attempting... @ http://192.168.0.88:8102/lelang/carirute:6383
+[   13184ms] [ERROR] WebSocket connection to 'ws://192.168.0.88:8102/' failed: Error during WebSocket handshake: Unexpected response code: 302 @ http://192.168.0.88:8102/lelang/carirute:6304
+[   13184ms] [LOG] WebSocket error: undefined @ http://192.168.0.88:8102/lelang/carirute:6349
+[   13184ms] [LOG] Reconnecting in 32 seconds... @ http://192.168.0.88:8102/lelang/carirute:6392
+[   13184ms] [LOG] WebSocket closed @ http://192.168.0.88:8102/lelang/carirute:6308
+[   13184ms] [LOG] Reconnecting in 64 seconds... @ http://192.168.0.88:8102/lelang/carirute:6392
+[   15663ms] [LOG] Pengajuan Lelangnamanya @ http://192.168.0.88:8102/lelang/listlelang?tab=semua-lelang:1867
+[   15668ms] [LOG] undefined @ http://192.168.0.88:8102/lelang/listlelang?tab=semua-lelang:5839
+[   15668ms] [LOG] undefined @ http://192.168.0.88:8102/lelang/listlelang?tab=semua-lelang:5839
+[   15669ms] [LOG] Masukkan Nomor Lelang @ http://192.168.0.88:8102/lelang/listlelang?tab=semua-lelang:5839
+[   15669ms] [LOG] DD/MM/YYYY @ http://192.168.0.88:8102/lelang/listlelang?tab=semua-lelang:5839
+[   15669ms] [LOG] DD/MM/YYYY @ http://192.168.0.88:8102/lelang/listlelang?tab=semua-lelang:5839
+[   15669ms] [LOG] DD/MM/YYYY @ http://192.168.0.88:8102/lelang/listlelang?tab=semua-lelang:5839
+[   15669ms] [LOG] DD/MM/YYYY @ http://192.168.0.88:8102/lelang/listlelang?tab=semua-lelang:5839
+[   15669ms] [LOG] undefined @ http://192.168.0.88:8102/lelang/listlelang?tab=semua-lelang:5839
+[   15669ms] [LOG] undefined @ http://192.168.0.88:8102/lelang/listlelang?tab=semua-lelang:5839
+[   15669ms] [LOG] Masukkan Nama Bank @ http://192.168.0.88:8102/lelang/listlelang?tab=semua-lelang:5839
+[   15670ms] [LOG] undefined @ http://192.168.0.88:8102/lelang/listlelang?tab=semua-lelang:5839
+[   15670ms] [LOG] WebSocket connection @ http://192.168.0.88:8102/lelang/listlelang?tab=semua-lelang:5882
+[   15671ms] [LOG] WebSocket connection attempting... @ http://192.168.0.88:8102/lelang/listlelang?tab=semua-lelang:5960
+[   15998ms] [LOG] [] @ http://192.168.0.88:8102/_resources/themes/prahutheme/javascript/custom/listLelang.js?m=1792376516:14
+[   16000ms] [LOG] 200 xhrglobal @ http://192.168.0.88:8102/lelang/listlelang?tab=semua-lelang:5813
+[   16296ms] [ERROR] WebSocket connection to 'ws://192.168.0.88:8102/' failed: Error during WebSocket handshake: Unexpected response code: 302 @ http://192.168.0.88:8102/lelang/listlelang?tab=semua-lelang:5881
+[   16296ms] [LOG] WebSocket error: undefined @ http://192.168.0.88:8102/lelang/listlelang?tab=semua-lelang:5926
+[   16296ms] [LOG] Reconnecting in 2 seconds... @ http://192.168.0.88:8102/lelang/listlelang?tab=semua-lelang:5969
+[   16296ms] [LOG] WebSocket closed @ http://192.168.0.88:8102/lelang/listlelang?tab=semua-lelang:5885
+[   16296ms] [LOG] Reconnecting in 4 seconds... @ http://192.168.0.88:8102/lelang/listlelang?tab=semua-lelang:5969
+[   18297ms] [LOG] WebSocket connection @ http://192.168.0.88:8102/lelang/listlelang?tab=semua-lelang:5882
+[   18298ms] [LOG] WebSocket connection attempting... @ http://192.168.0.88:8102/lelang/listlelang?tab=semua-lelang:5960
+[   18810ms] [ERROR] WebSocket connection to 'ws://192.168.0.88:8102/' failed: Error during WebSocket handshake: Unexpected response code: 302 @ http://192.168.0.88:8102/lelang/listlelang?tab=semua-lelang:5881
+[   18810ms] [LOG] WebSocket error: undefined @ http://192.168.0.88:8102/lelang/listlelang?tab=semua-lelang:5926
+[   18810ms] [LOG] Reconnecting in 8 seconds... @ http://192.168.0.88:8102/lelang/listlelang?tab=semua-lelang:5969
+[   18811ms] [LOG] WebSocket closed @ http://192.168.0.88:8102/lelang/listlelang?tab=semua-lelang:5885
+[   18811ms] [LOG] Reconnecting in 16 seconds... @ http://192.168.0.88:8102/lelang/listlelang?tab=semua-lelang:5969
+[   20313ms] [LOG] WebSocket connection @ http://192.168.0.88:8102/lelang/listlelang?tab=semua-lelang:5882
+[   20313ms] [LOG] WebSocket connection attempting... @ http://192.168.0.88:8102/lelang/listlelang?tab=semua-lelang:5960
+[   20804ms] [ERROR] WebSocket connection to 'ws://192.168.0.88:8102/' failed: Error during WebSocket handshake: Unexpected response code: 302 @ http://192.168.0.88:8102/lelang/listlelang?tab=semua-lelang:5881
+[   20805ms] [LOG] WebSocket error: undefined @ http://192.168.0.88:8102/lelang/listlelang?tab=semua-lelang:5926
+[   20805ms] [LOG] Reconnecting in 32 seconds... @ http://192.168.0.88:8102/lelang/listlelang?tab=semua-lelang:5969
+[   20805ms] [LOG] WebSocket closed @ http://192.168.0.88:8102/lelang/listlelang?tab=semua-lelang:5885
+[   20806ms] [LOG] Reconnecting in 64 seconds... @ http://192.168.0.88:8102/lelang/listlelang?tab=semua-lelang:5969
+[   26821ms] [LOG] WebSocket connection @ http://192.168.0.88:8102/lelang/listlelang?tab=semua-lelang:5882
+[   26822ms] [LOG] WebSocket connection attempting... @ http://192.168.0.88:8102/lelang/listlelang?tab=semua-lelang:5960
+[   27199ms] [ERROR] WebSocket connection to 'ws://192.168.0.88:8102/' failed: Error during WebSocket handshake: Unexpected response code: 302 @ http://192.168.0.88:8102/lelang/listlelang?tab=semua-lelang:5881
+[   27199ms] [LOG] WebSocket error: undefined @ http://192.168.0.88:8102/lelang/listlelang?tab=semua-lelang:5926
+[   27199ms] [LOG] Reconnecting in 128 seconds... @ http://192.168.0.88:8102/lelang/listlelang?tab=semua-lelang:5969
+[   27200ms] [LOG] WebSocket closed @ http://192.168.0.88:8102/lelang/listlelang?tab=semua-lelang:5885
+[   27200ms] [LOG] Reconnecting in 256 seconds... @ http://192.168.0.88:8102/lelang/listlelang?tab=semua-lelang:5969
+[   31600ms] [LOG] Pengajuan Lelangnamanya @ http://192.168.0.88:8102/lelang/listlelang?tab=perlu-input-harga:1867
+[   31605ms] [LOG] undefined @ http://192.168.0.88:8102/lelang/listlelang?tab=perlu-input-harga:5839
+[   31605ms] [LOG] undefined @ http://192.168.0.88:8102/lelang/listlelang?tab=perlu-input-harga:5839
+[   31605ms] [LOG] Masukkan Nomor Lelang @ http://192.168.0.88:8102/lelang/listlelang?tab=perlu-input-harga:5839
+[   31605ms] [LOG] DD/MM/YYYY @ http://192.168.0.88:8102/lelang/listlelang?tab=perlu-input-harga:5839
+[   31605ms] [LOG] DD/MM/YYYY @ http://192.168.0.88:8102/lelang/listlelang?tab=perlu-input-harga:5839
+[   31605ms] [LOG] DD/MM/YYYY @ http://192.168.0.88:8102/lelang/listlelang?tab=perlu-input-harga:5839
+[   31605ms] [LOG] DD/MM/YYYY @ http://192.168.0.88:8102/lelang/listlelang?tab=perlu-input-harga:5839
+[   31605ms] [LOG] undefined @ http://192.168.0.88:8102/lelang/listlelang?tab=perlu-input-harga:5839
+[   31605ms] [LOG] undefined @ http://192.168.0.88:8102/lelang/listlelang?tab=perlu-input-harga:5839
+[   31605ms] [LOG] Masukkan Nama Bank @ http://192.168.0.88:8102/lelang/listlelang?tab=perlu-input-harga:5839
+[   31606ms] [LOG] undefined @ http://192.168.0.88:8102/lelang/listlelang?tab=perlu-input-harga:5839
+[   31606ms] [LOG] WebSocket connection @ http://192.168.0.88:8102/lelang/listlelang?tab=perlu-input-harga:5882
+[   31606ms] [LOG] WebSocket connection attempting... @ http://192.168.0.88:8102/lelang/listlelang?tab=perlu-input-harga:5960
+[   31927ms] [LOG] [] @ http://192.168.0.88:8102/_resources/themes/prahutheme/javascript/custom/listLelang.js?m=1792376516:14
+[   31930ms] [LOG] 200 xhrglobal @ http://192.168.0.88:8102/lelang/listlelang?tab=perlu-input-harga:5813
+[   32217ms] [ERROR] WebSocket connection to 'ws://192.168.0.88:8102/' failed: Error during WebSocket handshake: Unexpected response code: 302 @ http://192.168.0.88:8102/lelang/listlelang?tab=perlu-input-harga:5881
+[   32217ms] [LOG] WebSocket error: undefined @ http://192.168.0.88:8102/lelang/listlelang?tab=perlu-input-harga:5926
+[   32217ms] [LOG] Reconnecting in 2 seconds... @ http://192.168.0.88:8102/lelang/listlelang?tab=perlu-input-harga:5969
+[   32218ms] [LOG] WebSocket closed @ http://192.168.0.88:8102/lelang/listlelang?tab=perlu-input-harga:5885
+[   32218ms] [LOG] Reconnecting in 4 seconds... @ http://192.168.0.88:8102/lelang/listlelang?tab=perlu-input-harga:5969
+[   34223ms] [LOG] WebSocket connection @ http://192.168.0.88:8102/lelang/listlelang?tab=perlu-input-harga:5882
+[   34224ms] [LOG] WebSocket connection attempting... @ http://192.168.0.88:8102/lelang/listlelang?tab=perlu-input-harga:5960
+[   34547ms] [ERROR] WebSocket connection to 'ws://192.168.0.88:8102/' failed: Error during WebSocket handshake: Unexpected response code: 302 @ http://192.168.0.88:8102/lelang/listlelang?tab=perlu-input-harga:5881
+[   34547ms] [LOG] WebSocket error: undefined @ http://192.168.0.88:8102/lelang/listlelang?tab=perlu-input-harga:5926
+[   34547ms] [LOG] Reconnecting in 8 seconds... @ http://192.168.0.88:8102/lelang/listlelang?tab=perlu-input-harga:5969
+[   34547ms] [LOG] WebSocket closed @ http://192.168.0.88:8102/lelang/listlelang?tab=perlu-input-harga:5885
+[   34548ms] [LOG] Reconnecting in 16 seconds... @ http://192.168.0.88:8102/lelang/listlelang?tab=perlu-input-harga:5969
+[   36224ms] [LOG] WebSocket connection @ http://192.168.0.88:8102/lelang/listlelang?tab=perlu-input-harga:5882
+[   36224ms] [LOG] WebSocket connection attempting... @ http://192.168.0.88:8102/lelang/listlelang?tab=perlu-input-harga:5960
+[   36538ms] [ERROR] WebSocket connection to 'ws://192.168.0.88:8102/' failed: Error during WebSocket handshake: Unexpected response code: 302 @ http://192.168.0.88:8102/lelang/listlelang?tab=perlu-input-harga:5881
+[   36539ms] [LOG] WebSocket error: undefined @ http://192.168.0.88:8102/lelang/listlelang?tab=perlu-input-harga:5926
+[   36539ms] [LOG] Reconnecting in 32 seconds... @ http://192.168.0.88:8102/lelang/listlelang?tab=perlu-input-harga:5969
+[   36540ms] [LOG] WebSocket closed @ http://192.168.0.88:8102/lelang/listlelang?tab=perlu-input-harga:5885
+[   36540ms] [LOG] Reconnecting in 64 seconds... @ http://192.168.0.88:8102/lelang/listlelang?tab=perlu-input-harga:5969
+[   42553ms] [LOG] WebSocket connection @ http://192.168.0.88:8102/lelang/listlelang?tab=perlu-input-harga:5882
+[   42554ms] [LOG] WebSocket connection attempting... @ http://192.168.0.88:8102/lelang/listlelang?tab=perlu-input-harga:5960
+[   43879ms] [ERROR] WebSocket connection to 'ws://192.168.0.88:8102/' failed: Error during WebSocket handshake: Unexpected response code: 302 @ http://192.168.0.88:8102/lelang/listlelang?tab=perlu-input-harga:5881
+[   43879ms] [LOG] WebSocket error: undefined @ http://192.168.0.88:8102/lelang/listlelang?tab=perlu-input-harga:5926
+[   43879ms] [LOG] Reconnecting in 128 seconds... @ http://192.168.0.88:8102/lelang/listlelang?tab=perlu-input-harga:5969
+[   43879ms] [LOG] WebSocket closed @ http://192.168.0.88:8102/lelang/listlelang?tab=perlu-input-harga:5885
+[   43879ms] [LOG] Reconnecting in 256 seconds... @ http://192.168.0.88:8102/lelang/listlelang?tab=perlu-input-harga:5969
+[   46177ms] [LOG] Pengajuan Lelangnamanya @ http://192.168.0.88:8102/lelang/listlelang?tab=perlu-update-harga:1867
+[   46183ms] [LOG] undefined @ http://192.168.0.88:8102/lelang/listlelang?tab=perlu-update-harga:5839
+[   46183ms] [LOG] undefined @ http://192.168.0.88:8102/lelang/listlelang?tab=perlu-update-harga:5839
+[   46183ms] [LOG] Masukkan Nomor Lelang @ http://192.168.0.88:8102/lelang/listlelang?tab=perlu-update-harga:5839
+[   46183ms] [LOG] DD/MM/YYYY @ http://192.168.0.88:8102/lelang/listlelang?tab=perlu-update-harga:5839
+[   46183ms] [LOG] DD/MM/YYYY @ http://192.168.0.88:8102/lelang/listlelang?tab=perlu-update-harga:5839
+[   46183ms] [LOG] DD/MM/YYYY @ http://192.168.0.88:8102/lelang/listlelang?tab=perlu-update-harga:5839
+[   46183ms] [LOG] DD/MM/YYYY @ http://192.168.0.88:8102/lelang/listlelang?tab=perlu-update-harga:5839
+[   46184ms] [LOG] undefined @ http://192.168.0.88:8102/lelang/listlelang?tab=perlu-update-harga:5839
+[   46184ms] [LOG] undefined @ http://192.168.0.88:8102/lelang/listlelang?tab=perlu-update-harga:5839
+[   46184ms] [LOG] Masukkan Nama Bank @ http://192.168.0.88:8102/lelang/listlelang?tab=perlu-update-harga:5839
+[   46184ms] [LOG] undefined @ http://192.168.0.88:8102/lelang/listlelang?tab=perlu-update-harga:5839
+[   46185ms] [LOG] WebSocket connection @ http://192.168.0.88:8102/lelang/listlelang?tab=perlu-update-harga:5882
+[   46185ms] [LOG] WebSocket connection attempting... @ http://192.168.0.88:8102/lelang/listlelang?tab=perlu-update-harga:5960
+[   46524ms] [LOG] [] @ http://192.168.0.88:8102/_resources/themes/prahutheme/javascript/custom/listLelang.js?m=1792376516:14
+[   46527ms] [LOG] 200 xhrglobal @ http://192.168.0.88:8102/lelang/listlelang?tab=perlu-update-harga:5813
+[   46831ms] [ERROR] WebSocket connection to 'ws://192.168.0.88:8102/' failed: Error during WebSocket handshake: Unexpected response code: 302 @ http://192.168.0.88:8102/lelang/listlelang?tab=perlu-update-harga:5881
+[   46831ms] [LOG] WebSocket error: undefined @ http://192.168.0.88:8102/lelang/listlelang?tab=perlu-update-harga:5926
+[   46832ms] [LOG] Reconnecting in 2 seconds... @ http://192.168.0.88:8102/lelang/listlelang?tab=perlu-update-harga:5969
+[   46833ms] [LOG] WebSocket closed @ http://192.168.0.88:8102/lelang/listlelang?tab=perlu-update-harga:5885
+[   46833ms] [LOG] Reconnecting in 4 seconds... @ http://192.168.0.88:8102/lelang/listlelang?tab=perlu-update-harga:5969
+[   48834ms] [LOG] WebSocket connection @ http://192.168.0.88:8102/lelang/listlelang?tab=perlu-update-harga:5882
+[   48834ms] [LOG] WebSocket connection attempting... @ http://192.168.0.88:8102/lelang/listlelang?tab=perlu-update-harga:5960
+[   49280ms] [ERROR] WebSocket connection to 'ws://192.168.0.88:8102/' failed: Error during WebSocket handshake: Unexpected response code: 302 @ http://192.168.0.88:8102/lelang/listlelang?tab=perlu-update-harga:5881
+[   49281ms] [LOG] WebSocket error: undefined @ http://192.168.0.88:8102/lelang/listlelang?tab=perlu-update-harga:5926
+[   49281ms] [LOG] Reconnecting in 8 seconds... @ http://192.168.0.88:8102/lelang/listlelang?tab=perlu-update-harga:5969
+[   49282ms] [LOG] WebSocket closed @ http://192.168.0.88:8102/lelang/listlelang?tab=perlu-update-harga:5885
+[   49282ms] [LOG] Reconnecting in 16 seconds... @ http://192.168.0.88:8102/lelang/listlelang?tab=perlu-update-harga:5969
+[   50841ms] [LOG] WebSocket connection @ http://192.168.0.88:8102/lelang/listlelang?tab=perlu-update-harga:5882
+[   50841ms] [LOG] WebSocket connection attempting... @ http://192.168.0.88:8102/lelang/listlelang?tab=perlu-update-harga:5960
+[   51677ms] [ERROR] WebSocket connection to 'ws://192.168.0.88:8102/' failed: Error during WebSocket handshake: Unexpected response code: 302 @ http://192.168.0.88:8102/lelang/listlelang?tab=perlu-update-harga:5881
+[   51677ms] [LOG] WebSocket error: undefined @ http://192.168.0.88:8102/lelang/listlelang?tab=perlu-update-harga:5926
+[   51677ms] [LOG] Reconnecting in 32 seconds... @ http://192.168.0.88:8102/lelang/listlelang?tab=perlu-update-harga:5969
+[   51677ms] [LOG] WebSocket closed @ http://192.168.0.88:8102/lelang/listlelang?tab=perlu-update-harga:5885
+[   51677ms] [LOG] Reconnecting in 64 seconds... @ http://192.168.0.88:8102/lelang/listlelang?tab=perlu-update-harga:5969
+[   57283ms] [LOG] WebSocket connection @ http://192.168.0.88:8102/lelang/listlelang?tab=perlu-update-harga:5882
+[   57284ms] [LOG] WebSocket connection attempting... @ http://192.168.0.88:8102/lelang/listlelang?tab=perlu-update-harga:5960
+[   58026ms] [ERROR] WebSocket connection to 'ws://192.168.0.88:8102/' failed: Error during WebSocket handshake: Unexpected response code: 302 @ http://192.168.0.88:8102/lelang/listlelang?tab=perlu-update-harga:5881
+[   58026ms] [LOG] WebSocket error: undefined @ http://192.168.0.88:8102/lelang/listlelang?tab=perlu-update-harga:5926
+[   58026ms] [LOG] Reconnecting in 128 seconds... @ http://192.168.0.88:8102/lelang/listlelang?tab=perlu-update-harga:5969
+[   58026ms] [LOG] WebSocket closed @ http://192.168.0.88:8102/lelang/listlelang?tab=perlu-update-harga:5885
+[   58027ms] [LOG] Reconnecting in 256 seconds... @ http://192.168.0.88:8102/lelang/listlelang?tab=perlu-update-harga:5969
+[   59732ms] [LOG] Pengajuan Lelangnamanya @ http://192.168.0.88:8102/lelang/listlelang?tab=lelang-tutup:1867
+[   59741ms] [LOG] undefined @ http://192.168.0.88:8102/lelang/listlelang?tab=lelang-tutup:5839
+[   59741ms] [LOG] undefined @ http://192.168.0.88:8102/lelang/listlelang?tab=lelang-tutup:5839
+[   59741ms] [LOG] Masukkan Nomor Lelang @ http://192.168.0.88:8102/lelang/listlelang?tab=lelang-tutup:5839
+[   59741ms] [LOG] DD/MM/YYYY @ http://192.168.0.88:8102/lelang/listlelang?tab=lelang-tutup:5839
+[   59741ms] [LOG] DD/MM/YYYY @ http://192.168.0.88:8102/lelang/listlelang?tab=lelang-tutup:5839
+[   59742ms] [LOG] DD/MM/YYYY @ http://192.168.0.88:8102/lelang/listlelang?tab=lelang-tutup:5839
+[   59742ms] [LOG] DD/MM/YYYY @ http://192.168.0.88:8102/lelang/listlelang?tab=lelang-tutup:5839
+[   59742ms] [LOG] undefined @ http://192.168.0.88:8102/lelang/listlelang?tab=lelang-tutup:5839
+[   59742ms] [LOG] undefined @ http://192.168.0.88:8102/lelang/listlelang?tab=lelang-tutup:5839
+[   59742ms] [LOG] Masukkan Nama Bank @ http://192.168.0.88:8102/lelang/listlelang?tab=lelang-tutup:5839
+[   59742ms] [LOG] undefined @ http://192.168.0.88:8102/lelang/listlelang?tab=lelang-tutup:5839
+[   59743ms] [LOG] WebSocket connection @ http://192.168.0.88:8102/lelang/listlelang?tab=lelang-tutup:5882
+[   59744ms] [LOG] WebSocket connection attempting... @ http://192.168.0.88:8102/lelang/listlelang?tab=lelang-tutup:5960
+[   60084ms] [LOG] [] @ http://192.168.0.88:8102/_resources/themes/prahutheme/javascript/custom/listLelang.js?m=1792376516:14
+[   60086ms] [LOG] 200 xhrglobal @ http://192.168.0.88:8102/lelang/listlelang?tab=lelang-tutup:5813
+[   61566ms] [ERROR] WebSocket connection to 'ws://192.168.0.88:8102/' failed: Error during WebSocket handshake: Unexpected response code: 302 @ http://192.168.0.88:8102/lelang/listlelang?tab=lelang-tutup:5881
+[   61566ms] [LOG] WebSocket error: undefined @ http://192.168.0.88:8102/lelang/listlelang?tab=lelang-tutup:5926
+[   61566ms] [LOG] Reconnecting in 2 seconds... @ http://192.168.0.88:8102/lelang/listlelang?tab=lelang-tutup:5969
+[   61566ms] [LOG] WebSocket closed @ http://192.168.0.88:8102/lelang/listlelang?tab=lelang-tutup:5885
+[   61567ms] [LOG] Reconnecting in 4 seconds... @ http://192.168.0.88:8102/lelang/listlelang?tab=lelang-tutup:5969
+[   63570ms] [LOG] WebSocket connection @ http://192.168.0.88:8102/lelang/listlelang?tab=lelang-tutup:5882
+[   63571ms] [LOG] WebSocket connection attempting... @ http://192.168.0.88:8102/lelang/listlelang?tab=lelang-tutup:5960
+[   65145ms] [ERROR] WebSocket connection to 'ws://192.168.0.88:8102/' failed: Error during WebSocket handshake: Unexpected response code: 302 @ http://192.168.0.88:8102/lelang/listlelang?tab=lelang-tutup:5881
+[   65145ms] [LOG] WebSocket error: undefined @ http://192.168.0.88:8102/lelang/listlelang?tab=lelang-tutup:5926
+[   65145ms] [LOG] Reconnecting in 8 seconds... @ http://192.168.0.88:8102/lelang/listlelang?tab=lelang-tutup:5969
+[   65145ms] [LOG] WebSocket closed @ http://192.168.0.88:8102/lelang/listlelang?tab=lelang-tutup:5885
+[   65145ms] [LOG] Reconnecting in 16 seconds... @ http://192.168.0.88:8102/lelang/listlelang?tab=lelang-tutup:5969
+[   65577ms] [LOG] WebSocket connection @ http://192.168.0.88:8102/lelang/listlelang?tab=lelang-tutup:5882
+[   65578ms] [LOG] WebSocket connection attempting... @ http://192.168.0.88:8102/lelang/listlelang?tab=lelang-tutup:5960
+[   69521ms] [ERROR] WebSocket connection to 'ws://192.168.0.88:8102/' failed: Error during WebSocket handshake: Unexpected response code: 302 @ http://192.168.0.88:8102/lelang/listlelang?tab=lelang-tutup:5881
+[   69521ms] [LOG] WebSocket error: undefined @ http://192.168.0.88:8102/lelang/listlelang?tab=lelang-tutup:5926
+[   69521ms] [LOG] Reconnecting in 32 seconds... @ http://192.168.0.88:8102/lelang/listlelang?tab=lelang-tutup:5969
+[   69521ms] [LOG] WebSocket closed @ http://192.168.0.88:8102/lelang/listlelang?tab=lelang-tutup:5885
+[   69521ms] [LOG] Reconnecting in 64 seconds... @ http://192.168.0.88:8102/lelang/listlelang?tab=lelang-tutup:5969
+[   72922ms] [LOG] Pengajuan Lelangnamanya @ http://192.168.0.88:8102/lelang/listlelang?tab=telah-akhir-kirim:1867
+[   72929ms] [LOG] undefined @ http://192.168.0.88:8102/lelang/listlelang?tab=telah-akhir-kirim:5839
+[   72929ms] [LOG] undefined @ http://192.168.0.88:8102/lelang/listlelang?tab=telah-akhir-kirim:5839
+[   72929ms] [LOG] Masukkan Nomor Lelang @ http://192.168.0.88:8102/lelang/listlelang?tab=telah-akhir-kirim:5839
+[   72929ms] [LOG] DD/MM/YYYY @ http://192.168.0.88:8102/lelang/listlelang?tab=telah-akhir-kirim:5839
+[   72929ms] [LOG] DD/MM/YYYY @ http://192.168.0.88:8102/lelang/listlelang?tab=telah-akhir-kirim:5839
+[   72929ms] [LOG] DD/MM/YYYY @ http://192.168.0.88:8102/lelang/listlelang?tab=telah-akhir-kirim:5839
+[   72929ms] [LOG] DD/MM/YYYY @ http://192.168.0.88:8102/lelang/listlelang?tab=telah-akhir-kirim:5839
+[   72930ms] [LOG] undefined @ http://192.168.0.88:8102/lelang/listlelang?tab=telah-akhir-kirim:5839
+[   72930ms] [LOG] undefined @ http://192.168.0.88:8102/lelang/listlelang?tab=telah-akhir-kirim:5839
+[   72930ms] [LOG] Masukkan Nama Bank @ http://192.168.0.88:8102/lelang/listlelang?tab=telah-akhir-kirim:5839
+[   72930ms] [LOG] undefined @ http://192.168.0.88:8102/lelang/listlelang?tab=telah-akhir-kirim:5839
+[   72931ms] [LOG] WebSocket connection @ http://192.168.0.88:8102/lelang/listlelang?tab=telah-akhir-kirim:5882
+[   72931ms] [LOG] WebSocket connection attempting... @ http://192.168.0.88:8102/lelang/listlelang?tab=telah-akhir-kirim:5960
+[   73275ms] [LOG] [] @ http://192.168.0.88:8102/_resources/themes/prahutheme/javascript/custom/listLelang.js?m=1792376516:14
+[   73279ms] [LOG] 200 xhrglobal @ http://192.168.0.88:8102/lelang/listlelang?tab=telah-akhir-kirim:5813
+[   78261ms] [ERROR] WebSocket connection to 'ws://192.168.0.88:8102/' failed: Error during WebSocket handshake: Unexpected response code: 302 @ http://192.168.0.88:8102/lelang/listlelang?tab=telah-akhir-kirim:5881
+[   78262ms] [LOG] WebSocket error: undefined @ http://192.168.0.88:8102/lelang/listlelang?tab=telah-akhir-kirim:5926
+[   78262ms] [LOG] Reconnecting in 2 seconds... @ http://192.168.0.88:8102/lelang/listlelang?tab=telah-akhir-kirim:5969
+[   78262ms] [LOG] WebSocket closed @ http://192.168.0.88:8102/lelang/listlelang?tab=telah-akhir-kirim:5885
+[   78262ms] [LOG] Reconnecting in 4 seconds... @ http://192.168.0.88:8102/lelang/listlelang?tab=telah-akhir-kirim:5969
+[   80269ms] [LOG] WebSocket connection @ http://192.168.0.88:8102/lelang/listlelang?tab=telah-akhir-kirim:5882
+[   80270ms] [LOG] WebSocket connection attempting... @ http://192.168.0.88:8102/lelang/listlelang?tab=telah-akhir-kirim:5960
+[   81828ms] [ERROR] WebSocket connection to 'ws://192.168.0.88:8102/' failed: Error during WebSocket handshake: Unexpected response code: 302 @ http://192.168.0.88:8102/lelang/listlelang?tab=telah-akhir-kirim:5881
+[   81828ms] [LOG] WebSocket error: undefined @ http://192.168.0.88:8102/lelang/listlelang?tab=telah-akhir-kirim:5926
+[   81829ms] [LOG] Reconnecting in 8 seconds... @ http://192.168.0.88:8102/lelang/listlelang?tab=telah-akhir-kirim:5969
+[   81829ms] [LOG] WebSocket closed @ http://192.168.0.88:8102/lelang/listlelang?tab=telah-akhir-kirim:5885
+[   81830ms] [LOG] Reconnecting in 16 seconds... @ http://192.168.0.88:8102/lelang/listlelang?tab=telah-akhir-kirim:5969
+[   82277ms] [LOG] WebSocket connection @ http://192.168.0.88:8102/lelang/listlelang?tab=telah-akhir-kirim:5882
+[   82277ms] [LOG] WebSocket connection attempting... @ http://192.168.0.88:8102/lelang/listlelang?tab=telah-akhir-kirim:5960
+[   86834ms] [LOG] Pengajuan Lelangnamanya @ http://192.168.0.88:8102/lelang/listlelang?tab=lelang-batal:1867
+[   86841ms] [LOG] undefined @ http://192.168.0.88:8102/lelang/listlelang?tab=lelang-batal:5839
+[   86841ms] [LOG] undefined @ http://192.168.0.88:8102/lelang/listlelang?tab=lelang-batal:5839
+[   86841ms] [LOG] Masukkan Nomor Lelang @ http://192.168.0.88:8102/lelang/listlelang?tab=lelang-batal:5839
+[   86841ms] [LOG] DD/MM/YYYY @ http://192.168.0.88:8102/lelang/listlelang?tab=lelang-batal:5839
+[   86841ms] [LOG] DD/MM/YYYY @ http://192.168.0.88:8102/lelang/listlelang?tab=lelang-batal:5839
+[   86841ms] [LOG] DD/MM/YYYY @ http://192.168.0.88:8102/lelang/listlelang?tab=lelang-batal:5839
+[   86842ms] [LOG] DD/MM/YYYY @ http://192.168.0.88:8102/lelang/listlelang?tab=lelang-batal:5839
+[   86842ms] [LOG] undefined @ http://192.168.0.88:8102/lelang/listlelang?tab=lelang-batal:5839
+[   86842ms] [LOG] undefined @ http://192.168.0.88:8102/lelang/listlelang?tab=lelang-batal:5839
+[   86842ms] [LOG] Masukkan Nama Bank @ http://192.168.0.88:8102/lelang/listlelang?tab=lelang-batal:5839
+[   86842ms] [LOG] undefined @ http://192.168.0.88:8102/lelang/listlelang?tab=lelang-batal:5839
+[   86843ms] [LOG] WebSocket connection @ http://192.168.0.88:8102/lelang/listlelang?tab=lelang-batal:5882
+[   86843ms] [LOG] WebSocket connection attempting... @ http://192.168.0.88:8102/lelang/listlelang?tab=lelang-batal:5960
+[   87155ms] [LOG] [] @ http://192.168.0.88:8102/_resources/themes/prahutheme/javascript/custom/listLelang.js?m=1792376516:14
+[   87160ms] [LOG] 200 xhrglobal @ http://192.168.0.88:8102/lelang/listlelang?tab=lelang-batal:5813
+[   91276ms] [ERROR] WebSocket connection to 'ws://192.168.0.88:8102/' failed: Error during WebSocket handshake: Unexpected response code: 302 @ http://192.168.0.88:8102/lelang/listlelang?tab=lelang-batal:5881
+[   91276ms] [LOG] WebSocket error: undefined @ http://192.168.0.88:8102/lelang/listlelang?tab=lelang-batal:5926
+[   91277ms] [LOG] Reconnecting in 2 seconds... @ http://192.168.0.88:8102/lelang/listlelang?tab=lelang-batal:5969
+[   91277ms] [LOG] WebSocket closed @ http://192.168.0.88:8102/lelang/listlelang?tab=lelang-batal:5885
+[   91278ms] [LOG] Reconnecting in 4 seconds... @ http://192.168.0.88:8102/lelang/listlelang?tab=lelang-batal:5969
+[   93287ms] [LOG] WebSocket connection @ http://192.168.0.88:8102/lelang/listlelang?tab=lelang-batal:5882
+[   93287ms] [LOG] WebSocket connection attempting... @ http://192.168.0.88:8102/lelang/listlelang?tab=lelang-batal:5960
+[   95283ms] [LOG] WebSocket connection @ http://192.168.0.88:8102/lelang/listlelang?tab=lelang-batal:5882
+[   95283ms] [LOG] WebSocket connection attempting... @ http://192.168.0.88:8102/lelang/listlelang?tab=lelang-batal:5960
+[   96304ms] [ERROR] WebSocket connection to 'ws://192.168.0.88:8102/' failed: Error during WebSocket handshake: Unexpected response code: 302 @ http://192.168.0.88:8102/lelang/listlelang?tab=lelang-batal:5881
+[   96305ms] [LOG] WebSocket error: undefined @ http://192.168.0.88:8102/lelang/listlelang?tab=lelang-batal:5926
+[   96305ms] [LOG] Reconnecting in 8 seconds... @ http://192.168.0.88:8102/lelang/listlelang?tab=lelang-batal:5969
+[   96305ms] [LOG] WebSocket closed @ http://192.168.0.88:8102/lelang/listlelang?tab=lelang-batal:5885
+[   96306ms] [LOG] Reconnecting in 16 seconds... @ http://192.168.0.88:8102/lelang/listlelang?tab=lelang-batal:5969
+[   98110ms] [ERROR] WebSocket connection to 'ws://192.168.0.88:8102/' failed: Error during WebSocket handshake: Unexpected response code: 302 @ http://192.168.0.88:8102/lelang/listlelang?tab=lelang-batal:5881
+[   98110ms] [LOG] WebSocket error: undefined @ http://192.168.0.88:8102/lelang/listlelang?tab=lelang-batal:5926
+[   98110ms] [LOG] Reconnecting in 32 seconds... @ http://192.168.0.88:8102/lelang/listlelang?tab=lelang-batal:5969
+[   98110ms] [LOG] WebSocket closed @ http://192.168.0.88:8102/lelang/listlelang?tab=lelang-batal:5885
+[   98110ms] [LOG] Reconnecting in 64 seconds... @ http://192.168.0.88:8102/lelang/listlelang?tab=lelang-batal:5969
+[  100542ms] [LOG] Pengajuan Lelangnamanya @ http://192.168.0.88:8102/lelang/listlelang?tab=semua-lelang&status_filter=1&filter_1=LELANGFCU%2F28082026IK:1867
+[  100548ms] [LOG] undefined @ http://192.168.0.88:8102/lelang/listlelang?tab=semua-lelang&status_filter=1&filter_1=LELANGFCU%2F28082026IK:5839
+[  100548ms] [LOG] undefined @ http://192.168.0.88:8102/lelang/listlelang?tab=semua-lelang&status_filter=1&filter_1=LELANGFCU%2F28082026IK:5839
+[  100548ms] [LOG] Masukkan Nomor Lelang @ http://192.168.0.88:8102/lelang/listlelang?tab=semua-lelang&status_filter=1&filter_1=LELANGFCU%2F28082026IK:5839
+[  100548ms] [LOG] DD/MM/YYYY @ http://192.168.0.88:8102/lelang/listlelang?tab=semua-lelang&status_filter=1&filter_1=LELANGFCU%2F28082026IK:5839
+[  100548ms] [LOG] DD/MM/YYYY @ http://192.168.0.88:8102/lelang/listlelang?tab=semua-lelang&status_filter=1&filter_1=LELANGFCU%2F28082026IK:5839
+[  100548ms] [LOG] DD/MM/YYYY @ http://192.168.0.88:8102/lelang/listlelang?tab=semua-lelang&status_filter=1&filter_1=LELANGFCU%2F28082026IK:5839
+[  100548ms] [LOG] DD/MM/YYYY @ http://192.168.0.88:8102/lelang/listlelang?tab=semua-lelang&status_filter=1&filter_1=LELANGFCU%2F28082026IK:5839
+[  100549ms] [LOG] undefined @ http://192.168.0.88:8102/lelang/listlelang?tab=semua-lelang&status_filter=1&filter_1=LELANGFCU%2F28082026IK:5839
+[  100549ms] [LOG] undefined @ http://192.168.0.88:8102/lelang/listlelang?tab=semua-lelang&status_filter=1&filter_1=LELANGFCU%2F28082026IK:5839
+[  100549ms] [LOG] Masukkan Nama Bank @ http://192.168.0.88:8102/lelang/listlelang?tab=semua-lelang&status_filter=1&filter_1=LELANGFCU%2F28082026IK:5839
+[  100549ms] [LOG] undefined @ http://192.168.0.88:8102/lelang/listlelang?tab=semua-lelang&status_filter=1&filter_1=LELANGFCU%2F28082026IK:5839
+[  100550ms] [LOG] WebSocket connection @ http://192.168.0.88:8102/lelang/listlelang?tab=semua-lelang&status_filter=1&filter_1=LELANGFCU%2F28082026IK:5882
+[  100550ms] [LOG] WebSocket connection attempting... @ http://192.168.0.88:8102/lelang/listlelang?tab=semua-lelang&status_filter=1&filter_1=LELANGFCU%2F28082026IK:5960
+[  100852ms] [LOG] [] @ http://192.168.0.88:8102/_resources/themes/prahutheme/javascript/custom/listLelang.js?m=1792376516:14
+[  100857ms] [LOG] 200 xhrglobal @ http://192.168.0.88:8102/lelang/listlelang?tab=semua-lelang&status_filter=1&filter_1=LELANGFCU%2F28082026IK:5813
+[  102116ms] [ERROR] WebSocket connection to 'ws://192.168.0.88:8102/' failed: Error during WebSocket handshake: Unexpected response code: 302 @ http://192.168.0.88:8102/lelang/listlelang?tab=semua-lelang&status_filter=1&filter_1=LELANGFCU%2F28082026IK:5881
+[  102116ms] [LOG] WebSocket error: undefined @ http://192.168.0.88:8102/lelang/listlelang?tab=semua-lelang&status_filter=1&filter_1=LELANGFCU%2F28082026IK:5926
+[  102116ms] [LOG] Reconnecting in 2 seconds... @ http://192.168.0.88:8102/lelang/listlelang?tab=semua-lelang&status_filter=1&filter_1=LELANGFCU%2F28082026IK:5969
+[  102117ms] [LOG] WebSocket closed @ http://192.168.0.88:8102/lelang/listlelang?tab=semua-lelang&status_filter=1&filter_1=LELANGFCU%2F28082026IK:5885
+[  102117ms] [LOG] Reconnecting in 4 seconds... @ http://192.168.0.88:8102/lelang/listlelang?tab=semua-lelang&status_filter=1&filter_1=LELANGFCU%2F28082026IK:5969
+[  104123ms] [LOG] WebSocket connection @ http://192.168.0.88:8102/lelang/listlelang?tab=semua-lelang&status_filter=1&filter_1=LELANGFCU%2F28082026IK:5882
+[  104123ms] [LOG] WebSocket connection attempting... @ http://192.168.0.88:8102/lelang/listlelang?tab=semua-lelang&status_filter=1&filter_1=LELANGFCU%2F28082026IK:5960
+[  106119ms] [LOG] WebSocket connection @ http://192.168.0.88:8102/lelang/listlelang?tab=semua-lelang&status_filter=1&filter_1=LELANGFCU%2F28082026IK:5882
+[  106120ms] [LOG] WebSocket connection attempting... @ http://192.168.0.88:8102/lelang/listlelang?tab=semua-lelang&status_filter=1&filter_1=LELANGFCU%2F28082026IK:5960
+[  108965ms] [ERROR] WebSocket connection to 'ws://192.168.0.88:8102/' failed: Error during WebSocket handshake: Unexpected response code: 302 @ http://192.168.0.88:8102/lelang/listlelang?tab=semua-lelang&status_filter=1&filter_1=LELANGFCU%2F28082026IK:5881
+[  108966ms] [LOG] WebSocket error: undefined @ http://192.168.0.88:8102/lelang/listlelang?tab=semua-lelang&status_filter=1&filter_1=LELANGFCU%2F28082026IK:5926
+[  108966ms] [LOG] Reconnecting in 8 seconds... @ http://192.168.0.88:8102/lelang/listlelang?tab=semua-lelang&status_filter=1&filter_1=LELANGFCU%2F28082026IK:5969
+[  108966ms] [LOG] WebSocket closed @ http://192.168.0.88:8102/lelang/listlelang?tab=semua-lelang&status_filter=1&filter_1=LELANGFCU%2F28082026IK:5885
+[  108967ms] [LOG] Reconnecting in 16 seconds... @ http://192.168.0.88:8102/lelang/listlelang?tab=semua-lelang&status_filter=1&filter_1=LELANGFCU%2F28082026IK:5969
+[  111017ms] [ERROR] WebSocket connection to 'ws://192.168.0.88:8102/' failed: Error during WebSocket handshake: Unexpected response code: 302 @ http://192.168.0.88:8102/lelang/listlelang?tab=semua-lelang&status_filter=1&filter_1=LELANGFCU%2F28082026IK:5881
+[  111018ms] [LOG] WebSocket error: undefined @ http://192.168.0.88:8102/lelang/listlelang?tab=semua-lelang&status_filter=1&filter_1=LELANGFCU%2F28082026IK:5926
+[  111018ms] [LOG] Reconnecting in 32 seconds... @ http://192.168.0.88:8102/lelang/listlelang?tab=semua-lelang&status_filter=1&filter_1=LELANGFCU%2F28082026IK:5969
+[  111018ms] [LOG] WebSocket closed @ http://192.168.0.88:8102/lelang/listlelang?tab=semua-lelang&status_filter=1&filter_1=LELANGFCU%2F28082026IK:5885
+[  111019ms] [LOG] Reconnecting in 64 seconds... @ http://192.168.0.88:8102/lelang/listlelang?tab=semua-lelang&status_filter=1&filter_1=LELANGFCU%2F28082026IK:5969
+[  114118ms] [LOG] 1 @ http://192.168.0.88:8102/_resources/themes/prahutheme/javascript/custom/orderList.js?m=1792376516:939
+[  114118ms] [LOG] 20 @ http://192.168.0.88:8102/_resources/themes/prahutheme/javascript/custom/orderList.js?m=1792376516:940
+[  114123ms] [LOG] Daftar Ordernamanya @ http://192.168.0.88:8102/order/OrderList:2135
+[  114139ms] [LOG] Masukkan ID Order @ http://192.168.0.88:8102/order/OrderList:7754
+[  114139ms] [LOG] undefined @ http://192.168.0.88:8102/order/OrderList:7754
+[  114139ms] [LOG] Masukkan Nomor Lelang @ http://192.168.0.88:8102/order/OrderList:7754
+[  114139ms] [LOG] Masukkan Nama Transporter @ http://192.168.0.88:8102/order/OrderList:7754
+[  114140ms] [LOG] DD/MM/YYYY - DD/MM/YYYY @ http://192.168.0.88:8102/order/OrderList:7754
+[  114140ms] [LOG] Masukkan No. Kontainer @ http://192.168.0.88:8102/order/OrderList:7754
+[  114140ms] [LOG] DD/MM/YYYY - DD/MM/YYYY @ http://192.168.0.88:8102/order/OrderList:7754
+[  114140ms] [LOG] DD/MM/YYYY -  DD/MM/YYYY @ http://192.168.0.88:8102/order/OrderList:7754
+[  114140ms] [LOG] Search... @ http://192.168.0.88:8102/order/OrderList:7754
+[  114140ms] [LOG] Search... @ http://192.168.0.88:8102/order/OrderList:7754
+[  114140ms] [LOG] undefined @ http://192.168.0.88:8102/order/OrderList:7754
+[  114141ms] [LOG] Masukkan Nama Kapal @ http://192.168.0.88:8102/order/OrderList:7754
+[  114141ms] [LOG] DD/MM/YYYY @ http://192.168.0.88:8102/order/OrderList:7754
+[  114141ms] [LOG] Masukkan Jumlah @ http://192.168.0.88:8102/order/OrderList:7754
+[  114141ms] [LOG] Masukkan Nama Penerima Barang @ http://192.168.0.88:8102/order/OrderList:7754
+[  114141ms] [LOG] Search... @ http://192.168.0.88:8102/order/OrderList:7754
+[  114141ms] [LOG] Masukkan Nomor Referensi @ http://192.168.0.88:8102/order/OrderList:7754
+[  114141ms] [LOG] undefined @ http://192.168.0.88:8102/order/OrderList:7754
+[  114142ms] [LOG] Masukkan Harga Baru @ http://192.168.0.88:8102/order/OrderList:7754
+[  114142ms] [LOG] undefined @ http://192.168.0.88:8102/order/OrderList:7754
+[  114143ms] [LOG] WebSocket connection @ http://192.168.0.88:8102/order/OrderList:7797
+[  114143ms] [LOG] WebSocket connection attempting... @ http://192.168.0.88:8102/order/OrderList:7875
+[  114522ms] [LOG] datanya0 @ http://192.168.0.88:8102/_resources/themes/prahutheme/javascript/custom/orderList.js?m=1792376516:986
+[  114526ms] [LOG] [] @ http://192.168.0.88:8102/_resources/themes/prahutheme/javascript/custom/orderList.js?m=1792376516:421
+[  114530ms] [LOG] [] @ http://192.168.0.88:8102/_resources/themes/prahutheme/javascript/custom/orderList.js?m=1792376516:40
+[  114532ms] [LOG] 0 jumlah data @ http://192.168.0.88:8102/_resources/themes/prahutheme/javascript/custom/orderList.js?m=1792376516:879
+[  114533ms] [LOG] 0 @ http://192.168.0.88:8102/_resources/themes/prahutheme/javascript/custom/orderList.js?m=1792376516:881
+[  114534ms] [LOG] 0 1 pageCount & pageNow @ http://192.168.0.88:8102/_resources/themes/prahutheme/javascript/custom/orderList.js?m=1792376516:810
+[  114537ms] [LOG] 200 xhrglobal @ http://192.168.0.88:8102/order/OrderList:7728
+[  117854ms] [ERROR] WebSocket connection to 'ws://192.168.0.88:8102/' failed: Error during WebSocket handshake: Unexpected response code: 302 @ http://192.168.0.88:8102/order/OrderList:7796
+[  117854ms] [LOG] WebSocket error: undefined @ http://192.168.0.88:8102/order/OrderList:7841
+[  117854ms] [LOG] Reconnecting in 2 seconds... @ http://192.168.0.88:8102/order/OrderList:7884
+[  117854ms] [LOG] WebSocket closed @ http://192.168.0.88:8102/order/OrderList:7800
+[  117854ms] [LOG] Reconnecting in 4 seconds... @ http://192.168.0.88:8102/order/OrderList:7884
+[  119865ms] [LOG] WebSocket connection @ http://192.168.0.88:8102/order/OrderList:7797
+[  119865ms] [LOG] WebSocket connection attempting... @ http://192.168.0.88:8102/order/OrderList:7875
+[  121384ms] [ERROR] WebSocket connection to 'ws://192.168.0.88:8102/' failed: Error during WebSocket handshake: Unexpected response code: 302 @ http://192.168.0.88:8102/order/OrderList:7796
+[  121384ms] [LOG] WebSocket error: undefined @ http://192.168.0.88:8102/order/OrderList:7841
+[  121385ms] [LOG] Reconnecting in 8 seconds... @ http://192.168.0.88:8102/order/OrderList:7884
+[  121385ms] [LOG] WebSocket closed @ http://192.168.0.88:8102/order/OrderList:7800
+[  121386ms] [LOG] Reconnecting in 16 seconds... @ http://192.168.0.88:8102/order/OrderList:7884
+[  121864ms] [LOG] WebSocket connection @ http://192.168.0.88:8102/order/OrderList:7797
+[  121864ms] [LOG] WebSocket connection attempting... @ http://192.168.0.88:8102/order/OrderList:7875
+[  124087ms] [ERROR] WebSocket connection to 'ws://192.168.0.88:8102/' failed: Error during WebSocket handshake: Unexpected response code: 302 @ http://192.168.0.88:8102/order/OrderList:7796
+[  124087ms] [LOG] WebSocket error: undefined @ http://192.168.0.88:8102/order/OrderList:7841
+[  124087ms] [LOG] Reconnecting in 32 seconds... @ http://192.168.0.88:8102/order/OrderList:7884
+[  124088ms] [LOG] WebSocket closed @ http://192.168.0.88:8102/order/OrderList:7800
+[  124088ms] [LOG] Reconnecting in 64 seconds... @ http://192.168.0.88:8102/order/OrderList:7884
+[  126406ms] [LOG] 0 jumlah data @ http://192.168.0.88:8102/_resources/themes/prahutheme/javascript/custom/orderList.js?m=1792376516:879
+[  126406ms] [LOG] 0 @ http://192.168.0.88:8102/_resources/themes/prahutheme/javascript/custom/orderList.js?m=1792376516:881
+[  126406ms] [LOG] 0 1 pageCount & pageNow @ http://192.168.0.88:8102/_resources/themes/prahutheme/javascript/custom/orderList.js?m=1792376516:810
+[  126406ms] [LOG] 0 @ http://192.168.0.88:8102/_resources/themes/prahutheme/javascript/custom/orderList.js?m=1792376516:916
+[  126406ms] [LOG] 0 countView1 1 pageNow 100 limitView1 @ http://192.168.0.88:8102/_resources/themes/prahutheme/javascript/custom/orderList.js?m=1792376516:918
+[  126407ms] [LOG] 0 @ http://192.168.0.88:8102/_resources/themes/prahutheme/javascript/custom/orderList.js?m=1792376516:924
+[  126407ms] [LOG] 0 @ http://192.168.0.88:8102/_resources/themes/prahutheme/javascript/custom/orderList.js?m=1792376516:939
+[  126407ms] [LOG] 100 @ http://192.168.0.88:8102/_resources/themes/prahutheme/javascript/custom/orderList.js?m=1792376516:940
+[  126809ms] [LOG] datanya0 @ http://192.168.0.88:8102/_resources/themes/prahutheme/javascript/custom/orderList.js?m=1792376516:986
+[  126810ms] [LOG] [] @ http://192.168.0.88:8102/_resources/themes/prahutheme/javascript/custom/orderList.js?m=1792376516:421
+[  126811ms] [LOG] [] @ http://192.168.0.88:8102/_resources/themes/prahutheme/javascript/custom/orderList.js?m=1792376516:40
+[  126812ms] [LOG] 0 jumlah data @ http://192.168.0.88:8102/_resources/themes/prahutheme/javascript/custom/orderList.js?m=1792376516:879
+[  126813ms] [LOG] 0 @ http://192.168.0.88:8102/_resources/themes/prahutheme/javascript/custom/orderList.js?m=1792376516:881
+[  126814ms] [LOG] 200 xhrglobal @ http://192.168.0.88:8102/order/OrderList:7728
+[  129393ms] [LOG] WebSocket connection @ http://192.168.0.88:8102/order/OrderList:7797
+[  129393ms] [LOG] WebSocket connection attempting... @ http://192.168.0.88:8102/order/OrderList:7875
+[  129687ms] [ERROR] WebSocket connection to 'ws://192.168.0.88:8102/' failed: Error during WebSocket handshake: Unexpected response code: 302 @ http://192.168.0.88:8102/order/OrderList:7796
+[  129687ms] [LOG] WebSocket error: undefined @ http://192.168.0.88:8102/order/OrderList:7841
+[  129687ms] [LOG] Reconnecting in 128 seconds... @ http://192.168.0.88:8102/order/OrderList:7884
+[  129687ms] [LOG] WebSocket closed @ http://192.168.0.88:8102/order/OrderList:7800
+[  129687ms] [LOG] Reconnecting in 256 seconds... @ http://192.168.0.88:8102/order/OrderList:7884
+[  137391ms] [LOG] WebSocket connection @ http://192.168.0.88:8102/order/OrderList:7797
+[  137391ms] [LOG] WebSocket connection attempting... @ http://192.168.0.88:8102/order/OrderList:7875
+[  137698ms] [ERROR] WebSocket connection to 'ws://192.168.0.88:8102/' failed: Error during WebSocket handshake: Unexpected response code: 302 @ http://192.168.0.88:8102/order/OrderList:7796
+[  137698ms] [LOG] WebSocket error: undefined @ http://192.168.0.88:8102/order/OrderList:7841
+[  137699ms] [LOG] Reconnecting in 512 seconds... @ http://192.168.0.88:8102/order/OrderList:7884
+[  137699ms] [LOG] WebSocket closed @ http://192.168.0.88:8102/order/OrderList:7800
+[  137699ms] [LOG] Reconnecting in 1024 seconds... @ http://192.168.0.88:8102/order/OrderList:7884
+[  151833ms] [LOG] NEGOnamanya @ http://192.168.0.88:8102/lelang/pengajuannego:1867
+[  151840ms] [LOG] undefined @ http://192.168.0.88:8102/lelang/pengajuannego:5759
+[  151840ms] [LOG] Masukkan Nomor Lelang @ http://192.168.0.88:8102/lelang/pengajuannego:5759
+[  151840ms] [LOG] Masukkan Nama Transporter @ http://192.168.0.88:8102/lelang/pengajuannego:5759
+[  151840ms] [LOG] Harga Awal @ http://192.168.0.88:8102/lelang/pengajuannego:5759
+[  151840ms] [LOG] DD/MM/YYYY @ http://192.168.0.88:8102/lelang/pengajuannego:5759
+[  151840ms] [LOG] DD/MM/YYYY @ http://192.168.0.88:8102/lelang/pengajuannego:5759
+[  151840ms] [LOG] Harga Awal @ http://192.168.0.88:8102/lelang/pengajuannego:5759
+[  151840ms] [LOG] Masukkan Nego Harga @ http://192.168.0.88:8102/lelang/pengajuannego:5759
+[  151841ms] [LOG] Masukkan Harga Baru @ http://192.168.0.88:8102/lelang/pengajuannego:5759
+[  151841ms] [LOG] Masukkan Jumlah Nego @ http://192.168.0.88:8102/lelang/pengajuannego:5759
+[  151842ms] [LOG] WebSocket connection @ http://192.168.0.88:8102/lelang/pengajuannego:5802
+[  151842ms] [LOG] WebSocket connection attempting... @ http://192.168.0.88:8102/lelang/pengajuannego:5880
+[  152160ms] [LOG] 200 xhrglobal @ http://192.168.0.88:8102/lelang/pengajuannego:5733
+[  152438ms] [ERROR] WebSocket connection to 'ws://192.168.0.88:8102/' failed: Error during WebSocket handshake: Unexpected response code: 302 @ http://192.168.0.88:8102/lelang/pengajuannego:5801
+[  152439ms] [LOG] WebSocket error: undefined @ http://192.168.0.88:8102/lelang/pengajuannego:5846
+[  152439ms] [LOG] Reconnecting in 2 seconds... @ http://192.168.0.88:8102/lelang/pengajuannego:5889
+[  152440ms] [LOG] WebSocket closed @ http://192.168.0.88:8102/lelang/pengajuannego:5805
+[  152440ms] [LOG] Reconnecting in 4 seconds... @ http://192.168.0.88:8102/lelang/pengajuannego:5889
+[  154448ms] [LOG] WebSocket connection @ http://192.168.0.88:8102/lelang/pengajuannego:5802
+[  154449ms] [LOG] WebSocket connection attempting... @ http://192.168.0.88:8102/lelang/pengajuannego:5880
+[  155063ms] [ERROR] WebSocket connection to 'ws://192.168.0.88:8102/' failed: Error during WebSocket handshake: Unexpected response code: 302 @ http://192.168.0.88:8102/lelang/pengajuannego:5801
+[  155063ms] [LOG] WebSocket error: undefined @ http://192.168.0.88:8102/lelang/pengajuannego:5846
+[  155064ms] [LOG] Reconnecting in 8 seconds... @ http://192.168.0.88:8102/lelang/pengajuannego:5889
+[  155064ms] [LOG] WebSocket closed @ http://192.168.0.88:8102/lelang/pengajuannego:5805
+[  155064ms] [LOG] Reconnecting in 16 seconds... @ http://192.168.0.88:8102/lelang/pengajuannego:5889
+[  156454ms] [LOG] WebSocket connection @ http://192.168.0.88:8102/lelang/pengajuannego:5802
+[  156454ms] [LOG] WebSocket connection attempting... @ http://192.168.0.88:8102/lelang/pengajuannego:5880
+[  156738ms] [ERROR] WebSocket connection to 'ws://192.168.0.88:8102/' failed: Error during WebSocket handshake: Unexpected response code: 302 @ http://192.168.0.88:8102/lelang/pengajuannego:5801
+[  156738ms] [LOG] WebSocket error: undefined @ http://192.168.0.88:8102/lelang/pengajuannego:5846
+[  156738ms] [LOG] Reconnecting in 32 seconds... @ http://192.168.0.88:8102/lelang/pengajuannego:5889
+[  156738ms] [LOG] WebSocket closed @ http://192.168.0.88:8102/lelang/pengajuannego:5805
+[  156738ms] [LOG] Reconnecting in 64 seconds... @ http://192.168.0.88:8102/lelang/pengajuannego:5889
+[  163079ms] [LOG] WebSocket connection @ http://192.168.0.88:8102/lelang/pengajuannego:5802
+[  163080ms] [LOG] WebSocket connection attempting... @ http://192.168.0.88:8102/lelang/pengajuannego:5880
+[  163403ms] [ERROR] WebSocket connection to 'ws://192.168.0.88:8102/' failed: Error during WebSocket handshake: Unexpected response code: 302 @ http://192.168.0.88:8102/lelang/pengajuannego:5801
+[  163403ms] [LOG] WebSocket error: undefined @ http://192.168.0.88:8102/lelang/pengajuannego:5846
+[  163403ms] [LOG] Reconnecting in 128 seconds... @ http://192.168.0.88:8102/lelang/pengajuannego:5889
+[  163403ms] [LOG] WebSocket closed @ http://192.168.0.88:8102/lelang/pengajuannego:5805
+[  163403ms] [LOG] Reconnecting in 256 seconds... @ http://192.168.0.88:8102/lelang/pengajuannego:5889
+[  164869ms] [LOG] undefinednamanya @ http://192.168.0.88:8102/lelang/carirute:2138
+[  164878ms] [LOG] undefined @ http://192.168.0.88:8102/lelang/carirute:6267
+[  164878ms] [LOG] undefined @ http://192.168.0.88:8102/lelang/carirute:6267
+[  164879ms] [LOG] undefined @ http://192.168.0.88:8102/lelang/carirute:6267
+[  164879ms] [LOG] Masukkan Nomor Lelang @ http://192.168.0.88:8102/lelang/carirute:6267
+[  164879ms] [LOG] undefined @ http://192.168.0.88:8102/lelang/carirute:6267
+[  164879ms] [LOG] WebSocket connection @ http://192.168.0.88:8102/lelang/carirute:6310
+[  164880ms] [LOG] WebSocket connection attempting... @ http://192.168.0.88:8102/lelang/carirute:6388
+[  165090ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://192.168.0.88:8102/assets/tombol_close.png:0
+[  165415ms] [ERROR] WebSocket connection to 'ws://192.168.0.88:8102/' failed: Error during WebSocket handshake: Unexpected response code: 302 @ http://192.168.0.88:8102/lelang/carirute:6309
+[  165415ms] [LOG] WebSocket error: undefined @ http://192.168.0.88:8102/lelang/carirute:6354
+[  165416ms] [LOG] Reconnecting in 2 seconds... @ http://192.168.0.88:8102/lelang/carirute:6397
+[  165416ms] [LOG] WebSocket closed @ http://192.168.0.88:8102/lelang/carirute:6313
+[  165416ms] [LOG] Reconnecting in 4 seconds... @ http://192.168.0.88:8102/lelang/carirute:6397
+[  166303ms] [TABLE] {UI version: 8.4.1, Core version: 8.4.0, Build: NC8xMi8yMDIyfDRkZTU3MmExYg==, WebViewer Server: false, Full API: false} @ http://192.168.0.88:8102/_resources/themes/prahutheme/javascript/PDFView/lib/ui/webviewer-ui.min.js:270
+[  166410ms] [VERBOSE] [DOM] Password forms should have (optionally hidden) username fields for accessibility: (More info: https://goo.gl/9p2vKq) %o @ http://192.168.0.88:8102/_resources/themes/prahutheme/javascript/PDFView/lib/ui/index.html#a=1&disabledElements=downloadButton%2CprintButton%2ClanguageButton&filepicker=0&pdfnet=0&enableRedaction=0&enableMeasurement=0&pageHistory=1&notesInLeftPanel=0&singleServerMode=false&selectAnnotationOnCreation=0&autoFocusNoteOnAnnotationSelection=1&id=1&basePath=%2Flelang%2Fcarirute:0
+[  167422ms] [LOG] WebSocket connection @ http://192.168.0.88:8102/lelang/carirute:6310
+[  167422ms] [LOG] WebSocket connection attempting... @ http://192.168.0.88:8102/lelang/carirute:6388
+[  167754ms] [ERROR] WebSocket connection to 'ws://192.168.0.88:8102/' failed: Error during WebSocket handshake: Unexpected response code: 302 @ http://192.168.0.88:8102/lelang/carirute:6309
+[  167754ms] [LOG] WebSocket error: undefined @ http://192.168.0.88:8102/lelang/carirute:6354
+[  167754ms] [LOG] Reconnecting in 8 seconds... @ http://192.168.0.88:8102/lelang/carirute:6397
+[  167754ms] [LOG] WebSocket closed @ http://192.168.0.88:8102/lelang/carirute:6313
+[  167754ms] [LOG] Reconnecting in 16 seconds... @ http://192.168.0.88:8102/lelang/carirute:6397
+[  169507ms] [LOG] undefinednamanya @ http://192.168.0.88:8102/lelang/carirute:2138
+[  169516ms] [LOG] undefined @ http://192.168.0.88:8102/lelang/carirute:6267
+[  169516ms] [LOG] undefined @ http://192.168.0.88:8102/lelang/carirute:6267
+[  169516ms] [LOG] undefined @ http://192.168.0.88:8102/lelang/carirute:6267
+[  169516ms] [LOG] Masukkan Nomor Lelang @ http://192.168.0.88:8102/lelang/carirute:6267
+[  169516ms] [LOG] undefined @ http://192.168.0.88:8102/lelang/carirute:6267
+[  169517ms] [LOG] WebSocket connection @ http://192.168.0.88:8102/lelang/carirute:6310
+[  169517ms] [LOG] WebSocket connection attempting... @ http://192.168.0.88:8102/lelang/carirute:6388
+[  169737ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://192.168.0.88:8102/assets/tombol_close.png:0
+[  170024ms] [ERROR] WebSocket connection to 'ws://192.168.0.88:8102/' failed: Error during WebSocket handshake: Unexpected response code: 302 @ http://192.168.0.88:8102/lelang/carirute:6309
+[  170024ms] [LOG] WebSocket error: undefined @ http://192.168.0.88:8102/lelang/carirute:6354
+[  170025ms] [LOG] Reconnecting in 2 seconds... @ http://192.168.0.88:8102/lelang/carirute:6397
+[  170025ms] [LOG] WebSocket closed @ http://192.168.0.88:8102/lelang/carirute:6313
+[  170025ms] [LOG] Reconnecting in 4 seconds... @ http://192.168.0.88:8102/lelang/carirute:6397
+[  170598ms] [TABLE] {UI version: 8.4.1, Core version: 8.4.0, Build: NC8xMi8yMDIyfDRkZTU3MmExYg==, WebViewer Server: false, Full API: false} @ http://192.168.0.88:8102/_resources/themes/prahutheme/javascript/PDFView/lib/ui/webviewer-ui.min.js:270
+[  170712ms] [VERBOSE] [DOM] Password forms should have (optionally hidden) username fields for accessibility: (More info: https://goo.gl/9p2vKq) %o @ http://192.168.0.88:8102/_resources/themes/prahutheme/javascript/PDFView/lib/ui/index.html#a=1&disabledElements=downloadButton%2CprintButton%2ClanguageButton&filepicker=0&pdfnet=0&enableRedaction=0&enableMeasurement=0&pageHistory=1&notesInLeftPanel=0&singleServerMode=false&selectAnnotationOnCreation=0&autoFocusNoteOnAnnotationSelection=1&id=1&basePath=%2Flelang%2Fcarirute:0
+[  172030ms] [LOG] WebSocket connection @ http://192.168.0.88:8102/lelang/carirute:6310
+[  172031ms] [LOG] WebSocket connection attempting... @ http://192.168.0.88:8102/lelang/carirute:6388
+[  172388ms] [ERROR] WebSocket connection to 'ws://192.168.0.88:8102/' failed: Error during WebSocket handshake: Unexpected response code: 302 @ http://192.168.0.88:8102/lelang/carirute:6309
+[  172388ms] [LOG] WebSocket error: undefined @ http://192.168.0.88:8102/lelang/carirute:6354
+[  172388ms] [LOG] Reconnecting in 8 seconds... @ http://192.168.0.88:8102/lelang/carirute:6397
+[  172389ms] [LOG] WebSocket closed @ http://192.168.0.88:8102/lelang/carirute:6313
+[  172389ms] [LOG] Reconnecting in 16 seconds... @ http://192.168.0.88:8102/lelang/carirute:6397
+[  174026ms] [LOG] undefinednamanya @ http://192.168.0.88:8102/lelang/carirute:2138
+[  174036ms] [LOG] undefined @ http://192.168.0.88:8102/lelang/carirute:6267
+[  174036ms] [LOG] undefined @ http://192.168.0.88:8102/lelang/carirute:6267
+[  174036ms] [LOG] undefined @ http://192.168.0.88:8102/lelang/carirute:6267
+[  174036ms] [LOG] Masukkan Nomor Lelang @ http://192.168.0.88:8102/lelang/carirute:6267
+[  174036ms] [LOG] undefined @ http://192.168.0.88:8102/lelang/carirute:6267
+[  174037ms] [LOG] WebSocket connection @ http://192.168.0.88:8102/lelang/carirute:6310
+[  174037ms] [LOG] WebSocket connection attempting... @ http://192.168.0.88:8102/lelang/carirute:6388
+[  174286ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://192.168.0.88:8102/assets/tombol_close.png:0
+[  174589ms] [ERROR] WebSocket connection to 'ws://192.168.0.88:8102/' failed: Error during WebSocket handshake: Unexpected response code: 302 @ http://192.168.0.88:8102/lelang/carirute:6309
+[  174590ms] [LOG] WebSocket error: undefined @ http://192.168.0.88:8102/lelang/carirute:6354
+[  174590ms] [LOG] Reconnecting in 2 seconds... @ http://192.168.0.88:8102/lelang/carirute:6397
+[  174590ms] [LOG] WebSocket closed @ http://192.168.0.88:8102/lelang/carirute:6313
+[  174590ms] [LOG] Reconnecting in 4 seconds... @ http://192.168.0.88:8102/lelang/carirute:6397
+[  175226ms] [TABLE] {UI version: 8.4.1, Core version: 8.4.0, Build: NC8xMi8yMDIyfDRkZTU3MmExYg==, WebViewer Server: false, Full API: false} @ http://192.168.0.88:8102/_resources/themes/prahutheme/javascript/PDFView/lib/ui/webviewer-ui.min.js:270
+[  175354ms] [VERBOSE] [DOM] Password forms should have (optionally hidden) username fields for accessibility: (More info: https://goo.gl/9p2vKq) %o @ http://192.168.0.88:8102/_resources/themes/prahutheme/javascript/PDFView/lib/ui/index.html#a=1&disabledElements=downloadButton%2CprintButton%2ClanguageButton&filepicker=0&pdfnet=0&enableRedaction=0&enableMeasurement=0&pageHistory=1&notesInLeftPanel=0&singleServerMode=false&selectAnnotationOnCreation=0&autoFocusNoteOnAnnotationSelection=1&id=1&basePath=%2Flelang%2Fcarirute:0
+[  176600ms] [LOG] WebSocket connection @ http://192.168.0.88:8102/lelang/carirute:6310
+[  176600ms] [LOG] WebSocket connection attempting... @ http://192.168.0.88:8102/lelang/carirute:6388
+[  177031ms] [ERROR] WebSocket connection to 'ws://192.168.0.88:8102/' failed: Error during WebSocket handshake: Unexpected response code: 302 @ http://192.168.0.88:8102/lelang/carirute:6309
+[  177032ms] [LOG] WebSocket error: undefined @ http://192.168.0.88:8102/lelang/carirute:6354
+[  177032ms] [LOG] Reconnecting in 8 seconds... @ http://192.168.0.88:8102/lelang/carirute:6397
+[  177032ms] [LOG] WebSocket closed @ http://192.168.0.88:8102/lelang/carirute:6313
+[  177033ms] [LOG] Reconnecting in 16 seconds... @ http://192.168.0.88:8102/lelang/carirute:6397
+[  178868ms] [LOG] undefinednamanya @ http://192.168.0.88:8102/lelang/carirute:2138
+[  178875ms] [LOG] undefined @ http://192.168.0.88:8102/lelang/carirute:6267
+[  178875ms] [LOG] undefined @ http://192.168.0.88:8102/lelang/carirute:6267
+[  178875ms] [LOG] undefined @ http://192.168.0.88:8102/lelang/carirute:6267
+[  178875ms] [LOG] Masukkan Nomor Lelang @ http://192.168.0.88:8102/lelang/carirute:6267
+[  178876ms] [LOG] undefined @ http://192.168.0.88:8102/lelang/carirute:6267
+[  178876ms] [LOG] WebSocket connection @ http://192.168.0.88:8102/lelang/carirute:6310
+[  178876ms] [LOG] WebSocket connection attempting... @ http://192.168.0.88:8102/lelang/carirute:6388
+[  179106ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://192.168.0.88:8102/assets/tombol_close.png:0
+[  179407ms] [ERROR] WebSocket connection to 'ws://192.168.0.88:8102/' failed: Error during WebSocket handshake: Unexpected response code: 302 @ http://192.168.0.88:8102/lelang/carirute:6309
+[  179407ms] [LOG] WebSocket error: undefined @ http://192.168.0.88:8102/lelang/carirute:6354
+[  179408ms] [LOG] Reconnecting in 2 seconds... @ http://192.168.0.88:8102/lelang/carirute:6397
+[  179408ms] [LOG] WebSocket closed @ http://192.168.0.88:8102/lelang/carirute:6313
+[  179408ms] [LOG] Reconnecting in 4 seconds... @ http://192.168.0.88:8102/lelang/carirute:6397
+[  180187ms] [TABLE] {UI version: 8.4.1, Core version: 8.4.0, Build: NC8xMi8yMDIyfDRkZTU3MmExYg==, WebViewer Server: false, Full API: false} @ http://192.168.0.88:8102/_resources/themes/prahutheme/javascript/PDFView/lib/ui/webviewer-ui.min.js:270
+[  180305ms] [VERBOSE] [DOM] Password forms should have (optionally hidden) username fields for accessibility: (More info: https://goo.gl/9p2vKq) %o @ http://192.168.0.88:8102/_resources/themes/prahutheme/javascript/PDFView/lib/ui/index.html#a=1&disabledElements=downloadButton%2CprintButton%2ClanguageButton&filepicker=0&pdfnet=0&enableRedaction=0&enableMeasurement=0&pageHistory=1&notesInLeftPanel=0&singleServerMode=false&selectAnnotationOnCreation=0&autoFocusNoteOnAnnotationSelection=1&id=1&basePath=%2Flelang%2Fcarirute:0
+[  181412ms] [LOG] WebSocket connection @ http://192.168.0.88:8102/lelang/carirute:6310
+[  181412ms] [LOG] WebSocket connection attempting... @ http://192.168.0.88:8102/lelang/carirute:6388
+[  181971ms] [ERROR] WebSocket connection to 'ws://192.168.0.88:8102/' failed: Error during WebSocket handshake: Unexpected response code: 302 @ http://192.168.0.88:8102/lelang/carirute:6309
+[  181971ms] [LOG] WebSocket error: undefined @ http://192.168.0.88:8102/lelang/carirute:6354
+[  181971ms] [LOG] Reconnecting in 8 seconds... @ http://192.168.0.88:8102/lelang/carirute:6397
+[  181971ms] [LOG] WebSocket closed @ http://192.168.0.88:8102/lelang/carirute:6313
+[  181971ms] [LOG] Reconnecting in 16 seconds... @ http://192.168.0.88:8102/lelang/carirute:6397
+[  183453ms] [LOG] undefinednamanya @ http://192.168.0.88:8102/lelang/carirute:2138
+[  183461ms] [LOG] undefined @ http://192.168.0.88:8102/lelang/carirute:6267
+[  183461ms] [LOG] undefined @ http://192.168.0.88:8102/lelang/carirute:6267
+[  183461ms] [LOG] undefined @ http://192.168.0.88:8102/lelang/carirute:6267
+[  183461ms] [LOG] Masukkan Nomor Lelang @ http://192.168.0.88:8102/lelang/carirute:6267
+[  183461ms] [LOG] undefined @ http://192.168.0.88:8102/lelang/carirute:6267
+[  183463ms] [LOG] WebSocket connection @ http://192.168.0.88:8102/lelang/carirute:6310
+[  183463ms] [LOG] WebSocket connection attempting... @ http://192.168.0.88:8102/lelang/carirute:6388
+[  183693ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://192.168.0.88:8102/assets/tombol_close.png:0
+[  184494ms] [ERROR] WebSocket connection to 'ws://192.168.0.88:8102/' failed: Error during WebSocket handshake: Unexpected response code: 302 @ http://192.168.0.88:8102/lelang/carirute:6309
+[  184494ms] [LOG] WebSocket error: undefined @ http://192.168.0.88:8102/lelang/carirute:6354
+[  184494ms] [LOG] Reconnecting in 2 seconds... @ http://192.168.0.88:8102/lelang/carirute:6397
+[  184494ms] [LOG] WebSocket closed @ http://192.168.0.88:8102/lelang/carirute:6313
+[  184494ms] [LOG] Reconnecting in 4 seconds... @ http://192.168.0.88:8102/lelang/carirute:6397
+[  184527ms] [TABLE] {UI version: 8.4.1, Core version: 8.4.0, Build: NC8xMi8yMDIyfDRkZTU3MmExYg==, WebViewer Server: false, Full API: false} @ http://192.168.0.88:8102/_resources/themes/prahutheme/javascript/PDFView/lib/ui/webviewer-ui.min.js:270
+[  184629ms] [VERBOSE] [DOM] Password forms should have (optionally hidden) username fields for accessibility: (More info: https://goo.gl/9p2vKq) %o @ http://192.168.0.88:8102/_resources/themes/prahutheme/javascript/PDFView/lib/ui/index.html#a=1&disabledElements=downloadButton%2CprintButton%2ClanguageButton&filepicker=0&pdfnet=0&enableRedaction=0&enableMeasurement=0&pageHistory=1&notesInLeftPanel=0&singleServerMode=false&selectAnnotationOnCreation=0&autoFocusNoteOnAnnotationSelection=1&id=1&basePath=%2Flelang%2Fcarirute:0
+[  186506ms] [LOG] WebSocket connection @ http://192.168.0.88:8102/lelang/carirute:6310
+[  186507ms] [LOG] WebSocket connection attempting... @ http://192.168.0.88:8102/lelang/carirute:6388
+[  186613ms] [ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ http://192.168.0.88:8102/home/penugasantracking:0
+[  189312ms] [LOG] unread all @ http://192.168.0.88:8102/_resources/themes/prahutheme/javascript/custom/notification.js?m=1776747118:299
+[  189317ms] [LOG] undefinednamanya @ http://192.168.0.88:8102/home/notification:1867
+[  189322ms] [LOG] undefined @ http://192.168.0.88:8102/home/notification:5992
+[  189322ms] [LOG] undefined @ http://192.168.0.88:8102/home/notification:5992
+[  189323ms] [LOG] WebSocket connection @ http://192.168.0.88:8102/home/notification:6035
+[  189323ms] [LOG] WebSocket connection attempting... @ http://192.168.0.88:8102/home/notification:6113
+[  189682ms] [LOG] dariajax jumlah= 0 @ http://192.168.0.88:8102/_resources/themes/prahutheme/javascript/custom/notification.js?m=1776747118:336
+[  189682ms] [LOG] dariajax countView1 = 0 @ http://192.168.0.88:8102/_resources/themes/prahutheme/javascript/custom/notification.js?m=1776747118:337
+[  189683ms] [LOG] dariajax countView__= 0 @ http://192.168.0.88:8102/_resources/themes/prahutheme/javascript/custom/notification.js?m=1776747118:340
+[  189683ms] [LOG] mobile render ok @ http://192.168.0.88:8102/_resources/themes/prahutheme/javascript/custom/notification.js?m=1776747118:344
+[  189684ms] [LOG] countView1 =  0 @ http://192.168.0.88:8102/_resources/themes/prahutheme/javascript/custom/notification.js?m=1776747118:272
+[  189684ms] [LOG] pageNow Info_1 =  1 @ http://192.168.0.88:8102/_resources/themes/prahutheme/javascript/custom/notification.js?m=1776747118:273
+[  189684ms] [LOG] start Info =  1 @ http://192.168.0.88:8102/_resources/themes/prahutheme/javascript/custom/notification.js?m=1776747118:283
+[  189684ms] [LOG] pageNow Info_2 =  1 @ http://192.168.0.88:8102/_resources/themes/prahutheme/javascript/custom/notification.js?m=1776747118:284
+[  189684ms] [LOG] limitView1 Info =  50 @ http://192.168.0.88:8102/_resources/themes/prahutheme/javascript/custom/notification.js?m=1776747118:285
+[  189684ms] [LOG] total =  0 @ http://192.168.0.88:8102/_resources/themes/prahutheme/javascript/custom/notification.js?m=1776747118:258
+[  189685ms] [LOG] paginate =1 @ http://192.168.0.88:8102/_resources/themes/prahutheme/javascript/custom/notification.js?m=1776747118:237
+[  189685ms] [LOG] pageNow_ =1 @ http://192.168.0.88:8102/_resources/themes/prahutheme/javascript/custom/notification.js?m=1776747118:238
+[  189685ms] [LOG] createPagination=1 @ http://192.168.0.88:8102/_resources/themes/prahutheme/javascript/custom/notification.js?m=1776747118:183
+[  189686ms] [LOG] 200 xhrglobal @ http://192.168.0.88:8102/home/notification:5966
+[  191565ms] [ERROR] WebSocket connection to 'ws://192.168.0.88:8102/' failed: Error during WebSocket handshake: Unexpected response code: 302 @ http://192.168.0.88:8102/home/notification:6034
+[  191565ms] [LOG] WebSocket error: undefined @ http://192.168.0.88:8102/home/notification:6079
+[  191566ms] [LOG] Reconnecting in 2 seconds... @ http://192.168.0.88:8102/home/notification:6122
+[  191567ms] [LOG] WebSocket closed @ http://192.168.0.88:8102/home/notification:6038
+[  191567ms] [LOG] Reconnecting in 4 seconds... @ http://192.168.0.88:8102/home/notification:6122
+[  193579ms] [LOG] WebSocket connection @ http://192.168.0.88:8102/home/notification:6035
+[  193580ms] [LOG] WebSocket connection attempting... @ http://192.168.0.88:8102/home/notification:6113
+[  195106ms] [LOG] Laporannamanya @ http://192.168.0.88:8102/home/analitikscsr:1866
+[  195110ms] [LOG] DD/MM/YYYY @ http://192.168.0.88:8102/home/analitikscsr:5772
+[  195110ms] [LOG] DD/MM/YYYY @ http://192.168.0.88:8102/home/analitikscsr:5772
+[  195110ms] [LOG] Search... @ http://192.168.0.88:8102/home/analitikscsr:5772
+[  195110ms] [LOG] Search... @ http://192.168.0.88:8102/home/analitikscsr:5772
+[  195111ms] [LOG] undefined @ http://192.168.0.88:8102/home/analitikscsr:5772
+[  195111ms] [LOG] WebSocket connection @ http://192.168.0.88:8102/home/analitikscsr:5815
+[  195112ms] [LOG] WebSocket connection attempting... @ http://192.168.0.88:8102/home/analitikscsr:5893
+[  197803ms] [ERROR] WebSocket connection to 'ws://192.168.0.88:8102/' failed: Error during WebSocket handshake: Unexpected response code: 302 @ http://192.168.0.88:8102/home/analitikscsr:5814
+[  197803ms] [LOG] WebSocket error: undefined @ http://192.168.0.88:8102/home/analitikscsr:5859
+[  197803ms] [LOG] Reconnecting in 2 seconds... @ http://192.168.0.88:8102/home/analitikscsr:5902
+[  197804ms] [LOG] WebSocket closed @ http://192.168.0.88:8102/home/analitikscsr:5818
+[  197804ms] [LOG] Reconnecting in 4 seconds... @ http://192.168.0.88:8102/home/analitikscsr:5902
+[  199815ms] [LOG] WebSocket connection @ http://192.168.0.88:8102/home/analitikscsr:5815
+[  199816ms] [LOG] WebSocket connection attempting... @ http://192.168.0.88:8102/home/analitikscsr:5893
+[  201806ms] [LOG] WebSocket connection @ http://192.168.0.88:8102/home/analitikscsr:5815
+[  201807ms] [LOG] WebSocket connection attempting... @ http://192.168.0.88:8102/home/analitikscsr:5893
+[  203986ms] [ERROR] WebSocket connection to 'ws://192.168.0.88:8102/' failed: Error during WebSocket handshake: Unexpected response code: 302 @ http://192.168.0.88:8102/home/analitikscsr:5814
+[  203986ms] [LOG] WebSocket error: undefined @ http://192.168.0.88:8102/home/analitikscsr:5859
+[  203986ms] [LOG] Reconnecting in 8 seconds... @ http://192.168.0.88:8102/home/analitikscsr:5902
+[  203987ms] [LOG] WebSocket closed @ http://192.168.0.88:8102/home/analitikscsr:5818
+[  203987ms] [LOG] Reconnecting in 16 seconds... @ http://192.168.0.88:8102/home/analitikscsr:5902
+[  205108ms] [ERROR] WebSocket connection to 'ws://192.168.0.88:8102/' failed: Error during WebSocket handshake: Unexpected response code: 302 @ http://192.168.0.88:8102/home/analitikscsr:5814
+[  205108ms] [LOG] WebSocket error: undefined @ http://192.168.0.88:8102/home/analitikscsr:5859
+[  205108ms] [LOG] Reconnecting in 32 seconds... @ http://192.168.0.88:8102/home/analitikscsr:5902
+[  205108ms] [LOG] WebSocket closed @ http://192.168.0.88:8102/home/analitikscsr:5818
+[  205108ms] [LOG] Reconnecting in 64 seconds... @ http://192.168.0.88:8102/home/analitikscsr:5902
+[  211990ms] [LOG] WebSocket connection @ http://192.168.0.88:8102/home/analitikscsr:5815
+[  211990ms] [LOG] WebSocket connection attempting... @ http://192.168.0.88:8102/home/analitikscsr:5893
+[  213281ms] [LOG] undefinednamanya @ http://192.168.0.88:8102/lelang/carirute:2138
+[  213292ms] [LOG] undefined @ http://192.168.0.88:8102/lelang/carirute:6267
+[  213292ms] [LOG] undefined @ http://192.168.0.88:8102/lelang/carirute:6267
+[  213292ms] [LOG] undefined @ http://192.168.0.88:8102/lelang/carirute:6267
+[  213292ms] [LOG] Masukkan Nomor Lelang @ http://192.168.0.88:8102/lelang/carirute:6267
+[  213292ms] [LOG] undefined @ http://192.168.0.88:8102/lelang/carirute:6267
+[  213293ms] [LOG] WebSocket connection @ http://192.168.0.88:8102/lelang/carirute:6310
+[  213293ms] [LOG] WebSocket connection attempting... @ http://192.168.0.88:8102/lelang/carirute:6388
+[  213486ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://192.168.0.88:8102/assets/tombol_close.png:0
+[  214243ms] [TABLE] {UI version: 8.4.1, Core version: 8.4.0, Build: NC8xMi8yMDIyfDRkZTU3MmExYg==, WebViewer Server: false, Full API: false} @ http://192.168.0.88:8102/_resources/themes/prahutheme/javascript/PDFView/lib/ui/webviewer-ui.min.js:270
+[  214352ms] [VERBOSE] [DOM] Password forms should have (optionally hidden) username fields for accessibility: (More info: https://goo.gl/9p2vKq) %o @ http://192.168.0.88:8102/_resources/themes/prahutheme/javascript/PDFView/lib/ui/index.html#a=1&disabledElements=downloadButton%2CprintButton%2ClanguageButton&filepicker=0&pdfnet=0&enableRedaction=0&enableMeasurement=0&pageHistory=1&notesInLeftPanel=0&singleServerMode=false&selectAnnotationOnCreation=0&autoFocusNoteOnAnnotationSelection=1&id=1&basePath=%2Flelang%2Fcarirute:0
+[  217907ms] [LOG] undefinednamanya @ http://192.168.0.88:8102/lelang/carirute:2138
+[  217919ms] [LOG] undefined @ http://192.168.0.88:8102/lelang/carirute:6267
+[  217920ms] [LOG] undefined @ http://192.168.0.88:8102/lelang/carirute:6267
+[  217920ms] [LOG] undefined @ http://192.168.0.88:8102/lelang/carirute:6267
+[  217920ms] [LOG] Masukkan Nomor Lelang @ http://192.168.0.88:8102/lelang/carirute:6267
+[  217920ms] [LOG] undefined @ http://192.168.0.88:8102/lelang/carirute:6267
+[  217920ms] [LOG] WebSocket connection @ http://192.168.0.88:8102/lelang/carirute:6310
+[  217921ms] [LOG] WebSocket connection attempting... @ http://192.168.0.88:8102/lelang/carirute:6388
+[  218220ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://192.168.0.88:8102/assets/tombol_close.png:0
+[  218659ms] [TABLE] {UI version: 8.4.1, Core version: 8.4.0, Build: NC8xMi8yMDIyfDRkZTU3MmExYg==, WebViewer Server: false, Full API: false} @ http://192.168.0.88:8102/_resources/themes/prahutheme/javascript/PDFView/lib/ui/webviewer-ui.min.js:270
+[  218749ms] [VERBOSE] [DOM] Password forms should have (optionally hidden) username fields for accessibility: (More info: https://goo.gl/9p2vKq) %o @ http://192.168.0.88:8102/_resources/themes/prahutheme/javascript/PDFView/lib/ui/index.html#a=1&disabledElements=downloadButton%2CprintButton%2ClanguageButton&filepicker=0&pdfnet=0&enableRedaction=0&enableMeasurement=0&pageHistory=1&notesInLeftPanel=0&singleServerMode=false&selectAnnotationOnCreation=0&autoFocusNoteOnAnnotationSelection=1&id=1&basePath=%2Flelang%2Fcarirute:0
+[  220216ms] [ERROR] WebSocket connection to 'ws://192.168.0.88:8102/' failed: Error during WebSocket handshake: Unexpected response code: 302 @ http://192.168.0.88:8102/lelang/carirute:6309
+[  220216ms] [LOG] WebSocket error: undefined @ http://192.168.0.88:8102/lelang/carirute:6354
+[  220216ms] [LOG] Reconnecting in 2 seconds... @ http://192.168.0.88:8102/lelang/carirute:6397
+[  220217ms] [LOG] WebSocket closed @ http://192.168.0.88:8102/lelang/carirute:6313
+[  220217ms] [LOG] Reconnecting in 4 seconds... @ http://192.168.0.88:8102/lelang/carirute:6397
+[  222057ms] [LOG] undefinednamanya @ http://192.168.0.88:8102/lelang/carirute:2138
+[  222065ms] [LOG] undefined @ http://192.168.0.88:8102/lelang/carirute:6267
+[  222065ms] [LOG] undefined @ http://192.168.0.88:8102/lelang/carirute:6267
+[  222065ms] [LOG] undefined @ http://192.168.0.88:8102/lelang/carirute:6267
+[  222066ms] [LOG] Masukkan Nomor Lelang @ http://192.168.0.88:8102/lelang/carirute:6267
+[  222066ms] [LOG] undefined @ http://192.168.0.88:8102/lelang/carirute:6267
+[  222066ms] [LOG] WebSocket connection @ http://192.168.0.88:8102/lelang/carirute:6310
+[  222067ms] [LOG] WebSocket connection attempting... @ http://192.168.0.88:8102/lelang/carirute:6388
+[  222311ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://192.168.0.88:8102/assets/tombol_close.png:0
+[  222881ms] [TABLE] {UI version: 8.4.1, Core version: 8.4.0, Build: NC8xMi8yMDIyfDRkZTU3MmExYg==, WebViewer Server: false, Full API: false} @ http://192.168.0.88:8102/_resources/themes/prahutheme/javascript/PDFView/lib/ui/webviewer-ui.min.js:270
+[  222973ms] [VERBOSE] [DOM] Password forms should have (optionally hidden) username fields for accessibility: (More info: https://goo.gl/9p2vKq) %o @ http://192.168.0.88:8102/_resources/themes/prahutheme/javascript/PDFView/lib/ui/index.html#a=1&disabledElements=downloadButton%2CprintButton%2ClanguageButton&filepicker=0&pdfnet=0&enableRedaction=0&enableMeasurement=0&pageHistory=1&notesInLeftPanel=0&singleServerMode=false&selectAnnotationOnCreation=0&autoFocusNoteOnAnnotationSelection=1&id=1&basePath=%2Flelang%2Fcarirute:0
+[  226322ms] [LOG] undefinednamanya @ http://192.168.0.88:8102/lelang/carirute:2138
+[  226330ms] [LOG] undefined @ http://192.168.0.88:8102/lelang/carirute:6267
+[  226330ms] [LOG] undefined @ http://192.168.0.88:8102/lelang/carirute:6267
+[  226330ms] [LOG] undefined @ http://192.168.0.88:8102/lelang/carirute:6267
+[  226331ms] [LOG] Masukkan Nomor Lelang @ http://192.168.0.88:8102/lelang/carirute:6267
+[  226331ms] [LOG] undefined @ http://192.168.0.88:8102/lelang/carirute:6267
+[  226331ms] [LOG] WebSocket connection @ http://192.168.0.88:8102/lelang/carirute:6310
+[  226331ms] [LOG] WebSocket connection attempting... @ http://192.168.0.88:8102/lelang/carirute:6388
+[  226585ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://192.168.0.88:8102/assets/tombol_close.png:0
+[  227253ms] [TABLE] {UI version: 8.4.1, Core version: 8.4.0, Build: NC8xMi8yMDIyfDRkZTU3MmExYg==, WebViewer Server: false, Full API: false} @ http://192.168.0.88:8102/_resources/themes/prahutheme/javascript/PDFView/lib/ui/webviewer-ui.min.js:270
+[  227380ms] [VERBOSE] [DOM] Password forms should have (optionally hidden) username fields for accessibility: (More info: https://goo.gl/9p2vKq) %o @ http://192.168.0.88:8102/_resources/themes/prahutheme/javascript/PDFView/lib/ui/index.html#a=1&disabledElements=downloadButton%2CprintButton%2ClanguageButton&filepicker=0&pdfnet=0&enableRedaction=0&enableMeasurement=0&pageHistory=1&notesInLeftPanel=0&singleServerMode=false&selectAnnotationOnCreation=0&autoFocusNoteOnAnnotationSelection=1&id=1&basePath=%2Flelang%2Fcarirute:0
+[  227853ms] [ERROR] WebSocket connection to 'ws://192.168.0.88:8102/' failed: Error during WebSocket handshake: Unexpected response code: 302 @ http://192.168.0.88:8102/lelang/carirute:6309
+[  227853ms] [LOG] WebSocket error: undefined @ http://192.168.0.88:8102/lelang/carirute:6354
+[  227854ms] [LOG] Reconnecting in 2 seconds... @ http://192.168.0.88:8102/lelang/carirute:6397
+[  227854ms] [LOG] WebSocket closed @ http://192.168.0.88:8102/lelang/carirute:6313
+[  227854ms] [LOG] Reconnecting in 4 seconds... @ http://192.168.0.88:8102/lelang/carirute:6397
+[  230380ms] [LOG] undefinednamanya @ http://192.168.0.88:8102/lelang/carirute:2138
+[  230391ms] [LOG] undefined @ http://192.168.0.88:8102/lelang/carirute:6267
+[  230391ms] [LOG] undefined @ http://192.168.0.88:8102/lelang/carirute:6267
+[  230391ms] [LOG] undefined @ http://192.168.0.88:8102/lelang/carirute:6267
+[  230391ms] [LOG] Masukkan Nomor Lelang @ http://192.168.0.88:8102/lelang/carirute:6267
+[  230391ms] [LOG] undefined @ http://192.168.0.88:8102/lelang/carirute:6267
+[  230391ms] [LOG] WebSocket connection @ http://192.168.0.88:8102/lelang/carirute:6310
+[  230392ms] [LOG] WebSocket connection attempting... @ http://192.168.0.88:8102/lelang/carirute:6388
+[  230621ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://192.168.0.88:8102/assets/tombol_close.png:0
+[  231182ms] [TABLE] {UI version: 8.4.1, Core version: 8.4.0, Build: NC8xMi8yMDIyfDRkZTU3MmExYg==, WebViewer Server: false, Full API: false} @ http://192.168.0.88:8102/_resources/themes/prahutheme/javascript/PDFView/lib/ui/webviewer-ui.min.js:270
+[  231264ms] [VERBOSE] [DOM] Password forms should have (optionally hidden) username fields for accessibility: (More info: https://goo.gl/9p2vKq) %o @ http://192.168.0.88:8102/_resources/themes/prahutheme/javascript/PDFView/lib/ui/index.html#a=1&disabledElements=downloadButton%2CprintButton%2ClanguageButton&filepicker=0&pdfnet=0&enableRedaction=0&enableMeasurement=0&pageHistory=1&notesInLeftPanel=0&singleServerMode=false&selectAnnotationOnCreation=0&autoFocusNoteOnAnnotationSelection=1&id=1&basePath=%2Flelang%2Fcarirute:0
+[  235161ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://192.168.0.88:8102/assets/tombol_close.png:0
+[  235212ms] [LOG] undefinednamanya @ http://192.168.0.88:8102/lelang/carirute:2138
+[  235225ms] [LOG] undefined @ http://192.168.0.88:8102/lelang/carirute:6267
+[  235225ms] [LOG] undefined @ http://192.168.0.88:8102/lelang/carirute:6267
+[  235226ms] [LOG] undefined @ http://192.168.0.88:8102/lelang/carirute:6267
+[  235226ms] [LOG] Masukkan Nomor Lelang @ http://192.168.0.88:8102/lelang/carirute:6267
+[  235226ms] [LOG] undefined @ http://192.168.0.88:8102/lelang/carirute:6267
+[  235227ms] [LOG] WebSocket connection @ http://192.168.0.88:8102/lelang/carirute:6310
+[  235227ms] [LOG] WebSocket connection attempting... @ http://192.168.0.88:8102/lelang/carirute:6388
+[  235773ms] [TABLE] {UI version: 8.4.1, Core version: 8.4.0, Build: NC8xMi8yMDIyfDRkZTU3MmExYg==, WebViewer Server: false, Full API: false} @ http://192.168.0.88:8102/_resources/themes/prahutheme/javascript/PDFView/lib/ui/webviewer-ui.min.js:270
+[  235899ms] [VERBOSE] [DOM] Password forms should have (optionally hidden) username fields for accessibility: (More info: https://goo.gl/9p2vKq) %o @ http://192.168.0.88:8102/_resources/themes/prahutheme/javascript/PDFView/lib/ui/index.html#a=1&disabledElements=downloadButton%2CprintButton%2ClanguageButton&filepicker=0&pdfnet=0&enableRedaction=0&enableMeasurement=0&pageHistory=1&notesInLeftPanel=0&singleServerMode=false&selectAnnotationOnCreation=0&autoFocusNoteOnAnnotationSelection=1&id=1&basePath=%2Flelang%2Fcarirute:0
+[  236604ms] [ERROR] WebSocket connection to 'ws://192.168.0.88:8102/' failed: Error during WebSocket handshake: Unexpected response code: 302 @ http://192.168.0.88:8102/lelang/carirute:6309
+[  236605ms] [LOG] WebSocket error: undefined @ http://192.168.0.88:8102/lelang/carirute:6354
+[  236605ms] [LOG] Reconnecting in 2 seconds... @ http://192.168.0.88:8102/lelang/carirute:6397
+[  236605ms] [LOG] WebSocket closed @ http://192.168.0.88:8102/lelang/carirute:6313
+[  236605ms] [LOG] Reconnecting in 4 seconds... @ http://192.168.0.88:8102/lelang/carirute:6397
+[  239091ms] [LOG] undefinednamanya @ http://192.168.0.88:8102/lelang/carirute:2138
+[  239102ms] [LOG] undefined @ http://192.168.0.88:8102/lelang/carirute:6267
+[  239102ms] [LOG] undefined @ http://192.168.0.88:8102/lelang/carirute:6267
+[  239102ms] [LOG] undefined @ http://192.168.0.88:8102/lelang/carirute:6267
+[  239102ms] [LOG] Masukkan Nomor Lelang @ http://192.168.0.88:8102/lelang/carirute:6267
+[  239102ms] [LOG] undefined @ http://192.168.0.88:8102/lelang/carirute:6267
+[  239102ms] [LOG] WebSocket connection @ http://192.168.0.88:8102/lelang/carirute:6310
+[  239103ms] [LOG] WebSocket connection attempting... @ http://192.168.0.88:8102/lelang/carirute:6388
+[  239304ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://192.168.0.88:8102/assets/tombol_close.png:0
+[  239922ms] [TABLE] {UI version: 8.4.1, Core version: 8.4.0, Build: NC8xMi8yMDIyfDRkZTU3MmExYg==, WebViewer Server: false, Full API: false} @ http://192.168.0.88:8102/_resources/themes/prahutheme/javascript/PDFView/lib/ui/webviewer-ui.min.js:270
+[  240003ms] [VERBOSE] [DOM] Password forms should have (optionally hidden) username fields for accessibility: (More info: https://goo.gl/9p2vKq) %o @ http://192.168.0.88:8102/_resources/themes/prahutheme/javascript/PDFView/lib/ui/index.html#a=1&disabledElements=downloadButton%2CprintButton%2ClanguageButton&filepicker=0&pdfnet=0&enableRedaction=0&enableMeasurement=0&pageHistory=1&notesInLeftPanel=0&singleServerMode=false&selectAnnotationOnCreation=0&autoFocusNoteOnAnnotationSelection=1&id=1&basePath=%2Flelang%2Fcarirute:0
+[  242307ms] [ERROR] WebSocket connection to 'ws://192.168.0.88:8102/' failed: Error during WebSocket handshake: Unexpected response code: 302 @ http://192.168.0.88:8102/lelang/carirute:6309
+[  242307ms] [LOG] WebSocket error: undefined @ http://192.168.0.88:8102/lelang/carirute:6354
+[  242308ms] [LOG] Reconnecting in 2 seconds... @ http://192.168.0.88:8102/lelang/carirute:6397
+[  242308ms] [LOG] WebSocket closed @ http://192.168.0.88:8102/lelang/carirute:6313
+[  242309ms] [LOG] Reconnecting in 4 seconds... @ http://192.168.0.88:8102/lelang/carirute:6397

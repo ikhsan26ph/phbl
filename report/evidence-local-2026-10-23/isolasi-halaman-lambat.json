@@ -1,0 +1,77 @@
+{
+ "waktu": "2026-10-23T09:21:00.404Z",
+ "out": [
+  {
+   "role": "shipper",
+   "url": "/analitik/datajenismuatan",
+   "serverTenangSebelumMs": 296,
+   "navErr": "",
+   "xhrBelumSelesai": [],
+   "log": [
+    {
+     "t": 60.4,
+     "tipe": "document",
+     "metode": "GET",
+     "status": 500,
+     "ms": 60298,
+     "url": "/analitik/datajenismuatan",
+     "err": "Fatal error"
+    }
+   ]
+  },
+  {
+   "role": "transporter",
+   "url": "/home/myprofile",
+   "serverTenangSebelumMs": 277,
+   "navErr": "",
+   "xhrBelumSelesai": [],
+   "log": [
+    {
+     "t": 0.5,
+     "tipe": "document",
+     "metode": "GET",
+     "status": 200,
+     "ms": 449,
+     "url": "/home/myprofile",
+     "err": ""
+    }
+   ]
+  },
+  {
+   "role": "shipper",
+   "url": "/lelang/carijadwal",
+   "serverTenangSebelumMs": 274,
+   "navErr": "",
+   "xhrBelumSelesai": [],
+   "log": [
+    {
+     "t": 0.5,
+     "tipe": "document",
+     "metode": "GET",
+     "status": 200,
+     "ms": 424,
+     "url": "/lelang/carijadwal",
+     "err": ""
+    }
+   ]
+  },
+  {
+   "role": "transporter",
+   "url": "/home/hakaksesbidder",
+   "serverTenangSebelumMs": 270,
+   "navErr": "",
+   "xhrBelumSelesai": [],
+   "log": [
+    {
+     "t": 0.5,
+     "tipe": "document",
+     "metode": "GET",
+     "status": 200,
+     "ms": 457,
+     "url": "/home/hakaksesbidder",
+     "err": ""
+    }
+   ]
+  }
+ ]
+}

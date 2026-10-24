@@ -1,0 +1,1120 @@
+[    2352ms] [VERBOSE] [DOM] Input elements should have autocomplete attributes (suggested: "current-password"): (More info: https://goo.gl/9p2vKq) %o @ http://192.168.0.88:8102/user/login:0
+[    2354ms] [LOG] 0 @ http://192.168.0.88:8102/user/login:1432
+[    2354ms] [LOG] undefined scr @ http://192.168.0.88:8102/user/login:1436
+[    6653ms] [LOG] ddd @ http://192.168.0.88:8102/user/login:1531
+[    7025ms] [LOG] {pesan: ADMIN, status: 1, user_aktif: 1, ParentID: 0, redirect: } @ http://192.168.0.88:8102/user/login:1564
+[    7026ms] [LOG] {pesan: ADMIN, status: 1, user_aktif: 1, ParentID: 0, redirect: } a @ http://192.168.0.88:8102/user/login:1566
+[    8716ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_RESET @ https://cdn.rawgit.com/Eonasdan/bootstrap-datetimepicker/e8bddc60e73c1ec2475f827be36e1957af72e2ea/src/js/bootstrap-datetimepicker.js:0
+[    8919ms] [LOG] Pengajuan Lelangnamanya @ http://192.168.0.88:8102/lelang/listlelang?tab=semua-lelang:2027
+[    8928ms] [LOG] undefined @ http://192.168.0.88:8102/lelang/listlelang?tab=semua-lelang:6013
+[    8929ms] [LOG] undefined @ http://192.168.0.88:8102/lelang/listlelang?tab=semua-lelang:6013
+[    8929ms] [LOG] Masukkan Nomor Lelang @ http://192.168.0.88:8102/lelang/listlelang?tab=semua-lelang:6013
+[    8929ms] [LOG] DD/MM/YYYY @ http://192.168.0.88:8102/lelang/listlelang?tab=semua-lelang:6013
+[    8929ms] [LOG] DD/MM/YYYY @ http://192.168.0.88:8102/lelang/listlelang?tab=semua-lelang:6013
+[    8929ms] [LOG] DD/MM/YYYY @ http://192.168.0.88:8102/lelang/listlelang?tab=semua-lelang:6013
+[    8929ms] [LOG] DD/MM/YYYY @ http://192.168.0.88:8102/lelang/listlelang?tab=semua-lelang:6013
+[    8929ms] [LOG] undefined @ http://192.168.0.88:8102/lelang/listlelang?tab=semua-lelang:6013
+[    8929ms] [LOG] undefined @ http://192.168.0.88:8102/lelang/listlelang?tab=semua-lelang:6013
+[    8929ms] [LOG] Masukkan Nama Bank @ http://192.168.0.88:8102/lelang/listlelang?tab=semua-lelang:6013
+[    8929ms] [LOG] undefined @ http://192.168.0.88:8102/lelang/listlelang?tab=semua-lelang:6013
+[    8931ms] [LOG] WebSocket connection @ http://192.168.0.88:8102/lelang/listlelang?tab=semua-lelang:6056
+[    8931ms] [LOG] WebSocket connection attempting... @ http://192.168.0.88:8102/lelang/listlelang?tab=semua-lelang:6134
+[    9251ms] [LOG] [] @ http://192.168.0.88:8102/_resources/themes/prahutheme/javascript/custom/listLelang.js?m=1792376516:14
+[    9258ms] [LOG] 200 xhrglobal @ http://192.168.0.88:8102/lelang/listlelang?tab=semua-lelang:5987
+[    9508ms] [ERROR] WebSocket connection to 'ws://192.168.0.88:8102/' failed: Error during WebSocket handshake: Unexpected response code: 302 @ http://192.168.0.88:8102/lelang/listlelang?tab=semua-lelang:6055
+[    9508ms] [LOG] WebSocket error: undefined @ http://192.168.0.88:8102/lelang/listlelang?tab=semua-lelang:6100
+[    9509ms] [LOG] Reconnecting in 2 seconds... @ http://192.168.0.88:8102/lelang/listlelang?tab=semua-lelang:6143
+[    9509ms] [LOG] WebSocket closed @ http://192.168.0.88:8102/lelang/listlelang?tab=semua-lelang:6059
+[    9509ms] [LOG] Reconnecting in 4 seconds... @ http://192.168.0.88:8102/lelang/listlelang?tab=semua-lelang:6143
+[   11510ms] [LOG] WebSocket connection @ http://192.168.0.88:8102/lelang/listlelang?tab=semua-lelang:6056
+[   11510ms] [LOG] WebSocket connection attempting... @ http://192.168.0.88:8102/lelang/listlelang?tab=semua-lelang:6134
+[   11818ms] [ERROR] WebSocket connection to 'ws://192.168.0.88:8102/' failed: Error during WebSocket handshake: Unexpected response code: 302 @ http://192.168.0.88:8102/lelang/listlelang?tab=semua-lelang:6055
+[   11818ms] [LOG] WebSocket error: undefined @ http://192.168.0.88:8102/lelang/listlelang?tab=semua-lelang:6100
+[   11818ms] [LOG] Reconnecting in 8 seconds... @ http://192.168.0.88:8102/lelang/listlelang?tab=semua-lelang:6143
+[   11818ms] [LOG] WebSocket closed @ http://192.168.0.88:8102/lelang/listlelang?tab=semua-lelang:6059
+[   11818ms] [LOG] Reconnecting in 16 seconds... @ http://192.168.0.88:8102/lelang/listlelang?tab=semua-lelang:6143
+[   13513ms] [LOG] WebSocket connection @ http://192.168.0.88:8102/lelang/listlelang?tab=semua-lelang:6056
+[   13513ms] [LOG] WebSocket connection attempting... @ http://192.168.0.88:8102/lelang/listlelang?tab=semua-lelang:6134
+[   13822ms] [ERROR] WebSocket connection to 'ws://192.168.0.88:8102/' failed: Error during WebSocket handshake: Unexpected response code: 302 @ http://192.168.0.88:8102/lelang/listlelang?tab=semua-lelang:6055
+[   13822ms] [LOG] WebSocket error: undefined @ http://192.168.0.88:8102/lelang/listlelang?tab=semua-lelang:6100
+[   13822ms] [LOG] Reconnecting in 32 seconds... @ http://192.168.0.88:8102/lelang/listlelang?tab=semua-lelang:6143
+[   13822ms] [LOG] WebSocket closed @ http://192.168.0.88:8102/lelang/listlelang?tab=semua-lelang:6059
+[   13822ms] [LOG] Reconnecting in 64 seconds... @ http://192.168.0.88:8102/lelang/listlelang?tab=semua-lelang:6143
+[   19826ms] [LOG] WebSocket connection @ http://192.168.0.88:8102/lelang/listlelang?tab=semua-lelang:6056
+[   19826ms] [LOG] WebSocket connection attempting... @ http://192.168.0.88:8102/lelang/listlelang?tab=semua-lelang:6134
+[   20117ms] [ERROR] WebSocket connection to 'ws://192.168.0.88:8102/' failed: Error during WebSocket handshake: Unexpected response code: 302 @ http://192.168.0.88:8102/lelang/listlelang?tab=semua-lelang:6055
+[   20117ms] [LOG] WebSocket error: undefined @ http://192.168.0.88:8102/lelang/listlelang?tab=semua-lelang:6100
+[   20117ms] [LOG] Reconnecting in 128 seconds... @ http://192.168.0.88:8102/lelang/listlelang?tab=semua-lelang:6143
+[   20117ms] [LOG] WebSocket closed @ http://192.168.0.88:8102/lelang/listlelang?tab=semua-lelang:6059
+[   20117ms] [LOG] Reconnecting in 256 seconds... @ http://192.168.0.88:8102/lelang/listlelang?tab=semua-lelang:6143
+[   27820ms] [LOG] WebSocket connection @ http://192.168.0.88:8102/lelang/listlelang?tab=semua-lelang:6056
+[   27821ms] [LOG] WebSocket connection attempting... @ http://192.168.0.88:8102/lelang/listlelang?tab=semua-lelang:6134
+[   28117ms] [ERROR] WebSocket connection to 'ws://192.168.0.88:8102/' failed: Error during WebSocket handshake: Unexpected response code: 302 @ http://192.168.0.88:8102/lelang/listlelang?tab=semua-lelang:6055
+[   28118ms] [LOG] WebSocket error: undefined @ http://192.168.0.88:8102/lelang/listlelang?tab=semua-lelang:6100
+[   28118ms] [LOG] Reconnecting in 512 seconds... @ http://192.168.0.88:8102/lelang/listlelang?tab=semua-lelang:6143
+[   28118ms] [LOG] WebSocket closed @ http://192.168.0.88:8102/lelang/listlelang?tab=semua-lelang:6059
+[   28119ms] [LOG] Reconnecting in 1024 seconds... @ http://192.168.0.88:8102/lelang/listlelang?tab=semua-lelang:6143
+[   44403ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_RESET @ https://cdn.rawgit.com/Eonasdan/bootstrap-datetimepicker/e8bddc60e73c1ec2475f827be36e1957af72e2ea/src/js/bootstrap-datetimepicker.js:0
+[   44793ms] [LOG] Pengajuan Lelangnamanya @ http://192.168.0.88:8102/lelang/listlelang?tab=semua-lelang:2027
+[   44798ms] [LOG] undefined @ http://192.168.0.88:8102/lelang/listlelang?tab=semua-lelang:6013
+[   44799ms] [LOG] undefined @ http://192.168.0.88:8102/lelang/listlelang?tab=semua-lelang:6013
+[   44799ms] [LOG] Masukkan Nomor Lelang @ http://192.168.0.88:8102/lelang/listlelang?tab=semua-lelang:6013
+[   44799ms] [LOG] DD/MM/YYYY @ http://192.168.0.88:8102/lelang/listlelang?tab=semua-lelang:6013
+[   44799ms] [LOG] DD/MM/YYYY @ http://192.168.0.88:8102/lelang/listlelang?tab=semua-lelang:6013
+[   44799ms] [LOG] DD/MM/YYYY @ http://192.168.0.88:8102/lelang/listlelang?tab=semua-lelang:6013
+[   44799ms] [LOG] DD/MM/YYYY @ http://192.168.0.88:8102/lelang/listlelang?tab=semua-lelang:6013
+[   44799ms] [LOG] undefined @ http://192.168.0.88:8102/lelang/listlelang?tab=semua-lelang:6013
+[   44799ms] [LOG] undefined @ http://192.168.0.88:8102/lelang/listlelang?tab=semua-lelang:6013
+[   44799ms] [LOG] Masukkan Nama Bank @ http://192.168.0.88:8102/lelang/listlelang?tab=semua-lelang:6013
+[   44799ms] [LOG] undefined @ http://192.168.0.88:8102/lelang/listlelang?tab=semua-lelang:6013
+[   44800ms] [LOG] WebSocket connection @ http://192.168.0.88:8102/lelang/listlelang?tab=semua-lelang:6056
+[   44800ms] [LOG] WebSocket connection attempting... @ http://192.168.0.88:8102/lelang/listlelang?tab=semua-lelang:6134
+[   45123ms] [LOG] [] @ http://192.168.0.88:8102/_resources/themes/prahutheme/javascript/custom/listLelang.js?m=1792376516:14
+[   45126ms] [LOG] 200 xhrglobal @ http://192.168.0.88:8102/lelang/listlelang?tab=semua-lelang:5987
+[   46328ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_RESET @ https://cdn.rawgit.com/Eonasdan/bootstrap-datetimepicker/e8bddc60e73c1ec2475f827be36e1957af72e2ea/src/js/bootstrap-datetimepicker.js:0
+[   47033ms] [LOG] Pengajuan Lelangnamanya @ http://192.168.0.88:8102/lelang/listlelang?tab=perlu-input-harga:2027
+[   47044ms] [LOG] undefined @ http://192.168.0.88:8102/lelang/listlelang?tab=perlu-input-harga:6013
+[   47044ms] [LOG] undefined @ http://192.168.0.88:8102/lelang/listlelang?tab=perlu-input-harga:6013
+[   47044ms] [LOG] Masukkan Nomor Lelang @ http://192.168.0.88:8102/lelang/listlelang?tab=perlu-input-harga:6013
+[   47044ms] [LOG] DD/MM/YYYY @ http://192.168.0.88:8102/lelang/listlelang?tab=perlu-input-harga:6013
+[   47045ms] [LOG] DD/MM/YYYY @ http://192.168.0.88:8102/lelang/listlelang?tab=perlu-input-harga:6013
+[   47045ms] [LOG] DD/MM/YYYY @ http://192.168.0.88:8102/lelang/listlelang?tab=perlu-input-harga:6013
+[   47045ms] [LOG] DD/MM/YYYY @ http://192.168.0.88:8102/lelang/listlelang?tab=perlu-input-harga:6013
+[   47045ms] [LOG] undefined @ http://192.168.0.88:8102/lelang/listlelang?tab=perlu-input-harga:6013
+[   47045ms] [LOG] undefined @ http://192.168.0.88:8102/lelang/listlelang?tab=perlu-input-harga:6013
+[   47045ms] [LOG] Masukkan Nama Bank @ http://192.168.0.88:8102/lelang/listlelang?tab=perlu-input-harga:6013
+[   47045ms] [LOG] undefined @ http://192.168.0.88:8102/lelang/listlelang?tab=perlu-input-harga:6013
+[   47047ms] [LOG] WebSocket connection @ http://192.168.0.88:8102/lelang/listlelang?tab=perlu-input-harga:6056
+[   47047ms] [LOG] WebSocket connection attempting... @ http://192.168.0.88:8102/lelang/listlelang?tab=perlu-input-harga:6134
+[   47452ms] [LOG] [] @ http://192.168.0.88:8102/_resources/themes/prahutheme/javascript/custom/listLelang.js?m=1792376516:14
+[   47458ms] [LOG] 200 xhrglobal @ http://192.168.0.88:8102/lelang/listlelang?tab=perlu-input-harga:5987
+[   49145ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_RESET @ https://cdn.rawgit.com/Eonasdan/bootstrap-datetimepicker/e8bddc60e73c1ec2475f827be36e1957af72e2ea/src/js/bootstrap-datetimepicker.js:0
+[   49418ms] [LOG] Pengajuan Lelangnamanya @ http://192.168.0.88:8102/lelang/listlelang?tab=perlu-update-harga:2027
+[   49427ms] [LOG] undefined @ http://192.168.0.88:8102/lelang/listlelang?tab=perlu-update-harga:6013
+[   49428ms] [LOG] undefined @ http://192.168.0.88:8102/lelang/listlelang?tab=perlu-update-harga:6013
+[   49428ms] [LOG] Masukkan Nomor Lelang @ http://192.168.0.88:8102/lelang/listlelang?tab=perlu-update-harga:6013
+[   49428ms] [LOG] DD/MM/YYYY @ http://192.168.0.88:8102/lelang/listlelang?tab=perlu-update-harga:6013
+[   49428ms] [LOG] DD/MM/YYYY @ http://192.168.0.88:8102/lelang/listlelang?tab=perlu-update-harga:6013
+[   49428ms] [LOG] DD/MM/YYYY @ http://192.168.0.88:8102/lelang/listlelang?tab=perlu-update-harga:6013
+[   49429ms] [LOG] DD/MM/YYYY @ http://192.168.0.88:8102/lelang/listlelang?tab=perlu-update-harga:6013
+[   49429ms] [LOG] undefined @ http://192.168.0.88:8102/lelang/listlelang?tab=perlu-update-harga:6013
+[   49429ms] [LOG] undefined @ http://192.168.0.88:8102/lelang/listlelang?tab=perlu-update-harga:6013
+[   49429ms] [LOG] Masukkan Nama Bank @ http://192.168.0.88:8102/lelang/listlelang?tab=perlu-update-harga:6013
+[   49429ms] [LOG] undefined @ http://192.168.0.88:8102/lelang/listlelang?tab=perlu-update-harga:6013
+[   49430ms] [LOG] WebSocket connection @ http://192.168.0.88:8102/lelang/listlelang?tab=perlu-update-harga:6056
+[   49430ms] [LOG] WebSocket connection attempting... @ http://192.168.0.88:8102/lelang/listlelang?tab=perlu-update-harga:6134
+[   49781ms] [LOG] [] @ http://192.168.0.88:8102/_resources/themes/prahutheme/javascript/custom/listLelang.js?m=1792376516:14
+[   49782ms] [LOG] 200 xhrglobal @ http://192.168.0.88:8102/lelang/listlelang?tab=perlu-update-harga:5987
+[   50069ms] [ERROR] WebSocket connection to 'ws://192.168.0.88:8102/' failed: Error during WebSocket handshake: Unexpected response code: 302 @ http://192.168.0.88:8102/lelang/listlelang?tab=perlu-update-harga:6055
+[   50070ms] [LOG] WebSocket error: undefined @ http://192.168.0.88:8102/lelang/listlelang?tab=perlu-update-harga:6100
+[   50070ms] [LOG] Reconnecting in 2 seconds... @ http://192.168.0.88:8102/lelang/listlelang?tab=perlu-update-harga:6143
+[   50070ms] [LOG] WebSocket closed @ http://192.168.0.88:8102/lelang/listlelang?tab=perlu-update-harga:6059
+[   50070ms] [LOG] Reconnecting in 4 seconds... @ http://192.168.0.88:8102/lelang/listlelang?tab=perlu-update-harga:6143
+[   50897ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_RESET @ https://cdn.rawgit.com/Eonasdan/bootstrap-datetimepicker/e8bddc60e73c1ec2475f827be36e1957af72e2ea/src/js/bootstrap-datetimepicker.js:0
+[   53152ms] [LOG] Pengajuan Lelangnamanya @ http://192.168.0.88:8102/lelang/listlelang?tab=lelang-tutup:2027
+[   53159ms] [LOG] undefined @ http://192.168.0.88:8102/lelang/listlelang?tab=lelang-tutup:6013
+[   53160ms] [LOG] undefined @ http://192.168.0.88:8102/lelang/listlelang?tab=lelang-tutup:6013
+[   53160ms] [LOG] Masukkan Nomor Lelang @ http://192.168.0.88:8102/lelang/listlelang?tab=lelang-tutup:6013
+[   53160ms] [LOG] DD/MM/YYYY @ http://192.168.0.88:8102/lelang/listlelang?tab=lelang-tutup:6013
+[   53160ms] [LOG] DD/MM/YYYY @ http://192.168.0.88:8102/lelang/listlelang?tab=lelang-tutup:6013
+[   53161ms] [LOG] DD/MM/YYYY @ http://192.168.0.88:8102/lelang/listlelang?tab=lelang-tutup:6013
+[   53161ms] [LOG] DD/MM/YYYY @ http://192.168.0.88:8102/lelang/listlelang?tab=lelang-tutup:6013
+[   53161ms] [LOG] undefined @ http://192.168.0.88:8102/lelang/listlelang?tab=lelang-tutup:6013
+[   53161ms] [LOG] undefined @ http://192.168.0.88:8102/lelang/listlelang?tab=lelang-tutup:6013
+[   53161ms] [LOG] Masukkan Nama Bank @ http://192.168.0.88:8102/lelang/listlelang?tab=lelang-tutup:6013
+[   53162ms] [LOG] undefined @ http://192.168.0.88:8102/lelang/listlelang?tab=lelang-tutup:6013
+[   53163ms] [LOG] WebSocket connection @ http://192.168.0.88:8102/lelang/listlelang?tab=lelang-tutup:6056
+[   53163ms] [LOG] WebSocket connection attempting... @ http://192.168.0.88:8102/lelang/listlelang?tab=lelang-tutup:6134
+[   53494ms] [LOG] [] @ http://192.168.0.88:8102/_resources/themes/prahutheme/javascript/custom/listLelang.js?m=1792376516:14
+[   53496ms] [LOG] 200 xhrglobal @ http://192.168.0.88:8102/lelang/listlelang?tab=lelang-tutup:5987
+[   54704ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_RESET @ https://cdn.rawgit.com/Eonasdan/bootstrap-datetimepicker/e8bddc60e73c1ec2475f827be36e1957af72e2ea/src/js/bootstrap-datetimepicker.js:0
+[   55321ms] [LOG] Pengajuan Lelangnamanya @ http://192.168.0.88:8102/lelang/listlelang?tab=telah-akhir-kirim:2027
+[   55330ms] [LOG] undefined @ http://192.168.0.88:8102/lelang/listlelang?tab=telah-akhir-kirim:6013
+[   55330ms] [LOG] undefined @ http://192.168.0.88:8102/lelang/listlelang?tab=telah-akhir-kirim:6013
+[   55330ms] [LOG] Masukkan Nomor Lelang @ http://192.168.0.88:8102/lelang/listlelang?tab=telah-akhir-kirim:6013
+[   55330ms] [LOG] DD/MM/YYYY @ http://192.168.0.88:8102/lelang/listlelang?tab=telah-akhir-kirim:6013
+[   55331ms] [LOG] DD/MM/YYYY @ http://192.168.0.88:8102/lelang/listlelang?tab=telah-akhir-kirim:6013
+[   55331ms] [LOG] DD/MM/YYYY @ http://192.168.0.88:8102/lelang/listlelang?tab=telah-akhir-kirim:6013
+[   55331ms] [LOG] DD/MM/YYYY @ http://192.168.0.88:8102/lelang/listlelang?tab=telah-akhir-kirim:6013
+[   55331ms] [LOG] undefined @ http://192.168.0.88:8102/lelang/listlelang?tab=telah-akhir-kirim:6013
+[   55331ms] [LOG] undefined @ http://192.168.0.88:8102/lelang/listlelang?tab=telah-akhir-kirim:6013
+[   55332ms] [LOG] Masukkan Nama Bank @ http://192.168.0.88:8102/lelang/listlelang?tab=telah-akhir-kirim:6013
+[   55332ms] [LOG] undefined @ http://192.168.0.88:8102/lelang/listlelang?tab=telah-akhir-kirim:6013
+[   55333ms] [LOG] WebSocket connection @ http://192.168.0.88:8102/lelang/listlelang?tab=telah-akhir-kirim:6056
+[   55333ms] [LOG] WebSocket connection attempting... @ http://192.168.0.88:8102/lelang/listlelang?tab=telah-akhir-kirim:6134
+[   57410ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_RESET @ https://cdn.rawgit.com/Eonasdan/bootstrap-datetimepicker/e8bddc60e73c1ec2475f827be36e1957af72e2ea/src/js/bootstrap-datetimepicker.js:0
+[   58066ms] [LOG] Pengajuan Lelangnamanya @ http://192.168.0.88:8102/lelang/listlelang?tab=lelang-batal:2027
+[   58072ms] [LOG] undefined @ http://192.168.0.88:8102/lelang/listlelang?tab=lelang-batal:6013
+[   58073ms] [LOG] undefined @ http://192.168.0.88:8102/lelang/listlelang?tab=lelang-batal:6013
+[   58073ms] [LOG] Masukkan Nomor Lelang @ http://192.168.0.88:8102/lelang/listlelang?tab=lelang-batal:6013
+[   58073ms] [LOG] DD/MM/YYYY @ http://192.168.0.88:8102/lelang/listlelang?tab=lelang-batal:6013
+[   58073ms] [LOG] DD/MM/YYYY @ http://192.168.0.88:8102/lelang/listlelang?tab=lelang-batal:6013
+[   58073ms] [LOG] DD/MM/YYYY @ http://192.168.0.88:8102/lelang/listlelang?tab=lelang-batal:6013
+[   58073ms] [LOG] DD/MM/YYYY @ http://192.168.0.88:8102/lelang/listlelang?tab=lelang-batal:6013
+[   58074ms] [LOG] undefined @ http://192.168.0.88:8102/lelang/listlelang?tab=lelang-batal:6013
+[   58074ms] [LOG] undefined @ http://192.168.0.88:8102/lelang/listlelang?tab=lelang-batal:6013
+[   58075ms] [LOG] Masukkan Nama Bank @ http://192.168.0.88:8102/lelang/listlelang?tab=lelang-batal:6013
+[   58075ms] [LOG] undefined @ http://192.168.0.88:8102/lelang/listlelang?tab=lelang-batal:6013
+[   58076ms] [LOG] WebSocket connection @ http://192.168.0.88:8102/lelang/listlelang?tab=lelang-batal:6056
+[   58077ms] [LOG] WebSocket connection attempting... @ http://192.168.0.88:8102/lelang/listlelang?tab=lelang-batal:6134
+[   58398ms] [LOG] [] @ http://192.168.0.88:8102/_resources/themes/prahutheme/javascript/custom/listLelang.js?m=1792376516:14
+[   58399ms] [LOG] 200 xhrglobal @ http://192.168.0.88:8102/lelang/listlelang?tab=lelang-batal:5987
+[   59601ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_RESET @ https://cdn.rawgit.com/Eonasdan/bootstrap-datetimepicker/e8bddc60e73c1ec2475f827be36e1957af72e2ea/src/js/bootstrap-datetimepicker.js:0
+[   60358ms] [LOG] Pengajuan Lelangnamanya @ http://192.168.0.88:8102/lelang/listlelang?tab=semua-lelang&status_filter=1&filter_1=LELANGFCU%2F28082026IK:2027
+[   60366ms] [LOG] undefined @ http://192.168.0.88:8102/lelang/listlelang?tab=semua-lelang&status_filter=1&filter_1=LELANGFCU%2F28082026IK:6013
+[   60366ms] [LOG] undefined @ http://192.168.0.88:8102/lelang/listlelang?tab=semua-lelang&status_filter=1&filter_1=LELANGFCU%2F28082026IK:6013
+[   60366ms] [LOG] Masukkan Nomor Lelang @ http://192.168.0.88:8102/lelang/listlelang?tab=semua-lelang&status_filter=1&filter_1=LELANGFCU%2F28082026IK:6013
+[   60366ms] [LOG] DD/MM/YYYY @ http://192.168.0.88:8102/lelang/listlelang?tab=semua-lelang&status_filter=1&filter_1=LELANGFCU%2F28082026IK:6013
+[   60367ms] [LOG] DD/MM/YYYY @ http://192.168.0.88:8102/lelang/listlelang?tab=semua-lelang&status_filter=1&filter_1=LELANGFCU%2F28082026IK:6013
+[   60367ms] [LOG] DD/MM/YYYY @ http://192.168.0.88:8102/lelang/listlelang?tab=semua-lelang&status_filter=1&filter_1=LELANGFCU%2F28082026IK:6013
+[   60367ms] [LOG] DD/MM/YYYY @ http://192.168.0.88:8102/lelang/listlelang?tab=semua-lelang&status_filter=1&filter_1=LELANGFCU%2F28082026IK:6013
+[   60367ms] [LOG] undefined @ http://192.168.0.88:8102/lelang/listlelang?tab=semua-lelang&status_filter=1&filter_1=LELANGFCU%2F28082026IK:6013
+[   60367ms] [LOG] undefined @ http://192.168.0.88:8102/lelang/listlelang?tab=semua-lelang&status_filter=1&filter_1=LELANGFCU%2F28082026IK:6013
+[   60367ms] [LOG] Masukkan Nama Bank @ http://192.168.0.88:8102/lelang/listlelang?tab=semua-lelang&status_filter=1&filter_1=LELANGFCU%2F28082026IK:6013
+[   60368ms] [LOG] undefined @ http://192.168.0.88:8102/lelang/listlelang?tab=semua-lelang&status_filter=1&filter_1=LELANGFCU%2F28082026IK:6013
+[   60369ms] [LOG] WebSocket connection @ http://192.168.0.88:8102/lelang/listlelang?tab=semua-lelang&status_filter=1&filter_1=LELANGFCU%2F28082026IK:6056
+[   60369ms] [LOG] WebSocket connection attempting... @ http://192.168.0.88:8102/lelang/listlelang?tab=semua-lelang&status_filter=1&filter_1=LELANGFCU%2F28082026IK:6134
+[   60741ms] [LOG] [] @ http://192.168.0.88:8102/_resources/themes/prahutheme/javascript/custom/listLelang.js?m=1792376516:14
+[   60742ms] [LOG] 200 xhrglobal @ http://192.168.0.88:8102/lelang/listlelang?tab=semua-lelang&status_filter=1&filter_1=LELANGFCU%2F28082026IK:5987
+[   62702ms] [LOG] 1 @ http://192.168.0.88:8102/_resources/themes/prahutheme/javascript/custom/orderList.js?m=1792376516:939
+[   62702ms] [LOG] 20 @ http://192.168.0.88:8102/_resources/themes/prahutheme/javascript/custom/orderList.js?m=1792376516:940
+[   62708ms] [LOG] Daftar Ordernamanya @ http://192.168.0.88:8102/order/OrderList:2295
+[   62733ms] [LOG] Masukkan ID Order @ http://192.168.0.88:8102/order/OrderList:7934
+[   62734ms] [LOG] undefined @ http://192.168.0.88:8102/order/OrderList:7934
+[   62734ms] [LOG] Masukkan Nomor Lelang @ http://192.168.0.88:8102/order/OrderList:7934
+[   62734ms] [LOG] DD/MM/YYYY - DD/MM/YYYY @ http://192.168.0.88:8102/order/OrderList:7934
+[   62734ms] [LOG] Masukkan No. Kontainer @ http://192.168.0.88:8102/order/OrderList:7934
+[   62734ms] [LOG] DD/MM/YYYY - DD/MM/YYYY @ http://192.168.0.88:8102/order/OrderList:7934
+[   62734ms] [LOG] DD/MM/YYYY -  DD/MM/YYYY @ http://192.168.0.88:8102/order/OrderList:7934
+[   62734ms] [LOG] Search... @ http://192.168.0.88:8102/order/OrderList:7934
+[   62734ms] [LOG] Search... @ http://192.168.0.88:8102/order/OrderList:7934
+[   62735ms] [LOG] undefined @ http://192.168.0.88:8102/order/OrderList:7934
+[   62735ms] [LOG] Masukkan Nama Kapal @ http://192.168.0.88:8102/order/OrderList:7934
+[   62735ms] [LOG] DD/MM/YYYY @ http://192.168.0.88:8102/order/OrderList:7934
+[   62735ms] [LOG] Masukkan Jumlah @ http://192.168.0.88:8102/order/OrderList:7934
+[   62735ms] [LOG] Masukkan Nama Penerima Barang @ http://192.168.0.88:8102/order/OrderList:7934
+[   62736ms] [LOG] Search... @ http://192.168.0.88:8102/order/OrderList:7934
+[   62736ms] [LOG] Masukkan Nomor Referensi @ http://192.168.0.88:8102/order/OrderList:7934
+[   62736ms] [LOG] undefined @ http://192.168.0.88:8102/order/OrderList:7934
+[   62736ms] [LOG] Masukkan Harga Baru @ http://192.168.0.88:8102/order/OrderList:7934
+[   62736ms] [LOG] undefined @ http://192.168.0.88:8102/order/OrderList:7934
+[   62737ms] [LOG] WebSocket connection @ http://192.168.0.88:8102/order/OrderList:7977
+[   62737ms] [LOG] WebSocket connection attempting... @ http://192.168.0.88:8102/order/OrderList:8055
+[   63095ms] [LOG] datanya0 @ http://192.168.0.88:8102/_resources/themes/prahutheme/javascript/custom/orderList.js?m=1792376516:986
+[   63096ms] [LOG] [] @ http://192.168.0.88:8102/_resources/themes/prahutheme/javascript/custom/orderList.js?m=1792376516:421
+[   63098ms] [LOG] [] @ http://192.168.0.88:8102/_resources/themes/prahutheme/javascript/custom/orderList.js?m=1792376516:40
+[   63098ms] [LOG] 0 jumlah data @ http://192.168.0.88:8102/_resources/themes/prahutheme/javascript/custom/orderList.js?m=1792376516:879
+[   63099ms] [LOG] 0 @ http://192.168.0.88:8102/_resources/themes/prahutheme/javascript/custom/orderList.js?m=1792376516:881
+[   63099ms] [LOG] 0 1 pageCount & pageNow @ http://192.168.0.88:8102/_resources/themes/prahutheme/javascript/custom/orderList.js?m=1792376516:810
+[   63100ms] [LOG] 200 xhrglobal @ http://192.168.0.88:8102/order/OrderList:7908
+[   63356ms] [ERROR] WebSocket connection to 'ws://192.168.0.88:8102/' failed: Error during WebSocket handshake: Unexpected response code: 302 @ http://192.168.0.88:8102/order/OrderList:7976
+[   63356ms] [LOG] WebSocket error: undefined @ http://192.168.0.88:8102/order/OrderList:8021
+[   63357ms] [LOG] Reconnecting in 2 seconds... @ http://192.168.0.88:8102/order/OrderList:8064
+[   63357ms] [LOG] WebSocket closed @ http://192.168.0.88:8102/order/OrderList:7980
+[   63357ms] [LOG] Reconnecting in 4 seconds... @ http://192.168.0.88:8102/order/OrderList:8064
+[   64739ms] [LOG] NEGOnamanya @ http://192.168.0.88:8102/lelang/pengajuannego:2027
+[   64751ms] [LOG] undefined @ http://192.168.0.88:8102/lelang/pengajuannego:5933
+[   64752ms] [LOG] Masukkan Nomor Lelang @ http://192.168.0.88:8102/lelang/pengajuannego:5933
+[   64753ms] [LOG] Harga Awal @ http://192.168.0.88:8102/lelang/pengajuannego:5933
+[   64753ms] [LOG] DD/MM/YYYY @ http://192.168.0.88:8102/lelang/pengajuannego:5933
+[   64753ms] [LOG] DD/MM/YYYY @ http://192.168.0.88:8102/lelang/pengajuannego:5933
+[   64754ms] [LOG] Harga Awal @ http://192.168.0.88:8102/lelang/pengajuannego:5933
+[   64754ms] [LOG] Masukkan Nego Harga @ http://192.168.0.88:8102/lelang/pengajuannego:5933
+[   64754ms] [LOG] Masukkan Harga Baru @ http://192.168.0.88:8102/lelang/pengajuannego:5933
+[   64754ms] [LOG] Masukkan Jumlah Nego @ http://192.168.0.88:8102/lelang/pengajuannego:5933
+[   64755ms] [LOG] WebSocket connection @ http://192.168.0.88:8102/lelang/pengajuannego:5976
+[   64756ms] [LOG] WebSocket connection attempting... @ http://192.168.0.88:8102/lelang/pengajuannego:6054
+[   65122ms] [LOG] 200 xhrglobal @ http://192.168.0.88:8102/lelang/pengajuannego:5907
+[   66996ms] TypeError: $(...).datetimepicker is not a function
+    at http://192.168.0.88:8102/home/hargajadwal?tab=1:5671:16
+[   67055ms] [LOG] Harganamanya @ http://192.168.0.88:8102/home/hargajadwal?tab=1:2027
+[   67063ms] [LOG] undefined @ http://192.168.0.88:8102/home/hargajadwal?tab=1:6746
+[   67063ms] [LOG] undefined @ http://192.168.0.88:8102/home/hargajadwal?tab=1:6746
+[   67064ms] [LOG] undefined @ http://192.168.0.88:8102/home/hargajadwal?tab=1:6746
+[   67064ms] [LOG] DD/MM/YYYY @ http://192.168.0.88:8102/home/hargajadwal?tab=1:6746
+[   67064ms] [LOG] Masukkan Nomor Lelang @ http://192.168.0.88:8102/home/hargajadwal?tab=1:6746
+[   67064ms] [LOG] Search... @ http://192.168.0.88:8102/home/hargajadwal?tab=1:6746
+[   67064ms] [LOG] Search... @ http://192.168.0.88:8102/home/hargajadwal?tab=1:6746
+[   67064ms] [LOG] Masukkan Jenis @ http://192.168.0.88:8102/home/hargajadwal?tab=1:6746
+[   67064ms] [LOG] Masukkan Harga @ http://192.168.0.88:8102/home/hargajadwal?tab=1:6746
+[   67064ms] [LOG] DD/MM/YYYY @ http://192.168.0.88:8102/home/hargajadwal?tab=1:6746
+[   67065ms] [LOG] undefined @ http://192.168.0.88:8102/home/hargajadwal?tab=1:6746
+[   67065ms] [LOG] undefined @ http://192.168.0.88:8102/home/hargajadwal?tab=1:6746
+[   67065ms] [LOG] Masukkan UN Code @ http://192.168.0.88:8102/home/hargajadwal?tab=1:6746
+[   67065ms] [LOG] undefined @ http://192.168.0.88:8102/home/hargajadwal?tab=1:6746
+[   67065ms] [LOG] undefined @ http://192.168.0.88:8102/home/hargajadwal?tab=1:6746
+[   67065ms] [LOG] Masukkan Nama Pelabuhan @ http://192.168.0.88:8102/home/hargajadwal?tab=1:6746
+[   67066ms] [LOG] WebSocket connection @ http://192.168.0.88:8102/home/hargajadwal?tab=1:6789
+[   67066ms] [LOG] WebSocket connection attempting... @ http://192.168.0.88:8102/home/hargajadwal?tab=1:6867
+[   68900ms] TypeError: $(...).datetimepicker is not a function
+    at http://192.168.0.88:8102/home/hargajadwal?tab=2:5671:16
+[   68957ms] [LOG] Harganamanya @ http://192.168.0.88:8102/home/hargajadwal?tab=2:2027
+[   68969ms] [LOG] undefined @ http://192.168.0.88:8102/home/hargajadwal?tab=2:6746
+[   68969ms] [LOG] undefined @ http://192.168.0.88:8102/home/hargajadwal?tab=2:6746
+[   68970ms] [LOG] undefined @ http://192.168.0.88:8102/home/hargajadwal?tab=2:6746
+[   68970ms] [LOG] DD/MM/YYYY @ http://192.168.0.88:8102/home/hargajadwal?tab=2:6746
+[   68970ms] [LOG] Masukkan Nomor Lelang @ http://192.168.0.88:8102/home/hargajadwal?tab=2:6746
+[   68970ms] [LOG] Search... @ http://192.168.0.88:8102/home/hargajadwal?tab=2:6746
+[   68970ms] [LOG] Search... @ http://192.168.0.88:8102/home/hargajadwal?tab=2:6746
+[   68970ms] [LOG] Masukkan Jenis @ http://192.168.0.88:8102/home/hargajadwal?tab=2:6746
+[   68970ms] [LOG] Masukkan Harga @ http://192.168.0.88:8102/home/hargajadwal?tab=2:6746
+[   68970ms] [LOG] DD/MM/YYYY @ http://192.168.0.88:8102/home/hargajadwal?tab=2:6746
+[   68970ms] [LOG] undefined @ http://192.168.0.88:8102/home/hargajadwal?tab=2:6746
+[   68971ms] [LOG] undefined @ http://192.168.0.88:8102/home/hargajadwal?tab=2:6746
+[   68971ms] [LOG] Masukkan UN Code @ http://192.168.0.88:8102/home/hargajadwal?tab=2:6746
+[   68971ms] [LOG] undefined @ http://192.168.0.88:8102/home/hargajadwal?tab=2:6746
+[   68971ms] [LOG] undefined @ http://192.168.0.88:8102/home/hargajadwal?tab=2:6746
+[   68971ms] [LOG] Masukkan Nama Pelabuhan @ http://192.168.0.88:8102/home/hargajadwal?tab=2:6746
+[   68972ms] [LOG] WebSocket connection @ http://192.168.0.88:8102/home/hargajadwal?tab=2:6789
+[   68972ms] [LOG] WebSocket connection attempting... @ http://192.168.0.88:8102/home/hargajadwal?tab=2:6867
+[   70972ms] TypeError: $(...).datetimepicker is not a function
+    at http://192.168.0.88:8102/home/hargajadwal?tab=3:5671:16
+[   71019ms] [LOG] Harganamanya @ http://192.168.0.88:8102/home/hargajadwal?tab=3:2027
+[   71027ms] [LOG] undefined @ http://192.168.0.88:8102/home/hargajadwal?tab=3:6746
+[   71027ms] [LOG] undefined @ http://192.168.0.88:8102/home/hargajadwal?tab=3:6746
+[   71027ms] [LOG] undefined @ http://192.168.0.88:8102/home/hargajadwal?tab=3:6746
+[   71027ms] [LOG] DD/MM/YYYY @ http://192.168.0.88:8102/home/hargajadwal?tab=3:6746
+[   71027ms] [LOG] Masukkan Nomor Lelang @ http://192.168.0.88:8102/home/hargajadwal?tab=3:6746
+[   71028ms] [LOG] Search... @ http://192.168.0.88:8102/home/hargajadwal?tab=3:6746
+[   71028ms] [LOG] Search... @ http://192.168.0.88:8102/home/hargajadwal?tab=3:6746
+[   71028ms] [LOG] Masukkan Jenis @ http://192.168.0.88:8102/home/hargajadwal?tab=3:6746
+[   71028ms] [LOG] Masukkan Harga @ http://192.168.0.88:8102/home/hargajadwal?tab=3:6746
+[   71029ms] [LOG] DD/MM/YYYY @ http://192.168.0.88:8102/home/hargajadwal?tab=3:6746
+[   71029ms] [LOG] undefined @ http://192.168.0.88:8102/home/hargajadwal?tab=3:6746
+[   71029ms] [LOG] undefined @ http://192.168.0.88:8102/home/hargajadwal?tab=3:6746
+[   71029ms] [LOG] Masukkan UN Code @ http://192.168.0.88:8102/home/hargajadwal?tab=3:6746
+[   71029ms] [LOG] undefined @ http://192.168.0.88:8102/home/hargajadwal?tab=3:6746
+[   71029ms] [LOG] undefined @ http://192.168.0.88:8102/home/hargajadwal?tab=3:6746
+[   71030ms] [LOG] Masukkan Nama Pelabuhan @ http://192.168.0.88:8102/home/hargajadwal?tab=3:6746
+[   71030ms] [LOG] WebSocket connection @ http://192.168.0.88:8102/home/hargajadwal?tab=3:6789
+[   71031ms] [LOG] WebSocket connection attempting... @ http://192.168.0.88:8102/home/hargajadwal?tab=3:6867
+[   71404ms] [LOG] [] @ http://192.168.0.88:8102/_resources/themes/prahutheme/javascript/custom/hargajadwal.js?m=1790821713:307
+[   71406ms] [LOG] [] @ http://192.168.0.88:8102/_resources/themes/prahutheme/javascript/custom/hargajadwal.js?m=1790821713:69
+[   71407ms] [LOG] 200 xhrglobal @ http://192.168.0.88:8102/home/hargajadwal?tab=3:6720
+[   71408ms] [LOG] ce.fn.init stepItem @ http://192.168.0.88:8102/_resources/themes/prahutheme/javascript/custom/hargajadwal.js?m=1790821713:1028
+[   73258ms] TypeError: $(...).datetimepicker is not a function
+    at http://192.168.0.88:8102/home/hargajadwal?tab=4:5671:16
+[   73304ms] [LOG] Harganamanya @ http://192.168.0.88:8102/home/hargajadwal?tab=4:2027
+[   73312ms] [LOG] undefined @ http://192.168.0.88:8102/home/hargajadwal?tab=4:6746
+[   73312ms] [LOG] undefined @ http://192.168.0.88:8102/home/hargajadwal?tab=4:6746
+[   73312ms] [LOG] undefined @ http://192.168.0.88:8102/home/hargajadwal?tab=4:6746
+[   73313ms] [LOG] DD/MM/YYYY @ http://192.168.0.88:8102/home/hargajadwal?tab=4:6746
+[   73313ms] [LOG] Masukkan Nomor Lelang @ http://192.168.0.88:8102/home/hargajadwal?tab=4:6746
+[   73313ms] [LOG] Search... @ http://192.168.0.88:8102/home/hargajadwal?tab=4:6746
+[   73313ms] [LOG] Search... @ http://192.168.0.88:8102/home/hargajadwal?tab=4:6746
+[   73313ms] [LOG] Masukkan Jenis @ http://192.168.0.88:8102/home/hargajadwal?tab=4:6746
+[   73313ms] [LOG] Masukkan Harga @ http://192.168.0.88:8102/home/hargajadwal?tab=4:6746
+[   73313ms] [LOG] DD/MM/YYYY @ http://192.168.0.88:8102/home/hargajadwal?tab=4:6746
+[   73314ms] [LOG] undefined @ http://192.168.0.88:8102/home/hargajadwal?tab=4:6746
+[   73314ms] [LOG] undefined @ http://192.168.0.88:8102/home/hargajadwal?tab=4:6746
+[   73314ms] [LOG] Masukkan UN Code @ http://192.168.0.88:8102/home/hargajadwal?tab=4:6746
+[   73314ms] [LOG] undefined @ http://192.168.0.88:8102/home/hargajadwal?tab=4:6746
+[   73314ms] [LOG] undefined @ http://192.168.0.88:8102/home/hargajadwal?tab=4:6746
+[   73314ms] [LOG] Masukkan Nama Pelabuhan @ http://192.168.0.88:8102/home/hargajadwal?tab=4:6746
+[   73316ms] [LOG] WebSocket connection @ http://192.168.0.88:8102/home/hargajadwal?tab=4:6789
+[   73317ms] [LOG] WebSocket connection attempting... @ http://192.168.0.88:8102/home/hargajadwal?tab=4:6867
+[   73672ms] [LOG] [] @ http://192.168.0.88:8102/_resources/themes/prahutheme/javascript/custom/hargajadwal.js?m=1790821713:307
+[   73672ms] [LOG] [] @ http://192.168.0.88:8102/_resources/themes/prahutheme/javascript/custom/hargajadwal.js?m=1790821713:69
+[   73674ms] [LOG] 200 xhrglobal @ http://192.168.0.88:8102/home/hargajadwal?tab=4:6720
+[   73675ms] [LOG] ce.fn.init stepItem @ http://192.168.0.88:8102/_resources/themes/prahutheme/javascript/custom/hargajadwal.js?m=1790821713:1028
+[   75146ms] TypeError: $(...).datetimepicker is not a function
+    at http://192.168.0.88:8102/home/hargajadwal?tab=5:5672:16
+[   75189ms] [LOG] Harganamanya @ http://192.168.0.88:8102/home/hargajadwal?tab=5:2027
+[   75195ms] [LOG] undefined @ http://192.168.0.88:8102/home/hargajadwal?tab=5:6747
+[   75195ms] [LOG] undefined @ http://192.168.0.88:8102/home/hargajadwal?tab=5:6747
+[   75195ms] [LOG] undefined @ http://192.168.0.88:8102/home/hargajadwal?tab=5:6747
+[   75196ms] [LOG] DD/MM/YYYY @ http://192.168.0.88:8102/home/hargajadwal?tab=5:6747
+[   75196ms] [LOG] Masukkan Nomor Lelang @ http://192.168.0.88:8102/home/hargajadwal?tab=5:6747
+[   75196ms] [LOG] Search... @ http://192.168.0.88:8102/home/hargajadwal?tab=5:6747
+[   75196ms] [LOG] Search... @ http://192.168.0.88:8102/home/hargajadwal?tab=5:6747
+[   75196ms] [LOG] Masukkan Jenis @ http://192.168.0.88:8102/home/hargajadwal?tab=5:6747
+[   75196ms] [LOG] Masukkan Harga @ http://192.168.0.88:8102/home/hargajadwal?tab=5:6747
+[   75196ms] [LOG] DD/MM/YYYY @ http://192.168.0.88:8102/home/hargajadwal?tab=5:6747
+[   75197ms] [LOG] undefined @ http://192.168.0.88:8102/home/hargajadwal?tab=5:6747
+[   75197ms] [LOG] undefined @ http://192.168.0.88:8102/home/hargajadwal?tab=5:6747
+[   75197ms] [LOG] Masukkan UN Code @ http://192.168.0.88:8102/home/hargajadwal?tab=5:6747
+[   75197ms] [LOG] undefined @ http://192.168.0.88:8102/home/hargajadwal?tab=5:6747
+[   75197ms] [LOG] undefined @ http://192.168.0.88:8102/home/hargajadwal?tab=5:6747
+[   75197ms] [LOG] Masukkan Nama Pelabuhan @ http://192.168.0.88:8102/home/hargajadwal?tab=5:6747
+[   75198ms] [LOG] WebSocket connection @ http://192.168.0.88:8102/home/hargajadwal?tab=5:6790
+[   75198ms] [LOG] WebSocket connection attempting... @ http://192.168.0.88:8102/home/hargajadwal?tab=5:6868
+[   75612ms] [ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ http://192.168.0.88:8102/home/penugasantracking:0
+[   77812ms] [LOG] unread all @ http://192.168.0.88:8102/_resources/themes/prahutheme/javascript/custom/notification.js?m=1776747118:299
+[   77818ms] [LOG] undefinednamanya @ http://192.168.0.88:8102/home/notification:2027
+[   77825ms] [LOG] undefined @ http://192.168.0.88:8102/home/notification:6154
+[   77825ms] [LOG] undefined @ http://192.168.0.88:8102/home/notification:6154
+[   77827ms] [LOG] WebSocket connection @ http://192.168.0.88:8102/home/notification:6197
+[   77827ms] [LOG] WebSocket connection attempting... @ http://192.168.0.88:8102/home/notification:6275
+[   78204ms] [LOG] dariajax jumlah= 0 @ http://192.168.0.88:8102/_resources/themes/prahutheme/javascript/custom/notification.js?m=1776747118:336
+[   78204ms] [LOG] dariajax countView1 = 0 @ http://192.168.0.88:8102/_resources/themes/prahutheme/javascript/custom/notification.js?m=1776747118:337
+[   78204ms] [LOG] dariajax countView__= 0 @ http://192.168.0.88:8102/_resources/themes/prahutheme/javascript/custom/notification.js?m=1776747118:340
+[   78205ms] [LOG] mobile render ok @ http://192.168.0.88:8102/_resources/themes/prahutheme/javascript/custom/notification.js?m=1776747118:344
+[   78205ms] [LOG] countView1 =  0 @ http://192.168.0.88:8102/_resources/themes/prahutheme/javascript/custom/notification.js?m=1776747118:272
+[   78205ms] [LOG] pageNow Info_1 =  1 @ http://192.168.0.88:8102/_resources/themes/prahutheme/javascript/custom/notification.js?m=1776747118:273
+[   78205ms] [LOG] start Info =  1 @ http://192.168.0.88:8102/_resources/themes/prahutheme/javascript/custom/notification.js?m=1776747118:283
+[   78205ms] [LOG] pageNow Info_2 =  1 @ http://192.168.0.88:8102/_resources/themes/prahutheme/javascript/custom/notification.js?m=1776747118:284
+[   78205ms] [LOG] limitView1 Info =  50 @ http://192.168.0.88:8102/_resources/themes/prahutheme/javascript/custom/notification.js?m=1776747118:285
+[   78205ms] [LOG] total =  0 @ http://192.168.0.88:8102/_resources/themes/prahutheme/javascript/custom/notification.js?m=1776747118:258
+[   78206ms] [LOG] paginate =1 @ http://192.168.0.88:8102/_resources/themes/prahutheme/javascript/custom/notification.js?m=1776747118:237
+[   78206ms] [LOG] pageNow_ =1 @ http://192.168.0.88:8102/_resources/themes/prahutheme/javascript/custom/notification.js?m=1776747118:238
+[   78206ms] [LOG] createPagination=1 @ http://192.168.0.88:8102/_resources/themes/prahutheme/javascript/custom/notification.js?m=1776747118:183
+[   78207ms] [LOG] 200 xhrglobal @ http://192.168.0.88:8102/home/notification:6128
+[   79567ms] [LOG] Laporannamanya @ http://192.168.0.88:8102/home/analitikscsr:2026
+[   79576ms] [LOG] DD/MM/YYYY @ http://192.168.0.88:8102/home/analitikscsr:6094
+[   79576ms] [LOG] DD/MM/YYYY @ http://192.168.0.88:8102/home/analitikscsr:6094
+[   79576ms] [LOG] Search... @ http://192.168.0.88:8102/home/analitikscsr:6094
+[   79577ms] [LOG] Search... @ http://192.168.0.88:8102/home/analitikscsr:6094
+[   79577ms] [LOG] undefined @ http://192.168.0.88:8102/home/analitikscsr:6094
+[   79577ms] [LOG] Search... @ http://192.168.0.88:8102/home/analitikscsr:6094
+[   79578ms] [LOG] WebSocket connection @ http://192.168.0.88:8102/home/analitikscsr:6137
+[   79578ms] [LOG] WebSocket connection attempting... @ http://192.168.0.88:8102/home/analitikscsr:6215
+[   81251ms] [LOG] Masternamanya @ http://192.168.0.88:8102/adminprahu/masterkemasan:2027
+[   81261ms] [LOG] undefined @ http://192.168.0.88:8102/adminprahu/masterkemasan:5707
+[   81261ms] [LOG] Masukkan Nama Kemasan @ http://192.168.0.88:8102/adminprahu/masterkemasan:5707
+[   81261ms] [LOG] undefined @ http://192.168.0.88:8102/adminprahu/masterkemasan:5707
+[   81261ms] [LOG] Masukkan Nama Kemasan @ http://192.168.0.88:8102/adminprahu/masterkemasan:5707
+[   81261ms] [LOG] undefined @ http://192.168.0.88:8102/adminprahu/masterkemasan:5707
+[   81262ms] [LOG] WebSocket connection @ http://192.168.0.88:8102/adminprahu/masterkemasan:5750
+[   81263ms] [LOG] WebSocket connection attempting... @ http://192.168.0.88:8102/adminprahu/masterkemasan:5828
+[   83192ms] [LOG] Masternamanya @ http://192.168.0.88:8102/adminprahu/kontainer:2027
+[   83201ms] [LOG] undefined @ http://192.168.0.88:8102/adminprahu/kontainer:5620
+[   83201ms] [LOG] Masukkan Jenis Kontainer @ http://192.168.0.88:8102/adminprahu/kontainer:5620
+[   83202ms] [LOG] undefined @ http://192.168.0.88:8102/adminprahu/kontainer:5620
+[   83202ms] [LOG] Masukkan Nama Bank @ http://192.168.0.88:8102/adminprahu/kontainer:5620
+[   83202ms] [LOG] undefined @ http://192.168.0.88:8102/adminprahu/kontainer:5620
+[   83203ms] [LOG] WebSocket connection @ http://192.168.0.88:8102/adminprahu/kontainer:5663
+[   83203ms] [LOG] WebSocket connection attempting... @ http://192.168.0.88:8102/adminprahu/kontainer:5741
+[   85211ms] [LOG] Masternamanya @ http://192.168.0.88:8102/adminprahu/masterDP:2027
+[   85218ms] [LOG] undefined @ http://192.168.0.88:8102/adminprahu/masterDP:5699
+[   85218ms] [LOG] Masukkan Nama Dokumen Penagihan @ http://192.168.0.88:8102/adminprahu/masterDP:5699
+[   85218ms] [LOG] undefined @ http://192.168.0.88:8102/adminprahu/masterDP:5699
+[   85218ms] [LOG] Masukkan Nama Dokumen Penagihan @ http://192.168.0.88:8102/adminprahu/masterDP:5699
+[   85218ms] [LOG] undefined @ http://192.168.0.88:8102/adminprahu/masterDP:5699
+[   85221ms] [LOG] WebSocket connection @ http://192.168.0.88:8102/adminprahu/masterDP:5742
+[   85222ms] [LOG] WebSocket connection attempting... @ http://192.168.0.88:8102/adminprahu/masterDP:5820
+[   85560ms] [LOG] [] @ http://192.168.0.88:8102/_resources/themes/prahutheme/javascript/custom/masterDP.js?m=1772426042:111
+[   85561ms] [LOG] 200 xhrglobal @ http://192.168.0.88:8102/adminprahu/masterDP:5673
+[   85561ms] [LOG] ce.fn.init stepItem @ http://192.168.0.88:8102/_resources/themes/prahutheme/javascript/custom/masterDP.js?m=1772426042:626
+[   87356ms] [LOG] Masternamanya @ http://192.168.0.88:8102/adminprahu/masterInclude:2027
+[   87366ms] [LOG] undefined @ http://192.168.0.88:8102/adminprahu/masterInclude:5636
+[   87366ms] [LOG] Masukkan Nama Include @ http://192.168.0.88:8102/adminprahu/masterInclude:5636
+[   87366ms] [LOG] undefined @ http://192.168.0.88:8102/adminprahu/masterInclude:5636
+[   87366ms] [LOG] Masukkan Nama Include @ http://192.168.0.88:8102/adminprahu/masterInclude:5636
+[   87366ms] [LOG] undefined @ http://192.168.0.88:8102/adminprahu/masterInclude:5636
+[   87367ms] [LOG] WebSocket connection @ http://192.168.0.88:8102/adminprahu/masterInclude:5679
+[   87367ms] [LOG] WebSocket connection attempting... @ http://192.168.0.88:8102/adminprahu/masterInclude:5757
+[   87712ms] [LOG] [] @ http://192.168.0.88:8102/_resources/themes/prahutheme/javascript/custom/masterinclude.js?m=1772426042:125
+[   87713ms] [LOG] 200 xhrglobal @ http://192.168.0.88:8102/adminprahu/masterInclude:5610
+[   87713ms] [LOG] ce.fn.init stepItem @ http://192.168.0.88:8102/_resources/themes/prahutheme/javascript/custom/masterinclude.js?m=1772426042:682
+[   89212ms] [LOG] Masternamanya @ http://192.168.0.88:8102/adminprahu/masterpelabuhan:2027
+[   89234ms] [LOG] undefined @ http://192.168.0.88:8102/adminprahu/masterpelabuhan:5767
+[   89235ms] [LOG] Masukkan UN Code @ http://192.168.0.88:8102/adminprahu/masterpelabuhan:5767
+[   89235ms] [LOG] Masukkan Nama Pelabuhan @ http://192.168.0.88:8102/adminprahu/masterpelabuhan:5767
+[   89235ms] [LOG] undefined @ http://192.168.0.88:8102/adminprahu/masterpelabuhan:5767
+[   89235ms] [LOG] Masukkan UN Code @ http://192.168.0.88:8102/adminprahu/masterpelabuhan:5767
+[   89235ms] [LOG] undefined @ http://192.168.0.88:8102/adminprahu/masterpelabuhan:5767
+[   89236ms] [LOG] undefined @ http://192.168.0.88:8102/adminprahu/masterpelabuhan:5767
+[   89236ms] [LOG] Masukkan Nama Pelabuhan @ http://192.168.0.88:8102/adminprahu/masterpelabuhan:5767
+[   89237ms] [LOG] WebSocket connection @ http://192.168.0.88:8102/adminprahu/masterpelabuhan:5810
+[   89237ms] [LOG] WebSocket connection attempting... @ http://192.168.0.88:8102/adminprahu/masterpelabuhan:5888
+[   89571ms] [LOG] [] @ http://192.168.0.88:8102/_resources/themes/prahutheme/javascript/custom/masterpelabuhan.js?m=1772426042:127
+[   89572ms] [LOG] 200 xhrglobal @ http://192.168.0.88:8102/adminprahu/masterpelabuhan:5741
+[   89572ms] [LOG] ce.fn.init stepItem @ http://192.168.0.88:8102/_resources/themes/prahutheme/javascript/custom/masterpelabuhan.js?m=1772426042:700
+[   91403ms] [LOG] Masternamanya @ http://192.168.0.88:8102/adminprahu/pelayaran:2027
+[   91411ms] [LOG] undefined @ http://192.168.0.88:8102/adminprahu/pelayaran:5559
+[   91412ms] [LOG] Masukkan Nama Pelayaran @ http://192.168.0.88:8102/adminprahu/pelayaran:5559
+[   91413ms] [LOG] WebSocket connection @ http://192.168.0.88:8102/adminprahu/pelayaran:5602
+[   91413ms] [LOG] WebSocket connection attempting... @ http://192.168.0.88:8102/adminprahu/pelayaran:5680
+[   91763ms] [LOG] [] @ http://192.168.0.88:8102/_resources/themes/prahutheme/javascript/custom/pelayaran.js?m=1772426042:115
+[   91764ms] [LOG] 200 xhrglobal @ http://192.168.0.88:8102/adminprahu/pelayaran:5533
+[   91764ms] [LOG] ce.fn.init stepItem @ http://192.168.0.88:8102/_resources/themes/prahutheme/javascript/custom/pelayaran.js?m=1772426042:558
+[   93911ms] [LOG] Masternamanya @ http://192.168.0.88:8102/adminprahu/masterpetugasapk:2027
+[   93919ms] [LOG] undefined @ http://192.168.0.88:8102/adminprahu/masterpetugasapk:5762
+[   93919ms] [LOG] Masukkan Nama Petugas @ http://192.168.0.88:8102/adminprahu/masterpetugasapk:5762
+[   93919ms] [LOG] 08xxxxxxxxxx @ http://192.168.0.88:8102/adminprahu/masterpetugasapk:5762
+[   93919ms] [LOG] undefined @ http://192.168.0.88:8102/adminprahu/masterpetugasapk:5762
+[   93919ms] [LOG] Masukkan Nama Petugas @ http://192.168.0.88:8102/adminprahu/masterpetugasapk:5762
+[   93919ms] [LOG] 08xxxxxxxxxx @ http://192.168.0.88:8102/adminprahu/masterpetugasapk:5762
+[   93919ms] [LOG] undefined @ http://192.168.0.88:8102/adminprahu/masterpetugasapk:5762
+[   93919ms] [LOG] Masukkan Nama Bank @ http://192.168.0.88:8102/adminprahu/masterpetugasapk:5762
+[   93919ms] [LOG] undefined @ http://192.168.0.88:8102/adminprahu/masterpetugasapk:5762
+[   93920ms] [LOG] WebSocket connection @ http://192.168.0.88:8102/adminprahu/masterpetugasapk:5805
+[   93920ms] [LOG] WebSocket connection attempting... @ http://192.168.0.88:8102/adminprahu/masterpetugasapk:5883
+[   94245ms] [LOG] 200 xhrglobal @ http://192.168.0.88:8102/adminprahu/masterpetugasapk:5736
+[   97873ms] [ERROR] WebSocket connection to 'ws://192.168.0.88:8102/' failed: Error during WebSocket handshake: Unexpected response code: 302 @ http://192.168.0.88:8102/adminprahu/masterpetugasapk:5804
+[   97874ms] [LOG] WebSocket error: undefined @ http://192.168.0.88:8102/adminprahu/masterpetugasapk:5849
+[   97875ms] [LOG] Reconnecting in 2 seconds... @ http://192.168.0.88:8102/adminprahu/masterpetugasapk:5892
+[   97875ms] [LOG] WebSocket closed @ http://192.168.0.88:8102/adminprahu/masterpetugasapk:5808
+[   97876ms] [LOG] Reconnecting in 4 seconds... @ http://192.168.0.88:8102/adminprahu/masterpetugasapk:5892
+[   99890ms] [LOG] WebSocket connection @ http://192.168.0.88:8102/adminprahu/masterpetugasapk:5805
+[   99891ms] [LOG] WebSocket connection attempting... @ http://192.168.0.88:8102/adminprahu/masterpetugasapk:5883
+[  101753ms] [ERROR] WebSocket connection to 'ws://192.168.0.88:8102/' failed: Error during WebSocket handshake: Unexpected response code: 302 @ http://192.168.0.88:8102/adminprahu/masterpetugasapk:5804
+[  101753ms] [LOG] WebSocket error: undefined @ http://192.168.0.88:8102/adminprahu/masterpetugasapk:5849
+[  101753ms] [LOG] Reconnecting in 8 seconds... @ http://192.168.0.88:8102/adminprahu/masterpetugasapk:5892
+[  101753ms] [LOG] WebSocket closed @ http://192.168.0.88:8102/adminprahu/masterpetugasapk:5808
+[  101753ms] [LOG] Reconnecting in 16 seconds... @ http://192.168.0.88:8102/adminprahu/masterpetugasapk:5892
+[  101890ms] [LOG] WebSocket connection @ http://192.168.0.88:8102/adminprahu/masterpetugasapk:5805
+[  101890ms] [LOG] WebSocket connection attempting... @ http://192.168.0.88:8102/adminprahu/masterpetugasapk:5883
+[  104099ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_RESET @ https://cdn.rawgit.com/Eonasdan/bootstrap-datetimepicker/e8bddc60e73c1ec2475f827be36e1957af72e2ea/src/js/bootstrap-datetimepicker.js:0
+[  104544ms] [LOG] Pengajuan Lelangnamanya @ http://192.168.0.88:8102/lelang/listlelang?tab=semua-lelang:2027
+[  104550ms] [LOG] undefined @ http://192.168.0.88:8102/lelang/listlelang?tab=semua-lelang:6013
+[  104550ms] [LOG] undefined @ http://192.168.0.88:8102/lelang/listlelang?tab=semua-lelang:6013
+[  104550ms] [LOG] Masukkan Nomor Lelang @ http://192.168.0.88:8102/lelang/listlelang?tab=semua-lelang:6013
+[  104550ms] [LOG] DD/MM/YYYY @ http://192.168.0.88:8102/lelang/listlelang?tab=semua-lelang:6013
+[  104550ms] [LOG] DD/MM/YYYY @ http://192.168.0.88:8102/lelang/listlelang?tab=semua-lelang:6013
+[  104551ms] [LOG] DD/MM/YYYY @ http://192.168.0.88:8102/lelang/listlelang?tab=semua-lelang:6013
+[  104551ms] [LOG] DD/MM/YYYY @ http://192.168.0.88:8102/lelang/listlelang?tab=semua-lelang:6013
+[  104551ms] [LOG] undefined @ http://192.168.0.88:8102/lelang/listlelang?tab=semua-lelang:6013
+[  104551ms] [LOG] undefined @ http://192.168.0.88:8102/lelang/listlelang?tab=semua-lelang:6013
+[  104551ms] [LOG] Masukkan Nama Bank @ http://192.168.0.88:8102/lelang/listlelang?tab=semua-lelang:6013
+[  104551ms] [LOG] undefined @ http://192.168.0.88:8102/lelang/listlelang?tab=semua-lelang:6013
+[  104552ms] [LOG] WebSocket connection @ http://192.168.0.88:8102/lelang/listlelang?tab=semua-lelang:6056
+[  104552ms] [LOG] WebSocket connection attempting... @ http://192.168.0.88:8102/lelang/listlelang?tab=semua-lelang:6134
+[  104879ms] [LOG] [] @ http://192.168.0.88:8102/_resources/themes/prahutheme/javascript/custom/listLelang.js?m=1792376516:14
+[  104883ms] [LOG] 200 xhrglobal @ http://192.168.0.88:8102/lelang/listlelang?tab=semua-lelang:5987
+[  108540ms] [ERROR] WebSocket connection to 'ws://192.168.0.88:8102/' failed: Error during WebSocket handshake: Unexpected response code: 302 @ http://192.168.0.88:8102/lelang/listlelang?tab=semua-lelang:6055
+[  108540ms] [LOG] WebSocket error: undefined @ http://192.168.0.88:8102/lelang/listlelang?tab=semua-lelang:6100
+[  108540ms] [LOG] Reconnecting in 2 seconds... @ http://192.168.0.88:8102/lelang/listlelang?tab=semua-lelang:6143
+[  108541ms] [LOG] WebSocket closed @ http://192.168.0.88:8102/lelang/listlelang?tab=semua-lelang:6059
+[  108541ms] [LOG] Reconnecting in 4 seconds... @ http://192.168.0.88:8102/lelang/listlelang?tab=semua-lelang:6143
+[  110549ms] [LOG] WebSocket connection @ http://192.168.0.88:8102/lelang/listlelang?tab=semua-lelang:6056
+[  110550ms] [LOG] WebSocket connection attempting... @ http://192.168.0.88:8102/lelang/listlelang?tab=semua-lelang:6134
+[  112554ms] [LOG] WebSocket connection @ http://192.168.0.88:8102/lelang/listlelang?tab=semua-lelang:6056
+[  112555ms] [LOG] WebSocket connection attempting... @ http://192.168.0.88:8102/lelang/listlelang?tab=semua-lelang:6134
+[  115040ms] [ERROR] WebSocket connection to 'ws://192.168.0.88:8102/' failed: Error during WebSocket handshake: Unexpected response code: 302 @ http://192.168.0.88:8102/lelang/listlelang?tab=semua-lelang:6055
+[  115040ms] [LOG] WebSocket error: undefined @ http://192.168.0.88:8102/lelang/listlelang?tab=semua-lelang:6100
+[  115041ms] [LOG] Reconnecting in 8 seconds... @ http://192.168.0.88:8102/lelang/listlelang?tab=semua-lelang:6143
+[  115041ms] [LOG] WebSocket closed @ http://192.168.0.88:8102/lelang/listlelang?tab=semua-lelang:6059
+[  115041ms] [LOG] Reconnecting in 16 seconds... @ http://192.168.0.88:8102/lelang/listlelang?tab=semua-lelang:6143
+[  118379ms] [LOG] Pengajuan Lelangnamanya @ http://192.168.0.88:8102/lelang/listlelang?tab=perlu-input-harga:2027
+[  118383ms] [LOG] undefined @ http://192.168.0.88:8102/lelang/listlelang?tab=perlu-input-harga:6013
+[  118384ms] [LOG] undefined @ http://192.168.0.88:8102/lelang/listlelang?tab=perlu-input-harga:6013
+[  118384ms] [LOG] Masukkan Nomor Lelang @ http://192.168.0.88:8102/lelang/listlelang?tab=perlu-input-harga:6013
+[  118384ms] [LOG] DD/MM/YYYY @ http://192.168.0.88:8102/lelang/listlelang?tab=perlu-input-harga:6013
+[  118384ms] [LOG] DD/MM/YYYY @ http://192.168.0.88:8102/lelang/listlelang?tab=perlu-input-harga:6013
+[  118384ms] [LOG] DD/MM/YYYY @ http://192.168.0.88:8102/lelang/listlelang?tab=perlu-input-harga:6013
+[  118384ms] [LOG] DD/MM/YYYY @ http://192.168.0.88:8102/lelang/listlelang?tab=perlu-input-harga:6013
+[  118384ms] [LOG] undefined @ http://192.168.0.88:8102/lelang/listlelang?tab=perlu-input-harga:6013
+[  118385ms] [LOG] undefined @ http://192.168.0.88:8102/lelang/listlelang?tab=perlu-input-harga:6013
+[  118385ms] [LOG] Masukkan Nama Bank @ http://192.168.0.88:8102/lelang/listlelang?tab=perlu-input-harga:6013
+[  118385ms] [LOG] undefined @ http://192.168.0.88:8102/lelang/listlelang?tab=perlu-input-harga:6013
+[  118386ms] [LOG] WebSocket connection @ http://192.168.0.88:8102/lelang/listlelang?tab=perlu-input-harga:6056
+[  118386ms] [LOG] WebSocket connection attempting... @ http://192.168.0.88:8102/lelang/listlelang?tab=perlu-input-harga:6134
+[  118706ms] [LOG] [] @ http://192.168.0.88:8102/_resources/themes/prahutheme/javascript/custom/listLelang.js?m=1792376516:14
+[  118710ms] [LOG] 200 xhrglobal @ http://192.168.0.88:8102/lelang/listlelang?tab=perlu-input-harga:5987
+[  122484ms] [ERROR] WebSocket connection to 'ws://192.168.0.88:8102/' failed: Error during WebSocket handshake: Unexpected response code: 302 @ http://192.168.0.88:8102/lelang/listlelang?tab=perlu-input-harga:6055
+[  122484ms] [LOG] WebSocket error: undefined @ http://192.168.0.88:8102/lelang/listlelang?tab=perlu-input-harga:6100
+[  122485ms] [LOG] Reconnecting in 2 seconds... @ http://192.168.0.88:8102/lelang/listlelang?tab=perlu-input-harga:6143
+[  122486ms] [LOG] WebSocket closed @ http://192.168.0.88:8102/lelang/listlelang?tab=perlu-input-harga:6059
+[  122486ms] [LOG] Reconnecting in 4 seconds... @ http://192.168.0.88:8102/lelang/listlelang?tab=perlu-input-harga:6143
+[  124495ms] [LOG] WebSocket connection @ http://192.168.0.88:8102/lelang/listlelang?tab=perlu-input-harga:6056
+[  124495ms] [LOG] WebSocket connection attempting... @ http://192.168.0.88:8102/lelang/listlelang?tab=perlu-input-harga:6134
+[  126492ms] [LOG] WebSocket connection @ http://192.168.0.88:8102/lelang/listlelang?tab=perlu-input-harga:6056
+[  126493ms] [LOG] WebSocket connection attempting... @ http://192.168.0.88:8102/lelang/listlelang?tab=perlu-input-harga:6134
+[  129361ms] [ERROR] WebSocket connection to 'ws://192.168.0.88:8102/' failed: Error during WebSocket handshake: Unexpected response code: 302 @ http://192.168.0.88:8102/lelang/listlelang?tab=perlu-input-harga:6055
+[  129361ms] [LOG] WebSocket error: undefined @ http://192.168.0.88:8102/lelang/listlelang?tab=perlu-input-harga:6100
+[  129361ms] [LOG] Reconnecting in 8 seconds... @ http://192.168.0.88:8102/lelang/listlelang?tab=perlu-input-harga:6143
+[  129361ms] [LOG] WebSocket closed @ http://192.168.0.88:8102/lelang/listlelang?tab=perlu-input-harga:6059
+[  129361ms] [LOG] Reconnecting in 16 seconds... @ http://192.168.0.88:8102/lelang/listlelang?tab=perlu-input-harga:6143
+[  131354ms] [LOG] Pengajuan Lelangnamanya @ http://192.168.0.88:8102/lelang/listlelang?tab=perlu-update-harga:2027
+[  131360ms] [LOG] undefined @ http://192.168.0.88:8102/lelang/listlelang?tab=perlu-update-harga:6013
+[  131361ms] [LOG] undefined @ http://192.168.0.88:8102/lelang/listlelang?tab=perlu-update-harga:6013
+[  131361ms] [LOG] Masukkan Nomor Lelang @ http://192.168.0.88:8102/lelang/listlelang?tab=perlu-update-harga:6013
+[  131361ms] [LOG] DD/MM/YYYY @ http://192.168.0.88:8102/lelang/listlelang?tab=perlu-update-harga:6013
+[  131361ms] [LOG] DD/MM/YYYY @ http://192.168.0.88:8102/lelang/listlelang?tab=perlu-update-harga:6013
+[  131361ms] [LOG] DD/MM/YYYY @ http://192.168.0.88:8102/lelang/listlelang?tab=perlu-update-harga:6013
+[  131361ms] [LOG] DD/MM/YYYY @ http://192.168.0.88:8102/lelang/listlelang?tab=perlu-update-harga:6013
+[  131361ms] [LOG] undefined @ http://192.168.0.88:8102/lelang/listlelang?tab=perlu-update-harga:6013
+[  131361ms] [LOG] undefined @ http://192.168.0.88:8102/lelang/listlelang?tab=perlu-update-harga:6013
+[  131361ms] [LOG] Masukkan Nama Bank @ http://192.168.0.88:8102/lelang/listlelang?tab=perlu-update-harga:6013
+[  131361ms] [LOG] undefined @ http://192.168.0.88:8102/lelang/listlelang?tab=perlu-update-harga:6013
+[  131362ms] [LOG] WebSocket connection @ http://192.168.0.88:8102/lelang/listlelang?tab=perlu-update-harga:6056
+[  131362ms] [LOG] WebSocket connection attempting... @ http://192.168.0.88:8102/lelang/listlelang?tab=perlu-update-harga:6134
+[  131663ms] [LOG] [] @ http://192.168.0.88:8102/_resources/themes/prahutheme/javascript/custom/listLelang.js?m=1792376516:14
+[  131668ms] [LOG] 200 xhrglobal @ http://192.168.0.88:8102/lelang/listlelang?tab=perlu-update-harga:5987
+[  133676ms] [ERROR] WebSocket connection to 'ws://192.168.0.88:8102/' failed: Error during WebSocket handshake: Unexpected response code: 302 @ http://192.168.0.88:8102/lelang/listlelang?tab=perlu-update-harga:6055
+[  133677ms] [LOG] WebSocket error: undefined @ http://192.168.0.88:8102/lelang/listlelang?tab=perlu-update-harga:6100
+[  133677ms] [LOG] Reconnecting in 2 seconds... @ http://192.168.0.88:8102/lelang/listlelang?tab=perlu-update-harga:6143
+[  133677ms] [LOG] WebSocket closed @ http://192.168.0.88:8102/lelang/listlelang?tab=perlu-update-harga:6059
+[  133678ms] [LOG] Reconnecting in 4 seconds... @ http://192.168.0.88:8102/lelang/listlelang?tab=perlu-update-harga:6143
+[  135692ms] [LOG] WebSocket connection @ http://192.168.0.88:8102/lelang/listlelang?tab=perlu-update-harga:6056
+[  135693ms] [LOG] WebSocket connection attempting... @ http://192.168.0.88:8102/lelang/listlelang?tab=perlu-update-harga:6134
+[  137694ms] [LOG] WebSocket connection @ http://192.168.0.88:8102/lelang/listlelang?tab=perlu-update-harga:6056
+[  137694ms] [LOG] WebSocket connection attempting... @ http://192.168.0.88:8102/lelang/listlelang?tab=perlu-update-harga:6134
+[  139561ms] [ERROR] WebSocket connection to 'ws://192.168.0.88:8102/' failed: Error during WebSocket handshake: Unexpected response code: 302 @ http://192.168.0.88:8102/lelang/listlelang?tab=perlu-update-harga:6055
+[  139561ms] [LOG] WebSocket error: undefined @ http://192.168.0.88:8102/lelang/listlelang?tab=perlu-update-harga:6100
+[  139561ms] [LOG] Reconnecting in 8 seconds... @ http://192.168.0.88:8102/lelang/listlelang?tab=perlu-update-harga:6143
+[  139561ms] [LOG] WebSocket closed @ http://192.168.0.88:8102/lelang/listlelang?tab=perlu-update-harga:6059
+[  139561ms] [LOG] Reconnecting in 16 seconds... @ http://192.168.0.88:8102/lelang/listlelang?tab=perlu-update-harga:6143
+[  141588ms] [ERROR] WebSocket connection to 'ws://192.168.0.88:8102/' failed: Error during WebSocket handshake: Unexpected response code: 302 @ http://192.168.0.88:8102/lelang/listlelang?tab=perlu-update-harga:6055
+[  141588ms] [LOG] WebSocket error: undefined @ http://192.168.0.88:8102/lelang/listlelang?tab=perlu-update-harga:6100
+[  141588ms] [LOG] Reconnecting in 32 seconds... @ http://192.168.0.88:8102/lelang/listlelang?tab=perlu-update-harga:6143
+[  141588ms] [LOG] WebSocket closed @ http://192.168.0.88:8102/lelang/listlelang?tab=perlu-update-harga:6059
+[  141588ms] [LOG] Reconnecting in 64 seconds... @ http://192.168.0.88:8102/lelang/listlelang?tab=perlu-update-harga:6143
+[  144559ms] [LOG] Pengajuan Lelangnamanya @ http://192.168.0.88:8102/lelang/listlelang?tab=lelang-tutup:2027
+[  144567ms] [LOG] undefined @ http://192.168.0.88:8102/lelang/listlelang?tab=lelang-tutup:6013
+[  144567ms] [LOG] undefined @ http://192.168.0.88:8102/lelang/listlelang?tab=lelang-tutup:6013
+[  144567ms] [LOG] Masukkan Nomor Lelang @ http://192.168.0.88:8102/lelang/listlelang?tab=lelang-tutup:6013
+[  144567ms] [LOG] DD/MM/YYYY @ http://192.168.0.88:8102/lelang/listlelang?tab=lelang-tutup:6013
+[  144567ms] [LOG] DD/MM/YYYY @ http://192.168.0.88:8102/lelang/listlelang?tab=lelang-tutup:6013
+[  144567ms] [LOG] DD/MM/YYYY @ http://192.168.0.88:8102/lelang/listlelang?tab=lelang-tutup:6013
+[  144568ms] [LOG] DD/MM/YYYY @ http://192.168.0.88:8102/lelang/listlelang?tab=lelang-tutup:6013
+[  144568ms] [LOG] undefined @ http://192.168.0.88:8102/lelang/listlelang?tab=lelang-tutup:6013
+[  144568ms] [LOG] undefined @ http://192.168.0.88:8102/lelang/listlelang?tab=lelang-tutup:6013
+[  144568ms] [LOG] Masukkan Nama Bank @ http://192.168.0.88:8102/lelang/listlelang?tab=lelang-tutup:6013
+[  144568ms] [LOG] undefined @ http://192.168.0.88:8102/lelang/listlelang?tab=lelang-tutup:6013
+[  144569ms] [LOG] WebSocket connection @ http://192.168.0.88:8102/lelang/listlelang?tab=lelang-tutup:6056
+[  144569ms] [LOG] WebSocket connection attempting... @ http://192.168.0.88:8102/lelang/listlelang?tab=lelang-tutup:6134
+[  144936ms] [LOG] [] @ http://192.168.0.88:8102/_resources/themes/prahutheme/javascript/custom/listLelang.js?m=1792376516:14
+[  144938ms] [LOG] 200 xhrglobal @ http://192.168.0.88:8102/lelang/listlelang?tab=lelang-tutup:5987
+[  149028ms] [ERROR] WebSocket connection to 'ws://192.168.0.88:8102/' failed: Error during WebSocket handshake: Unexpected response code: 302 @ http://192.168.0.88:8102/lelang/listlelang?tab=lelang-tutup:6055
+[  149029ms] [LOG] WebSocket error: undefined @ http://192.168.0.88:8102/lelang/listlelang?tab=lelang-tutup:6100
+[  149029ms] [LOG] Reconnecting in 2 seconds... @ http://192.168.0.88:8102/lelang/listlelang?tab=lelang-tutup:6143
+[  149030ms] [LOG] WebSocket closed @ http://192.168.0.88:8102/lelang/listlelang?tab=lelang-tutup:6059
+[  149030ms] [LOG] Reconnecting in 4 seconds... @ http://192.168.0.88:8102/lelang/listlelang?tab=lelang-tutup:6143
+[  151043ms] [LOG] WebSocket connection @ http://192.168.0.88:8102/lelang/listlelang?tab=lelang-tutup:6056
+[  151044ms] [LOG] WebSocket connection attempting... @ http://192.168.0.88:8102/lelang/listlelang?tab=lelang-tutup:6134
+[  153035ms] [LOG] WebSocket connection @ http://192.168.0.88:8102/lelang/listlelang?tab=lelang-tutup:6056
+[  153035ms] [LOG] WebSocket connection attempting... @ http://192.168.0.88:8102/lelang/listlelang?tab=lelang-tutup:6134
+[  154446ms] [ERROR] WebSocket connection to 'ws://192.168.0.88:8102/' failed: Error during WebSocket handshake: Unexpected response code: 302 @ http://192.168.0.88:8102/lelang/listlelang?tab=lelang-tutup:6055
+[  154446ms] [LOG] WebSocket error: undefined @ http://192.168.0.88:8102/lelang/listlelang?tab=lelang-tutup:6100
+[  154446ms] [LOG] Reconnecting in 8 seconds... @ http://192.168.0.88:8102/lelang/listlelang?tab=lelang-tutup:6143
+[  154447ms] [LOG] WebSocket closed @ http://192.168.0.88:8102/lelang/listlelang?tab=lelang-tutup:6059
+[  154447ms] [LOG] Reconnecting in 16 seconds... @ http://192.168.0.88:8102/lelang/listlelang?tab=lelang-tutup:6143
+[  155846ms] [ERROR] WebSocket connection to 'ws://192.168.0.88:8102/' failed: Error during WebSocket handshake: Unexpected response code: 302 @ http://192.168.0.88:8102/lelang/listlelang?tab=lelang-tutup:6055
+[  155847ms] [LOG] WebSocket error: undefined @ http://192.168.0.88:8102/lelang/listlelang?tab=lelang-tutup:6100
+[  155847ms] [LOG] Reconnecting in 32 seconds... @ http://192.168.0.88:8102/lelang/listlelang?tab=lelang-tutup:6143
+[  155847ms] [LOG] WebSocket closed @ http://192.168.0.88:8102/lelang/listlelang?tab=lelang-tutup:6059
+[  155848ms] [LOG] Reconnecting in 64 seconds... @ http://192.168.0.88:8102/lelang/listlelang?tab=lelang-tutup:6143
+[  157514ms] [LOG] Pengajuan Lelangnamanya @ http://192.168.0.88:8102/lelang/listlelang?tab=telah-akhir-kirim:2027
+[  157521ms] [LOG] undefined @ http://192.168.0.88:8102/lelang/listlelang?tab=telah-akhir-kirim:6013
+[  157521ms] [LOG] undefined @ http://192.168.0.88:8102/lelang/listlelang?tab=telah-akhir-kirim:6013
+[  157522ms] [LOG] Masukkan Nomor Lelang @ http://192.168.0.88:8102/lelang/listlelang?tab=telah-akhir-kirim:6013
+[  157522ms] [LOG] DD/MM/YYYY @ http://192.168.0.88:8102/lelang/listlelang?tab=telah-akhir-kirim:6013
+[  157522ms] [LOG] DD/MM/YYYY @ http://192.168.0.88:8102/lelang/listlelang?tab=telah-akhir-kirim:6013
+[  157522ms] [LOG] DD/MM/YYYY @ http://192.168.0.88:8102/lelang/listlelang?tab=telah-akhir-kirim:6013
+[  157523ms] [LOG] DD/MM/YYYY @ http://192.168.0.88:8102/lelang/listlelang?tab=telah-akhir-kirim:6013
+[  157523ms] [LOG] undefined @ http://192.168.0.88:8102/lelang/listlelang?tab=telah-akhir-kirim:6013
+[  157523ms] [LOG] undefined @ http://192.168.0.88:8102/lelang/listlelang?tab=telah-akhir-kirim:6013
+[  157523ms] [LOG] Masukkan Nama Bank @ http://192.168.0.88:8102/lelang/listlelang?tab=telah-akhir-kirim:6013
+[  157523ms] [LOG] undefined @ http://192.168.0.88:8102/lelang/listlelang?tab=telah-akhir-kirim:6013
+[  157524ms] [LOG] WebSocket connection @ http://192.168.0.88:8102/lelang/listlelang?tab=telah-akhir-kirim:6056
+[  157524ms] [LOG] WebSocket connection attempting... @ http://192.168.0.88:8102/lelang/listlelang?tab=telah-akhir-kirim:6134
+[  157807ms] [LOG] [] @ http://192.168.0.88:8102/_resources/themes/prahutheme/javascript/custom/listLelang.js?m=1792376516:14
+[  157809ms] [LOG] 200 xhrglobal @ http://192.168.0.88:8102/lelang/listlelang?tab=telah-akhir-kirim:5987
+[  159388ms] [ERROR] WebSocket connection to 'ws://192.168.0.88:8102/' failed: Error during WebSocket handshake: Unexpected response code: 302 @ http://192.168.0.88:8102/lelang/listlelang?tab=telah-akhir-kirim:6055
+[  159388ms] [LOG] WebSocket error: undefined @ http://192.168.0.88:8102/lelang/listlelang?tab=telah-akhir-kirim:6100
+[  159388ms] [LOG] Reconnecting in 2 seconds... @ http://192.168.0.88:8102/lelang/listlelang?tab=telah-akhir-kirim:6143
+[  159388ms] [LOG] WebSocket closed @ http://192.168.0.88:8102/lelang/listlelang?tab=telah-akhir-kirim:6059
+[  159388ms] [LOG] Reconnecting in 4 seconds... @ http://192.168.0.88:8102/lelang/listlelang?tab=telah-akhir-kirim:6143
+[  161393ms] [LOG] WebSocket connection @ http://192.168.0.88:8102/lelang/listlelang?tab=telah-akhir-kirim:6056
+[  161394ms] [LOG] WebSocket connection attempting... @ http://192.168.0.88:8102/lelang/listlelang?tab=telah-akhir-kirim:6134
+[  163394ms] [LOG] WebSocket connection @ http://192.168.0.88:8102/lelang/listlelang?tab=telah-akhir-kirim:6056
+[  163394ms] [LOG] WebSocket connection attempting... @ http://192.168.0.88:8102/lelang/listlelang?tab=telah-akhir-kirim:6134
+[  163870ms] [ERROR] WebSocket connection to 'ws://192.168.0.88:8102/' failed: Error during WebSocket handshake: Unexpected response code: 302 @ http://192.168.0.88:8102/lelang/listlelang?tab=telah-akhir-kirim:6055
+[  163870ms] [LOG] WebSocket error: undefined @ http://192.168.0.88:8102/lelang/listlelang?tab=telah-akhir-kirim:6100
+[  163870ms] [LOG] Reconnecting in 8 seconds... @ http://192.168.0.88:8102/lelang/listlelang?tab=telah-akhir-kirim:6143
+[  163870ms] [LOG] WebSocket closed @ http://192.168.0.88:8102/lelang/listlelang?tab=telah-akhir-kirim:6059
+[  163871ms] [LOG] Reconnecting in 16 seconds... @ http://192.168.0.88:8102/lelang/listlelang?tab=telah-akhir-kirim:6143
+[  167130ms] [ERROR] WebSocket connection to 'ws://192.168.0.88:8102/' failed: Error during WebSocket handshake: Unexpected response code: 302 @ http://192.168.0.88:8102/lelang/listlelang?tab=telah-akhir-kirim:6055
+[  167131ms] [LOG] WebSocket error: undefined @ http://192.168.0.88:8102/lelang/listlelang?tab=telah-akhir-kirim:6100
+[  167131ms] [LOG] Reconnecting in 32 seconds... @ http://192.168.0.88:8102/lelang/listlelang?tab=telah-akhir-kirim:6143
+[  167131ms] [LOG] WebSocket closed @ http://192.168.0.88:8102/lelang/listlelang?tab=telah-akhir-kirim:6059
+[  167132ms] [LOG] Reconnecting in 64 seconds... @ http://192.168.0.88:8102/lelang/listlelang?tab=telah-akhir-kirim:6143
+[  171578ms] [LOG] Pengajuan Lelangnamanya @ http://192.168.0.88:8102/lelang/listlelang?tab=lelang-batal:2027
+[  171582ms] [LOG] undefined @ http://192.168.0.88:8102/lelang/listlelang?tab=lelang-batal:6013
+[  171583ms] [LOG] undefined @ http://192.168.0.88:8102/lelang/listlelang?tab=lelang-batal:6013
+[  171583ms] [LOG] Masukkan Nomor Lelang @ http://192.168.0.88:8102/lelang/listlelang?tab=lelang-batal:6013
+[  171583ms] [LOG] DD/MM/YYYY @ http://192.168.0.88:8102/lelang/listlelang?tab=lelang-batal:6013
+[  171583ms] [LOG] DD/MM/YYYY @ http://192.168.0.88:8102/lelang/listlelang?tab=lelang-batal:6013
+[  171583ms] [LOG] DD/MM/YYYY @ http://192.168.0.88:8102/lelang/listlelang?tab=lelang-batal:6013
+[  171583ms] [LOG] DD/MM/YYYY @ http://192.168.0.88:8102/lelang/listlelang?tab=lelang-batal:6013
+[  171583ms] [LOG] undefined @ http://192.168.0.88:8102/lelang/listlelang?tab=lelang-batal:6013
+[  171583ms] [LOG] undefined @ http://192.168.0.88:8102/lelang/listlelang?tab=lelang-batal:6013
+[  171583ms] [LOG] Masukkan Nama Bank @ http://192.168.0.88:8102/lelang/listlelang?tab=lelang-batal:6013
+[  171583ms] [LOG] undefined @ http://192.168.0.88:8102/lelang/listlelang?tab=lelang-batal:6013
+[  171584ms] [LOG] WebSocket connection @ http://192.168.0.88:8102/lelang/listlelang?tab=lelang-batal:6056
+[  171584ms] [LOG] WebSocket connection attempting... @ http://192.168.0.88:8102/lelang/listlelang?tab=lelang-batal:6134
+[  171872ms] [LOG] [] @ http://192.168.0.88:8102/_resources/themes/prahutheme/javascript/custom/listLelang.js?m=1792376516:14
+[  171878ms] [LOG] 200 xhrglobal @ http://192.168.0.88:8102/lelang/listlelang?tab=lelang-batal:5987
+[  175231ms] [ERROR] WebSocket connection to 'ws://192.168.0.88:8102/' failed: Error during WebSocket handshake: Unexpected response code: 302 @ http://192.168.0.88:8102/lelang/listlelang?tab=lelang-batal:6055
+[  175231ms] [LOG] WebSocket error: undefined @ http://192.168.0.88:8102/lelang/listlelang?tab=lelang-batal:6100
+[  175231ms] [LOG] Reconnecting in 2 seconds... @ http://192.168.0.88:8102/lelang/listlelang?tab=lelang-batal:6143
+[  175231ms] [LOG] WebSocket closed @ http://192.168.0.88:8102/lelang/listlelang?tab=lelang-batal:6059
+[  175231ms] [LOG] Reconnecting in 4 seconds... @ http://192.168.0.88:8102/lelang/listlelang?tab=lelang-batal:6143
+[  177247ms] [LOG] WebSocket connection @ http://192.168.0.88:8102/lelang/listlelang?tab=lelang-batal:6056
+[  177247ms] [LOG] WebSocket connection attempting... @ http://192.168.0.88:8102/lelang/listlelang?tab=lelang-batal:6134
+[  179236ms] [LOG] WebSocket connection @ http://192.168.0.88:8102/lelang/listlelang?tab=lelang-batal:6056
+[  179236ms] [LOG] WebSocket connection attempting... @ http://192.168.0.88:8102/lelang/listlelang?tab=lelang-batal:6134
+[  181326ms] [ERROR] WebSocket connection to 'ws://192.168.0.88:8102/' failed: Error during WebSocket handshake: Unexpected response code: 302 @ http://192.168.0.88:8102/lelang/listlelang?tab=lelang-batal:6055
+[  181327ms] [LOG] WebSocket error: undefined @ http://192.168.0.88:8102/lelang/listlelang?tab=lelang-batal:6100
+[  181327ms] [LOG] Reconnecting in 8 seconds... @ http://192.168.0.88:8102/lelang/listlelang?tab=lelang-batal:6143
+[  181327ms] [LOG] WebSocket closed @ http://192.168.0.88:8102/lelang/listlelang?tab=lelang-batal:6059
+[  181327ms] [LOG] Reconnecting in 16 seconds... @ http://192.168.0.88:8102/lelang/listlelang?tab=lelang-batal:6143
+[  182458ms] [ERROR] WebSocket connection to 'ws://192.168.0.88:8102/' failed: Error during WebSocket handshake: Unexpected response code: 302 @ http://192.168.0.88:8102/lelang/listlelang?tab=lelang-batal:6055
+[  182458ms] [LOG] WebSocket error: undefined @ http://192.168.0.88:8102/lelang/listlelang?tab=lelang-batal:6100
+[  182458ms] [LOG] Reconnecting in 32 seconds... @ http://192.168.0.88:8102/lelang/listlelang?tab=lelang-batal:6143
+[  182458ms] [LOG] WebSocket closed @ http://192.168.0.88:8102/lelang/listlelang?tab=lelang-batal:6059
+[  182458ms] [LOG] Reconnecting in 64 seconds... @ http://192.168.0.88:8102/lelang/listlelang?tab=lelang-batal:6143
+[  185018ms] [LOG] Pengajuan Lelangnamanya @ http://192.168.0.88:8102/lelang/listlelang?tab=semua-lelang&status_filter=1&filter_1=LELANGFCU%2F28082026IK:2027
+[  185024ms] [LOG] undefined @ http://192.168.0.88:8102/lelang/listlelang?tab=semua-lelang&status_filter=1&filter_1=LELANGFCU%2F28082026IK:6013
+[  185024ms] [LOG] undefined @ http://192.168.0.88:8102/lelang/listlelang?tab=semua-lelang&status_filter=1&filter_1=LELANGFCU%2F28082026IK:6013
+[  185024ms] [LOG] Masukkan Nomor Lelang @ http://192.168.0.88:8102/lelang/listlelang?tab=semua-lelang&status_filter=1&filter_1=LELANGFCU%2F28082026IK:6013
+[  185024ms] [LOG] DD/MM/YYYY @ http://192.168.0.88:8102/lelang/listlelang?tab=semua-lelang&status_filter=1&filter_1=LELANGFCU%2F28082026IK:6013
+[  185024ms] [LOG] DD/MM/YYYY @ http://192.168.0.88:8102/lelang/listlelang?tab=semua-lelang&status_filter=1&filter_1=LELANGFCU%2F28082026IK:6013
+[  185024ms] [LOG] DD/MM/YYYY @ http://192.168.0.88:8102/lelang/listlelang?tab=semua-lelang&status_filter=1&filter_1=LELANGFCU%2F28082026IK:6013
+[  185025ms] [LOG] DD/MM/YYYY @ http://192.168.0.88:8102/lelang/listlelang?tab=semua-lelang&status_filter=1&filter_1=LELANGFCU%2F28082026IK:6013
+[  185025ms] [LOG] undefined @ http://192.168.0.88:8102/lelang/listlelang?tab=semua-lelang&status_filter=1&filter_1=LELANGFCU%2F28082026IK:6013
+[  185025ms] [LOG] undefined @ http://192.168.0.88:8102/lelang/listlelang?tab=semua-lelang&status_filter=1&filter_1=LELANGFCU%2F28082026IK:6013
+[  185025ms] [LOG] Masukkan Nama Bank @ http://192.168.0.88:8102/lelang/listlelang?tab=semua-lelang&status_filter=1&filter_1=LELANGFCU%2F28082026IK:6013
+[  185025ms] [LOG] undefined @ http://192.168.0.88:8102/lelang/listlelang?tab=semua-lelang&status_filter=1&filter_1=LELANGFCU%2F28082026IK:6013
+[  185026ms] [LOG] WebSocket connection @ http://192.168.0.88:8102/lelang/listlelang?tab=semua-lelang&status_filter=1&filter_1=LELANGFCU%2F28082026IK:6056
+[  185026ms] [LOG] WebSocket connection attempting... @ http://192.168.0.88:8102/lelang/listlelang?tab=semua-lelang&status_filter=1&filter_1=LELANGFCU%2F28082026IK:6134
+[  185342ms] [LOG] [] @ http://192.168.0.88:8102/_resources/themes/prahutheme/javascript/custom/listLelang.js?m=1792376516:14
+[  185346ms] [LOG] 200 xhrglobal @ http://192.168.0.88:8102/lelang/listlelang?tab=semua-lelang&status_filter=1&filter_1=LELANGFCU%2F28082026IK:5987
+[  190132ms] [ERROR] WebSocket connection to 'ws://192.168.0.88:8102/' failed: Error during WebSocket handshake: Unexpected response code: 302 @ http://192.168.0.88:8102/lelang/listlelang?tab=semua-lelang&status_filter=1&filter_1=LELANGFCU%2F28082026IK:6055
+[  190133ms] [LOG] WebSocket error: undefined @ http://192.168.0.88:8102/lelang/listlelang?tab=semua-lelang&status_filter=1&filter_1=LELANGFCU%2F28082026IK:6100
+[  190133ms] [LOG] Reconnecting in 2 seconds... @ http://192.168.0.88:8102/lelang/listlelang?tab=semua-lelang&status_filter=1&filter_1=LELANGFCU%2F28082026IK:6143
+[  190134ms] [LOG] WebSocket closed @ http://192.168.0.88:8102/lelang/listlelang?tab=semua-lelang&status_filter=1&filter_1=LELANGFCU%2F28082026IK:6059
+[  190134ms] [LOG] Reconnecting in 4 seconds... @ http://192.168.0.88:8102/lelang/listlelang?tab=semua-lelang&status_filter=1&filter_1=LELANGFCU%2F28082026IK:6143
+[  192148ms] [LOG] WebSocket connection @ http://192.168.0.88:8102/lelang/listlelang?tab=semua-lelang&status_filter=1&filter_1=LELANGFCU%2F28082026IK:6056
+[  192148ms] [LOG] WebSocket connection attempting... @ http://192.168.0.88:8102/lelang/listlelang?tab=semua-lelang&status_filter=1&filter_1=LELANGFCU%2F28082026IK:6134
+[  194142ms] [LOG] WebSocket connection @ http://192.168.0.88:8102/lelang/listlelang?tab=semua-lelang&status_filter=1&filter_1=LELANGFCU%2F28082026IK:6056
+[  194142ms] [LOG] WebSocket connection attempting... @ http://192.168.0.88:8102/lelang/listlelang?tab=semua-lelang&status_filter=1&filter_1=LELANGFCU%2F28082026IK:6134
+[  195395ms] [ERROR] WebSocket connection to 'ws://192.168.0.88:8102/' failed: Error during WebSocket handshake: Unexpected response code: 302 @ http://192.168.0.88:8102/lelang/listlelang?tab=semua-lelang&status_filter=1&filter_1=LELANGFCU%2F28082026IK:6055
+[  195396ms] [LOG] WebSocket error: undefined @ http://192.168.0.88:8102/lelang/listlelang?tab=semua-lelang&status_filter=1&filter_1=LELANGFCU%2F28082026IK:6100
+[  195396ms] [LOG] Reconnecting in 8 seconds... @ http://192.168.0.88:8102/lelang/listlelang?tab=semua-lelang&status_filter=1&filter_1=LELANGFCU%2F28082026IK:6143
+[  195396ms] [LOG] WebSocket closed @ http://192.168.0.88:8102/lelang/listlelang?tab=semua-lelang&status_filter=1&filter_1=LELANGFCU%2F28082026IK:6059
+[  195396ms] [LOG] Reconnecting in 16 seconds... @ http://192.168.0.88:8102/lelang/listlelang?tab=semua-lelang&status_filter=1&filter_1=LELANGFCU%2F28082026IK:6143
+[  195685ms] [ERROR] WebSocket connection to 'ws://192.168.0.88:8102/' failed: Error during WebSocket handshake: Unexpected response code: 302 @ http://192.168.0.88:8102/lelang/listlelang?tab=semua-lelang&status_filter=1&filter_1=LELANGFCU%2F28082026IK:6055
+[  195685ms] [LOG] WebSocket error: undefined @ http://192.168.0.88:8102/lelang/listlelang?tab=semua-lelang&status_filter=1&filter_1=LELANGFCU%2F28082026IK:6100
+[  195686ms] [LOG] Reconnecting in 32 seconds... @ http://192.168.0.88:8102/lelang/listlelang?tab=semua-lelang&status_filter=1&filter_1=LELANGFCU%2F28082026IK:6143
+[  195686ms] [LOG] WebSocket closed @ http://192.168.0.88:8102/lelang/listlelang?tab=semua-lelang&status_filter=1&filter_1=LELANGFCU%2F28082026IK:6059
+[  195686ms] [LOG] Reconnecting in 64 seconds... @ http://192.168.0.88:8102/lelang/listlelang?tab=semua-lelang&status_filter=1&filter_1=LELANGFCU%2F28082026IK:6143
+[  198069ms] [LOG] 1 @ http://192.168.0.88:8102/_resources/themes/prahutheme/javascript/custom/orderList.js?m=1792376516:939
+[  198069ms] [LOG] 20 @ http://192.168.0.88:8102/_resources/themes/prahutheme/javascript/custom/orderList.js?m=1792376516:940
+[  198072ms] [LOG] Daftar Ordernamanya @ http://192.168.0.88:8102/order/OrderList:2295
+[  198087ms] [LOG] Masukkan ID Order @ http://192.168.0.88:8102/order/OrderList:7934
+[  198087ms] [LOG] undefined @ http://192.168.0.88:8102/order/OrderList:7934
+[  198087ms] [LOG] Masukkan Nomor Lelang @ http://192.168.0.88:8102/order/OrderList:7934
+[  198087ms] [LOG] DD/MM/YYYY - DD/MM/YYYY @ http://192.168.0.88:8102/order/OrderList:7934
+[  198087ms] [LOG] Masukkan No. Kontainer @ http://192.168.0.88:8102/order/OrderList:7934
+[  198087ms] [LOG] DD/MM/YYYY - DD/MM/YYYY @ http://192.168.0.88:8102/order/OrderList:7934
+[  198087ms] [LOG] DD/MM/YYYY -  DD/MM/YYYY @ http://192.168.0.88:8102/order/OrderList:7934
+[  198087ms] [LOG] Search... @ http://192.168.0.88:8102/order/OrderList:7934
+[  198088ms] [LOG] Search... @ http://192.168.0.88:8102/order/OrderList:7934
+[  198088ms] [LOG] undefined @ http://192.168.0.88:8102/order/OrderList:7934
+[  198088ms] [LOG] Masukkan Nama Kapal @ http://192.168.0.88:8102/order/OrderList:7934
+[  198088ms] [LOG] DD/MM/YYYY @ http://192.168.0.88:8102/order/OrderList:7934
+[  198088ms] [LOG] Masukkan Jumlah @ http://192.168.0.88:8102/order/OrderList:7934
+[  198088ms] [LOG] Masukkan Nama Penerima Barang @ http://192.168.0.88:8102/order/OrderList:7934
+[  198088ms] [LOG] Search... @ http://192.168.0.88:8102/order/OrderList:7934
+[  198088ms] [LOG] Masukkan Nomor Referensi @ http://192.168.0.88:8102/order/OrderList:7934
+[  198089ms] [LOG] undefined @ http://192.168.0.88:8102/order/OrderList:7934
+[  198089ms] [LOG] Masukkan Harga Baru @ http://192.168.0.88:8102/order/OrderList:7934
+[  198089ms] [LOG] undefined @ http://192.168.0.88:8102/order/OrderList:7934
+[  198090ms] [LOG] WebSocket connection @ http://192.168.0.88:8102/order/OrderList:7977
+[  198090ms] [LOG] WebSocket connection attempting... @ http://192.168.0.88:8102/order/OrderList:8055
+[  198427ms] [LOG] datanya0 @ http://192.168.0.88:8102/_resources/themes/prahutheme/javascript/custom/orderList.js?m=1792376516:986
+[  198428ms] [LOG] [] @ http://192.168.0.88:8102/_resources/themes/prahutheme/javascript/custom/orderList.js?m=1792376516:421
+[  198429ms] [LOG] [] @ http://192.168.0.88:8102/_resources/themes/prahutheme/javascript/custom/orderList.js?m=1792376516:40
+[  198430ms] [LOG] 0 jumlah data @ http://192.168.0.88:8102/_resources/themes/prahutheme/javascript/custom/orderList.js?m=1792376516:879
+[  198430ms] [LOG] 0 @ http://192.168.0.88:8102/_resources/themes/prahutheme/javascript/custom/orderList.js?m=1792376516:881
+[  198430ms] [LOG] 0 1 pageCount & pageNow @ http://192.168.0.88:8102/_resources/themes/prahutheme/javascript/custom/orderList.js?m=1792376516:810
+[  198431ms] [LOG] 200 xhrglobal @ http://192.168.0.88:8102/order/OrderList:7908
+[  203310ms] [ERROR] WebSocket connection to 'ws://192.168.0.88:8102/' failed: Error during WebSocket handshake: Unexpected response code: 302 @ http://192.168.0.88:8102/order/OrderList:7976
+[  203310ms] [LOG] WebSocket error: undefined @ http://192.168.0.88:8102/order/OrderList:8021
+[  203310ms] [LOG] Reconnecting in 2 seconds... @ http://192.168.0.88:8102/order/OrderList:8064
+[  203310ms] [LOG] WebSocket closed @ http://192.168.0.88:8102/order/OrderList:7980
+[  203310ms] [LOG] Reconnecting in 4 seconds... @ http://192.168.0.88:8102/order/OrderList:8064
+[  205319ms] [LOG] WebSocket connection @ http://192.168.0.88:8102/order/OrderList:7977
+[  205319ms] [LOG] WebSocket connection attempting... @ http://192.168.0.88:8102/order/OrderList:8055
+[  207313ms] [LOG] WebSocket connection @ http://192.168.0.88:8102/order/OrderList:7977
+[  207313ms] [LOG] WebSocket connection attempting... @ http://192.168.0.88:8102/order/OrderList:8055
+[  207807ms] [ERROR] WebSocket connection to 'ws://192.168.0.88:8102/' failed: Error during WebSocket handshake: Unexpected response code: 302 @ http://192.168.0.88:8102/order/OrderList:7976
+[  207808ms] [LOG] WebSocket error: undefined @ http://192.168.0.88:8102/order/OrderList:8021
+[  207808ms] [LOG] Reconnecting in 8 seconds... @ http://192.168.0.88:8102/order/OrderList:8064
+[  207809ms] [LOG] WebSocket closed @ http://192.168.0.88:8102/order/OrderList:7980
+[  207809ms] [LOG] Reconnecting in 16 seconds... @ http://192.168.0.88:8102/order/OrderList:8064
+[  209035ms] [ERROR] WebSocket connection to 'ws://192.168.0.88:8102/' failed: Error during WebSocket handshake: Unexpected response code: 302 @ http://192.168.0.88:8102/order/OrderList:7976
+[  209035ms] [LOG] WebSocket error: undefined @ http://192.168.0.88:8102/order/OrderList:8021
+[  209036ms] [LOG] Reconnecting in 32 seconds... @ http://192.168.0.88:8102/order/OrderList:8064
+[  209036ms] [LOG] WebSocket closed @ http://192.168.0.88:8102/order/OrderList:7980
+[  209037ms] [LOG] Reconnecting in 64 seconds... @ http://192.168.0.88:8102/order/OrderList:8064
+[  210001ms] [LOG] 0 jumlah data @ http://192.168.0.88:8102/_resources/themes/prahutheme/javascript/custom/orderList.js?m=1792376516:879
+[  210002ms] [LOG] 0 @ http://192.168.0.88:8102/_resources/themes/prahutheme/javascript/custom/orderList.js?m=1792376516:881
+[  210002ms] [LOG] 0 1 pageCount & pageNow @ http://192.168.0.88:8102/_resources/themes/prahutheme/javascript/custom/orderList.js?m=1792376516:810
+[  210002ms] [LOG] 0 @ http://192.168.0.88:8102/_resources/themes/prahutheme/javascript/custom/orderList.js?m=1792376516:916
+[  210002ms] [LOG] 0 countView1 1 pageNow 100 limitView1 @ http://192.168.0.88:8102/_resources/themes/prahutheme/javascript/custom/orderList.js?m=1792376516:918
+[  210002ms] [LOG] 0 @ http://192.168.0.88:8102/_resources/themes/prahutheme/javascript/custom/orderList.js?m=1792376516:924
+[  210002ms] [LOG] 0 @ http://192.168.0.88:8102/_resources/themes/prahutheme/javascript/custom/orderList.js?m=1792376516:939
+[  210002ms] [LOG] 100 @ http://192.168.0.88:8102/_resources/themes/prahutheme/javascript/custom/orderList.js?m=1792376516:940
+[  210360ms] [LOG] datanya0 @ http://192.168.0.88:8102/_resources/themes/prahutheme/javascript/custom/orderList.js?m=1792376516:986
+[  210361ms] [LOG] [] @ http://192.168.0.88:8102/_resources/themes/prahutheme/javascript/custom/orderList.js?m=1792376516:421
+[  210362ms] [LOG] [] @ http://192.168.0.88:8102/_resources/themes/prahutheme/javascript/custom/orderList.js?m=1792376516:40
+[  210363ms] [LOG] 0 jumlah data @ http://192.168.0.88:8102/_resources/themes/prahutheme/javascript/custom/orderList.js?m=1792376516:879
+[  210363ms] [LOG] 0 @ http://192.168.0.88:8102/_resources/themes/prahutheme/javascript/custom/orderList.js?m=1792376516:881
+[  210364ms] [LOG] 200 xhrglobal @ http://192.168.0.88:8102/order/OrderList:7908
+[  215823ms] [LOG] WebSocket connection @ http://192.168.0.88:8102/order/OrderList:7977
+[  215823ms] [LOG] WebSocket connection attempting... @ http://192.168.0.88:8102/order/OrderList:8055
+[  220991ms] [ERROR] WebSocket connection to 'ws://192.168.0.88:8102/' failed: Error during WebSocket handshake: Unexpected response code: 302 @ http://192.168.0.88:8102/order/OrderList:7976
+[  220992ms] [LOG] WebSocket error: undefined @ http://192.168.0.88:8102/order/OrderList:8021
+[  220992ms] [LOG] Reconnecting in 128 seconds... @ http://192.168.0.88:8102/order/OrderList:8064
+[  220992ms] [LOG] WebSocket closed @ http://192.168.0.88:8102/order/OrderList:7980
+[  220992ms] [LOG] Reconnecting in 256 seconds... @ http://192.168.0.88:8102/order/OrderList:8064
+[  223816ms] [LOG] WebSocket connection @ http://192.168.0.88:8102/order/OrderList:7977
+[  223818ms] [LOG] WebSocket connection attempting... @ http://192.168.0.88:8102/order/OrderList:8055
+[  226181ms] [ERROR] WebSocket connection to 'ws://192.168.0.88:8102/' failed: Error during WebSocket handshake: Unexpected response code: 302 @ http://192.168.0.88:8102/order/OrderList:7976
+[  226181ms] [LOG] WebSocket error: undefined @ http://192.168.0.88:8102/order/OrderList:8021
+[  226181ms] [LOG] Reconnecting in 512 seconds... @ http://192.168.0.88:8102/order/OrderList:8064
+[  226181ms] [LOG] WebSocket closed @ http://192.168.0.88:8102/order/OrderList:7980
+[  226181ms] [LOG] Reconnecting in 1024 seconds... @ http://192.168.0.88:8102/order/OrderList:8064
+[  235592ms] [LOG] NEGOnamanya @ http://192.168.0.88:8102/lelang/pengajuannego:2027
+[  235598ms] [LOG] undefined @ http://192.168.0.88:8102/lelang/pengajuannego:5933
+[  235598ms] [LOG] Masukkan Nomor Lelang @ http://192.168.0.88:8102/lelang/pengajuannego:5933
+[  235598ms] [LOG] Harga Awal @ http://192.168.0.88:8102/lelang/pengajuannego:5933
+[  235598ms] [LOG] DD/MM/YYYY @ http://192.168.0.88:8102/lelang/pengajuannego:5933
+[  235598ms] [LOG] DD/MM/YYYY @ http://192.168.0.88:8102/lelang/pengajuannego:5933
+[  235598ms] [LOG] Harga Awal @ http://192.168.0.88:8102/lelang/pengajuannego:5933
+[  235598ms] [LOG] Masukkan Nego Harga @ http://192.168.0.88:8102/lelang/pengajuannego:5933
+[  235598ms] [LOG] Masukkan Harga Baru @ http://192.168.0.88:8102/lelang/pengajuannego:5933
+[  235599ms] [LOG] Masukkan Jumlah Nego @ http://192.168.0.88:8102/lelang/pengajuannego:5933
+[  235599ms] [LOG] WebSocket connection @ http://192.168.0.88:8102/lelang/pengajuannego:5976
+[  235599ms] [LOG] WebSocket connection attempting... @ http://192.168.0.88:8102/lelang/pengajuannego:6054
+[  235865ms] [LOG] 200 xhrglobal @ http://192.168.0.88:8102/lelang/pengajuannego:5907
+[  238593ms] [ERROR] WebSocket connection to 'ws://192.168.0.88:8102/' failed: Error during WebSocket handshake: Unexpected response code: 302 @ http://192.168.0.88:8102/lelang/pengajuannego:5975
+[  238594ms] [LOG] WebSocket error: undefined @ http://192.168.0.88:8102/lelang/pengajuannego:6020
+[  238594ms] [LOG] Reconnecting in 2 seconds... @ http://192.168.0.88:8102/lelang/pengajuannego:6063
+[  238594ms] [LOG] WebSocket closed @ http://192.168.0.88:8102/lelang/pengajuannego:5979
+[  238594ms] [LOG] Reconnecting in 4 seconds... @ http://192.168.0.88:8102/lelang/pengajuannego:6063
+[  240598ms] [LOG] WebSocket connection @ http://192.168.0.88:8102/lelang/pengajuannego:5976
+[  240599ms] [LOG] WebSocket connection attempting... @ http://192.168.0.88:8102/lelang/pengajuannego:6054
+[  242596ms] [LOG] WebSocket connection @ http://192.168.0.88:8102/lelang/pengajuannego:5976
+[  242596ms] [LOG] WebSocket connection attempting... @ http://192.168.0.88:8102/lelang/pengajuannego:6054
+[  244131ms] [ERROR] WebSocket connection to 'ws://192.168.0.88:8102/' failed: Error during WebSocket handshake: Unexpected response code: 302 @ http://192.168.0.88:8102/lelang/pengajuannego:5975
+[  244131ms] [LOG] WebSocket error: undefined @ http://192.168.0.88:8102/lelang/pengajuannego:6020
+[  244131ms] [LOG] Reconnecting in 8 seconds... @ http://192.168.0.88:8102/lelang/pengajuannego:6063
+[  244132ms] [LOG] WebSocket closed @ http://192.168.0.88:8102/lelang/pengajuannego:5979
+[  244132ms] [LOG] Reconnecting in 16 seconds... @ http://192.168.0.88:8102/lelang/pengajuannego:6063
+[  244876ms] [ERROR] WebSocket connection to 'ws://192.168.0.88:8102/' failed: Error during WebSocket handshake: Unexpected response code: 302 @ http://192.168.0.88:8102/lelang/pengajuannego:5975
+[  244876ms] [LOG] WebSocket error: undefined @ http://192.168.0.88:8102/lelang/pengajuannego:6020
+[  244876ms] [LOG] Reconnecting in 32 seconds... @ http://192.168.0.88:8102/lelang/pengajuannego:6063
+[  244876ms] [LOG] WebSocket closed @ http://192.168.0.88:8102/lelang/pengajuannego:5979
+[  244876ms] [LOG] Reconnecting in 64 seconds... @ http://192.168.0.88:8102/lelang/pengajuannego:6063
+[  248534ms] TypeError: $(...).datetimepicker is not a function
+    at http://192.168.0.88:8102/home/hargajadwal?tab=1:5671:16
+[  248566ms] [LOG] Harganamanya @ http://192.168.0.88:8102/home/hargajadwal?tab=1:2027
+[  248570ms] [LOG] undefined @ http://192.168.0.88:8102/home/hargajadwal?tab=1:6746
+[  248570ms] [LOG] undefined @ http://192.168.0.88:8102/home/hargajadwal?tab=1:6746
+[  248571ms] [LOG] undefined @ http://192.168.0.88:8102/home/hargajadwal?tab=1:6746
+[  248571ms] [LOG] DD/MM/YYYY @ http://192.168.0.88:8102/home/hargajadwal?tab=1:6746
+[  248571ms] [LOG] Masukkan Nomor Lelang @ http://192.168.0.88:8102/home/hargajadwal?tab=1:6746
+[  248571ms] [LOG] Search... @ http://192.168.0.88:8102/home/hargajadwal?tab=1:6746
+[  248571ms] [LOG] Search... @ http://192.168.0.88:8102/home/hargajadwal?tab=1:6746
+[  248571ms] [LOG] Masukkan Jenis @ http://192.168.0.88:8102/home/hargajadwal?tab=1:6746
+[  248571ms] [LOG] Masukkan Harga @ http://192.168.0.88:8102/home/hargajadwal?tab=1:6746
+[  248571ms] [LOG] DD/MM/YYYY @ http://192.168.0.88:8102/home/hargajadwal?tab=1:6746
+[  248572ms] [LOG] undefined @ http://192.168.0.88:8102/home/hargajadwal?tab=1:6746
+[  248572ms] [LOG] undefined @ http://192.168.0.88:8102/home/hargajadwal?tab=1:6746
+[  248572ms] [LOG] Masukkan UN Code @ http://192.168.0.88:8102/home/hargajadwal?tab=1:6746
+[  248572ms] [LOG] undefined @ http://192.168.0.88:8102/home/hargajadwal?tab=1:6746
+[  248572ms] [LOG] undefined @ http://192.168.0.88:8102/home/hargajadwal?tab=1:6746
+[  248572ms] [LOG] Masukkan Nama Pelabuhan @ http://192.168.0.88:8102/home/hargajadwal?tab=1:6746
+[  248574ms] [LOG] WebSocket connection @ http://192.168.0.88:8102/home/hargajadwal?tab=1:6789
+[  248574ms] [LOG] WebSocket connection attempting... @ http://192.168.0.88:8102/home/hargajadwal?tab=1:6867
+[  248886ms] [LOG] [] @ http://192.168.0.88:8102/_resources/themes/prahutheme/javascript/custom/hargajadwal.js?m=1790821713:307
+[  248888ms] [LOG] [] @ http://192.168.0.88:8102/_resources/themes/prahutheme/javascript/custom/hargajadwal.js?m=1790821713:69
+[  248894ms] [LOG] 200 xhrglobal @ http://192.168.0.88:8102/home/hargajadwal?tab=1:6720
+[  248895ms] [LOG] ce.fn.init stepItem @ http://192.168.0.88:8102/_resources/themes/prahutheme/javascript/custom/hargajadwal.js?m=1790821713:1028
+[  252064ms] TypeError: $(...).datetimepicker is not a function
+    at http://192.168.0.88:8102/home/hargajadwal?tab=2:5671:16
+[  252148ms] [LOG] Harganamanya @ http://192.168.0.88:8102/home/hargajadwal?tab=2:2027
+[  252154ms] [LOG] undefined @ http://192.168.0.88:8102/home/hargajadwal?tab=2:6746
+[  252154ms] [LOG] undefined @ http://192.168.0.88:8102/home/hargajadwal?tab=2:6746
+[  252154ms] [LOG] undefined @ http://192.168.0.88:8102/home/hargajadwal?tab=2:6746
+[  252154ms] [LOG] DD/MM/YYYY @ http://192.168.0.88:8102/home/hargajadwal?tab=2:6746
+[  252154ms] [LOG] Masukkan Nomor Lelang @ http://192.168.0.88:8102/home/hargajadwal?tab=2:6746
+[  252154ms] [LOG] Search... @ http://192.168.0.88:8102/home/hargajadwal?tab=2:6746
+[  252154ms] [LOG] Search... @ http://192.168.0.88:8102/home/hargajadwal?tab=2:6746
+[  252154ms] [LOG] Masukkan Jenis @ http://192.168.0.88:8102/home/hargajadwal?tab=2:6746
+[  252155ms] [LOG] Masukkan Harga @ http://192.168.0.88:8102/home/hargajadwal?tab=2:6746
+[  252155ms] [LOG] DD/MM/YYYY @ http://192.168.0.88:8102/home/hargajadwal?tab=2:6746
+[  252156ms] [LOG] undefined @ http://192.168.0.88:8102/home/hargajadwal?tab=2:6746
+[  252156ms] [LOG] undefined @ http://192.168.0.88:8102/home/hargajadwal?tab=2:6746
+[  252156ms] [LOG] Masukkan UN Code @ http://192.168.0.88:8102/home/hargajadwal?tab=2:6746
+[  252156ms] [LOG] undefined @ http://192.168.0.88:8102/home/hargajadwal?tab=2:6746
+[  252156ms] [LOG] undefined @ http://192.168.0.88:8102/home/hargajadwal?tab=2:6746
+[  252156ms] [LOG] Masukkan Nama Pelabuhan @ http://192.168.0.88:8102/home/hargajadwal?tab=2:6746
+[  252157ms] [LOG] WebSocket connection @ http://192.168.0.88:8102/home/hargajadwal?tab=2:6789
+[  252157ms] [LOG] WebSocket connection attempting... @ http://192.168.0.88:8102/home/hargajadwal?tab=2:6867
+[  252489ms] [LOG] [] @ http://192.168.0.88:8102/_resources/themes/prahutheme/javascript/custom/hargajadwal.js?m=1790821713:307
+[  252490ms] [LOG] [] @ http://192.168.0.88:8102/_resources/themes/prahutheme/javascript/custom/hargajadwal.js?m=1790821713:69
+[  252494ms] [LOG] 200 xhrglobal @ http://192.168.0.88:8102/home/hargajadwal?tab=2:6720
+[  252495ms] [LOG] ce.fn.init stepItem @ http://192.168.0.88:8102/_resources/themes/prahutheme/javascript/custom/hargajadwal.js?m=1790821713:1028
+[  256182ms] TypeError: $(...).datetimepicker is not a function
+    at http://192.168.0.88:8102/home/hargajadwal?tab=3:5671:16
+[  256209ms] [LOG] Harganamanya @ http://192.168.0.88:8102/home/hargajadwal?tab=3:2027
+[  256213ms] [LOG] undefined @ http://192.168.0.88:8102/home/hargajadwal?tab=3:6746
+[  256213ms] [LOG] undefined @ http://192.168.0.88:8102/home/hargajadwal?tab=3:6746
+[  256214ms] [LOG] undefined @ http://192.168.0.88:8102/home/hargajadwal?tab=3:6746
+[  256214ms] [LOG] DD/MM/YYYY @ http://192.168.0.88:8102/home/hargajadwal?tab=3:6746
+[  256214ms] [LOG] Masukkan Nomor Lelang @ http://192.168.0.88:8102/home/hargajadwal?tab=3:6746
+[  256214ms] [LOG] Search... @ http://192.168.0.88:8102/home/hargajadwal?tab=3:6746
+[  256214ms] [LOG] Search... @ http://192.168.0.88:8102/home/hargajadwal?tab=3:6746
+[  256215ms] [LOG] Masukkan Jenis @ http://192.168.0.88:8102/home/hargajadwal?tab=3:6746
+[  256215ms] [LOG] Masukkan Harga @ http://192.168.0.88:8102/home/hargajadwal?tab=3:6746
+[  256215ms] [LOG] DD/MM/YYYY @ http://192.168.0.88:8102/home/hargajadwal?tab=3:6746
+[  256215ms] [LOG] undefined @ http://192.168.0.88:8102/home/hargajadwal?tab=3:6746
+[  256216ms] [LOG] undefined @ http://192.168.0.88:8102/home/hargajadwal?tab=3:6746
+[  256216ms] [LOG] Masukkan UN Code @ http://192.168.0.88:8102/home/hargajadwal?tab=3:6746
+[  256216ms] [LOG] undefined @ http://192.168.0.88:8102/home/hargajadwal?tab=3:6746
+[  256216ms] [LOG] undefined @ http://192.168.0.88:8102/home/hargajadwal?tab=3:6746
+[  256216ms] [LOG] Masukkan Nama Pelabuhan @ http://192.168.0.88:8102/home/hargajadwal?tab=3:6746
+[  256217ms] [LOG] WebSocket connection @ http://192.168.0.88:8102/home/hargajadwal?tab=3:6789
+[  256217ms] [LOG] WebSocket connection attempting... @ http://192.168.0.88:8102/home/hargajadwal?tab=3:6867
+[  256526ms] [LOG] [] @ http://192.168.0.88:8102/_resources/themes/prahutheme/javascript/custom/hargajadwal.js?m=1790821713:307
+[  256527ms] [LOG] [] @ http://192.168.0.88:8102/_resources/themes/prahutheme/javascript/custom/hargajadwal.js?m=1790821713:69
+[  256528ms] [LOG] 200 xhrglobal @ http://192.168.0.88:8102/home/hargajadwal?tab=3:6720
+[  256529ms] [LOG] ce.fn.init stepItem @ http://192.168.0.88:8102/_resources/themes/prahutheme/javascript/custom/hargajadwal.js?m=1790821713:1028
+[  257974ms] [ERROR] WebSocket connection to 'ws://192.168.0.88:8102/' failed: Error during WebSocket handshake: Unexpected response code: 302 @ http://192.168.0.88:8102/home/hargajadwal?tab=3:6788
+[  257975ms] [LOG] WebSocket error: undefined @ http://192.168.0.88:8102/home/hargajadwal?tab=3:6833
+[  257975ms] [LOG] Reconnecting in 2 seconds... @ http://192.168.0.88:8102/home/hargajadwal?tab=3:6876
+[  257976ms] [LOG] WebSocket closed @ http://192.168.0.88:8102/home/hargajadwal?tab=3:6792
+[  257976ms] [LOG] Reconnecting in 4 seconds... @ http://192.168.0.88:8102/home/hargajadwal?tab=3:6876
+[  259975ms] TypeError: $(...).datetimepicker is not a function
+    at http://192.168.0.88:8102/home/hargajadwal?tab=4:5671:16
+[  260029ms] [LOG] Harganamanya @ http://192.168.0.88:8102/home/hargajadwal?tab=4:2027
+[  260035ms] [LOG] undefined @ http://192.168.0.88:8102/home/hargajadwal?tab=4:6746
+[  260035ms] [LOG] undefined @ http://192.168.0.88:8102/home/hargajadwal?tab=4:6746
+[  260035ms] [LOG] undefined @ http://192.168.0.88:8102/home/hargajadwal?tab=4:6746
+[  260036ms] [LOG] DD/MM/YYYY @ http://192.168.0.88:8102/home/hargajadwal?tab=4:6746
+[  260036ms] [LOG] Masukkan Nomor Lelang @ http://192.168.0.88:8102/home/hargajadwal?tab=4:6746
+[  260036ms] [LOG] Search... @ http://192.168.0.88:8102/home/hargajadwal?tab=4:6746
+[  260036ms] [LOG] Search... @ http://192.168.0.88:8102/home/hargajadwal?tab=4:6746
+[  260036ms] [LOG] Masukkan Jenis @ http://192.168.0.88:8102/home/hargajadwal?tab=4:6746
+[  260036ms] [LOG] Masukkan Harga @ http://192.168.0.88:8102/home/hargajadwal?tab=4:6746
+[  260037ms] [LOG] DD/MM/YYYY @ http://192.168.0.88:8102/home/hargajadwal?tab=4:6746
+[  260037ms] [LOG] undefined @ http://192.168.0.88:8102/home/hargajadwal?tab=4:6746
+[  260037ms] [LOG] undefined @ http://192.168.0.88:8102/home/hargajadwal?tab=4:6746
+[  260037ms] [LOG] Masukkan UN Code @ http://192.168.0.88:8102/home/hargajadwal?tab=4:6746
+[  260037ms] [LOG] undefined @ http://192.168.0.88:8102/home/hargajadwal?tab=4:6746
+[  260037ms] [LOG] undefined @ http://192.168.0.88:8102/home/hargajadwal?tab=4:6746
+[  260038ms] [LOG] Masukkan Nama Pelabuhan @ http://192.168.0.88:8102/home/hargajadwal?tab=4:6746
+[  260038ms] [LOG] WebSocket connection @ http://192.168.0.88:8102/home/hargajadwal?tab=4:6789
+[  260039ms] [LOG] WebSocket connection attempting... @ http://192.168.0.88:8102/home/hargajadwal?tab=4:6867
+[  260377ms] [LOG] [] @ http://192.168.0.88:8102/_resources/themes/prahutheme/javascript/custom/hargajadwal.js?m=1790821713:307
+[  260380ms] [LOG] [] @ http://192.168.0.88:8102/_resources/themes/prahutheme/javascript/custom/hargajadwal.js?m=1790821713:69
+[  260385ms] [LOG] 200 xhrglobal @ http://192.168.0.88:8102/home/hargajadwal?tab=4:6720
+[  260387ms] [LOG] ce.fn.init stepItem @ http://192.168.0.88:8102/_resources/themes/prahutheme/javascript/custom/hargajadwal.js?m=1790821713:1028
+[  263917ms] TypeError: $(...).datetimepicker is not a function
+    at http://192.168.0.88:8102/home/hargajadwal?tab=5:5672:16
+[  263945ms] [LOG] Harganamanya @ http://192.168.0.88:8102/home/hargajadwal?tab=5:2027
+[  263951ms] [LOG] undefined @ http://192.168.0.88:8102/home/hargajadwal?tab=5:6747
+[  263951ms] [LOG] undefined @ http://192.168.0.88:8102/home/hargajadwal?tab=5:6747
+[  263951ms] [LOG] undefined @ http://192.168.0.88:8102/home/hargajadwal?tab=5:6747
+[  263951ms] [LOG] DD/MM/YYYY @ http://192.168.0.88:8102/home/hargajadwal?tab=5:6747
+[  263951ms] [LOG] Masukkan Nomor Lelang @ http://192.168.0.88:8102/home/hargajadwal?tab=5:6747
+[  263951ms] [LOG] Search... @ http://192.168.0.88:8102/home/hargajadwal?tab=5:6747
+[  263952ms] [LOG] Search... @ http://192.168.0.88:8102/home/hargajadwal?tab=5:6747
+[  263952ms] [LOG] Masukkan Jenis @ http://192.168.0.88:8102/home/hargajadwal?tab=5:6747
+[  263952ms] [LOG] Masukkan Harga @ http://192.168.0.88:8102/home/hargajadwal?tab=5:6747
+[  263952ms] [LOG] DD/MM/YYYY @ http://192.168.0.88:8102/home/hargajadwal?tab=5:6747
+[  263952ms] [LOG] undefined @ http://192.168.0.88:8102/home/hargajadwal?tab=5:6747
+[  263952ms] [LOG] undefined @ http://192.168.0.88:8102/home/hargajadwal?tab=5:6747
+[  263952ms] [LOG] Masukkan UN Code @ http://192.168.0.88:8102/home/hargajadwal?tab=5:6747
+[  263952ms] [LOG] undefined @ http://192.168.0.88:8102/home/hargajadwal?tab=5:6747
+[  263952ms] [LOG] undefined @ http://192.168.0.88:8102/home/hargajadwal?tab=5:6747
+[  263953ms] [LOG] Masukkan Nama Pelabuhan @ http://192.168.0.88:8102/home/hargajadwal?tab=5:6747
+[  263953ms] [LOG] WebSocket connection @ http://192.168.0.88:8102/home/hargajadwal?tab=5:6790
+[  263953ms] [LOG] WebSocket connection attempting... @ http://192.168.0.88:8102/home/hargajadwal?tab=5:6868
+[  264284ms] [LOG] [] @ http://192.168.0.88:8102/_resources/themes/prahutheme/javascript/custom/hargajadwal.js?m=1790821713:307
+[  264284ms] [LOG] [] @ http://192.168.0.88:8102/_resources/themes/prahutheme/javascript/custom/hargajadwal.js?m=1790821713:69
+[  264286ms] [LOG] 200 xhrglobal @ http://192.168.0.88:8102/home/hargajadwal?tab=5:6721
+[  264286ms] [LOG] ce.fn.init stepItem @ http://192.168.0.88:8102/_resources/themes/prahutheme/javascript/custom/hargajadwal.js?m=1790821713:1028
+[  265736ms] [ERROR] WebSocket connection to 'ws://192.168.0.88:8102/' failed: Error during WebSocket handshake: Unexpected response code: 302 @ http://192.168.0.88:8102/home/hargajadwal?tab=5:6789
+[  265736ms] [LOG] WebSocket error: undefined @ http://192.168.0.88:8102/home/hargajadwal?tab=5:6834
+[  265736ms] [LOG] Reconnecting in 2 seconds... @ http://192.168.0.88:8102/home/hargajadwal?tab=5:6877
+[  265737ms] [LOG] WebSocket closed @ http://192.168.0.88:8102/home/hargajadwal?tab=5:6793
+[  265737ms] [LOG] Reconnecting in 4 seconds... @ http://192.168.0.88:8102/home/hargajadwal?tab=5:6877
+[  266467ms] [ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ http://192.168.0.88:8102/home/penugasantracking:0
+[  269415ms] [LOG] unread all @ http://192.168.0.88:8102/_resources/themes/prahutheme/javascript/custom/notification.js?m=1776747118:299
+[  269418ms] [LOG] undefinednamanya @ http://192.168.0.88:8102/home/notification:2027
+[  269422ms] [LOG] undefined @ http://192.168.0.88:8102/home/notification:6154
+[  269422ms] [LOG] undefined @ http://192.168.0.88:8102/home/notification:6154
+[  269423ms] [LOG] WebSocket connection @ http://192.168.0.88:8102/home/notification:6197
+[  269423ms] [LOG] WebSocket connection attempting... @ http://192.168.0.88:8102/home/notification:6275
+[  269792ms] [LOG] dariajax jumlah= 0 @ http://192.168.0.88:8102/_resources/themes/prahutheme/javascript/custom/notification.js?m=1776747118:336
+[  269793ms] [LOG] dariajax countView1 = 0 @ http://192.168.0.88:8102/_resources/themes/prahutheme/javascript/custom/notification.js?m=1776747118:337
+[  269793ms] [LOG] dariajax countView__= 0 @ http://192.168.0.88:8102/_resources/themes/prahutheme/javascript/custom/notification.js?m=1776747118:340
+[  269795ms] [LOG] mobile render ok @ http://192.168.0.88:8102/_resources/themes/prahutheme/javascript/custom/notification.js?m=1776747118:344
+[  269795ms] [LOG] countView1 =  0 @ http://192.168.0.88:8102/_resources/themes/prahutheme/javascript/custom/notification.js?m=1776747118:272
+[  269796ms] [LOG] pageNow Info_1 =  1 @ http://192.168.0.88:8102/_resources/themes/prahutheme/javascript/custom/notification.js?m=1776747118:273
+[  269796ms] [LOG] start Info =  1 @ http://192.168.0.88:8102/_resources/themes/prahutheme/javascript/custom/notification.js?m=1776747118:283
+[  269796ms] [LOG] pageNow Info_2 =  1 @ http://192.168.0.88:8102/_resources/themes/prahutheme/javascript/custom/notification.js?m=1776747118:284
+[  269797ms] [LOG] limitView1 Info =  50 @ http://192.168.0.88:8102/_resources/themes/prahutheme/javascript/custom/notification.js?m=1776747118:285
+[  269797ms] [LOG] total =  0 @ http://192.168.0.88:8102/_resources/themes/prahutheme/javascript/custom/notification.js?m=1776747118:258
+[  269797ms] [LOG] paginate =1 @ http://192.168.0.88:8102/_resources/themes/prahutheme/javascript/custom/notification.js?m=1776747118:237
+[  269798ms] [LOG] pageNow_ =1 @ http://192.168.0.88:8102/_resources/themes/prahutheme/javascript/custom/notification.js?m=1776747118:238
+[  269798ms] [LOG] createPagination=1 @ http://192.168.0.88:8102/_resources/themes/prahutheme/javascript/custom/notification.js?m=1776747118:183
+[  269800ms] [LOG] 200 xhrglobal @ http://192.168.0.88:8102/home/notification:6128
+[  269858ms] [LOG] unread all @ http://192.168.0.88:8102/_resources/themes/prahutheme/javascript/custom/notification.js?m=1776747118:299
+[  269861ms] [LOG] unread all @ http://192.168.0.88:8102/_resources/themes/prahutheme/javascript/custom/notification.js?m=1776747118:299
+[  270243ms] [LOG] dariajax jumlah= 0 @ http://192.168.0.88:8102/_resources/themes/prahutheme/javascript/custom/notification.js?m=1776747118:336
+[  270243ms] [LOG] dariajax countView1 = 0 @ http://192.168.0.88:8102/_resources/themes/prahutheme/javascript/custom/notification.js?m=1776747118:337
+[  270244ms] [LOG] dariajax countView__= 0 @ http://192.168.0.88:8102/_resources/themes/prahutheme/javascript/custom/notification.js?m=1776747118:340
+[  270244ms] [LOG] mobile render ok @ http://192.168.0.88:8102/_resources/themes/prahutheme/javascript/custom/notification.js?m=1776747118:344
+[  270244ms] [LOG] countView1 =  0 @ http://192.168.0.88:8102/_resources/themes/prahutheme/javascript/custom/notification.js?m=1776747118:272
+[  270244ms] [LOG] pageNow Info_1 =  0 @ http://192.168.0.88:8102/_resources/themes/prahutheme/javascript/custom/notification.js?m=1776747118:273
+[  270245ms] [LOG] start Info =  -49 @ http://192.168.0.88:8102/_resources/themes/prahutheme/javascript/custom/notification.js?m=1776747118:283
+[  270245ms] [LOG] pageNow Info_2 =  0 @ http://192.168.0.88:8102/_resources/themes/prahutheme/javascript/custom/notification.js?m=1776747118:284
+[  270245ms] [LOG] limitView1 Info =  50 @ http://192.168.0.88:8102/_resources/themes/prahutheme/javascript/custom/notification.js?m=1776747118:285
+[  270245ms] [LOG] total =  0 @ http://192.168.0.88:8102/_resources/themes/prahutheme/javascript/custom/notification.js?m=1776747118:258
+[  270245ms] [LOG] paginate =0 @ http://192.168.0.88:8102/_resources/themes/prahutheme/javascript/custom/notification.js?m=1776747118:237
+[  270246ms] [LOG] pageNow_ =1 @ http://192.168.0.88:8102/_resources/themes/prahutheme/javascript/custom/notification.js?m=1776747118:238
+[  270246ms] [LOG] 200 xhrglobal @ http://192.168.0.88:8102/home/notification:6128
+[  270615ms] [LOG] dariajax jumlah= 0 @ http://192.168.0.88:8102/_resources/themes/prahutheme/javascript/custom/notification.js?m=1776747118:336
+[  270615ms] [LOG] dariajax countView1 = 0 @ http://192.168.0.88:8102/_resources/themes/prahutheme/javascript/custom/notification.js?m=1776747118:337
+[  270615ms] [LOG] dariajax countView__= 0 @ http://192.168.0.88:8102/_resources/themes/prahutheme/javascript/custom/notification.js?m=1776747118:340
+[  270616ms] [LOG] mobile render ok @ http://192.168.0.88:8102/_resources/themes/prahutheme/javascript/custom/notification.js?m=1776747118:344
+[  270616ms] [LOG] countView1 =  0 @ http://192.168.0.88:8102/_resources/themes/prahutheme/javascript/custom/notification.js?m=1776747118:272
+[  270616ms] [LOG] pageNow Info_1 =  0 @ http://192.168.0.88:8102/_resources/themes/prahutheme/javascript/custom/notification.js?m=1776747118:273
+[  270616ms] [LOG] start Info =  -49 @ http://192.168.0.88:8102/_resources/themes/prahutheme/javascript/custom/notification.js?m=1776747118:283
+[  270616ms] [LOG] pageNow Info_2 =  0 @ http://192.168.0.88:8102/_resources/themes/prahutheme/javascript/custom/notification.js?m=1776747118:284
+[  270616ms] [LOG] limitView1 Info =  50 @ http://192.168.0.88:8102/_resources/themes/prahutheme/javascript/custom/notification.js?m=1776747118:285
+[  270616ms] [LOG] total =  0 @ http://192.168.0.88:8102/_resources/themes/prahutheme/javascript/custom/notification.js?m=1776747118:258
+[  270616ms] [LOG] paginate =0 @ http://192.168.0.88:8102/_resources/themes/prahutheme/javascript/custom/notification.js?m=1776747118:237
+[  270617ms] [LOG] pageNow_ =1 @ http://192.168.0.88:8102/_resources/themes/prahutheme/javascript/custom/notification.js?m=1776747118:238
+[  270617ms] [LOG] 200 xhrglobal @ http://192.168.0.88:8102/home/notification:6128
+[  271966ms] [ERROR] WebSocket connection to 'ws://192.168.0.88:8102/' failed: Error during WebSocket handshake: Unexpected response code: 302 @ http://192.168.0.88:8102/home/notification:6196
+[  271966ms] [LOG] WebSocket error: undefined @ http://192.168.0.88:8102/home/notification:6241
+[  271967ms] [LOG] Reconnecting in 2 seconds... @ http://192.168.0.88:8102/home/notification:6284
+[  271967ms] [LOG] WebSocket closed @ http://192.168.0.88:8102/home/notification:6200
+[  271967ms] [LOG] Reconnecting in 4 seconds... @ http://192.168.0.88:8102/home/notification:6284
+[  273978ms] [LOG] WebSocket connection @ http://192.168.0.88:8102/home/notification:6197
+[  273979ms] [LOG] WebSocket connection attempting... @ http://192.168.0.88:8102/home/notification:6275
+[  275995ms] [LOG] Laporannamanya @ http://192.168.0.88:8102/home/analitikscsr:2026
+[  276001ms] [LOG] DD/MM/YYYY @ http://192.168.0.88:8102/home/analitikscsr:6094
+[  276002ms] [LOG] DD/MM/YYYY @ http://192.168.0.88:8102/home/analitikscsr:6094
+[  276002ms] [LOG] Search... @ http://192.168.0.88:8102/home/analitikscsr:6094
+[  276002ms] [LOG] Search... @ http://192.168.0.88:8102/home/analitikscsr:6094
+[  276002ms] [LOG] undefined @ http://192.168.0.88:8102/home/analitikscsr:6094
+[  276002ms] [LOG] Search... @ http://192.168.0.88:8102/home/analitikscsr:6094
+[  276003ms] [LOG] WebSocket connection @ http://192.168.0.88:8102/home/analitikscsr:6137
+[  276004ms] [LOG] WebSocket connection attempting... @ http://192.168.0.88:8102/home/analitikscsr:6215
+[  280547ms] [ERROR] WebSocket connection to 'ws://192.168.0.88:8102/' failed: Error during WebSocket handshake: Unexpected response code: 302 @ http://192.168.0.88:8102/home/analitikscsr:6136
+[  280547ms] [LOG] WebSocket error: undefined @ http://192.168.0.88:8102/home/analitikscsr:6181
+[  280547ms] [LOG] Reconnecting in 2 seconds... @ http://192.168.0.88:8102/home/analitikscsr:6224
+[  280548ms] [LOG] WebSocket closed @ http://192.168.0.88:8102/home/analitikscsr:6140
+[  280548ms] [LOG] Reconnecting in 4 seconds... @ http://192.168.0.88:8102/home/analitikscsr:6224
+[  282559ms] [LOG] WebSocket connection @ http://192.168.0.88:8102/home/analitikscsr:6137
+[  282559ms] [LOG] WebSocket connection attempting... @ http://192.168.0.88:8102/home/analitikscsr:6215
+[  284554ms] [LOG] WebSocket connection @ http://192.168.0.88:8102/home/analitikscsr:6137
+[  284554ms] [LOG] WebSocket connection attempting... @ http://192.168.0.88:8102/home/analitikscsr:6215
+[  286768ms] [ERROR] WebSocket connection to 'ws://192.168.0.88:8102/' failed: Error during WebSocket handshake: Unexpected response code: 302 @ http://192.168.0.88:8102/home/analitikscsr:6136
+[  286768ms] [LOG] WebSocket error: undefined @ http://192.168.0.88:8102/home/analitikscsr:6181
+[  286768ms] [LOG] Reconnecting in 8 seconds... @ http://192.168.0.88:8102/home/analitikscsr:6224
+[  286768ms] [LOG] WebSocket closed @ http://192.168.0.88:8102/home/analitikscsr:6140
+[  286768ms] [LOG] Reconnecting in 16 seconds... @ http://192.168.0.88:8102/home/analitikscsr:6224
+[  287845ms] [ERROR] WebSocket connection to 'ws://192.168.0.88:8102/' failed: Error during WebSocket handshake: Unexpected response code: 302 @ http://192.168.0.88:8102/home/analitikscsr:6136
+[  287846ms] [LOG] WebSocket error: undefined @ http://192.168.0.88:8102/home/analitikscsr:6181
+[  287846ms] [LOG] Reconnecting in 32 seconds... @ http://192.168.0.88:8102/home/analitikscsr:6224
+[  287847ms] [LOG] WebSocket closed @ http://192.168.0.88:8102/home/analitikscsr:6140
+[  287847ms] [LOG] Reconnecting in 64 seconds... @ http://192.168.0.88:8102/home/analitikscsr:6224
+[  294083ms] [LOG] Masternamanya @ http://192.168.0.88:8102/adminprahu/masterkemasan:2027
+[  294089ms] [LOG] undefined @ http://192.168.0.88:8102/adminprahu/masterkemasan:5707
+[  294089ms] [LOG] Masukkan Nama Kemasan @ http://192.168.0.88:8102/adminprahu/masterkemasan:5707
+[  294089ms] [LOG] undefined @ http://192.168.0.88:8102/adminprahu/masterkemasan:5707
+[  294089ms] [LOG] Masukkan Nama Kemasan @ http://192.168.0.88:8102/adminprahu/masterkemasan:5707
+[  294089ms] [LOG] undefined @ http://192.168.0.88:8102/adminprahu/masterkemasan:5707
+[  294090ms] [LOG] WebSocket connection @ http://192.168.0.88:8102/adminprahu/masterkemasan:5750
+[  294091ms] [LOG] WebSocket connection attempting... @ http://192.168.0.88:8102/adminprahu/masterkemasan:5828
+[  294399ms] [LOG] [] @ http://192.168.0.88:8102/_resources/themes/prahutheme/javascript/custom/masterkemasan.js?m=1772426042:117
+[  294403ms] [LOG] 200 xhrglobal @ http://192.168.0.88:8102/adminprahu/masterkemasan:5681
+[  294404ms] [LOG] ce.fn.init stepItem @ http://192.168.0.88:8102/_resources/themes/prahutheme/javascript/custom/masterkemasan.js?m=1772426042:645
+[  297136ms] [LOG] Masternamanya @ http://192.168.0.88:8102/adminprahu/kontainer:2027
+[  297148ms] [LOG] undefined @ http://192.168.0.88:8102/adminprahu/kontainer:5620
+[  297148ms] [LOG] Masukkan Jenis Kontainer @ http://192.168.0.88:8102/adminprahu/kontainer:5620
+[  297148ms] [LOG] undefined @ http://192.168.0.88:8102/adminprahu/kontainer:5620
+[  297148ms] [LOG] Masukkan Nama Bank @ http://192.168.0.88:8102/adminprahu/kontainer:5620
+[  297148ms] [LOG] undefined @ http://192.168.0.88:8102/adminprahu/kontainer:5620
+[  297149ms] [LOG] WebSocket connection @ http://192.168.0.88:8102/adminprahu/kontainer:5663
+[  297149ms] [LOG] WebSocket connection attempting... @ http://192.168.0.88:8102/adminprahu/kontainer:5741
+[  297419ms] [LOG] [] @ http://192.168.0.88:8102/_resources/themes/prahutheme/javascript/custom/kontainer.js?m=1772426042:115
+[  297422ms] [LOG] 200 xhrglobal @ http://192.168.0.88:8102/adminprahu/kontainer:5594
+[  297423ms] [LOG] ce.fn.init stepItem @ http://192.168.0.88:8102/_resources/themes/prahutheme/javascript/custom/kontainer.js?m=1772426042:713
+[  300307ms] [LOG] Masternamanya @ http://192.168.0.88:8102/adminprahu/masterDP:2027
+[  300313ms] [LOG] undefined @ http://192.168.0.88:8102/adminprahu/masterDP:5699
+[  300313ms] [LOG] Masukkan Nama Dokumen Penagihan @ http://192.168.0.88:8102/adminprahu/masterDP:5699
+[  300313ms] [LOG] undefined @ http://192.168.0.88:8102/adminprahu/masterDP:5699
+[  300313ms] [LOG] Masukkan Nama Dokumen Penagihan @ http://192.168.0.88:8102/adminprahu/masterDP:5699
+[  300313ms] [LOG] undefined @ http://192.168.0.88:8102/adminprahu/masterDP:5699
+[  300314ms] [LOG] WebSocket connection @ http://192.168.0.88:8102/adminprahu/masterDP:5742
+[  300314ms] [LOG] WebSocket connection attempting... @ http://192.168.0.88:8102/adminprahu/masterDP:5820
+[  300617ms] [LOG] [] @ http://192.168.0.88:8102/_resources/themes/prahutheme/javascript/custom/masterDP.js?m=1772426042:111
+[  300621ms] [LOG] 200 xhrglobal @ http://192.168.0.88:8102/adminprahu/masterDP:5673
+[  300622ms] [LOG] ce.fn.init stepItem @ http://192.168.0.88:8102/_resources/themes/prahutheme/javascript/custom/masterDP.js?m=1772426042:626
+[  303154ms] [LOG] Masternamanya @ http://192.168.0.88:8102/adminprahu/masterInclude:2027
+[  303160ms] [LOG] undefined @ http://192.168.0.88:8102/adminprahu/masterInclude:5636
+[  303160ms] [LOG] Masukkan Nama Include @ http://192.168.0.88:8102/adminprahu/masterInclude:5636
+[  303160ms] [LOG] undefined @ http://192.168.0.88:8102/adminprahu/masterInclude:5636
+[  303160ms] [LOG] Masukkan Nama Include @ http://192.168.0.88:8102/adminprahu/masterInclude:5636
+[  303160ms] [LOG] undefined @ http://192.168.0.88:8102/adminprahu/masterInclude:5636
+[  303161ms] [LOG] WebSocket connection @ http://192.168.0.88:8102/adminprahu/masterInclude:5679
+[  303161ms] [LOG] WebSocket connection attempting... @ http://192.168.0.88:8102/adminprahu/masterInclude:5757
+[  303433ms] [LOG] [] @ http://192.168.0.88:8102/_resources/themes/prahutheme/javascript/custom/masterinclude.js?m=1772426042:125
+[  303437ms] [LOG] 200 xhrglobal @ http://192.168.0.88:8102/adminprahu/masterInclude:5610
+[  303439ms] [LOG] ce.fn.init stepItem @ http://192.168.0.88:8102/_resources/themes/prahutheme/javascript/custom/masterinclude.js?m=1772426042:682
+[  305897ms] [LOG] Masternamanya @ http://192.168.0.88:8102/adminprahu/masterpelabuhan:2027
+[  305936ms] [LOG] undefined @ http://192.168.0.88:8102/adminprahu/masterpelabuhan:5767
+[  305936ms] [LOG] Masukkan UN Code @ http://192.168.0.88:8102/adminprahu/masterpelabuhan:5767
+[  305936ms] [LOG] Masukkan Nama Pelabuhan @ http://192.168.0.88:8102/adminprahu/masterpelabuhan:5767
+[  305936ms] [LOG] undefined @ http://192.168.0.88:8102/adminprahu/masterpelabuhan:5767
+[  305936ms] [LOG] Masukkan UN Code @ http://192.168.0.88:8102/adminprahu/masterpelabuhan:5767
+[  305936ms] [LOG] undefined @ http://192.168.0.88:8102/adminprahu/masterpelabuhan:5767
+[  305936ms] [LOG] undefined @ http://192.168.0.88:8102/adminprahu/masterpelabuhan:5767
+[  305937ms] [LOG] Masukkan Nama Pelabuhan @ http://192.168.0.88:8102/adminprahu/masterpelabuhan:5767
+[  305937ms] [LOG] WebSocket connection @ http://192.168.0.88:8102/adminprahu/masterpelabuhan:5810
+[  305938ms] [LOG] WebSocket connection attempting... @ http://192.168.0.88:8102/adminprahu/masterpelabuhan:5888
+[  306165ms] [LOG] [] @ http://192.168.0.88:8102/_resources/themes/prahutheme/javascript/custom/masterpelabuhan.js?m=1772426042:127
+[  306169ms] [LOG] 200 xhrglobal @ http://192.168.0.88:8102/adminprahu/masterpelabuhan:5741
+[  306170ms] [LOG] ce.fn.init stepItem @ http://192.168.0.88:8102/_resources/themes/prahutheme/javascript/custom/masterpelabuhan.js?m=1772426042:700
+[  308662ms] [LOG] Masternamanya @ http://192.168.0.88:8102/adminprahu/pelayaran:2027
+[  308667ms] [LOG] undefined @ http://192.168.0.88:8102/adminprahu/pelayaran:5559
+[  308667ms] [LOG] Masukkan Nama Pelayaran @ http://192.168.0.88:8102/adminprahu/pelayaran:5559
+[  308667ms] [LOG] WebSocket connection @ http://192.168.0.88:8102/adminprahu/pelayaran:5602
+[  308668ms] [LOG] WebSocket connection attempting... @ http://192.168.0.88:8102/adminprahu/pelayaran:5680
+[  309010ms] [LOG] [] @ http://192.168.0.88:8102/_resources/themes/prahutheme/javascript/custom/pelayaran.js?m=1772426042:115
+[  309014ms] [LOG] 200 xhrglobal @ http://192.168.0.88:8102/adminprahu/pelayaran:5533
+[  309015ms] [LOG] ce.fn.init stepItem @ http://192.168.0.88:8102/_resources/themes/prahutheme/javascript/custom/pelayaran.js?m=1772426042:558
+[  311755ms] [LOG] Masternamanya @ http://192.168.0.88:8102/adminprahu/masterpetugasapk:2027
+[  311761ms] [LOG] undefined @ http://192.168.0.88:8102/adminprahu/masterpetugasapk:5762
+[  311761ms] [LOG] Masukkan Nama Petugas @ http://192.168.0.88:8102/adminprahu/masterpetugasapk:5762
+[  311761ms] [LOG] 08xxxxxxxxxx @ http://192.168.0.88:8102/adminprahu/masterpetugasapk:5762
+[  311761ms] [LOG] undefined @ http://192.168.0.88:8102/adminprahu/masterpetugasapk:5762
+[  311762ms] [LOG] Masukkan Nama Petugas @ http://192.168.0.88:8102/adminprahu/masterpetugasapk:5762
+[  311762ms] [LOG] 08xxxxxxxxxx @ http://192.168.0.88:8102/adminprahu/masterpetugasapk:5762
+[  311762ms] [LOG] undefined @ http://192.168.0.88:8102/adminprahu/masterpetugasapk:5762
+[  311762ms] [LOG] Masukkan Nama Bank @ http://192.168.0.88:8102/adminprahu/masterpetugasapk:5762
+[  311762ms] [LOG] undefined @ http://192.168.0.88:8102/adminprahu/masterpetugasapk:5762
+[  311763ms] [LOG] WebSocket connection @ http://192.168.0.88:8102/adminprahu/masterpetugasapk:5805
+[  311763ms] [LOG] WebSocket connection attempting... @ http://192.168.0.88:8102/adminprahu/masterpetugasapk:5883
+[  312068ms] [LOG] 200 xhrglobal @ http://192.168.0.88:8102/adminprahu/masterpetugasapk:5736
+[  315898ms] [ERROR] WebSocket connection to 'ws://192.168.0.88:8102/' failed: Error during WebSocket handshake: Unexpected response code: 302 @ http://192.168.0.88:8102/adminprahu/masterpetugasapk:5804
+[  315899ms] [LOG] WebSocket error: undefined @ http://192.168.0.88:8102/adminprahu/masterpetugasapk:5849
+[  315899ms] [LOG] Reconnecting in 2 seconds... @ http://192.168.0.88:8102/adminprahu/masterpetugasapk:5892
+[  315899ms] [LOG] WebSocket closed @ http://192.168.0.88:8102/adminprahu/masterpetugasapk:5808
+[  315899ms] [LOG] Reconnecting in 4 seconds... @ http://192.168.0.88:8102/adminprahu/masterpetugasapk:5892
+[  317914ms] [LOG] WebSocket connection @ http://192.168.0.88:8102/adminprahu/masterpetugasapk:5805
+[  317915ms] [LOG] WebSocket connection attempting... @ http://192.168.0.88:8102/adminprahu/masterpetugasapk:5883
+[  319260ms] [ERROR] WebSocket connection to 'ws://192.168.0.88:8102/' failed: Error during WebSocket handshake: Unexpected response code: 302 @ http://192.168.0.88:8102/adminprahu/masterpetugasapk:5804
+[  319260ms] [LOG] WebSocket error: undefined @ http://192.168.0.88:8102/adminprahu/masterpetugasapk:5849
+[  319261ms] [LOG] Reconnecting in 8 seconds... @ http://192.168.0.88:8102/adminprahu/masterpetugasapk:5892
+[  319261ms] [LOG] WebSocket closed @ http://192.168.0.88:8102/adminprahu/masterpetugasapk:5808
+[  319262ms] [LOG] Reconnecting in 16 seconds... @ http://192.168.0.88:8102/adminprahu/masterpetugasapk:5892
+[  319903ms] [LOG] WebSocket connection @ http://192.168.0.88:8102/adminprahu/masterpetugasapk:5805
+[  319904ms] [LOG] WebSocket connection attempting... @ http://192.168.0.88:8102/adminprahu/masterpetugasapk:5883
+[  322014ms] [ERROR] WebSocket connection to 'ws://192.168.0.88:8102/' failed: Error during WebSocket handshake: Unexpected response code: 302 @ http://192.168.0.88:8102/adminprahu/masterpetugasapk:5804
+[  322014ms] [LOG] WebSocket error: undefined @ http://192.168.0.88:8102/adminprahu/masterpetugasapk:5849
+[  322014ms] [LOG] Reconnecting in 32 seconds... @ http://192.168.0.88:8102/adminprahu/masterpetugasapk:5892
+[  322014ms] [LOG] WebSocket closed @ http://192.168.0.88:8102/adminprahu/masterpetugasapk:5808
+[  322014ms] [LOG] Reconnecting in 64 seconds... @ http://192.168.0.88:8102/adminprahu/masterpetugasapk:5892
