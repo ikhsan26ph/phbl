@@ -104,13 +104,20 @@ for (const account of ACCOUNTS as Array<{ name: string; env: string; sub: boolea
   const { email, password } = credentials(account);
 
   test.describe(`smoke ${account.name}`, () => {
-    test.skip(!email || !password, `Kredensial ${account.name} kosong di .env.${TARGET} — dilewati`);
+    test.skip(!email || !password, `Kredensial ${account.name} kosong di .env — dilewati`);
     test.use({ storageState: path.join(AUTH_DIR, `${account.name}.json`) });
 
     test('sesi hasil login setup dipakai ulang (tidak diarahkan ke login)', async ({ page }, testInfo) => {
       const hasil = await buka(page, '/home/akunsaya', testInfo);
       expect(hasil.urlAkhir, 'sesi tersimpan ditolak server (kedaluwarsa/tertendang)').not.toMatch(/\/user\/login/i);
       await expect(page.getByRole('link', { name: 'KELUAR' })).toBeVisible();
+      // Identitas: sesi milik akun yang benar (bukan sesi akun lain yang
+      // tersimpan di file sesi). Locator sama dgn bukaKonteksAkun
+      // (tests/push-notif.trigger.ts) — email tampil di Akun Saya semua role.
+      await expect(
+        page.getByText(email!, { exact: true }).filter({ visible: true }).first(),
+        'email akun pada halaman Akun Saya',
+      ).toBeVisible({ timeout: 30_000 });
       expect(hasil.respons5xx, 'respons HTTP 5xx').toEqual([]);
     });
 

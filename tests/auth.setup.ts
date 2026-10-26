@@ -5,10 +5,12 @@ import path from 'path';
  * Login tujuh akun dan simpan storageState ke .auth/<target>/<peran>.json
  * (target = TARGET_ENV, lihat playwright.config.ts).
  *
- * Kredensial WAJIB dari .env.<target> (process.env) — dilarang hardcode
+ * Kredensial WAJIB dari .env root (process.env, dimuat scripts/env.js) — dilarang hardcode
  * email/password. Daftar akun & status wajib/opsional per target ada di
  * scripts/targets.js: akun WAJIB yang kosong = GAGAL (penghambat kesiapan),
- * akun opsional yang kosong = skip (mis. admin-sub-read di demo).
+ * akun opsional yang kosong = skip (mis. admin-sub-read di demo). Untuk
+ * verifikasi terbatas tanpa akun tertentu, saring lewat --grep-invert (lihat
+ * CLAUDE.md "Setup environment") — aturan wajib/opsional jangan dilonggarkan.
  *
  * Pemetaan peran:
  * - Bid Owner  = Shipper      (UI: "Pemilik Barang")
@@ -60,10 +62,10 @@ for (const account of ACCOUNTS as RoleAccount[]) {
     if (kosong && isRequired(account.name, TARGET)) {
       throw new Error(
         `Akun WAJIB ${account.name} (${account.env}_EMAIL/${account.env}_PASSWORD) kosong di ` +
-          `.env.${TARGET} — penghambat kesiapan target ${TARGET}`,
+          `.env — penghambat kesiapan target ${TARGET}`,
       );
     }
-    setup.skip(kosong, `Kredensial opsional ${account.name} kosong di .env.${TARGET} — dilewati`);
+    setup.skip(kosong, `Kredensial opsional ${account.name} kosong di .env — dilewati`);
     await login(page, account);
   });
 }

@@ -73,7 +73,9 @@ test.describe('Daftar Pengajuan Nego (Bidder)', () => {
     test.skip(jumlah === 0, 'Tidak ada data nego pada akun demo');
 
     await expect(
-      listPage.barisData(page).first().getByText(/^(WAITING|DITERIMA|DITOLAK|NEGOSIASI)$/i),
+      // Status di UI selalu HURUF BESAR; tanpa /i agar item dropdown tersembunyi "Negosiasi"
+      // (menu Aksi Nego baris WAITING) tidak ikut cocok — strict violation 2026-10-25.
+      listPage.barisData(page).first().getByText(/^(WAITING|DITERIMA|DITOLAK|NEGOSIASI)$/).filter({ visible: true }),
     ).toBeVisible();
   });
 
@@ -111,7 +113,8 @@ test.describe('Daftar Pengajuan Nego (Bidder)', () => {
 
   test('nego yang sudah direspon hanya memiliki tombol Detail tanpa Aksi Nego', async ({ page }) => {
     test.skip((await tungguBarisData(page)) === 0, 'Tidak ada data nego pada akun demo');
-    const selesai = listPage.barisStatus(page, /DITERIMA|DITOLAK|NEGOSIASI/i);
+    // Tanpa /i: "Negosiasi" di dropdown Aksi Nego (baris WAITING) bukan status respon.
+    const selesai = listPage.barisStatus(page, /DITERIMA|DITOLAK|NEGOSIASI/);
     test.skip((await selesai.count()) === 0, 'Tidak ada nego yang sudah direspon pada akun demo');
 
     const baris = selesai.first();

@@ -154,7 +154,7 @@ test.describe('Detail Pengajuan Lelang', () => {
   test('menampilkan status lelang, jumlah penawaran, dan status harga tiap bidder', async ({ page }) => {
     test.skip((await bukaDetailPertama(page)) === null, 'Tidak ada data lelang di akun demo');
 
-    await expect(page.getByText(/^(BELUM BUKA|LELANG DIBUKA|LELANG DITUTUP|LELANG BATAL)$/).first()).toBeVisible();
+    await expect(page.getByText(/^(BELUM BUKA|LELANG DIBUKA|LELANG DITUTUP|LELANG BATAL)$/).filter({ visible: true }).first()).toBeVisible();
     await expect(page.getByText(/Penawaran : \d+ dari \d+/).first()).toBeVisible();
     // Status harga per bidder (rule): salah satu dari 3 nilai berikut.
     await expect(

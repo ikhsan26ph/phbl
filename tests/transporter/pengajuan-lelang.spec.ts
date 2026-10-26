@@ -183,7 +183,7 @@ test.describe('Detail Pengajuan Lelang (Bidder)', () => {
   test('menampilkan status lelang dan bagian utama detail', async ({ page }) => {
     test.skip(!(await bukaDetailDariTab(page, 'semua-lelang')), 'Tidak ada data lelang di akun demo');
 
-    await expect(page.getByText(/^(BELUM BUKA|LELANG DIBUKA|LELANG DITUTUP|LELANG BATAL)$/).first()).toBeVisible();
+    await expect(page.getByText(/^(BELUM BUKA|LELANG DIBUKA|LELANG DITUTUP|LELANG BATAL)$/).filter({ visible: true }).first()).toBeVisible();
     await expect(page.getByText('Status Lelang')).toBeVisible();
     // Label = <div>Shipper <span>:</span></div> — exact/anchored gagal karena
     // ":" ikut dalam teks elemen; substring "Shipper" unik di halaman ini.

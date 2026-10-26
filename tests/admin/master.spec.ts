@@ -164,7 +164,8 @@ function pasangDialog(page: Page, terimaConfirm = false): string[] {
 
 async function bukaList(page: Page, url: string): Promise<void> {
   await page.goto(url);
-  await listPage.barisData(page).first().waitFor({ timeout: 20_000 }).catch(() => {});
+  // Baris via XHR search; 2026-10-25 terukur sampai ±20 dtk → beri ruang lebih.
+  await listPage.barisData(page).first().waitFor({ timeout: 45_000 }).catch(() => {});
 }
 
 async function isiFormTambah(page: Page, m: MasterSederhana, nama: string): Promise<void> {
@@ -246,7 +247,8 @@ test.describe('Master (Admin) — CRUD data sederhana (mutasi)', () => {
         await expect(page).toHaveURL(new RegExp(`${m.list.replace(/\//g, '\\/')}$`, 'i'), { timeout: 20_000 });
         await expect(listPage.alertSukses(page, /Anda berhasil menambah/i)).toBeVisible();
         const baris = listPage.baris(page, nama).first();
-        await expect(baris).toBeVisible();
+        // Baris daftar dimuat via XHR (search<x>) — 2026-10-25 terukur ±20 dtk pasca-redirect.
+        await expect(baris).toBeVisible({ timeout: 30_000 });
         await expect(baris.locator('td').nth(m.kolomNama)).toHaveText(nama);
         // Data baru tidak terpakai → Edit langsung membuka modal tanpa confirm.
         await listPage.tombolAksi(baris, m.judulEdit).click();
@@ -261,7 +263,7 @@ test.describe('Master (Admin) — CRUD data sederhana (mutasi)', () => {
         await inputNama.fill(namaEdit);
         await modal.getByRole('button', { name: 'Simpan' }).click();
         await expect(listPage.alertSukses(page, /Anda berhasil mengedit/i)).toBeVisible({ timeout: 20_000 });
-        await expect(listPage.baris(page, namaEdit).first().locator('td').nth(m.kolomNama)).toHaveText(namaEdit);
+        await expect(listPage.baris(page, namaEdit).first().locator('td').nth(m.kolomNama)).toHaveText(namaEdit, { timeout: 30_000 });
 
         await hapusBaris(page, m, namaEdit);
         dibuat = false;
@@ -269,6 +271,9 @@ test.describe('Master (Admin) — CRUD data sederhana (mutasi)', () => {
         if (dibuat) {
           await bukaList(page, m.list);
           for (const n of [namaEdit, nama]) {
+            // Tunggu baris AUTOTEST benar-benar termuat sebelum menghitung — count() seketika
+            // pada tabel async bisa 0 sehingga cleanup terlewat diam-diam (pelajaran CLAUDE.md).
+            await listPage.baris(page, n).first().waitFor({ timeout: 15_000 }).catch(() => {});
             if ((await listPage.baris(page, n).count()) > 0) await hapusBaris(page, m, n);
           }
         }

@@ -159,6 +159,21 @@ test.describe('Setting S&K Booking (Admin)', () => {
   });
 });
 
+/**
+ * Tombol #submitonce1 (Setting Reminder) dirender sebelum skrip handler di akhir
+ * halaman dijalankan; klik terlalu cepat = no-op tanpa POST savereminder
+ * (2026-10-25, server lambat: 0 request terkirim). Pola sama dgn buat-lelang.spec.ts.
+ */
+async function tungguHandlerSimpanReminder(page: Page): Promise<void> {
+  await page.waitForFunction(() => {
+    const jquery = (window as typeof window & {
+      jQuery?: { _data: (element: Element, key: string) => { click?: unknown[] } | undefined };
+    }).jQuery;
+    const button = document.querySelector('#submitonce1');
+    return Boolean(jquery && button && jquery._data(button, 'events')?.click?.length);
+  }, undefined, { timeout: 90_000 });
+}
+
 test.describe('Setting Reminder (Admin)', () => {
   // Mutasi + revert di finally: timeout default 60 dtk pernah memutus revert
   // (Rule Reminder tersisa +3 Hari, 2026-08-29) → beri 3x waktu.
@@ -218,6 +233,7 @@ test.describe('Setting Reminder (Admin)', () => {
       await barisSJ().getByRole('link', { name: 'Setting' }).click();
       await expect(page.locator('input[type="number"]')).toBeVisible({ timeout: 30_000 });
       await page.locator('input[type="number"]').fill(nilai);
+      await tungguHandlerSimpanReminder(page);
       await page.locator('#submitonce1').click();
       // Server demo kadang >20 dtk memproses simpan (run 2026-08-29: POST
       // tersimpan tapi redirect lewat 20 dtk) → tunggu lama.
@@ -226,6 +242,7 @@ test.describe('Setting Reminder (Admin)', () => {
     let bermutasi = false;
     try {
       await trigger.fill(baru);
+      await tungguHandlerSimpanReminder(page);
       await page.locator('#submitonce1').click();
       bermutasi = true;
       await expect(page).toHaveURL(/\/adminprahu\/reminder$/, { timeout: 90_000 });

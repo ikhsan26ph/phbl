@@ -1,8 +1,8 @@
 /**
  * Konversi hasil Playwright (JSON reporter) menjadi laporan Excel.
  *
- * Target dipilih lewat TARGET_ENV (demo | local, default demo) — sama dengan
- * playwright.config.ts.
+ * Label target lewat TARGET_ENV (default local, scripts/targets.js) — sama
+ * dengan playwright.config.ts; label hanya memilih folder hasil run, bukan env.
  * Input : test-results/<target>/runs/<runId>/results.json — run TERBARU yang
  *         benar-benar mengeksekusi test (bukan hasil --list), atau run tertentu
  *         lewat PW_RUN_ID=<runId>. Format lama test-results/<target>/results.json
@@ -22,8 +22,8 @@
  * - Shipper     = Bid Owner  (UI: "Pemilik Barang")
  * - Transporter = Bidder     (UI: "Ekspedisi")
  *
- * Jalankan: npm run report  (setelah npm test; untuk target lain:
- *           TARGET_ENV=local npm run report)
+ * Jalankan: npm run report  (setelah npm test; label lain:
+ *           TARGET_ENV=<label> npm run report)
  */
 
 const fs = require('fs');
@@ -31,7 +31,7 @@ const path = require('path');
 const ExcelJS = require('exceljs');
 
 const ROOT = path.resolve(__dirname, '..');
-const TARGET = process.env.TARGET_ENV ?? 'demo';
+const TARGET = require('./targets.js').targetName();
 const TARGET_DIR = path.join(ROOT, 'test-results', TARGET);
 
 /** Jumlah test yang benar-benar dieksekusi (run --list = 0). */

@@ -59,7 +59,7 @@ function pasangDialog(page: Page): string[] {
 
 async function bukaList(page: Page, url: string): Promise<void> {
   await page.goto(url);
-  await listPage.barisData(page).first().waitFor({ timeout: 20_000 }).catch(() => {});
+  await listPage.barisData(page).first().waitFor({ timeout: 45_000 }).catch(() => {}); // XHR search s.d. ±20 dtk (2026-10-25)
 }
 
 /** Input tanggal (picker): ketik per karakter + Enter, verifikasi nilai. */

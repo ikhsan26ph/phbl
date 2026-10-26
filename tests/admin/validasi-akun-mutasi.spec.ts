@@ -89,6 +89,21 @@ async function konfirmasiSwal(page: Page): Promise<void> {
   }
 }
 
+/**
+ * #tombolSimpanProvinsi dirender sebelum skrip handler di akhir halaman dijalankan;
+ * klik terlalu cepat = no-op tanpa POST (2026-10-24/25: Tambah Shipper ke transporter
+ * khusus tidak pernah mengirim request). Pola sama dgn buat-lelang.spec.ts.
+ */
+async function tungguHandlerSimpan(page: Page): Promise<void> {
+  await page.waitForFunction(() => {
+    const jquery = (window as typeof window & {
+      jQuery?: { _data: (element: Element, key: string) => { click?: unknown[] } | undefined };
+    }).jQuery;
+    const button = document.querySelector('#tombolSimpanProvinsi');
+    return Boolean(jquery && button && jquery._data(button, 'events')?.click?.length);
+  }, undefined, { timeout: 90_000 });
+}
+
 test.describe('Pre Register (Admin, mutasi)', () => {
   test.slow();
 
@@ -285,6 +300,7 @@ test.describe('Transporter Khusus (Admin, mutasi)', () => {
       const alias = page.locator('input[name="alias"]').filter({ visible: true }).first();
       await expect(alias).toBeDisabled();
       await expect(alias).not.toHaveValue('', { timeout: 10_000 });
+      await tungguHandlerSimpan(page);
       await page.locator('#tombolSimpanProvinsi').click();
       dibuat = true;
       await expect(page).toHaveURL(/listBidderKhusus/i, { timeout: 30_000 });
@@ -301,6 +317,7 @@ test.describe('Transporter Khusus (Admin, mutasi)', () => {
       const shipperV = await nilaiOpsi(selShipper, /Cipta Karya/);
       const shipperT = (await selShipper.locator(`option[value="${shipperV}"]`).textContent())!.trim();
       await selShipper.selectOption(shipperV);
+      await tungguHandlerSimpan(page);
       await page.locator('#tombolSimpanProvinsi').click();
       await expect(page).toHaveURL(/settingBidderKhusus/i, { timeout: 30_000 });
       await expect(listPage.baris(page, shipperT.slice(0, 20)).first()).toBeVisible({ timeout: 20_000 });
@@ -310,6 +327,7 @@ test.describe('Transporter Khusus (Admin, mutasi)', () => {
       await expect(page).toHaveURL(/tambahbidownertobidderkhusus/i, { timeout: 30_000 });
       await page.locator('select[name="nama"]').filter({ visible: true }).first().selectOption(shipperV);
       const sebelum = pesan.length;
+      await tungguHandlerSimpan(page);
       await page.locator('#tombolSimpanProvinsi').click();
       await expect.poll(() => pesan.length, { timeout: 15_000 }).toBeGreaterThan(sebelum);
       // UI: "Shipper Telah Ditambahkan" (rule: "Input data ada yang sama") — diskrepansi teks.

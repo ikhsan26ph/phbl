@@ -15,7 +15,7 @@ import { expect, test } from '@playwright/test';
 // kosong: login setup ikut di-skip sehingga file storageState tidak ada.
 test.skip(
   !process.env.ADMIN_SUB_READ_EMAIL || !process.env.ADMIN_SUB_READ_PASSWORD,
-  `Kredensial admin-sub-read kosong di .env.${process.env.TARGET_ENV ?? 'demo'} — dilewati`,
+  `Kredensial admin-sub-read kosong di .env — dilewati`,
 );
 
 test('sesi admin-sub-read valid — link KELUAR tampil', async ({ page }) => {

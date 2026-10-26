@@ -73,7 +73,7 @@ function pasangDialog(page: Page): string[] {
 
 async function bukaList(page: Page, url: string): Promise<void> {
   await page.goto(url);
-  await listPage.barisData(page).first().waitFor({ timeout: 20_000 }).catch(() => {});
+  await listPage.barisData(page).first().waitFor({ timeout: 45_000 }).catch(() => {}); // XHR search s.d. ±20 dtk (2026-10-25)
 }
 
 async function nilaiOpsi(select: Locator, pola: RegExp): Promise<string> {
@@ -160,7 +160,7 @@ for (const p of PERAN) {
         // Alert sukses tidak selalu dirender (Shipper: tanpa alert pada run
         // 2026-08-30) → bukti utama = baris tampil di list.
         const baris = listPage.baris(page, nama).first();
-        await expect(baris).toBeVisible();
+        await expect(baris).toBeVisible({ timeout: 30_000 }); // baris dimuat via XHR search (±6 dtk, 2026-10-25)
         await expect(baris).toContainText(/\d+ Perizinan/);
         if (await akses.count()) await expect(baris).toContainText(/\b1 Perizinan\b/);
 

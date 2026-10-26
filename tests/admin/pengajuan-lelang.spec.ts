@@ -394,7 +394,7 @@ test.describe('Detail Pengajuan Lelang (Admin)', () => {
   test('menampilkan status lelang, ringkasan, dan daftar transporter penerima lelang beserta status harga', async ({ page }) => {
     test.skip(!(await bukaDetailPertama(page, 'semua-lelang')), 'Tidak ada data lelang pada demo');
 
-    await expect(page.getByText(/^(BELUM BUKA|LELANG DIBUKA|LELANG DITUTUP|LELANG BATAL)$/).first()).toBeVisible();
+    await expect(page.getByText(/^(BELUM BUKA|LELANG DIBUKA|LELANG DITUTUP|LELANG BATAL)$/).filter({ visible: true }).first()).toBeVisible();
     await expect(page.getByText(/Beranda\s*\/\s*Daftar Pengajuan Lelang\s*\/\s*Detail Pengajuan Lelang/)).toBeVisible();
     await expect(page.getByRole('link', { name: 'Beranda' }).first()).toHaveAttribute('href', /\/lelang\/listLelang$/i);
     for (const teks of ['Lelang Dibuat', 'Shipper', 'Status Lelang', 'Dokumen Aanwijzing', 'Budget Pengiriman', 'Dokumen Lelang']) {

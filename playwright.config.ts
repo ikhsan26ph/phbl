@@ -1,27 +1,21 @@
 import { defineConfig, devices } from '@playwright/test';
 import { execSync } from 'child_process';
 import { createHash } from 'crypto';
-import dotenv from 'dotenv';
 import fs from 'fs';
 import path from 'path';
 
 /**
- * Target environment dipilih lewat TARGET_ENV (demo | local, default demo).
- * Tiap target punya env file, storageState, dan hasil run sendiri sehingga
- * run ke satu target tidak menimpa target lain; tiap RUN juga punya folder
- * sendiri agar bukti run sebelumnya (termasuk kegagalan pertama) tidak hilang:
- *   .env.<target>   .auth/<target>/<peran>.json
+ * BASE_URL & kredensial SELALU dari `.env` root (scripts/env.js; .env.demo /
+ * .env.local tidak dibaca). TARGET_ENV (default `local`) hanya LABEL yang
+ * memisahkan artefak per target dan per RUN agar bukti run sebelumnya
+ * (termasuk kegagalan pertama) tidak hilang:
+ *   .auth/<target>/<peran>.json
  *   test-results/<target>/runs/<runId>/   playwright-report/<target>/<runId>/
  */
-const TARGET = process.env.TARGET_ENV ?? 'demo';
-const ENV_FILE = path.resolve(__dirname, `.env.${TARGET}`);
-if (!fs.existsSync(ENV_FILE)) {
-  throw new Error(
-    `TARGET_ENV=${TARGET}: file ${path.basename(ENV_FILE)} tidak ditemukan. ` +
-      'Salin .env.example ke file itu lalu isi BASE_URL & kredensial.',
-  );
-}
-dotenv.config({ path: ENV_FILE, quiet: true });
+const { loadEnv } = require('./scripts/env.js');
+const { targetName } = require('./scripts/targets.js');
+loadEnv();
+const TARGET: string = targetName();
 // Diteruskan ke helper test (auth.setup, push-notif.trigger) & generator report.
 process.env.TARGET_ENV = TARGET;
 
@@ -121,6 +115,10 @@ export default defineConfig({
     {
       name: 'setup',
       testMatch: /auth\.setup\.ts/,
+      // Login saja boleh diulang: 2026-10-25 dua kali seluruh project admin
+      // (192 test) batal karena gangguan tunnel sesaat (GET / 57,9 dtk; HTTP 530
+      // Cloudflare). Retry tercatat sebagai "flaky" di laporan, tidak tersembunyi.
+      retries: 2,
       use: { ...devices['Desktop Chrome'] },
     },
     {

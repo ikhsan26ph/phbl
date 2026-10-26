@@ -15,8 +15,9 @@ ADMIN SILVERSTRIPE tidak ada di dokumen sumber).
 - `playwright.config.ts` — project `setup` (login 7 akun → `.auth/<target>/<peran>.json`),
   `anon` (tanpa login), dan `admin`, `admin-sub`, `admin-sub-read`, `shipper`,
   `shipper-sub`, `transporter`, `transporter-sub` (dependencies setup, testMatch
-  `tests/<nama>/`). Target = `TARGET_ENV` (demo | local), lihat "Setup environment".
-- Kredensial HANYA dari `.env.<target>` (lihat `.env.example`). Dilarang hardcode.
+  `tests/<nama>/`). Target = label `TARGET_ENV` (default `local`), lihat "Setup environment".
+- BASE_URL & kredensial HANYA dari `.env` root (lihat `.env.example`, loader
+  `scripts/env.js`; sejak 2026-10-24 `.env.demo`/`.env.local` TIDAK dibaca). Dilarang hardcode.
 - `ADMIN_PATH=/` — admin login lewat form publik yang sama (konfirmasi user).
 
 ## Konvensi kerja (wajib)
@@ -666,6 +667,50 @@ item menu itu TIDAK tersedia utk status ORDER BARU):
     bisa lagi diperbaiki shipper; satu-satunya jalur tersisa = admin lewat
     field `#nomor_referensi` di Edit Data Order, dan itu pun ditolak untuk
     ORDER SELESAI. `test.fail()` di `tests/shipper/nomor-referensi.spec.ts`.
+21. (2026-10-24) **`/user/tess` menampilkan `phpinfo()` tanpa login di URL
+    tunnel publik** (trycloudflare, PHP/8.2.35) + cookie `PHBIDLAUTLOCAL` tanpa
+    HttpOnly/Secure/SameSite. `test.fail()` di
+    `tests/anon/diagnostik-publik.spec.ts` (GET read-only, badan respons tidak
+    disimpan); ringkasan untuk pemilik server:
+    `report/temuan-keamanan-tunnel-2026-10-24.md`. Saat server diperbaiki test
+    "lulus tak terduga" → hapus `test.fail()`.
+22. (2026-10-24, tunnel) **Profil Transporter `/home/myprofile`: XHR
+    `POST /home/searchulasan` (limit=10&pageNow=1&id_bidder=66…) → HTTP 500
+    "Maximum execution time of 30 seconds exceeded" setelah ±61 dtk** dan
+    selama itu sesi PHP TERKUNCI → request lain sesi yang sama
+    (`/general/checkNotifExists`, `checkUnvalidatedOrders`, dokumen berikutnya)
+    ikut tertahan ±61 dtk → `tests/transporter/profil.spec.ts` timeout ACAK
+    (test yang gagal berganti tiap run). Pesan error membocorkan path source
+    `C:\MBROOMS\SourceCode\PHBID-LAUT-NEWS\…` (server Windows, display_errors
+    aktif). Bukan defect locator — JANGAN naikkan timeout untuk menutupinya.
+23. (2026-10-24, tunnel) **HTTP 500 Ratchet WebSocket**: `Ratchet\RFC6455\Handshake\
+    ClientNegotiator::__construct()` TypeError (`vendor/ratchet/pawl/src/Connector.php:28`,
+    GuzzleHttp HttpFactory vs PermessageDeflateOptions — versi library tak cocok) pada
+    `POST /order/do_ganti_jadwal`, `/lelang/do_request_update_harga`, `/lelang/doRequestJadwal`
+    → 5 test gagal. `GET /home/inputmuatan/<id>` juga 500 max_execution_time 30 dtk.
+    Ringkasan: `report/ringkasan-run-penuh-tunnel-2026-10-24.md`.
+    Catatan lingkungan (BUKAN defect): server QA ini memasang `app/src/LocalQaSafety.php`
+    "Outbound integrations disabled for local QA" → email lupa sandi & pencarian jadwal
+    pelayaran 500 by design di instance ini.
+24. (2026-10-25, tunnel `lucy-workstation-hart-grad`) **WebSocket browser gagal
+    handshake**: `ConnectWebsocket()` membuka `wss://<host>/` (root web server) → HTTP
+    302/500, coba ulang tiap 1–17 dtk tanpa henti. Probe plugin: 81–83/87 halaman (baseline
+    host `survival-…` 25 Okt 01.49: 0/87) → mulai antara 01.49 & ±10.50 (bertepatan ganti
+    server/tunnel 10.28, SEBELUM retest tiket 11.47). Dampak terbukti: indikator notifikasi
+    (`.indikator-notif`, di-show oleh `checkNotifExists` dalam alur WebSocket) tidak pernah
+    tampil walau ada notif unread → `push-notif.shared.ts:91` gagal shipper & transporter;
+    refresh realtime dashboard order (`update_dashboard_order_laut`) juga bergantung WS.
+    Perlu cek DevOps: layanan WS & routing WebSocket tunnel.
+    **STATUS 2026-10-26 (host `counsel-assist-introduces-patents`): BERES** — kode halaman
+    kini membuka `wss://websocket.prahu-hub.com/` (server WS terpisah, bukan host tunnel):
+    tersambung di admin/shipper/transporter, pesan `update_dashboard_order_laut` diterima,
+    indikator tampil; 3 test `push-notif.shared.ts:91` lulus. Pertanyaan ke dev: server WS
+    itu bersama (domain prahu-hub.com) — pastikan event QA & live/demo tidak tercampur.
+    Tiket #22 searchulasan (200, 1,4 dtk; 5/5 test profil lulus) & #23-b inputmuatan (200,
+    5,8 dtk; daftar-order :353/:379 lulus) juga BERES 2026-10-26. `admin/cari-penawaran
+    :292` TIDAK terkait #22 — timeout di tahap mencari lelang berpenawaran (belum diselidiki).
+    Catatan infra test (BUKAN defect): PHP `session.gc_maxlifetime=1440` → sesi `.auth`
+    yang menganggur >24 mnt dihapus server; `bukaKonteksAkun` kini login ulang otomatis.
 Koreksi audit 2026-09-30: laporan 2026-09-29 bahwa Batalkan Order, Edit Data
 Muatan, Alihkan Order, Ganti Jadwal, dan Edit Data Order hilang pada status
 akhir adalah SALAH. Action pembatasan dirender sebagai `<span>` dan terlewat
@@ -1043,18 +1088,92 @@ Urutan rekomendasi (dari paling aman/tanpa mutasi ke yang butuh izin):
   (`.nvmrc` = 22, `nvm use`). Alias `default` nvm sudah di-set ke 22.19.0
   dan `prefix` di `~/.npmrc` dihapus (bentrok dgn nvm).
 - `npm install` → `npx playwright install chromium` (deps sistem sudah lengkap).
-- Env per target (lihat bagian "Target environment" di bawah): salin
-  `.env.example` → `.env.demo` / `.env.local`, isi kredensial. `.env` polos
-  TIDAK dipakai lagi.
+- Env: salin `.env.example` → `.env` (root), isi BASE_URL & kredensial — lihat
+  "Env tunggal `.env`" di bawah (menggantikan skema `.env.<target>` 2026-10-23).
 - `playwright-cli` (kalibrasi) global: `npm i -g @playwright/cli@latest`
   (terpasang di bin nvm Node 22, bukan `~/.npm-global`).
-- Verifikasi: `npx playwright test --project=setup` → 6 login lulus + 1 skip
-  (admin-sub-read tidak ada di demo), `.auth/demo/` terisi.
+- Verifikasi: lihat perintah di "Env tunggal `.env`" di bawah.
 - Shell Bash tool Claude Code = non-interaktif (`.bashrc` return di awal, nvm
   tak dimuat); bila `node -v` masih 18 di sesi ini, prefix
   `export PATH="$HOME/.nvm/versions/node/v22.19.0/bin:$PATH"` atau restart sesi.
 
-### Target environment: demo vs local (2026-10-23)
+### Env tunggal `.env` + akses tunnel (2026-10-24, laptop pribadi) — BERLAKU
+
+- Satu-satunya file env aktif = `.env` root, dimuat `scripts/env.js`
+  (`loadEnv()`) oleh `playwright.config.ts`, `scripts/readiness-check.js`,
+  `scripts/perf-probe.js`. Tidak ada fallback ke `.env.demo`/`.env.local`
+  (file lama boleh tetap ada; readiness melaporkannya "TIDAK dibaca").
+  Precedence: BASE_URL/ADMIN_PATH/<AKUN>_EMAIL/_PASSWORD dari `.env` SELALU
+  menang atas shell (nama variabel yang bentrok di-warn; kunci yang tak ada di
+  `.env` dihapus dari process.env); `TARGET_ENV` & `PW_*` TIDAK diambil dari
+  `.env` (kontrol run lewat shell); kunci lain dimuat bila shell belum punya.
+  `.env` hilang / BASE_URL tidak valid → error jelas tanpa mencetak nilai.
+- `TARGET_ENV` kini hanya LABEL (default `local`, nilai tak dikenal = error) →
+  memisahkan `.auth/<target>/`, `test-results/<target>/runs/<runId>/`,
+  `playwright-report/<target>/<runId>/`, nama laporan, aturan akun/fixture di
+  `scripts/targets.js`. Label kerja = `local`.
+- BASE_URL = tunnel Cloudflare (berganti-ganti: `finger-convinced-ruby-ping` →
+  2026-10-24 17.58 `survival-nobody-character-plugin` → 2026-10-25 10.28
+  `lucy-workstation-hart-grad.trycloudflare.com`; masih PHP/8.2.35, build sama).
+  Setiap ganti host: sesi `.auth` LAMA otomatis tidak berlaku → WAJIB setup ulang
+  (2026-10-25 probe plugin sempat memeriksa halaman login karena ini; kini
+  `scripts/plugin-probe.js` & `bandingkan-plugin.js` punya penjaga host/sesi). Ganti
+  BASE_URL di `.env` lalu jalankan ulang setup (cookie `PHBIDLAUTLOCAL` terikat
+  host). **AWAS: tunnel bisa mengarah ke APLIKASI LAIN** — 2026-10-24 sempat ke
+  "Prahu Roro" (title "Login | Prahu Roro", cookie `PHBIDROROLOCAL`, form
+  tanpa placeholder). Sebelum run, cek readiness: cookie harus `PHBIDLAUTLOCAL`. Teramati 2026-10-24: PHP/8.2.35,
+  TLS valid, redirect & URL absolut di HTML tetap di host tunnel.
+  `.env` hanya berisi 6 akun. Keputusan user 2026-10-24: akun baca-saja tidak
+  diperlukan, sub admin cukup via `ADMIN_SUB_EMAIL` → `admin-sub-read` kini
+  OPSIONAL di label local (kosong = skip). JANGAN isi `ADMIN_SUB_READ_*` dgn
+  akun admin-sub (sesi tunggal per akun → saling tendang).
+- Catatan: `--grep-invert` TIDAK menyaring project dependency (setup tetap
+  jalan penuh). Perintah standar:
+  ```
+  TARGET_ENV=local npm run readiness
+  TARGET_ENV=local PW_RUN_ID=<id>-smoke npx playwright test --project=smoke   # setup ikut jalan
+  TARGET_ENV=local PW_RUN_ID=<id>-smoke npm run report
+  ```
+  Smoke kini juga meng-assert EMAIL akun tampil di Akun Saya (identitas sesi).
+- Temuan: `/user/tess` (phpinfo) terbuka TANPA login di URL tunnel PUBLIK.
+- **Run penuh SELESAI 2026-10-24 21.34**: 462 test unik → 352 lulus, 26 lulus-defect,
+  49 gagal, 35 skip (+19 sengaja dikecualikan). Ringkasan & klasifikasi:
+  `report/ringkasan-run-penuh-tunnel-2026-10-24.md`; handoff `docs/HANDOFF-2026-10-24-tunnel.md`.
+  Cek plugin/library 2026-10-25 (87 halaman, read-only): `report/cek-plugin-2026-10-25.md`
+  + bukti `report/evidence-plugin-2026-10-25/` — 165 file JS/CSS, 3 file JS lokal hilang
+  (302→HTML), error JS di 14 halaman semuanya tanpa dampak fungsional terbukti.
+  FAKTA server tunnel: sesi TIDAK tunggal per akun (login ulang tak mengakhiri sesi lama
+  — beda dgn demo); email di HTML disamarkan Cloudflare `email-decode` (cek email via
+  teks tampilan browser, bukan HTML mentah).
+  Laporan Excel GABUNGAN 6 run (hasil terakhir per test + sheet Klasifikasi
+  Kegagalan/Temuan/Dikecualikan & Integritas): `report/hasil-testing-2026-10-24-gabungan-local.xlsx`
+  (results gabungan `test-results/local/runs/20261024-tunnel-gabungan/`).
+
+### Regresi patch PHP (disiapkan 2026-10-25)
+
+- Baseline beku PHP/8.2.35: `report/baseline-php-8.2.35/` (JANGAN diubah). Prosedur &
+  cara membaca hasil: `docs/REGRESI-PATCH-PHP.md`. Pelaksana: `bash scripts/regresi-patch.sh
+  cepat|penuh|banding <label>`; alat: `scripts/plugin-probe.js`, `bandingkan-plugin.js`,
+  `bandingkan-hasil.js` (tervalidasi: baseline vs 6 run asli = 468/468 SAMA).
+
+### Cek ulang 2026-10-25 — pelajaran infrastruktur test (WAJIB dibaca sebelum run)
+
+- Ringkasan: `report/cek-ulang-2026-10-25.md`; Excel `report/hasil-testing-2026-10-25-cekulang-gabungan-local.xlsx`.
+- Sesi PHP server tunnel dihapus setelah menganggur >24 mnt (`session.gc_maxlifetime=1440`):
+  sesi peran lain di run panjang bisa sudah mati → `bukaKonteksAkun` login ulang otomatis.
+- Daftar `file:baris` rapuh: edit spec menggeser baris → run diam-diam kehilangan test
+  (admin 181/199). Pakai `scripts/sinkron-daftar.js` (otomatis di `regresi-patch.sh penuh`);
+  `bandingkan-hasil.js` kini berkunci project|file|describe›judul (tanpa baris). Filter
+  manual pakai `-g "<judul>"`, bukan `:baris`.
+- Tabel daftar admin dimuat XHR ±6–20 dtk saat server lambat → assertion baris & cleanup
+  wajib menunggu (≥30 dtk; jangan `count()` seketika di finally).
+- Tombol yang handler-nya dipasang skrip di akhir halaman (`#submitonce1` reminder,
+  `#tombol_lanjutkan` buat lelang): tunggu `jQuery._data(el,'events').click` sebelum klik.
+- Gangguan tunnel (GET / 58 dtk, HTTP 530) pernah membatalkan seluruh project admin →
+  project `setup` kini `retries: 2`.
+- Probe plugin: bandingkan juga `console.error` (versi awal melewatkan kegagalan WebSocket).
+
+### Target environment: demo vs local (2026-10-23) — SKEMA ENV DIGANTIKAN (lihat atas)
 
 - Pilih target dengan variabel shell `TARGET_ENV=demo|local` (default `demo`),
   mis. `TARGET_ENV=local npx playwright test --project=setup`,
@@ -1083,7 +1202,7 @@ Urutan rekomendasi (dari paling aman/tanpa mutasi ke yang butuh izin):
   ADMIN → `admin`, SUB_ADMIN → `admin-sub`, SUB_ADMIN_READ → `admin-sub-read`
   (BARU, hanya local), SHIPPER → `shipper`, SUB_SHIPPER → `shipper-sub`,
   OPERATOR → `transporter`, SUB_OPERATOR → `transporter-sub`.
-- Akun WAJIB/opsional per target di `scripts/targets.js` (local: 7 wajib;
+- Akun WAJIB/opsional per target di `scripts/targets.js` (local: 7 wajib — sejak 2026-10-24 6 wajib + admin-sub-read opsional;
   demo: 6 wajib + admin-sub-read opsional). Akun WAJIB berkredensial kosong =
   login setup GAGAL (penghambat kesiapan); opsional = skip. Spec
   `tests/admin-sub-read/` masih placeholder (cek link KELUAR).

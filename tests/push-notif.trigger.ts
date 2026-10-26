@@ -28,7 +28,8 @@ interface ExpectedNotification {
   redirect?: RegExp;
 }
 
-const authDirectory = path.resolve(__dirname, '..', '.auth', process.env.TARGET_ENV ?? 'demo');
+const { targetName } = require('../scripts/targets.js');
+const authDirectory = path.resolve(__dirname, '..', '.auth', targetName());
 
 /**
  * Membuka sesi penerima terpisah memakai akun fixture yang dibuat setup.
@@ -49,6 +50,21 @@ export async function bukaKonteksAkun(
   const accountPage = await context.newPage();
   try {
     await accountPage.goto('/home/akunsaya');
+    // Sesi tersimpan bisa sudah dihapus server: PHP session.gc_maxlifetime = 1440 dtk
+    // (terbukti via phpinfo 2026-10-25), dan sesi penerima ini menganggur selama
+    // test peran lain berjalan (24 Okt ±1,5 jam, 25 Okt ±28 mnt → 302 ke login).
+    // Bila dialihkan ke login: login ulang lewat form (locator = auth.setup.ts)
+    // lalu simpan sesi baru. Verifikasi email di bawah tetap berlaku.
+    if (/\/user\/login/i.test(accountPage.url())) {
+      const { ACCOUNTS, credentials } = require('../scripts/targets.js');
+      const { email, password } = credentials(ACCOUNTS.find((a: { name: string }) => a.name === role));
+      await accountPage.getByRole('textbox', { name: 'Masukkan Email / No. Whatsapp' }).fill(email);
+      await accountPage.getByRole('textbox', { name: 'Masukkan Kata Sandi Anda' }).fill(password);
+      await accountPage.getByRole('button', { name: 'Masuk' }).click();
+      await expect(accountPage.getByRole('link', { name: 'KELUAR' })).toBeVisible({ timeout: 30_000 });
+      await context.storageState({ path: path.join(authDirectory, `${role}.json`) });
+      await accountPage.goto('/home/akunsaya');
+    }
     await expect(
       accountPage.getByText(expectedEmail!, { exact: true }).filter({ visible: true }).first(),
     ).toBeVisible({ timeout: 30_000 });

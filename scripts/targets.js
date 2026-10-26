@@ -19,11 +19,22 @@ const ACCOUNTS = [
   { name: 'transporter-sub', env: 'TRANSPORTER_SUB', viaAdminPath: false, sub: true },
 ];
 
+/**
+ * Target = LABEL pengelompokan artefak & aturan (akun wajib, fixture), BUKAN
+ * penentu file env — konfigurasi selalu dari .env root (scripts/env.js).
+ * Default `local` (aplikasi via tunnel BASE_URL, sejak 2026-10-24); `demo`
+ * dipertahankan hanya untuk aturan/riwayat lama.
+ */
+const DEFAULT_TARGET = 'local';
+
 const TARGETS = {
   // Demo hanya punya 6 akun; admin-sub-read tidak tersedia di sana.
   demo: { required: ['admin', 'admin-sub', 'shipper', 'shipper-sub', 'transporter', 'transporter-sub'] },
-  // Lokal (pengujian rilis PHP 8.2): ketujuh role wajib.
-  local: { required: ACCOUNTS.map((a) => a.name) },
+  // Lokal: 6 akun wajib. admin-sub-read OPSIONAL sejak 2026-10-24 (keputusan
+  // user: server tunnel tanpa akun baca-saja; sub admin diuji via admin-sub).
+  // JANGAN isi ADMIN_SUB_READ_* dgn akun admin-sub — sesi server tunggal per
+  // akun, login kedua menendang sesi admin-sub.
+  local: { required: ACCOUNTS.filter((a) => a.name !== 'admin-sub-read').map((a) => a.name) },
 };
 
 /**
@@ -45,8 +56,18 @@ const FIXTURES = {
     },
   },
   local: {
-    // 2026-10-23: dropdown Buat Lelang shipper lokal 0 opsi (master kosong).
-    buatLelang: null,
+    // 2026-10-23 (server lokal .88/.89): dropdown 0 opsi → null.
+    // 2026-10-25 (server tunnel): dropdown berisi 63 pelabuhan / 514 kota / 10 jenis
+    // kontainer dan KELIMA nilai di bawah terverifikasi ada di opsi form
+    // /lelang/buatlelang; ditetapkan atas instruksi user ("buat data baru").
+    // Bila tunnel diarahkan ke server tanpa master ini, project precondition gagal jelas.
+    buatLelang: {
+      pelabuhanAsal: 'Tanjung Priok',
+      pelabuhanTujuan: 'Tanjung Perak',
+      kotaAsal: 'Jakarta Utara',
+      kotaTujuan: 'Kota Surabaya',
+      jenisKontainer: '20 DRY',
+    },
   },
 };
 
@@ -55,7 +76,11 @@ function fixture(nama, target = targetName()) {
 }
 
 function targetName() {
-  return process.env.TARGET_ENV ?? 'demo';
+  const target = process.env.TARGET_ENV || DEFAULT_TARGET;
+  if (!TARGETS[target]) {
+    throw new Error(`TARGET_ENV=${target} tidak dikenal (pilihan: ${Object.keys(TARGETS).join(', ')}).`);
+  }
+  return target;
 }
 
 function isRequired(accountName, target = targetName()) {
@@ -69,4 +94,4 @@ function credentials(account) {
   };
 }
 
-module.exports = { ACCOUNTS, TARGETS, FIXTURES, fixture, targetName, isRequired, credentials };
+module.exports = { ACCOUNTS, DEFAULT_TARGET, TARGETS, FIXTURES, fixture, targetName, isRequired, credentials };

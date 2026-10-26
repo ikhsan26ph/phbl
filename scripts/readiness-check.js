@@ -1,19 +1,21 @@
 /**
  * Pemeriksaan kesiapan target sebelum menjalankan suite — AMAN & READ-ONLY.
  *
- * Jalankan (TARGET_ENV WAJIB eksplisit, tidak ada default):
- *   TARGET_ENV=local npm run readiness
- *   TARGET_ENV=local npm run readiness -- --out=report/evidence-x/readiness.json
+ * Jalankan:
+ *   npm run readiness                      (label target default: local)
+ *   npm run readiness -- --out=report/evidence-x/readiness.json
  *
  * Pemeriksaan:
- *  1. Statis: file .env.<target>, BASE_URL, host lokal (bukan 127.0.0.1/localhost —
- *     cookie sesi terikat host), kredensial akun WAJIB/opsional (scripts/targets.js;
- *     hanya NAMA variabel yang dilaporkan), file sesi .auth/<target>/ (ada + umur,
- *     isi tidak dibaca).
- *  2. Jaringan (hanya target local; target lain butuh --allow-remote): satu GET
- *     /user/login (status, waktu, X-Powered-By, ada/tidaknya header Server,
- *     atribut cookie TANPA nilai) dan satu GET /user/tess tanpa redirect (status
- *     + penanda phpinfo; badan respons dibuang, tidak disimpan).
+ *  1. Statis: file .env root (satu-satunya sumber BASE_URL & kredensial, lewat
+ *     scripts/env.js; .env.demo/.env.local hanya dilaporkan bila ada, TIDAK
+ *     dibaca), BASE_URL, host bukan 127.0.0.1/localhost (cookie sesi terikat
+ *     host), kredensial akun WAJIB/opsional (scripts/targets.js; hanya NAMA
+ *     variabel yang dilaporkan), file sesi .auth/<target>/ (ada + umur, isi
+ *     tidak dibaca).
+ *  2. Jaringan (hanya label target local; target lain butuh --allow-remote):
+ *     satu GET /user/login (status, waktu, X-Powered-By, ada/tidaknya header
+ *     Server, atribut cookie TANPA nilai, host redirect) dan satu GET /user/tess
+ *     tanpa redirect (status + penanda phpinfo; badan respons dibuang).
  *
  * Tidak login, tidak submit form, tidak memanggil action diagnostik lain.
  * Exit code 1 bila ada PENGHAMBAT (env/akun wajib/host/aplikasi tak terjangkau);
@@ -21,34 +23,40 @@
  */
 const fs = require('fs');
 const path = require('path');
-const dotenv = require('dotenv');
-const { ACCOUNTS, TARGETS, isRequired, credentials } = require('./targets.js');
+const { ACCOUNTS, isRequired, credentials, targetName } = require('./targets.js');
+const { loadEnv } = require('./env.js');
 
 const ROOT = path.resolve(__dirname, '..');
 const args = process.argv.slice(2);
 const outArg = (args.find((a) => a.startsWith('--out=')) || '').slice('--out='.length);
 const allowRemote = args.includes('--allow-remote');
 
-const TARGET = process.env.TARGET_ENV;
-if (!TARGET) {
-  console.error('TARGET_ENV wajib di-set eksplisit (mis. TARGET_ENV=local). Tidak ada default untuk pemeriksaan ini.');
-  process.exit(2);
-}
-if (!TARGETS[TARGET]) {
-  console.error(`TARGET_ENV=${TARGET} tidak dikenal (pilihan: ${Object.keys(TARGETS).join(', ')}).`);
+let TARGET;
+try {
+  TARGET = targetName();
+} catch (e) {
+  console.error(e.message);
   process.exit(2);
 }
 
 const hasil = { target: TARGET, waktu: new Date().toISOString(), penghambat: [], observasi: [], cek: [] };
 const cek = (item, status, detail) => hasil.cek.push({ item, status, detail });
 
-const envFile = path.join(ROOT, `.env.${TARGET}`);
-if (!fs.existsSync(envFile)) {
-  hasil.penghambat.push(`File .env.${TARGET} tidak ada`);
-  cek(`.env.${TARGET}`, 'GAGAL', 'tidak ditemukan');
-} else {
-  dotenv.config({ path: envFile, quiet: true });
-  cek(`.env.${TARGET}`, 'OK', 'ada');
+try {
+  const env = loadEnv({ quiet: true });
+  cek('.env', 'OK', 'ada (root repository)');
+  if (env.shellConflicts.length) {
+    cek('Variabel shell', 'INFO', `diabaikan, nilai .env dipakai: ${env.shellConflicts.join(', ')}`);
+  }
+  if (env.ignoredControlKeys.length) {
+    cek('Variabel kontrol di .env', 'INFO', `diabaikan (set lewat shell): ${env.ignoredControlKeys.join(', ')}`);
+  }
+} catch (e) {
+  hasil.penghambat.push(e.message);
+  cek('.env', 'GAGAL', e.message);
+}
+for (const lama of ['.env.demo', '.env.local']) {
+  if (fs.existsSync(path.join(ROOT, lama))) cek(lama, 'INFO', 'ada, TIDAK dibaca (sumber aktif hanya .env)');
 }
 
 const base = process.env.BASE_URL;
@@ -99,6 +107,13 @@ async function jaringan() {
   await res.arrayBuffer();
   const ms = Date.now() - t0;
   cek('GET /user/login', res.status < 400 ? 'OK' : 'GAGAL', `HTTP ${res.status}, ${ms} ms`);
+  const lokasi = res.headers.get('location');
+  if (lokasi) {
+    const tujuan = new URL(lokasi, base).host;
+    const sama = tujuan === new URL(base).host;
+    cek('Redirect /user/login', sama ? 'INFO' : 'GAGAL', `ke host ${sama ? 'yang sama' : tujuan}`);
+    if (!sama) hasil.penghambat.push(`GET /user/login redirect ke host lain (${tujuan})`);
+  }
   if (res.status >= 400) hasil.penghambat.push(`GET /user/login HTTP ${res.status}`);
   const xpb = res.headers.get('x-powered-by');
   cek('X-Powered-By', 'INFO', xpb || 'tidak ada');
